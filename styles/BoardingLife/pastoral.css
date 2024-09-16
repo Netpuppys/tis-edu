@@ -1,0 +1,24 @@
+.text-pastoral {
+  width: 60%;
+  color: #000;
+  margin: auto;
+  font-family: PF din Display100;
+  font-size: 27px;
+  font-weight: 200;
+  padding: 3rem 0rem;
+  letter-spacing: 0.03em;
+  line-height: 35px;
+}
+@media (max-width: 1550px) {
+  .text-pastoral {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .text-pastoral {
+    width: 80%;
+
+    font-size: 15px;
+    line-height: 20px;
+  }
+}

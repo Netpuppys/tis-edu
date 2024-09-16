@@ -1,0 +1,110 @@
+.Contactheading {
+  color: #000;
+  font-family: Mirador;
+  font-size: 45px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: normal;
+
+  margin: 2rem auto;
+  margin-left: 25%;
+}
+.Contactheading span {
+  color: #b90124;
+}
+.text-letsTalk {
+  color: #000;
+  text-align: center;
+  margin: 2rem auto;
+  font-family: PF din Display100;
+  font-size: 27px;
+  font-weight: 200;
+  letter-spacing: 0.03em;
+  line-height: 35px;
+}
+.form-contact {
+  height: fit-content;
+  padding-inline: 20%;
+  width: 100%;
+  margin: 2rem auto;
+  font-family: PF din Display100;
+  font-size: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.grid-form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 1rem;
+  gap: 1rem;
+  margin: auto;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+input {
+  width: 100%;
+  padding: 16px 8px;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+.input-container {
+  width: calc(50% - 1rem);
+}
+.textarea-container {
+  width: 100%;
+  margin-top: 16px;
+}
+textarea {
+  width: 100%;
+  padding: 16px 8px;
+  color: #000;
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+.button-div {
+  margin-top: 16px;
+}
+.button-div button {
+  padding: 8px 50px;
+  font-size: 20px;
+  border-radius: 80px;
+  cursor: pointer;
+  background-color: #b90124;
+  border: 1px solid #b90124;
+  color: #fff;
+  border: none;
+}
+.button-div button:hover {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+}
+@media (max-width: 1550px) {
+  .text-letsTalk {
+    font-size: 24px;
+  }
+  .Contactheading {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .text-letsTalk {
+    padding: 10px 40px;
+    font-size: 20px;
+  }
+  .form-contact {
+    padding-inline: 10%;
+  }
+  .input-container,
+  textarea {
+    width: calc(100% - 1rem);
+  }
+}

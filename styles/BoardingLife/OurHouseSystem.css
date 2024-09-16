@@ -1,0 +1,30 @@
+.house-main-text {
+  display: block;
+  margin: 3rem auto;
+  width: 60%;
+  color: #000;
+  font-family: PF din Display100;
+  font-size: 27px;
+  font-weight: 200;
+  letter-spacing: 0.03em;
+  line-height: 35px;
+}
+.house-photo {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  height: auto;
+  margin-right: auto;
+}
+@media (max-width: 1550px) {
+  .house-main-text {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .house-main-text {
+    width: 85%;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}

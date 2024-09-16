@@ -1,0 +1,45 @@
+.home-layout-container {
+  scroll-behavior: smooth;
+  z-index: 1;
+}
+
+.home-layout-container .scroll-arrow-div {
+  box-sizing: border-box;
+  z-index: 222;
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+  width: fit-content;
+  background-color: transparent;
+  height: 100vh;
+  position: fixed;
+  pointer-events: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.home-layout-container .scroll-arrow-div button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.home-layout-container .scroll-arrow-div .scroll-arrow-icon {
+  cursor: pointer;
+  pointer-events: all;
+  animation: scrollAnimation 0.6s infinite alternate;
+}
+
+.home-layout-container .home-layout-allSection {
+  z-index: 2;
+  overflow: hidden;
+}
+
+@keyframes scrollAnimation {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-30px); /* Adjust the distance as needed */
+  }
+}

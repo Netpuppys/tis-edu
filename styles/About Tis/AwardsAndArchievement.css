@@ -1,0 +1,97 @@
+.award-desc {
+  width: 100%;
+}
+.award-desc-p {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000;
+  padding: 5rem 0rem;
+  width: 60%;
+  font-family: PF din Display100;
+  font-size: 27px;
+  font-weight: 200;
+  letter-spacing: 0.03em;
+  line-height: 35px;
+}
+.awards-list {
+  width: 85%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 3rem;
+}
+.red-div-year {
+  background-color: #b90124;
+  text-align: center;
+  align-self: center;
+  align-items: center;
+  padding: 1rem 0rem 1rem 0rem;
+  color: #fff;
+  font-family: Mirador;
+  font-size: xxx-large;
+  font-style: italic;
+  font-weight: 900;
+  line-height: normal;
+}
+.awards-content {
+  display: flex;
+}
+.awards-content img,
+.content-awards {
+  width: 50%;
+  height: auto;
+}
+.content-awards {
+  align-self: center;
+  color: #000;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: PF din Display100;
+  font-size: 27px;
+  font-weight: 200;
+  letter-spacing: 0.03em;
+  line-height: 35px;
+}
+@media (max-width: 1550px) {
+  .award-desc-p {
+    font-size: 24px;
+  }
+  .red-div-year {
+    font-size: xx-large;
+  }
+  .content-awards {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .award-desc-p {
+    font-size: 15px;
+    line-height: 20px;
+    width: 90%;
+    padding: 2rem 0rem;
+  }
+
+  .red-div-year {
+    padding: 0.4rem 0rem 0.4rem 0rem;
+
+    font-family: Mirador;
+    font-size: 20px;
+  }
+  .awards-content {
+    display: block;
+  }
+  .awards-content img,
+  .content-awards {
+    width: 100%;
+  }
+  .content-awards {
+    font-size: 15px;
+    line-height: 20px;
+    width: 90%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+}

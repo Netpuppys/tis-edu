@@ -1,0 +1,78 @@
+.main-div-food-text {
+  width: 60%;
+  margin: auto;
+  color: #000;
+  font-family: PF din Display100;
+  font-size: 27px;
+  text-align: justify;
+  font-weight: 200;
+  padding: 3rem 0rem;
+  letter-spacing: 0.03em;
+  line-height: 35px;
+}
+.nutrition-Heading {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #000;
+  font-family: Mirador;
+  font-size: 45px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+}
+.nutrition-Heading span {
+  color: #b90124;
+}
+.yellowLineFood {
+  margin-left: auto;
+  width: 35%;
+  margin-right: auto;
+  height: auto;
+  display: block;
+}
+.text-nutrition {
+  color: #000;
+  font-family: PF din Display100;
+  font-size: 27px;
+  font-weight: 200;
+
+  letter-spacing: 0.03em;
+  line-height: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+@media (max-width: 1550px) {
+  .nutrition-Heading {
+    font-size: 40px;
+  }
+  .text-nutrition,
+  .main-div-food-text {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .main-div-food-text {
+    width: 80%;
+    font-size: 15px;
+    padding: 1rem 0rem;
+    line-height: 20px;
+  }
+  .nutrition-Heading {
+    font-size: 20px;
+    text-align: center;
+  }
+  .text-nutrition {
+    width: 80%;
+    font-size: 15px;
+    padding: 0rem 0rem;
+    text-align: justify;
+    line-height: 20px;
+  }
+  .yellowLineFood {
+    margin-left: 40%;
+    width: 40%;
+    display: block;
+  }
+}

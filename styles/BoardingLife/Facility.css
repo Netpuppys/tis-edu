@@ -1,0 +1,54 @@
+.facility-main {
+  margin: 3rem auto;
+}
+.heading-facility {
+  text-align: center;
+  color: #000;
+  font-family: "Mirador";
+  font-size: 45px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+}
+.yelloLineHeading {
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  height: auto;
+  margin-right: auto;
+}
+.text-facility {
+  width: 60%;
+  color: #000;
+  margin: auto;
+  display: block;
+  font-family: PF din Display100;
+  font-size: 27px;
+  font-weight: 200;
+  letter-spacing: 0.03em;
+  line-height: 35px;
+}
+@media (max-width: 1550px) {
+  .heading-facility {
+    font-size: 40px;
+  }
+  .text-facility {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .heading-facility {
+    width: 80%;
+    font-size: 20px;
+  }
+  .yelloLineHeading {
+    width: 30%;
+  }
+  .text-facility {
+    width: 80%;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}

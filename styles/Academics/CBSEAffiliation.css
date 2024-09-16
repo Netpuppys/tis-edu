@@ -1,0 +1,87 @@
+.main {
+  position: relative;
+  width: 100%;
+}
+
+.content {
+  color: #000;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  padding: 3rem 0rem;
+  font-family: PF din Display100;
+  font-size: 27px;
+  font-weight: 200;
+  letter-spacing: 0.03em;
+  line-height: 35px;
+}
+.curriculam,
+.academic {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000;
+  font-family: Mirador;
+  font-size: 45px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+}
+.academic span {
+  color: #b90124;
+}
+.yellow-Linne {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 12%;
+}
+
+.curriculam-text {
+  color: #000;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  padding: 3rem 0rem;
+  font-family: PF din Display100;
+  font-size: 27px;
+  font-weight: 200;
+  letter-spacing: 0.03em;
+  line-height: 35px;
+}
+@media (max-width: 1550px) {
+  .content,
+  .curriculam-text {
+    font-size: 24px;
+  }
+  .curriculam,
+  .academic {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .content {
+    width: 80%;
+    line-height: 20px;
+    font-size: 15px;
+  }
+  .curriculam {
+    font-size: 20px;
+  }
+  .yellow-Linne {
+    width: 30%;
+  }
+
+  .curriculam-text {
+    line-height: 20px;
+    font-size: 15px;
+    padding: 1rem 0rem;
+    width: 80%;
+  }
+  .academic {
+    font-size: 20px;
+  }
+}

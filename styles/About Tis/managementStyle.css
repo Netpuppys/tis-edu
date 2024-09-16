@@ -1,0 +1,116 @@
+.left-div-content-management,
+.right-div-content-management {
+  width: 50%;
+}
+.left-div-content-management img {
+  width: 80%;
+  height: auto;
+  margin-left: 20.5%;
+}
+.management {
+  display: flex;
+  margin: 2rem 0rem;
+  overflow: hidden;
+}
+.right-div-content-management p,
+.left-div-content-management p {
+  width: 80%;
+  margin-left: 10%;
+  color: #000;
+  text-align: center;
+  font-family: PF din Display100;
+  font-size: 27px;
+  font-weight: 200;
+  letter-spacing: 0.03em;
+  line-height: 35px;
+  margin-block-end: 5em;
+}
+.right-div-content-management img {
+  width: 80%;
+  height: auto;
+  z-index: -1;
+}
+.headingName h4 {
+  color: #b90024;
+  text-align: center;
+  font-family: PF DIN;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.red-div {
+  position: relative;
+  z-index: -1;
+  background-color: #b90124;
+}
+.red-div ul {
+  color: #fff;
+  font-family: PF din Display100;
+  font-size: 27px;
+  font-weight: 200;
+  letter-spacing: 0.03em;
+  line-height: 35px;
+}
+.line-management {
+  width: 5px;
+  border-radius: 20px;
+  background-color: #000;
+  height: auto;
+}
+@media (max-width: 1550px) {
+  .headingName h4 {
+    font-size: 40px;
+  }
+  .red-div ul {
+    font-size: 24px;
+  }
+  .left-div-content-management p,
+  .right-div-content-management p {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1450px) {
+  .right-div-content-management p,
+  .left-div-content-management p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .red-div ul {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .headingName h4 {
+    font-size: x-large;
+  }
+}
+@media (max-width: 768px) {
+  .management {
+    display: block;
+    width: 100%;
+    margin-bottom: 2rem;
+    overflow: hidden;
+  }
+  .management img {
+    width: 100%;
+    height: auto;
+  }
+  .red-div ul {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .headingName h4 {
+    font-size: 20px;
+  }
+  .management p {
+    width: 90%;
+    margin-block-start: 0.8em;
+    margin-left: 5%;
+    font-size: 15px;
+    margin-block-end: 2em;
+    font-weight: 200;
+    letter-spacing: 0.03em;
+    line-height: 20px;
+    margin-block-end: 5em;
+  }
+}

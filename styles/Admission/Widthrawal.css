@@ -1,0 +1,118 @@
+.WidthdrawalPolicy {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.main-title-widthdrawal {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  color: #000;
+  text-align: center;
+  font-family: Mirador;
+  font-size: 45px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: normal;
+}
+.main-title-widthdrawal span {
+  color: #b90124;
+}
+.YellowLine {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+.text-box-widthdrawal {
+  border-radius: 20px;
+
+  margin: 2rem auto;
+  border: 3px solid #b90124;
+}
+.text-box-widthdrawal-note {
+  border-radius: 20px;
+  border: 3px solid #b90124;
+  margin-top: 5%;
+}
+.text-widthdrawal {
+  width: 95%;
+  margin: 2rem auto;
+  color: #000;
+  font-family: PF din Display100;
+  font-size: 27px;
+  font-weight: 200;
+  letter-spacing: 0.03em;
+  line-height: 35px;
+}
+.text-widthdrawal span {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin: 2rem auto;
+  color: #000;
+  text-align: center;
+  font-family: Mirador;
+  font-size: 45px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.widthdrawal-policy-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background: #b90124;
+  width: 25%;
+  text-align: center;
+  color: #fff;
+  font-family: PF din Display100;
+  font-size: 27px;
+  font-weight: 200;
+  letter-spacing: 0.03em;
+  line-height: 35px;
+  flex-shrink: 0;
+  margin-top: 3rem;
+  padding: 10px;
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+@media (max-width: 1550px) {
+  .main-title-widthdrawal,
+  .text-widthdrawal span {
+    font-size: 40px;
+  }
+  .text-widthdrawal,
+  .widthdrawal-policy-button {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .WidthdrawalPolicy {
+    width: 90%;
+  }
+  .main-title-widthdrawal {
+    width: 80%;
+    font-size: 20px;
+  }
+  .YellowLine {
+    width: 50%;
+  }
+  .text-widthdrawal {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .text-widthdrawal span {
+    font-size: 20px;
+    width: 80%;
+  }
+  .widthdrawal-policy-button {
+    font-size: 20px;
+    line-height: 25px;
+    width: 60%;
+  }
+}

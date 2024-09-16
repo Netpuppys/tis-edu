@@ -1,0 +1,131 @@
+.headmaster-name {
+  color: #000;
+  text-align: center;
+  font-family: Mirador100;
+  font-size: 45px;
+  font-style: italic;
+  padding: 3rem 0rem 0rem 0rem;
+  font-weight: 500;
+  line-height: normal;
+}
+.headmaster-name span {
+  color: #b90124;
+}
+.yellow-line {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+.stats-head {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.about-head {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem 0rem;
+  width: 60%;
+  text-align: justify;
+  font-family: PF din Display100;
+  font-size: 27px;
+  font-weight: 200;
+  letter-spacing: 0.03em;
+  line-height: 35px;
+}
+.carousel-containers {
+  display: flex;
+  background-color: #f8f5f0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 100%; /* Adjust the width as needed */
+  margin-bottom: 2rem;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  scrollbar-width: none; /* Firefox */
+}
+.carousel-items {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #b90124; /* Background color similar to the provided image */
+  color: white; /* Text color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center; /* Center text */
+  padding: auto; /* Add padding for better spacing */
+  border-radius: 10px; /* Optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow */
+  width: 300px; /* Adjust the item width as needed */
+  height: 300px; /* Adjust the item height as needed */
+}
+.carousel-containers::-webkit-scrollbar {
+  display: none; /* WebKit browsers */
+}
+.carousel-items h3 {
+  font-family: Miltonian;
+  font-size: 55px;
+  font-weight: 400;
+}
+.carousel-items p {
+  font-size: 22px;
+  font-family: PF din Display100;
+}
+.carousel-items h3,
+.carousel-items p {
+  text-align: center;
+  margin: 0; /* remove default margins */
+}
+
+@media (max-width: 1550px) {
+  .about-head {
+    font-size: 24px;
+  }
+  .headmaster-name {
+    font-size: 40px;
+  }
+  .carousel-items {
+    width: 250px; /* Adjust the item width as needed */
+    height: 250px; /* Adjust the item height as needed */
+  }
+}
+@media (max-width: 768px) {
+  .headmaster-name {
+    font-size: 20px;
+    padding: 1rem 0rem 0rem 0rem;
+  }
+  .about-head {
+    width: 80%;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 1rem 0rem;
+  }
+  .carousel-containers {
+    margin: 1rem 0rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .carousel-items {
+    flex: 0 0 auto;
+    margin-right: 0rem;
+    margin-left: 1rem;
+    width: 100px;
+    height: 100px;
+  }
+  .carousel-items p {
+    font-size: 12px;
+    font-weight: 100;
+  }
+  .carousel-items h3 {
+    font-size: 20px;
+    font-weight: 100;
+  }
+}

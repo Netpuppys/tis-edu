@@ -1,0 +1,156 @@
+.ScholarshipPolicy {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.main-title {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  color: #000;
+  text-align: center;
+  font-family: Mirador;
+  font-size: 45px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: normal;
+}
+.main-title span {
+  color: #b90124;
+}
+.yellow-line-title {
+  display: block;
+  margin-left: 50%;
+  width: 50%;
+}
+.text-box {
+  border-radius: 20px;
+  margin: 2rem auto;
+  border: 3px solid #b90124;
+}
+.text {
+  width: 95%;
+  margin: 2rem auto;
+  color: #000;
+  font-family: PF din Display100;
+  font-size: 27px;
+  font-weight: 200;
+  letter-spacing: 0.03em;
+  line-height: 35px;
+  margin-bottom: 3rem;
+}
+.text span {
+  font-weight: 600;
+}
+.scholarship {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  height: auto;
+  margin-right: auto;
+}
+.lineScholar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  stroke-width: 2px;
+  stroke: #b90124;
+  width: 30%;
+  height: 0px;
+  flex-shrink: 0;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.main-heading-text {
+  color: #000;
+  text-align: center;
+  font-family: PF din Display100;
+  font-size: 27px;
+  font-weight: 200;
+  letter-spacing: 0.03em;
+  line-height: 35px;
+  margin-bottom: 3rem;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  width: 68%;
+  margin-bottom: 4%;
+}
+.imgStudent {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  height: auto;
+  margin-bottom: 3%;
+}
+.scholarship-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 60%;
+  margin: 3rem auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.scholarship-table th {
+  width: 50%;
+}
+.scholarship-table th,
+.scholarship-table td {
+  padding: 8px;
+  text-align: left;
+  font-size: 27px;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+@media (max-width: 1550px) {
+  .main-title {
+    font-size: 40px;
+  }
+  .text,
+  .main-heading-text {
+    font-size: 24px;
+  }
+  .scholarship-table th,
+  .scholarship-table td {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .ScholarshipPolicy {
+    width: 90%;
+  }
+  .text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .main-title {
+    width: 100%;
+    font-size: 20px;
+  }
+  .yellow-line-title {
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+  }
+  .scholarship {
+    width: 90%;
+  }
+  .main-heading-text {
+    width: 90%;
+  }
+  .imgStudent {
+    width: 95%;
+  }
+  .scholarship-table {
+    width: 80%;
+    margin: 1rem auto;
+  }
+  .scholarship-table th,
+  .scholarship-table td {
+    font-size: 15px;
+  }
+}

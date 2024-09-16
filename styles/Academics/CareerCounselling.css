@@ -1,0 +1,232 @@
+.text-above-career {
+  width: 60%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000;
+  text-align: center;
+  font-family: PF din Display100;
+  font-size: 27px;
+  font-weight: 200;
+  letter-spacing: 0.03em;
+  line-height: 35px;
+  padding: 3rem 0rem;
+  text-align: center;
+}
+.headingPersonal {
+  font-family: Mirador;
+  font-size: 45px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 54px;
+  text-align: center;
+  color: #fff;
+  width: 30%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.textPersonal {
+  font-family: PF din Display100;
+  font-size: 27px;
+  font-weight: 200;
+  letter-spacing: 0.03em;
+  line-height: 35px;
+  text-align: left;
+  color: #fff;
+  width: 60%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.personal {
+  width: 100%;
+  background: rgba(185, 1, 36, 1);
+  display: flex;
+}
+.career {
+  width: 100%;
+  margin-top: 1%;
+}
+.heading-preparation {
+  margin-left: auto;
+  margin-right: auto;
+  color: #000;
+  text-align: center;
+  font-family: Mirador;
+  font-size: 45px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+}
+.preparation-yellow-line {
+  display: block;
+  margin-left: 50%;
+  margin-right: auto;
+  height: auto;
+  width: 20%;
+}
+
+.text-preparation {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  color: #000;
+  font-family: PF din Display100;
+  font-size: 27px;
+  font-weight: 200;
+  letter-spacing: 0.03em;
+  line-height: 35px;
+}
+.main .career-heading {
+  margin-top: 2rem;
+  color: #000;
+  align-items: center;
+  text-align: center;
+  font-family: Mirador;
+  font-size: 45px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: normal;
+}
+.Counseller-and-Benifits {
+  display: flex;
+}
+.Counseller {
+  width: 50%;
+}
+.Counseller-and-Benifits .text-part {
+  padding: 3rem;
+}
+.Counseller h2 {
+  color: #000;
+  text-align: center;
+  font-family: Mirador;
+  font-size: 45px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.Counseller p1 {
+  width: 629px;
+  color: #000;
+  font-family: PF din Display100;
+  font-size: 27px;
+  font-weight: 200;
+  letter-spacing: 0.03em;
+  line-height: 35px;
+}
+.Benifits {
+  width: 50%;
+
+  background-color: #b90124;
+}
+.Benifits p1 {
+  color: #fff;
+  font-family: PF din Display100;
+  font-size: 27px;
+  font-weight: 200;
+  letter-spacing: 0.03em;
+  line-height: 35px;
+}
+.Benifits h2 {
+  color: #fff;
+  text-align: center;
+  font-family: Mirador;
+  font-size: 45px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: normal;
+}
+@media (max-width: 1550px) {
+  .heading-preparation,
+  .headingPersonal,
+  .main .career-heading,
+  .Counseller h2,
+  .Benifits h2 {
+    font-size: 40px;
+  }
+
+  .textPersonal,
+  .text-above-career,
+  .text-preparation,
+  .Counseller p1,
+  .Benifits p1 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1400px) {
+  .headingPersonal {
+    font-size: 35px;
+  }
+  .textPersonal {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .heading-preparation {
+    font-size: 20px;
+    padding-top: 0.5rem;
+  }
+  .preparation-yellow-line {
+    width: 30%;
+  }
+  .text-preparation {
+    line-height: 20px;
+    font-size: 15px;
+    width: 80%;
+  }
+  .headingPersonal {
+    font-size: 20px;
+    width: 80%;
+  }
+  .text-above-career {
+    width: 80%;
+    line-height: 20px;
+    font-size: 15px;
+    text-align: left;
+    padding: 1rem 0rem 1rem 0rem;
+  }
+  .textPersonal {
+    line-height: 20px;
+    font-size: 15px;
+    width: 80%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0rem;
+  }
+  .personal {
+    display: block;
+    padding: 1rem 0rem;
+  }
+  .Counseller-and-Benifits {
+    display: block;
+    margin-top: -1rem;
+  }
+  .Benifits {
+    width: 100%;
+  }
+  .Counseller {
+    width: 100%;
+  }
+  .Counseller-and-Benifits .text-part {
+    padding: 1rem 1rem;
+  }
+  .Counseller h2,
+  .Benifits h2 {
+    font-size: 20px;
+  }
+  .Counseller p1,
+  .Benifits p1 {
+    line-height: 20px;
+    font-size: 15px;
+  }
+  .main .career-heading {
+    margin-top: 1rem;
+    font-size: 20px;
+  }
+}

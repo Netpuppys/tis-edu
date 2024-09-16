@@ -1,0 +1,114 @@
+.main-text {
+  color: #000;
+  text-align: center;
+  font-family: Mirador;
+  font-size: 60px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+}
+.main-text span {
+  color: #b90124;
+}
+.yellow-line-pedagogy {
+  display: block;
+  margin-left: 50%;
+  margin-right: auto;
+  width: 20%;
+  height: -10%;
+  margin-bottom: 3%;
+}
+
+.text-div {
+  color: #000;
+  font-family: PF din Display100;
+  font-size: 27px;
+  font-weight: 200;
+  letter-spacing: 0.03em;
+  line-height: 35px;
+  top: 40px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pedagogy {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.div1 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #b90124;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+.div1 div2 {
+  padding: 3rem;
+}
+.div1 th {
+  color: #fff;
+  font-family: Mirador;
+  font-size: xxx-large;
+  padding: 3rem;
+  font-style: italic;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 3.2px;
+}
+.div1 td {
+  color: #fff;
+  font-family: PF din Display100;
+  font-size: 27px;
+  font-weight: 200;
+  letter-spacing: 0.03em;
+  line-height: 35px;
+  top: 40px;
+}
+@media (max-width: 1550px) {
+  .main-text {
+    font-size: 50px;
+  }
+  .text-div {
+    font-size: 24px;
+  }
+  .div1 td {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .main-text {
+    font-size: 25px;
+  }
+  .yellow-line-pedagogy {
+    width: 40%;
+  }
+
+  .text-div {
+    font-size: 15px;
+    line-height: 20px;
+    width: 90%;
+  }
+
+  .pedagogy {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .div1 th {
+    font-size: 20px;
+    padding: 1rem;
+
+    letter-spacing: normal;
+  }
+  .div1 td {
+    font-size: 15px;
+
+    line-height: 20px;
+  }
+  .div1 th {
+    text-align: left;
+  }
+}

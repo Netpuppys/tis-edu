@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;600&display=swap");
+
+.global-form-main-div {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 20rem;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.global-form-main-div select,
+.global-form-main-div input {
+  box-sizing: border-box;
+  height: 2.7rem;
+  padding: 0.75rem 1rem;
+
+  border: none;
+  background-color: #fafafa;
+
+  /* text styling */
+  color: #212121;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Exo", sans-serif;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.42588rem;
+  letter-spacing: 0.01875rem;
+}
+
+.global-form-main-div input:focus,
+.global-form-main-div select:focus {
+  outline: none;
+  color: #121212;
+}
+
+.global-form-main-div .mobile-input-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.global-form-main-div .mobile-input-container .mobile-input-select {
+  width: 5.5rem;
+}
+
+.global-form-main-div .mobile-input-container .mobile-input-text {
+  width: calc(100% - 6rem);
+}
+
+.global-form-main-div .input-text {
+  width: 100%;
+}
+
+.global-form-main-div .input-select {
+  width: 100%;
+}
+
+.global-form-main-div .checkbox-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+  height: 2.5rem;
+}
+
+.global-form-main-div .checkbox-div .checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #d9d9d9;
+}
+
+.global-form-main-div .checkbox-div .checkbox-text {
+  padding: 0;
+  text-align: left;
+  color: #212121;
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 400;
+  /* line-height: 0.9375rem; 150% */
+  /* letter-spacing: 0.01875rem; */
+}
+
+.global-form-main-div .form-submit-btn {
+  width: 100%;
+  height: 3.25rem;
+  padding: 1rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* border-radius: 0.3125rem; */
+  background: #fada0a;
+  /* background: #A41E34; */
+  border: none;
+  cursor: pointer;
+
+  /* text styles */
+  color: #fff;
+  font-family: "Exo", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25rem; /* 125% */
+  letter-spacing: -0.02rem;
+}
+
+@media (max-width: 768px) {
+  .global-form-main-div select,
+  .global-form-main-div input {
+    box-sizing: border-box;
+    height: fit-content;
+    padding: 0.35rem 0.5rem;
+
+    border: none;
+    background-color: #fafafa;
+
+    /* text styling */
+    color: #212121;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: "Exo", sans-serif;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2rem;
+    letter-spacing: 0.01875rem;
+  }
+}

@@ -1,0 +1,1141 @@
+{
+	"info": {
+		"_postman_id": "b3ede91f-cfde-464b-8c07-7cb1336db36f",
+		"name": "Eikomp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31235130",
+		"_collection_link": "https://galactic-space-434557.postman.co/workspace/Projects-Collections-WorkSpace~77aba662-5281-4d32-b5c7-5bad3c48fdc5/collection/31235130-b3ede91f-cfde-464b-8c07-7cb1336db36f?action=share&source=collection_link&creator=31235130"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "kritgya",
+									"description": "number must be with country code",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "kritgyakumar93@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "tempuser@123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{local}}login",
+							"host": [
+								"{{local}}login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "kritgya",
+									"description": "mandatory",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "kritgya",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "kumar",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "kritgyakumar93@gmail.com",
+									"description": "mandatory",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "tempuser@123",
+									"description": "mandatory",
+									"type": "text"
+								},
+								{
+									"key": "confirm_password",
+									"value": "tempuser@123",
+									"description": "mandatory",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "+919643088953",
+									"description": "number must be with country code",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Temp address area - 110022",
+									"description": "String - address of user",
+									"type": "text"
+								},
+								{
+									"key": "user_type",
+									"value": "corporate",
+									"description": "drop down - choice = [corporate, lab, individual_consultant, logistics, student]",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{stag}}register",
+							"host": [
+								"{{stag}}register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "old_password",
+									"value": "testuser@123",
+									"type": "text"
+								},
+								{
+									"key": "new_password",
+									"value": "tempuser@123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{stag}}changepassword",
+							"host": [
+								"{{stag}}changepassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "refresh",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcwMjM3MDU5NCwiaWF0IjoxNzAyMTk3Nzk0LCJqdGkiOiI4Njg3NWQzMDhlZTk0MGJjYWJlYTg5OWI0NWJhZWIzMyIsInVzZXJfaWQiOjN9.CUMuKJmc4p9wiuy-dbdvmae6IJQasvLF_ibmV1QXqM8",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{stag}}refresh",
+							"host": [
+								"{{stag}}refresh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Password Reset - Email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "kritgyakumar92@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{stag}}resetpassword",
+							"host": [
+								"{{stag}}resetpassword"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Accounts",
+			"item": [
+				{
+					"name": "Retrieve User",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{stag}}accounts/user/3/",
+							"host": [
+								"{{stag}}accounts"
+							],
+							"path": [
+								"user",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Users",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{local}}accounts/user/",
+							"host": [
+								"{{local}}accounts"
+							],
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "Kritgya",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "last_name",
+									"value": "Kumar",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "kritgyakumar92@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "role",
+									"value": "staff",
+									"description": "choice = (super_admin, admin, staff)",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "user_type",
+									"value": "",
+									"description": "choice = [corporate, lab, individual_consultant, logistics, student]",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "address",
+									"value": "40, Sec-9, RK Puram",
+									"description": "string",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "mobile",
+									"value": "",
+									"description": "string",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "first_time",
+									"value": "False",
+									"description": "True/False",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{stag}}accounts/user/3/",
+							"host": [
+								"{{stag}}accounts"
+							],
+							"path": [
+								"user",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{local}}accounts/user/3/",
+							"host": [
+								"{{local}}accounts"
+							],
+							"path": [
+								"user",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Industry",
+			"item": [
+				{
+					"name": "List Industry",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{stag}}accounts/industry/",
+							"host": [
+								"{{stag}}accounts"
+							],
+							"path": [
+								"industry",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Industry",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Healthcare",
+									"type": "text"
+								},
+								{
+									"key": "docs",
+									"type": "file",
+									"src": "/C:/Users/kritg/Downloads/O1.ifc"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{stag}}accounts/industry/",
+							"host": [
+								"{{stag}}accounts"
+							],
+							"path": [
+								"industry",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve Industry",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{stag}}accounts/industry/1/",
+							"host": [
+								"{{stag}}accounts"
+							],
+							"path": [
+								"industry",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Industry",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "docs",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{stag}}accounts/industry/1/",
+							"host": [
+								"{{stag}}accounts"
+							],
+							"path": [
+								"industry",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Industry",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{stag}}accounts/industry/1/",
+							"host": [
+								"{{stag}}accounts"
+							],
+							"path": [
+								"industry",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "UserProfile",
+			"item": [
+				{
+					"name": "List UserProfile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{stag}}accounts/userprofile/?",
+							"host": [
+								"{{stag}}accounts"
+							],
+							"path": [
+								"userprofile",
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"description": "Use this api to check if user profile exists or not"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create UserProfile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user",
+									"value": "1",
+									"description": "id of user",
+									"type": "text"
+								},
+								{
+									"key": "organization_name",
+									"value": "aicansell",
+									"type": "text"
+								},
+								{
+									"key": "signing_authority",
+									"value": "arindam sen",
+									"type": "text"
+								},
+								{
+									"key": "gst_number",
+									"value": "214120948109",
+									"type": "text"
+								},
+								{
+									"key": "pan_number",
+									"value": "341342131",
+									"type": "text"
+								},
+								{
+									"key": "proof_of_incorporation",
+									"type": "file",
+									"src": "/C:/Users/kritg/Downloads/O1.ifc"
+								},
+								{
+									"key": "industry",
+									"value": "1",
+									"description": "id of industry [drop down field - use list industry api]",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{local}}accounts/userprofile/",
+							"host": [
+								"{{local}}accounts"
+							],
+							"path": [
+								"userprofile",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update UserProfile",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user",
+									"value": "1",
+									"description": "id of user",
+									"type": "text"
+								},
+								{
+									"key": "organization_name",
+									"value": "aicansell",
+									"type": "text"
+								},
+								{
+									"key": "signing_authority",
+									"value": "arindam sen",
+									"type": "text"
+								},
+								{
+									"key": "gst_number",
+									"value": "21412094810",
+									"type": "text"
+								},
+								{
+									"key": "pan_number",
+									"value": "341342131",
+									"type": "text"
+								},
+								{
+									"key": "proof_of_incorporation",
+									"type": "file",
+									"src": "/C:/Users/kritg/Downloads/O1.ifc"
+								},
+								{
+									"key": "industry",
+									"value": "1",
+									"description": "id of industry [drop down field - use list industry api]",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{local}}accounts/userprofile/1/",
+							"host": [
+								"{{local}}accounts"
+							],
+							"path": [
+								"userprofile",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete UserProfile",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{local}}accounts/userprofile/1/",
+							"host": [
+								"{{local}}accounts"
+							],
+							"path": [
+								"userprofile",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "List Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/products/",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/products/1/",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"products",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Lan",
+									"type": "text"
+								},
+								{
+									"key": "variants",
+									"value": "Lan1, Lan2, Lan3",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "industry",
+									"value": "2",
+									"description": "id of industry should be passed - use list industry api for dropdown",
+									"type": "text"
+								},
+								{
+									"key": "docs",
+									"type": "file",
+									"src": "/C:/Users/kritg/Downloads/O1.ifc"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{local}}/products/",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Lan",
+									"type": "text"
+								},
+								{
+									"key": "variants",
+									"value": "Lan1, Lan2",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "industry",
+									"value": "2",
+									"description": "id of industry should be passed - use list industry api for dropdown",
+									"type": "text"
+								},
+								{
+									"key": "docs",
+									"type": "file",
+									"src": "/C:/Users/kritg/Downloads/O1.ifc"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{local}}/products/4/",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"products",
+								"4",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/products/4/",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"products",
+								"4",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Compliance",
+			"item": [
+				{
+					"name": "Compliance",
+					"item": [
+						{
+							"name": "List Compliance",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}compliance/compliance/",
+									"host": [
+										"{{local}}compliance"
+									],
+									"path": [
+										"compliance",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Compliance",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "admin",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "temp",
+											"type": "text"
+										},
+										{
+											"key": "full_form",
+											"value": "temp",
+											"type": "text"
+										},
+										{
+											"key": "content",
+											"value": "temp temp",
+											"type": "text"
+										},
+										{
+											"key": "process_flow",
+											"value": "temp",
+											"type": "text"
+										},
+										{
+											"key": "country",
+											"value": "temp",
+											"type": "text"
+										},
+										{
+											"key": "region",
+											"value": "temp",
+											"type": "text"
+										},
+										{
+											"key": "tat",
+											"value": "30",
+											"type": "text"
+										},
+										{
+											"key": "flowchart",
+											"type": "file",
+											"src": "/C:/Users/kritg/Downloads/netpuppies logo.png"
+										},
+										{
+											"key": "faq",
+											"type": "file",
+											"src": []
+										},
+										{
+											"key": "video",
+											"type": "file",
+											"src": []
+										},
+										{
+											"key": "products",
+											"value": "1,5",
+											"description": "id of products seprated by comma, (list product api)",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{local}}compliance/compliance/",
+									"host": [
+										"{{local}}compliance"
+									],
+									"path": [
+										"compliance",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Compliance",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "admin",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "temp compliance",
+											"type": "text"
+										},
+										{
+											"key": "full_form",
+											"value": "temp",
+											"type": "text"
+										},
+										{
+											"key": "content",
+											"value": "temp temp",
+											"type": "text"
+										},
+										{
+											"key": "process_flow",
+											"value": "temp t",
+											"type": "text"
+										},
+										{
+											"key": "country",
+											"value": "temp t",
+											"type": "text"
+										},
+										{
+											"key": "region",
+											"value": "temp",
+											"type": "text"
+										},
+										{
+											"key": "tat",
+											"value": "30",
+											"type": "text"
+										},
+										{
+											"key": "flowchart",
+											"type": "file",
+											"src": "/C:/Users/kritg/Downloads/netpuppies logo.png"
+										},
+										{
+											"key": "faq",
+											"type": "file",
+											"src": []
+										},
+										{
+											"key": "video",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "{{local}}compliance/compliance/6/",
+									"host": [
+										"{{local}}compliance"
+									],
+									"path": [
+										"compliance",
+										"6",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Retrieve Compliance",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}compliance/compliance/6/",
+									"host": [
+										"{{local}}compliance"
+									],
+									"path": [
+										"compliance",
+										"6",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Compliance",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{local}}compliance/compliance/8/",
+									"host": [
+										"{{local}}compliance"
+									],
+									"path": [
+										"compliance",
+										"8",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Know Your Compliance",
+					"item": [
+						{
+							"name": "Know Your Compliance",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}compliance/knowyourcompliance/?product=&country&region&industry",
+									"host": [
+										"{{local}}compliance"
+									],
+									"path": [
+										"knowyourcompliance",
+										""
+									],
+									"query": [
+										{
+											"key": "product",
+											"value": "",
+											"description": "user can type whatever in these field"
+										},
+										{
+											"key": "country",
+											"value": null
+										},
+										{
+											"key": "region",
+											"value": null
+										},
+										{
+											"key": "industry",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA2MjAyMjc2LCJpYXQiOjE3MDYxMTU4NzYsImp0aSI6IjhhNTJhM2RlMDFjZTRmYjE4YWUwYjAwYjQ0MjNlZDZhIiwidXNlcl9pZCI6Mn0.20qLDOkpQmeQSRgyy65-KADWtE3pq-TWRScwikKEXa4",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "local",
+			"value": "http://127.0.0.1:8000/",
+			"type": "string"
+		},
+		{
+			"key": "stag",
+			"value": "http://eikomp-env.eba-x9ydu6qk.ap-south-1.elasticbeanstalk.com/",
+			"type": "string"
+		}
+	]
+}

@@ -1,0 +1,128 @@
+.second-main-section {
+  width: 100%;
+  padding: none;
+  /* padding-top: 10rem; */
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #b90124;
+  overflow: hidden;
+  /* position: fixed; */
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  /* background-color: #b90124; */
+  /* padding-top: 10rem; */
+}
+
+.second-main-section .content {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+
+.second-main-section .background {
+  width: 100%;
+  height: 100vh;
+  filter: brightness(0.7);
+  margin: 0;
+}
+
+.second-main-section .cards-div-second {
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.second-main-section .cards-div-second .card {
+  margin: 0;
+  padding: none;
+
+  width: 25%;
+  aspect-ratio: 1/1;
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.second-main-section .cards-div-second .card .card-bg {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.second-main-section .cards-div-second .card .icon {
+  z-index: 1;
+}
+
+.second-main-section .cards-div-second .card .title {
+  margin: 0;
+  margin-top: 0.8rem;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  font-family: PF din Display;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.84063rem; /* 155% */
+}
+
+.second-main-section .cards-div-second .card .sub-title {
+  margin: 0.3rem;
+  color: #a6a6a6;
+  text-align: center;
+  font-family: PF din Display100;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.80625rem; /* 170% */
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .second-main-section {
+    height: 40vh;
+  }
+  .second-main-section .cards-div-second .card {
+    gap: 0rem;
+  }
+  .second-main-section .background {
+    height: 60vh;
+  }
+  .second-main-section .cards-div-second .card .icon {
+    width: 30%;
+    height: auto;
+  }
+  .second-main-section .cards-div-second .card .title {
+    margin-top: 0rem;
+    font-size: 8px;
+    margin-block-start: 0.8em;
+    margin-block-end: 0.8em;
+    line-height: normal;
+  }
+  .second-main-section .cards-div-second .card .sub-title {
+    font-size: 6px;
+    margin: 0rem;
+    line-height: normal;
+  }
+}

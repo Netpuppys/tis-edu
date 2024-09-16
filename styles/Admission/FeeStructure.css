@@ -1,0 +1,151 @@
+.fees {
+  margin: 2rem auto;
+  color: #000;
+  text-align: center;
+  font-family: Mirador;
+  font-size: 45px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+  width: 60%;
+}
+.fees span {
+  color: #b90124;
+}
+.fees-text {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000;
+  font-family: PF din Display100;
+  font-size: 27px;
+  font-weight: 200;
+  letter-spacing: 0.03em;
+  line-height: 35px;
+}
+.yellow-line-heading {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 15%;
+}
+.fees-structure {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+}
+.fees-structure img {
+  width: 40%;
+  margin-left: 5rem;
+  cursor: pointer;
+  height: auto;
+}
+.feeee h2 {
+  display: block;
+  color: #000;
+  text-align: center;
+  font-family: Mirador;
+  font-size: 45px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: normal;
+}
+.feeee h2 span {
+  color: #b90124;
+}
+.feeee h2 img {
+  display: block;
+  width: 15%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.feeee .redbox {
+  border-radius: 20px;
+  border: 3px solid #b90124;
+  padding: 3rem;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000;
+  font-family: PF din Display100;
+  font-size: 27px;
+  font-weight: 200;
+  letter-spacing: 0.03em;
+  line-height: 35px;
+  margin-bottom: 3rem;
+}
+.feeee .redboxBank {
+  border-radius: 20px;
+  border: 3px solid #b90124;
+  padding: 3rem;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000;
+  text-align: center;
+  font-family: PF din Display100;
+  font-size: 27px;
+  font-weight: 200;
+  letter-spacing: 0.03em;
+  line-height: 35px;
+  margin-bottom: 3rem;
+}
+.feeee .redboxBank span {
+  font-size: 45px;
+  font-family: Mirador;
+  font-style: italic;
+}
+@media (max-width: 1550px) {
+  .fees,
+  .feeee h2,
+  .feeee .redboxBank span {
+    font-size: 40px;
+  }
+  .fees-text,
+  .feeee .redbox,
+  .feeee .redboxBank {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .fees {
+    font-size: 20px;
+    width: 90%;
+  }
+  .feeee h2 {
+    font-size: 20px;
+  }
+  .feeee .redbox {
+    padding: 1rem;
+    width: 80%;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 1rem;
+  }
+  .fees-text {
+    width: 90%;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .feeee .redboxBank {
+    width: 80%;
+    padding: 1rem;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 1rem;
+  }
+  .feeee .redboxBank span {
+    font-size: 20px;
+  }
+  .fees-structure img {
+    width: 100%;
+    margin-left: auto;
+    margin-top: 2rem;
+    margin-right: auto;
+  }
+  .yellow-line-heading {
+    width: 35%;
+  }
+}
