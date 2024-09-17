@@ -1,7 +1,4 @@
-"use client"; // Client component since you're using useParams
-
-import React, { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
+import React from "react";
 import axios from "axios";
 import "../globals.css";
 import "../../styles/QuickLinks/Blog.css";
@@ -10,34 +7,17 @@ import Navbar from "../../components/globalComponents/navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import Head from "next/head";
 
-const Slug = () => {
-  const { slug } = useParams(); // Retrieve the slug from URL
-  const [blog, setBlog] = useState(null); // State to store the blog data
-  const [loading, setLoading] = useState(true); // State to handle loading
+// Fetch blog content statically
+async function getBlogData(slug) {
+  const response = await axios.get(
+    `https://admin.tis.edu.in/wp-json/wp/v2/posts?slug=${slug}`
+  );
+  return response.data.length > 0 ? response.data[0] : null;
+}
 
-  useEffect(() => {
-    const fetchBlog = async () => {
-      try {
-        const response = await axios.get(
-          `https://admin.tis.edu.in/wp-json/wp/v2/posts?slug=${slug}`
-        );
-        const blogData = response.data.length > 0 ? response.data[0] : null;
-        setBlog(blogData);
-      } catch (error) {
-        console.error("Error fetching the blog post:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    if (slug) {
-      fetchBlog();
-    }
-  }, [slug]);
-
-  if (loading) {
-    return <div>Loading...</div>;
-  }
+// Define the Slug component
+const Slug = async ({ params }) => {
+  const blog = await getBlogData(params.slug);
 
   if (!blog) {
     return <div>Blog not found</div>;
@@ -81,5 +61,28 @@ const Slug = () => {
     </>
   );
 };
+
+// Generate static paths for all slugs
+export async function generateStaticParams() {
+  const response1 = await axios.get(
+    "https://admin.tis.edu.in/wp-json/wp/v2/posts?page=1&per_page=100"
+  );
+  const response2 = await axios.get(
+    "https://admin.tis.edu.in/wp-json/wp/v2/posts?page=2&per_page=100"
+  );
+  const response3 = await axios.get(
+    "https://admin.tis.edu.in/wp-json/wp/v2/posts?page=3&per_page=100"
+  );
+
+  const data1 = response1.data;
+  const data2 = response2.data;
+  const data3 = response3.data;
+  const data = data1.concat(data2, data3);
+
+  // Create paths based on the slugs
+  return data.map((blog) => ({
+    slug: blog.slug,
+  }));
+}
 
 export default Slug;
