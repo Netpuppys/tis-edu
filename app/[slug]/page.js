@@ -10,7 +10,8 @@ import Head from "next/head";
 // Fetch blog content statically
 async function getBlogData(slug) {
   const response = await axios.get(
-    `https://admin.tis.edu.in/wp-json/wp/v2/posts?slug=${slug}`
+    `https://admin.tis.edu.in/wp-json/wp/v2/posts?slug=${slug}`,
+    { timeout: 1000 }
   );
   return response.data.length > 0 ? response.data[0] : null;
 }
