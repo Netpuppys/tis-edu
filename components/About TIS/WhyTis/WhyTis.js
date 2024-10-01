@@ -55,7 +55,7 @@ export default function WhyTis() {
           </p2>
 
           <h4 className="what-makes">
-            What makes Tis students jumps<br></br> out of bed in the morning?
+            What makes TIS students jumps<br></br> out of bed in the morning?
           </h4>
         </div>
 

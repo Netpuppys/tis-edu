@@ -28,8 +28,13 @@ import "../../../../styles/home/components/activityGrid/ActivityGrid.css";
 
 function FourthSection() {
   const { isMobile } = useMobile();
-  const title =
-    "Our commitment to all-round development shines in diverse extracurricular activities.";
+  const title = (
+    <>
+      From football to archery, we offer{" "}
+      <strong style={{ fontSize: "30px" }}>16</strong> sports that teaches
+      teamwork, discipline, and confidence.
+    </>
+  );
   const subTitle = "( Our Students love that! )";
 
   const handleItemClick = (sectionName) => {

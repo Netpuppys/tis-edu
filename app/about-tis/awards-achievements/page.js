@@ -16,7 +16,6 @@ export default function AwardsAndArchievementsPage() {
           content="Discover the Best Boarding School in Dehradun, India - Tula's International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus."
         />
       </Head>
-
       <Navbar />
       <AcademicArchievements />
       <Footer />

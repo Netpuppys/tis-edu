@@ -22,14 +22,9 @@ export default function OurHousesystem() {
       <div className="house-main">
         <p className="house-main-text">
           <br />
-          Tula’s International School has four houses-Olympian House, Spartan
-          House, Trojan House and Titan House. These four houses have one aim in
-          common: to keep the spirit of the school motto alive and to turn
-          students into people of character and integrity who can make India
-          realise its potential as the most powerful nation on earth. The houses
-          take part in a variety of extracurricular and co-curricular
-          activities. A spirit of friendly rivalry is maintained no matter how
-          intense the competition.
+          There are seven houses - Olympian House, Spartan House, Trojan House,
+          Titan House, Starks House, Valkyrie House, and Athena House. These
+          seven houses have one aim in common.
         </p>
         <br />
         {isMobile && <Image src={houseMobile} alt="" className="house-photo" />}

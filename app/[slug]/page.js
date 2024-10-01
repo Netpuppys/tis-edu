@@ -1,38 +1,22 @@
 import React from "react";
-import axios from "axios";
+import Head from "next/head";
+import Navbar from "@/components/globalComponents/navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
 import "../globals.css";
 import "../../styles/QuickLinks/Blog.css";
 import "../../styles/globalComponents/Header/header.css";
-import Navbar from "../../components/globalComponents/navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
-import Head from "next/head";
 
-// Fetch blog content statically
-async function getBlogData(slug) {
-  const response = await axios.get(
-    `https://admin.tis.edu.in/wp-json/wp/v2/posts?slug=${slug}`,
-    { timeout: 1000 }
-  );
-  return response.data.length > 0 ? response.data[0] : null;
-}
-
-// Define the Slug component
-const Slug = async ({ params }) => {
-  const blog = await getBlogData(params.slug);
-
-  if (!blog) {
-    return <div>Blog not found</div>;
-  }
-
-  const headerImg = blog?.yoast_head_json?.og_image?.[0]?.url;
+// The main component for rendering the blog
+const Slug = ({ blog }) => {
+  const headerImg = blog.banner_img;
 
   return (
     <>
-      <Head>
-        <title>{blog?.yoast_head_json?.title}</title>
-        <meta name="description" content={blog?.yoast_head_json?.description} />
-      </Head>
       <Navbar />
+      <Head>
+        <title>{blog.title}</title>
+        <meta name="description" content={blog.meta_description} />
+      </Head>
       <div className="blog-page-container">
         <div className="header">
           <div
@@ -46,16 +30,27 @@ const Slug = async ({ params }) => {
           <div className="middle">
             <div className="top">
               <h2 className="top-heading">
-                {blog?.title?.rendered}
+                {blog.title}
                 <br />
               </h2>
             </div>
           </div>
         </div>
         <div className="blog-page-content">
-          <h3
-            dangerouslySetInnerHTML={{ __html: blog?.content?.rendered }}
-          ></h3>
+          {/* {tocItems.length > 0 && (
+            <div>
+              <h1>Table of Contents</h1>
+              <ul>
+                {tocItems.map((item) => (
+                  <li key={item.id}>
+                    {item.tagName === "h1" ? "-" : ""}
+                    <a href={`#${item.id}`}>{item.text}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )} */}
+          <h3 dangerouslySetInnerHTML={{ __html: blog.content }} />
         </div>
       </div>
       <Footer />
@@ -63,27 +58,48 @@ const Slug = async ({ params }) => {
   );
 };
 
-// Generate static paths for all slugs
-export async function generateStaticParams() {
-  const response1 = await axios.get(
-    "https://admin.tis.edu.in/wp-json/wp/v2/posts?page=1&per_page=100"
-  );
-  const response2 = await axios.get(
-    "https://admin.tis.edu.in/wp-json/wp/v2/posts?page=2&per_page=100"
-  );
-  const response3 = await axios.get(
-    "https://admin.tis.edu.in/wp-json/wp/v2/posts?page=3&per_page=100"
-  );
+export async function getStaticPaths() {
+  const res = await fetch(`https://blog.repsoft.in/api/v1/posts`); // Adjusted to fetch all posts
+  const { data } = await res.json();
 
-  const data1 = response1.data;
-  const data2 = response2.data;
-  const data3 = response3.data;
-  const data = data1.concat(data2, data3);
+  if (!Array.isArray(data)) {
+    return { paths: [], fallback: false }; // or handle differently
+  }
 
-  // Create paths based on the slugs
-  return data.map((blog) => ({
-    slug: blog.slug,
+  const paths = data.map((post) => ({
+    params: { slug: post.slug },
   }));
+
+  return { paths, fallback: "blocking" }; // adjust fallback based on your needs
 }
 
-export default Slug;
+// Fetch the blog data based on the slug
+export default async function SlugPage({ params }) {
+  let blog;
+
+  try {
+    const response = await fetch(
+      `https://blog.repsoft.in/api/v1/post?slug=${params.slug}`
+    );
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const blogs = await response.json();
+    console.log("API Response:", blogs); // Inspect the full response
+    blog = blogs.data.length > 0 ? blogs.data[0] : null;
+  } catch (error) {
+    return (
+      <div>
+        <h2>Error loading blog data</h2>
+        <p>{error.message}</p>
+      </div>
+    );
+  }
+
+  // Check if the blog is found
+  if (!blog) {
+    return <div>Blog not found</div>;
+  }
+
+  return <Slug blog={blog} />;
+}

@@ -88,9 +88,7 @@ export default function RootLayout({ children }) {
             }}
           ></iframe>
         </noscript>
-
-        <MobileProvider>
-          {children}</MobileProvider>
+        <MobileProvider>{children}</MobileProvider>
       </body>
     </html>
   );

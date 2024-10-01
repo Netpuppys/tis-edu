@@ -17,7 +17,6 @@ import Gaushala from "../../public/Celebrations/gaushala.webp";
 
 export default function Events() {
   const { isMobile } = useMobile();
-
   return (
     <>
       <Header

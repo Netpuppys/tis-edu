@@ -33,7 +33,7 @@ function Footer() {
         },
         {
           id: 3,
-          linkName: "Brouchure",
+          linkName: "Brochure",
           linkTo: Broucher,
         },
         {
@@ -144,7 +144,6 @@ function Footer() {
           <BottomBar />
         </>
       )}
-
       {isMobile && (
         <>
           <div className="header">
@@ -164,12 +163,7 @@ function Footer() {
               <div className="info-div">
                 <Image src={phoneIcon} className="icon" alt="phone" />
                 <p className="text">
-                  <a
-                    style={{ textDecoration: "none", color: "#fff" }}
-                    href="tel:+918108012525"
-                  >
-                    (+91) 8108012525
-                  </a>
+                  (+91) 8108012525
                   <br />
                   info@tis.edu.in
                 </p>

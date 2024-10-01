@@ -1,4 +1,3 @@
-import { MobileProvider } from "../../components/globalComponents/IsMobileContext";
 import "../globals.css";
 import Navbar from "../../components/globalComponents/navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
@@ -16,16 +15,14 @@ export default function blog() {
           content="Tula's International School One among top boarding, residential, CBSE, Co-ed boarding schools in Dehradun, Uttarakhand India. Visit blog for latest updates."
         />
       </Head>
-      <MobileProvider>
-        <Navbar />
-        <Header
-          headerImg={BlogsHeader}
-          title={"Blogs"}
-          subtitle={"This is TIS. Prepare to Launch."}
-        />
-        <Blog />
-        <Footer />
-      </MobileProvider>
+      <Navbar />
+      <Header
+        headerImg={BlogsHeader}
+        title={"Blogs"}
+        subtitle={"This is TIS. Prepare to Launch."}
+      />
+      <Blog />
+      <Footer />
     </>
   );
 }

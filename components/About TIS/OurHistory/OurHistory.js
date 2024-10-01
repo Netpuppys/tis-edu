@@ -137,7 +137,7 @@ export default function OurHistory() {
 
         <br></br>
         <div className="ready-div">
-          <h1 className="ready">Ready to see if TULA”s is made for you?</h1>
+          <h1 className="ready">Ready to see if TULA’S is made for you?</h1>
           <button id="extraedge-popup2" className="Start">
             START YOUR JOURNEY TODAY!
           </button>

@@ -23,8 +23,8 @@ import TableTennis from "./Sports/TableTennis";
 import Throwball from "./Sports/Throwball";
 
 function Sport() {
-  const searchParams = useSearchParams(); // Get search parameters (for hash)
-  const locationHash = searchParams.get("#");
+  // const searchParams = useSearchParams(); // Get search parameters (for hash)
+  // const locationHash = searchParams.get("#");
   const archieryRef = useRef(null);
   const cyclingRef = useRef(null);
   const hockeyRef = useRef(null);
@@ -66,11 +66,11 @@ function Sport() {
     []
   );
 
-  useEffect(() => {
-    if (locationHash && refs[locationHash]) {
-      refs[locationHash].current.scrollIntoView({ behavior: "smooth" });
-    }
-  }, [locationHash, refs]);
+  // useEffect(() => {
+  //   if (locationHash && refs[locationHash]) {
+  //     refs[locationHash].current.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // }, [locationHash, refs]);
 
   return (
     <>

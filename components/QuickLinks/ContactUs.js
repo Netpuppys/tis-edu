@@ -1,14 +1,14 @@
 "use client";
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Header from "../globalComponents/Header/Header";
 import HeaderContactImg from "../../public/Header/ContactUsHeader.png";
 import "../../styles/QuickLinks/ContactStyle.css";
 
 const ContactUs = () => {
-  const serviceId = "service_2seepv9";
+  const serviceId = "service_p0danx3";
   const templateId = "template_z6cckyl";
   const publicKey = "cZ_xcJGz4SpnoKOE8";
 
@@ -44,12 +44,11 @@ const ContactUs = () => {
       .send(serviceId, templateId, templateParams, {
         publicKey: publicKey,
       })
-
       .then((response) => {
-        console.log("SUCCESS!", response.status, response.text);
-
-        // alert('Message sent successfully!');
-        toast("Thank you for showing interest. We shall get in touch soon.");
+        //alert("Message sent successfully!");
+        toast.success(
+          "Thank you for showing interest. We shall get in touch soon."
+        );
 
         setFormData({
           name: "",
@@ -60,9 +59,7 @@ const ContactUs = () => {
         });
       })
       .catch((error) => {
-        console.log("FAILED...", error);
-
-        alert("Message failed to send.");
+        toast.error("Message failed to send.");
       });
   };
   return (
@@ -148,6 +145,7 @@ const ContactUs = () => {
           </button>
         </div>
       </form>
+      <ToastContainer />
     </>
   );
 };

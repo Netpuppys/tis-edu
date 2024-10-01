@@ -16,7 +16,7 @@ import Higher from "../../../../public/Home/Awards/HIGHER.jpg";
 function AwardSection() {
   const { isMobile } = useMobile();
   const title =
-    "Awards and achievements, gleaming in sight, Honor efforts and perseverance in flight.";
+    "We believe in celebrating the hard work and perseverance of the best!";
   const subTitle = "(Everybody Loves that)";
 
   const initialActivities = [

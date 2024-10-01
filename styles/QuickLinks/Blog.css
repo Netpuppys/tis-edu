@@ -1,6 +1,7 @@
 .blog-container {
   margin: 5rem auto;
   width: 65%;
+  position: relative;
 }
 
 .card-grid {

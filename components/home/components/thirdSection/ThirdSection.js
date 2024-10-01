@@ -6,8 +6,8 @@ import madeForFuture from "../../../../public/pictures/madeForFuture.png";
 import "../../../../styles/home/components/thirdSection/ThirdSection.css";
 import Image from "next/image";
 function ThirdSection() {
-  const title1 = "(We are Supported and Inspired)";
-  const title2 = "(Prepared to thrive!)";
+  const title1 = "We are Supported and Inspired";
+  const title2 = "Prepared to thrive!";
 
   const para1 =
     "Whether it's academics, music, art, or drama, Tula's is best at unlocking the potential of students. We help our students to bring out their creative sides. We are more than just a school. Instead, TIS is a canvas of opportunities.";

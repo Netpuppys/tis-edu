@@ -10,10 +10,6 @@ import volume2 from "../../public/MandatoryPDF/volume2.pdf";
 import volume1 from "../../public/MandatoryPDF/Volume1.pdf";
 import Image from "next/image";
 const Newsletter = () => {
-  const openPdf = (pdf) => {
-    window.open(pdf, "_blank");
-  };
-
   return (
     <>
       <div>
@@ -39,7 +35,7 @@ const Newsletter = () => {
             </div>
             <button
               className="newsletter-btn"
-              onClick={() => openPdf(April2018)}
+              onClick={() => window.open(April2018, "_blank")}
             >
               DOWNLOAD PDF
             </button>
@@ -48,7 +44,10 @@ const Newsletter = () => {
             <div className="newscard" style={{ background: "#FFFF" }}>
               <Image src={newsletter} alt="newsletter" />
             </div>
-            <button className="newsletter-btn" onClick={() => openPdf(Nov2018)}>
+            <button
+              className="newsletter-btn"
+              onClick={() => window.open(Nov2018, "_blank")}
+            >
               DOWNLOAD PDF
             </button>
           </div>
@@ -56,7 +55,10 @@ const Newsletter = () => {
             <div className="newscard" style={{ background: "#B90124" }}>
               <Image src={newsletter} alt="newsletter" />
             </div>
-            <button className="newsletter-btn" onClick={() => openPdf(volume3)}>
+            <button
+              className="newsletter-btn"
+              onClick={() => window.open(volume3, "_blank")}
+            >
               DOWNLOAD PDF
             </button>
           </div>
@@ -70,7 +72,10 @@ const Newsletter = () => {
             <div className="newscard" style={{ background: "#B90124" }}>
               <Image src={newsletter} alt="newsletter" />
             </div>
-            <button className="newsletter-btn" onClick={() => openPdf(volume2)}>
+            <button
+              className="newsletter-btn"
+              onClick={() => window.open(volume2, "_blank")}
+            >
               DOWNLOAD PDF
             </button>
           </div>
@@ -83,7 +88,10 @@ const Newsletter = () => {
             <div className="newscard" style={{ background: "#B90124" }}>
               <Image src={newsletter} alt="newsletter" />
             </div>
-            <button className="newsletter-btn" onClick={() => openPdf(volume1)}>
+            <button
+              className="newsletter-btn"
+              onClick={() => window.open(volume1, "_blank")}
+            >
               DOWNLOAD PDF
             </button>
           </div>

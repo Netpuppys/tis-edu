@@ -203,7 +203,11 @@ const Navbar = () => {
           <FaPhone className="phone-icon" />
           ADMISSION HELPLINE NO. +91-8108012525
         </a>
-        <button id="extraedge-popup7" className="enquire">
+        <button
+          id="extraedge-popup7"
+          className="enquire"
+          style={{ opacity: "0" }}
+        >
           Enquire Now
         </button>
       </div>
@@ -211,7 +215,6 @@ const Navbar = () => {
         <Link href="/" passHref>
           <Image src={schoolLogo} className="second-nav-logo" alt="school" />
         </Link>
-
         <div className="navbar-list-main">
           {sitemap.map((item, index) => (
             <div
@@ -281,10 +284,13 @@ const Navbar = () => {
 
       {isMobile && (
         <div className="bottom-bar-all-pages">
-          <button id="extraedge-popup8" className="bottom-enquire">
+          <button
+            id="extraedge-popup8"
+            className="bottom-enquire"
+            style={{ opacity: "0" }}
+          >
             Enquire Now
           </button>
-
           <div className="phone-div-bottom-bar">
             <a className="bottom-phone-number" href="tel:+918108012525">
               <FaPhone className="bottom-phone-icon" /> +91-8108012525
