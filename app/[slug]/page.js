@@ -85,7 +85,6 @@ export default async function SlugPage({ params }) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const blogs = await response.json();
-    console.log("API Response:", blogs); // Inspect the full response
     blog = blogs.data.length > 0 ? blogs.data[0] : null;
   } catch (error) {
     return (
