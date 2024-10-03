@@ -106,7 +106,7 @@
 
 .blog-page-content h3 {
   width: 80%;
-  margin: 3rem auto;
+  margin: 5rem auto;
   font-family: PF din Display100;
   font-size: 27px;
   font-weight: 200;
@@ -206,13 +206,20 @@
     font-size: 15px;
     line-height: 20px;
   }
-  .blog-page-content h3 h1,
+  .blog-page-content h3 h1 {
+    margin-block-start: 0em;
+    margin-block-end: 0.4em;
+    line-height: normal;
+  }
   .blog-page-content h3 h2,
   .blog-page-content h3 p,
+  .blog-page-content h3 h3,
   .blog-page-content h3 h4 {
-    margin-block-start: 0.4em;
-    margin-block-end: 0.4em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    line-height: normal;
   }
+
   .blog-page-content th,
   .blog-page-content td {
     border: 1px solid #ddd;
