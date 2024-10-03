@@ -104,7 +104,7 @@
   margin: 0px;
 }
 
-.blog-page-content h3 {
+.blog-page-content .content-div-blog {
   width: 80%;
   margin: 5rem auto;
   font-family: PF din Display100;
@@ -113,30 +113,30 @@
   letter-spacing: 0.03em;
   line-height: 35px;
 }
-.blog-page-content h3 h3 {
+.blog-page-content .content-div-blog h3 {
   width: 100%;
   margin: 0rem auto;
   font-weight: 900;
 }
-.blog-page-content h3 h1 {
+.blog-page-content .content-div-blog h1 {
   margin-block-start: 0em;
   margin-block-end: 0.6em;
   line-height: normal;
 }
-.blog-page-content h3 ol {
+.blog-page-content .content-div-blog ol {
   margin-block-start: 0em;
   margin-block-end: 0em;
   line-height: normal;
 }
-.blog-page-content h3 h2,
-.blog-page-content h3 p,
-.blog-page-content h3 h3,
-.blog-page-content h3 h4 {
+.blog-page-content .content-div-blog h2,
+.blog-page-content .content-div-blog p,
+.blog-page-content .content-div-blog h3,
+.blog-page-content .content-div-blog h4 {
   margin-block-start: 0em;
   margin-block-end: 0em;
   line-height: normal;
 }
-.blog-page-content h3 img {
+.blog-page-content .content-div-blog img {
   width: 60%;
   height: auto;
   display: flex;
@@ -165,7 +165,7 @@
   .load-more {
     font-size: 24px;
   }
-  .blog-page-content h3 {
+  .blog-page-content .content-div-blog {
     font-size: 24px;
   }
 }
@@ -200,24 +200,24 @@
     grid-template-columns: repeat(1, minmax(250px, 1fr));
     gap: 1rem;
   }
-  .blog-page-content h3 {
+  .blog-page-content .content-div-blog {
     width: 90%;
     margin: 2rem auto;
     font-size: 15px;
     line-height: 20px;
   }
-  .blog-page-content h3 ol {
+  .blog-page-content .content-div-blog ol {
     padding-inline-start: 20px;
   }
-  .blog-page-content h3 h1 {
+  .blog-page-content .content-div-blog h1 {
     margin-block-start: 0em;
     margin-block-end: 0.4em;
     line-height: normal;
   }
-  .blog-page-content h3 h2,
-  .blog-page-content h3 p,
-  .blog-page-content h3 h3,
-  .blog-page-content h3 h4 {
+  .blog-page-content .content-div-blog h2,
+  .blog-page-content .content-div-blog p,
+  .blog-page-content .content-div-blog h3,
+  .blog-page-content .content-div-blog h4 {
     margin-block-start: 0em;
     margin-block-end: 0em;
     line-height: normal;

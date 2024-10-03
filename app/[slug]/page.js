@@ -50,7 +50,7 @@ const Slug = ({ blog }) => {
               </ul>
             </div>
           )} */}
-          <h3 dangerouslySetInnerHTML={{ __html: blog.content }} />
+          <div className="content-div-blog" dangerouslySetInnerHTML={{ __html: blog.content }} />
         </div>
       </div>
       <Footer />
