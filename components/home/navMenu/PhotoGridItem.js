@@ -5,10 +5,10 @@ import Link from "next/link";
 function PhotoGridItem({ image, title, path }) {
   return (
     <div className="navmenu-photo-grid-item">
-      <Link href={path} passHref>
+      <a href={path} passHref>
         <Image src={image} className="image" alt="TIS" />
         <p className="title">{title}</p>
-      </Link>
+      </a>
     </div>
   );
 }

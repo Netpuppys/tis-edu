@@ -32,6 +32,7 @@
 }
 .fees-structure {
   width: 80%;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5rem;
@@ -135,6 +136,9 @@
     font-size: 15px;
     line-height: 20px;
     margin-bottom: 1rem;
+  }
+  .fees-structure {
+    display: block;
   }
   .feeee .redboxBank span {
     font-size: 20px;

@@ -38,11 +38,7 @@ function Footer() {
         },
         {
           id: 4,
-          linkName: (
-            <button id="extraedge-popup6" className="prospectus">
-              E-Prospectus
-            </button>
-          ),
+          linkName: "E-Prospectus",
         },
         {
           id: 5,
@@ -147,9 +143,9 @@ function Footer() {
       {isMobile && (
         <>
           <div className="header">
-            <Link href="/">
+            <a href="/">
               <Image src={footerLogoMobile} className="logo" alt="TIS" />
-            </Link>
+            </a>
             <div className="right">
               <div className="info-div">
                 <Image src={markerIcon} className="icon" alt="point" />

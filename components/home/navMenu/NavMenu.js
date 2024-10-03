@@ -32,25 +32,25 @@ function NestedLinkElements({ navlinks, setNestedLinksVisible }) {
                 className="link-item"
                 onClick={() => setSuperNestedLinksVisible((prev) => !prev)}
               >
-                <Link href={item.linkTo || "#"} className="links">
+                <a href={item.linkTo || "#"} className="links">
                   {item.title}
                   {item.nestedLinks && item.nestedLinks.length > 0 && (
                     <IoAddSharp className="expand-icon" />
                   )}
-                </Link>
+                </a>
 
                 {item.nestedLinks &&
                   item.nestedLinks.length > 0 &&
                   superNestedLinksVisible && (
                     <div className="nested-links-dropdown">
                       {item.nestedLinks.map((nestedItem, index) => (
-                        <Link
+                        <a
                           key={index}
                           href={nestedItem.linkTo || "#"}
                           className="super-nested-link-item"
                         >
                           -{nestedItem.title}
-                        </Link>
+                        </a>
                       ))}
                     </div>
                   )}
@@ -205,10 +205,10 @@ function NavMenu({ handleMenuBtn }) {
           ) : (
             <>
               <ul>
-                <li className="list-item-home">
-                  <Link href="/" onClick={handleMenuBtn} className="list-item">
+                <li className="listed-item-home">
+                  <a href="/" onClick={handleMenuBtn} className="listed-item">
                     Home
-                  </Link>
+                  </a>
                 </li>
                 {sitemap.map((item, index) => (
                   <li
@@ -217,7 +217,7 @@ function NavMenu({ handleMenuBtn }) {
                   >
                     <p
                       onClick={() => toggleNestedLinks(index)}
-                      className="list-item"
+                      className="listed-item"
                     >
                       {item.title}
                       <FaLongArrowAltRight className="arrow-icon" />

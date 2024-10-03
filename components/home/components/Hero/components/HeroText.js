@@ -15,11 +15,11 @@ function HeroText(props) {
   return (
     <div className="base-main-div">
       <div className="text-div">
-        <p className={isFilledText ? "top-text" : "top-text border"}>
+        <p className={isFilledText ? "top-text" : "top-text border-text"}>
           LET&apos;S DO <span>it</span>
         </p>
-        <p className={isFilledText ? "mid-text" : "mid-text border"}>with</p>
-        <p className={isFilledText ? "bottom-text" : "bottom-text border"}>
+        <p className={isFilledText ? "mid-text" : "mid-text border-text"}>with</p>
+        <p className={isFilledText ? "bottom-text" : "bottom-text border-text"}>
           {" "}
           Tula&apos;s
           <Image

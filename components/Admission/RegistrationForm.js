@@ -92,13 +92,12 @@ export default function RegistrationForm() {
             <br />
             <br />
             School Fees can be deposited by Cash or Bank Transfer,{" "}
-            <Link
+            <a
               href={"/admission-procedure/fee-structure/"}
               style={{ color: "#B90124" }}
-              passHref
             >
               click here
-            </Link>{" "}
+            </a>{" "}
             for Bank Account Details.
           </p>
           <br />

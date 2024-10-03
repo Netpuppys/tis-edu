@@ -107,26 +107,20 @@
 .blog-page-content .content-div-blog {
   width: 80%;
   margin: 5rem auto;
-  font-family: PF din Display100;
-  font-size: 27px;
-  font-weight: 200;
-  letter-spacing: 0.03em;
-  line-height: 35px;
 }
 .blog-page-content .content-div-blog h3 {
   width: 100%;
   margin: 0rem auto;
   font-weight: 900;
 }
-.blog-page-content .content-div-blog h1 {
-  margin-block-start: 0em;
-  margin-block-end: 0.6em;
-  line-height: normal;
-}
+
 .blog-page-content .content-div-blog ol {
   margin-block-start: 0em;
   margin-block-end: 0em;
   line-height: normal;
+  list-style: decimal;
+  font-size: 27px;
+  padding-inline-start: 40px;
 }
 .blog-page-content .content-div-blog h2,
 .blog-page-content .content-div-blog p,
@@ -134,8 +128,36 @@
 .blog-page-content .content-div-blog h4 {
   margin-block-start: 0em;
   margin-block-end: 0em;
+  font-size: 27px;
   line-height: normal;
 }
+.blog-page-content .content-div-blog a {
+  color: #b90124;
+}
+.blog-page-content .content-div-blog h1 {
+  margin-block-start: 0em;
+  margin-block-end: 0.6em;
+  line-height: normal;
+  font-family: PF din Display;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  font-size: 50px;
+}
+.blog-page-content .content-div-blog h2 {
+  font-family: PF din Display;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  font-size: 40px;
+  line-height: normal;
+}
+.blog-page-content .content-div-blog h3 {
+  font-family: PF din Display;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  font-size: 30px;
+  line-height: normal;
+}
+
 .blog-page-content .content-div-blog img {
   width: 60%;
   height: auto;
@@ -165,8 +187,20 @@
   .load-more {
     font-size: 24px;
   }
-  .blog-page-content .content-div-blog {
+  .blog-page-content .content-div-blog ol,
+  .blog-page-content .content-div-blog p,
+  .blog-page-content .content-div-blog h4 {
     font-size: 24px;
+  }
+
+  .blog-page-content .content-div-blog h1 {
+    font-size: 45px;
+  }
+  .blog-page-content .content-div-blog h2 {
+    font-size: 30px;
+  }
+  .blog-page-content .content-div-blog h3 {
+    font-size: 27px;
   }
 }
 @media (max-width: 1400px) {
@@ -203,24 +237,29 @@
   .blog-page-content .content-div-blog {
     width: 90%;
     margin: 2rem auto;
+  }
+
+  .blog-page-content .content-div-blog ol,
+  .blog-page-content .content-div-blog p,
+  .blog-page-content .content-div-blog h4 {
     font-size: 15px;
-    line-height: 20px;
   }
-  .blog-page-content .content-div-blog ol {
-    padding-inline-start: 20px;
-  }
+
   .blog-page-content .content-div-blog h1 {
+    font-size: 28px;
     margin-block-start: 0em;
     margin-block-end: 0.4em;
     line-height: normal;
   }
-  .blog-page-content .content-div-blog h2,
-  .blog-page-content .content-div-blog p,
-  .blog-page-content .content-div-blog h3,
-  .blog-page-content .content-div-blog h4 {
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    line-height: normal;
+  .blog-page-content .content-div-blog h2 {
+    font-size: 22px;
+  }
+  .blog-page-content .content-div-blog h3 {
+    font-size: 20px;
+  }
+
+  .blog-page-content .content-div-blog ol {
+    padding-inline-start: 20px;
   }
 
   .blog-page-content th,

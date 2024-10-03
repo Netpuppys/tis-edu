@@ -24,26 +24,25 @@ function MobileNestedLinkElements({ title, navlinks, setNestedLinksVisible }) {
                 className="link-item"
                 onClick={() => setSuperNestedLinksVisible((prev) => !prev)}
               >
-                <Link href={item.linkTo} className="links" passHref>
+                <a href={item.linkTo} className="links" passHref>
                   {item.title}
                   {item.nestedLinks && item.nestedLinks.length > 0 && (
                     <IoAddSharp className="expand-icon" />
                   )}
-                </Link>
+                </a>
 
                 {item.nestedLinks &&
                   item.nestedLinks.length > 0 &&
                   superNestedLinksVisible && (
                     <div className="nested-links-dropdown">
                       {item.nestedLinks.map((nestedItem, index) => (
-                        <Link
+                        <a
                           href={nestedItem.linkTo}
                           key={index}
                           className="super-nested-link-item"
-                          passHref
                         >
                           -{nestedItem.title}
-                        </Link>
+                        </a>
                       ))}
                     </div>
                   )}

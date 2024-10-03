@@ -9,13 +9,13 @@ function BottomBar() {
         Copyright © 2024 Tula&apos;s International School, Dehradun | All Rights
         Reserved <br />
         Designed and Managed By{" "}
-        <Link
+        <a
           style={{ textDecoration: "none", color: "#fff" }}
           href={"https://netpuppys.com"}
           passHref
         >
           NetPuppys
-        </Link>{" "}
+        </a>{" "}
       </p>
       <CompanySocials />
     </div>

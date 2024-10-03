@@ -83,9 +83,9 @@ function ParentsReviews() {
             alt="Next"
           /> */}
           <div className="background">
-            <Link href={parents[selectedParent].path} passHref>
+            <a href={parents[selectedParent].path}>
               <Image src={parent} alt="" />
-            </Link>
+            </a>
           </div>
         </div>
       )}

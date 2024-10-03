@@ -85,7 +85,7 @@
   gap: 2.5rem;
 }
 
-.navbar-main-div-global .navbar-list-main .main-list-item {
+.navbar-main-div-global .navbar-list-main .main-listed-item {
   height: 4.5rem;
   padding: none;
   width: fit-content;
@@ -107,7 +107,7 @@
   height: 40%;
 }
 
-.navbar-main-div-global .navbar-list-main .main-list-item .link {
+.navbar-main-div-global .navbar-list-main .main-listed-item .link {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -218,7 +218,7 @@
   cursor: pointer;
 }
 
-.navbar-main-div-global .navbar-list-main .main-list-item:hover .yellow-line {
+.navbar-main-div-global .navbar-list-main .main-listed-item:hover .yellow-line {
   transform: translateY(-0.2rem);
   animation: showUp 0.2s linear;
   display: block;
@@ -273,7 +273,7 @@
   justify-self: center;
 }
 
-.navbar-main-div-global .dropdown-container .dropdown .list-item {
+.navbar-main-div-global .dropdown-container .dropdown .listed-item {
   box-sizing: border-box;
   margin: none;
   padding: none;
@@ -284,12 +284,12 @@
   position: relative;
 }
 
-.dropdown .list-item:hover {
+.dropdown .listed-item:hover {
   background-color: #b90124;
   color: #fff;
 }
 
-.navbar-main-div-global .dropdown-container .dropdown .list-item .link {
+.navbar-main-div-global .dropdown-container .dropdown .listed-item .link {
   width: fit-content;
   height: 100%;
   cursor: pointer;
@@ -311,7 +311,7 @@
 .navbar-main-div-global
   .dropdown-container
   .dropdown
-  .list-item
+  .listed-item
   .link
   .nested-link-title {
   padding: 0;
@@ -356,7 +356,7 @@
 .navbar-main-div-global
 .dropdown-container
 .dropdown
-.list-item:hover .link
+.listed-item:hover .link
 .nested-link-title{
   color: #b90124;
 } */
@@ -364,7 +364,7 @@
 .navbar-main-div-global
   .dropdown-container
   .dropdown
-  .list-item:hover
+  .listed-item:hover
   .super-nested-links {
   display: block;
 }
@@ -372,7 +372,7 @@
 .navbar-main-div-global
   .dropdown-container
   .dropdown
-  .list-item
+  .listed-item
   .super-nested-links {
   display: none;
   position: absolute;
@@ -448,7 +448,7 @@
   .navbar-main-div-global
     .dropdown-container
     .dropdown
-    .list-item
+    .listed-item
     .link
     .nested-link-title {
     font-size: 0.8rem;
@@ -460,7 +460,7 @@
     font-weight: 100;
     font-size: 0.8rem;
   }
-  .navbar-main-div-global .dropdown-container .dropdown .list-item {
+  .navbar-main-div-global .dropdown-container .dropdown .listed-item {
     padding: 0.5rem 0.8rem;
   }
 }
@@ -475,7 +475,7 @@
   .navbar-main-div-global
     .dropdown-container
     .dropdown
-    .list-item
+    .listed-item
     .link
     .nested-link-title {
     font-size: 0.6rem;
@@ -484,7 +484,7 @@
     font-weight: 100;
     font-size: 0.6rem;
   }
-  .navbar-main-div-global .dropdown-container .dropdown .list-item {
+  .navbar-main-div-global .dropdown-container .dropdown .listed-item {
     padding: 0.3rem 0.5rem;
   }
 }

@@ -141,13 +141,12 @@ function TutionAndFianance() {
             referred by our proud Alumna & Alumni. To avail concession, kindly
             email an admission request with Name & Batch Year of our Alumni &
             Alumna. Email at{" "}
-            <Link
+            <a
               style={{ color: "#B90124" }}
               href={"mailto:robin.chhetri@tis.edu.in"}
-              passHref
             >
               robin.chhetri@tis.edu.in
-            </Link>
+            </a>
             <br />
             <br />
             <span>*Note - </span>
@@ -166,13 +165,12 @@ function TutionAndFianance() {
             scholarship program with limited seat for 20 Students.
             <br />
             5. Parent’s need to email Dean of Admissions{" "}
-            <Link
+            <a
               style={{ color: "#B90124" }}
               href={"mailto:robin.chhetri@tis.edu.in"}
-              passHref
             >
               (robin.chhetri@tis.edu.in)
-            </Link>{" "}
+            </a>{" "}
             to avail Tula’s Concession policy.
             <br />
             6. Child need to qualify for

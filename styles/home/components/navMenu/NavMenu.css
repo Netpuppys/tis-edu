@@ -78,7 +78,7 @@
   cursor: pointer;
 }
 
-.nav-menu-main-div .left-div ul li .list-item {
+.nav-menu-main-div .left-div ul li .listed-item {
   width: 78.5%;
   height: 100%;
   display: flex;
@@ -86,7 +86,7 @@
   align-items: center;
 }
 
-.nav-menu-main-div .left-div ul .list-item-home .list-item {
+.nav-menu-main-div .left-div ul .listed-item-home .listed-item {
   color: #b90124;
   /* font-size: 4rem; */
   font-weight: 600;

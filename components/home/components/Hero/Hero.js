@@ -77,7 +77,7 @@ function Hero(props) {
 
   // increase mevementFactor to make bubbles move less or more.
   // highier the number lesser the movement on screen and visa versa
-  const movementFactor = 30;
+  const movementFactor = 15;
   const movementX =
     !isMobile && calculateMovement("x", 1, position.x / movementFactor);
   const movementY =

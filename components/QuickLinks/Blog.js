@@ -80,7 +80,7 @@ const Blog = () => {
               : ""; // Fallback if title is not available
 
             return (
-              <Link href={`/${blog.slug}`} key={blog.slug} passHref>
+              <a href={`/${blog.slug}`} key={blog.slug}>
                 <div>
                   <div className="card-wrapper">
                     <Image
@@ -96,7 +96,7 @@ const Blog = () => {
                     </div>
                   </div>
                 </div>
-              </Link>
+              </a>
             );
           })}
         </div>

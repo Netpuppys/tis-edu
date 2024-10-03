@@ -53,30 +53,27 @@ export default function Careers() {
           <h2>
             Current <span>Openings</span>
           </h2>
-          <Link
+          <a
             href={
               "https://docs.google.com/forms/d/e/1FAIpQLScv3l4HsHajZk-XUrKmgdf7ZDKp2noRUbSBffG47pjDG1bF6g/viewform"
             }
-            passHref
           >
             Faculty Positions
-          </Link>
-          <Link
+          </a>
+          <a
             href={
               "https://docs.google.com/forms/d/e/1FAIpQLScv3l4HsHajZk-XUrKmgdf7ZDKp2noRUbSBffG47pjDG1bF6g/viewform"
             }
-            passHref
           >
             Non-Faculty Positions
-          </Link>
-          <Link
+          </a>
+          <a
             href={
               "https://docs.google.com/forms/d/e/1FAIpQLScv3l4HsHajZk-XUrKmgdf7ZDKp2noRUbSBffG47pjDG1bF6g/viewform"
             }
-            passHref
           >
             Faculty - General Inquiries
-          </Link>
+          </a>
           <br />
           <br />
           <br />

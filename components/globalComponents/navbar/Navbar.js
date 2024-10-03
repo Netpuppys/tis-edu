@@ -175,7 +175,7 @@ const Navbar = () => {
   const renderNestedLinks = (nestedLinks) => (
     <div className="dropdown">
       {nestedLinks.map((nestedItem, nestedIndex) => (
-        <div className="list-item" key={nestedIndex}>
+        <div className="listed-item" key={nestedIndex}>
           <a href={nestedItem?.linkTo} style={{ color: "#fff" }} passHref>
             <div className="title-arrow">
               <p className="nested-link-title">{nestedItem?.title}</p>
@@ -212,13 +212,13 @@ const Navbar = () => {
         </button>
       </div>
       <nav className={`navbar-main-div-global scrolled`}>
-        <Link href="/" passHref>
+        <a href="/">
           <Image src={schoolLogo} className="second-nav-logo" alt="school" />
-        </Link>
+        </a>
         <div className="navbar-list-main">
           {sitemap.map((item, index) => (
             <div
-              className="main-list-item"
+              className="main-listed-item"
               key={index}
               onMouseEnter={() => handleMenuHover(index)}
               onMouseLeave={() => handleMenuLeave()}

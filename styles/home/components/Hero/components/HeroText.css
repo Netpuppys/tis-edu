@@ -76,14 +76,14 @@
   margin-right: auto;
 }
 
-.base-main-div .text-div .border {
+.base-main-div .text-div .border-text {
   color: transparent;
   text-shadow: none;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
 }
 
-.base-main-div .text-div .border span {
+.base-main-div .text-div .border-text span {
   color: transparent;
   text-shadow: none;
   -webkit-text-stroke-width: 1px;
