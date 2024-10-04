@@ -56,9 +56,9 @@ const ContactUs = () => {
           Give Us A Shout-Out And Feel Free To Ask Anything That Interests
         </p>
       </div>
-      <div className="h-fit z-50 w-fit mb-8 mx-auto p-2 bg-[#B90124] md:bg-transparent flex flex-col gap-4 md:gap-0 md:flex-row">
-        <div className="w-full md:w-[491px] h-fit md:h-[784px] flex flex-col overflow-hidden justify-between bg-transparent md:bg-[#B90124] rounded-xl p-5 md:p-10">
-          <div className="w-fit mb-8 md:mb-0 h-fit">
+      <div className="h-fit z-50 w-fit mb-8 mx-auto p-2 bg-[#B90124] md:bg-transparent flex flex-col items-center gap-4 md:gap-0 md:flex-row">
+        <div className="w-full md:w-[491px] h-fit md:h-[784px] relative flex flex-col overflow-hidden justify-start gap-20 bg-transparent md:bg-[#B90124] rounded-xl p-5 md:p-10">
+          <div className="w-fit z-20 mb-8 md:mb-0 h-fit">
             <h3 className="text-[25px] md:text-[35px] font-bold tracking-wide text-white">
               Contact Information
             </h3>
@@ -72,7 +72,7 @@ const ContactUs = () => {
             </h4>
           </div>
           <div
-            className="w-fit h-fit text-[14px] md:text-[18px] relative md:bottom-[100px]"
+            className="w-fit z-20 h-fit text-[14px] md:text-[18px] relative"
             style={{ fontFamily: "TT Chocolates" }}
           >
             <a
@@ -102,9 +102,11 @@ const ContactUs = () => {
               </span>
             </a>
           </div>
-          <div className="hidden md:block relative">
-            <div className="w-[138px] h-[138px] rounded-full bg-[#FF8686] bg-opacity-50 absolute bottom-14 z-10 right-14"></div>
-            <div className="w-[269px] h-[269px] absolute -bottom-[100px] -right-[90px] rounded-full bg-[#DB002A]"></div>
+          <div className="absolute bottom-0 right-0">
+            <div className="relative">
+              <div className="w-[138px] h-[138px] rounded-full bg-[#FF8686] bg-opacity-50 absolute bottom-14 z-10 right-14"></div>
+              <div className="w-[269px] h-[269px] absolute -bottom-[100px] -right-[90px] rounded-full bg-[#DB002A]"></div>
+            </div>
           </div>
         </div>
         <div className="w-full md:w-[491px]">

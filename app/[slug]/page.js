@@ -73,6 +73,19 @@ export async function getStaticPaths() {
   return { paths, fallback: "blocking" }; // adjust fallback based on your needs
 }
 
+export async function generateStaticParams() {
+  const res = await fetch(`https://blog.repsoft.in/api/v1/posts`);
+  const { data } = await res.json();
+
+  if (!Array.isArray(data)) {
+    return [];
+  }
+
+  return data.map((post) => ({
+    slug: post.slug,
+  }));
+}
+
 // Fetch the blog data based on the slug
 export default async function SlugPage({ params }) {
   let blog;
