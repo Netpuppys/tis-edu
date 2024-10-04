@@ -53,6 +53,18 @@ const Slug = () => {
   const formattedDate = formatDate(blog?.created_at);
   const headerImg = blog?.banner_img;
 
+  const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const offsetTop = element.getBoundingClientRect().top + window.pageYOffset - 100; // Offset by 100px
+      window.scrollTo({
+        top: offsetTop,
+        behavior: "smooth"
+      });
+    }
+  };
+  
+
   return (
     <>
       <Navbar />
@@ -91,7 +103,7 @@ const Slug = () => {
             <h1 className="text-[28px] md:text-[45px] text-[#b90124] font-[600]">Table of Contents</h1>
             <ul>
               {tocItems?.map((item) => (
-                <li key={item.id} className={`hover:text-[#b90124]
+                <li key={item.id} className={`hover:text-[#b90124] cursor-pointer
                 ${
                   item.tagName === "h1"
                     ? "text-[24px] md:text-[32px] ml-5 md:ml-10"
@@ -103,7 +115,8 @@ const Slug = () => {
                   }`}>
                   {item.tagName === "h1" ? "-" : ""}
                   <a
-                    href={`#${item.id}`}
+                    onClick={() => handleScroll(item.id)}
+                    // href={`#${item.id}`}
                     
                         >
                           {item.text}
