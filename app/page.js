@@ -1,5 +1,4 @@
 "use client";
-import Head from "next/head";
 import Footer from "../components/Footer/Footer";
 import HomePage from "../components/Pages/Home/Home";
 import Navbar from "../components/globalComponents/navbar/Navbar";
@@ -8,7 +7,7 @@ import "../app/globals.css";
 export default function Home() {
   return (
     <>
-      <Head>
+      <head>
         <title>
           Best Boarding School in Dehradun, India | Tula&apos;s International
           School
@@ -21,7 +20,7 @@ export default function Home() {
           name="google-site-verification"
           content="45l-c_yntJwqdKfX55egBlZhXwd2-u6Cz8sVHUWOvDM"
         />
-      </Head>
+      </head>
       <Navbar />
       <HomePage />
       <Footer />
