@@ -166,11 +166,11 @@ function FourthSection() {
   return (
     <div className="fourth-section-main-div" id="4">
       <div className="title-div">
-        <p1 className="Sportstitle">Sports</p1>
+        <p className="Sportstitle">Sports</p>
         <br />
-        <p1 className="title">{title}</p1>
+        <p className="title">{title}</p>
         <br />
-        <p2 className="sub-title">{subTitle}</p2>
+        <p className="sub-title">{subTitle}</p>
       </div>
       <div className="activities-div">
         {activity.slice(0, 3).map((activityItem, index) => (
@@ -185,23 +185,23 @@ function FourthSection() {
             }}
           >
             <div className="title-div-card">
-              <p1
+              <div
                 className="card-description"
                 style={{ display: "flex", justifyContent: "space-between" }}
               >
-                <p1
+                <p
                   style={{ alignItems: "flex-start", alignSelf: "center" }}
                   className="title"
                 >
                   {activityItem.title}
-                </p1>
+                </p>
                 <Image
                   style={{ alignItems: "flex-end", alignSelf: "center" }}
                   className="seeActivity"
                   src={seeAllActivities}
                   alt=""
                 />
-              </p1>
+              </div>
             </div>
           </div>
         ))}

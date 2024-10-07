@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useRef, useState } from "react";
 import { useMobile } from "../globalComponents/IsMobileContext";
 import Hero from "./components/Hero/Hero";
@@ -15,11 +17,15 @@ import FeaturesSection from "./components/featuresSection/FeaturesSection";
 import scrollArrow from "../../public/icons/downArrowDoodle.svg";
 import Image from "next/image";
 import "../../styles/home/HomeLayout.css";
+
 const maxSections = 13;
+
 const HomeLayout = () => {
   const { isMobile } = useMobile();
+
   const bubbleRef = useRef(null);
-  const [scrollToSection, setScrollToSection] = useState(1);
+  const [ scrollToSection, setScrollToSection ] = useState(1);
+
   const handleScrollArrow = () => {
     if (scrollToSection < maxSections) {
       setScrollToSection((prev) => prev + 1);
@@ -32,6 +38,7 @@ const HomeLayout = () => {
       }
     }
   };
+
   return (
     <div className="home-layout-container">
       {!isMobile && (
@@ -49,7 +56,7 @@ const HomeLayout = () => {
       <div>
         <>
           <Hero bubbleRef={bubbleRef} />
-          <div className="home-layout-allSection" ref={bubbleRef}>
+          <div className="home-layout-allSection flex flex-col gap-6 md:gap-10" ref={bubbleRef}>
             <SecondSection />
             <ThirdSection />
             <ActivityGrid />

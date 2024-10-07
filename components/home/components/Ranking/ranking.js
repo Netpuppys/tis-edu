@@ -63,6 +63,7 @@ export default function Ranking() {
       {!isMobile && (
         <div className="rankings">
           <div ref={countersRef} className="ranks">
+
             <Image className="ranking" src={ranking} alt="" />
             <Image className="ActivitySee" src={seeactivity} alt="" />
 
@@ -78,6 +79,7 @@ export default function Ranking() {
                 <br /> in Dehradun by Education Today <br />
               </h2>
             </div>
+
             <div className="rank1">
               {isInViewport && (
                 <div className="counter-number">#{counters.Uttrakhand} </div>
@@ -94,6 +96,7 @@ export default function Ranking() {
                 <br /> Today
               </h2>
             </div>
+
             <div className="rank1">
               {isInViewport && (
                 <div className="counter-number">#{counters.Dehradun}</div>
@@ -110,6 +113,7 @@ export default function Ranking() {
                 <br />
               </h2>
             </div>
+
             <div className="rank1">
               {isInViewport && (
                 <div className="counter-number">#{counters.India}</div>
@@ -126,6 +130,7 @@ export default function Ranking() {
                 <br />
               </h2>
             </div>
+
           </div>
         </div>
       )}

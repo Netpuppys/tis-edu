@@ -12,7 +12,6 @@ function BottomBar() {
         <a
           style={{ textDecoration: "none", color: "#fff" }}
           href={"https://netpuppys.com"}
-          passHref
         >
           NetPuppys
         </a>{" "}

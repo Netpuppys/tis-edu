@@ -21,9 +21,11 @@ export default function Home() {
           content="45l-c_yntJwqdKfX55egBlZhXwd2-u6Cz8sVHUWOvDM"
         />
       </head>
-      <Navbar />
-      <HomePage />
-      <Footer />
+      <body>
+        <Navbar />
+        <HomePage />
+        <Footer />
+      </body>
     </>
   );
 }

@@ -76,10 +76,10 @@ export default function SixthSection() {
         </h2>
         <div className="contentWhyTIS">
           <div className="selected-card-container">
-            <p1 className="focus">A FOCUS ON...</p1>
+            <p className="focus">A FOCUS ON...</p>
 
             <div className="heading-text">
-              <p2 className="selected-card-heading">{selectedCard.heading}</p2>
+              <p className="selected-card-heading">{selectedCard.heading}</p>
               <p className="selected-card-text">{selectedCard.text}</p>
             </div>
           </div>

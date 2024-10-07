@@ -14,6 +14,7 @@ import socailBg from "../../../../public/backgrounds/socailBg.png";
 import "../../../../styles/home/components/secondSection/SecondSection.css";
 // ... (unchanged imports)
 import Image from "next/image";
+
 function SecondSection() {
   const controls = useAnimation();
 

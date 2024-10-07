@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -176,7 +177,7 @@ const Navbar = () => {
     <div className="dropdown">
       {nestedLinks.map((nestedItem, nestedIndex) => (
         <div className="listed-item" key={nestedIndex}>
-          <a href={nestedItem?.linkTo} style={{ color: "#fff" }} passHref>
+          <a href={nestedItem?.linkTo} style={{ color: "#fff" }}>
             <div className="title-arrow">
               <p className="nested-link-title">{nestedItem?.title}</p>
               {nestedItem?.nestedLinks?.length > 1 && (
@@ -223,7 +224,7 @@ const Navbar = () => {
               onMouseEnter={() => handleMenuHover(index)}
               onMouseLeave={() => handleMenuLeave()}
             >
-              <a href={item.linkTo} passHref>
+              <a href={item.linkTo}>
                 <p className="title">{item.title}</p>
                 <Image src={lineImg} className="yellow-line" alt="line" />
               </a>

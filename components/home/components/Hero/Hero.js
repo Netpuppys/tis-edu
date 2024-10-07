@@ -33,11 +33,13 @@ function useIsInViewport(ref) {
   );
 
   useEffect(() => {
-    observer.observe(ref.current);
+    if (ref.current) {
+      observer.observe(ref.current);
 
-    return () => {
-      observer.disconnect();
-    };
+      return () => {
+        observer.disconnect();
+      };
+    }
   }, [ref, observer]);
 
   return isIntersecting;
@@ -78,14 +80,18 @@ function Hero(props) {
   // increase mevementFactor to make bubbles move less or more.
   // highier the number lesser the movement on screen and visa versa
   const movementFactor = 15;
+
   const movementX =
     !isMobile && calculateMovement("x", 1, position.x / movementFactor);
+
   const movementY =
     !isMobile && calculateMovement("y", 1, position.y / movementFactor);
+
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0 });
     AOS.init();
   }, []);
+
   return (
     <div className="hero-container-main">
       <div

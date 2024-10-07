@@ -2,7 +2,9 @@
 
 import React from "react";
 import { useMobile } from "../../../globalComponents/IsMobileContext";
+
 const Video = () => {
+
   const { isMobile } = useMobile();
   return (
     <div id="5" style={{ marginTop: isMobile ? "3rem" : "0rem" }}>

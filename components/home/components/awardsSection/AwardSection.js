@@ -77,11 +77,11 @@ function AwardSection() {
   return (
     <div className="Award-section-main-div" id="9">
       <div className="title-div">
-        <p1 className="Awardstitle">
+        <p className="Awardstitle">
           Awards <br />
-        </p1>
-        <p1 className="title">{title}</p1> <br />
-        <p2 className="sub-title">{subTitle}</p2>
+        </p>
+        <p className="title">{title}</p> <br />
+        <p className="sub-title">{subTitle}</p>
       </div>
       <div className="activities-div">
         {activity.slice(0, 3).map((activityItem, index) => (
@@ -95,17 +95,17 @@ function AwardSection() {
             }}
           >
             <div className="title-div-card">
-              <p1
+              <div
                 className="card-description"
                 style={{ display: "flex", justifyContent: "space-between" }}
               >
-                <p1
+                <p
                   style={{ alignItems: "flex-start", alignSelf: "center" }}
                   className="title"
                 >
                   {activityItem.title}
-                </p1>
-              </p1>
+                </p>
+              </div>
             </div>
           </div>
         ))}
