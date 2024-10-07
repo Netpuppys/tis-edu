@@ -63,7 +63,8 @@
   font-size: 13vh;
   font-style: italic;
   font-weight: 900;
-  line-height: 15vh; /* 100% */
+  padding-top: 1vh;
+  line-height: 13vh; /* 100% */
   text-transform: capitalize;
 }
 

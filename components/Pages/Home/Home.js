@@ -11,7 +11,7 @@ function HomePage() {
     // Simulating a loading delay
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, []);

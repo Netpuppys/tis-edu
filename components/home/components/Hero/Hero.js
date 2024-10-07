@@ -1,6 +1,4 @@
-"use-client";
-
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo, useRef } from "react";
 import { useMobile } from "../../../globalComponents/IsMobileContext";
 import AOS from "aos";
 import HeroText from "./components/HeroText";
@@ -18,7 +16,6 @@ import yellowCircle from "../../../../public/doodles/yellowCircle7.svg";
 import petal1 from "../../../../public/doodles/petal1.svg";
 import petal2 from "../../../../public/doodles/petal-2.webp";
 import petal3 from "../../../../public/doodles/petal-3.svg";
-// import styling
 import "../../../../styles/home/components/Hero/Hero.css";
 
 function useIsInViewport(ref) {
@@ -48,14 +45,15 @@ function useIsInViewport(ref) {
 function Hero(props) {
   const { isMobile } = useMobile();
   const bubbleRef = props.bubbleRef;
+  const yellowCircleRef = useRef(null); // Add a ref for yellow-circle
+
   const paragraph1 =
     "Tula's International School was established in 2012 under the aegis of Rishabh Educational Trust to impart education through ";
   const circledText = "seamless opportunities.";
-  // const paragraph2 =
-  //   "Following the Modern Gurukul Concept, Tula's International is a Co-Ed Residential School with a quintessential example of a perfect amalgamation between the Old Gurukul System with a Modern Approach that aims to develop Mind, Body and Soul.";
   const filledText = true;
 
   const makeDivRelative = useIsInViewport(bubbleRef);
+  const isYellowCircleInView = useIsInViewport(yellowCircleRef); // Check if yellow-circle is in view
 
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
@@ -77,8 +75,6 @@ function Hero(props) {
     return axis === "x" ? direction * distance : direction * distance;
   };
 
-  // increase mevementFactor to make bubbles move less or more.
-  // highier the number lesser the movement on screen and visa versa
   const movementFactor = 15;
 
   const movementX =
@@ -192,15 +188,31 @@ function Hero(props) {
           <div className="text-div">
             <h1 className="text">
               {paragraph1}
-              <span className="circled-text">
+              <span
+                className={`circled-text ${
+                  isYellowCircleInView ? "active" : ""
+                }`}
+              >
                 {circledText}
-                <Image
-                  data-aos="flip-right"
-                  data-aos-duration="11500"
-                  src={yellowCircle}
-                  className="yellow-circle"
-                  alt="circle"
-                />
+                <svg
+                  ref={yellowCircleRef} // Attach the ref to the SVG element
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="221.76199340820312"
+                  height="103.11299896240234"
+                  viewBox="0 0 221.762 103.113"
+                  className={`yellow-circle ${
+                    isYellowCircleInView ? "active" : ""
+                  }`}
+                >
+                  <path
+                    d="M1084.543,1367.481c-68.569-.781-129.469,16.536-137.725,32.77s20.556,39.816,114.145,20.079,125.269-44.985,61.308-57.333S982.6,1386.484,982.6,1386.484"
+                    transform="translate(-708.663 -1489.785) rotate(9)"
+                    fill="none"
+                    stroke="#c09d59"
+                    stroke-linecap="round"
+                    stroke-width="3"
+                  ></path>
+                </svg>
               </span>
             </h1>
           </div>
@@ -211,3 +223,139 @@ function Hero(props) {
 }
 
 export default Hero;
+
+//   return (
+//     <div className="hero-container-main">
+//       <div
+//         className={
+//           makeDivRelative ? "relative-text-div" : "base-text-div fade-out"
+//         }
+//       >
+//         <HeroText isFilledText={filledText} />
+//       </div>
+
+//       <div
+//         className={
+//           makeDivRelative ? "top-relative-text-div" : "top-text-div fade-out"
+//         }
+//       >
+//         <HeroText isFilledText={!filledText} />
+//       </div>
+
+//       <div className="main-site">
+//         {/* synatax for adding more bubble on screen: <Bubble image={"image.src"} title={"title.text"} />*/}
+//         <div
+//           style={{
+//             transform: `translate(${movementX}rem, ${movementY}rem)`,
+//             transition: "transform 0.2s",
+//           }}
+//           className="bubble shooting"
+//         >
+//           <Bubble image={shooting} title={"TIS"} />
+//         </div>
+//         <p></p>
+//         <div
+//           style={{
+//             transform: `translate(-${movementX}rem, -${movementY}rem)`,
+//             transition: "transform 0.2s",
+//           }}
+//           className="bubble polo"
+//         >
+//           <Bubble image={polo} title={"TIS"} />
+//         </div>
+//         <div
+//           style={{
+//             transform: `translate(-${movementX}rem, -${movementY}rem)`,
+//             transition: "transform 0.2s",
+//           }}
+//           className="bubble fitness"
+//         >
+//           <Bubble image={fitness} title={"TIS"} />
+//         </div>
+//         <div
+//           style={{
+//             transform: `translate(${movementX}rem, ${movementY}rem)`,
+//             transition: "transform 0.2s",
+//           }}
+//           className="bubble karate"
+//         >
+//           <Image src={petal3} className="petal" alt=" " />
+//           <Bubble image={karate} title={"TIS"} />
+//         </div>
+//         <div
+//           style={{
+//             transform: `translate(${movementX}rem, ${movementY}rem)`,
+//             transition: "transform 0.2s",
+//           }}
+//           className="bubble swimming"
+//         >
+//           <Image src={petal2} className="petal" alt=" " />
+//           <Bubble image={swimming} title={"TIS"} />
+//         </div>
+//         <div
+//           style={{
+//             transform: `translate(${movementX}rem, ${movementY}rem)`,
+//             transition: "transform 0.2s",
+//           }}
+//           className="bubble yoga"
+//         >
+//           <Bubble image={yoga} title={"TIS"} />
+//         </div>
+//         <div
+//           style={{
+//             transform: `translate(${movementX}rem, -${movementY}rem)`,
+//             transition: "transform 0.2s",
+//           }}
+//           className="bubble archery"
+//         >
+//           <Image src={petal1} className="petal" alt=" " />
+//           <Bubble image={archery} title={"TIS"} />
+//         </div>
+//         <div
+//           style={{
+//             transform: `translate(-${movementX}rem, ${movementY}rem)`,
+//             transition: "transform 0.2s",
+//           }}
+//           className="bubble dance"
+//         >
+//           <Bubble image={dance} title={"TIS"} />
+//         </div>
+//         <div className="text-div-container">
+//           <div className="text-div">
+//             <h1 className="text">
+//               {paragraph1}
+//               <span className="circled-text">
+//                 {circledText}
+//                 <svg
+//                   xmlns="http://www.w3.org/2000/svg"
+//                   width="221.76199340820312"
+//                   height="103.11299896240234"
+//                   viewBox="0 0 221.762 103.113"
+//                   className="yellow-circle"
+//                 >
+//                   <path
+//                     d="M1084.543,1367.481c-68.569-.781-129.469,16.536-137.725,32.77s20.556,39.816,114.145,20.079,125.269-44.985,61.308-57.333S982.6,1386.484,982.6,1386.484"
+//                     transform="translate(-708.663 -1489.785) rotate(9)"
+//                     fill="none"
+//                     stroke="#c09d59"
+//                     stroke-linecap="round"
+//                     stroke-width="3"
+//                   ></path>
+//                 </svg>
+//                 {/* <Image
+//                   data-aos="flip-right"
+//                   data-aos-duration="11500"
+//                   src={yellowCircle}
+
+//                   alt="circle"
+//                 /> */}
+//               </span>
+//             </h1>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Hero;
