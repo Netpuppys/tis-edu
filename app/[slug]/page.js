@@ -10,7 +10,7 @@ export const revalidate = 60; // optional: ISR for revalidation every 60 seconds
 
 // Generate static params for dynamic routing
 export async function generateStaticParams() {
-  const res = await fetch("https://blog.repsoft.in/api/v1/posts");
+  const res = await fetch("https://blog.repsoft.in/api/v1/post");
   const { data } = await res.json();
 
   if (!Array.isArray(data)) {
