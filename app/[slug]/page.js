@@ -8,6 +8,20 @@ import "../../styles/globalComponents/Header/header.css";
 import TableOfContent from "@/components/TableOfContent";
 export const revalidate = 60; // optional: ISR for revalidation every 60 seconds
 
+// Generate static params for dynamic routing
+export async function generateStaticParams() {
+  const res = await fetch("https://blog.repsoft.in/api/v1/posts");
+  const { data } = await res.json();
+
+  if (!Array.isArray(data)) {
+    return [];
+  }
+
+  return data.map((post) => ({
+    slug: post.slug,
+  }));
+}
+
 // Fetch the blog data based on the slug
 async function fetchBlogData(slug) {
   const res = await fetch(`https://blog.repsoft.in/api/v1/post/${slug}`);
@@ -97,18 +111,4 @@ export default async function SlugPage({ params }) {
       <Footer />
     </>
   );
-}
-
-// Generate static params for dynamic routing
-export async function generateStaticParams() {
-  const res = await fetch("https://blog.repsoft.in/api/v1/posts");
-  const { data } = await res.json();
-
-  if (!Array.isArray(data)) {
-    return [];
-  }
-
-  return data.map((post) => ({
-    slug: post.slug,
-  }));
 }
