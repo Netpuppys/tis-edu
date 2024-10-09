@@ -25,14 +25,31 @@ import seeMoreMobile from "../../../../public/icons/see-more-mobile.png";
 import { FaArrowsRotate } from "react-icons/fa6";
 import Image from "next/image";
 import "../../../../styles/home/components/activityGrid/ActivityGrid.css";
+import { useInView } from "react-intersection-observer";
 
 function FourthSection() {
   const { isMobile } = useMobile();
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+  });
   const title = (
     <>
       From football to archery, we offer{" "}
-      <strong style={{ fontSize: "30px" }}>16</strong> sports that teaches
-      teamwork, discipline, and confidence.
+      <span ref={ref} className="circled-text">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="4.58 2.97 61.39 54.41">
+          <path
+            d="M49.723 17.074C28.65-5.127 2.833 3.604 6.413 30.787S51.984 68.54 62.944 34.34s-40.681-21.04-40.681-21.04"
+            fill="none"
+            stroke="#c09d59"
+            stroke-linecap="round"
+            stroke-width="3"
+            className={`svg-circle ${inView ? "active" : ""}`}
+          ></path>
+        </svg>
+        16{" "}
+      </span>
+      sports that teaches teamwork, discipline, and confidence.
     </>
   );
   const subTitle = "( Our Students love that! )";

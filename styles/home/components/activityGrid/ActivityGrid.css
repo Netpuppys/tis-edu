@@ -23,8 +23,36 @@
   font-family: "Mirador100";
   font-size: 30px;
   font-style: italic;
+  text-align: left;
   font-weight: 400;
 }
+.fourth-section-main-div .title-div .circled-text {
+  width: fit-content;
+  position: relative;
+  font-weight: 800;
+  text-wrap: nowrap;
+  font-family: "Mirador";
+}
+.fourth-section-main-div .title-div span svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: fit-content;
+}
+svg .svg-circle {
+  stroke-dashoffset: 206.1999053955078px;
+  stroke-dasharray: 206.1999053955078px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715)
+    0s;
+  transition: stroke-dashoffset 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+}
+
+.svg-circle.active {
+  stroke-dashoffset: 0;
+}
+
 .fourth-section-main-div .sub-title {
   color: #60bab1;
   font-family: "darwin-pro", sans-serif;

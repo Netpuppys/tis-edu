@@ -272,6 +272,7 @@
 .card-text h5 {
   margin-block-start: 0em;
   margin-block-end: 0em;
+  text-align: left;
 }
 .card-text p {
   font-size: 15px;
