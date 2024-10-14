@@ -14,27 +14,28 @@ const Blog = () => {
     const fetchBlogs = async () => {
       try {
         const response = await fetch(
-          `https://admin.tis.edu.in/wp-json/wp/v2/posts?page=${page}&per_page=18`
+          `https://blog.tis.edu.in/api/v1/post?page=${page}&per_page=18`
         );
-
-        // Check if the response status is OK (200-299)
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-
         const data = await response.json();
 
-        if (Array.isArray(data) && data.length > 0) {
-          // Assuming that the posts don't have a specific category structure in the response
-          setBlogs((prevBlogs) => {
-            const uniqueBlogs = data.filter(
-              (newBlog) =>
-                !prevBlogs.some((prevBlog) => prevBlog.slug === newBlog.slug)
-            );
-            return [...prevBlogs, ...uniqueBlogs]; // Append only unique blogs
-          });
+        if (data.success) {
+          const filteredBlogs = data.data.filter(
+            (blog) => blog.category && blog.category.name === "Blogs"
+          );
+
+          if (filteredBlogs.length === 0) {
+            setAllBlogsLoaded(true); // If no blogs are returned, set allBlogsLoaded to true
+          } else {
+            setBlogs((prevBlogs) => {
+              const uniqueBlogs = filteredBlogs.filter(
+                (newBlog) =>
+                  !prevBlogs.some((prevBlog) => prevBlog.slug === newBlog.slug)
+              );
+              return [...prevBlogs, ...uniqueBlogs]; // Append only unique blogs
+            });
+          }
         } else {
-          setAllBlogsLoaded(true); // If no blogs are returned, set allBlogsLoaded to true
+          console.error("Failed to fetch blogs:", data.message);
         }
       } catch (error) {
         console.error("Error fetching blogs:", error);
@@ -67,18 +68,16 @@ const Blog = () => {
 
   return (
     <>
-      {loading && (
-        <div className="absolute-loader">
-          <Image src={loader} alt="Loading..." />
-        </div>
-      )}
       <div className="blog-container">
         <div className="card-grid">
           {blogs.map((blog) => {
-            const formattedDate = formatDate(blog.date);
-            const formattedTitle = blog.title.rendered
-              .replace(/&#8217;/g, "'")
-              .replace(/&#038;/g, "&");
+            const formattedDate = formatDate(blog.created_at);
+
+            // Check if title and rendered property exist
+            const formattedTitle = blog.title
+              ? blog.title.replace(/&#8217;/g, "'").replace(/&#038;/g, "&")
+              : ""; // Fallback if title is not available
+
             return (
               <a href={`/${blog.slug}`} key={blog.slug}>
                 <div>
@@ -86,7 +85,7 @@ const Blog = () => {
                     <Image
                       width="400"
                       height="250"
-                      src={blog?.yoast_head_json?.og_image?.[0]?.url}
+                      src={blog.banner_img}
                       className="cardImage"
                       alt="Blog Image"
                     />
@@ -118,7 +117,6 @@ export default Blog;
 
 // "use client";
 // import React, { useEffect, useState } from "react";
-// import Link from "next/link";
 // import Image from "next/image";
 // import loader from "../../public/loader.svg";
 // import "../../styles/QuickLinks/Blog.css";
@@ -133,28 +131,27 @@ export default Blog;
 //     const fetchBlogs = async () => {
 //       try {
 //         const response = await fetch(
-//           `https://blog.repsoft.in/api/v1/post?page=${page}&per_page=18`
+//           `https://admin.tis.edu.in/wp-json/wp/v2/posts?page=${page}&per_page=18`
 //         );
+
+//         // Check if the response status is OK (200-299)
+//         if (!response.ok) {
+//           throw new Error(`HTTP error! Status: ${response.status}`);
+//         }
+
 //         const data = await response.json();
 
-//         if (data.success) {
-//           const filteredBlogs = data.data.filter(
-//             (blog) => blog.category && blog.category.name === "Blogs"
-//           );
-
-//           if (filteredBlogs.length === 0) {
-//             setAllBlogsLoaded(true); // If no blogs are returned, set allBlogsLoaded to true
-//           } else {
-//             setBlogs((prevBlogs) => {
-//               const uniqueBlogs = filteredBlogs.filter(
-//                 (newBlog) =>
-//                   !prevBlogs.some((prevBlog) => prevBlog.slug === newBlog.slug)
-//               );
-//               return [...prevBlogs, ...uniqueBlogs]; // Append only unique blogs
-//             });
-//           }
+//         if (Array.isArray(data) && data.length > 0) {
+//           // Assuming that the posts don't have a specific category structure in the response
+//           setBlogs((prevBlogs) => {
+//             const uniqueBlogs = data.filter(
+//               (newBlog) =>
+//                 !prevBlogs.some((prevBlog) => prevBlog.slug === newBlog.slug)
+//             );
+//             return [...prevBlogs, ...uniqueBlogs]; // Append only unique blogs
+//           });
 //         } else {
-//           console.error("Failed to fetch blogs:", data.message);
+//           setAllBlogsLoaded(true); // If no blogs are returned, set allBlogsLoaded to true
 //         }
 //       } catch (error) {
 //         console.error("Error fetching blogs:", error);
@@ -187,16 +184,18 @@ export default Blog;
 
 //   return (
 //     <>
+//       {loading && (
+//         <div className="absolute-loader">
+//           <Image src={loader} alt="Loading..." />
+//         </div>
+//       )}
 //       <div className="blog-container">
 //         <div className="card-grid">
 //           {blogs.map((blog) => {
-//             const formattedDate = formatDate(blog.created_at);
-
-//             // Check if title and rendered property exist
-//             const formattedTitle = blog.title
-//               ? blog.title.replace(/&#8217;/g, "'").replace(/&#038;/g, "&")
-//               : ""; // Fallback if title is not available
-
+//             const formattedDate = formatDate(blog.date);
+//             const formattedTitle = blog.title.rendered
+//               .replace(/&#8217;/g, "'")
+//               .replace(/&#038;/g, "&");
 //             return (
 //               <a href={`/${blog.slug}`} key={blog.slug}>
 //                 <div>
@@ -204,7 +203,7 @@ export default Blog;
 //                     <Image
 //                       width="400"
 //                       height="250"
-//                       src={blog.banner_img}
+//                       src={blog?.yoast_head_json?.og_image?.[0]?.url}
 //                       className="cardImage"
 //                       alt="Blog Image"
 //                     />
