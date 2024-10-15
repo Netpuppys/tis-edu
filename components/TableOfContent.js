@@ -46,7 +46,10 @@ function TableOfContent({ slug }) {
   return (
     <div>
       {tocItems.length > 0 && (
-        <div className="content-div-blog-table">
+        <div
+          className="content-div-blog-table"
+          style={{ fontFamily: "TT Chocolates" }}
+        >
           <h8 className="text-[28px] md:text-[45px] text-[#b90124] font-[600]">
             Table of Contents
           </h8>

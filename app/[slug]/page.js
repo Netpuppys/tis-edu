@@ -77,7 +77,7 @@ export default async function SlugPage({ params }) {
   const cleanContent = (content) => {
     if (!content) return "";
     // Replace empty <p></p> with <br /> tag
-    return content.replace(/<p><\/p>/g, "<br />");
+    return content.replace(/<p><\/p>/g, "<br /><br />");
   };
 
   return (
@@ -102,14 +102,17 @@ export default async function SlugPage({ params }) {
             </div>
           </div>
         </div>
-        <div className="blog-page-content">
+        <div
+          className="blog-page-content"
+          style={{ fontFamily: "TT Chocolates" }}
+        >
           <h6 className="text-[18px] md:text-[25px]">
             Published on {formattedDate} by {blog.author_name}
           </h6>
           <TableOfContent slug={slug} />
           <div
             className="content-div-blog"
-            dangerouslySetInnerHTML={{ __html: cleanContent(blog?.content)}}
+            dangerouslySetInnerHTML={{ __html: cleanContent(blog?.content) }}
           />
         </div>
       </div>
