@@ -57,7 +57,7 @@ const ContactUs = () => {
         </p>
       </div>
       <div className="h-fit z-50 w-fit mb-8 mx-auto p-2 bg-[#B90124] md:bg-transparent flex flex-col items-center gap-4 md:gap-0 md:flex-row">
-        <div className="w-full md:w-[491px] h-fit md:h-[784px] relative flex flex-col overflow-hidden justify-start gap-20 bg-transparent md:bg-[#B90124] rounded-xl p-5 md:p-10">
+        <div className="w-full md:w-[491px] h-fit  relative flex flex-col overflow-hidden justify-start gap-20 bg-transparent md:bg-[#B90124] rounded-xl p-5 md:p-10">
           <div className="w-fit z-20 mb-8 md:mb-0 h-fit">
             <h3 className="text-[25px] md:text-[35px] font-bold tracking-wide text-white">
               Contact Information
