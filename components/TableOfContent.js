@@ -65,7 +65,7 @@ function TableOfContent({ slug }) {
                      : ""
                  }`}
               >
-                {item.tagName === "h1" ? "-" : ""}
+                {item.tagName === "h2" ? "-" : ""}
                 <a
                   onClick={() => handleScroll(item.id)}
                   // href={`#${item.id}`}
