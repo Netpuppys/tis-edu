@@ -74,6 +74,11 @@ export default async function SlugPage({ params }) {
 
   const formattedDate = formatDate(blog.created_at);
   const headerImg = blog.banner_img;
+  const cleanContent = (content) => {
+    if (!content) return "";
+    // Replace empty <p></p> with <br /> tag
+    return content.replace(/<p><\/p>/g, "<br />");
+  };
 
   return (
     <>
@@ -104,7 +109,7 @@ export default async function SlugPage({ params }) {
           <TableOfContent slug={slug} />
           <div
             className="content-div-blog"
-            dangerouslySetInnerHTML={{ __html: blog.content }}
+            dangerouslySetInnerHTML={{ __html: cleanContent(blog?.content)}}
           />
         </div>
       </div>
@@ -112,7 +117,6 @@ export default async function SlugPage({ params }) {
     </>
   );
 }
-
 
 // import React from "react";
 // import Image from "next/image";
@@ -254,4 +258,3 @@ export default async function SlugPage({ params }) {
 //     </>
 //   );
 // }
-

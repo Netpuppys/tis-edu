@@ -20,11 +20,11 @@ function TableOfContent({ slug }) {
       const tempDiv = document.createElement("div");
       tempDiv.innerHTML = htmlContent;
 
-      const headings = tempDiv.querySelectorAll("h1, h2, h3");
+      const headings = tempDiv.querySelectorAll("h2, h3, h4");
       const tocList = Array.from(headings).map((heading) => ({
         text: heading.innerText,
         id: heading.id,
-        tagName: heading.tagName.toLowerCase(), // Get the tag name (h1, h2, h3)
+        tagName: heading.tagName.toLowerCase(), // Get the tag name (h2, h3, h4)
       }));
 
       setTocItems(tocList);
@@ -47,20 +47,20 @@ function TableOfContent({ slug }) {
     <div>
       {tocItems.length > 0 && (
         <div className="content-div-blog-table">
-          <h1 className="text-[28px] md:text-[45px] text-[#b90124] font-[600]">
+          <h8 className="text-[28px] md:text-[45px] text-[#b90124] font-[600]">
             Table of Contents
-          </h1>
+          </h8>
           <ul>
             {tocItems?.map((item) => (
               <li
                 key={item.id}
                 className={`hover:text-[#b90124] cursor-pointer
                  ${
-                   item.tagName === "h1"
+                   item.tagName === "h2"
                      ? "text-[24px] md:text-[32px] ml-5 md:ml-10"
-                     : item.tagName === "h2"
-                     ? "text-[18px] md:text-[26px] ml-10 md:ml-20"
                      : item.tagName === "h3"
+                     ? "text-[18px] md:text-[26px] ml-10 md:ml-20"
+                     : item.tagName === "h4"
                      ? "text-[16px] md:text-[20px] ml-14 md:ml-24"
                      : ""
                  }`}
