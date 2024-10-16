@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useMobile } from "../../../globalComponents/IsMobileContext";
 import seeMoreIcon from "../../../../public/icons/see-more-text.png";
 import topBoarding from "../../../../public/Home/Awards/TopBoarding.jpg";
@@ -64,6 +64,12 @@ function AwardSection() {
     const shuffledActivities = [...activity].sort(() => Math.random() - 0.5);
     setActivity(shuffledActivities);
   };
+  useEffect(() => {
+    if (isMobile) {
+      const interval = setInterval(rearrangeActivities, 5000); // Rearrange every 5 seconds
+      return () => clearInterval(interval); // Clear interval on component unmount
+    }
+  }, [isMobile, activity]);
 
   const handleMoreAwards = () => {
     window.location.href = "/about-tis/awards-achievements/";
@@ -77,10 +83,10 @@ function AwardSection() {
   return (
     <div className="Award-section-main-div" id="9">
       <div className="title-div">
-        <p className="Awardstitle">
-          Awards <br />
-        </p>
-        <p className="title">{title}</p> <br />
+        <p className="Awardstitle">Awards</p>
+
+        <p className="title">{title}</p>
+
         <p className="sub-title">{subTitle}</p>
       </div>
       <div className="activities-div">
@@ -131,18 +137,13 @@ function AwardSection() {
       )}
 
       <div className="see-more-mobile">
-        <Image
-          onClick={rearrangeActivities}
-          src={seeMoreMobile}
-          className="see-more-mobile"
-          alt="See All Activities"
-        />
-        <Image
+        <button
           onClick={handleMoreAwards}
-          src={seeAllAwards}
-          className="see-all-mobile"
-          alt="See All Activities"
-        />
+          className="see-more-mobile-button"
+          alt=""
+        >
+          See All Awards
+        </button>
       </div>
     </div>
   );

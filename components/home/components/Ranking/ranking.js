@@ -63,9 +63,10 @@ export default function Ranking() {
       {!isMobile && (
         <div className="rankings">
           <div ref={countersRef} className="ranks">
-
-            <Image className="ranking" src={ranking} alt="" />
-            <Image className="ActivitySee" src={seeactivity} alt="" />
+            <div className="ranking">
+              <Image src={ranking} alt="" />
+              <Image className="ActivitySee" src={seeactivity} alt="" />
+            </div>
 
             <div className="rank1">
               {isInViewport && (
@@ -75,8 +76,7 @@ export default function Ranking() {
 
               <h2 className="counter-number-span">In Dehradun</h2>
               <h2 className="counter-title-rank">
-                Co-Educational Boarding School
-                <br /> in Dehradun by Education Today <br />
+                Co-Educational Boarding School in Dehradun by Education Today
               </h2>
             </div>
 
@@ -86,14 +86,9 @@ export default function Ranking() {
               )}
               {!isInViewport && <div className="counter-number">#2</div>}
 
-              <h2 className="counter-number-span">
-                In Uttrakhand
-                <br />
-              </h2>
+              <h2 className="counter-number-span">In Uttrakhand</h2>
               <h2 className="counter-title-rank">
-                Co-Educational Boarding School
-                <br /> in North India by Education
-                <br /> Today
+                Co-Educational Boarding School in North India by Education Today
               </h2>
             </div>
 
@@ -103,14 +98,9 @@ export default function Ranking() {
               )}
               {!isInViewport && <div className="counter-number">#1</div>}
 
-              <h2 className="counter-number-span">
-                In North India
-                <br />
-              </h2>
+              <h2 className="counter-number-span">In North India</h2>
               <h2 className="counter-title-rank">
-                Co-Educational Boarding School
-                <br /> in North India by Outlook
-                <br />
+                Co-Educational Boarding School in North India by Outlook
               </h2>
             </div>
 
@@ -120,17 +110,11 @@ export default function Ranking() {
               )}
               {!isInViewport && <div className="counter-number">#4</div>}
 
-              <h2 className="counter-number-span">
-                In India
-                <br />
-              </h2>
+              <h2 className="counter-number-span">In India</h2>
               <h2 className="counter-title-rank">
-                Co-Educational Boarding School
-                <br /> in India by Education Today
-                <br />
+                Co-Educational Boarding School in India by Education Today
               </h2>
             </div>
-
           </div>
         </div>
       )}

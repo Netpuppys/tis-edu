@@ -101,7 +101,7 @@
 
 @media (max-width: 768px) {
   .second-main-section {
-    height: 40vh;
+    height: 34vh;
   }
   .second-main-section .cards-div-second .card {
     gap: 0rem;

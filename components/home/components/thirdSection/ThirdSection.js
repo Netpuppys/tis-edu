@@ -23,17 +23,17 @@ function ThirdSection() {
         </div>
 
         <div className="image-div">
-          <Image src={ladyInPink} className="image" alt="ladyInPink" />
+          <Image src={ladyInPink} className="image" alt="" />
         </div>
       </div>
 
       <div className="middle-div">
-        <Image src={madeForFuture} className="image" alt="Made For Future" />
+        <Image src={madeForFuture} className="image" alt="" />
       </div>
 
       <div className="content-div">
         <div className="image-div">
-          <Image src={manInBlue} className="image" alt="man in blue" />
+          <Image src={manInBlue} className="image" alt="" />
         </div>
         <div className="text-div" style={{ width: "90%" }}>
           <h2 className="title">{title2}</h2>

@@ -1,5 +1,5 @@
 "use-client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useMobile } from "../../../globalComponents/IsMobileContext";
 import seeMoreIcon from "../../../../public/icons/see-more-text.png";
 import archery from "../../../../public/pictures/archery.png";
@@ -21,7 +21,6 @@ import tableTennis from "../../../../public/pictures/tableTennis.png";
 import throwball from "../../../../public/pictures/throwballSports.png";
 import seeAllActivities from "../../../../public/icons/see-all-activities.png";
 import seeAllActivityButton from "../../../../public/icons/see-all-activity-button.png";
-import seeMoreMobile from "../../../../public/icons/see-more-mobile.png";
 import { FaArrowsRotate } from "react-icons/fa6";
 import Image from "next/image";
 import "../../../../styles/home/components/activityGrid/ActivityGrid.css";
@@ -170,6 +169,12 @@ function FourthSection() {
     const shuffledActivities = [...activity].sort(() => Math.random() - 0.5);
     setActivity(shuffledActivities);
   };
+  useEffect(() => {
+    if (isMobile) {
+      const interval = setInterval(rearrangeActivities, 5000); // Rearrange every 5 seconds
+      return () => clearInterval(interval); // Clear interval on component unmount
+    }
+  }, [isMobile, activity]);
 
   const handleMoreSports = () => {
     window.location.href = "/beyond-academics/sports/";
@@ -184,9 +189,7 @@ function FourthSection() {
     <div className="fourth-section-main-div" id="4">
       <div className="title-div">
         <p className="Sportstitle">Sports</p>
-        <br />
         <p className="title">{title}</p>
-        <br />
         <p className="sub-title">{subTitle}</p>
       </div>
       <div className="activities-div">
@@ -244,18 +247,13 @@ function FourthSection() {
       )}
 
       <div className="see-more-mobile">
-        <Image
-          onClick={rearrangeActivities}
-          src={seeMoreMobile}
-          className="see-more-mobile"
-          alt="See All Activities"
-        />
-        <Image
+        <button
           onClick={handleMoreSports}
-          src={seeAllActivityButton}
-          className="see-all-mobile"
-          alt="See All Activities"
-        />
+          className="see-more-mobile-button"
+          alt=""
+        >
+          See All Activities
+        </button>
       </div>
     </div>
   );

@@ -4,8 +4,8 @@
   margin-bottom: 3rem;
 }
 .fourth-section-main-div .title-div {
-  width: 30%;
-  margin-left: 10%;
+  width: 45%;
+  padding-left: 10%;
 }
 .fourth-section-main-div .title-div .Sportstitle {
   font-family: Mirador;
@@ -229,6 +229,7 @@ svg .svg-circle {
   .fourth-section-main-div .title-div {
     width: 90%;
     margin-left: auto;
+    padding: 0;
     margin-right: auto;
   }
 
@@ -278,14 +279,17 @@ svg .svg-circle {
     margin-left: auto;
     margin-right: auto;
   }
-  .fourth-section-main-div .see-all-mobile {
-    display: block;
-    margin-top: 1rem;
-    width: 90%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3rem;
+  .fourth-section-main-div .see-more-mobile .see-more-mobile-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b90124;
+    color: white;
+    border-radius: 100px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 22px;
   }
 }
 @media (max-width: 500px) {

@@ -6,9 +6,9 @@
 }
 
 .Award-section-main-div .title-div {
-  width: 30%;
+  width: 45%;
   margin-left: auto;
-  margin-right: 10%;
+  padding-right: 10%;
 }
 .Award-section-main-div .title-div .Awardstitle {
   font-family: Mirador;
@@ -201,13 +201,14 @@
   .Award-section-main-div {
     width: 100%;
     position: relative;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
   }
   .Award-section-main-div .title-div {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
   }
   .Award-section-main-div .see-all,
   .Award-section-main-div .btn-div {
@@ -255,14 +256,17 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .Award-section-main-div .see-all-mobile {
-    display: block;
-    margin-top: 1rem;
-    width: 90%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3rem;
+  .Award-section-main-div .see-more-mobile .see-more-mobile-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b90124;
+    color: white;
+    border-radius: 100px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 22px;
   }
 }
 @media (max-width: 500px) {

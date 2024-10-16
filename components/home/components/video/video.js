@@ -4,10 +4,9 @@ import React from "react";
 import { useMobile } from "../../../globalComponents/IsMobileContext";
 
 const Video = () => {
-
   const { isMobile } = useMobile();
   return (
-    <div id="5" style={{ marginTop: isMobile ? "3rem" : "0rem" }}>
+    <div id="5">
       <div style={{ padding: "50% 0 0 0", position: "relative" }}>
         <iframe
           src="https://player.vimeo.com/video/970387029?autoplay=1&loop=1&muted=1&controls=0"

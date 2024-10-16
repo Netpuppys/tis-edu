@@ -1,0 +1,192 @@
+"use client";
+import React, { useEffect, useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { HiMiniArrowLongLeft, HiMiniArrowLongRight } from "react-icons/hi2";
+import ExceptionalDummy from "../../../../../public/LandingPage/exceptionalDummy.png";
+import Image from "next/image";
+import { useInView } from "react-intersection-observer";
+function ExceptionalFacilties() {
+  const features = [
+    {
+      image: ExceptionalDummy,
+      name: (
+        <>
+          Digital <span className="text-[#b90124]">Workstations</span>
+        </>
+      ),
+      description: (
+        <>
+          Tula’s is the only CBSE school in North India that has well-designed,
+          technically sound workstations for each subject to foster learning
+          among students.
+        </>
+      ),
+    },
+    {
+      image: ExceptionalDummy,
+      name: (
+        <>
+          Well-Eequipped <span className="text-[#b90124]">Laboratories</span>
+        </>
+      ),
+
+      description: (
+        <>
+          Well-equipped Biology, Physics and Chemistry Laboratories, a
+          state-of-the-art Computer Department and IT Centre are constantly
+          buzzing with activity.
+        </>
+      ),
+    },
+    {
+      image: ExceptionalDummy,
+      name: (
+        <>
+          Library with{" "}
+          <span className="text-[#b90124]">around 20,000+ Books</span>
+        </>
+      ),
+      description: (
+        <>
+          The LIBRARY at Tula’s is spacious, well-ventilated, and well-stocked.
+          We have around 20,000+ books of various subjects, in different
+          languages for all age groups of our students.
+        </>
+      ),
+    },
+    {
+      image: ExceptionalDummy,
+      name: (
+        <>
+          Multiple Clubs <span className="text-[#b90124]">& Societies</span>
+        </>
+      ),
+      description: (
+        <>
+          The Clubs and Societies gives them a platform to discover their hidden
+          talents, essential for all-round education.
+        </>
+      ),
+    },
+    {
+      image: ExceptionalDummy,
+      name: (
+        <>
+          Enriching Fitness{" "}
+          <span className="text-[#b90124]">with 15+ Sports</span>
+        </>
+      ),
+      description: (
+        <>
+          We offer the best sporting infrastructure with fully-fledged program
+          to develop students .
+        </>
+      ),
+    },
+  ];
+
+  const swiperRef = useRef();
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleDotClick = (index) => {
+    swiperRef.current.swiper.slideTo(index);
+    setActiveIndex(index);
+  };
+
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+  });
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) =>
+        prevIndex === features.length - 1 ? 0 : prevIndex + 1
+      );
+      swiperRef.current.swiper.slideTo(
+        activeIndex === features.length - 1 ? 0 : activeIndex + 1
+      );
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, [activeIndex, features.length]);
+
+  return (
+    <div>
+      <div className="flex flex-col items-center justify-center pb-10">
+        <h3 className="text-[#b90124] text-center font-[TTChocolatesBold] text-[30px] md:text-[50px]">
+          Exceptional Facilities At TIS
+        </h3>
+        <span ref={ref}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 268.317 14.075"
+            height="14.074999809265137"
+            className={`mainText-scribble w-[60%] mx-auto md:w-[268px] ${
+              inView ? "active" : ""
+            }`}
+          >
+            <path
+              id="mainTextScribble"
+              d="M404.67,1796.978c47.813-3.483,110.6-.1,152.153-3.214s113.059,2.5,113.059,2.5-196.62,2.328-239.976,5.307c85.143,5.178,211.34,0,211.34,0"
+              transform="translate(-403.065 -1791.313)"
+              fill="none"
+              stroke="#c09d59"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="3"
+              className="svg-elem-1"
+            />
+          </svg>
+        </span>
+      </div>
+      <div>
+        <Swiper
+          onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+          ref={swiperRef}
+        >
+          {features.map((feature, index) => (
+            <SwiperSlide key={index}>
+              <div className="flex flex-col md:flex-row h-full rounded-3xl w-[85%] border border-[#b90124] overflow-hidden mx-auto items-center justify-center">
+                <Image
+                  src={feature.image}
+                  alt=""
+                  className="w-full md:w-[50%] h-full object-cover"
+                />
+                <div
+                  style={{ fontFamily: "TT Chocolates" }}
+                  className="w-full md:w-[50%] mx-auto flex flex-col justify-between px-3 md:px-8 py-4 md:py-10"
+                >
+                  <div>
+                    <h2 className="text-[22px] md:text-[40px] leading-none font-extrabold text-left mb-4">
+                      {feature.name}
+                    </h2>
+                  </div>
+                  <p className="mb-4 text-[16px] md:text-[22px]">
+                    {feature.description}
+                  </p>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <div className="flex z-30 justify-center items-center pt-4  gap-2">
+          {features.map((_, index) => (
+            <div key={index} onClick={() => handleDotClick(index)}>
+              <div
+                className={`w-[10px] h-[10px] md:w-[15px] z-10 md:h-[15px] rounded-full flex items-center justify-center cursor-pointer ${
+                  index === activeIndex
+                    ? " bg-[#b90124] scale-110"
+                    : " bg-[#FFB9C6] blur-[0.6px] scale-75"
+                }`}
+              ></div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default ExceptionalFacilties;

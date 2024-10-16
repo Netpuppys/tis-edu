@@ -56,18 +56,19 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
+  padding: 0rem 1.2rem;
   margin-bottom: auto;
 }
 .stats .counter {
   color: #fff;
   font-family: Miltonian;
-  font-size: 30px;
+  font-size: 45px;
   text-align: center;
 }
 .title-counter {
   color: #fff;
   font-family: PF din Display100;
-
+  font-size: 27px;
   text-align: center;
 }
 .stats .line-stats {
@@ -128,7 +129,9 @@
     width: 90%;
     margin-top: -40px;
   }
-
+  .stats .college {
+    padding: 0rem 0.4rem;
+  }
   .stats .counter {
     color: #fff;
     font-family: Miltonian;
@@ -137,8 +140,9 @@
   }
   .title-counter {
     color: #fff;
-    font-family: PF din Display100;
+    font-family: TT Chocolates;
     font-size: 10px;
+    line-height: normal;
     margin-left: auto;
     font-weight: 200;
     margin-right: auto;
