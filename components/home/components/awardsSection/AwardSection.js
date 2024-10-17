@@ -7,7 +7,6 @@ import internationalSchool from "../../../../public/Home/Awards/internationalSch
 import seeAllAwards from "../../../../public/icons/see-all-awards.png";
 import { FaArrowsRotate } from "react-icons/fa6";
 import Image from "next/image";
-import seeMoreMobile from "../../../../public/icons/see-more-mobile.png";
 import "../../../../styles/home/components/awardSection/AwardSection.css";
 import UttrakhandIcon from "../../../../public/Home/Awards/UTTARAKHAND.jpg";
 import Educational from "../../../../public/Home/Awards/EDUCATIONAL.jpg";

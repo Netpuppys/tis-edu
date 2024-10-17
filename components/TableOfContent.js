@@ -50,25 +50,25 @@ function TableOfContent({ slug }) {
           className="content-div-blog-table"
           style={{ fontFamily: "TT Chocolates" }}
         >
-          <h8 className="text-[28px] md:text-[45px] text-[#b90124] font-[600]">
-            Table of Contents
+          <h8 className="text-[28px] md:text-[45px] font-[600]">
+            Table of Content
           </h8>
           <ul>
             {tocItems?.map((item) => (
               <li
                 key={item.id}
-                className={`hover:text-[#b90124] cursor-pointer
+                className={`cursor-pointer 
                  ${
                    item.tagName === "h2"
-                     ? "text-[24px] md:text-[32px] ml-5 md:ml-10"
+                     ? "text-[24px] md:text-[32px] underline ml-5 md:ml-10"
                      : item.tagName === "h3"
-                     ? "text-[18px] md:text-[26px] ml-10 md:ml-20"
+                     ? "text-[18px] font-semibold list-disc underline mt-4 text-black md:text-[24px] ml-10 md:ml-20"
                      : item.tagName === "h4"
-                     ? "text-[16px] md:text-[20px] ml-14 md:ml-24"
+                     ? "text-[16px] text-[#b90124] underline md:text-[20px] ml-14 md:ml-24"
                      : ""
                  }`}
               >
-                {item.tagName === "h2" ? "-" : ""}
+                {item.tagName === "h3" ? "" : ""}
                 <a
                   onClick={() => handleScroll(item.id)}
                   // href={`#${item.id}`}

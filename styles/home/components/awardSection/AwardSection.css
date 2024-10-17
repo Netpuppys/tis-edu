@@ -1,8 +1,7 @@
 .Award-section-main-div {
-  width: 100%;
+  width: 97%;
   position: relative;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-right: 3%;
 }
 
 .Award-section-main-div .title-div {
@@ -11,7 +10,7 @@
   padding-right: 10%;
 }
 .Award-section-main-div .title-div .Awardstitle {
-  font-family: Mirador;
+  font-family: Mirador800;
   font-size: 70px;
   font-style: italic;
   font-weight: 900;
@@ -23,11 +22,11 @@
 }
 .Award-section-main-div .title-div .title {
   color: #262626;
-  font-family: "Mirador100";
-  font-size: 30px;
+  font-family: "Mirador800";
+  font-size: clamp(15px, 2vw, 45px);
   font-style: italic;
   text-align: left;
-  font-weight: 400;
+  font-weight: 900;
 }
 
 .Award-section-main-div .sub-title {
@@ -41,8 +40,8 @@
 }
 
 .Award-section-main-div .activity-div {
-  width: 30rem;
-  height: 20rem;
+  width: 30%;
+  aspect-ratio: 16/9.5;
   border-radius: 10px;
   position: relative;
   transition: transform 0.3s ease;
@@ -116,16 +115,17 @@
   left: 0;
   right: 0;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 20px 30px;
 }
 .Award-section-main-div .activity-div .title {
   position: relative;
+  width: 80%;
   box-sizing: border-box;
   text-align: left;
   color: #fff;
   text-shadow: 0px 0px 28px rgba(0, 0, 0, 0.5);
-  font-family: PF din Display;
-  font-size: 28px;
+  font-family: TT Chocolates;
+  font-size: clamp(12px, 2vw, 30px);
   font-style: normal;
   font-weight: 100;
 }
@@ -139,34 +139,34 @@
 
 .Award-section-main-div .activities-div .topy {
   position: absolute;
-  transform: translateY(-48%);
-  left: 10%;
+  transform: translate(45%, -85%);
   right: auto;
 }
 
 .Award-section-main-div .activities-div .lefty {
   position: absolute;
-  right: 10%;
+  right: 12.5%;
+  transform: translateY(10%);
   left: auto;
 }
 .Award-section-main-div .activities-div .bottomy {
   position: absolute;
-  transform: translateY(75%);
+  transform: translateY(55%);
   left: 17%;
   right: auto;
 }
 .Award-section-main-div .btn-div {
   display: flex;
   position: relative;
-  top: 2rem;
+  /* transform: translate(-3%, -150%); */
   align-items: center;
   justify-content: center;
 }
 .Award-section-main-div .see-all {
-  width: 20%;
-  margin-left: 65%;
+  width: 25%;
+  margin-left: 62%;
   height: auto;
-  margin-top: 16rem;
+  margin-top: 14rem;
   margin-bottom: 5rem;
 }
 .Award-section-main-div .see-more-mobile,
@@ -174,20 +174,6 @@
   display: none;
 }
 @media (max-width: 1550px) {
-  .Award-section-main-div .activity-div {
-    width: 25rem;
-    height: 16rem;
-  }
-  .Award-section-main-div .title-div .title {
-    font-size: 27px;
-  }
-  .Award-section-main-div .btn-div {
-    left: -2rem;
-  }
-  .Award-section-main-div .see-all {
-    margin-top: 12rem;
-    margin-bottom: 5rem;
-  }
   .Award-section-main-div .btn-div .see-more-btn .red-bg-btn {
     font-size: 2rem;
     width: 4rem;
@@ -196,8 +182,16 @@
     width: 8rem;
   }
 }
-
-@media (max-width: 1000px) {
+@media (max-width: 1250px) {
+  .Award-section-main-div .btn-div .see-more-btn .red-bg-btn {
+    font-size: 1.8rem;
+    width: 3.2rem;
+  }
+  .Award-section-main-div .btn-div .see-more-btn .btn-img {
+    width: 6rem;
+  }
+}
+@media (max-width: 768px) {
   .Award-section-main-div {
     width: 100%;
     position: relative;

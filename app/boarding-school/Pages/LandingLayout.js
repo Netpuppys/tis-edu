@@ -12,6 +12,7 @@ import HeroLanding from "../admission-open/Components/Hero/HeroLanding";
 import Banner from "../admission-open/Components/Banner/Banner";
 import ExceptionalFacilties from "../admission-open/Components/Carousel/ExceptionalFacilties";
 import GoogleReviews from "../admission-open/Components/Hero/components/GoogleReviews";
+import Stats from "@/components/home/components/TisByNumbers/stats";
 
 const LandingLayout = () => {
   const bubbleRef = useRef(null);
@@ -35,6 +36,7 @@ const LandingLayout = () => {
             ref={bubbleRef}
           >
             <SixthSection />
+            <Stats />
             <AwardSection />
             <ParentsReviews />
             <GoogleReviews />

@@ -1,14 +1,14 @@
 .fourth-section-main-div {
-  width: 100%;
+  width: 96%;
   position: relative;
-  margin-bottom: 3rem;
+  margin-left: 4%;
 }
 .fourth-section-main-div .title-div {
   width: 45%;
   padding-left: 10%;
 }
 .fourth-section-main-div .title-div .Sportstitle {
-  font-family: Mirador;
+  font-family: Mirador800;
   font-size: 70px;
   font-style: italic;
   font-weight: 900;
@@ -20,11 +20,11 @@
 }
 .fourth-section-main-div .title-div .title {
   color: #262626;
-  font-family: "Mirador100";
-  font-size: 30px;
+  font-family: "Mirador800";
+  font-size: clamp(15px, 1.8vw, 45px);
   font-style: italic;
   text-align: left;
-  font-weight: 400;
+  font-weight: 900;
 }
 .fourth-section-main-div .title-div .circled-text {
   width: fit-content;
@@ -64,8 +64,8 @@ svg .svg-circle {
 }
 
 .fourth-section-main-div .activity-div {
-  width: 30rem;
-  height: 20rem;
+  width: 30%;
+  aspect-ratio: 16/9.5;
   border-radius: 10px;
   position: relative;
   transition: transform 0.3s ease;
@@ -140,7 +140,7 @@ svg .svg-circle {
   left: 0;
   right: 0;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 20px 30px;
 }
 .fourth-section-main-div .activity-div .title {
   position: relative;
@@ -148,10 +148,10 @@ svg .svg-circle {
   text-align: left;
   color: #fff;
   text-shadow: 0px 0px 28px rgba(0, 0, 0, 0.5);
-  font-family: PF din Display;
-  font-size: 28px;
+  font-family: TT Chocolates;
+  font-size: clamp(12px, 2vw, 30px);
   font-style: normal;
-  font-weight: 100;
+  font-weight: 700;
 }
 .fourth-section-main-div .activities-div {
   display: flex;
@@ -159,7 +159,8 @@ svg .svg-circle {
 }
 .fourth-section-main-div .activities-div .topy {
   position: absolute;
-  transform: translateY(-48%);
+  transform: translate(-9%, -85%);
+  /* transform: translateY(-85%); */
   left: auto;
   right: 17%;
 }
@@ -171,20 +172,23 @@ svg .svg-circle {
 
 .fourth-section-main-div .activities-div .bottomy {
   position: absolute;
-  transform: translateY(75%);
+  transform: translate(-9%, 45%);
+  /* transform: translateY(45%); */
   left: auto;
-  right: 10%;
+  right: 13%;
 }
 .fourth-section-main-div .btn-div {
   display: flex;
   position: relative;
-  top: -8rem;
+  transform: translate(-3%, -150%);
+  /* transform: translate3d(-150%, ); */
+  /* transform: translateX(0%); */
   align-items: center;
   justify-content: center;
 }
 .fourth-section-main-div .see-all {
-  width: 20%;
-  margin-bottom: 5rem;
+  width: 25%;
+  transform: translateY(-135%);
   margin-left: 12%;
   height: auto;
 }
@@ -194,23 +198,6 @@ svg .svg-circle {
 }
 
 @media (max-width: 1550px) {
-  .fourth-section-main-div .activity-div {
-    width: 25rem;
-    height: 16rem;
-  }
-  .fourth-section-main-div .title-div .title {
-    font-size: 27px;
-  }
-  .fourth-section-main-div .btn-div {
-    left: -2rem;
-  }
-  .fourth-section-main-div .see-all {
-    width: 20%;
-    margin-top: -6rem;
-    margin-bottom: 5rem;
-    margin-left: 12%;
-    height: auto;
-  }
   .fourth-section-main-div .btn-div .see-more-btn .red-bg-btn {
     font-size: 2rem;
     width: 4rem;
@@ -219,12 +206,21 @@ svg .svg-circle {
     width: 8rem;
   }
 }
-
-@media (max-width: 1000px) {
+@media (max-width: 1250px) {
+  .fourth-section-main-div .btn-div .see-more-btn .red-bg-btn {
+    font-size: 1.8rem;
+    width: 3.2rem;
+  }
+  .fourth-section-main-div .btn-div .see-more-btn .btn-img {
+    width: 6rem;
+  }
+}
+@media (max-width: 768px) {
   .fourth-section-main-div {
     width: 100%;
     position: relative;
-    margin-bottom: 1.5rem;
+    margin: 0;
+    margin-bottom: 0rem;
   }
   .fourth-section-main-div .title-div {
     width: 90%;
@@ -287,9 +283,9 @@ svg .svg-circle {
     color: white;
     border-radius: 100px;
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 22px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 20px;
   }
 }
 @media (max-width: 500px) {

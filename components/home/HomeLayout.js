@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { useRef, useState } from "react";
 import { useMobile } from "../globalComponents/IsMobileContext";
@@ -17,6 +17,7 @@ import FeaturesSection from "./components/featuresSection/FeaturesSection";
 import scrollArrow from "../../public/icons/downArrowDoodle.svg";
 import Image from "next/image";
 import "../../styles/home/HomeLayout.css";
+import GoogleReviews from "@/app/boarding-school/admission-open/Components/Hero/components/GoogleReviews";
 
 const maxSections = 13;
 
@@ -24,7 +25,7 @@ const HomeLayout = () => {
   const { isMobile } = useMobile();
 
   const bubbleRef = useRef(null);
-  const [ scrollToSection, setScrollToSection ] = useState(1);
+  const [scrollToSection, setScrollToSection] = useState(1);
 
   const handleScrollArrow = () => {
     if (scrollToSection < maxSections) {
@@ -56,7 +57,10 @@ const HomeLayout = () => {
       <div>
         <>
           <Hero bubbleRef={bubbleRef} />
-          <div className="home-layout-allSection flex flex-col gap-6 md:gap-10" ref={bubbleRef}>
+          <div
+            className="home-layout-allSection flex flex-col gap-6 md:gap-10"
+            ref={bubbleRef}
+          >
             <SecondSection />
             <ThirdSection />
             <ActivityGrid />
@@ -66,7 +70,9 @@ const HomeLayout = () => {
             <TisByNumbers />
             <AwardSection />
             <Ranking />
+
             <ParentsReviews />
+            <GoogleReviews />
             <FeaturesSection />
           </div>
         </>

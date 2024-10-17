@@ -27,7 +27,7 @@ function ExceptionalFacilties() {
       image: ExceptionalDummy,
       name: (
         <>
-          Well-Eequipped <span className="text-[#b90124]">Laboratories</span>
+          Well-Equipped <span className="text-[#b90124]">Laboratories</span>
         </>
       ),
 
@@ -171,7 +171,7 @@ function ExceptionalFacilties() {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="flex z-30 justify-center items-center pt-4  gap-2">
+        <div className="flex z-30 justify-center items-center pt-10  gap-2">
           {features.map((_, index) => (
             <div key={index} onClick={() => handleDotClick(index)}>
               <div

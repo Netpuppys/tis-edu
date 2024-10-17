@@ -16,6 +16,38 @@ export default function Ranking() {
   });
 
   const countersRef = useRef(null);
+  const rankData = [
+    {
+      id: 1,
+      rankKey: "Dehradun",
+      defaultRank: "#1",
+      location: "Dehradun",
+      description:
+        "Co-Educational Boarding School in Dehradun by Education Today",
+    },
+    {
+      id: 2,
+      rankKey: "Uttrakhand",
+      defaultRank: "#2",
+      location: "Uttrakhand",
+      description:
+        "Co-Educational Boarding School in North India by Education Today",
+    },
+    {
+      id: 3,
+      rankKey: "Dehradun",
+      defaultRank: "#1",
+      location: "North India",
+      description: "Co-Educational Boarding School in North India by Outlook",
+    },
+    {
+      id: 4,
+      rankKey: "India",
+      defaultRank: "#4",
+      location: "India",
+      description: "Co-Educational Boarding School in India by Education Today",
+    },
+  ];
 
   const handleIntersection = (entries) => {
     entries.forEach((entry) => {
@@ -61,60 +93,60 @@ export default function Ranking() {
   return (
     <div id="10">
       {!isMobile && (
-        <div className="rankings">
-          <div ref={countersRef} className="ranks">
-            <div className="ranking">
-              <Image src={ranking} alt="" />
-              <Image className="ActivitySee" src={seeactivity} alt="" />
+        <div className="bg-[#f8f5f0] px-[2%] py-8">
+          <div
+            ref={countersRef}
+            className="flex justify-center items-center gap-10"
+          >
+            <div className="flex justify-center items-center gap-6 w-[25%]">
+              <Image className="w-[80%]" src={ranking} alt="" />
+              <Image className="w-[20%]" src={seeactivity} alt="" />
             </div>
 
-            <div className="rank1">
-              {isInViewport && (
-                <div className="counter-number">#{counters.Dehradun}</div>
-              )}
-              {!isInViewport && <div className="counter-number">#1</div>}
+            {rankData.map((rank) => (
+              <div
+                className="rounded-md bg-[#b90124] flex flex-col items-center justify-center aspect-square w-[15%] p-2"
+                key={rank.id}
+              >
+                {isInViewport ? (
+                  <div
+                    className="text-white text-center font-[Miltonian]"
+                    style={{
+                      fontSize: "clamp(30px, 3.2vw, 60px)",
+                    }}
+                  >
+                    #{counters[rank.rankKey]}
+                  </div>
+                ) : (
+                  <div
+                    className="text-white text-center font-[Miltonian]"
+                    style={{
+                      fontSize: "clamp(30px, 3.2vw, 60px)",
+                    }}
+                  >
+                    {rank.defaultRank}
+                  </div>
+                )}
 
-              <h2 className="counter-number-span">In Dehradun</h2>
-              <h2 className="counter-title-rank">
-                Co-Educational Boarding School in Dehradun by Education Today
-              </h2>
-            </div>
-
-            <div className="rank1">
-              {isInViewport && (
-                <div className="counter-number">#{counters.Uttrakhand} </div>
-              )}
-              {!isInViewport && <div className="counter-number">#2</div>}
-
-              <h2 className="counter-number-span">In Uttrakhand</h2>
-              <h2 className="counter-title-rank">
-                Co-Educational Boarding School in North India by Education Today
-              </h2>
-            </div>
-
-            <div className="rank1">
-              {isInViewport && (
-                <div className="counter-number">#{counters.Dehradun}</div>
-              )}
-              {!isInViewport && <div className="counter-number">#1</div>}
-
-              <h2 className="counter-number-span">In North India</h2>
-              <h2 className="counter-title-rank">
-                Co-Educational Boarding School in North India by Outlook
-              </h2>
-            </div>
-
-            <div className="rank1">
-              {isInViewport && (
-                <div className="counter-number">#{counters.India}</div>
-              )}
-              {!isInViewport && <div className="counter-number">#4</div>}
-
-              <h2 className="counter-number-span">In India</h2>
-              <h2 className="counter-title-rank">
-                Co-Educational Boarding School in India by Education Today
-              </h2>
-            </div>
+                <h2
+                  className="text-white text-center italic font-[Mirador]"
+                  style={{
+                    fontSize: "clamp(15px, 1.7vw, 35px)",
+                  }}
+                >
+                  In {rank.location}
+                </h2>
+                <h2
+                  className="text-white text-center"
+                  style={{
+                    fontSize: "clamp(12px, 1.2vw, 20px)",
+                    fontFamily: "TT Chocolates",
+                  }}
+                >
+                  {rank.description}
+                </h2>
+              </div>
+            ))}
           </div>
         </div>
       )}
