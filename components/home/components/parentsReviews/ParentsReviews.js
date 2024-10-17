@@ -38,16 +38,14 @@ function ParentsReviews() {
     "Review 2",
   ];
 
-  {
-    /*const handleParentClick = (index) => {
+  const handleParentClick = (index) => {
     setSelectedParent(index);
   };
 
-  const getVideoSrc = (index) => {
-    const videoSrc = parents[index].video.videoSrc;
-    return videoSrc;
-  }; */
-  }
+  // const getVideoSrc = (index) => {
+  //   const videoSrc = parents[index].video.videoSrc;
+  //   return videoSrc;
+  // };
 
   return (
     <div className="parent-reviews-main-div" id="11">
@@ -69,8 +67,7 @@ function ParentsReviews() {
 
       {!isMobile && (
         <div className="right-div">
-          {/*
-          <Image
+          {/* <Image
             className="previousIcon"
             src={previousIcon}
             onClick={() => handleParentClick(0)}
@@ -92,7 +89,6 @@ function ParentsReviews() {
 
       {isMobile && (
         <div className="Mobile-div-video">
-          {/*
           <Image
             className="previousIcon"
             src={previousIcon}
@@ -104,7 +100,7 @@ function ParentsReviews() {
             src={nextIcon}
             onClick={() => handleParentClick(1)}
             alt="Next"
-          /> */}
+          />
           <div className="background-red-div">
             <Image src={parent} alt="" />
           </div>

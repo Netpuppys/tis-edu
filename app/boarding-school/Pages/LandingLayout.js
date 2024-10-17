@@ -21,7 +21,7 @@ const LandingLayout = () => {
       <div>
         <>
           <div
-            className="home-layout-allSection flex flex-col gap-6 md:gap-10"
+            className="home-layout-allSection flex flex-col gap-12 md:gap-10"
             ref={bubbleRef}
           >
             <Banner />
@@ -31,13 +31,13 @@ const LandingLayout = () => {
           </div>
           <HeroLanding bubbleRef={bubbleRef} />
           <div
-            className="home-layout-allSection flex flex-col mt-6 md:mt-10 gap-6 md:gap-10"
+            className="home-layout-allSection flex flex-col mt-12 md:mt-10 gap-12 md:gap-10"
             ref={bubbleRef}
           >
             <SixthSection />
             <AwardSection />
             <ParentsReviews />
-            <GoogleReviews/>
+            <GoogleReviews />
           </div>
         </>
       </div>

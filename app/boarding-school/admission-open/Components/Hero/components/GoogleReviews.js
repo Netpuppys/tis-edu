@@ -128,25 +128,27 @@ function GoogleReviews() {
         </div>
       </div>
       <div className="w-full md:w-[58%] relative min-h-[50vh] md:min-h-[75vh] backgroundGoogle">
-        <div className="w-full h-fit absolute top-[50%] overflow-hidden -translate-y-1/2">
+        <div className="w-full h-fit absolute top-[50%] -translate-y-1/2 md:translate-y-0 md:top-[35%] overflow-hidden ">
           <div
-            className={` ${inView ? "animate-translateRight opacity-100" : "opacity-0"}`}
+            className={`pl-0 md:pl-12 ${
+              inView ? "animate-translateRight opacity-100" : "opacity-0"
+            }`}
           >
             <Swiper
               onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
               ref={swiperRef}
-              slidesPerView={isMobile ? 1.2 : 2.3}
-              centeredSlides={true}
+              slidesPerView={isMobile ? 1.2 : 2.8}
               spaceBetween={30}
+              centeredSlides={isMobile ? true : false}
             >
               {features.map((feature, index) => (
                 <SwiperSlide key={index}>
                   <div
-                    className="h-full rounded-xl w-full px-6 py-4 bg-white overflow-hidden mx-auto"
+                    className="h-full rounded-xl w-full mx-auto px-6 py-4 bg-white overflow-hidden"
                     style={{ fontFamily: "TT Chocolates" }}
                   >
                     <div className="flex justify-between mb-4 items-center">
-                      <div className="w-fit flex flex-col text-[14px] gap-4 justify-between">
+                      <div className="w-fit flex flex-col text-[14px] gap-2 md:gap-4 justify-between">
                         <StarRatings
                           rating={feature.rating}
                           starRatedColor="#b90124"
@@ -165,10 +167,10 @@ function GoogleReviews() {
                       <Image
                         src={feature.image}
                         alt=""
-                        className="w-40 aspect-square rounded-full h-full object-cover"
+                        className="w-28 aspect-square rounded-full h-full object-cover"
                       />
                     </div>
-                    <p className="text-[16px] md:text-[20px]">
+                    <p className="text-[14px] text-left md:text-[14px]">
                       {feature.description}
                     </p>
                   </div>
@@ -176,10 +178,10 @@ function GoogleReviews() {
               ))}
             </Swiper>
           </div>
-          <div className="flex space-x-10 pt-4 justify-end pr-10">
+          <div className="flex space-x-10 pt-8 justify-end pr-10">
             <button
               onClick={handlePrevClick}
-              className={`pointer-events-auto shadow-2xl text-white h-[60px] w-[60px] bg-[#b90124] flex items-center justify-center text-[40px] ${
+              className={`pointer-events-auto shadow-2xl text-white h-[40px] w-[40px] bg-[#b90124] flex items-center justify-center text-[30px] ${
                 activeIndex === 0
                   ? "cursor-not-allowed opacity-50"
                   : "active:scale-90"
@@ -190,7 +192,7 @@ function GoogleReviews() {
             </button>
             <button
               onClick={handleNextClick}
-              className={`pointer-events-auto shadow-2xl text-white h-[60px] w-[60px] bg-[#b90124] flex items-center justify-center text-[40px] ${
+              className={`pointer-events-auto shadow-2xl text-white h-[40px] w-[40px] bg-[#b90124] flex items-center justify-center text-[30px] ${
                 activeIndex === features.length - 1
                   ? "cursor-not-allowed opacity-50"
                   : "active:scale-90"

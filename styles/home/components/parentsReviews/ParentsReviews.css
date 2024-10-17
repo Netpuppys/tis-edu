@@ -151,6 +151,9 @@
   }
 }
 @media (max-width: 768px) {
+  .parent-reviews-main-div {
+    margin-top: 0rem;
+  }
   .parent-reviews-main-div .left-div {
     width: 90%;
     margin-left: auto;

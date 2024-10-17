@@ -129,7 +129,7 @@ function Banner() {
             <div
               key={index}
               onClick={() => handleDotClick(index)}
-              className={`${
+              className={`pointer-events-auto ${
                 index === currentIndex
                   ? "border-2 border-white p-[2px] rounded-full"
                   : "border-none"
