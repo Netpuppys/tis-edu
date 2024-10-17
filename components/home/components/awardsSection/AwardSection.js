@@ -48,7 +48,7 @@ function AwardSection() {
     {
       id: 5,
       image: Higher,
-      title: "Higher Education Leader of ther Year",
+      title: "Higher Education Leader of the Year",
     },
     {
       id: 6,

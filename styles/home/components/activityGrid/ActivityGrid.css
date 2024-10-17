@@ -246,6 +246,7 @@ svg .svg-circle {
   }
   .fourth-section-main-div .title-div .Sportstitle {
     font-size: 55px;
+    font-family: Mirador;
   }
   .fourth-section-main-div .activities-div .title {
     font-size: 22px;
@@ -266,7 +267,9 @@ svg .svg-circle {
     margin-right: auto;
     margin-top: 1rem;
   }
-
+  .fourth-section-main-div .activity-div .title-div-card {
+    padding: 10px 20px;
+  }
   .fourth-section-main-div .see-more-mobile {
     display: block;
     margin-top: 1rem;
