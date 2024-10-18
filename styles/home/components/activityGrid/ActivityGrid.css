@@ -239,6 +239,7 @@ svg .svg-circle {
   }
   .fourth-section-main-div .title-div .title {
     font-size: 1.2rem;
+    font-family: Mirador;
   }
 
   .fourth-section-main-div .sub-title {
@@ -250,7 +251,6 @@ svg .svg-circle {
   }
   .fourth-section-main-div .activities-div .title {
     font-size: 22px;
-    font-family: Mirador;
   }
 
   .fourth-section-main-div .activities-div {

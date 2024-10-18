@@ -214,6 +214,7 @@
   }
   .Award-section-main-div .title-div .title {
     font-size: 1.2rem;
+    font-family: Mirador;
   }
   .Award-section-main-div .activity-div .title-div-card {
     padding: 10px 20px;
@@ -227,7 +228,6 @@
   }
   .Award-section-main-div .activities-div .title {
     font-size: 22px;
-    font-family: Mirador;
   }
 
   .Award-section-main-div .activities-div {
