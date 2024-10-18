@@ -23,6 +23,10 @@
   src: url(../public/fonts/TT\ Chocolates\ Trial\ Regular.otf);
 }
 @font-face {
+  font-family: "TTChocolatesBold";
+  src: url(../public/fonts/TT\ Chocolates\ Trial\ Bold.otf);
+}
+@font-face {
   font-family: "Zurdo W01 Regular";
   src: url(../public/fonts/Zurdo\ W01\ Regular.ttf);
 }
@@ -73,6 +77,11 @@ a {
 p {
   margin-block-start: 0rem;
   margin-block-end: 0rem;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background: rgba(0, 0, 0, 0) !important;
 }
 
 .backgroundGoogle {
