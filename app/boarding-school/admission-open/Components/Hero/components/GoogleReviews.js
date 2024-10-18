@@ -153,24 +153,39 @@ function GoogleReviews() {
                           rating={feature.rating}
                           starRatedColor="#b90124"
                           numberOfStars={5}
-                          starDimension="20px"
-                          starSpacing="5px"
+                          starDimension="15px"
+                          starSpacing="2px"
                           name="rating"
                         />
-                        <h2 className="text-[22px] md:text-[30px] leading-none font-extrabold text-left ">
+                        <h2
+                          style={{
+                            fontSize: "clamp(20px, 1.6vw, 45px)",
+                          }}
+                          className="leading-none font-extrabold text-left "
+                        >
                           {feature.name}
                         </h2>
-                        <h3 className="text-[16px] md:text-[20px] leading-none font-extrabold text-left ">
+                        <h3
+                          style={{
+                            fontSize: "clamp(13px, 1vw, 45px)",
+                          }}
+                          className=" leading-none font-extrabold text-left "
+                        >
                           {feature.reviewBy}
                         </h3>
                       </div>
                       <Image
                         src={feature.image}
                         alt=""
-                        className="w-28 aspect-square rounded-full h-full object-cover"
+                        className="w-[40%] aspect-square rounded-full h-full object-cover"
                       />
                     </div>
-                    <p className="text-[14px] text-left md:text-[14px]">
+                    <p
+                      style={{
+                        fontSize: "clamp(13px, 0.7vw, 45px)",
+                      }}
+                      className="text-left"
+                    >
                       {feature.description}
                     </p>
                   </div>

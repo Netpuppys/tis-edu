@@ -18,7 +18,7 @@ import petal3 from "../../../../../public/doodles/petal-3.svg";
 import "../../../../../styles/home/components/Hero/Hero.css";
 import { useInView } from "react-intersection-observer";
 
-function useIsInViewport(ref, threshold = 0.3) {
+function useIsInViewport(ref, threshold = 0.308) {
   const [isIntersecting, setIsIntersecting] = useState(false);
 
   const observer = useMemo(
@@ -55,7 +55,7 @@ function HeroLanding(props) {
   const heroSectionRef = useRef(null); // Ref for the hero section
   const makeDivRelative = useIsInViewport(bubbleRef);
   const isYellowCircleInView = useIsInViewport(yellowCircleRef);
-  const isBaseTextDivActive = useIsInViewport(heroSectionRef, 0.3); // Check if hero section is 90% in view
+  const isBaseTextDivActive = useIsInViewport(heroSectionRef); // Check if hero section is 90% in view
 
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
@@ -92,11 +92,23 @@ function HeroLanding(props) {
 
   return (
     <div className="hero-container-main" ref={heroSectionRef}>
-      <div className={`${isBaseTextDivActive ? "fixed top-0" : "absolute"}`}>
+      <div
+        className={`${
+          isBaseTextDivActive
+            ? "fixed top-0"
+            : `absolute ${isYellowCircleInView ? "bottom-0" : "top-0"}`
+        }`}
+      >
         <HeroText isFilledText={filledText} />
       </div>
 
-      <div className={`${isBaseTextDivActive ? "fixed top-0" : "absolute"}`}>
+      <div
+        className={`${
+          isBaseTextDivActive
+            ? "fixed top-0"
+            : `absolute ${isYellowCircleInView ? "bottom-0" : "top-0"}`
+        }`}
+      >
         <HeroText isFilledText={!filledText} />
       </div>
 
