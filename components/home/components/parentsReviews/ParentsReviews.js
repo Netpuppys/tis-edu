@@ -18,19 +18,19 @@ function ParentsReviews() {
   const parents = [
     {
       parent: parent,
-      path: "https://youtube.com/shorts/p85D6uf0HzU?feature=shared",
+      path: "https://player.vimeo.com/video/1020966853?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
     {
       parent: parent,
-      path: "https://youtube.com/shorts/p85D6uf0HzU?feature=shared",
+      path: "https://player.vimeo.com/video/1020966607?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
     {
       parent: parent,
-      path: "https://youtube.com/shorts/p85D6uf0HzU?feature=shared",
+      path: "https://player.vimeo.com/video/1020966777?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
     {
       parent: parent,
-      path: "https://youtube.com/shorts/p85D6uf0HzU?feature=shared",
+      path: "https://player.vimeo.com/video/1020966663?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
   ];
 
@@ -87,7 +87,7 @@ function ParentsReviews() {
           effect={"coverflow"}
           grabCursor={true}
           // slidesPerView={isMobile ? 1.3 : 3}
-          slidesPerView={isMobile ? "auto" : 3}
+          slidesPerView={isMobile ? "auto" : 4}
           centeredSlides={true}
           initialSlide={1} // Set the default active slide to index 1
           onSlideChange={handleSlideChange}
@@ -103,11 +103,21 @@ function ParentsReviews() {
           {parents.map((parent, index) => (
             <div className="rounded-3xl overflow-hidden" key={index}>
               <SwiperSlide>
-                <Image
+                {/* <Image
                   className="h-fit w-fit aspect-[9/16] mx-auto"
                   src={parent.parent}
                   alt=""
-                />
+                /> */}
+                <div className="h-fit w-fit aspect-[9/16] mx-auto">
+                  <div className="w-full h-full object-cover border border-black rounded-3xl overflow-hidden">
+                    <iframe
+                      src={parent.path}
+                      // frameBorder="0"
+                      // allowfullscreen
+                      className="w-full h-full object-cover bg-transparent"
+                    />
+                  </div>
+                </div>
               </SwiperSlide>
             </div>
           ))}
