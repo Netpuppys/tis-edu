@@ -8,6 +8,7 @@ import Banner1Mobile from "../../../../../public/Banner1Mobile.png";
 import { useMobile } from "@/components/globalComponents/IsMobileContext";
 function Banner() {
   const { isMobile } = useMobile();
+
   useEffect(() => {
     const loadScriptAndStyles = () => {
       window.ee_form_widget_baseurl =
@@ -102,27 +103,42 @@ function Banner() {
         </a>
         <Image src={schoolLogo} className="w-20 md:w-28" alt="school" />
       </div>
-      <div className="z-40 relative mt-[70vh] md:mt-0 flex md:pr-40">
+      <div className="z-40 relative mt-[55vh] md:mt-0 flex md:pr-40">
         <div
           id="ee-form-3"
           className="shadow-2xl w-[90%] mx-auto p-2 md:p-4 bg-white max-w-[450px] rounded-3xl"
         ></div>
       </div>
+
       <div className="h-[100vh] w-full absolute top-0 object-cover">
-        {/* {currentIndex === 2 && (
-          <iframe
-            src="https://player.vimeo.com/video/970387029?autoplay=1&loop=1&muted=1&controls=0"
-            frameBorder="0"
-            allow="autoplay; fullscreen"
-            className="absolute w-full h-full z-20 object-fit opacity-70 left-0 top-0"
-          />
-        )} */}
-        <div className="z-10 w-full h-[75vh] relative md:h-screen inset-0 transition-opacity duration-500 overflow-hidden bg-black">
-          <Image
-            src={isMobile ? Banner1Mobile : Banner1}
-            alt=""
-            className="object-cover w-full opacity-50 h-[75vh] md:h-screen"
-          />
+        <div className="z-10 w-full h-[65vh] relative md:h-screen inset-0 transition-opacity duration-500 overflow-hidden">
+
+        {!isMobile &&
+        <div 
+          className="w-full h-full min-w-[100%] min-h-screen relative"
+        >
+          <div className="z-10 bg-black absolute top-0 right-0 w-full h-full bg-opacity-60"></div>
+          <iframe 
+            src="https://player.vimeo.com/video/1022462718?autoplay=1&loop=1&muted=1&controls=0" 
+            className={`w-full h-full object-cover min-h-full min-w-full scale-125`}
+            title="MAIN_COMPOSITION"
+          ></iframe>
+          <script src="https://player.vimeo.com/api/player.js"></script>
+        </div>}
+
+        {isMobile &&
+        <div 
+          className="w-full h-full min-w-[100%] min-h-full bg-red-600 relative"
+        >
+          <div className="z-10 relative bg-black w-full h-full bg-opacity-60"></div>
+          <iframe 
+            src="https://player.vimeo.com/video/1022468806?autoplay=1&loop=1&muted=1&controls=0"  
+            className={`w-full h-full absolute z-0 top-0 object-cover min-h-full min-w-full scale-125`}
+            title="mobile version"
+          ></iframe>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        </div>}
+
           <div className="absolute z-50 flex flex-col top-0 justify-center text-white animate-translateBottomHalf md:animate-translateRightHalf items-start w-full h-[75vh] md:h-screen">
             <div className="w-full md:w-[50%] text-center flex flex-col items-center justify-center gap-[2vh]">
               <p
@@ -166,27 +182,6 @@ function Banner() {
             </div>
           </div>
         </div>
-        {/* <div className="flex z-30 flex-col self-center items-center pt-4 absolute top-1/2 gap-2 transform -translate-y-1/2 right-2">
-          {images.map((_, index) => (
-            <div
-              key={index}
-              onClick={() => handleDotClick(index)}
-              className={`pointer-events-auto ${
-                index === currentIndex
-                  ? "border-2 border-white p-[2px] rounded-full"
-                  : "border-none"
-              } `}
-            >
-              <div
-                className={`w-[10px] h-[10px] md:w-[15px] z-10 md:h-[15px] rounded-full flex items-center justify-center cursor-pointer ${
-                  index === currentIndex
-                    ? " bg-white"
-                    : " bg-gray-400 blur-[0.6px]"
-                }`}
-              ></div>
-            </div>
-          ))}
-        </div> */}
       </div>
     </div>
   );
