@@ -29,7 +29,7 @@ function Banner() {
         window.ee_form_widget_baseurl + "js/eeFormWidget.min.js";
       scriptElement.onload = async function () {
         const _eeFormWidget = new eeFormWidget();
-        await _eeFormWidget.init("tisd", "form-3", "ee-form-3");
+        await _eeFormWidget.init("tisd", "form-5", "ee-form-5");
       };
 
       document.getElementsByTagName("head")[0].appendChild(scriptElement);
@@ -93,7 +93,7 @@ function Banner() {
   // }, [currentIndex]);
   return (
     <div className="w-full min-h-[100vh] flex flex-col justify-end md:justify-center items-end relative object-cover bg-transparent md:bg-[#b90124]">
-      <div className="absolute top-0 left-0 z-30 px-6 md:px-8 py-6 md:py-8 flex items-center justify-between w-full">
+      <div className="fixed top-0 left-0 z-40 px-6 md:px-8 py-6 md:py-8 flex items-center justify-between w-full">
         <a
           href="tel:+91-8108012525"
           className="w-20 md:w-28 bg-[#60BAB1] p-6 md:p-8 rounded-full"
@@ -103,41 +103,38 @@ function Banner() {
         </a>
         <Image src={schoolLogo} className="w-20 md:w-28" alt="school" />
       </div>
-      <div className="z-40 relative mt-[55vh] md:mt-0 flex md:pr-40">
+      <div className="z-30 relative mt-[55vh] md:mt-0 flex md:pr-40">
         <div
-          id="ee-form-3"
+          id="ee-form-5"
           className="shadow-2xl w-[90%] mx-auto p-2 md:p-4 bg-white max-w-[450px] rounded-3xl"
         ></div>
       </div>
 
       <div className="h-[100vh] w-full absolute top-0 object-cover">
         <div className="z-10 w-full h-[65vh] relative md:h-screen inset-0 transition-opacity duration-500 overflow-hidden">
+          {!isMobile && (
+            <div className="w-full h-full min-w-[100%] min-h-screen relative">
+              <div className="z-10 bg-black absolute top-0 right-0 w-full h-full bg-opacity-60"></div>
+              <iframe
+                src="https://player.vimeo.com/video/1022462718?autoplay=1&loop=1&muted=1&controls=0"
+                className={`w-full h-full object-cover min-h-full min-w-full scale-125`}
+                title="MAIN_COMPOSITION"
+              ></iframe>
+              <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+          )}
 
-        {!isMobile &&
-        <div 
-          className="w-full h-full min-w-[100%] min-h-screen relative"
-        >
-          <div className="z-10 bg-black absolute top-0 right-0 w-full h-full bg-opacity-60"></div>
-          <iframe 
-            src="https://player.vimeo.com/video/1022462718?autoplay=1&loop=1&muted=1&controls=0" 
-            className={`w-full h-full object-cover min-h-full min-w-full scale-125`}
-            title="MAIN_COMPOSITION"
-          ></iframe>
-          <script src="https://player.vimeo.com/api/player.js"></script>
-        </div>}
-
-        {isMobile &&
-        <div 
-          className="w-full h-full min-w-[100%] min-h-full bg-red-600 relative"
-        >
-          <div className="z-10 relative bg-black w-full h-full bg-opacity-60"></div>
-          <iframe 
-            src="https://player.vimeo.com/video/1022468806?autoplay=1&loop=1&muted=1&controls=0"  
-            className={`w-full h-full absolute z-0 top-0 object-cover min-h-full min-w-full scale-125`}
-            title="mobile version"
-          ></iframe>
-        <script src="https://player.vimeo.com/api/player.js"></script>
-        </div>}
+          {isMobile && (
+            <div className="w-full h-full min-w-[100%] min-h-full bg-red-600 relative">
+              <div className="z-10 relative bg-black w-full h-full bg-opacity-60"></div>
+              <iframe
+                src="https://player.vimeo.com/video/1022468806?autoplay=1&loop=1&muted=1&controls=0"
+                className={`w-full h-full absolute z-0 top-0 object-cover min-h-full min-w-full scale-125`}
+                title="mobile version"
+              ></iframe>
+              <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+          )}
 
           <div className="absolute z-50 flex flex-col top-0 justify-center text-white animate-translateBottomHalf md:animate-translateRightHalf items-start w-full h-[75vh] md:h-screen">
             <div className="w-full md:w-[50%] text-center flex flex-col items-center justify-center gap-[2vh]">

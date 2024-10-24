@@ -13,10 +13,10 @@ export default function ThankYouPage() {
       <div className="thank-you-page">
         <h1 className="THank">
           Thank <span>You</span>
-          <star>
-            <BsStars />
-          </star>
         </h1>
+        <h2 className="star">
+          <BsStars />
+        </h2>
         <h3>Our Team will get in touch with you shortly...</h3>
 
         <button
