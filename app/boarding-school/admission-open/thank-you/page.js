@@ -9,7 +9,7 @@ function Page() {
       setTimer((prevTimer) => {
         if (prevTimer === 1) {
           clearInterval(interval);
-          window.location.href = "/boarding-school/admission-open";
+          window.location.href = "/";
         }
         return prevTimer - 1;
       });
@@ -23,19 +23,19 @@ function Page() {
       <div className="bg-[#b90124] bg-opacity-10 h-[65vh] w-[65vh] absolute rounded-full"></div>
       <div className="bg-[#b90124] bg-opacity-10 h-[50vh] w-[50vh] absolute rounded-full"></div>
       <div className="bg-[#b90124] bg-opacity-10 h-[35vh] w-[35vh] absolute rounded-full"></div>
-      <div className="bg-[#b90124] bg-opacity-75 text-black text-[10vh] mb-[1vh] md:mb-[2vh] h-fit w-fit aspect-square p-8 rounded-full">
+      <div className="bg-[#b90124] bg-opacity-75 text-white text-[10vh] mb-[1vh] md:mb-[2vh] h-fit w-fit aspect-square p-8 rounded-full">
         <TbMailOpenedFilled />
       </div>
       <div
         style={{
           fontFamily: "TT Chocolates",
         }}
-        className="z-[50] px-8 pointer-events-auto flex flex-col justify-center items-center"
+        className="z-[50] px-8 mb-[2vh] pointer-events-auto flex flex-col justify-center items-center"
       >
-        <h3 className="text-balck text-[clamp(25px,1.9vw,45px)] font-[Helvetica]">
-          Thank You for your trust!
+        <h3 className="text-[#b90124] text-[clamp(25px,2.2vw,60px)] font-[TTChocolatesBold] font-black">
+          Thank You!
         </h3>
-        <h5 className="text-center mb-[1vh] max-w-[600px] md:mb-[2vh] text-balck italic text-[clamp(18px,1.1vw,45px)]">
+        <h5 className="text-center mb-[1vh] max-w-[600px] md:mb-[2vh] text-black italic text-[clamp(18px,1.1vw,45px)]">
           Our team will get in touch with you for the next steps. For questions
           or rush request, please email{" "}
           <a href="mailto:info@tis.edu.in" className="text-[#b90124]">
@@ -43,10 +43,18 @@ function Page() {
             info@tis.edu.in
           </a>
         </h5>
-        <p className="text-center text-balck text-[clamp(18px,1.1vw,45px)]">
+        <p className="text-center text-black text-[clamp(18px,1.1vw,45px)]">
           You will be redirected to Home Page in {timer} seconds.
         </p>
       </div>
+      <button
+        onClick={() => {
+          window.location.href = "/";
+        }}
+        className="text-center text-white font-[TTChocolatesBold] text-xl z-20 rounded-full py-2 px-20 bg-[#b90124] text-[clambutton(18px,1.1vw,45px)]"
+      >
+        Back To Home
+      </button>
     </div>
   );
 }

@@ -16,9 +16,8 @@ import petal1 from "../../../../../public/doodles/petal1.svg";
 import petal2 from "../../../../../public/doodles/petal-2.webp";
 import petal3 from "../../../../../public/doodles/petal-3.svg";
 import "../../../../../styles/home/components/Hero/Hero.css";
-import { useInView } from "react-intersection-observer";
 
-function useIsInViewport(ref, threshold = 0.308) {
+function useIsInViewport(ref, threshold = 0.208) {
   const [isIntersecting, setIsIntersecting] = useState(false);
 
   const observer = useMemo(

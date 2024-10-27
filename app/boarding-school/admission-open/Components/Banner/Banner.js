@@ -3,7 +3,7 @@ import React, { use, useEffect, useRef, useState } from "react";
 import schoolLogo from "../../../../../public/logos/schoolLogo.png";
 import Image from "next/image";
 import phoneCallGif from "../../../../../public/phone_ringing.gif";
-import Banner1 from "../../../../../public/Banner1.png";
+import Banner1 from "../../../../../public/LandingPage/Banner.webp";
 import Banner1Mobile from "../../../../../public/Banner1Mobile.png";
 import { useMobile } from "@/components/globalComponents/IsMobileContext";
 function Banner() {
@@ -111,13 +111,18 @@ function Banner() {
       </div>
 
       <div className="h-[100vh] w-full absolute top-0 object-cover">
-        <div className="z-10 w-full h-[65vh] relative md:h-screen inset-0 transition-opacity duration-500 overflow-hidden">
+        <div className="z-10 w-full h-[65vh] relative md:h-screen overflow-hidden">
           {!isMobile && (
             <div className="w-full h-full min-w-[100%] min-h-screen relative">
-              <div className="z-10 bg-black absolute top-0 right-0 w-full h-full bg-opacity-60"></div>
+              <Image
+                src={Banner1}
+                alt=""
+                className="w-full h-full object-cover absolute -z-10"
+              />
+              <div className="z-10 bg-black absolute top-0 right-0 w-full h-full opacity-60"></div>
               <iframe
                 src="https://player.vimeo.com/video/1022462718?autoplay=1&loop=1&muted=1&controls=0"
-                className={`w-full h-full object-cover min-h-full min-w-full scale-125`}
+                className={`w-full h-full absolute object-cover min-h-full min-w-full z-0 scale-125`}
                 title="MAIN_COMPOSITION"
               ></iframe>
               <script src="https://player.vimeo.com/api/player.js"></script>
@@ -125,11 +130,16 @@ function Banner() {
           )}
 
           {isMobile && (
-            <div className="w-full h-full min-w-[100%] min-h-full bg-red-600 relative">
-              <div className="z-10 relative bg-black w-full h-full bg-opacity-60"></div>
+            <div className="w-full h-full min-w-[100%] min-h-full relative">
+              <Image
+                src={Banner1}
+                alt=""
+                className="w-full h-full object-cover -z-10 absolute"
+              />
+              <div className="z-20 relative bg-black w-full h-full bg-opacity-60"></div>
               <iframe
                 src="https://player.vimeo.com/video/1022468806?autoplay=1&loop=1&muted=1&controls=0"
-                className={`w-full h-full absolute z-0 top-0 object-cover min-h-full min-w-full scale-125`}
+                className={`w-full h-full absolute z-10 top-0 object-cover min-h-full min-w-full scale-125`}
                 title="mobile version"
               ></iframe>
               <script src="https://player.vimeo.com/api/player.js"></script>

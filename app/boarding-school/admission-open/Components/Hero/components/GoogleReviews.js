@@ -1,10 +1,14 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import googleReviewsBackground from "../../../../../../public/LandingPage/googleReviewsBackground.png";
 import Image from "next/image";
 import "swiper/css";
 import { useInView } from "react-intersection-observer";
 import { SwiperSlide, Swiper } from "swiper/react";
-import reviewsDummy from "../../../../../../public/LandingPage/reviewsDummy.png";
+import nisha from "../../../../../../public/LandingPage/nisha.png";
+import adarsh from "../../../../../../public/LandingPage/adarsh.png";
+import shuvam from "../../../../../../public/LandingPage/shuvam.png";
+import Richi from "../../../../../../public/LandingPage/richi.png";
+import akshat from "../../../../../../public/LandingPage/akshat.png";
 import StarRatings from "react-star-ratings";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { useMobile } from "@/components/globalComponents/IsMobileContext";
@@ -18,44 +22,44 @@ function GoogleReviews() {
 
   const features = [
     {
-      image: reviewsDummy,
+      image: adarsh,
       rating: 5,
-      name: "Apurva Rai",
+      name: "Adarsh Shrivastava",
       reviewBy: "PROUD PARENT",
       description:
-        "A school for my kid has to be the best in terms of everything. Being a prestigious institution focusing on overall development, Tula's sounded like the best option!",
+        "The boarding facilities at Tula's International School are exceptional. My son feels at home and well-cared for. The staff are attentive and always available to help with any needs he may have.",
     },
     {
-      image: reviewsDummy,
+      image: nisha,
+      rating: 5,
+      name: "Nisha Giri",
+      reviewBy: "PROUD PARENT",
+      description:
+        "I have been thoroughly impressed with Tula's International School since my daughter started attending three years ago. The teachers are knowledgeable and passionate about their subjects.",
+    },
+    {
+      image: shuvam,
+      rating: 5,
+      name: "Shuvam Sahu",
+      reviewBy: "PROUD PARENT",
+      description:
+        "Safety and security are of utmost importance at Tula's International School. The school maintains a strict security protocol, ensuring the well-being and protection of its students.",
+    },
+    {
+      image: Richi,
       rating: 4.5,
-      name: "Apurva Rai",
+      name: "Richi Sahu",
       reviewBy: "PROUD PARENT",
       description:
-        "A school for my kid has to be the best in terms of everything. Being a prestigious institution focusing on overall development, Tula's sounded like the best option!",
+        "Tula's International School offers a wide range of academic programs and extracurricular opportunities that cater to the unique interests and aspirations of every student, encouraging their personal growth and exploration.",
     },
     {
-      image: reviewsDummy,
-      rating: 3.4,
-      name: "Apurva Rai",
-      reviewBy: "PROUD PARENT",
-      description:
-        "A school for my kid has to be the best in terms of everything. Being a prestigious institution focusing on overall development, Tula's sounded like the best option!",
-    },
-    {
-      image: reviewsDummy,
-      rating: 3.5,
-      name: "Apurva Rai",
-      reviewBy: "PROUD PARENT",
-      description:
-        "A school for my kid has to be the best in terms of everything. Being a prestigious institution focusing on overall development, Tula's sounded like the best option!",
-    },
-    {
-      image: reviewsDummy,
+      image: akshat,
       rating: 4.5,
-      name: "Apurva Rai",
+      name: "AKSHAT GOYAL",
       reviewBy: "PROUD PARENT",
       description:
-        "A school for my kid has to be the best in terms of everything. Being a prestigious institution focusing on overall development, Tula's sounded like the best option!",
+        "As a parent with 2 children who have gone through three different schools in Dehradun, I can honestly say I have been more impressed with Tula’s International School than any of the more traditional & schools.",
     },
   ];
 

@@ -25,6 +25,7 @@ module.exports = {
         translateTop: "translateTop 0.8s linear",
         translateBottom: "translateBottom 0.8s linear",
         translateBottomHalf: "translateBottomHalf 0.2s linear",
+        scrollAnimation: "scrollAnimation 0.6s infinite alternate",
         overlay: "overlay 0.5s ease",
       },
       keyframes: {
@@ -36,6 +37,14 @@ module.exports = {
           to: {
             background: "#ffffff",
             opacity: 0.6,
+          },
+        },
+        scrollAnimation: {
+          from: {
+            transform: "translateY(0px)",
+          },
+          to: {
+            transform: "translateY(-30px)" /* Adjust the distance as needed */,
           },
         },
         scrollSpin: {

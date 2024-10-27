@@ -2,14 +2,17 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { HiMiniArrowLongLeft, HiMiniArrowLongRight } from "react-icons/hi2";
-import ExceptionalDummy from "../../../../../public/LandingPage/exceptionalDummy.png";
+import classroom from "../../../../../public/LandingPage/classrom.JPG";
+import library from "../../../../../public/LandingPage/library.jpg";
+import lab from "../../../../../public/LandingPage/lab.jpg";
+import clubs from "../../../../../public/LandingPage/clubs.jpg";
+import gymnasium from "../../../../../public/LandingPage/gymnasium.jpg";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 function ExceptionalFacilties() {
   const features = [
     {
-      image: ExceptionalDummy,
+      image: classroom,
       name: (
         <>
           Digital <span className="text-[#b90124]">Workstations</span>
@@ -24,7 +27,7 @@ function ExceptionalFacilties() {
       ),
     },
     {
-      image: ExceptionalDummy,
+      image: lab,
       name: (
         <>
           Well-Equipped <span className="text-[#b90124]">Laboratories</span>
@@ -40,7 +43,7 @@ function ExceptionalFacilties() {
       ),
     },
     {
-      image: ExceptionalDummy,
+      image: library,
       name: (
         <>
           Library with{" "}
@@ -56,7 +59,7 @@ function ExceptionalFacilties() {
       ),
     },
     {
-      image: ExceptionalDummy,
+      image: clubs,
       name: (
         <>
           Multiple Clubs <span className="text-[#b90124]">& Societies</span>
@@ -70,7 +73,7 @@ function ExceptionalFacilties() {
       ),
     },
     {
-      image: ExceptionalDummy,
+      image: gymnasium,
       name: (
         <>
           Enriching Fitness{" "}
@@ -148,22 +151,22 @@ function ExceptionalFacilties() {
         >
           {features.map((feature, index) => (
             <SwiperSlide key={index}>
-              <div className="flex flex-col md:flex-row h-full rounded-3xl w-[85%] border border-[#b90124] overflow-hidden mx-auto items-center justify-center">
+              <div className="flex flex-col md:flex-row h-[380px] md:h-[250px] rounded-3xl w-[85%] border border-[#b90124] overflow-hidden mx-auto md:items-center md:justify-center">
                 <Image
                   src={feature.image}
                   alt=""
-                  className="w-full md:w-[50%] h-full object-cover"
+                  className="w-full md:w-[50%] h-[200px] md:h-full object-cover"
                 />
                 <div
                   style={{ fontFamily: "TT Chocolates" }}
-                  className="w-full md:w-[50%] mx-auto flex flex-col justify-between px-3 md:px-8 py-4 md:py-10"
+                  className="w-full h-[180px] md:h-full md:w-[50%] mx-auto flex flex-col justify-center px-3 md:px-[2vw] py-4 md:py-0"
                 >
                   <div>
-                    <h2 className="text-[22px] md:text-[40px] leading-none font-extrabold text-left mb-4">
+                    <h2 className="text-[22px] md:text-[clamp(20px,2.084vw,60px)] leading-none font-extrabold text-left mb-4">
                       {feature.name}
                     </h2>
                   </div>
-                  <p className="mb-4 text-[16px] md:text-[22px]">
+                  <p className="mb-4 text-[16px] md:text-[clamp(14px,1.15vw,60px)]">
                     {feature.description}
                   </p>
                 </div>
