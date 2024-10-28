@@ -1,6 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { TbMailOpenedFilled } from "react-icons/tb";
+import schoolLogo from "../../../../public/logos/schoolLogo.png";
+import Image from "next/image";
 function Page() {
   const [timer, setTimer] = useState(10);
 
@@ -23,9 +25,13 @@ function Page() {
       <div className="bg-[#b90124] bg-opacity-10 h-[65vh] w-[65vh] absolute rounded-full"></div>
       <div className="bg-[#b90124] bg-opacity-10 h-[50vh] w-[50vh] absolute rounded-full"></div>
       <div className="bg-[#b90124] bg-opacity-10 h-[35vh] w-[35vh] absolute rounded-full"></div>
-      <div className="bg-[#b90124] bg-opacity-75 text-white text-[10vh] mb-[1vh] md:mb-[2vh] h-fit w-fit aspect-square p-8 rounded-full">
-        <TbMailOpenedFilled />
-      </div>
+
+      <Image
+        src={schoolLogo}
+        alt=""
+        className="w-28 z-[50] h-28 rounded-full"
+      />
+
       <div
         style={{
           fontFamily: "TT Chocolates",
