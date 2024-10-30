@@ -95,11 +95,11 @@ function Banner() {
     <div className="w-full min-h-[100vh] flex flex-col justify-end md:justify-center items-end relative object-cover bg-transparent md:bg-[#b90124]">
       <div className="fixed top-0 left-0 z-40 px-6 md:px-8 py-6 md:py-8 flex items-center justify-between w-full">
         <a
-          href="tel:+91-8108012525"
+          href="tel:+91-9837983791"
           className="w-20 md:w-28 bg-[#60BAB1] p-6 md:p-8 rounded-full"
         >
           <Image src={phoneCallGif} alt="" className="" />
-          {/* <div className="footer-call-number-text">+91-8108012525</div> */}
+          {/* <div className="footer-call-number-text">+91-9837983791</div> */}
         </a>
         <Image src={schoolLogo} className="w-20 md:w-28" alt="school" />
       </div>

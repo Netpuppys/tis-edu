@@ -76,11 +76,11 @@ const ContactUs = () => {
             style={{ fontFamily: "TT Chocolates" }}
           >
             <a
-              href="tel:+91-8108012525"
+              href="tel:+91-9837983791"
               className="text-white flex gap-6 items-center"
             >
               <FaPhone />
-              +91-8108012525
+              +91-9837983791
             </a>
             <br />
             <a

@@ -107,9 +107,9 @@ function Footer() {
               <br />
               <a
                 style={{ textDecoration: "none", color: "#fff" }}
-                href="tel:+918108012525"
+                href="tel:+91-9837983791"
               >
-                +91-8108012525
+                +91-9837983791
               </a>
               <br />
               <a
@@ -159,7 +159,7 @@ function Footer() {
               <div className="info-div">
                 <Image src={phoneIcon} className="icon" alt="phone" />
                 <p className="text">
-                  (+91) 8108012525
+                  (+91) 9837983791
                   <br />
                   info@tis.edu.in
                 </p>

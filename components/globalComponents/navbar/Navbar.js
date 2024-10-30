@@ -200,9 +200,9 @@ const Navbar = () => {
   return (
     <div className="navbar-global">
       <div className="top-bar">
-        <a className="phone-number" href="tel:+918108012525">
+        <a className="phone-number" href="tel:+91-9837983791">
           <FaPhone className="phone-icon" />
-          ADMISSION HELPLINE NO. +91-8108012525
+          ADMISSION HELPLINE NO. +91-9837983791
         </a>
         <button
           id="extraedge-popup7"
@@ -293,8 +293,8 @@ const Navbar = () => {
             Enquire Now
           </button>
           <div className="phone-div-bottom-bar">
-            <a className="bottom-phone-number" href="tel:+918108012525">
-              <FaPhone className="bottom-phone-icon" /> +91-8108012525
+            <a className="bottom-phone-number" href="tel:+91-9837983791">
+              <FaPhone className="bottom-phone-icon" /> +91-9837983791
             </a>
           </div>
         </div>
