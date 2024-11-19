@@ -111,7 +111,7 @@ function SecondSection() {
               <>
                 <Image src={item.icon} className="icon" alt="icon" />
                 <h2 className="title">{item.title}</h2>
-                <h3 className="sub-title">{item.subTitle}</h3>
+                {/* <h3 className="sub-title">{item.subTitle}</h3> */}
               </>
             </div>
           ))}
