@@ -7,6 +7,47 @@ import "../../styles/Admission/Widthrawal.css";
 import Withdrawal from "../../public/MandatoryPDF/Withdrawal-Form.pdf";
 import Image from "next/image";
 export default function WidthrawalPolicy() {
+  const data = [
+    {
+      name: "Registration Fee",
+      before: "Non Refundable",
+      after: "Non Refundable",
+      withdrawal: "Non Refundable",
+    },
+    {
+      name: "Admission Fee",
+      before: "Non Refundable",
+      after: "Non Refundable",
+      withdrawal: "Non Refundable",
+    },
+    {
+      name: "School fee (Recurring)Fee (IstTerm/ Installation )",
+      before: "Refundable",
+      after:
+        "50% of the 1 st Term Fee shall be charged/forfeited in favour of the School",
+      withdrawal:
+        "If the student is withdrawn after 30th April, (irrespective of his/her date of joining i.e. before or after 30th April), the entire year fee shall be charged/ forfeited in favour of the School",
+    },
+    {
+      name: "Recurring Fee (IIndTerm/ Installation )",
+      before: "Refundable",
+      after: "Refundable",
+      withdrawal: "Non-Refundable",
+    },
+    {
+      name: "Imprest Money",
+      before: "Refundable after deduction of student personal expenses(if any)",
+      after: "Refundable after deduction of student personal expenses(if any)",
+      withdrawal:
+        "Refundable after deduction of student personal expenses(if any)",
+    },
+    {
+      name: "Security Deposit",
+      before: "Refundable",
+      after: "Refundable after adjustment of arrears if any",
+      withdrawal: "Refundable after adjustment of arrears if any",
+    },
+  ];
   return (
     <>
       <Header
@@ -26,11 +67,60 @@ export default function WidthrawalPolicy() {
           </span>
         </div>
         <div className="text-box-widthdrawal">
-          <p className="text-widthdrawal">
-            If a child is withdrawn after admission is granted, the admission
-            fee, registration fee and one term fees excluding the security and
-            imprest(credit balance) shall be forfeited in favour of the school.
-          </p>
+          <div className="text-widthdrawal">
+            Refund policy for new students. The withdrawal form in the
+            prescribed format (available on the School website/PRO Office)
+            should be filled only by the parent and be submitted to the PRO
+            Office only. The receiving date at School of original copy of duly
+            filled and signed withdrawal form, will be treated as the final date
+            of withdrawal. Email the withdrawal form to{" "}
+            <a
+              style={{ color: "#B90124", cursor: "pointer" }}
+              href="mailto:pro@tis.edu.in"
+            >
+              pro@tis.edu.in
+            </a>
+            ,{" "}
+            <a
+              style={{ color: "#B90124", cursor: "pointer" }}
+              href="mailto:info@tis.edu.in"
+            >
+              info@tis.edu.in
+            </a>
+            . No verbal/telephonic intimation will be entertained.
+            <br />
+            <br />
+            <table className="border border-black border-collapse w-[90%] mx-auto text-[clamp(10px,1.1vw,40px)] leading-normal">
+              <thead>
+                <tr>
+                  <th className="p-3 border border-black">Particulars</th>
+                  <th className="p-3 border border-black">
+                    Before the beginning of the academic year i.e. 01st April
+                  </th>
+                  <th className="p-3 border border-black">
+                    After the beginning of the academic year i.e. 01st April and
+                    withdrawal before 30 th April
+                  </th>
+                  <th className="p-3 border border-black">
+                    Withdrawal after 30 th April (irrespective of his/her date
+                    of joining i.e. before or after 30th April)
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.map((item, index) => (
+                  <tr key={index}>
+                    <td className="p-3 border border-black">{item.name}</td>
+                    <td className="p-3  border border-black">{item.before}</td>
+                    <td className="p-3  border border-black">{item.after}</td>
+                    <td className="p-3  border border-black">
+                      {item.withdrawal}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
       <div className="WidthdrawalPolicy">
@@ -42,29 +132,61 @@ export default function WidthrawalPolicy() {
           </span>
         </div>
         <div className="text-box-widthdrawal">
-          <p1 className="text-widthdrawal">
-            <ul>
+          <div className="text-widthdrawal">
+            <ul className="ml-5 list-disc">
               <li>
-                If the child is withdrawn in between any term (Irrespective of
-                his/her date of joining), full term school fee shall be
-                charged/forfeited in favour of the school.  <br />
-              </li>{" "}
+                Before withdrawing, it is mandatory to give us a minimum 3
+                months notice in writing (only on the prescribed format
+                available on the School websites/PRO office) prior to the end of
+                the academic year i.e. latest by 31st December.
+              </li>
               <li>
-                If the child is to be withdrawn in the month of March, a prior 3
-                months notice is to be given in writing i.e. latest by 31st
-                December. If the notice is given after the said date, the
-                security money of the child shall be forfeited.
+                If the withdrawal notice is given after 31st December, three
+                months fee (of the following academic year) shall be charged
+                extra.
+              </li>
+              <li>
+                In case of withdrawal any time after the commencement of the
+                academic year i.e. 1st April, the fees for the full year shall
+                be charged/forfeited in favour of the School.
+              </li>
+              <li>
+                School Leaving Certificate (Transfer Certificate) will be issued
+                only after clearance of dues and payment of amount in favour of
+                the School.
+              </li>
+              <li>
+                The withdrawal form in the prescribed format (available on the
+                School website/PRO Office) should be filled only by the parent
+                and be submitted to the PRO Office only. The receiving date at
+                School of original copy of duly filled and signed withdrawal
+                form, will be treated as the final date of withdrawal. No
+                verbal/telephonic/e-mail intimation will be entertained. Email
+                the withdrawal form to{" "}
+                <a
+                  style={{ color: "#B90124", cursor: "pointer" }}
+                  href="mailto:pro@tis.edu.in"
+                >
+                  pro@tis.edu.in
+                </a>
+                ,{" "}
+                <a
+                  style={{ color: "#B90124", cursor: "pointer" }}
+                  href="mailto:info@tis.edu.in"
+                >
+                  info@tis.edu.in
+                </a>
               </li>
             </ul>
-          </p1>
+          </div>
         </div>
       </div>
       <div className="WidthdrawalPolicy">
         <div className="text-box-widthdrawal-note">
-          <p1 className="text-widthdrawal">
+          <div className="text-widthdrawal">
             <span>Note</span>
 
-            <ul>
+            <ul className="list-disc ml-5">
               <li>
                 In case of withdrawal the refunds (if any) will be made after 6
                 months from the date of withdrawal ( Including Security)
@@ -77,6 +199,11 @@ export default function WidthrawalPolicy() {
                 in favour of the school.
               </li>
               <li>
+                Any arrears pertaining to fees, imprest, penalties, and other
+                charges in the amount of the student shall be adjusted from the
+                security deposit.
+              </li>
+              <li>
                 The withdrawal form in the prescribed format should be filled
                 only by the parent and be submitted to the P.R.O office only.
                 The receiving at school of the original copy of duly filled and
@@ -84,7 +211,7 @@ export default function WidthrawalPolicy() {
                 withdrawal.
               </li>
             </ul>
-          </p1>
+          </div>
         </div>
       </div>
       <div
