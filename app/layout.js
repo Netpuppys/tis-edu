@@ -13,6 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        {/* Google Tag Manager */}
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtm.js?id=GTM-KR9HW9RM"
@@ -35,6 +36,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+        {/* Google Analytics */}
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-ZL190LFCTT"
@@ -53,6 +55,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+        {/* Microsoft Clarity */}
         <Script
           id="clarity"
           strategy="afterInteractive"
@@ -66,7 +69,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-        
+
         {/* Meta Pixel */}
         <Script
           id="meta-pixel"
