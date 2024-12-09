@@ -10,7 +10,9 @@ export const revalidate = 60; // optional: ISR for revalidation every 60 seconds
 
 // Generate static params for dynamic routing
 export async function generateStaticParams() {
-  const res = await fetch("https://blog.tis.edu.in/api/v1/post");
+  const res = await fetch("https://blog.tis.edu.in/api/v1/post", {
+    timeout: 20000,
+  });
   const { data } = await res.json();
 
   if (!Array.isArray(data)) {

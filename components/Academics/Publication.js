@@ -12,6 +12,8 @@ import { Download } from "@mui/icons-material";
 import Calendar from "../../public/MandatoryPDF/Calendar.png";
 import Broucher from "../../public/MandatoryPDF/Brochure.png";
 import Tattoo from "../../public/MandatoryPDF/Tattoo.png";
+import theVoice from "../../public/MandatoryPDF/theVoice2.png";
+
 export default function Publication() {
   const { isMobile } = useMobile();
 
@@ -122,6 +124,10 @@ export default function Publication() {
       link: "https://online.publuu.com/631991/1421012/page/1?cover",
       img: Tattoo,
     },
+    {
+      link: "https://publuu.com/flip-book/631991/1649960/page/1?cover",
+      img: theVoice
+    }
   ];
 
   const bannerText =

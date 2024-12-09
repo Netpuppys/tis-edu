@@ -16,7 +16,13 @@ function HomePage() {
     return () => clearTimeout(timer);
   }, []);
 
-  return <div>{isLoading ? <LoadingScreen /> : <HomeLayout />}</div>;
+  return (
+    <div>
+      {isLoading && <LoadingScreen />}
+
+      <HomeLayout />
+    </div>
+  );
 }
 
 export default HomePage;
