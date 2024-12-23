@@ -18,6 +18,7 @@ import scrollArrow from "../../public/icons/downArrowDoodle.svg";
 import Image from "next/image";
 import "../../styles/home/HomeLayout.css";
 import GoogleReviews from "@/app/boarding-school/admission-open/Components/Hero/components/GoogleReviews";
+import Form from "./components/form/form";
 
 const maxSections = 13;
 
@@ -57,23 +58,22 @@ const HomeLayout = () => {
       <div>
         <>
           <Hero bubbleRef={bubbleRef} />
-          <div
-            className="home-layout-allSection flex flex-col gap-6 md:gap-10"
-            ref={bubbleRef}
-          >
-            <SecondSection />
-            <ThirdSection />
-            <ActivityGrid />
-            <Video />
-            <FifthSection />
-            <SixthSection />
-            <TisByNumbers />
-            <AwardSection />
-            <Ranking />
-
-            <ParentsReviews />
-            <GoogleReviews />
-            <FeaturesSection />
+          <div ref={bubbleRef}>
+            <Form />
+            <div className="home-layout-allSection flex flex-col gap-6 md:gap-10">
+              <SecondSection />
+              <ThirdSection />
+              <ActivityGrid />
+              <Video />
+              <FifthSection />
+              <SixthSection />
+              <TisByNumbers />
+              <AwardSection />
+              <Ranking />
+              <ParentsReviews />
+              <GoogleReviews />
+              <FeaturesSection />
+            </div>
           </div>
         </>
       </div>
