@@ -21,23 +21,19 @@ import "../../../../styles/home/components/Hero/Hero.css";
 function useIsInViewport(ref) {
   const [isIntersecting, setIsIntersecting] = useState(false);
 
-  const observer = useMemo(
-    () =>
-      new IntersectionObserver(([entry]) =>
-        setIsIntersecting(entry.isIntersecting)
-      ),
-    []
-  );
-
   useEffect(() => {
-    if (ref.current) {
+    if (typeof window !== "undefined" && ref.current) {
+      const observer = new IntersectionObserver(([entry]) =>
+        setIsIntersecting(entry.isIntersecting)
+      );
+
       observer.observe(ref.current);
 
       return () => {
         observer.disconnect();
       };
     }
-  }, [ref, observer]);
+  }, [ref]);
 
   return isIntersecting;
 }

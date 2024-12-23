@@ -54,7 +54,7 @@ function SecondSection() {
 
     const observer = new IntersectionObserver(handleIntersection);
 
-    if (sectionRef.current) {
+    if (typeof window !== "undefined" && sectionRef.current) {
       observer.observe(sectionRef.current);
     }
 

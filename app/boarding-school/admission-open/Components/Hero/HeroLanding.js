@@ -115,12 +115,12 @@ function HeroLanding() {
       }
     );
 
-    if (contactRef.current) {
+    if (typeof window !== "undefined" && contactRef.current) {
       observer.observe(contactRef.current);
     }
 
     return () => {
-      if (contactRef.current) {
+      if ( typeof window !== "undefined" && contactRef.current) {
         observer.unobserve(contactRef.current);
       }
     };
