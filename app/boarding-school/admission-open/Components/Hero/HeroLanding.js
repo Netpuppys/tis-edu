@@ -16,47 +16,48 @@ import petal1 from "../../../../../public/doodles/petal1.svg";
 import petal2 from "../../../../../public/doodles/petal-2.webp";
 import petal3 from "../../../../../public/doodles/petal-3.svg";
 import "../../../../../styles/home/components/Hero/Hero.css";
-
-function useIsInViewport(ref, threshold = 0.208) {
-  const [isIntersecting, setIsIntersecting] = useState(false);
-
-  const observer = useMemo(
-    () =>
-      new IntersectionObserver(
-        ([entry]) => setIsIntersecting(entry.intersectionRatio >= threshold),
-        { threshold }
-      ),
-    [threshold]
+const TextBanner = ({ filledText }) => {
+  return (
+    <div className="w-screen overflow-hidden h-screen flex items-center justify-center bg-transparent">
+      <p
+        style={
+          filledText
+            ? {
+                color: "#ffffff",
+                textShadow: "0px 0.83px 8.295px rgba(0, 0, 0, 0.40)",
+              }
+            : {
+                color: "transparent",
+                WebkitTextStrokeColor: "#fff",
+                WebkitTextStrokeWidth: "0.1px",
+              }
+        }
+        className="font-[TTChocolatesBold] text-center text-[3.5rem] md:text-[6rem] font-black tracking-[0.10369rem]"
+      >
+        IMAGE
+        <span className="text-[4.5rem] font-[Mirador] md:text-[7rem] block">
+          Gallery
+        </span>
+      </p>
+    </div>
   );
+};
+
+function HeroLanding() {
+  const parentRef = useRef(null);
+  const contactRef = useRef(null);
+
+  const { isMobile } = useMobile();
+
+  const [isInView, setIsInView] = useState(false);
+  const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    if (ref.current) {
-      observer.observe(ref.current);
-
-      return () => {
-        observer.disconnect();
-      };
-    }
-  }, [ref, observer]);
-
-  return isIntersecting;
-}
-
-function HeroLanding(props) {
-  const { isMobile } = useMobile();
-  const bubbleRef = props.bubbleRef;
-  const yellowCircleRef = useRef(null); // Add a ref for yellow-circle
-  const paragraph1 =
-    "Tula's International School was established in 2012 under the aegis of Rishabh Educational Trust to impart education through ";
-  const circledText = "seamless opportunities.";
-  const filledText = true;
-
-  const heroSectionRef = useRef(null); // Ref for the hero section
-  const makeDivRelative = useIsInViewport(bubbleRef);
-  const isYellowCircleInView = useIsInViewport(yellowCircleRef);
-  const isBaseTextDivActive = useIsInViewport(heroSectionRef); // Check if hero section is 90% in view
-
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
 
   function mouseMove(event) {
     const newX = Math.floor((event.clientX * 100) / window.innerWidth);
@@ -85,141 +86,156 @@ function HeroLanding(props) {
     !isMobile && calculateMovement("y", 1, position.y / movementFactor);
 
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0 });
-    AOS.init();
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsInView(entry.isIntersecting);
+      },
+      {
+        root: null, // uses viewport as root
+        threshold: 0, // adjust as needed
+      }
+    );
+
+    if (contactRef.current) {
+      observer.observe(contactRef.current);
+    }
+
+    return () => {
+      if (contactRef.current) {
+        observer.unobserve(contactRef.current);
+      }
+    };
   }, []);
 
   return (
-    <div className="hero-container-main" ref={heroSectionRef}>
-      <div
-        className={`${
-          isBaseTextDivActive
-            ? "fixed top-0"
-            : `absolute ${isYellowCircleInView ? "bottom-0" : "top-0"}`
-        }`}
-      >
-        <HeroText isFilledText={filledText} />
-      </div>
+    <div
+      className="w-full h-fit overflow-x-hidden bg-[#b90124]"
+      ref={parentRef}
+    >
+      <div className="relative overflow-hidden min-h-screen h-fit">
+        <div
+          ref={contactRef}
+          className="w-full absolute top-[100vh] h-[calc(100%-200vh)] opacity-0"
+        ></div>
 
-      <div
-        className={`${
-          isBaseTextDivActive
-            ? "fixed top-0"
-            : `absolute ${isYellowCircleInView ? "bottom-0" : "top-0"}`
-        }`}
-      >
-        <HeroText isFilledText={!filledText} />
-      </div>
+        <div className={`${isInView ? "fixed" : "absolute"} top-0 z-[10]`}>
+          <TextBanner filledText={true} />
+        </div>
 
-      <div className="main-site">
-        {/* synatax for adding more bubble on screen: <Bubble image={"image.src"} title={"title.text"} />*/}
-        <div
-          style={{
-            transform: `translate(${movementX}rem, ${movementY}rem)`,
-            transition: "transform 0.2s",
-          }}
-          className="bubble shooting"
-        >
-          <Bubble image={shooting} title={"TIS"} />
+        <div className={`${isInView ? "fixed" : "absolute"} top-0 z-[50]`}>
+          <TextBanner filledText={false} />
         </div>
-        <p></p>
-        <div
-          style={{
-            transform: `translate(-${movementX}rem, -${movementY}rem)`,
-            transition: "transform 0.2s",
-          }}
-          className="bubble polo"
-        >
-          <Bubble image={polo} title={"TIS"} />
-        </div>
-        <div
-          style={{
-            transform: `translate(-${movementX}rem, -${movementY}rem)`,
-            transition: "transform 0.2s",
-          }}
-          className="bubble fitness"
-        >
-          <Bubble image={fitness} title={"TIS"} />
-        </div>
-        <div
-          style={{
-            transform: `translate(${movementX}rem, ${movementY}rem)`,
-            transition: "transform 0.2s",
-          }}
-          className="bubble karate"
-        >
-          <Image src={petal3} className="petal" alt=" " />
-          <Bubble image={karate} title={"TIS"} />
-        </div>
-        <div
-          style={{
-            transform: `translate(${movementX}rem, ${movementY}rem)`,
-            transition: "transform 0.2s",
-          }}
-          className="bubble swimming"
-        >
-          <Image src={petal2} className="petal" alt=" " />
-          <Bubble image={swimming} title={"TIS"} />
-        </div>
-        <div
-          style={{
-            transform: `translate(${movementX}rem, ${movementY}rem)`,
-            transition: "transform 0.2s",
-          }}
-          className="bubble yoga"
-        >
-          <Bubble image={yoga} title={"TIS"} />
-        </div>
-        <div
-          style={{
-            transform: `translate(${movementX}rem, -${movementY}rem)`,
-            transition: "transform 0.2s",
-          }}
-          className="bubble archery"
-        >
-          <Image src={petal1} className="petal" alt=" " />
-          <Bubble image={archery} title={"TIS"} />
-        </div>
-        <div
-          style={{
-            transform: `translate(-${movementX}rem, ${movementY}rem)`,
-            transition: "transform 0.2s",
-          }}
-          className="bubble dance"
-        >
-          <Bubble image={dance} title={"TIS"} />
-        </div>
-        <div className="text-div-container">
-          <div className="text-div">
-            <h1 className="text">
-              {paragraph1}
-              <span
-                className={`circled-text ${
-                  isYellowCircleInView ? "active" : ""
-                }`}
-              >
-                {circledText}
-                <svg
-                  ref={yellowCircleRef} // Attach the ref to the SVG element
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="221.76199340820312"
-                  height="103.11299896240234"
-                  viewBox="0 0 221.762 103.113"
-                  className={`yellow-circle ${
-                    isYellowCircleInView ? "active" : ""
-                  }`}
-                >
-                  <path
-                    d="M1084.543,1367.481c-68.569-.781-129.469,16.536-137.725,32.77s20.556,39.816,114.145,20.079,125.269-44.985,61.308-57.333S982.6,1386.484,982.6,1386.484"
-                    transform="translate(-708.663 -1489.785) rotate(9)"
-                    fill="none"
-                    stroke="#c09d59"
-                    stroke-linecap="round"
-                    stroke-width="3"
-                  ></path>
-                </svg>
-              </span>
-            </h1>
+
+        {!isInView && (
+          <div className={`${isInView ? "fixed" : "absolute"} bottom-0 z-[10]`}>
+            <TextBanner filledText={true} />
+          </div>
+        )}
+
+        {!isInView && (
+          <div className={`${isInView ? "fixed" : "absolute"} bottom-0 z-[50]`}>
+            <TextBanner filledText={false} />
+          </div>
+        )}
+
+        <div className="w-full h-fit grid grid-cols-1 md:grid-cols-2 gap-y-20 z-[30] relative">
+          <div className="w-full mx-auto relative flex items-center justify-start md:justify-center">
+            <div
+              style={{
+                transform: `translate(-${movementX}rem, ${movementY}rem)`,
+                transition: "transform 0.2s",
+              }}
+              className="rounded-full bg-transparent w-1/2 mx-auto aspect-square "
+            >
+              <Image src={shooting} className="w-full h-fit" alt="bubble" />
+            </div>
+          </div>
+
+          <div className="w-full mx-auto relative flex items-center justify-end md:justify-center">
+            <div
+              style={{
+                transform: `translate(${movementX}rem, ${movementY + 2}rem)`,
+                transition: "transform 0.2s",
+              }}
+              className="rounded-full bg-transparent w-1/2 mx-auto aspect-square "
+            >
+              <Image src={polo} className="w-full h-fit" alt="bubble" />
+            </div>
+          </div>
+
+          <div className="w-full relative flex items-center justify-start md:justify-center">
+            <div
+              style={{
+                transform: `translate(-${movementX}rem, ${movementY}rem)`,
+                transition: "transform 0.2s",
+              }}
+              className="rounded-full bg-transparent w-1/2 mx-auto aspect-square "
+            >
+              <Image src={fitness} className="w-full h-fit" alt="bubble" />
+            </div>
+          </div>
+
+          <div className="w-full relative flex items-center justify-end md:justify-center">
+            <div
+              style={{
+                transform: `translate(-${movementX}rem, -${movementY}rem)`,
+                transition: "transform 0.2s",
+              }}
+              className="rounded-full flex bg-transparent items-center justify-center w-1/2 ml-auto aspect-square "
+            >
+              <Image src={karate} className="w-full h-fit" alt="" />
+              <Image src={petal3} className="w-full h-fit" alt="" />
+            </div>
+          </div>
+
+          <div className="w-full relative flex items-center justify-start md:justify-center">
+            <div
+              style={{
+                transform: `translate(${movementX + 1}rem, ${movementY}rem)`,
+                transition: "transform 0.2s",
+              }}
+              className="rounded-full flex items-center justify-center bg-transparent w-1/2 mr-auto aspect-square "
+            >
+              <Image src={petal2} className="w-full h-fit" alt=" " />
+              <Image src={swimming} className="w-full h-fit" alt="bubble" />
+            </div>
+          </div>
+
+          <div className="w-full relative flex items-center justify-end md:justify-center">
+            <div
+              style={{
+                transform: `translate(-${movementX}rem, ${movementY - 1}rem)`,
+                transition: "transform 0.2s",
+              }}
+              className="rounded-full bg-transparent w-1/2 ml-auto aspect-square "
+            >
+              <Image src={yoga} className="w-full h-fit" alt="bubble" />
+            </div>
+          </div>
+
+          <div className="w-full relative flex items-center justify-start md:justify-center">
+            <div
+              style={{
+                transform: `translate(-${movementX}rem, -${movementY}rem)`,
+                transition: "transform 0.2s",
+              }}
+              className="rounded-full flex bg-transparent w-1/2 md:ml-auto aspect-square "
+            >
+              <Image src={petal1} className="petal" alt=" " />
+              <Image src={archery} className="w-full h-fit" alt="bubble" />
+            </div>
+          </div>
+
+          <div className="w-full relative flex items-center justify-end md:justify-center">
+            <div
+              style={{
+                transform: `translate(-${movementX - 2}rem, ${movementY}rem)`,
+                transition: "transform 0.2s",
+              }}
+              className="rounded-full bg-transparent w-1/2 ml-auto aspect-square "
+            >
+              <Image src={dance} className="w-full h-fit" alt="bubble" />
+            </div>
           </div>
         </div>
       </div>
