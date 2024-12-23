@@ -32,11 +32,30 @@ const TextBanner = ({ filledText }) => {
                 WebkitTextStrokeWidth: "0.1px",
               }
         }
-        className="font-[TTChocolatesBold] text-center text-[3.5rem] md:text-[6rem] font-black tracking-[0.10369rem]"
+        className="font-[TTChocolatesBold] text-center text-[3.5rem] md:text-[6rem] font-black tracking-[0.10369rem] leading-tight"
       >
         IMAGE
         <span className="text-[4.5rem] font-[Mirador] md:text-[7rem] block">
           Gallery
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 268.317 14.075"
+            className="w-full h-fit"
+            width="268.3169860839844"
+            height="14.074999809265137"
+          >
+            <path
+              id="mainTextScribble"
+              d="M404.67,1796.978c47.813-3.483,110.6-.1,152.153-3.214s113.059,2.5,113.059,2.5-196.62,2.328-239.976,5.307c85.143,5.178,211.34,0,211.34,0"
+              transform="translate(-403.065 -1791.313)"
+              fill="none"
+              stroke="#c09d59"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="3"
+              className=""
+            />
+          </svg>
         </span>
       </p>
     </div>
