@@ -94,13 +94,14 @@ function Banner() {
   return (
     <div className="w-full min-h-[100vh] flex flex-col justify-end md:justify-center items-end relative object-cover bg-transparent md:bg-[#b90124]">
       <div className="fixed top-0 left-0 z-40 px-6 md:px-8 py-6 md:py-8 flex items-center justify-between w-full">
-        <a
-          href="tel:+91-9837983791"
+        <button
+          href="tel:+91-8069204004"
+          title="Admission Helpline No. +91-8069204004"
           className="w-20 md:w-28 bg-[#60BAB1] p-6 md:p-8 rounded-full"
         >
           <Image src={phoneCallGif} alt="" className="" />
-          {/* <div className="footer-call-number-text">+91-9837983791</div> */}
-        </a>
+          {/* <div className="footer-call-number-text">+91-8069204004</div> */}
+        </button>
         <Image src={schoolLogo} className="w-20 md:w-28" alt="school" />
       </div>
       <div className="z-30 relative mt-[55vh] md:mt-0 flex md:pr-40">
