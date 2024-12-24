@@ -16,57 +16,64 @@ export default function CareerCounselling() {
       />
       <div className="main">
         <p className="text-above-career">
-          Research shows that students generally rely on their parents,
-          teachers, friends and most often their academic performance for
-          guidelines and suggestions regarding their career choice.
+          Students often turn to their parents, teachers, friends, and their own
+          academic performance for career advice. While these sources are
+          valuable, they sometimes leave students grappling with tough decisions
+          about their future.
           <br /> <br />
-          Due to this, students are often faced with the dilemma of choosing the
-          right career. TIS organizes various tests and exposes children to the
-          opportunities available to help them make the right subject choices.
-          An effective career guidance program is designed for students to
-          enable them to make effective decisions relating to their future. The
-          students and parents are educated about admission procedures at
-          various education institutions in India and abroad for higher studies.
-          This helps students choose the right careers for themselves for a
-          bright future.
+          At TIS, we step in to bridge this gap with a comprehensive career
+          guidance program. Through a series of well-designed tests and exposure
+          to a variety of career opportunities, we help students discover the
+          paths that align with their interests and strengths..
           <br />
         </p>
         <div className="personal-career">
           <div className="personal">
             <div className="headingPersonal">Personal Counselling</div>
             <div className="textPersonal">
-              Tula&apos;s concern for its students reflects that it has a
-              separate counselling centre. Life skill and value-based education
-              classes are a part of the residential school timetable covering
-              most of the issues concerning teenagers and the challenges of
-              living in a boarding school in Dehradun. These sessions allow
-              students to share their hopes, insecurities and problems with
-              trained counsellors who deal with their issues effectively. At
-              this modern Gurukul school in Dehradun, all teachers have been
-              trained to be sensitive to the students&apos; needs besides
-              carrying out their academic duties.
+              Tula’s provides personal counseling through a dedicated center,
+              ensuring students have a safe space to share their thoughts and
+              challenges with trained professionals. Life skills and value-based
+              education are integrated into the daily schedule, addressing
+              teenage concerns and the unique experiences of boarding school
+              life. Teachers are also trained to be sensitive to students’
+              needs, creating a nurturing and supportive environment in this
+              modern Gurukul.
             </div>
           </div>
         </div>
         <div className="career-heading">Career Counselling</div>
-        <p className="text-above-career">
-          Tula&apos;s International School&apos;s career counseling program is
-          geared to supporting students achieve happy and successful careers.
-          Our comprehensive curriculum, which includes individualized tests and
-          one-on-one counseling sessions, assists students in identifying their
-          interests, abilities and beliefs. By giving thorough industry
-          insights, job description definitions, and educational prerequisite
-          information, we enable students to make educated career selections.
+        <div className="text-above-career">
+          Tula's International School's career counseling program is dedicated
+          to helping students build fulfilling and successful careers. The
+          program includes:
           <br />
+          <ul className="ml-5 list-disc">
+            <li>
+              Personalized Guidance: Individual tests and one-on-one counseling
+              sessions to help students discover their interests, abilities, and
+              aspirations.
+            </li>
+            <li>
+              Career Insights: Detailed information about industries, job roles,
+              and educational requirements to support informed decision-making.
+            </li>
+            <li>
+              Skill Development: Assistance with resume writing, interview
+              techniques, and networking strategies to prepare students for the
+              professional world.
+            </li>
+            <li>
+              Future Planning: A focus on both immediate achievements and
+              long-term career goals to ensure a smooth transition from school
+              to work life.
+            </li>
+          </ul>
           <br />
-          Furthermore, we provide extensive assistance with resume development,
-          interview preparation, and networking methods to ensure that our
-          students are well-prepared to join the professional world. Tula&apos;s
-          International School equips pupils for a smooth transition from school
-          to a successful job by emphasizing both short-term accomplishments and
-          long-term career objectives.
-        </p>
-        <div className="Counseller-and-Benifits">
+          This comprehensive approach ensures that students are well-prepared to
+          navigate their career journeys with confidence.
+        </div>
+        {/* <div className="Counseller-and-Benifits">
           <div className="Counseller">
             <div className="text-part">
               <h2>Counselor at School :</h2>
@@ -125,6 +132,37 @@ export default function CareerCounselling() {
               </p1>
             </div>
           </div>
+        </div> */}
+        <div className="personal-career">
+          <div className="personal">
+            <div className="headingPersonal">
+              Why does your child need counselling?
+            </div>
+            <div className="textPersonal">
+              Tula’s career counseling program helps students:
+              <ul className="ml-5 list-disc">
+                <li>
+                  Build self-esteem and confidence to face challenges head-on.
+                </li>
+                <li>
+                  Develop a lifelong love for learning and personal growth.
+                </li>
+                <li>Enhance communication and teamwork skills.</li>
+                <li>
+                  Strengthen critical thinking and decision-making abilities.
+                </li>
+                <li>
+                  Resist harmful influences and peer pressure effectively.
+                </li>
+                <li>Explore career paths they’re passionate about.</li>
+                <li>Understand their strengths and areas for improvement.</li>
+                <li>
+                  Embrace new opportunities with a proactive and positive
+                  mindset.
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div className="preparation">
@@ -138,42 +176,55 @@ export default function CareerCounselling() {
           </h1>
 
           <h3 className="text-preparation">
-            With increasing competition among students, entrance examinations
-            have become a transparent and dependable method to admit the creme
-            de la creme of the lot. A competitive exam is very different from
-            preparing for a regular subjective or a theory paper.
+            With growing competition, entrance exams have become the standard
+            for identifying top talent. Preparing for these exams requires a
+            different approach than regular theory papers.
             <br />
             <br />
+            At Tula’s International School, we ensure students start their
+            entrance exam preparations early:
             <br />
-            At Tula’s International School, we make the students start preparing
-            for an entrance exam early. The IIT-JEE, considered one of the
-            toughest, has students beginning as early as class IX. Students
-            create their preparations from Class XI for the medical entrance, CA
-            CPT, and the various national law entrance exams. BBA, hotel
-            management, mass communication and some of the other such entrance
-            exams are mostly aptitude based and thus, students are well prepared
-            for them.
-            <br />
-            <ul>
+            <ul className="ml-5 list-disc">
               <li>
-                Delivering competitive assignments every Saturday to the
-                students.
+                <strong className="font-black">IIT-JEE –</strong> Preparation
+                starts from Class IX.
               </li>
               <li>
-                Syllabus is designed per the syllabus of the IIT/JEE/PMT exams.{" "}
+                <strong className="font-black">
+                  Medical Entrance Exams (PMT) –
+                </strong>{" "}
+                Focused preparation begins in Class XI.
               </li>
-              <li> Conducting regular mock tests for the students.</li>
-              <li> Practice MCQs after completion of every topic/subject.</li>
               <li>
-                Conduction of special remedial classes or doubt sessions every
-                week.
+                <strong className="font-black">CA CPT –</strong> Tailored
+                guidance from Class XI.
               </li>
-              <li> We also provide on-point guidance for IIM&apos;s.</li>
               <li>
-                Winter camp is organised to prepare students for CBSE
-                board examination.
+                <strong className="font-black">
+                  National Law Entrance Exams –
+                </strong>{" "}
+                Dedicated coaching from Class XI.
+              </li>
+              <li>
+                <strong className="font-black">
+                  BBA, Hotel Management, Mass Communication –
+                </strong>{" "}
+                Primarily aptitude-based, with preparation from Class XI.
               </li>
             </ul>
+            <br />
+            Our program includes:
+            <ul className="ml-5 list-disc">
+              <li>Weekly competitive assignments.</li>
+              <li>IIT/JEE/PMT-aligned syllabus.</li>
+              <li>Regular mock tests and MCQ practice after each topic.</li>
+              <li>Weekly remedial and doubt-solving sessions.</li>
+              <li>Special guidance for IIM entrance exams.</li>
+              <li>
+                Winter camps to help students prepare for CBSE board exams.
+              </li>
+            </ul>
+            <br />
           </h3>
         </div>
       </div>

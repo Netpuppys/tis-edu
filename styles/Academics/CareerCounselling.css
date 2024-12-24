@@ -4,14 +4,13 @@
   margin-left: auto;
   margin-right: auto;
   color: #000;
-  text-align: center;
+  text-align: left;
   font-family: PF din Display100;
   font-size: 27px;
   font-weight: 200;
   letter-spacing: 0.03em;
   line-height: 35px;
   padding: 3rem 0rem;
-  text-align: center;
 }
 .headingPersonal {
   font-family: Mirador;
@@ -51,12 +50,11 @@
   margin-top: 1%;
 }
 .heading-preparation {
-  margin-left: auto;
-  margin-right: auto;
   color: #000;
   text-align: center;
   font-family: Mirador;
   font-size: 45px;
+  margin: 30px auto 0px auto;
   font-style: italic;
   font-weight: 500;
   line-height: normal;

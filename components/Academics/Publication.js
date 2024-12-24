@@ -126,8 +126,8 @@ export default function Publication() {
     },
     {
       link: "https://publuu.com/flip-book/631991/1649960/page/1?cover",
-      img: theVoice
-    }
+      img: theVoice,
+    },
   ];
 
   const bannerText =
@@ -143,19 +143,25 @@ export default function Publication() {
 
       <div className="publication-main">
         <p className="publication-text">
-          In Education publishing is an important aspect of academic writing, it
-          motivates and enables the students to connect to their core strength,
-          interests, and makes them more autonomous to control the power of
-          expression. Editorial Board membership is the first platform where
-          students deal with hands-on experience of creative content writing,
-          content editing, designing, proofreading, and printing. Right from the
-          inception of a concept to the final piece of work, students learn to
-          work constructively in a group and achieve targets. They are being
-          groomed for future professional commitments.
-        </p>
-        <p className="text2">
-          The various publications at TIS are monthly VOICE, yearly TATTOO, and
-          term-wise department magazines.
+          At Tula’s Institute, publishing is where creativity meets real-world
+          skills. Through Editorial Board membership, students get hands-on
+          experience in{" "}
+          <strong className="font-black">
+            content creation, editing, designing, and printing.
+          </strong>{" "}
+          They don't just write; they transform ideas into polished pieces,
+          learning to work as a team, meet deadlines, and bring concepts to
+          life.
+          <br />
+          <br />
+          Our publications –{" "}
+          <strong className="font-black">
+            the monthly VOICE, yearly TATTOO, and term-wise department magazines
+          </strong>{" "}
+          – are the perfect playground for students to explore their creative
+          potential and build skills that will set them up for future success.
+          It’s more than publishing; it’s about preparing for the professional
+          world.
         </p>
       </div>
 

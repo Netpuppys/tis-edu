@@ -18,7 +18,7 @@ export default function InternationaltieUps() {
       <Header
         title={"International Tie Up"}
         subtitle={
-          "Global Academic Consortium for School Collaborative Endeavors and Cross-Cultural Integration."
+          "International Collaborations for Enriched Learning and Cross-Cultural Engagement."
         }
         headerImg={isMobile ? HeaderTieUpsMobileImg : HeaderTieUpsImg}
       />
@@ -27,26 +27,30 @@ export default function InternationaltieUps() {
         {!isMobile && <Image className="tieUps" src={tieUps1} alt="" />}
         <div className="div-text-international">
           <p className="text-international">
-            Academic Collaborations provide additional benefits to every
-            institution. It is an advantage tie-up with another school or
-            university, especially international, both for the students as well
-            as the teachers. The students can gain a lot of knowledge from the
-            student exchange programs that come as a part of the collaboration.
-            Students get exposure and experience about the education and culture
-            of the other country. Such an experience is very valuable as it adds
-            on a lot of value for the student. The students get to travel, work
-            and study internationally. This helps them get prepared for a better
-            future globally, be it on the domestic or international level. The
-            teachers can also benefit from these kinds of tie-ups. There are
-            exchange programs for teachers in which teachers also go to other
-            universities/schools.The teachers teach there and they also explore
-            the different teaching methods of that place. Additionally, students
-            and teachers who come to the domestic school also take back a lot of
-            knowledge and information. This helps the domestic school gain
-            recognition and appreciation on the global level. Apart from this,
-            working together with different universities in foreign countries
-            and embracing the global culture helps smoothen the admission
-            process for the students in the future.
+            Academic collaborations open doors to numerous benefits for
+            students. A tie-up with international universities or schools brings
+            incredible opportunities for growth.
+            <br />
+            <br />
+            Exchange programs offer exposure to different educational systems
+            and cultures, helping the students become well-rounded global
+            citizens. At Tula’s the exchange programs offer valuable
+            opportunities, including:
+            <br />
+            <ul className="list-disc ml-5">
+              <li>Cultural immersion and broadened perspectives</li>
+              <li>
+                Development of essential skills like communication and
+                adaptability
+              </li>
+              <li>Building global connections for future opportunities</li>
+              <li>Enhanced independence, resilience, and global awareness</li>
+            </ul>
+            <br />
+            Moreover, when foreign students and teachers visit domestic schools,
+            they bring valuable insights, boosting the school’s global
+            reputation. Such partnerships also make future admissions smoother
+            by fostering connections with international institutions.
           </p>
         </div>
         {isMobile && <Image className="tieUps" src={tieUps2Mobile} alt="" />}
