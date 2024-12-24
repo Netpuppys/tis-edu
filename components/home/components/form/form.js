@@ -143,7 +143,7 @@ function Form() {
           City: "",
         });
         setOtp("");
-        window.location.href="/boarding-school/admission-open/thank-you"
+        window.location.href = "/boarding-school/admission-open/thank-you";
       })
       .catch((error) => {
         alert.error(error);
@@ -328,9 +328,7 @@ function Form() {
             </div>
             <button
               type="button"
-              disabled={
-                !/^\+\d{1,4}\d{10}$/.test(formData.MobileNumber) || verified
-              }
+              disabled={verified}
               onClick={sendOtp}
               className={`w-full md:w-[40%] bg-black rounded-md flex items-center justify-center md:px-4 h-10 font-bold text-[#FFFFFF] ${
                 !verified ? "cursor-pointer" : "opacity-60 cursor-not-allowed"
