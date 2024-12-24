@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
-
+import "../../../styles/globalComponents/navbar/NavBar.css";
 import "../../../styles/home/HomeLayout.css";
 import ActivityGrid from "@/components/home/components/activityGrid/ActivityGrid";
 import Ranking from "@/components/home/components/Ranking/ranking";
@@ -38,7 +38,7 @@ const LandingLayout = () => {
             className="home-layout-allSection flex flex-col gap-12 md:gap-10"
             ref={bubbleRef}
           >
-            <div ref={scrollRef}>
+            <div ref={scrollRef} className="z-50 ">
               <Banner />
             </div>
 
@@ -70,18 +70,24 @@ const LandingLayout = () => {
       </div>
       {isMobile && (
         <div className="fixed bottom-0 flex z-50 justify-between w-full h-12 bg-[#b90124]">
-          <div className="flex w-full justify-center items-center">
+          <button
+            onClick={handleScrollArrow}
+            className="w-1/2 text-white flex justify-center items-center font-[TTChocolatesBold] border-r border-white"
+          >
+            Enquire Now
+          </button>
+          <div className="flex w-1/2 justify-center items-center">
             <a
               className="flex w-full justify-center items-center gap-3 text-white font-[TTChocolatesBold]"
               href="tel:+91-9837983791"
             >
-              <FaPhone /> Admission Helpline No. +91-9837983791
+              <FaPhone /> +91-9837983791
             </a>
           </div>
         </div>
       )}
       <div
-        className="bg-[#25d366] flex justify-center items-center p-3 md:p-4 rounded-full fixed right-4 md:right-8 bottom-16 md:bottom-8 z-[9999] cursor-pointer"
+        className="bg-[#25d366] flex justify-center items-center p-3 md:p-4 rounded-full fixed right-4 md:right-8 bottom-16 md:bottom-8 z-50 cursor-pointer"
         onClick={handleWhatsapp}
       >
         <FaWhatsapp className="text-white text-[30px] md:text-[40px]" />
@@ -89,9 +95,20 @@ const LandingLayout = () => {
 
       <button
         onClick={handleScrollArrow}
-        className="fixed hidden md:block md:left-8 md:bottom-8 z-[9999] cursor-pointer pointer-events-auto animate-scrollAnimation"
+        className="fixed hidden md:block md:left-8 md:bottom-8 z-30 cursor-pointer pointer-events-auto animate-scrollAnimation"
       >
         <Image src={scrollArrow} alt="" className="rotate-180" />
+      </button>
+
+      <button
+        onClick={handleScrollArrow}
+        className="fixed hidden md:block z-50 bg-[#60BAB1] right-0 bottom-36 px-2 py-10 md:py-20 rounded-l-xl focus:outline-none text-black font-bold"
+        style={{
+          writingMode: "vertical-rl",
+          textOrientation: "sideways-right",
+        }}
+      >
+        Enquire Now
       </button>
     </div>
   );

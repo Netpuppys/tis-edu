@@ -94,7 +94,6 @@ function GoogleReviews() {
             Google Reviews
           </h3>
           <svg
-            ref={ref}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 268.317 14.075"
             className={`mainText-scribble mb-8 w-[60%] max-w-[268px] ${
@@ -132,7 +131,10 @@ function GoogleReviews() {
         </div>
       </div>
       <div className="w-full md:w-[58%] relative min-h-[50vh] md:min-h-[75vh] backgroundGoogle">
-        <div className="w-full h-fit absolute top-[50%] -translate-y-1/2 md:translate-y-0 md:top-[35%] overflow-hidden ">
+        <div
+          ref={ref}
+          className="w-full h-fit absolute top-[50%] -translate-y-1/2 md:translate-y-0 md:top-[35%] overflow-hidden "
+        >
           <div
             className={`pl-0 md:pl-12 ${
               inView ? "animate-translateRight opacity-100" : "opacity-0"

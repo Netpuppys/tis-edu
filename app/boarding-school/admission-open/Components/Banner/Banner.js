@@ -104,7 +104,7 @@ function Banner() {
         </button>
         <Image src={schoolLogo} className="w-20 md:w-28" alt="school" />
       </div>
-      <div className="z-30 relative mt-[55vh] md:mt-0 flex md:pr-40">
+      <div className="z-30 relative mt-[55vh] md:mt-0 flex md:pr-[15vw]">
         <div
           id="ee-form-5"
           className="shadow-2xl w-[90%] mx-auto p-2 md:p-4 bg-white max-w-[450px] rounded-3xl"

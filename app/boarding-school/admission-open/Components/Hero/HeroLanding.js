@@ -18,7 +18,7 @@ import petal3 from "../../../../../public/doodles/petal-3.svg";
 import "../../../../../styles/home/components/Hero/Hero.css";
 const TextBanner = ({ filledText }) => {
   return (
-    <div className="w-screen overflow-hidden h-screen flex items-center justify-center bg-transparent">
+    <div className="w-screen overflow-hidden h-screen flex flex-col items-center justify-center bg-transparent">
       <p
         style={
           filledText
@@ -29,34 +29,38 @@ const TextBanner = ({ filledText }) => {
             : {
                 color: "transparent",
                 WebkitTextStrokeColor: "#fff",
-                WebkitTextStrokeWidth: "0.1px",
+                WebkitTextStrokeWidth: "0.3px",
               }
         }
-        className="font-[TTChocolatesBold] text-center text-[3.5rem] md:text-[6rem] font-black tracking-[0.10369rem] leading-tight"
+        className="font-[TTChocolatesBold] flex flex-col text-center text-[3.5rem] md:text-[6rem] font-black tracking-[0.10369rem] leading-tight"
       >
         IMAGE
-        <span className="text-[4.5rem] font-[Mirador] md:text-[7rem] block">
+        <span className="text-[4.5rem] font-[Mirador] md:text-[7rem]">
           Gallery
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 268.317 14.075"
-            className="w-full h-fit"
-            width="268.3169860839844"
-            height="14.074999809265137"
-          >
-            <path
-              id="mainTextScribble"
-              d="M404.67,1796.978c47.813-3.483,110.6-.1,152.153-3.214s113.059,2.5,113.059,2.5-196.62,2.328-239.976,5.307c85.143,5.178,211.34,0,211.34,0"
-              transform="translate(-403.065 -1791.313)"
-              fill="none"
-              stroke="#c09d59"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3"
-              className=""
-            />
-          </svg>
         </span>
+        <div className="relative h-fit w-fit">
+          {filledText && (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 268.317 14.075"
+              width="368.3169860839844"
+              className="absolute"
+              height="14.074999809265137"
+            >
+              <path
+                id="mainTextScribble"
+                d="M404.67,1796.978c47.813-3.483,110.6-.1,152.153-3.214s113.059,2.5,113.059,2.5-196.62,2.328-239.976,5.307c85.143,5.178,211.34,0,211.34,0"
+                transform="translate(-403.065 -1791.313)"
+                fill="none"
+                stroke="#c09d59"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="3"
+                className=""
+              />
+            </svg>
+          )}
+        </div>
       </p>
     </div>
   );
@@ -120,7 +124,7 @@ function HeroLanding() {
     }
 
     return () => {
-      if ( typeof window !== "undefined" && contactRef.current) {
+      if (typeof window !== "undefined" && contactRef.current) {
         observer.unobserve(contactRef.current);
       }
     };
@@ -137,22 +141,25 @@ function HeroLanding() {
           className="w-full absolute top-[100vh] h-[calc(100%-200vh)] opacity-0"
         ></div>
 
-        <div className={`${isInView ? "fixed" : "absolute"} top-0 z-[10]`}>
+        <div className={`${isInView ? "fixed" : "absolute"} top-0 z-10`}>
           <TextBanner filledText={true} />
         </div>
+        {/* <div className={`${isInView ? "fixed" : "absolute"} `}>
+          
+        </div> */}
 
-        <div className={`${isInView ? "fixed" : "absolute"} top-0 z-[50]`}>
+        <div className={`${isInView ? "fixed" : "absolute"} top-0 z-50`}>
           <TextBanner filledText={false} />
         </div>
 
         {!isInView && (
-          <div className={`${isInView ? "fixed" : "absolute"} bottom-0 z-[10]`}>
+          <div className={`${isInView ? "fixed" : "absolute"} bottom-0 z-10`}>
             <TextBanner filledText={true} />
           </div>
         )}
 
         {!isInView && (
-          <div className={`${isInView ? "fixed" : "absolute"} bottom-0 z-[50]`}>
+          <div className={`${isInView ? "fixed" : "absolute"} bottom-0 z-50`}>
             <TextBanner filledText={false} />
           </div>
         )}
@@ -164,7 +171,7 @@ function HeroLanding() {
                 transform: `translate(-${movementX}rem, ${movementY}rem)`,
                 transition: "transform 0.2s",
               }}
-              className="rounded-full bg-transparent w-1/2 mx-auto aspect-square "
+              className="rounded-full bg-transparent w-1/2 ml-5 mr-auto md:mx-auto aspect-square "
             >
               <Image src={shooting} className="w-full h-fit" alt="bubble" />
             </div>
@@ -176,7 +183,7 @@ function HeroLanding() {
                 transform: `translate(${movementX}rem, ${movementY + 2}rem)`,
                 transition: "transform 0.2s",
               }}
-              className="rounded-full bg-transparent w-1/2 mx-auto aspect-square "
+              className="rounded-full bg-transparent w-1/2 mr-5 ml-auto md:mx-auto aspect-square "
             >
               <Image src={polo} className="w-full h-fit" alt="bubble" />
             </div>
