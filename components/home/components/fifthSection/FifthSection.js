@@ -27,7 +27,7 @@ function FifthSection() {
           explore, and shape their own futures.
           <br />
           <br />
-          <p className="text-[#60bab1]">There, we cracked it!</p>
+          <span className="text-[#60bab1]">There, we cracked it!</span>
         </p>
       </div>
     </div>
