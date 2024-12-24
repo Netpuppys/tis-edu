@@ -34,7 +34,8 @@ function FourthSection() {
   });
   const title = (
     <>
-      From football to archery, we offer{" "}
+      It’s not just a facility. At Tula’s it’s the foundation!
+      <br />
       <span ref={ref} className="circled-text">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="4.58 2.97 61.39 54.41">
           <path
@@ -46,12 +47,12 @@ function FourthSection() {
             className={`svg-circle ${inView ? "active" : ""}`}
           ></path>
         </svg>
-        16{" "}
+        16+{" "}
       </span>
-      sports that teaches teamwork, discipline, and confidence.
+      sports curated to bring joy and discipline to your life.
     </>
   );
-  const subTitle = "( Our Students love that! )";
+  // const subTitle = "( Our Students love that! )";
 
   const handleItemClick = (sectionName) => {
     window.location.href = `/beyond-academics/sports/#${sectionName}`;
@@ -188,9 +189,9 @@ function FourthSection() {
   return (
     <div className="fourth-section-main-div" id="4">
       <div className="title-div">
-        <p className="Sportstitle">Sports</p>
+        <p className="Sportstitle">Sports ?</p>
         <p className="title">{title}</p>
-        <p className="sub-title">{subTitle}</p>
+        {/* <p className="sub-title">{subTitle}</p> */}
       </div>
       <div className="activities-div">
         {activity.slice(0, 3).map((activityItem, index) => (

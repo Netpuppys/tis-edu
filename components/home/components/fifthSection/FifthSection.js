@@ -16,22 +16,19 @@ function FifthSection() {
 
       <div className="text-div-atTis">
         <p className="title">
-          At Tula’s, we ask, “How can we make school better?”
+          At Tula’s, we always ask, “What’s the secret to making school
+          awesome?”
         </p>
         <p className="AtTisdescription">
-          Using the latest research on how girls learn best, we designed an
-          innovative modular schedule, personalized for each student. Our girls
-          are focused, not overwhelmed. “Girls Rule” isn’t just a saying here.
-          Develop leadership skills, build compassion, gain responsibility, and
-          prepare to change the world.
+          The secret to making one's school experience truly unforgettable? It’s
+          all about making learning feel like an adventure—where curiosity
+          leads, creativity thrives, and every day brings something new to
+          discover. When students are inspired, they don’t just learn—they grow,
+          explore, and shape their own futures.
+          <br />
+          <br />
+          <p className="text-[#60bab1]">There, we cracked it!</p>
         </p>
-
-        <Image
-          onClick={handleClickLearn}
-          alt=""
-          className="learn_more_btn"
-          src={LearnMore}
-        />
       </div>
     </div>
   );

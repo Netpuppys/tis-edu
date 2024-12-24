@@ -23,8 +23,9 @@
 .Award-section-main-div .title-div .title {
   color: #262626;
   font-family: "Mirador800";
-  font-size: clamp(15px, 2vw, 45px);
+  font-size: clamp(15px, 1.6vw, 45px);
   font-style: italic;
+  line-height: 1.25;
   text-align: left;
   font-weight: 900;
 }

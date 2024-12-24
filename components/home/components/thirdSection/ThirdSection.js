@@ -6,13 +6,15 @@ import madeForFuture from "../../../../public/pictures/madeForFuture.png";
 import "../../../../styles/home/components/thirdSection/ThirdSection.css";
 import Image from "next/image";
 function ThirdSection() {
-  const title1 = "We are Supported and Inspired";
-  const title2 = "Prepared to thrive!";
+  const title1 =
+    "“We feel supported in what we do and nudged further to do more”";
+  const title2 =
+    "“Tula’s helped me thrive and become the best version of myself”";
 
   const para1 =
-    "Whether it's academics, music, art, or drama, Tula's is best at unlocking the potential of students. We help our students to bring out their creative sides. We are more than just a school. Instead, TIS is a canvas of opportunities.";
+    "At Tula's, we believe in bringing out the best in every student—whether it’s academics, music, art, or drama. With the right support and inspiration, creativity finds its way. For us, school isn’t just about lessons, it’s about endless opportunities waiting to be explored.";
   const para2 =
-    "Choosing Tula’s International School, we realised it's been a transformative experience. It's not just about education. It's about becoming the best version of ourselves.";
+    "When you choose a school that chooses you, it becomes more than just a place to learn—it becomes a place to belong, grow, and shine. At Tula’s International School, we see the potential in every student and help them bring it to life.";
 
   return (
     <div className="third-section-main-div" id="3">
