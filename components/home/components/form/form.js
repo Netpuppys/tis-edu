@@ -15,7 +15,7 @@ function Form() {
     FirstName: "",
     Email: "",
     MobileNumber: "91",
-    LeadSource: 78,
+    LeadSource: 116,
     LeadChannel: 20,
     Course: "",
     State: "",
@@ -136,7 +136,7 @@ function Form() {
           FirstName: "",
           Email: "",
           MobileNumber: "91",
-          LeadSource: 78,
+          LeadSource: 116,
           LeadChannel: 20,
           Course: "",
           State: "",
@@ -328,11 +328,9 @@ function Form() {
             </div>
             <button
               type="button"
-              disabled={verified}
+              disabled={verified || !/^\d{6,15}$/.test(formData.MobileNumber)}
               onClick={sendOtp}
-              className={`w-full md:w-[40%] bg-black rounded-md flex items-center justify-center md:px-4 h-10 font-bold text-[#FFFFFF] ${
-                !verified ? "cursor-pointer" : "opacity-60 cursor-not-allowed"
-              }`}
+              className="w-full md:w-[40%] bg-black rounded-md flex items-center justify-center md:px-4 h-10 font-bold text-[#FFFFFF] cursor-pointer disabled:cursor-not-allowed"
             >
               {verified ? "Verified" : "Send OTP"}
             </button>
