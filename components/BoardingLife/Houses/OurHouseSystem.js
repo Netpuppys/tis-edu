@@ -23,8 +23,7 @@ export default function OurHousesystem() {
         <p className="house-main-text">
           <br />
           There are seven houses - Olympian House, Spartan House, Trojan House,
-          Titan House, Starks House, Valkyrie House, and Athena House. These
-          seven houses have one aim in common.
+          Titan House, Starks House, Valkyrie House, and Athena House.
         </p>
         <br />
         {isMobile && <Image src={houseMobile} alt="" className="house-photo" />}
@@ -35,7 +34,7 @@ export default function OurHousesystem() {
           out their issues. They are mentors as well as mates, friendly and
           impartial. The houses act as Tula’s brand ambassadors wherever they
           represent their school. The immortal phrase, ‘’All for One and One for
-          All’’, might easily be applied to the four houses at TIS! Tula’s has
+          All’’, might easily be applied to the seven houses at TIS! Tula’s has
           maintained its reputation as the best CBSE school in Dehradun, thanks
           to the sterling work done by its places.
         </p>

@@ -26,7 +26,7 @@
 }
 .yellowLineFood {
   margin-left: auto;
-  width: 35%;
+  width: 20%;
   margin-right: auto;
   height: auto;
   display: block;
@@ -36,9 +36,9 @@
   font-family: PF din Display100;
   font-size: 27px;
   font-weight: 200;
-
   letter-spacing: 0.03em;
   line-height: 35px;
+  padding-bottom: 3rem;
   margin-left: auto;
   margin-right: auto;
   width: 50%;

@@ -21,17 +21,26 @@ export default function StreamOffered() {
         headerImg={HeaderStreamsImg}
       />
       <div className="main-streams">
-        <p className="text-stream">
-          Students must choose one of the three streams
-          <br />
-          - Science, Commerce or Humanities. English is the compulsory subject
-          while other subjects are elective.
-          <br />
-          <br />
-          The students are required to select elective subjects as per the
-          stream. TIS provides a wide range of options for the
-          students of grade XI.
-        </p>
+        <div className="text-stream">
+          At TIS, we empower students to explore their passions and carve their
+          future by offering three streams of study in Grade XI. Each stream is
+          designed to cater to diverse interests and career aspirations. <br/><br/>Streams
+          Offered:
+          <ul className="ml-5 list-disc">
+            <li>Science</li>
+            <li>Commerce</li>
+            <li>Humanities</li>
+          </ul><br/>
+          Key Points:
+          <ul className="ml-5 list-disc">
+            <li>English is a compulsory subject for all students.</li>
+            <li>Elective subjects are chosen based on the selected stream. </li>
+            <li>
+              TIS provides a diverse range of electives to match students'
+              interests and career aspirations
+            </li>
+          </ul>
+        </div>
 
         {!isMobile && <Image src={streams} alt="" className="streams" />}
         {isMobile && <Image src={streamsMobile} alt="" className="streams" />}

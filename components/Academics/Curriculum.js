@@ -7,7 +7,7 @@ import HeaderCBSEAfiiliationImg from "../../public/Header/CBSEHeader.png";
 
 export default function Curriculum() {
   const bannerText =
-    "We have designed the most suitable syllabus which prioritises comprehensive learning.";
+    "We have built a curriculum that understands and supports the journey of every child.";
 
   return (
     <>
@@ -19,14 +19,15 @@ export default function Curriculum() {
       <div className="main">
         <section className="cbse-container">
           <p className="content">
-            Tula’s International School is a co-educational residential school
-            from grade IV to XII in Dehradun, Uttarakhand. One of the top
-            boarding schools in Dehradun, TIS is affiliated to CBSE (Central
-            Board of Secondary Education), New Delhi.
+            Welcome to Tula’s International School, Dehradun
+            <br />
+            <br />A premier co-educational residential school (Grade IV-XII)
+            affiliated with CBSE, offering a blend of academic excellence and
+            holistic development.
           </p>
 
-          <p className="curriculam">
-            Curriculum{" "}
+          <p className="academic">
+            Our <span>Curriculum</span>
             <Image
               style={{ height: "auto" }}
               className="yellow-Linne"
@@ -35,32 +36,38 @@ export default function Curriculum() {
             />
           </p>
 
-          <p className="curriculam-text">
-            Some of the finest academicians have developed Tula’s International
-            School curriculum across some of Dehradun’s best boarding schools in
-            India. We follow the CBSE course structure. The CBSE course
-            structure is based on reasoning and analytical abilities and not
-            memorising facts. This helps the students understand the subject
-            better and gain objective knowledge. The syllabus is framed with the
-            child’s development and learning needs. This aids the overall
-            development and individual growth of a student.
+          <div className="curriculam-text">
+            At TIS, we follow the CBSE course structure. This structure along
+            with our curriculum, shaped by top academicians, prioritizes
+            reasoning and analytical thinking over rote memorization. Aligned
+            with the latest NEP 2023 framework, our syllabus emphasizes a
+            skill-based, inclusive education that adapts to diverse learners’
+            needs.
             <br />
-            The NEP 2023 that we follow promotes skill-based system to enhance
-            inclusive education for all, providing equal opportunities for
-            diverse background learners, stressing on 5+3+3+4 model of structure
-            after 5 years of foundation phase, 3 years of preparatory phase, 3
-            years intermediate phase and remaining 4 years in the secondary
-            phase. Project based learning, art integrated learning, flip class
-            session are stressed upon where students amalgamate art, performing
-            art subjects to prepare projects, comparing their state with
-            different states – Karnataka, Puducherry etc.
             <br />
-            Educational Trips, inter school science quests, Seminars, Business
-            Ideas Conclaves, we are the simulators fostering greater education
-            and learning employing greater state of art technology. <br />
-            At TIS Digital mode of learning, smart-classes, VR simulators for
-            lunar landing gives a 3D real experience to our students.
-          </p>
+            Key Highlights:
+            <ul className="ml-5 list-disc">
+              <li>
+                NEP 2023 Structure: 5+3+3+4 model ensuring a progressive
+                transition through foundational, preparatory, intermediate, and
+                secondary phases.
+              </li>
+              <li>
+                Innovative Learning: Project-based and art-integrated
+                methodologies promote creativity and critical thinking.
+              </li>
+              <li>
+                Advanced Technology: Digital classrooms, VR simulators for
+                immersive experiences, and online assessment tools enhance
+                student engagement.
+              </li>
+              <li>
+                Experiential Learning: Educational trips, inter-school science
+                quests, seminars, and business conclaves foster practical
+                knowledge.
+              </li>
+            </ul>
+          </div>
 
           <p className="academic">
             ACADEMIC CLASSES – <span>IV to XII</span>
@@ -73,16 +80,22 @@ export default function Curriculum() {
           </p>
 
           <p className="curriculam-text">
-            Digital classroom with smart board & extra marks package, all the
-            students get assessments online. Each student has an Extra mark id
-            and a Fedena id assigned on entry to the campus with flexible out of
-            classroom studies in evening and during prep time. Assignments are
-            given in online and offline mode and standardise evaluation is done
-            in an offline mode. Olympiads at national level are conducted for
-            English, Hindi, Mathematics, Science and Economics where students
-            win various medals and certificates. However, Tis Has Collaboration
-            With Aviral Classes For Preparing Students To Crack Iit-Jee/Neet
-            (Beyond Academic Hours)
+            <ul className="ml-5 list-disc">
+              <li>
+                Digital Advantage: Every student receives unique digital IDs
+                (Extra Marks & Fedena) for personalized online and offline
+                learning.
+              </li>
+              <li>
+                Competitive Edge: Olympiads in English, Hindi, Mathematics,
+                Science, and Economics bring laurels to our students.
+              </li>
+              <li>
+                IIT-JEE/NEET Prep: Collaborations with Aviral Classes provide
+                robust training for aspiring engineers and medical
+                professionals.
+              </li>
+            </ul>
           </p>
         </section>
       </div>

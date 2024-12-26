@@ -20,36 +20,32 @@ export default function FoodAndNutrition() {
       />
       <div className="main-div-food">
         <p className="main-div-food-text">
-          TIS ensures that every meal is nutritious and wholesome. Students at
-          our school are served healthy vegetarian meals in the school&apos;s
-          central dining hall.
+          At Tula's, we know that great days start with great food! That’s why
+          our dining hall is more than just a place to eat—it’s where students
+          get the nutrition they need to conquer the day ahead.
           <br />
           <br />
-          Tula&apos;s International School is proud of its beautiful dining
-          area. Dieticians have carefully planned the food that is served at the
-          school each day so that it offers a variety of proteins, grains,
-          fruits, and vegetables in delectable vegetarian dishes.
-          <br />
-          <br />
-          Each item on the daily menu is carefully selected from multiple
-          wholesome sources to provide delicious, nutritious dishes for everyone
-          in your family.
+          Forget bland and boring; our meals are packed with flavor, nutrients,
+          and everything your child needs to stay energized and focused.
         </p>
         <h1 className="nutrition-Heading">
-          Nutritional Dining <span>Experience</span>{" "}
+          What’s <span>Cooking?</span>
           <Image className="yellowLineFood" src={YellowLineFood} alt="" />
         </h1>
         <h2 className="text-nutrition">
-          <ul>
-            <li>Nutritious vegetarian meals daily </li>{" "}
-            <li>Carefully planned menu by dieticians </li>{" "}
-            <li>Variety of proteins, grains, fruits </li>{" "}
-            <li>Delicious and wholesome vegetarian dishes </li>{" "}
-            <li>Beautiful, pride-worthy school dining area </li>{" "}
-            <li>Thoughtfully selected items from multiple sources </li>{" "}
-            <li>Balanced meals for all ages </li>{" "}
-            <li>Dedicated to the student’s nutritional well-being</li>
-          </ul>
+          Every meal at Tula's is a carefully planned experience. Our expert
+          dieticians design mouth-watering, nutritious vegetarian dishes that
+          combine fresh, local ingredients. Think crispy veggies, vibrant
+          fruits, and protein-packed goodness—all blended together in delicious
+          dishes. It's food that not only tastes great but gives your child the
+          fuel they need to shine.
+          <br />
+          <br />
+          From the youngest to the oldest, every student at Tula’s gets
+          perfectly balanced meals for their age and activity level. With a
+          variety of flavors and nutrients, our menu is designed to keep kids
+          full, satisfied, and ready to tackle whatever comes their way. No need
+          to compromise on taste to stay healthy—our meals make it easy!
         </h2>
       </div>
     </>

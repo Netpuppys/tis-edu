@@ -11,7 +11,7 @@ import yellowLine from "../../../public/vision/yellowLine.png";
 export default function Mission() {
   const { isMobile } = useMobile();
   const subTitle =
-    "Making students ready for success—our mission. A world-class education, our vision for excellence.";
+    "At TIS, our mission inspires purpose, and our bold vision charts the path to limitless possibilities for every student";
   return (
     <>
       <Header
@@ -32,46 +32,41 @@ export default function Mission() {
           <div className="content-vision">
             <div>
               <h2>Our Vision</h2>
-              <ul>
+              To become a center of excellence and a leader among top
+              educational institutions. At TIS, we aim to:
+              <br />
+              <ul className="ml-5 list-disc">
                 <li>
-                  To become a centre of excellence and emerge as a leader among
-                  the best educational institutions.
+                  Support personal growth and development to make a positive
+                  impact on society.
                 </li>
                 <li>
-                  To foster personal growth and development of the individual to
-                  transform the society through service.
+                  Encourage curiosity and enthusiasm for learning, making TIS
+                  stand out.
                 </li>
                 <li>
-                  To create and disseminate knowledge by developing the
-                  intellect of our students with enthusiasm and excellence,
-                  setting TIS apart from the rest of the institutions.
-                </li>
-                <li>
-                  To create future-ready global citizens with great character
-                  who will be dedicated to uphold the values that define our
-                  great country.
+                  Prepare global citizens with strong character who uphold the
+                  values of our nation.
                 </li>
               </ul>
             </div>
             <Image className="yellowLinee" src={yellowLine} alt="" />
             <div>
               <h2>Our Mission</h2>
-              <ul>
+              Our mission is to help students excel academically and grow as
+              individuals. TIS is dedicated to:
+              <ul className="ml-5 list-disc">
+                <li>Becoming a benchmark institution in education.</li>
                 <li>
-                  Our mission is to train new generations in order to produce
-                  who will excel in academics.{" "}
+                  Providing quality education and enriching learning
+                  experiences.
                 </li>
                 <li>
-                  To develop as a benchmark institution in Education sector.{" "}
+                  Supporting students’ personal and social growth beyond
+                  academics.
                 </li>
                 <li>
-                  To offer well-rounded academic excellence through quality
-                  education and learning experience to our students.{" "}
-                </li>
-                <li>We believe in nurturing students beyond academics. </li>
-                <li>
-                  To create a future generation which is dedicated to serving
-                  humanity.
+                  Preparing a future generation committed to serving humanity.
                 </li>
               </ul>
             </div>
@@ -79,24 +74,19 @@ export default function Mission() {
             <div>
               <h2>Community Values</h2>
               <h3>Equity:</h3>
-              <ul>
-                TIS campus provides a learning environment in which our students
-                from diverse places can achieve their highest potential. We
-                believe that every student has the capability to learn provided
-                they are given the chance to do so.
-              </ul>
+              TIS offers a supportive environment where students from all
+              backgrounds can reach their potential. We believe every student
+              can succeed with the right opportunities.
+              <br />
+              <br />
               <h3>Engagement:</h3>
-              <ul>
-                We believe that students learn when they are engaged in a
-                student-centric environment and have a well-designed curriculum
-                which emphasizes hands-on learning.
-                <br />
-                We have highly qualified and experienced faculty to provide the
-                best knowledge to our students Among other schools, Tula’s is
-                the only top boarding school in Dehradun that pays equal
-                attention to civilizational heritage while keeping pace with
-                modern trends in the age of the Internet.
-              </ul>
+              We create a student-focused environment with a hands-on curriculum
+              that encourages active learning. Our experienced faculty ensures
+              students get the best guidance.
+              <br />
+              <br />
+              At TIS, we blend tradition with modern trends, making us the top
+              boarding school in Dehradun and a leader in holistic education.
             </div>
             <Image className="yellowLinee" src={yellowLine} alt="" />
           </div>

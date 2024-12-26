@@ -27,7 +27,7 @@ function Headmaster() {
         }
       />
 
-      <div className="carousel-containers">
+      {/* <div className="carousel-containers">
         <CarouselCard
           title="#1"
           description=<>
@@ -46,7 +46,7 @@ function Headmaster() {
             <br /> financial aid
           </>
         />
-      </div>
+      </div> */}
       <p className="headmaster-name">
         Mr. Raman <span>Koushal</span>
         <Image
