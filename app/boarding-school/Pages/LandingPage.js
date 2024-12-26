@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import LoadingScreen from "../../../components/home/loading/LoadingScreen";
 import LandingLayout from "./LandingLayout";
+import LoadingScreenLanding from "../admission-open/Components/LoadingScreenLanding/loadingScreenLanding";
 
 function Landing() {
   const [isLoading, setIsLoading] = useState(true);
@@ -16,7 +16,7 @@ function Landing() {
     return () => clearTimeout(timer);
   }, []);
 
-  return <div>{isLoading ? <LoadingScreen /> : <LandingLayout />}</div>;
+  return <div>{isLoading ? <LoadingScreenLanding /> : <LandingLayout />}</div>;
 }
 
 export default Landing;

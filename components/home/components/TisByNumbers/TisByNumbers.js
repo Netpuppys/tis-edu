@@ -14,9 +14,9 @@ function TisByNumbers() {
         <p className="title_2">VIRTUAL TOUR</p>
       </div>
 
-      <div className="-mt-[40px] md:-mt-[120px]">
+      {/* <div className="-mt-[40px] md:-mt-[120px]">
         <Stats />
-      </div>
+      </div> */}
     </div>
   );
 }

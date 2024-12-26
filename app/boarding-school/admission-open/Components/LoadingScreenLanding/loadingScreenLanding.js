@@ -1,10 +1,21 @@
 "use client";
+
 import React, { useEffect, useState } from "react";
-import "../../../styles/home/loading/LoadingScreen.css";
-function LoadingScreen() {
+import AOS from "aos";
+import { useMobile } from "../../../../../components/globalComponents/IsMobileContext";
+import "./LoadingScreenLanding.css";
+
+function LoadingScreenLanding() {
+  const { isMobile } = useMobile();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0 });
+    AOS.init();
+  }, []);
   const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
+    // Trigger the animation when the component is mounted
     setIsActive(true);
   }, []);
   return (
@@ -13,15 +24,8 @@ function LoadingScreen() {
         <p className="top-text">
           LET&apos;S DO <span>it</span>
         </p>
+        <p className="mid-text">with</p>
         <p className="bottom-text">
-          <span
-            style={{
-              fontStyle: "normal",
-              fontFamily: "TT Chocolates",
-            }}
-          >
-            with
-          </span>{" "}
           Tula&apos;s{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -46,4 +50,4 @@ function LoadingScreen() {
   );
 }
 
-export default LoadingScreen;
+export default LoadingScreenLanding;

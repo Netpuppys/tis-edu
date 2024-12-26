@@ -13,7 +13,7 @@
 
 .loading-screen-container .text-main {
   position: relative;
-  width: 70%;
+  width: 50%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -22,26 +22,30 @@
   gap: 2vh;
 }
 
-.loading-screen-container .text-main .top-text {
+.loading-screen-container .text-main .top-text,
+.loading-screen-container .text-main .mid-text {
   margin: 0;
   font-family: PF din Display;
   color: #fff;
-  font-size: 7vw;
+  font-size: 11vh;
   font-style: normal;
-  font-weight: 400;
-  line-height: 7vw;
-  letter-spacing: normal;
+  font-weight: 600;
+  line-height: 2.875rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
 }
-
+.loading-screen-container .text-main .mid-text {
+  font-size: 9vh;
+}
 .loading-screen-container .text-main .top-text span {
   margin: 0;
   color: #fff;
   text-shadow: 0px 15px 15px rgba(0, 0, 0, 0.16);
   font-family: "Mirador", sans-serif;
-  font-size: 7vw;
+  font-size: 13vh;
   font-style: italic;
   font-weight: 900;
-  line-height: 7vw;
+  line-height: 15vh; /* 100% */
   text-transform: none;
 }
 
@@ -50,21 +54,26 @@
   color: #fff;
   text-shadow: 0px 15px 15px rgba(0, 0, 0, 0.16);
   font-family: "Mirador", sans-serif;
-  font-size: 7vw;
+  font-size: 13vh;
   font-style: italic;
   font-weight: 900;
   padding-top: 1vh;
-  line-height: 7vw;
+  line-height: 13vh; /* 100% */
   text-transform: capitalize;
 }
 
 .loading-screen-container .text-main .top-text {
   opacity: 0;
-  animation: topText 1.5s ease 1500ms;
+  animation: topText 1.2s 400ms;
+}
+
+.loading-screen-container .text-main .mid-text {
+  opacity: 0;
+  animation: topText 1.2s 700ms;
 }
 
 .loading-screen-container .text-main .bottom-text {
-  animation: bottomText 1.5s ease;
+  animation: bottomText 1.2s ease;
 }
 svg .svg-elem-1 {
   stroke-dashoffset: 718.8487548828125px;
@@ -98,7 +107,7 @@ svg.active .svg-elem-1 {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .loading-screen-container .text-main {
     width: 100%;
     box-sizing: border-box;
@@ -108,20 +117,31 @@ svg.active .svg-elem-1 {
   }
 
   .loading-screen-container .text-main .top-text {
-    font-size: 12vw;
-    line-height: 12vw;
-    letter-spacing: 0.5vw;
+    font-size: 2.5rem;
+    line-height: 2.875rem;
+    letter-spacing: 0.125rem;
+  }
+
+  .loading-screen-container .text-main .mid-text {
+    font-size: 2.5rem;
+    line-height: 2.875rem;
+    letter-spacing: 0.125rem;
   }
 
   .loading-screen-container .text-main .top-text span {
-    font-size: 12vw;
-    line-height: 12vw;
-    letter-spacing: 0.5vw;
+    font-size: 3.75rem;
+    line-height: 3.75rem;
   }
 
   .loading-screen-container .text-main .bottom-text {
-    font-size: 12vw;
-    line-height: 12vw;
-    letter-spacing: 0.5vw;
+    font-size: 3.75rem;
+    line-height: 3.75rem;
+  }
+
+  .loading-screen-container .text-main .underline {
+    width: 100%;
+    right: 0;
+    left: 0;
+    bottom: -1.5rem;
   }
 }

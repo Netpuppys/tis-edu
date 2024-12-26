@@ -14,7 +14,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { useMobile } from "@/components/globalComponents/IsMobileContext";
 function GoogleReviews() {
   const { ref, inView } = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
     threshold: 0.1,
   });
 
@@ -89,7 +89,7 @@ function GoogleReviews() {
         <div className="text-white absolute flex flex-col justify-center items-center px-8">
           <h3
             className="font-[Mirador] text-center"
-            style={{ fontSize: "clamp(38px, 4vw, 70px)" }}
+            style={{ fontSize: "clamp(35px, 4vw, 70px)" }}
           >
             Google Reviews
           </h3>
@@ -115,7 +115,7 @@ function GoogleReviews() {
             />
           </svg>
           <p3
-            className="px-8 md:px-20"
+            className="px-0 md:px-20"
             style={{
               fontSize: "clamp(14px, 1.1vw, 25px)",
               fontFamily: "TT Chocolates",

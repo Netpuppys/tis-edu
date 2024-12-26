@@ -19,6 +19,8 @@ import Image from "next/image";
 import "../../styles/home/HomeLayout.css";
 import GoogleReviews from "@/app/boarding-school/admission-open/Components/Hero/components/GoogleReviews";
 import Form from "./components/form/form";
+import Stats from "./components/TisByNumbers/stats";
+import NewStats from "./components/stats/stats";
 
 const maxSections = 13;
 
@@ -66,7 +68,8 @@ const HomeLayout = () => {
               <ActivityGrid />
               <Video />
               <FifthSection />
-              <SixthSection />
+              <NewStats />
+              {/* <SixthSection /> */}
               <TisByNumbers />
               <AwardSection />
               <Ranking />

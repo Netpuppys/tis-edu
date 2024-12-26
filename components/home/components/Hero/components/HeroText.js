@@ -1,16 +1,7 @@
 import React from "react";
-import { useMobile } from "../../../../globalComponents/IsMobileContext";
-import underlineImage from "../../../../../public/YellowLine.png";
-import underLineImageMobile from "../../../../../public/doodles/underline-mobile.png";
 import "../../../../../styles/home/components/Hero/components/HeroText.css";
-// import AnimatedIcon from '../../../../Animated';
-import Image from "next/image";
 function HeroText(props) {
   const isFilledText = props.isFilledText;
-  const { isMobile } = useMobile();
-
-  //     const pointA = { x: 0, y: 50 }; // Adjust the coordinates for point A
-  //   const pointB = { x: 100, y: 50 }; // Adjust the coordinates for point B
 
   return (
     <div className="base-main-div">
@@ -18,11 +9,18 @@ function HeroText(props) {
         <p className={isFilledText ? "top-text" : "top-text border-text"}>
           LET&apos;S DO <span>it</span>
         </p>
-        <p className={isFilledText ? "mid-text" : "mid-text border-text"}>
-          with
-        </p>
-        <p className={isFilledText ? "bottom-text" : "bottom-text border-text"}>
-          {" "}
+
+        <h3
+          className={isFilledText ? "bottom-text" : "bottom-text border-text"}
+        >
+          <span
+            style={{
+              fontStyle: "normal",
+              fontFamily: "TT Chocolates",
+            }}
+          >
+            with
+          </span>{" "}
           Tula&apos;s
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.317 14.075">
             <path
@@ -36,13 +34,7 @@ function HeroText(props) {
               strokeWidth="3"
             />
           </svg>
-          {/* <Image
-            src={isMobile ? underLineImageMobile : underlineImage}
-            className="underline"
-            alt="refresh"
-          /> */}
-        </p>
-        {/* <AnimatedIcon pointA={pointA} pointB={pointB}/> */}
+        </h3>
       </div>
     </div>
   );
