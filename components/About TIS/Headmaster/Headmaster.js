@@ -23,7 +23,7 @@ function Headmaster() {
         title={"Headmaster’s Profile"}
         headerImg={isMobile ? HeaderHeadmasterMobileIMg : HeaderHeadmasterIMg}
         subtitle={
-          "The headmaster guides the faculty, promotes discipline, and shapes the school's environment."
+          "A headmaster is the architect of dreams, laying the foundation for a lifetime of success."
         }
       />
 
