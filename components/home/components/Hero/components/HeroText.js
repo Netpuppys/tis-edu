@@ -26,7 +26,7 @@ function HeroText(props) {
         </h3>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="w-[60%] h-fit mx-auto"
+          className="w-[60%] md:w-[30%] h-fit mx-auto"
           viewBox="0 0 268.317 14.075"
         >
           <path
