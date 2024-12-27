@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import "../../../styles/About Tis/Mission.css";
 import { useMobile } from "../../globalComponents/IsMobileContext";
 import Header from "../../globalComponents/Header/Header";
 import headerMissionImg from "../../../public/Header/VisionHeader.jpg";
@@ -12,6 +11,81 @@ export default function Mission() {
   const { isMobile } = useMobile();
   const subTitle =
     "At TIS, our mission inspires purpose, and our bold vision charts the path to limitless possibilities for every student";
+  const sections = [
+    {
+      title: "Our Vision",
+      description: (
+        <>
+          To become a center of excellence and a leader among top educational
+          institutions. At TIS, we aim to:
+          <br />
+          <ul className="ml-5 list-disc">
+            <li>
+              Support personal growth and development to make a positive impact
+              on society.
+            </li>
+            <li>
+              Encourage curiosity and enthusiasm for learning, making TIS stand
+              out.
+            </li>
+            <li>
+              Prepare global citizens with strong character who uphold the
+              values of our nation.
+            </li>
+          </ul>
+        </>
+      ),
+      image: missionVision,
+    },
+    {
+      title: "Our Mission",
+      description: (
+        <>
+          Our mission is to help students excel academically and grow as
+          individuals. TIS is dedicated to:
+          <ul className="ml-5 list-disc">
+            <li>Becoming a benchmark institution in education.</li>
+            <li>
+              Providing quality education and enriching learning experiences.
+            </li>
+            <li>
+              Supporting students’ personal and social growth beyond academics.
+            </li>
+            <li>
+              Preparing a future generation committed to serving humanity.
+            </li>
+          </ul>
+        </>
+      ),
+      image: missionVision,
+    },
+    {
+      title: "Community Values",
+      description: (
+        <>
+          <span className="w-full text-[#212121] font-normal font-[TTChocolatesBold] text-[clamp(20px,2vw,100px)]">
+            Equity:
+          </span>
+          <br />
+          TIS offers a supportive environment where students from all
+          backgrounds can reach their potential. We believe every student can
+          succeed with the right opportunities.
+          <br />
+          <br />
+          <span className="w-full text-[#212121] font-normal font-[TTChocolatesBold] text-[clamp(20px,2vw,100px)]">
+            Engagement:
+          </span>
+          <br />
+          We create a student-focused environment with a hands-on curriculum
+          that encourages active learning. Our experienced faculty ensures
+          students get the best guidance.
+          <br /> At TIS, we blend tradition with modern trends, making us the
+          top boarding school in Dehradun and a leader in holistic education.
+        </>
+      ),
+      image: missionVision,
+    },
+  ];
   return (
     <>
       <Header
@@ -19,81 +93,57 @@ export default function Mission() {
         subtitle={subTitle}
         headerImg={isMobile ? headerMissionMobileImg : headerMissionImg}
       />
-      <div className="mission-desc">
-        <p className="mission-desc-p">
-          TIS stands out as the best boarding school in India where students
-          discover their educational aspirations independently from home. We
-          consistently top the list of not just the top 10 boarding schools in
-          Dehradun but also the top CBSE schools in Dehradun.
-        </p>
-
-        <div className="below-content">
-          {!isMobile && <Image src={missionVision} alt="" />}
-          <div className="content-vision">
-            <div>
-              <h2>Our Vision</h2>
-              To become a center of excellence and a leader among top
-              educational institutions. At TIS, we aim to:
-              <br />
-              <ul className="ml-5 list-disc">
-                <li>
-                  Support personal growth and development to make a positive
-                  impact on society.
-                </li>
-                <li>
-                  Encourage curiosity and enthusiasm for learning, making TIS
-                  stand out.
-                </li>
-                <li>
-                  Prepare global citizens with strong character who uphold the
-                  values of our nation.
-                </li>
-              </ul>
+      <div className="py-8 md:py-20 w-[90%] md:w-[80%] mx-auto flex flex-col gap-[10vw] md:gap-[10vh]">
+        {sections.map((section, index) => (
+          <div
+            key={index}
+            className={`flex flex-col gap-[8vw] ${
+              index % 2 === 0 ? "flex-row" : "md:flex-row-reverse"
+            }`}
+          >
+            <div className="relative w-full group aspect-[1.5/0.8] overflow-hidden">
+              <div className="w-full h-full">
+                <Image
+                  src={section.image}
+                  alt=""
+                  className="w-full h-full object-cover transition-all duration-300 group-hover:scale-110 group-hover:opacity-80"
+                />
+                {/* Animated border */}
+                <div className="absolute hidden md:block bottom-10 left-10 h-full w-[1px] bg-white transition-all duration-500 ease-in-out group-hover:left-0 group-hover:bottom-0"></div>
+                <div className="absolute hidden md:block bottom-10 left-10 h-[1px] w-full bg-white transition-all duration-500 ease-in-out group-hover:left-0 group-hover:bottom-0"></div>
+              </div>
             </div>
-            <Image className="yellowLinee" src={yellowLine} alt="" />
-            <div>
-              <h2>Our Mission</h2>
-              Our mission is to help students excel academically and grow as
-              individuals. TIS is dedicated to:
-              <ul className="ml-5 list-disc">
-                <li>Becoming a benchmark institution in education.</li>
-                <li>
-                  Providing quality education and enriching learning
-                  experiences.
-                </li>
-                <li>
-                  Supporting students’ personal and social growth beyond
-                  academics.
-                </li>
-                <li>
-                  Preparing a future generation committed to serving humanity.
-                </li>
-              </ul>
+            <div className="flex w-full flex-col items-start justify-center text-black">
+              <h2 className="w-full text-[#212121] font-[Mirador] italic text-[clamp(20px,2.5vw,100px)]">
+                {section.title}
+              </h2>
+              <h3
+                className="w-full text-[#212121] font-normal text-[clamp(16px,1.3vw,40px)]"
+                style={{
+                  fontFamily: "TT Chocolates",
+                }}
+              >
+                {section.description}
+              </h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-[60%] md:w-[40%] h-fit mt-4"
+                viewBox="0 0 268.317 14.075"
+              >
+                <path
+                  id="mainTextScribble"
+                  d="M404.67,1796.978c47.813-3.483,110.6-.1,152.153-3.214s113.059,2.5,113.059,2.5-196.62,2.328-239.976,5.307c85.143,5.178,211.34,0,211.34,0"
+                  transform="translate(-403.065 -1791.313)"
+                  fill="none"
+                  stroke="#c09d59"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="3"
+                />
+              </svg>
             </div>
-            <Image className="yellowLinee" src={yellowLine} alt="" />
-            <div>
-              <h2>Community Values</h2>
-              <h3>Equity:</h3>
-              TIS offers a supportive environment where students from all
-              backgrounds can reach their potential. We believe every student
-              can succeed with the right opportunities.
-              <br />
-              <br />
-              <h3>Engagement:</h3>
-              We create a student-focused environment with a hands-on curriculum
-              that encourages active learning. Our experienced faculty ensures
-              students get the best guidance.
-              <br />
-              <br />
-              At TIS, we blend tradition with modern trends, making us the top
-              boarding school in Dehradun and a leader in holistic education.
-            </div>
-            <Image className="yellowLinee" src={yellowLine} alt="" />
           </div>
-          {isMobile && (
-            <Image src={missionVision} alt="" className="missionVision" />
-          )}
-        </div>
+        ))}
       </div>
     </>
   );

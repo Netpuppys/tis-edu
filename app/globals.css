@@ -109,6 +109,19 @@ select {
   -moz-appearance: none;
   appearance: none;
 }
+.cardsFacilities {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(185, 1, 36, 0.79) 0%,
+      rgba(185, 1, 36, 0.79) 100%
+    ),
+    url(../public/pictures/Mission.png) lightgray 50% / cover no-repeat;
+}
 
 @media (max-width: 768px) {
   ::-webkit-scrollbar-thumb {
