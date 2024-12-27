@@ -44,47 +44,57 @@ function NewStats() {
   ];
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 w-[95%] md:w-[80%] mx-auto">
-      {stats.map((stat, index) => (
-        <div
-          key={index}
-          className={`relative md:group ${
-            stat.aspect === "2-1"
-              ? "col-span-2 aspect-[2/1]"
-              : "col-span-1 aspect-square"
-          }`}
-        >
-          {/* Image */}
-          <div className="relative overflow-hidden w-full h-full">
-            {stat.img && (
-              <div className=" w-full h-full">
-                <Image
-                  src={stat.img}
-                  alt=""
-                  className="w-full h-full object-cover cursor-pointer transition-transform duration-300 md:group-hover:scale-110"
-                />
-                {/* Animated border */}
-                <div className="absolute hidden md:block top-10 left-10 h-full w-[1px] bg-white transition-all duration-500 ease-in-out md:group-hover:left-0 md:group-hover:top-0"></div>
-                <div className="absolute hidden md:block top-10 left-10 h-[1px] w-full bg-white transition-all duration-500 ease-in-out md:group-hover:left-0 md:group-hover:top-0"></div>
-              </div>
-            )}
-            {stat.icon && (
-              <div
-                className="absolute inset-0 flex flex-col justify-center items-center text-center"
-                style={{
-                  fontFamily: "TT Chocolates",
-                }}
-              >
-                <Image src={stat.icon} alt="" className="w-[40%] h-fit mb-3" />
-                <h3 className="text-[#3D3D3D] text-[clamp(20px,3vw,70px)] font-light">
-                  {stat.number}
-                </h3>
-                <h3 className="text-base md:text-lg text-[#707070]">{stat.title}</h3>
-              </div>
-            )}
+    <div>
+      <div className="mb-8 w-[70%] md:w-[40%] h-[2px] bg-[#b90124] mx-auto"></div>
+      <div className="grid grid-cols-2 md:grid-cols-4 w-[95%] md:w-[80%] mx-auto">
+        {stats.map((stat, index) => (
+          <div
+            key={index}
+            className={`relative group ${
+              stat.aspect === "2-1"
+                ? "col-span-2 aspect-[2/1]"
+                : "col-span-1 aspect-square"
+            }`}
+          >
+            {/* Image */}
+            <div className="relative overflow-hidden w-full h-full">
+              {stat.img && (
+                <div className=" w-full h-full">
+                  <Image
+                    src={stat.img}
+                    alt=""
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
+                  {/* Animated border */}
+                  <div className="absolute hidden md:block top-10 left-10 h-full w-[1px] bg-white transition-all duration-500 ease-in-out group-hover:left-0 group-hover:top-0"></div>
+                  <div className="absolute hidden md:block top-10 left-10 h-[1px] w-full bg-white transition-all duration-500 ease-in-out group-hover:left-0 group-hover:top-0"></div>
+                </div>
+              )}
+              {stat.icon && (
+                <div
+                  className="absolute inset-0 flex flex-col justify-center items-center text-center"
+                  style={{
+                    fontFamily: "TT Chocolates",
+                  }}
+                >
+                  <Image
+                    src={stat.icon}
+                    alt=""
+                    className="w-[40%] h-fit mb-3"
+                  />
+                  <h3 className="text-[#3D3D3D] text-[clamp(20px,3vw,70px)] font-light">
+                    {stat.number}
+                  </h3>
+                  <h3 className="text-base md:text-lg text-[#707070]">
+                    {stat.title}
+                  </h3>
+                </div>
+              )}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
+      <div className="mt-8 w-[70%] md:w-[40%] h-[2px] bg-[#b90124] mx-auto"></div>
     </div>
   );
 }

@@ -23,7 +23,11 @@ function HeroText(props) {
             with
           </span>{" "}
           Tula&apos;s
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.317 14.075">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-[60%] h-fit mx-auto"
+            viewBox="0 0 268.317 14.075"
+          >
             <path
               id="mainTextScribble"
               d="M404.67,1796.978c47.813-3.483,110.6-.1,152.153-3.214s113.059,2.5,113.059,2.5-196.62,2.328-239.976,5.307c85.143,5.178,211.34,0,211.34,0"

@@ -104,18 +104,18 @@ function SecondSection() {
     <div className="second-main-section" id="2">
       <div className="content">
         <Image src={schoolBg} className="background" alt="school" />
-        <div className="cards-div-second">
+        {/* <div className="cards-div-second">
           {cardData.map((item) => (
             <div key={item.id} className="card">
               <Image src={item.bgImage} className="card-bg" alt={item.title} />
               <>
                 <Image src={item.icon} className="icon" alt="icon" />
                 <h2 className="title">{item.title}</h2>
-                {/* <h3 className="sub-title">{item.subTitle}</h3> */}
+                <h3 className="sub-title">{item.subTitle}</h3> 
               </>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );
