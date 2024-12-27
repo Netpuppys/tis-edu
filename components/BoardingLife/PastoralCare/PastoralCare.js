@@ -14,7 +14,7 @@ export default function PastoralCare() {
         subtitle={bannerText}
         headerImg={HeaderPastoralImg}
       />
-      <p className="text-pastoral">
+      <div className="text-pastoral">
         At Tula’s International School, we believe that your well-being is just
         as important as your academics. Our Pastoral Care team is here to
         support you every step of the way, ensuring you feel safe, cared for,
@@ -57,7 +57,7 @@ export default function PastoralCare() {
         <br />
         At TIS, we’re here to make sure you feel truly cared for and
         supported—both inside and outside the classroom.
-      </p>
+      </div>
     </>
   );
 }
