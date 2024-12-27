@@ -141,7 +141,7 @@ function NavMenu({ handleMenuBtn }) {
       title: "Beyond Academics",
       nestedLinks: [
         { title: "Sports", linkTo: "/beyond-academics/sports/" },
-        { title: "Beyond the curriculum", linkTo: "/beyond-academics/music" },
+        { title: "Beyond The Curriculum", linkTo: "/beyond-academics/music" },
         {
           title: "Clubs & Societies",
           linkTo: "/beyond-academics/clubs-and-societies/",
