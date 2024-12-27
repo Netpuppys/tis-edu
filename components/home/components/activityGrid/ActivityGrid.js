@@ -34,7 +34,8 @@ function FourthSection() {
   });
   const title = (
     <>
-      It’s not just a facility. At Tula’s it’s the foundation!
+      It’s not just a <span className="text-[#60bab1]">facility.</span> At
+      Tula’s it’s the <span className="text-[#60bab1]">foundation!</span>
       <br />
       <span ref={ref} className="circled-text">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="4.58 2.97 61.39 54.41">

@@ -59,7 +59,6 @@ body::-webkit-scrollbar {
 body {
   margin: 0px;
   font-family: PF din Display100;
-  text-align: justify;
 }
 body::-webkit-scrollbar-thumb {
   background-color: #fff; /* color of the scroll thumb */
