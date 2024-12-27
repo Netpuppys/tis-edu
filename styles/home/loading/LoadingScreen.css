@@ -102,7 +102,7 @@ svg.active .svg-elem-1 {
   .loading-screen-container .text-main {
     width: 100%;
     box-sizing: border-box;
-    padding-inline: 15%;
+    padding-inline: 10%;
     text-align: left;
     gap: 1vh;
   }
