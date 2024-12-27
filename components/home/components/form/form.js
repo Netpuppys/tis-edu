@@ -300,7 +300,7 @@ function Form() {
                 value={countryCode}
                 disabled={verified}
                 onChange={handleCountryCodeChange}
-                className="w-20 h-10 px-2 focus:outline-none rounded-md"
+                className="w-20 h-10 px-2 text-center focus:outline-none rounded-md"
               >
                 <option value="91">{`+${getCountryCallingCode("IN")}`}</option>
                 {getCountries()
@@ -362,7 +362,7 @@ function Form() {
             value={formData.State}
             onChange={handleStateChange}
             required
-            className="w-full md:w-1/2 classic px-5 py-3 h-10 border-none focus:outline-none rounded-md text-black placeholder:text-[#D9D9D9]"
+            className="w-full md:w-1/2 classic px-5 h-10 border-none focus:outline-none rounded-md text-black placeholder:text-[#D9D9D9]"
           >
             <option value="">Select State</option>
             {state
@@ -378,7 +378,7 @@ function Form() {
             value={formData.City}
             onChange={(e) => handleCityChange(e.target.value)}
             required
-            className="w-full md:w-1/2 classic px-5 py-3 h-10 border-none focus:outline-none rounded-md text-black placeholder:text-[#D9D9D9]"
+            className="w-full md:w-1/2 classic px-5  h-10 border-none focus:outline-none rounded-md text-black placeholder:text-[#D9D9D9]"
             disabled={!formData.State}
           >
             <option value="">Select City</option>
