@@ -118,7 +118,7 @@ const Navbar = () => {
       title: "Beyond Academics",
       nestedLinks: [
         { title: "Sports", linkTo: "/beyond-academics/sports/" },
-        { title: "Music & Dance", linkTo: "/beyond-academics/music" },
+        { title: "Beyond the curriculum", linkTo: "/beyond-academics/music" },
         {
           title: "Clubs & Societies",
           linkTo: "/beyond-academics/clubs-and-societies/",

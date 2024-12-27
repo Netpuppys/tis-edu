@@ -14,7 +14,7 @@ function Music() {
   return (
     <>
       <Header
-        title={"Music And Dance"}
+        title={"Beyond the curriculum"}
         subtitle={
           "Skills for life aren't just taught in classrooms—they're discovered on stages, fields, and everywhere in between."
         }
