@@ -16,17 +16,17 @@ function Music() {
       <Header
         title={"Music And Dance"}
         subtitle={
-          "Tula's International School serves as the starting point for intellectual explorations that simultaneously extend into the broader world."
+          "Skills for life aren't just taught in classrooms—they're discovered on stages, fields, and everywhere in between."
         }
         headerImg={HeaderMusicImg}
       />
       <p className="our-history-desc-p">
-        At Tula&apos;s International School, we recognize the profound impact of
-        music and dance on a student&apos;s holistic development. <br />
-        <br />
-        Our comprehensive programs in music and dance are designed to nurture
-        creativity, self-expression, and cultural appreciation
-        among our students.
+        At Tula’s International School, we believe in making learning an
+        exciting journey full of discovery and fun. Our students dive into
+        experiences that ignite their imagination, spark their curiosity, and
+        open doors to new worlds. It's where creativity flows freely, and every
+        moment is an opportunity to explore, grow, and have a blast along the
+        way.
       </p>
       <div className="our-history-main">
         <Image src={music} alt="" />
