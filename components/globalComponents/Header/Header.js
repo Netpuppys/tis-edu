@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Header({ title, subtitle, headerImg }) {
   return (
-    <div className="header">
+    <div className="banner">
       <div
         className="heading-outer bg-black relative"
         // style={{

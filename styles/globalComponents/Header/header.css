@@ -1,6 +1,6 @@
 /* header component */
 
-.header {
+.banner {
   min-height: 100vh;
 }
 .heading-outer {
@@ -51,8 +51,8 @@
   }
 }
 @media (max-width: 768px) {
-  .header {
-    height: 45vh;
+  .banner {
+    min-height: 45vh;
   }
   .heading-outer {
     height: 33vh;
