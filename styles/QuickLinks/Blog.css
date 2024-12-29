@@ -1,4 +1,4 @@
-.blog-container {
+/* .blog-container {
   margin: 5rem auto;
   width: 65%;
   position: relative;
@@ -273,8 +273,8 @@
     border: 1px solid #ddd;
     padding: 8px;
   }
-}
-/* .blog-container {
+} */
+.blog-container {
   margin: 5rem auto;
   width: 65%;
 }
@@ -482,4 +482,4 @@
     border: 1px solid #ddd;
     padding: 8px;
   }
-} */
+}
