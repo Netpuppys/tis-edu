@@ -35,6 +35,10 @@
   src: url(../public/fonts/PFDINSerif-Bold.otf);
 }
 @font-face {
+  font-family: "PFDinTextPro";
+  src: url(../public/fonts/PFDinTextPro-Bold.ttf);
+}
+@font-face {
   font-family: "URW Din Arabic";
   src: url(../public/fonts/FontsFree-Net-URW-DIN-Arabic-1.ttf);
 }

@@ -16,8 +16,8 @@ function HeroText(props) {
           <span
             style={{
               fontStyle: "normal",
-              fontWeight: "400",
-              fontFamily: "PF din Display",
+              fontWeight: "900",
+              fontFamily: "PFDinTextPro",
             }}
           >
             with

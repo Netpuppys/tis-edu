@@ -44,11 +44,7 @@
   color: #b90124;
 }
 .navbar-main-div-global {
-  background: linear-gradient(
-    180deg,
-    #c51d3c 39.41%,
-    rgba(255, 255, 255, 0.23) 131.53%
-  );
+  background: #b90124;
   width: 100%;
   height: 4.5rem;
   box-sizing: border-box;

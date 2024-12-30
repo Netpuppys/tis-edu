@@ -19,17 +19,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2vh;
 }
 
 .loading-screen-container .text-main .top-text {
   margin: 0;
-  font-family: PF din Display;
+  font-family: PFDinTextPro;
   color: #fff;
   font-size: 7vw;
   font-style: normal;
   text-align: center;
-  font-weight: 400;
+  font-weight: 900;
   line-height: 7vw;
   letter-spacing: normal;
 }
@@ -56,14 +55,12 @@
   text-align: center;
   font-style: italic;
   font-weight: 900;
-  padding-top: 1vh;
   line-height: 7vw;
   text-transform: capitalize;
 }
 
 .loading-screen-container .text-main .top-text {
-  opacity: 0;
-  animation: topText 1.5s ease 1500ms;
+  animation: topText 3s ease;
 }
 
 .loading-screen-container .text-main .bottom-text {
@@ -82,11 +79,14 @@ svg.active .svg-elem-1 {
 }
 
 @keyframes topText {
-  from {
+  0% {
+    opacity: 0;
+  }
+  50% {
     opacity: 0;
     transform: translateY(4rem);
   }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0);
   }

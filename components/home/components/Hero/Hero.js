@@ -71,7 +71,7 @@ function Hero(props) {
     return axis === "x" ? direction * distance : direction * distance;
   };
 
-  const movementFactor = 15;
+  const movementFactor = 35;
 
   const movementX =
     !isMobile && calculateMovement("x", 1, position.x / movementFactor);
@@ -107,7 +107,7 @@ function Hero(props) {
         <div
           style={{
             transform: `translate(${movementX}rem, ${movementY}rem)`,
-            transition: "transform 0.2s",
+            transition: "transform 0.2s ease",
           }}
           className="bubble shooting"
         >

@@ -15,17 +15,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2vh;
 }
 
 .base-main-div .text-div .top-text {
   margin: 0;
-  font-family: PF din Display;
+  font-family: PFDinTextPro;
   color: #fff;
   font-size: 7vw;
   text-align: center;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 900;
   line-height: 7vw;
   letter-spacing: normal;
 }
@@ -52,7 +51,6 @@
   font-style: italic;
   font-weight: 900;
   text-align: center;
-  padding-top: 1vh;
   line-height: 7vw;
   text-transform: capitalize;
 }

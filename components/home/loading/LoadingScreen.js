@@ -1,12 +1,14 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import "../../../styles/home/loading/LoadingScreen.css";
+
 function LoadingScreen() {
   const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
     setIsActive(true);
   }, []);
+
   return (
     <div className="loading-screen-container">
       <div className="text-main">
@@ -17,7 +19,8 @@ function LoadingScreen() {
           <span
             style={{
               fontStyle: "normal",
-              fontFamily: "TT Chocolates",
+              fontFamily: "PFDinTextPro",
+              fontWeight: "900",
             }}
           >
             with
@@ -27,9 +30,9 @@ function LoadingScreen() {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 268.317 14.075"
-          className={`mainText-scribble w-[60%] md:w-[30%] h-fit mx-auto ${
-            isActive ? "active" : ""
-          }`}
+          className={`mainText-scribble w-[60%] md:w-[30%] h-fit mx-auto
+            ${isActive ? "active" : ""}
+          `}
         >
           <path
             id="mainTextScribble"
