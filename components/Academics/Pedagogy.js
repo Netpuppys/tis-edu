@@ -102,14 +102,14 @@ const Table = () => {
     <table
       style={{
         borderCollapse: "collapse",
-        width: "90%",
+        width: isMobile ? "" : "90%",
         marginLeft: "auto",
         marginRight: "auto",
       }}
     >
       <thead>
         <tr>
-          <th style={{ width: "30%" }}>ASPECTS</th>
+          <th style={{ width: isMobile ? "50%" : "30%" }}>ASPECTS</th>
           <th>DESCRIPTION</th>
         </tr>
       </thead>
@@ -125,7 +125,6 @@ const Table = () => {
               style={{
                 textAlign: "left",
                 display: "flex",
-
                 justifyContent: "space-between",
                 padding: isMobile ? "8px" : "20px",
               }}

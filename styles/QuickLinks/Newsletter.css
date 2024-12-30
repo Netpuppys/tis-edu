@@ -44,7 +44,7 @@
   font-family: "Mirador100";
   font-size: 16px;
   font-weight: 400;
-  width: 80%;
+  width: 100%;
   height: 40px;
   text-transform: uppercase;
   line-height: 26px;
@@ -75,12 +75,14 @@
   color: #000;
   font-family: Mirador;
   font-size: 60px;
+  width: fit-content;
+  margin: 2rem auto;
+  border-bottom: 2px solid #b90124;
   font-style: italic;
   font-weight: 900;
   line-height: normal;
   font-weight: 700;
   line-height: 64px;
-  margin-bottom: 4rem;
   position: relative;
 }
 .newsletter-main span {
@@ -92,7 +94,7 @@
   position: relative;
 }
 
-.newsletter-main h2::after {
+/* .newsletter-main h2::after {
   content: "";
   position: absolute;
   background-color: #b90124;
@@ -103,7 +105,7 @@
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   bottom: 0;
-}
+} */
 /* .letter-line{
     content: "";
     background-color: chocolate;
@@ -147,11 +149,9 @@
     font-size: 25px;
     margin-top: -10%;
   }
-  .newsletter-main h2::after {
-    width: 15rem;
-  }
   .newsletter-main h2 {
     font-size: 25px;
+    margin: 1rem auto;
   }
   .headerImgNewsletter {
     height: 50vh;

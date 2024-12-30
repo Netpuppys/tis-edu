@@ -79,7 +79,7 @@ export default function Curriculum() {
             />
           </p>
 
-          <p className="curriculam-text">
+          <div className="curriculam-text">
             <ul className="ml-5 list-disc">
               <li>
                 Digital Advantage: Every student receives unique digital IDs
@@ -96,7 +96,7 @@ export default function Curriculum() {
                 professionals.
               </li>
             </ul>
-          </p>
+          </div>
         </section>
       </div>
     </>

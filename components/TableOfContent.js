@@ -7,9 +7,7 @@ function TableOfContent({ slug }) {
   const [blog, setBlog] = useState(null);
   useEffect(() => {
     const fetchPost = async () => {
-      const res = await axios.get(
-        `https://blog.repsoft.in/api/v1/post/${slug}`
-      );
+      const res = await axios.get(`https://blog.tis.edu.in/api/v1/post/${slug}`);
       if (res?.data?.data) {
         setBlog(res.data.data);
         generateToc(res.data.data.content); // Generate TOC from content

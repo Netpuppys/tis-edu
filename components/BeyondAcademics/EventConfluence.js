@@ -60,8 +60,8 @@ export default function EventConfluence() {
           <Image className="yellowLine-confluence" alt="" src={yellowLine} />
         </h1>
         <p1 className="confluence-text">
-          <br />- Change of participants is not permitted under any
-          circumstances after the 4th May 2024.
+          - Change of participants is not permitted under any circumstances
+          after the 4th May 2024.
           <br />- Each participating school will be charged a nominal
           registration fee of Rs. 500 per participant.
           <br />- Lunch will be provided to participants, escort students and

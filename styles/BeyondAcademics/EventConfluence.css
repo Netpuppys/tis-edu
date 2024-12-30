@@ -6,6 +6,7 @@
   font-family: Mirador;
   font-size: 45px;
   font-weight: 500;
+  padding: 2rem 0rem;
   font-style: italic;
   line-height: normal;
   color: #000;
@@ -38,7 +39,7 @@
 .confluence-images .images-pa,
 .confluence-images .text-confluences {
   padding: 5rem;
-
+  width: 50%;
   align-self: center;
 }
 .confluence-images .text-confluences h2 {
@@ -88,13 +89,14 @@
   }
   .confluence-images .images-pa img {
     display: block;
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
   .confluence-images .images-pa,
   .confluence-images .text-confluences {
     padding: 1.5rem;
+    width: 100%;
   }
   .confluence-images .text-confluences h2 {
     font-size: 20px;

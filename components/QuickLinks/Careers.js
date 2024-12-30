@@ -75,9 +75,6 @@ export default function Careers() {
             Faculty - General Inquiries
           </a>
           <br />
-          <br />
-          <br />
-          <br />
         </div>
       </div>
     </>

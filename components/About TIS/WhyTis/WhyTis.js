@@ -101,7 +101,7 @@ export default function WhyTis() {
         {!isMobile && <Image className="tisImg" src={tisImg} alt="" />}
         {isMobile && <Image className="tisImg" src={tisImgMobile} alt="" />}
         {!isMobile && (
-          <div className="container">
+          <div className="container-why-tis">
             <div className="left-div-content">
               <Image className="image" src={WorldClass} alt="" />
               <div className="headingWHY">
@@ -182,7 +182,6 @@ export default function WhyTis() {
               <div className="headingWHY">
                 <div className="line"></div>
                 <h2>
-                  {" "}
                   World-Class Teaching Tailored to make Students Future-Ready
                 </h2>
               </div>
@@ -269,7 +268,7 @@ export default function WhyTis() {
           </div>
         )}
         {isMobile && (
-          <div className="container">
+          <div className="container-why-tis">
             <div className="line-center"></div>
             <div className="right-div-content">
               <div className="headingWHY">

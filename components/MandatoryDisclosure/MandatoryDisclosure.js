@@ -49,7 +49,7 @@ export default function MandatoryDisclosure() {
         }
         headerImg={HeaderMandatoryImg}
       />
-      <div className="container">
+      <div className="container-mandatory">
         <div className="grid">
           {documents.map((document) => (
             <div className="card-mandatory " key={document.name}>

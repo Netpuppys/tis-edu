@@ -28,6 +28,8 @@ function Billiards() {
             camaraderie and sportsmanship. Our dedicated instructors are
             available to provide guidance and coaching, helping students to
             improve their techniques and understanding of the games.
+            <br />
+            <br />
           </p1>
         </>
       )}
@@ -55,6 +57,8 @@ function Billiards() {
                 camaraderie and sportsmanship. Our dedicated instructors are
                 available to provide guidance and coaching, helping students to
                 improve their techniques and understanding of the games.
+                <br />
+                <br />
               </p1>
             </div>
           </div>

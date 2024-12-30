@@ -34,7 +34,7 @@ export default function OurManagement() {
                   padding: "2rem 0rem 2rem 0.9rem",
                 }}
               >
-                <ul>
+                <ul className="ml-5 list-disc">
                   <li>Dr APJ Kalam Award - 2016</li>
                   <li>
                     Sardar Vallabh Bhai Patel Rashtriya Ekta Puruskar - 2015
@@ -51,7 +51,7 @@ export default function OurManagement() {
                 <h4>
                   Mr. Raunak Jain
                   <br />
-                  (Managing Director)
+                  (Vice Chairman)
                 </h4>
               </div>
               <p>
@@ -82,7 +82,7 @@ export default function OurManagement() {
                   padding: "2rem 0rem 2rem 0.9rem",
                 }}
               >
-                <ul>
+                <ul className="ml-5 list-disc">
                   <li>Alumnus - Symbiosis Institute of Design, Pune</li>
                   <li>
                     Awarded as an Inspiring Women Eduleader for the year 2014 by
@@ -174,11 +174,10 @@ export default function OurManagement() {
                 className="red-div"
                 style={{
                   marginBlockEnd: "10em",
-
-                  padding: "2rem 0.5rem 2rem 0rem",
+                  padding: "2rem 0.5rem 2rem",
                 }}
               >
-                <ul>
+                <ul className="ml-5 list-disc">
                   <li>Alumnus - M.Sc. International Management from RHUL</li>
                   <li>(Royal Holloway University of London)</li>
                   <li>Vice president (Welfare) National Taekwondo Committe</li>
@@ -214,11 +213,10 @@ export default function OurManagement() {
                 className="red-div"
                 style={{
                   marginBlockEnd: "10em",
-
                   padding: "2rem 0.5rem 2rem ",
                 }}
               >
-                <ul>
+                <ul className="ml-5 list-disc">
                   <li>B.Tech CS (VIT, Vellore)</li>
                   <li>M.S. (University of Texas at Dallas)</li>
                   <li>Ph.D (Banasthali University)</li>
@@ -251,7 +249,7 @@ export default function OurManagement() {
               padding: "1rem 0rem 1rem 0rem",
             }}
           >
-            <ul style={{ width: "85%" }}>
+            <ul style={{ width: "85%" }} className="ml-5 list-disc">
               <li>Dr APJ Kalam Award - 2016</li>
               <li>Sardar Vallabh Bhai Patel Rashtriya Ekta Puruskar - 2015</li>
               <li>
@@ -317,7 +315,7 @@ export default function OurManagement() {
               padding: "1rem 0rem 1rem 0rem",
             }}
           >
-            <ul style={{ width: "85%" }}>
+            <ul style={{ width: "85%" }} className="ml-5 list-disc">
               <li>Alumnus - M.Sc. International Management from RHUL</li>
               <li>(Royal Holloway University of London)</li>
               <li>Vice president (Welfare) National Taekwondo Committe</li>
@@ -365,7 +363,7 @@ export default function OurManagement() {
               padding: "1rem 0rem 1rem 0rem",
             }}
           >
-            <ul style={{ width: "85%" }}>
+            <ul style={{ width: "85%" }} className="ml-5 list-disc">
               <li>Alumnus - Symbiosis Institute of Design, Pune</li>
               <li>
                 Awarded as an Inspiring Women Eduleader for the year 2014 by
@@ -415,7 +413,7 @@ export default function OurManagement() {
               padding: "1rem 0rem 1rem 0rem",
             }}
           >
-            <ul style={{ width: "85%" }}>
+            <ul style={{ width: "85%" }} className="ml-5 list-disc">
               <li>B.Tech CS (VIT, Vellore)</li>
               <li>M.S. (University of Texas at Dallas)</li>
               <li>Ph.D (Banasthali University)</li>

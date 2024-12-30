@@ -98,6 +98,7 @@
   .red-div ul {
     font-size: 15px;
     line-height: 20px;
+    margin: auto;
   }
   .headingName h4 {
     font-size: 20px;
@@ -111,6 +112,5 @@
     font-weight: 200;
     letter-spacing: 0.03em;
     line-height: 20px;
-    margin-block-end: 5em;
   }
 }

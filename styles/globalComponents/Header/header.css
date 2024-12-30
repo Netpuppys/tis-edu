@@ -29,6 +29,7 @@
   justify-content: center;
   align-items: center;
   min-height: 25vh;
+  padding: 1rem 0rem;
   background-color: #b90124;
 }
 .top-heading {

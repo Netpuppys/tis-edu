@@ -97,8 +97,10 @@ export default function Mission() {
         {sections.map((section, index) => (
           <div
             key={index}
-            className={`flex flex-col gap-[8vw] ${
-              index % 2 === 0 ? "flex-row" : "md:flex-row-reverse"
+            className={`flex gap-[8vw] ${
+              index % 2 === 0
+                ? "flex-col md:flex-row"
+                : "flex-col md:flex-row-reverse"
             }`}
           >
             <div className="relative w-full group aspect-[1.5/0.8] overflow-hidden">

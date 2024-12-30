@@ -26,7 +26,7 @@ export default function InternationaltieUps() {
         {isMobile && <Image className="tieUps" src={tieUps1Mobile} alt="" />}
         {!isMobile && <Image className="tieUps" src={tieUps1} alt="" />}
         <div className="div-text-international">
-          <p className="text-international">
+          <div className="text-international">
             Academic collaborations open doors to numerous benefits for
             students. A tie-up with international universities or schools brings
             incredible opportunities for growth.
@@ -51,7 +51,7 @@ export default function InternationaltieUps() {
             they bring valuable insights, boosting the school’s global
             reputation. Such partnerships also make future admissions smoother
             by fostering connections with international institutions.
-          </p>
+          </div>
         </div>
         {isMobile && <Image className="tieUps" src={tieUps2Mobile} alt="" />}
         {!isMobile && <Image className="tieUps" src={tieUps2} alt="" />}

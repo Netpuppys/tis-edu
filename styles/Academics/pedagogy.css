@@ -3,6 +3,7 @@
   text-align: center;
   font-family: Mirador;
   font-size: 60px;
+  padding: 2rem 0rem;
   font-style: italic;
   font-weight: 500;
   line-height: normal;
@@ -16,7 +17,6 @@
   margin-right: auto;
   width: 20%;
   height: -10%;
-  margin-bottom: 3%;
 }
 
 .text-div {
