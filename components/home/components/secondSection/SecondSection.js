@@ -14,6 +14,7 @@ import socailBg from "../../../../public/backgrounds/socailBg.png";
 import "../../../../styles/home/components/secondSection/SecondSection.css";
 // ... (unchanged imports)
 import Image from "next/image";
+import Form from "../form/form";
 
 function SecondSection() {
   const controls = useAnimation();
@@ -101,10 +102,13 @@ function SecondSection() {
   ];
 
   return (
-    <div className="second-main-section" id="2">
-      <div className="content">
-        <Image src={schoolBg} className="background" alt="school" />
-        {/* <div className="cards-div-second">
+    <div className="relative">
+      <div className="w-full bg-[#b90124] md:h-[2rem] absolute z-[50] rounded-b-[60px]"></div>
+      <Form />
+      <div className="second-main-section" id="2">
+        <div className="content">
+          <div className="background"></div>
+          {/* <div className="cards-div-second">
           {cardData.map((item) => (
             <div key={item.id} className="card">
               <Image src={item.bgImage} className="card-bg" alt={item.title} />
@@ -116,6 +120,7 @@ function SecondSection() {
             </div>
           ))}
         </div> */}
+        </div>
       </div>
     </div>
   );

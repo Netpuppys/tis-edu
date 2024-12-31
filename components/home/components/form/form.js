@@ -6,6 +6,10 @@ import {
   getCountryCallingCode,
 } from "react-phone-number-input/input";
 import OTPInput from "react-otp-input";
+import { IoCall, IoLocation, IoMail } from "react-icons/io5";
+import Image from "next/image";
+import schoolLogo from "../../../../public/logos/schoolLogo.png";
+import { useMobile } from "@/components/globalComponents/IsMobileContext";
 // import en from "react-phone-number-input/locale/en.json";
 
 function Form() {
@@ -27,6 +31,7 @@ function Form() {
   const [verified, setVerified] = useState(false);
   const [countryCode, setCountryCode] = useState(getCountryCallingCode("IN")); // Default to India
   const [phoneNumber, setPhoneNumber] = useState("");
+  const { isMobile } = useMobile();
 
   const handleCountryCodeChange = (e) => {
     const selectedCode = e.target.value;
@@ -199,7 +204,7 @@ function Form() {
       });
   };
   return (
-    <div className="h-full py-8 md:py-20 w-full bg-[#b90124]">
+    <div className="h-fit w-full bg-[#b90124] md:bg-transparent relative md:absolute md:-translate-y-1/2 z-50">
       {isOtpSent && (
         <div className="fixed w-screen h-screen top-0 left-0 z-50 flex items-center justify-center flex-col">
           <div
@@ -265,83 +270,128 @@ function Form() {
           </div>
         </div>
       )}
-      <form
+      <div
         style={{
+          boxShadow: "0px -7px 69.127px 0px rgba(0, 0, 0, 0.25)",
           fontFamily: "TT Chocolates",
         }}
-        onSubmit={handleSubmit}
-        className="h-full w-[90%] md:w-[75%] mx-auto px-4 md:px-10 py-6 flex flex-col justify-center items-center border-y-2 border-x-4 border-[#FFF] border-opacity-60 rounded-xl "
+        className="flex pointer-events-auto bg-[#90CCD0] w-[95%] max-w-[1200px] rounded-3xl overflow-hidden mx-auto z-30"
       >
-        <h3 className="font-[TTChocolatesBold] w-fit text-white text-[clamp(16px,1.3vw,55px)] text-center border-b-2 border-white">
-          Admissions Open 2025
-        </h3>
-        <div className="flex flex-col md:flex-row w-full items-center justify-center gap-3 pt-5">
-          <input
-            type="text"
-            required
-            value={formData.FirstName}
-            onChange={(e) => handleChange("FirstName", e.target.value)}
-            placeholder="Enter your Full Name...."
-            className="py-2 px-4 focus:outline-none w-full rounded-md"
-          />
-          <input
-            type="Email"
-            placeholder="Enter Email Id*"
-            value={formData.Email}
-            onChange={(e) => handleChange("Email", e.target.value)}
-            required
-            className="py-2 px-4 focus:outline-none w-full rounded-md"
-          />
-        </div>
-        <div className="flex flex-col md:flex-row w-full items-center justify-center gap-3 mt-3">
-          <div className="w-full flex flex-col md:flex-row gap-3">
-            <div className="flex gap-3 w-full">
-              <select
-                value={countryCode}
-                disabled={verified}
-                onChange={handleCountryCodeChange}
-                className="w-20 h-10 px-2 text-center focus:outline-none rounded-md"
-              >
-                <option value="91">{`+${getCountryCallingCode("IN")}`}</option>
-                {getCountries()
-                  .filter((country) => country !== "IN") // Exclude India from the mapped options
-                  .map((country) => (
-                    <option
-                      key={country}
-                      value={getCountryCallingCode(country)}
-                    >
-                      {`(+${getCountryCallingCode(country)})`}
-                    </option>
-                  ))}
-              </select>
-              <input
-                type="text"
-                required
-                disabled={verified}
-                value={phoneNumber}
-                onChange={handlePhoneNumberChange}
-                placeholder="Enter your Mobile No...."
-                className={`py-2 px-4 focus:outline-none w-full rounded-md ${
-                  !verified ? "cursor-pointer" : "opacity-60 cursor-not-allowed"
-                }`}
-              />
-            </div>
-            <button
-              type="button"
-              disabled={verified || !/^\d{6,15}$/.test(formData.MobileNumber)}
-              onClick={sendOtp}
-              className="w-full md:w-[40%] bg-black rounded-md flex items-center justify-center md:px-4 h-10 font-bold text-[#FFFFFF] cursor-pointer disabled:cursor-not-allowed"
+        {!isMobile && (
+          <div className="bg-white flex flex-col rounded-r-3xl px-7 py-7 pb-4 w-[50%] max-w-[410px]">
+            <h3 className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-[TTChocolatesBold] text-black">
+              Contact Us.
+            </h3>
+            <p className="text-sm text-black">
+              Subscribe to be notified about our latest endeavours, and your IT
+              horizons.
+            </p>
+            <a
+              href="tel:+91-9837983791"
+              className="flex text-sm text-black items-center justify-start mt-4 gap-4"
             >
-              {verified ? "Verified" : "Send OTP"}
-            </button>
+              <IoCall color="#007A83" className="min-w-[20px] h-[20px]" />
+              +91-98379 83791
+            </a>
+            <a
+              href="mailTo:info@tis.edu.in"
+              className="flex text-sm text-black items-center justify-start mt-4 gap-4"
+            >
+              <IoMail color="#007A83" className="min-w-[20px] h-[20px]" />
+              info@tis.edu.in
+            </a>
+            <a
+              href="https://maps.app.goo.gl/maBF8syXueQkw31E6"
+              target="_blank"
+              className="flex text-sm text-black items-center justify-start mt-4 gap-4"
+            >
+              <IoLocation color="#007A83" className="min-w-[20px] h-[20px]" />
+              Tula's International School Vill.Dhoolkot, near Tula's Institute
+              Selaqui near Mandir Dehradun, Uttarakhand, 248197
+            </a>
+            <div className="w-full flex justify-end">
+              <Image src={schoolLogo} alt="" className="mt-4 max-w-[114px]" />
+            </div>
           </div>
-          <div className="w-full">
+        )}
+        <form
+          style={{
+            fontFamily: "TT Chocolates",
+          }}
+          onSubmit={handleSubmit}
+          className="w-full px-4 md:px-10 py-6 flex flex-col justify-center items-center"
+        >
+          <h3 className="font-[TTChocolatesBold] w-fit text-[#1C1C1C] text-[clamp(20px,1.5vw,55px)] text-center border-b-2 border-[#1C1C1C]">
+            Enquire Now!
+          </h3>
+          <div className="flex flex-col md:flex-row w-full items-center justify-center gap-3 pt-5">
+            <input
+              type="text"
+              required
+              value={formData.FirstName}
+              onChange={(e) => handleChange("FirstName", e.target.value)}
+              placeholder="Enter your Full Name...."
+              className="py-2 px-4 focus:outline-none w-full rounded-md bg-[#BEE2E4] text-[#2D2D2D]"
+            />
+            <input
+              type="Email"
+              placeholder="Enter Email Id*"
+              value={formData.Email}
+              onChange={(e) => handleChange("Email", e.target.value)}
+              required
+              className="py-2 px-4 focus:outline-none w-full rounded-md bg-[#BEE2E4] text-[#2D2D2D]"
+            />
+          </div>
+          <div className="flex flex-col md:flex-row w-full items-center justify-center gap-3 mt-3">
+            <div className="w-full flex flex-col md:flex-row gap-3">
+              <div className="flex gap-3 w-full">
+                <select
+                  value={countryCode}
+                  disabled={verified}
+                  onChange={handleCountryCodeChange}
+                  className="w-20 h-10 px-2 text-center focus:outline-none rounded-md bg-[#BEE2E4] text-[#2D2D2D]"
+                >
+                  <option value="91">{`+${getCountryCallingCode(
+                    "IN"
+                  )}`}</option>
+                  {getCountries()
+                    .filter((country) => country !== "IN") // Exclude India from the mapped options
+                    .map((country) => (
+                      <option
+                        key={country}
+                        value={getCountryCallingCode(country)}
+                      >
+                        {`(+${getCountryCallingCode(country)})`}
+                      </option>
+                    ))}
+                </select>
+                <input
+                  type="text"
+                  required
+                  disabled={verified}
+                  value={phoneNumber}
+                  onChange={handlePhoneNumberChange}
+                  placeholder="Enter your Mobile No...."
+                  className={`py-2 px-4 focus:outline-none w-full rounded-md bg-[#BEE2E4] text-[#2D2D2D] disabled:opacity-100 disabled:cursor-not-allowed`}
+                />
+              </div>
+              <button
+                type="button"
+                disabled={verified || !/^\d{6,15}$/.test(formData.MobileNumber)}
+                onClick={sendOtp}
+                className="min-w-[140px] w-full md:w-[40%] bg-black rounded-md flex items-center justify-center md:px-4 h-10 font-bold text-[#FFFFFF] cursor-pointer disabled:opacity-100 disabled:cursor-not-allowed"
+              >
+                {verified ? "Verified" : "Send OTP"}
+              </button>
+            </div>
+          </div>
+          <div className="flex w-full flex-col md:flex-row gap-3 mt-3">
             <select
               required
               placeholder=""
               value={formData.Course}
               onChange={(e) => handleCourseChange(e.target.value)}
-              className="w-full h-10 px-4 focus:outline-none rounded-md"
+              className="w-full h-10 px-4 focus:outline-none rounded-md bg-[#BEE2E4] text-[#2D2D2D]"
             >
               <option value="">Select Class</option>
               <option value="1">Class IV</option>
@@ -355,70 +405,70 @@ function Form() {
               <option value="9">Class XII</option>
             </select>
           </div>
-        </div>
 
-        <div className="flex w-full flex-col md:flex-row gap-3 mt-3">
-          <select
-            value={formData.State}
-            onChange={handleStateChange}
-            required
-            className="w-full md:w-1/2 classic px-5 h-10 border-none focus:outline-none rounded-md text-black placeholder:text-[#D9D9D9]"
-          >
-            <option value="">Select State</option>
-            {state
-              .slice()
-              .sort((a, b) => a.name.localeCompare(b.name)) // sort by name alphabetically
-              .map((state) => (
-                <option key={state.id} value={state.id}>
-                  {state.name}
-                </option>
-              ))}
-          </select>
-          <select
-            value={formData.City}
-            onChange={(e) => handleCityChange(e.target.value)}
-            required
-            className="w-full md:w-1/2 classic px-5  h-10 border-none focus:outline-none rounded-md text-black placeholder:text-[#D9D9D9]"
-            disabled={!formData.State}
-          >
-            <option value="">Select City</option>
-            {formData.State &&
-              cities[formData.State]
+          <div className="flex w-full flex-col md:flex-row gap-3 mt-3">
+            <select
+              value={formData.State}
+              onChange={handleStateChange}
+              required
+              className="w-full md:w-1/2 classic px-5 h-10 border-none focus:outline-none rounded-md bg-[#BEE2E4] text-[#2D2D2D]"
+            >
+              <option value="">Select State</option>
+              {state
                 .slice()
-                .sort((a, b) => a.name.localeCompare(b.name))
-                .map((city, index) => (
-                  <option key={index} value={city.id}>
-                    {city.name}
+                .sort((a, b) => a.name.localeCompare(b.name)) // sort by name alphabetically
+                .map((state) => (
+                  <option key={state.id} value={state.id}>
+                    {state.name}
                   </option>
                 ))}
-          </select>
-        </div>
-        <div className="flex items-center justify-center gap-4 mt-6 md:mt-3">
-          <input
-            id="consent1"
-            type="checkbox"
-            name="consent1"
-            className=""
-            value="no"
-            required
-          />
-          <label
-            for="consent1"
-            className="flex text-white items-center cursor-pointer text-sm md:text-base"
+            </select>
+            <select
+              value={formData.City}
+              onChange={(e) => handleCityChange(e.target.value)}
+              required
+              className="w-full md:w-1/2 classic px-5  h-10 border-none focus:outline-none rounded-md bg-[#BEE2E4] text-[#2D2D2D]"
+              disabled={!formData.State}
+            >
+              <option value="">Select City</option>
+              {formData.State &&
+                cities[formData.State]
+                  .slice()
+                  .sort((a, b) => a.name.localeCompare(b.name))
+                  .map((city, index) => (
+                    <option key={index} value={city.id}>
+                      {city.name}
+                    </option>
+                  ))}
+            </select>
+          </div>
+          <div className="flex items-center justify-center gap-4 mt-6 md:mt-3">
+            <input
+              id="consent1"
+              type="checkbox"
+              name="consent1"
+              className=""
+              value="no"
+              required
+            />
+            <label
+              for="consent1"
+              className="flex text-[#2D2D2D] items-center cursor-pointer text-sm md:text-base"
+            >
+              I Agree to receive information regarding my submitted application
+              by signing up on Tula's International School, Dehradun
+            </label>
+          </div>
+          <button
+            type="submit"
+            disabled={!verified}
+            title={verified ? "" : "Please Verify Mobile Number"}
+            className={`w-full min-w-[250px] md:w-[30%] mx-auto bg-[#B90124] text-xl text-[#FFFFFF] cursor-pointer py-2 rounded-md disabled:opacity-100 disabled:cursor-not-allowed font-semibold mt-6 md:mt-3 shadow-[0px_3.409px_11.847px_0px_rgba(0,_0,_0,_0.25)]`}
           >
-            I Agree to receive information regarding my submitted application by
-            signing up on Tula's International School, Dehradun
-          </label>
-        </div>
-        <button
-          type="submit"
-          disabled={!verified}
-          title={verified ? "" : "Please Verify Mobile Number"}
-          className={`w-full md:w-[30%] mx-auto bg-[#60BDBB] text-xl text-[#FFFFFF] cursor-pointer py-2 rounded-md disabled:cursor-not-allowed font-semibold mt-6 md:mt-3 shadow-[0px_3.409px_11.847px_0px_rgba(0,_0,_0,_0.25)]`}
-        >
-          Enquire Now
-        </button>
-      </form>
+            Enquire Now
+          </button>
+        </form>
+      </div>
     </div>
   );
 }

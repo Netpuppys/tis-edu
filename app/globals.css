@@ -54,20 +54,19 @@
   font-family: "Mirador100";
   src: url(../public/fonts/Mirador-Medium.ttf);
 }
-body::-webkit-scrollbar {
-  width: 8px;
+::-webkit-scrollbar {
+  width: 4px;
+  position: absolute;
   --tw-bg-opacity: 1;
-  background-color: #b90124;
   /* width of the entire scrollbar */
 }
 body {
   margin: 0px;
   font-family: PF din Display100;
 }
-body::-webkit-scrollbar-thumb {
-  background-color: #fff; /* color of the scroll thumb */
-  border-radius: 10px; /* roundness of the scroll thumb */
-  /* creates padding around scroll thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #2D2D2D;
+  border-radius: 20px;
 }
 .miltonian-regular {
   font-family: "Miltonian", serif;

@@ -61,9 +61,9 @@ const HomeLayout = () => {
         <>
           <Hero bubbleRef={bubbleRef} />
           <div ref={bubbleRef}>
-            <Form />
+            <div className="w-full bg-[#b90124] md:h-60"></div>
+            <SecondSection />
             <div className="home-layout-allSection flex flex-col gap-6 md:gap-10">
-              <SecondSection />
               <ThirdSection />
               <ActivityGrid />
               <Video />
