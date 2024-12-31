@@ -20,6 +20,7 @@ const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(null);
   const [isNavMenuVisible, setIsNavMenuVisible] = useState(false);
   const isMobile = useMobile();
+  const [scrolled, setScrolled] = useState(false);
   const handleMenuHover = (index) => {
     setActiveMenu(index);
   };
@@ -169,6 +170,28 @@ const Navbar = () => {
       ],
     },
   ];
+  useEffect(() => {
+    if (!scrolled) {
+      const handleScroll = () => {
+        const threshold = 1;
+        // 60vh in pixels
+        const sixtyVH = window.innerHeight * threshold;
+
+        if (window.scrollY > sixtyVH) {
+          setScrolled(true);
+        } else {
+          setScrolled(false);
+        }
+      };
+
+      window.addEventListener("scroll", handleScroll);
+
+      // Cleanup the event listener when the component unmounts
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
+  }, []);
 
   const handleWhatsapp = () => {
     window.open("https://api.whatsapp.com/send?phone=919458311000", "_blank");
@@ -212,10 +235,11 @@ const Navbar = () => {
           Enquire Now
         </button>
       </div>
-      <nav className={`navbar-main-div-global scrolled`}>
+      <nav className={`navbar-main-div-global ${scrolled ? "scrolled-navbar" : ""}`}>
         <a href="/">
           <Image src={schoolLogo} className="second-nav-logo" alt="school" />
         </a>
+
         <div className="navbar-list-main">
           {sitemap.map((item, index) => (
             <div
@@ -237,6 +261,7 @@ const Navbar = () => {
             </div>
           ))}
         </div>
+
         <button className="options-btn" onClick={handleMenuBtn}>
           <Image
             src={isNavMenuVisible ? optionsIconClose : optionsIcon}
@@ -281,8 +306,6 @@ const Navbar = () => {
           }}
         />
       </div>
-      <div id="link"></div>
-
       {isMobile && (
         <div className="bottom-bar-all-pages">
           <button
@@ -294,7 +317,8 @@ const Navbar = () => {
           </button>
           <div className="phone-div-bottom-bar">
             <a className="bottom-phone-number" href="tel:+91-9837983791">
-              <FaPhone className="bottom-phone-icon" /> +91-9837983791
+              <FaPhone className="bottom-phone-icon" />
+              +91-9837983791
             </a>
           </div>
         </div>

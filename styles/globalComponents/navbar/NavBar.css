@@ -44,7 +44,6 @@
   color: #b90124;
 }
 .navbar-main-div-global {
-  background: #b90124;
   width: 100%;
   height: 4.5rem;
   box-sizing: border-box;
@@ -55,7 +54,9 @@
   top: 2rem;
   z-index: 111;
 }
-
+.scrolled-navbar {
+  background: #b90124;
+}
 .navbar-main-div-global .link {
   text-decoration: none;
   color: black;
@@ -409,6 +410,9 @@
   text-orientation: sideways-right;
   transition: background-color 0.3s;
 }
+.bottom-bar-all-pages {
+  display: none;
+}
 
 @media (max-width: 1600px) {
   .navbar-main-div-global .navbar-list-main .title {
@@ -529,10 +533,11 @@
   }
   .navbar-main-div-global {
     height: 4.5rem;
-    background: transparent;
     top: 0rem;
   }
-
+ .scrolled-navbar {
+    background: transparent;
+  }
   .bottom-bar-all-pages {
     position: fixed;
     bottom: 0;
