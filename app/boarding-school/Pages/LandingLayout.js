@@ -79,9 +79,9 @@ const LandingLayout = () => {
           <div className="flex w-1/2 justify-center items-center">
             <a
               className="flex w-full justify-center items-center gap-3 text-white font-[TTChocolatesBold]"
-              href="tel:+91-9837983791"
+              href="tel:+91-8069204004"
             >
-              <FaPhone /> +91-9837983791
+              <FaPhone /> +91-8069204004
             </a>
           </div>
         </div>

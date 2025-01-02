@@ -14,8 +14,10 @@ import college from "../../../../public/statsNew/college.png";
 import image5 from "../../../../public/statsNew/image5.png";
 import stem from "../../../../public/statsNew/stem.png";
 import image6 from "../../../../public/statsNew/image6.png";
+import { useMobile } from "@/components/globalComponents/IsMobileContext";
 
 function NewStats() {
+  const { isMobile } = useMobile();
   const stats = [
     { number: "22", title: "ACRE CAMPUS", icon: campus, aspect: "1-1" },
     { number: "16+", title: "OLYMPIC SPORTS", icon: sports, aspect: "1-1" },
@@ -66,8 +68,12 @@ function NewStats() {
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   {/* Animated border */}
-                  <div className="absolute hidden md:block top-10 left-10 h-full w-[1px] bg-white transition-all duration-500 ease-in-out group-hover:left-0 group-hover:top-0"></div>
-                  <div className="absolute hidden md:block top-10 left-10 h-[1px] w-full bg-white transition-all duration-500 ease-in-out group-hover:left-0 group-hover:top-0"></div>
+                  {!isMobile && (
+                    <>
+                      <div className="absolute block top-10 left-10 h-full w-[1px] bg-white transition-all duration-500 ease-in-out group-hover:left-0 group-hover:top-0"></div>
+                      <div className="absolute block top-10 left-10 h-[1px] w-full bg-white transition-all duration-500 ease-in-out group-hover:left-0 group-hover:top-0"></div>
+                    </>
+                  )}
                 </div>
               )}
               {stat.icon && (

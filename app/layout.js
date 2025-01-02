@@ -1,6 +1,7 @@
 import { MobileProvider } from "@/components/globalComponents/IsMobileContext";
 import "./globals.css";
 import Script from "next/script";
+import { UtmProvider } from "@/components/globalComponents/utmParams";
 
 export const metadata = {
   title:
@@ -104,7 +105,9 @@ export default function RootLayout({ children }) {
           ></iframe>
         </noscript>
 
-        <MobileProvider>{children}</MobileProvider>
+        <MobileProvider>
+          <UtmProvider>{children}</UtmProvider>
+        </MobileProvider>
       </body>
     </html>
   );

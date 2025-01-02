@@ -6,37 +6,38 @@ import phoneCallGif from "../../../../../public/phone_ringing.gif";
 import Banner1 from "../../../../../public/LandingPage/Banner.webp";
 import Banner1Mobile from "../../../../../public/Banner1Mobile.png";
 import { useMobile } from "@/components/globalComponents/IsMobileContext";
+import FormEnquire from "@/components/globalComponents/Form-Popup/formPopup";
 function Banner() {
   const { isMobile } = useMobile();
 
-  useEffect(() => {
-    const loadScriptAndStyles = () => {
-      window.ee_form_widget_baseurl =
-        "https://eeconfigstaticfiles.blob.core.windows.net/staticfiles/ee-form-widget/";
+  // useEffect(() => {
+  //   const loadScriptAndStyles = () => {
+  //     window.ee_form_widget_baseurl =
+  //       "https://eeconfigstaticfiles.blob.core.windows.net/staticfiles/ee-form-widget/";
 
-      if (!document.getElementById("__formWidgetCss")) {
-        const linkElement = document.createElement("link");
-        linkElement.id = "__formWidgetCss";
-        linkElement.rel = "stylesheet";
-        linkElement.href =
-          window.ee_form_widget_baseurl + "css/stylesheet.min.css";
-        linkElement.type = "text/css";
-        document.getElementsByTagName("head")[0].appendChild(linkElement);
-      }
-      const scriptElement = document.createElement("script");
-      scriptElement.type = "text/javascript";
-      scriptElement.src =
-        window.ee_form_widget_baseurl + "js/eeFormWidget.min.js";
-      scriptElement.onload = async function () {
-        const _eeFormWidget = new eeFormWidget();
-        await _eeFormWidget.init("tisd", "form-5", "ee-form-5");
-      };
+  //     if (!document.getElementById("__formWidgetCss")) {
+  //       const linkElement = document.createElement("link");
+  //       linkElement.id = "__formWidgetCss";
+  //       linkElement.rel = "stylesheet";
+  //       linkElement.href =
+  //         window.ee_form_widget_baseurl + "css/stylesheet.min.css";
+  //       linkElement.type = "text/css";
+  //       document.getElementsByTagName("head")[0].appendChild(linkElement);
+  //     }
+  //     const scriptElement = document.createElement("script");
+  //     scriptElement.type = "text/javascript";
+  //     scriptElement.src =
+  //       window.ee_form_widget_baseurl + "js/eeFormWidget.min.js";
+  //     scriptElement.onload = async function () {
+  //       const _eeFormWidget = new eeFormWidget();
+  //       await _eeFormWidget.init("tisd", "form-5", "ee-form-5");
+  //     };
 
-      document.getElementsByTagName("head")[0].appendChild(scriptElement);
-    };
+  //     document.getElementsByTagName("head")[0].appendChild(scriptElement);
+  //   };
 
-    loadScriptAndStyles();
-  }, []);
+  //   loadScriptAndStyles();
+  // }, []);
 
   // const images = [Banner1];
   // const imagesMobile = [Banner1Mobile];
@@ -92,23 +93,20 @@ function Banner() {
   //   changeImage(currentIndex);
   // }, [currentIndex]);
   return (
-    <div className="w-full min-h-[100vh] flex flex-col justify-end md:justify-center items-end relative object-cover bg-transparent md:bg-[#b90124]">
+    <div className="w-full min-h-[100vh] flex flex-col justify-center items-end relative object-cover bg-transparent md:bg-[#b90124]">
       <div className="fixed top-0 left-0 z-40 px-6 md:px-8 py-6 md:py-8 flex items-center justify-between w-full">
-        <button
+        <a
           href="tel:+91-8069204004"
           title="Admission Helpline No. +91-8069204004"
           className="w-20 md:w-28 bg-[#60BAB1] p-6 md:p-8 rounded-full"
         >
           <Image src={phoneCallGif} alt="" className="" />
           {/* <div className="footer-call-number-text">+91-8069204004</div> */}
-        </button>
+        </a>
         <Image src={schoolLogo} className="w-20 md:w-28" alt="school" />
       </div>
-      <div className="z-30 relative mt-[55vh] md:mt-0 flex md:pr-[15vw]">
-        <div
-          id="ee-form-5"
-          className="shadow-2xl w-[90%] mx-auto p-2 md:p-4 bg-white max-w-[450px] rounded-3xl"
-        ></div>
+      <div className="z-30 shadow-2xl mt-[55vh] md:mt-0 relative w-[95%] md:w-full max-w-[480px] mx-auto md:mr-[15vw] bg-white rounded-2xl pointer-events-auto">
+        <FormEnquire formPopup={false} />
       </div>
 
       <div className="h-[100vh] w-full absolute top-0 object-cover">

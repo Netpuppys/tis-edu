@@ -15,27 +15,20 @@ import NavMenu from "../../home/navMenu/NavMenu";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import { useMobile } from "../IsMobileContext";
+import FormPopup from "../Form-Popup/form";
 
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(null);
   const [isNavMenuVisible, setIsNavMenuVisible] = useState(false);
   const isMobile = useMobile();
+  const [formPopup, setFormPopup] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const handleMenuHover = (index) => {
     setActiveMenu(index);
   };
-
-  useEffect(() => {
-    const loadScriptAndStyles = () => {
-      var t = document.createElement("script");
-      t.type = "text/javascript";
-      t.src =
-        "https://eeconfigstaticfiles.blob.core.windows.net/staticfiles/tisd/ee-form-widget/form-2/widget.js";
-      document.getElementsByTagName("head")[0].appendChild(t);
-    };
-
-    loadScriptAndStyles();
-  }, []);
+  const handleFormPopup = () => {
+    setFormPopup(true);
+  };
 
   const handleLandingPage = () => {
     window.location.href = "https://admission.tis.edu.in";
@@ -221,109 +214,110 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar-global">
-      <div className="top-bar">
-        <a className="phone-number" href="tel:+91-9837983791">
-          <FaPhone className="phone-icon" />
-          ADMISSION HELPLINE NO. +91-9837983791
-        </a>
-        <button
-          id="extraedge-popup7"
-          className="enquire"
-          style={{ opacity: "0" }}
-        >
-          Enquire Now
-        </button>
-      </div>
-      <nav className={`navbar-main-div-global ${scrolled ? "scrolled-navbar" : ""}`}>
-        <a href="/">
-          <Image src={schoolLogo} className="second-nav-logo" alt="school" />
-        </a>
-
-        <div className="navbar-list-main">
-          {sitemap.map((item, index) => (
-            <div
-              className="main-listed-item"
-              key={index}
-              onMouseEnter={() => handleMenuHover(index)}
-              onMouseLeave={() => handleMenuLeave()}
-            >
-              <a href={item.linkTo}>
-                <p className="title">{item.title}</p>
-                <Image src={lineImg} className="yellow-line" alt="line" />
-              </a>
-              <div className="dropdown-container">
-                {activeMenu === index &&
-                  item.nestedLinks &&
-                  item.nestedLinks.length > 0 &&
-                  renderNestedLinks(item.nestedLinks)}
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <button className="options-btn" onClick={handleMenuBtn}>
-          <Image
-            src={isNavMenuVisible ? optionsIconClose : optionsIcon}
-            className="options"
-            alt="TIS"
-          />
-          <div className="menu-icon-div">
-            <Image
-              src={isNavMenuVisible ? menuCloseIcon : menuIcon}
-              className="menu-icon"
-              alt="menu"
-            />
-          </div>
-        </button>
-      </nav>
-      {isNavMenuVisible && (
-        <div className="sidebar-container">
-          <NavMenu handleMenuBtn={handleMenuBtn} />
-        </div>
-      )}
-      <div className="form-btn-container">
-        <button onClick={handleLandingPage} className="form-open-btn">
-          APPLY NOW
-        </button>
-      </div>
-      <div
-        className="chat-btn"
-        onClick={handleWhatsapp}
-        style={{
-          borderRadius: "50%",
-          backgroundColor: "#25d366",
-          display: "flex",
-          textAlign: "center",
-          cursor: "pointer",
-        }}
-      >
-        <FaWhatsapp
-          style={{
-            color: "#fff",
-            alignSelf: "center",
-            margin: "auto",
-          }}
-        />
-      </div>
-      {isMobile && (
-        <div className="bottom-bar-all-pages">
-          <button
-            id="extraedge-popup8"
-            className="bottom-enquire"
-            style={{ opacity: "0" }}
-          >
+    <>
+      <div className="navbar-global">
+        <div className="top-bar">
+          <a className="phone-number" href="tel:+91-9837983791">
+            <FaPhone className="phone-icon" />
+            ADMISSION HELPLINE NO. +91-9837983791
+          </a>
+          <button onClick={handleFormPopup} className="enquire">
             Enquire Now
           </button>
-          <div className="phone-div-bottom-bar">
-            <a className="bottom-phone-number" href="tel:+91-9837983791">
-              <FaPhone className="bottom-phone-icon" />
-              +91-9837983791
-            </a>
-          </div>
         </div>
+        <nav
+          className={`navbar-main-div-global ${
+            scrolled ? "scrolled-navbar" : ""
+          }`}
+        >
+          <a href="/">
+            <Image src={schoolLogo} className="second-nav-logo" alt="school" />
+          </a>
+
+          <div className="navbar-list-main">
+            {sitemap.map((item, index) => (
+              <div
+                className="main-listed-item"
+                key={index}
+                onMouseEnter={() => handleMenuHover(index)}
+                onMouseLeave={() => handleMenuLeave()}
+              >
+                <a href={item.linkTo}>
+                  <p className="title">{item.title}</p>
+                  <Image src={lineImg} className="yellow-line" alt="line" />
+                </a>
+                <div className="dropdown-container">
+                  {activeMenu === index &&
+                    item.nestedLinks &&
+                    item.nestedLinks.length > 0 &&
+                    renderNestedLinks(item.nestedLinks)}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <button className="options-btn" onClick={handleMenuBtn}>
+            <Image
+              src={isNavMenuVisible ? optionsIconClose : optionsIcon}
+              className="options"
+              alt="TIS"
+            />
+            <div className="menu-icon-div">
+              <Image
+                src={isNavMenuVisible ? menuCloseIcon : menuIcon}
+                className="menu-icon"
+                alt="menu"
+              />
+            </div>
+          </button>
+        </nav>
+        {isNavMenuVisible && (
+          <div className="sidebar-container">
+            <NavMenu handleMenuBtn={handleMenuBtn} />
+          </div>
+        )}
+        <div className="form-btn-container">
+          <button onClick={handleLandingPage} className="form-open-btn">
+            APPLY NOW
+          </button>
+        </div>
+        <div
+          className="chat-btn"
+          onClick={handleWhatsapp}
+          style={{
+            borderRadius: "50%",
+            backgroundColor: "#25d366",
+            display: "flex",
+            textAlign: "center",
+            cursor: "pointer",
+          }}
+        >
+          <FaWhatsapp
+            style={{
+              color: "#fff",
+              alignSelf: "center",
+              margin: "auto",
+            }}
+          />
+        </div>
+        {isMobile && (
+          <div className="bottom-bar-all-pages">
+            <button onClick={handleFormPopup} className="bottom-enquire">
+              Enquire Now
+            </button>
+            <div className="phone-div-bottom-bar">
+              <a className="bottom-phone-number" href="tel:+91-9837983791">
+                <FaPhone className="bottom-phone-icon" />
+                +91-9837983791
+              </a>
+            </div>
+          </div>
+        )}
+      </div>
+      {formPopup && (
+        <FormPopup formPopup={formPopup} setFormPopup={setFormPopup} />
       )}
-    </div>
+    </>
   );
 };
 

@@ -111,8 +111,12 @@ export default function Mission() {
                   className="w-full h-full object-cover transition-all duration-300 group-hover:scale-110 group-hover:opacity-80"
                 />
                 {/* Animated border */}
-                <div className="absolute hidden md:block bottom-10 left-10 h-full w-[1px] bg-white transition-all duration-500 ease-in-out group-hover:left-0 group-hover:bottom-0"></div>
-                <div className="absolute hidden md:block bottom-10 left-10 h-[1px] w-full bg-white transition-all duration-500 ease-in-out group-hover:left-0 group-hover:bottom-0"></div>
+                {!isMobile && (
+                  <>
+                    <div className="absolute block bottom-10 left-10 h-full w-[1px] bg-white transition-all duration-500 ease-in-out group-hover:left-0 group-hover:bottom-0"></div>
+                    <div className="absolute block bottom-10 left-10 h-[1px] w-full bg-white transition-all duration-500 ease-in-out group-hover:left-0 group-hover:bottom-0"></div>
+                  </>
+                )}
               </div>
             </div>
             <div className="flex w-full flex-col items-start justify-center text-black">
