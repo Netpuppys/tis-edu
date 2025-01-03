@@ -1,12 +1,13 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import Header from "../globalComponents/Header/Header";
 import Image from "next/image";
 import "../../styles/Admission/Apply.css";
 import HeaderRegistrationImg from "../../public/Header/RegistrationHeader.png";
 import yellowLine from "../../public/pictures/lineImg.png";
-import Link from "next/link";
+import { UtmContext } from "../globalComponents/utmParams";
 export default function RegistrationForm() {
+  const { utmParams } = useContext(UtmContext);
   useEffect(() => {
     const loadScriptAndStyles = () => {
       window.ee_form_widget_baseurl =
@@ -93,7 +94,7 @@ export default function RegistrationForm() {
             <br />
             School Fees can be deposited by Cash or Bank Transfer,{" "}
             <a
-              href={"/admission-procedure/fee-structure/"}
+              href={`/admission-procedure/fee-structure/${utmParams}`}
               style={{ color: "#B90124" }}
             >
               click here

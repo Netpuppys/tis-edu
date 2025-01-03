@@ -54,6 +54,7 @@ export default function Careers() {
             Current <span>Openings</span>
           </h2>
           <a
+            target="_blank"
             href={
               "https://docs.google.com/forms/d/e/1FAIpQLScv3l4HsHajZk-XUrKmgdf7ZDKp2noRUbSBffG47pjDG1bF6g/viewform"
             }
@@ -61,6 +62,7 @@ export default function Careers() {
             Faculty Positions
           </a>
           <a
+            target="_blank"
             href={
               "https://docs.google.com/forms/d/e/1FAIpQLScv3l4HsHajZk-XUrKmgdf7ZDKp2noRUbSBffG47pjDG1bF6g/viewform"
             }
@@ -68,6 +70,7 @@ export default function Careers() {
             Non-Faculty Positions
           </a>
           <a
+            target="_blank"
             href={
               "https://docs.google.com/forms/d/e/1FAIpQLScv3l4HsHajZk-XUrKmgdf7ZDKp2noRUbSBffG47pjDG1bF6g/viewform"
             }

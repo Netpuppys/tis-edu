@@ -103,7 +103,7 @@ function ContactForm() {
           Field4: "",
           Remarks: "",
         });
-        window.location.href = "/boarding-school/admission-open/thank-you";
+        window.location.href = `/boarding-school/admission-open/thank-you${utmParams}`;
       })
       .catch((error) => {
         alert.error(error);

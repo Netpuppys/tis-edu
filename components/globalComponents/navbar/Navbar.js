@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import lineImg from "../../../public/doodles/yellowLine1.svg";
@@ -16,6 +16,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import { useMobile } from "../IsMobileContext";
 import FormPopup from "../Form-Popup/form";
+import { UtmContext } from "../utmParams";
 
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(null);
@@ -23,15 +24,12 @@ const Navbar = () => {
   const isMobile = useMobile();
   const [formPopup, setFormPopup] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { utmParams } = useContext(UtmContext);
   const handleMenuHover = (index) => {
     setActiveMenu(index);
   };
   const handleFormPopup = () => {
     setFormPopup(true);
-  };
-
-  const handleLandingPage = () => {
-    window.location.href = "https://admission.tis.edu.in";
   };
 
   const handleMenuLeave = () => {
@@ -193,7 +191,10 @@ const Navbar = () => {
     <div className="dropdown">
       {nestedLinks.map((nestedItem, nestedIndex) => (
         <div className="listed-item" key={nestedIndex}>
-          <a href={nestedItem?.linkTo} style={{ color: "#fff" }}>
+          <a
+            href={`${nestedItem?.linkTo}${utmParams}`}
+            style={{ color: "#fff" }}
+          >
             <div className="title-arrow">
               <p className="nested-link-title">{nestedItem?.title}</p>
               {nestedItem?.nestedLinks?.length > 1 && (
@@ -230,7 +231,7 @@ const Navbar = () => {
             scrolled ? "scrolled-navbar" : ""
           }`}
         >
-          <a href="/">
+          <a href={`/${utmParams}`}>
             <Image src={schoolLogo} className="second-nav-logo" alt="school" />
           </a>
 
@@ -242,7 +243,7 @@ const Navbar = () => {
                 onMouseEnter={() => handleMenuHover(index)}
                 onMouseLeave={() => handleMenuLeave()}
               >
-                <a href={item.linkTo}>
+                <a href={`${item.linkTo}${utmParams}`}>
                   <p className="title">{item.title}</p>
                   <Image src={lineImg} className="yellow-line" alt="line" />
                 </a>
@@ -277,9 +278,13 @@ const Navbar = () => {
           </div>
         )}
         <div className="form-btn-container">
-          <button onClick={handleLandingPage} className="form-open-btn">
+          <a
+            href="https://admission.tis.edu.in"
+            target="_blank"
+            className="form-open-btn"
+          >
             APPLY NOW
-          </button>
+          </a>
         </div>
         <div
           className="chat-btn"

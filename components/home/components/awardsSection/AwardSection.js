@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useMobile } from "../../../globalComponents/IsMobileContext";
 import seeMoreIcon from "../../../../public/icons/see-more-text.png";
 import topBoarding from "../../../../public/Home/Awards/TopBoarding.jpg";
@@ -12,8 +12,10 @@ import UttrakhandIcon from "../../../../public/Home/Awards/UTTARAKHAND.jpg";
 import Educational from "../../../../public/Home/Awards/EDUCATIONAL.jpg";
 import TheTop from "../../../../public/Home/Awards/TheTop.jpg";
 import Higher from "../../../../public/Home/Awards/HIGHER.jpg";
+import { UtmContext } from "@/components/globalComponents/utmParams";
 function AwardSection() {
   const { isMobile } = useMobile();
+  const { utmParams } = useContext(UtmContext);
   const title =
     "We believe in celebrating the hard work and perseverance of the best!";
   const subTitle = "(Everybody Loves that)";
@@ -71,7 +73,7 @@ function AwardSection() {
   }, [isMobile, activity]);
 
   const handleMoreAwards = () => {
-    window.location.href = "/about-tis/awards-achievements/";
+    window.location.href = `/about-tis/awards-achievements${utmParams}`;
   };
 
   function getPositionClassName(index) {

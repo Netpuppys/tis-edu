@@ -1,5 +1,5 @@
 "use-client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { useMobile } from "../../../globalComponents/IsMobileContext";
 import seeMoreIcon from "../../../../public/icons/see-more-text.png";
 import archery from "../../../../public/pictures/archery.png";
@@ -25,9 +25,11 @@ import { FaArrowsRotate } from "react-icons/fa6";
 import Image from "next/image";
 import "../../../../styles/home/components/activityGrid/ActivityGrid.css";
 import { useInView } from "react-intersection-observer";
+import { UtmContext } from "@/components/globalComponents/utmParams";
 
 function FourthSection() {
   const { isMobile } = useMobile();
+  const { utmParams } = useContext(UtmContext);
   const { ref, inView } = useInView({
     triggerOnce: false,
     threshold: 0.1,
@@ -55,8 +57,8 @@ function FourthSection() {
   );
   // const subTitle = "( Our Students love that! )";
 
-  const handleItemClick = (sectionName) => {
-    window.location.href = `/beyond-academics/sports/#${sectionName}`;
+  const handleItemClick = () => {
+    window.location.href = `/beyond-academics/sports${utmParams}`;
   };
   const initialActivities = [
     {
@@ -179,7 +181,7 @@ function FourthSection() {
   }, [isMobile, activity]);
 
   const handleMoreSports = () => {
-    window.location.href = "/beyond-academics/sports/";
+    window.location.href = `/beyond-academics/sports${utmParams}`;
   };
 
   function getPositionClassName(index) {

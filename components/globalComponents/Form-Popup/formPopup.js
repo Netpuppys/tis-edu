@@ -136,7 +136,9 @@ function FormEnquire({ formPopup }) {
       ...formData,
       LeadChannel: utmParams ? 26 : 20,
       LeadSource: utmParams ? utmSource || 88 : 116,
-      LeadCampaign: utmParams ? utmCampaign || "Enquire Now Ads" : "Enquire Now Organic",
+      LeadCampaign: utmParams
+        ? utmCampaign || "Enquire Now Ads"
+        : "Enquire Now Organic",
     };
     axios
       .post(
@@ -159,7 +161,7 @@ function FormEnquire({ formPopup }) {
           City: "",
         });
         setOtp("");
-        window.location.href = "/boarding-school/admission-open/thank-you";
+        window.location.href = `/boarding-school/admission-open/thank-you${utmParams}`;
       })
       .catch((error) => {
         alert.error(error);

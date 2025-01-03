@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Link from "next/link"; // Correct import for Next.js Link component
 import { useMobile } from "../../globalComponents/IsMobileContext";
 import firstcard from "../../../public/delete-later/header-admissions1.JPG";
@@ -12,10 +12,11 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import MobileNestedLinkElements from "./mobileNestedLinks/MobileNestedLinksElements";
 import "../../../styles/home/components/navMenu/NavMenu.css";
 import Image from "next/image";
+import { UtmContext } from "@/components/globalComponents/utmParams";
 
 function NestedLinkElements({ navlinks, setNestedLinksVisible }) {
   const [superNestedLinksVisible, setSuperNestedLinksVisible] = useState(false);
-
+  const { utmParams } = useContext(UtmContext);
   return (
     <div className="nested-links-div">
       <div className="content">
@@ -32,7 +33,7 @@ function NestedLinkElements({ navlinks, setNestedLinksVisible }) {
                 className="link-item"
                 onClick={() => setSuperNestedLinksVisible((prev) => !prev)}
               >
-                <a href={item.linkTo || "#"} className="links">
+                <a href={`${item.linkTo}${utmParams}`} className="links">
                   {item.title}
                   {item.nestedLinks && item.nestedLinks.length > 0 && (
                     <IoAddSharp className="expand-icon" />
@@ -46,7 +47,7 @@ function NestedLinkElements({ navlinks, setNestedLinksVisible }) {
                       {item.nestedLinks.map((nestedItem, index) => (
                         <a
                           key={index}
-                          href={nestedItem.linkTo || "#"}
+                          href={`${nestedItem.linkTo}${utmParams}`}
                           className="super-nested-link-item"
                         >
                           -{nestedItem.title}
@@ -206,7 +207,11 @@ function NavMenu({ handleMenuBtn }) {
             <>
               <ul>
                 <li className="listed-item-home">
-                  <a href="/" onClick={handleMenuBtn} className="listed-item">
+                  <a
+                    href={`/${utmParams}`}
+                    onClick={handleMenuBtn}
+                    className="listed-item"
+                  >
                     Home
                   </a>
                 </li>

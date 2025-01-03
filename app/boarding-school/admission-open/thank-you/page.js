@@ -1,17 +1,17 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { TbMailOpenedFilled } from "react-icons/tb";
+import React, { useContext, useEffect, useState } from "react";
 import schoolLogo from "../../../../public/logos/schoolLogo.png";
 import Image from "next/image";
+import { UtmContext } from "@/components/globalComponents/utmParams";
 function Page() {
   const [timer, setTimer] = useState(10);
-
+  const { utmParams } = useContext(UtmContext);
   useEffect(() => {
     const interval = setInterval(() => {
       setTimer((prevTimer) => {
         if (prevTimer === 1) {
           clearInterval(interval);
-          window.location.href = "/";
+          window.location.href = `/${utmParams}`;
         }
         return prevTimer - 1;
       });
@@ -55,7 +55,7 @@ function Page() {
       </div>
       <button
         onClick={() => {
-          window.location.href = "/";
+          window.location.href = `/${utmParams}`;
         }}
         className="text-center text-white font-[TTChocolatesBold] text-xl z-20 rounded-full py-2 px-20 bg-[#b90124] text-[clambutton(18px,1.1vw,45px)]"
       >

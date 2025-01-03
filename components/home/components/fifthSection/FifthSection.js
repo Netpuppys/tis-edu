@@ -5,9 +5,6 @@ import AtTis from "../../../../public/pictures/AtTIS.png";
 import LearnMore from "../../../../public/icons/LearnMore.png";
 import Image from "next/image";
 function FifthSection() {
-  const handleClickLearn = () => {
-    window.location.href = "/about-tis/why-choose-us/";
-  };
   return (
     <div className="at_Tis" id="6">
       <div className="image-tis">

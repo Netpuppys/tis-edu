@@ -52,7 +52,7 @@ function CompanySocials() {
             <li className="cmpny-socials-btns-item" key={id}>
               <a
                 href={item.link}
-                target="blank"
+                target="_blank"
                 className="cmpny-socials-btns-link"
 
                 // onClick={handleClick}

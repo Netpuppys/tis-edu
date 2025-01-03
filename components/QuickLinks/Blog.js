@@ -1,15 +1,16 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Image from "next/image";
 import loader from "../../public/loader.svg";
 import "../../styles/QuickLinks/Blog.css";
+import { UtmContext } from "../globalComponents/utmParams";
 
 const Blog = () => {
   const [blogs, setBlogs] = useState([]); // Initialize as an empty array
   const [page, setPage] = useState(1);
   const [allBlogsLoaded, setAllBlogsLoaded] = useState(false);
   const [loading, setLoading] = useState(true); // Set loading to true initially
-
+  const { utmParams } = useContext(UtmContext);
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
@@ -79,7 +80,7 @@ const Blog = () => {
               : ""; // Fallback if title is not available
 
             return (
-              <a href={`/${blog.slug}`} key={blog.slug}>
+              <a href={`/${blog.slug}${utmParams}`} key={blog.slug}>
                 <div>
                   <div className="card-wrapper">
                     <Image

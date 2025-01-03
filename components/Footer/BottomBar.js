@@ -11,6 +11,7 @@ function BottomBar() {
         Designed and Managed By{" "}
         <a
           style={{ textDecoration: "none", color: "#fff" }}
+          target="_blank"
           href={"https://netpuppys.com"}
         >
           NetPuppys

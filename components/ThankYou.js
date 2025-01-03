@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useContext } from "react";
 import "../styles/ThankYou.css";
 import { BsStars } from "react-icons/bs";
 import { FaLessThan } from "react-icons/fa6";
@@ -7,7 +7,9 @@ import thankYou from "../public/thank-you.jpg";
 import { FaRegSmile } from "react-icons/fa";
 import "../app/globals.css";
 import Image from "next/image";
+import { UtmContext } from "./globalComponents/utmParams";
 export default function ThankYouPage() {
+  const { utmParams } = useContext(UtmContext);
   return (
     <>
       <div className="thank-you-page">
@@ -21,7 +23,7 @@ export default function ThankYouPage() {
 
         <button
           onClick={() => {
-            window.location.href = "/";
+            window.location.href = `/${utmParams}`;
           }}
         >
           <FaLessThan style={{ alignSelf: "center" }} />

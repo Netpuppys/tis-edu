@@ -63,7 +63,7 @@ const LandingLayout = () => {
               Rights Reserved
               <br />
               Designed and Managed By{" "}
-              <a href="https://netpuppys.com">NetPuppys</a>
+              <a href="https://netpuppys.com" target="_blank">NetPuppys</a>
             </h4>
           </div>
         </>

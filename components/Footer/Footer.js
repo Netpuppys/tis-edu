@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useContext } from "react";
 import { useMobile } from "../globalComponents/IsMobileContext";
 import FooterLinks from "./footerLinks/FooterLinks";
 import footerLogo from "../../public/logos/footer-logo.png";
@@ -18,9 +18,11 @@ import Calendar from "../../public/MandatoryPDF/TIS_CALENDAR_2024__PDF.pdf";
 import Broucher from "../../public/MandatoryPDF/TIS_BROCHURE.pdf";
 import Image from "next/image";
 import Link from "next/link";
+import { UtmContext } from "../globalComponents/utmParams";
 
 function Footer() {
   const { isMobile } = useMobile();
+  const { utmParams } = useContext(UtmContext);
   const ourCampusLinks = [
     {
       title: "Our Campus",
@@ -45,7 +47,7 @@ function Footer() {
           linkName: "Registration Form",
           linkTo: "/admission-procedure/registration-form/",
         },
-        { id: 6, linkName: "Blogs", linkTo: "https://tis.edu.in/blog" },
+        { id: 6, linkName: "Blogs", linkTo: "/blog" },
         { id: 7, linkName: "Privacy Policy", linkTo: "/privacy-policy/" },
         { id: 8, linkName: "Terms & Conditions", linkTo: "/terms-conditions/" },
       ],
@@ -54,20 +56,36 @@ function Footer() {
   ];
 
   const socialLinks = [
-    { title: "facebook", linkTo: "/", icon: facebookLogo },
-    { title: "instagram", linkTo: "/", icon: instagramLogo },
-    { title: "X/Twitter", linkTo: "/", icon: twitterLogo },
-    { title: "Youtube", linkTo: "/", icon: youtubeLogo },
-    { title: "Linkedin", linkTo: "/", icon: linkedinLogo },
+    {
+      title: "facebook",
+      linkTo: "https://www.facebook.com/tulasinternationalschool/",
+      icon: facebookLogo,
+    },
+    {
+      title: "instagram",
+      linkTo: "https://www.instagram.com/tulasinternationalschool/?hl=en",
+      icon: instagramLogo,
+    },
+    {
+      title: "X/Twitter",
+      linkTo: "https://twitter.com/tulas_intschool?lang=en",
+      icon: twitterLogo,
+    },
+    {
+      title: "Youtube",
+      linkTo: "https://www.youtube.com/channel/UC-eRtybnv3GvfvcWxQq93zw",
+      icon: youtubeLogo,
+    },
+    {
+      title: "Linkedin",
+      linkTo:
+        "https://www.linkedin.com/school/tulas-international-school/?originalSubdomain=in",
+      icon: linkedinLogo,
+    },
   ];
-  const handlefedena = () => {
-    window.location.href = "https://tis.fedena.com/";
-  };
-  const handleVirtual = () => {
-    window.location.href = "https://tis.edu.in/virtual-tour/";
-  };
+
   const handleApply = () => {
-    window.location.href = "/admission-procedure/registration-form/";
+    window.location.href = `/admission-procedure/registration-form/${utmParams}`;
   };
 
   return (
@@ -124,17 +142,25 @@ function Footer() {
             <FooterLinks linksData={ourCampusLinks} />
           </div>
           <div className="three-buttons">
-            <div onClick={handleVirtual} className="button">
+            <a
+              target="_blank"
+              href="https://tis.edu.in/virtual-tour/"
+              className="button"
+            >
               Virtual Tour
-            </div>
+            </a>
 
             <div onClick={handleApply} className="button">
               Apply Now
             </div>
 
-            <div className="button" onClick={handlefedena}>
+            <a
+              target="_blank"
+              href="https://tis.fedena.com/"
+              className="button"
+            >
               fedena Login
-            </div>
+            </a>
           </div>
 
           <BottomBar />
@@ -143,7 +169,7 @@ function Footer() {
       {isMobile && (
         <>
           <div className="header">
-            <a href="/">
+            <a href={`/${utmParams}`}>
               <Image src={footerLogoMobile} className="logo" alt="TIS" />
             </a>
             <div className="right">
@@ -170,14 +196,23 @@ function Footer() {
           <div className="all-links">
             <div className="mobile-links">
               {ourCampusLinks[0].links.map((item, index) => (
-                <a className="link" key={index} href={item.linkTo}>
+                <a
+                  className="link"
+                  key={index}
+                  href={`${item.linkTo}${utmParams}`}
+                >
                   <p className="links">{item.linkName}</p>
                 </a>
               ))}
             </div>
             <div className="social-links">
               {socialLinks.map((item, index) => (
-                <a className="link" key={index} href={item.linkTo}>
+                <a
+                  className="link"
+                  key={index}
+                  target="_blank"
+                  href={item.linkTo}
+                >
                   <Image src={item.icon} className="icon" alt={item.title} />
                   <p className="title">{item.title}</p>
                 </a>

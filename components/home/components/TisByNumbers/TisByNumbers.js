@@ -4,7 +4,7 @@ import Image from "next/image";
 import Stats from "./stats";
 function TisByNumbers() {
   const handleVirtualTourClick = () => {
-    window.location.href = "/virtual-tour";
+    window.location.href = `/virtual-tour${utmParams}`;
   };
   return (
     <div id="8">
