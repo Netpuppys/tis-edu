@@ -100,12 +100,12 @@ function Banner() {
     <div className="w-full min-h-[100vh] flex flex-col justify-center items-end relative object-cover bg-transparent md:bg-[#b90124]">
       <div className="fixed top-0 left-0 z-40 px-6 md:px-8 py-6 md:py-8 flex items-center justify-between w-full">
         <a
-          href={`tel:+91-{${
-            utmSource === "MetaADS" && "8069204014"
-          } || "8069204004"}`}
-          title={`Admission Helpline No. +91-{${
-            utmSource === "MetaADS" && "8069204014"
-          } || "8069204004"}`}
+          href={`tel:+91-${
+            utmSource === "MetaADS" ? "8069204014" : "8069204004"
+          }`}
+          title={`Admission Helpline No. +91-${
+            utmSource === "MetaADS" ? "8069204014" : "8069204004"
+          }`}
           className="w-20 md:w-28 bg-[#60BAB1] p-6 md:p-8 rounded-full"
         >
           <Image src={phoneCallGif} alt="" className="" />
