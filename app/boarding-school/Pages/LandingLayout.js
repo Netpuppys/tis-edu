@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useContext, useRef } from "react";
 import "../../../styles/globalComponents/navbar/NavBar.css";
 import "../../../styles/home/HomeLayout.css";
 import ActivityGrid from "@/components/home/components/activityGrid/ActivityGrid";
@@ -18,6 +18,7 @@ import { useMobile } from "@/components/globalComponents/IsMobileContext";
 import { FaWhatsapp } from "react-icons/fa";
 import scrollArrow from "../../../public/icons/downArrowDoodle.svg";
 import Image from "next/image";
+import { UtmContext } from "@/components/globalComponents/utmParams";
 
 const LandingLayout = () => {
   const bubbleRef = useRef(null);
@@ -29,6 +30,9 @@ const LandingLayout = () => {
   const handleScrollArrow = () => {
     scrollRef.current?.scrollIntoView({ behavior: "smooth" });
   };
+  const { utmParams } = useContext(UtmContext);
+  const searchParams = new URLSearchParams(window.location.search);
+  const utmSource = searchParams.get("utm_source");
 
   return (
     <div className="home-layout-container">
@@ -63,7 +67,9 @@ const LandingLayout = () => {
               Rights Reserved
               <br />
               Designed and Managed By{" "}
-              <a href="https://netpuppys.com" target="_blank">NetPuppys</a>
+              <a href="https://netpuppys.com" target="_blank">
+                NetPuppys
+              </a>
             </h4>
           </div>
         </>
@@ -79,9 +85,12 @@ const LandingLayout = () => {
           <div className="flex w-1/2 justify-center items-center">
             <a
               className="flex w-full justify-center items-center gap-3 text-white font-[TTChocolatesBold]"
-              href="tel:+91-8069204004"
+              href={`tel:+91-{${
+                utmSource === "MetaADS" && "8069204014"
+              } || "8069204004"}`}
             >
-              <FaPhone /> +91-8069204004
+              <FaPhone /> +91-
+              {(utmSource === "MetaADS" && "8069204014") || "8069204004"}
             </a>
           </div>
         </div>
