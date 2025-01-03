@@ -130,12 +130,13 @@ function FormEnquire({ formPopup }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     const searchParams = new URLSearchParams(window.location.search);
+    const utmSource = searchParams.get("utm_source");
     const utmCampaign = searchParams.get("utm_campaign");
     const updatedFormData = {
       ...formData,
       LeadChannel: utmParams ? 26 : 20,
-      LeadSource: utmParams ? 88 : 116,
-      LeadCampaign: utmCampaign || "",
+      LeadSource: utmParams ? utmSource || 88 : 116,
+      LeadCampaign: utmParams ? utmCampaign || "Enquire Now Ads" : "Enquire Now Organic",
     };
     axios
       .post(

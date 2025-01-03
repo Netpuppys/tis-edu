@@ -75,15 +75,22 @@ function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const searchParams = new URLSearchParams(window.location.search);
+    const utmSource = searchParams.get("utm_source");
     const utmCampaign = searchParams.get("utm_campaign");
     const updatedFormData = {
       ...formData,
       LeadChannel: utmParams ? 26 : 20,
-      LeadSource: utmParams ? 88 : 115,
-      LeadCampaign: utmCampaign || "",
+      LeadSource: utmParams ? utmSource || 88 : 115,
+      LeadCampaign: utmParams
+        ? utmCampaign || "Contact Us Form Ads"
+        : "Contact Us Form Organic",
     };
+
     axios
-      .post("https://thirdpartyapi.extraaedge.com/api/SaveRequest", updatedFormData)
+      .post(
+        "https://thirdpartyapi.extraaedge.com/api/SaveRequest",
+        updatedFormData
+      )
       .then(() => {
         setFormData({
           AuthToken: "tisd_24-08-2024",

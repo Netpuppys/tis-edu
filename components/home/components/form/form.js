@@ -134,12 +134,13 @@ function Form() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const searchParams = new URLSearchParams(window.location.search);
+    const utmSource = searchParams.get("utm_source");
     const utmCampaign = searchParams.get("utm_campaign");
     const updatedFormData = {
       ...formData,
       LeadChannel: utmParams ? 26 : 20,
-      LeadSource: utmParams ? 88 : 81,
-      LeadCampaign: utmCampaign || "",
+      LeadSource: utmParams ? utmSource || 88 : 78,
+      LeadCampaign: utmParams ? utmCampaign || "Home Page Form Ads" : "Home Page Form Organic",
     };
     axios
       .post(

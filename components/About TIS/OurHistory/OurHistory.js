@@ -4,7 +4,10 @@ import React from "react";
 import Image from "next/image";
 import Sunil from "../../../public/ourhistory/Sunil.png";
 import school from "../../../public/ourhistory/school.png";
-import Image2012 from "../../../public/ourhistory/2012.jpg";
+import Image2012 from "../../../public/ourhistory/2012.png";
+import silky from "../../../public/ourhistory/silky.png";
+import Raunak from "../../../public/ourhistory/Raunak.png";
+
 import Header from "../../globalComponents/Header/Header";
 import "../../../styles/About Tis/ourHistory.css";
 import { useMobile } from "../../globalComponents/IsMobileContext";
@@ -15,38 +18,6 @@ export default function OurHistory() {
   const subTitle =
     "Tula's International School serves as the starting point for intellectual explorations that simultaneously extend into the broader world.";
   const { isMobile } = useMobile();
-  const section = [
-    {
-      image: Sunil,
-      description: (
-        <>
-          In 2004, <strong className="text-[#b90124]">Sunil Kumar Jain</strong>{" "}
-          (Founder, Chairman) stepped into the world of education, driven by a
-          belief that every student deserved more than just a classroom—they
-          deserved a stage to grow, dream, and thrive. His journey began with
-          the Rishabh Trust and was followed by the foundation of Tula’s
-          Institute, a college that quickly became known for its excellence in
-          engineering and management education. 
-        </>
-      ),
-    },
-    {
-      image: school,
-      description: (
-        <>
-          But even as the corridors of Tula’s Institute echoed with the
-          aspirations of countless students, Mr. Jain felt there was more to be
-          done. 
-          <br />
-          <br />
-          Dehradun, a city steeped in the legacy of education, had long been a
-          hub for learning. Yet, Mr. Jain envisioned something different: a
-          school that didn’t just educate but inspired—a place that celebrated
-          individuality of each student.
-        </>
-      ),
-    },
-  ];
 
   return (
     <>
@@ -55,174 +26,206 @@ export default function OurHistory() {
         subtitle={subTitle}
         headerImg={headerHistoryImg}
       />
-      <div className="py-8 w-[85%] md:w-[70%] mx-auto md:py-20 flex flex-col justify-center items-center">
+      <div className="py-8 w-[85%] md:w-[75%] mx-auto md:py-20 flex flex-col justify-center items-center">
         <h3
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="text-[#B90124] w-fit leading-none text-[clamp(20px,2.5vw,50px)]"
+          className="text-[#B90124] w-fit font-semibold md:leading-none text-center text-[clamp(15px,7.5vw,60px)] md:text-[clamp(20px,2.5vw,50px)]"
         >
           Flip The Pages of Our Inception Story
-          <Image src={lineImg} alt="" className="ml-auto" />
+          <Image
+            src={lineImg}
+            alt=""
+            className="mx-auto md:ml-auto md:mr-0 w-[50%] md:w-fit"
+          />
         </h3>
-        <div className="w-full flex py-8 md:py-20 flex-col gap-4 md:gap-10">
-          {section.map((section, index) => (
-            <div
-              key={index}
-              className={`flex ${
-                index % 2 === 0
-                  ? "flex-col md:flex-row"
-                  : "flex-col md:flex-row-reverse"
-              } gap-8 md:gap-20`}
-            >
-              <div className="relative w-full md:w-[50%] mx-auto group overflow-hidden">
-                <div className="w-full h-full ">
-                  <Image
-                    src={section.image}
-                    alt=""
-                    className="w-full h-full object-cover transition-all duration-300 group-hover:scale-110 group-hover:opacity-80"
-                  />
-                  {/* Animated border */}
-                  {!isMobile && (
-                    <>
-                      <div className="absolute block bottom-10 left-10 h-full w-[1px] bg-white transition-all duration-500 ease-in-out group-hover:left-0 group-hover:bottom-0"></div>
-                      <div className="absolute block bottom-10 left-10 h-[1px] w-full bg-white transition-all duration-500 ease-in-out group-hover:left-0 group-hover:bottom-0"></div>
-                    </>
-                  )}
-                </div>
-              </div>
-              <div className="flex w-full flex-col items-start justify-center text-black">
-                <h3
-                  className="w-full text-[#212121] font-normal border-b border-[#b90124] pb-4 md:pb-8 text-[clamp(16px,1.3vw,40px)]"
-                  style={{
-                    fontFamily: "TT Chocolates",
-                  }}
-                >
-                  {section.description}
-                </h3>
-              </div>
+
+        <div className={`flex flex-col md:flex-row gap-8 md:gap-20`}>
+          <div className="relative w-[80%] md:w-[50%] mx-auto group overflow-hidden">
+            <div className="w-full h-full ">
+              <Image
+                src={Sunil}
+                alt=""
+                className="w-full h-full object-cover transition-all duration-300 md:group-hover:scale-110 md:group-hover:opacity-80"
+              />
+              {/* Animated border */}
+              {!isMobile && (
+                <>
+                  <div className="absolute block bottom-10 left-10 h-full w-[1px] bg-white transition-all duration-500 ease-in-out md:group-hover:left-0 md:group-hover:bottom-0"></div>
+                  <div className="absolute block bottom-10 left-10 h-[1px] w-full bg-white transition-all duration-500 ease-in-out md:group-hover:left-0 md:group-hover:bottom-0"></div>
+                </>
+              )}
             </div>
-          ))}
+          </div>
+          <div className="flex w-full flex-col items-start justify-center text-black">
+            <h3
+              className="w-full text-[#212121] font-normal border-b-2 border-[#b90124] pb-4 md:pb-8 text-[clamp(10px,4.5vw,50px)] md:text-[clamp(16px,1.3vw,40px)]"
+              style={{
+                fontFamily: "TT Chocolates",
+              }}
+            >
+              In 2004,{" "}
+              <strong className="text-[#b90124]">Sunil Kumar Jain</strong>{" "}
+              (Founder, Chairman) stepped into the world of education, driven by
+              a belief that every student deserved more than just a
+              classroom—they deserved a stage to grow, dream, and thrive. His
+              journey began with the Rishabh Trust and was followed by the
+              foundation of Tula’s Institute, a college that quickly became
+              known for its excellence in engineering and management education. 
+            </h3>
+          </div>
         </div>
+        <div
+          className={`flex flex-col md:flex-row-reverse py-8 md:py-20 gap-8 md:gap-20`}
+        >
+          <div className="relative w-full md:w-[80%] mx-auto md:group overflow-hidden">
+            <div className="w-full h-full ">
+              <Image
+                src={school}
+                alt=""
+                className="w-full h-full object-cover transition-all duration-300 md:group-hover:scale-110 md:group-hover:opacity-80"
+              />
+              {/* Animated border */}
+              {!isMobile && (
+                <>
+                  <div className="absolute block bottom-10 right-10 h-full w-[1px] bg-white transition-all duration-500 ease-in-out md:group-hover:right-0 md:group-hover:bottom-0"></div>
+                  <div className="absolute block bottom-10 right-10 h-[1px] w-full bg-white transition-all duration-500 ease-in-out md:group-hover:right-0 md:group-hover:bottom-0"></div>
+                </>
+              )}
+            </div>
+          </div>
+          <div className="flex w-full flex-col items-start justify-center text-black">
+            <h3
+              className="w-full text-[#212121] font-normal border-b-2 border-[#b90124] pb-4 md:pb-8 text-[clamp(10px,4.5vw,50px)] md:text-[clamp(16px,1.3vw,40px)]"
+              style={{
+                fontFamily: "TT Chocolates",
+              }}
+            >
+              But even as the corridors of Tula’s Institute echoed with the
+              aspirations of countless students, Mr. Jain felt there was more to
+              be done. 
+              <br />
+              <br />
+              Dehradun, a city steeped in the legacy of education, had long been
+              a hub for learning. Yet, Mr. Jain envisioned something different:
+              a school that didn’t just educate but inspired—a place that
+              celebrated individuality of each student.
+            </h3>
+          </div>
+        </div>
+        <div className={`flex flex-col gap-8 md:gap-20`}>
+          <div className="relative w-full aspect-square md:aspect-auto mx-auto md:group overflow-hidden">
+            <div className="w-full h-full ">
+              <Image
+                src={Image2012}
+                alt=""
+                className="w-full h-full object-cover transition-all duration-300 md:group-hover:scale-110 md:group-hover:opacity-80"
+              />
+              {/* Animated border */}
+              {!isMobile && (
+                <>
+                  <div className="absolute block bottom-10 right-0 h-[1px] w-full bg-white transition-all duration-500 ease-in-out md:group-hover:right-0 md:group-hover:bottom-0"></div>
+                </>
+              )}
+            </div>
+          </div>
+          <div className="flex w-full md:w-[70%] mx-auto flex-col items-start justify-center text-black">
+            <h3
+              className="w-full text-[#212121] font-normal border-b-2 border-[#b90124] pb-4 md:pb-8 text-[clamp(10px,4.5vw,50px)] md:text-[clamp(16px,1.3vw,40px)]"
+              style={{
+                fontFamily: "TT Chocolates",
+              }}
+            >
+              In 2012, he turned that dream into reality with the inception of
+              Tula’s International School. It wasn’t just a school; it was a
+              bold step into the unconventional. A co-educational, vegetarian
+              boarding school—rare at the time—that challenged the norms and
+              placed balance at its core.
+              <br />
+              <br />
+              It wasn't easy but Mr. Jain knew that this risk was worth taking.
+              He envisioned a school where students could learn in a setting
+              that was not only intellectually stimulating but also deeply
+              aligned with values like compassion, sustainability, and respect
+              for nature.
+              <br />
+              <br />
+              He believed that education wasn’t about filling minds with
+              knowledge but about shaping lives with purpose.  
+            </h3>
+          </div>
+        </div>
+        <div
+          className={`flex flex-col md:flex-row pt-8 md:pt-20 gap-4 md:gap-20`}
+        >
+          <div className="relative w-full md:w-[40%] aspect-[1/1] md:aspect-auto mx-auto md:group overflow-hidden">
+            <div className="w-full h-full ">
+              <Image
+                src={silky}
+                alt=""
+                className="w-fit md:w-full mx-auto h-full object-cover  transition-all duration-300 md:group-hover:scale-110 md:group-hover:opacity-80"
+              />
+              {/* Animated border */}
+              {!isMobile && (
+                <>
+                  <div className="absolute block bottom-0 left-10 h-full w-[1px] bg-white transition-all duration-500 ease-in-out md:group-hover:left-0 md:group-hover:bottom-0"></div>
+                </>
+              )}
+            </div>
+          </div>
+          <div className="flex w-full flex-col items-start justify-center text-black">
+            <h3
+              className="w-full text-[#212121] md:text-justify font-normal border-b-2 border-[#b90124] pb-4 md:pb-8 text-[clamp(10px,4.5vw,50px)] md:text-[clamp(16px,1.3vw,40px)]"
+              style={{
+                fontFamily: "TT Chocolates",
+              }}
+            >
+              As the school grew, so did the dream. The baton was passed to the
+              next generation. Raunak Jain (Vice Chairman), a visionary molded
+              by international education at the Royal Holloway University of
+              London, brought a global lens to the institution. He dreamed of
+              giving students the tools to thrive in a connected, tech-driven
+              world. Alongside him, Silky Jain Marwah (Executive Director)—an
+              alumna of Symbiosis and a leader honed by Harvard and Oxford—wove
+              in creativity, leadership, and innovation. Together, they brought
+              a modern vibrancy to Tula’s, blending traditional values with
+              progress.  
+              <br />
+              <br />
+              Today, Tula’s International School stands as a testament to the
+              power of vision and collaboration across generations. 
+            </h3>
+          </div>
+          <div className="relative w-full md:w-[40%] aspect-[1/1] md:aspect-auto mx-auto md:group overflow-hidden">
+            <div className="w-full h-full ">
+              <Image
+                src={Raunak}
+                alt=""
+                className="w-fit md:w-full mx-auto h-full object-cover transition-all duration-300 md:group-hover:scale-110 md:group-hover:opacity-80"
+              />
+              {/* Animated border */}
+              {!isMobile && (
+                <>
+                  <div className="absolute block bottom-0 right-10 h-full w-[1px] bg-white transition-all duration-500 ease-in-out md:group-hover:right-0 md:group-hover:bottom-0"></div>
+                </>
+              )}
+            </div>
+          </div>
+        </div>
+        <h3 className="text-[#B90124] pt-8 font-[TTChocolatesBold] md:pt-20 uppercase text-center w-fit text-[clamp(15px,6.5vw,60px)] md:text-[clamp(20px,1.8vw,50px)]">
+          “ A story of belief, courage, and the relentless pursuit of
+          excellence. “<br />
+          <span
+            style={{
+              fontFamily: "TT Chocolates",
+            }}
+            className="text-[#5E5E5E] font-semibold capitalize"
+          >
+            This is the story of TULA’s
+          </span>
+        </h3>
       </div>
-
-      {/* <div className="our-history-desc">
-        <p className="our-history-desc-p">
-          Tulas International School (TIS) was founded with the goal of
-          providing students with a world-class education while also encouraging
-          complete growth. <br />
-          <br />
-          The recognized Tula&apos;s Group is known for its commitment to
-          academic quality and innovative learning approaches, laying the
-          foundation stone for TIS in 2012.
-        </p>
-
-         <div className="carousel-container">
-          <CarouselCard
-            title="#1"
-            description=<>
-              Ranked #1 Best
-              <br /> Boarding School
-              <br /> (Niche 2023 Best <br />
-              High Schools)
-            </>
-          />
-          <CarouselCard title="341" description="students" />
-          <CarouselCard title="4:1" description="student:adult ratio" />
-          <CarouselCard
-            title="37%"
-            description=<>
-              of students receive
-              <br /> financial aid
-            </>
-          />
-          <CarouselCard
-            title="91%"
-            description=<>
-              of faculty hold
-              <br /> advanced degrees
-            </>
-          />
-          <CarouselCard
-            title="100+"
-            description=<>
-              sports, activities,
-              <br /> and clubs
-            </>
-          />
-        </div> 
-      </div>*/}
-      {/* <div className="our-history-main-content">
-        <div className="our-history-main">
-          <Image src={Sunil} alt="" />
-          <div className="content-history">
-            <h3>2004</h3>
-            <h5>
-              The Rishabh Educational Trust, founded in 2004, is committed to
-              enhancing the welfare of young people and positively contributing
-              to society. Since its foundation, the trust has been dedicated to
-              providing opportunities and support systems for young people,
-              guaranteeing their growth and development.
-            </h5>
-          </div>
-        </div>
-        <div className="our-history-main">
-          {isMobile && <Image src={Image2006} alt="" />}
-          <div className="content-history">
-            <h3>2006</h3>
-            <h4>
-              “ Tula&apos;s Institute was founded in 2006 by Rishabh Educational
-              Trust. The College is recognised as the Top Engineering and
-              Management College in Dehradun, Uttarakhand, to ensure the best
-              education and excellence in academic programs from the
-              undergraduate to the postgraduate level. ”
-            </h4>
-            <h5>
-              The courses offered are B.Tech, B.B.A., M.Tech, B.C.A., M.C.A.,
-              B.Com (Honours), B.Sc (Agriculture & Forestry), Diploma
-              (Polytechnic), B.J.M.C. Tula&apos;s endeavours to create a
-              well-suited atmosphere for the students to nurture their talent
-              through experienced faculty guidance and support along with access
-              to state of the art infrastructure
-            </h5>
-          </div>
-          {!isMobile && <Image src={Image2006} alt="" />}
-        </div>
-        <div className="our-history-main">
-          <Image src={Image2012} alt="" />
-          <div className="content-history">
-            <h3>2012</h3>
-            <h5>
-              Tula&apos;s International School was formed in 2012 by the Rishabh
-              Educational Trust with the goal of creating an exceptional
-              international boarding school that provides seamless educational
-              possibilities. Tula&apos;s, which is affiliated with the CBSE
-              board, has swiftly established itself as one of Dehradun&apos;s
-              finest boarding schools. Our supportive environment, nestled in a
-              stunning setting, serves as the ideal backdrop for comprehensive
-              learning and growth. Tula&apos;s is committed to helping young
-              brains grow, transforming them into great minds prepared for the
-              future.
-            </h5>
-          </div>
-        </div>
-
-        <br></br>
-        <div className="ready-div">
-          <h1 className="ready">Ready to see if TULA’S is made for you?</h1>
-          <button id="extraedge-popup2" className="Start">
-            START YOUR JOURNEY TODAY!
-          </button>
-          <Image className="img-line" src={lineImg} alt="" />
-          <h2 className="Tulas-p">
-            Tula&apos;s International School (TIS) is where intellectual
-            adventures begin and extend into the world. Founded with the aim of
-            providing students with top-notch education while encouraging
-            overall growth, TIS stands as a beacon of excellence and innovation.
-          </h2>
-          <br />
-        </div>
-      </div> */}
     </>
   );
 }

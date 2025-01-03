@@ -17,7 +17,7 @@
   color: #fff;
   font-family: Mirador;
   padding-bottom: 2rem;
-  font-size: 60px;
+  font-size: clamp(20px, 2.5vw, 50px);
   font-style: italic;
   font-weight: 900;
   line-height: normal; /* 108.065% */
@@ -34,41 +34,32 @@
 }
 .top-heading {
   text-align: center;
-  width: 60%;
+  width: 70%;
   color: white;
   font-weight: 700;
   font-family: "Mirador";
   font-style: italic;
-  font-size: 35px;
+  font-size: clamp(15px, 1.8vw, 60px);
   margin: 0 auto;
-}
-@media (max-width: 1550px) {
-  .heading {
-    font-size: 55px;
-    padding-bottom: 1.5rem;
-  }
-  .top-heading {
-    font-size: 30px;
-  }
 }
 @media (max-width: 768px) {
   .banner {
-    min-height: 45vh;
+    min-height: 83vh;
   }
   .heading-outer {
-    height: 33vh;
+    height: 60vh;
   }
   .heading {
-    font-size: 20px;
+    font-size: clamp(15px, 7.5vw, 60px);
     padding-bottom: 1rem;
   }
   .top-heading {
-    font-size: 12px;
-    width: 80%;
+    font-size: clamp(15px, 4.5vw, 60px);
+    width: 85%;
     font-family: Mirador100;
     font-weight: 300;
   }
   .top {
-    min-height: 12vh;
+    min-height: 23vh;
   }
 }
