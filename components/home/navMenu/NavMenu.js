@@ -69,7 +69,7 @@ function NavMenu({ handleMenuBtn }) {
   const [nestedLinksVisible, setNestedLinksVisible] = useState(false);
   const [activeLink, setActiveLink] = useState();
   const [rightDivOpacity, setRightDivOpacity] = useState(1);
-
+  const { utmParams } = useContext(UtmContext);
   useEffect(() => {
     if (nestedLinksVisible === true) {
       setRightDivOpacity(0.3);
