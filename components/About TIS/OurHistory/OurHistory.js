@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Sunil from "../../../public/ourhistory/Sunil.png";
-import Image2006 from "../../../public/ourhistory/2006.jpg";
+import school from "../../../public/ourhistory/school.png";
 import Image2012 from "../../../public/ourhistory/2012.jpg";
 import Header from "../../globalComponents/Header/Header";
 import "../../../styles/About Tis/ourHistory.css";
@@ -15,6 +15,38 @@ export default function OurHistory() {
   const subTitle =
     "Tula's International School serves as the starting point for intellectual explorations that simultaneously extend into the broader world.";
   const { isMobile } = useMobile();
+  const section = [
+    {
+      image: Sunil,
+      description: (
+        <>
+          In 2004, <strong className="text-[#b90124]">Sunil Kumar Jain</strong>{" "}
+          (Founder, Chairman) stepped into the world of education, driven by a
+          belief that every student deserved more than just a classroom—they
+          deserved a stage to grow, dream, and thrive. His journey began with
+          the Rishabh Trust and was followed by the foundation of Tula’s
+          Institute, a college that quickly became known for its excellence in
+          engineering and management education. 
+        </>
+      ),
+    },
+    {
+      image: school,
+      description: (
+        <>
+          But even as the corridors of Tula’s Institute echoed with the
+          aspirations of countless students, Mr. Jain felt there was more to be
+          done. 
+          <br />
+          <br />
+          Dehradun, a city steeped in the legacy of education, had long been a
+          hub for learning. Yet, Mr. Jain envisioned something different: a
+          school that didn’t just educate but inspired—a place that celebrated
+          individuality of each student.
+        </>
+      ),
+    },
+  ];
 
   return (
     <>
@@ -23,7 +55,7 @@ export default function OurHistory() {
         subtitle={subTitle}
         headerImg={headerHistoryImg}
       />
-      <div className="py-8 w-[70%] mx-auto md:py-20 flex flex-col justify-center items-center">
+      <div className="py-8 w-[85%] md:w-[70%] mx-auto md:py-20 flex flex-col justify-center items-center">
         <h3
           style={{
             fontFamily: "TT Chocolates",
@@ -33,39 +65,44 @@ export default function OurHistory() {
           Flip The Pages of Our Inception Story
           <Image src={lineImg} alt="" className="ml-auto" />
         </h3>
-        <div className={`flex gap-20 py-8 md:py-20`}>
-          <div className="relative w-[50%] mx-auto group overflow-hidden">
-            <div className="w-full h-full ">
-              <Image
-                src={Sunil}
-                alt=""
-                className="w-full h-full object-cover transition-all duration-300 group-hover:scale-110 group-hover:opacity-80"
-              />
-              {/* Animated border */}
-              {!isMobile && (
-                <>
-                  <div className="absolute block bottom-10 left-10 h-full w-[1px] bg-white transition-all duration-500 ease-in-out group-hover:left-0 group-hover:bottom-0"></div>
-                  <div className="absolute block bottom-10 left-10 h-[1px] w-full bg-white transition-all duration-500 ease-in-out group-hover:left-0 group-hover:bottom-0"></div>
-                </>
-              )}
-            </div>
-          </div>
-          <div className="flex w-full flex-col items-start justify-center text-black">
-            <h3
-              className="w-full text-[#212121] font-normal text-[clamp(16px,1.3vw,40px)]"
-              style={{
-                fontFamily: "TT Chocolates",
-              }}
+        <div className="w-full flex py-8 md:py-20 flex-col gap-4 md:gap-10">
+          {section.map((section, index) => (
+            <div
+              key={index}
+              className={`flex ${
+                index % 2 === 0
+                  ? "flex-col md:flex-row"
+                  : "flex-col md:flex-row-reverse"
+              } gap-8 md:gap-20`}
             >
-              In 2004, <span className="text-[#b90124]">Sunil Kumar Jain</span>{" "}
-              (Founder, Chairman) stepped into the world of education, driven by
-              a belief that every student deserved more than just a
-              classroom—they deserved a stage to grow, dream, and thrive. His
-              journey began with the Rishabh Trust and was followed by the
-              foundation of Tula’s Institute, a college that quickly became
-              known for its excellence in engineering and management education. 
-            </h3>
-          </div>
+              <div className="relative w-full md:w-[50%] mx-auto group overflow-hidden">
+                <div className="w-full h-full ">
+                  <Image
+                    src={section.image}
+                    alt=""
+                    className="w-full h-full object-cover transition-all duration-300 group-hover:scale-110 group-hover:opacity-80"
+                  />
+                  {/* Animated border */}
+                  {!isMobile && (
+                    <>
+                      <div className="absolute block bottom-10 left-10 h-full w-[1px] bg-white transition-all duration-500 ease-in-out group-hover:left-0 group-hover:bottom-0"></div>
+                      <div className="absolute block bottom-10 left-10 h-[1px] w-full bg-white transition-all duration-500 ease-in-out group-hover:left-0 group-hover:bottom-0"></div>
+                    </>
+                  )}
+                </div>
+              </div>
+              <div className="flex w-full flex-col items-start justify-center text-black">
+                <h3
+                  className="w-full text-[#212121] font-normal border-b border-[#b90124] pb-4 md:pb-8 text-[clamp(16px,1.3vw,40px)]"
+                  style={{
+                    fontFamily: "TT Chocolates",
+                  }}
+                >
+                  {section.description}
+                </h3>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 
