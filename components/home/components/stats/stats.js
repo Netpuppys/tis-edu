@@ -4,7 +4,7 @@ import campus from "../../../../public/statsNew/campus.png";
 import sports from "../../../../public/statsNew/sports.png";
 import image1 from "../../../../public/statsNew/image1.png";
 import medical from "../../../../public/statsNew/medical.png";
-import image2 from "../../../../public/statsNew/image2.png";
+import image2 from "../../../../public/statsNew/image2.webp";
 import ratio from "../../../../public/statsNew/ratio.png";
 import image3 from "../../../../public/statsNew/image3.png";
 import years from "../../../../public/statsNew/years.png";

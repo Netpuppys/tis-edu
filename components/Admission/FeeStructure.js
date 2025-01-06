@@ -3,15 +3,15 @@ import React from "react";
 import Image from "next/image";
 import yellowLine from "../../public/pictures/lineImg.png";
 import Header from "../globalComponents/Header/Header";
+import feesFlow from "../../public/pictures/fees-flow.png";
 import HeaderFeesImg from "../../public/Header/FeesStructureHeader.png";
 import "../../styles/Admission/FeeStructure.css";
 import feesIndia from "../../public/pictures/fee-structureIndia.png";
 import feesForeign from "../../public/pictures/fee-structureForeign.png";
-import { useMobile } from "../globalComponents/IsMobileContext";
 import FeesIndia from "../../public/MandatoryPDF/TIS-FEE-STRUCTURE-2024-25.pdf";
 import FeesNRI from "../../public/MandatoryPDF/NRI-TIS-FEE-STRUCTURE.pdf";
-import yellowlineHeading from "../../public/YellowLineHeading.svg";
-const Table = () => {
+
+function FeeStructure() {
   const data = [
     { name: "Bank Name-", amount: "PUNJAB NATIONAL BANK" },
     {
@@ -24,54 +24,6 @@ const Table = () => {
     { name: "MICR Code:", amount: "248024059" },
     { name: "SWIFT Code:", amount: "PUNBINBBDPR" },
   ];
-  const { isMobile } = useMobile();
-
-  return (
-    <table
-      style={{
-        borderCollapse: "collapse",
-        width: isMobile ? "100%" : "80%",
-        marginLeft: "auto",
-        marginRight: "auto",
-      }}
-    >
-      <thead>
-        <tr></tr>
-      </thead>
-      <tbody
-        style={{
-          marginLeft: "auto",
-          marginRight: "auto",
-        }}
-      >
-        {data.map((item, index) => (
-          <tr key={index}>
-            <td
-              style={{
-                textAlign: "left",
-                padding: isMobile ? "8px" : "20px",
-                color: "#b90124",
-              }}
-            >
-              {item.name}
-            </td>
-            <td
-              style={{
-                textAlign: "left",
-                padding: isMobile ? "8px" : "20px",
-                color: "#000",
-              }}
-            >
-              {item.amount}
-            </td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-};
-function FeeStructure() {
-  const { isMobile } = useMobile();
 
   const heading = (
     <>
@@ -85,49 +37,52 @@ function FeeStructure() {
         headerImg={HeaderFeesImg}
         title={"Fee Structure"}
         subtitle={
-          "Tula's International School offers a clear and comprehensive fee structure, ensuring transparency for all families."
+          "Every parent dreams of the best for their child, and at Tula's International School we ensure that the dream is within reach with a fee structure that’s fair and transparent."
         }
       />
 
-      <div className="fees">
+      <div className="w-[90%] md:w-[60%] pt-8 md:pt-20 mx-auto text-[clamp(20px,6.5vw,50px)] md:text-[clamp(20px,2.5vw,50px)] mt-4 text-center font-bold font-[Mirador800]">
         {heading}
-        <Image className="yellow-line-heading" src={yellowLine} alt="" />
-      </div>
-      <br />
-      {!isMobile && <br />}
-      <br />
-      <p className="fees-text">
-        The fees include school fee, imprest money, one-time fee and a security
-        deposit. The school fee includes boarding & lodging, tuition, textbooks,
-        extracurricular fee and basic laundry.
-      </p>
-      {!isMobile && <br />}
-      {!isMobile && <br />}
-      {!isMobile && <br />}
-      <div className="fees-structure">
         <Image
-          onClick={() => window.open(FeesIndia, "_blank")}
-          className="fee-India"
-          src={feesIndia}
-          alt=""
-        />
-        <Image
-          onClick={() => window.open(FeesNRI, "_blank")}
-          className="fee-Foreign"
-          src={feesForeign}
+          className="w-fit ml-auto md:mr-20 max-w-[60%]"
+          src={yellowLine}
           alt=""
         />
       </div>
-      <div className="feeee">
-        <h2>
-          Mode of{" "}
-          <span>
-            Payment
-            <Image src={yellowlineHeading} alt="" />
-          </span>
+      <Image src={feesFlow} alt="" className="w-[90%] md:w-[80%] mx-auto" />
+      <div className="flex mx-auto w-[90%] md:w-[80%] flex-col md:flex-row items-center justify-center pt-8 gap-8">
+        <div className="w-full">
+          <Image
+            onClick={() => window.open(FeesIndia, "_blank")}
+            src={feesIndia}
+            alt=""
+          />
+        </div>
+        <div className="w-full">
+          <Image
+            onClick={() => window.open(FeesNRI, "_blank")}
+            src={feesForeign}
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div className="py-8 md:py-20">
+        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+          Mode of <span className="text-[#b90124]">Payment</span>
+          <Image
+            className="ml-auto w-fit max-w-[60%]"
+            src={yellowLine}
+            alt=""
+          />
         </h2>
-        <div className="redbox">
-          <ul>
+        <h2
+          style={{
+            fontFamily: "TT Chocolates",
+          }}
+          className="w-[90%] md:w-[60%] mx-auto rounded-3xl mt-4 md:mt-8 text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)]"
+        >
+          <ul className="ml-5 list-disc">
             <li>
               The parent can deposit the fee through Demand Draft in the favour
               of TULA’S INTERNATIONAL SCHOOL payable at Punjab National Bank,
@@ -137,20 +92,51 @@ function FeeStructure() {
             <br />
             <li> The Fee can also be deposited by Cheque or Bank Transfer.</li>
           </ul>
-        </div>
-      </div>
-      <br />
-      <div className="feeee">
-        <h2>
-          Bank Details
-          <Image src={yellowlineHeading} alt="" />
         </h2>
-        <div className="redboxBank">
-          <span>Bank Account Details to deposit the ‘School-Fee’</span>
-          <br />
-          <br />
-
-          <Table />
+      </div>
+      <div className="py-8 md:py-20">
+        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+          Bank Details
+          <Image
+            className="ml-auto w-fit max-w-[60%]"
+            src={yellowLine}
+            alt=""
+          />
+        </h2>
+        <h2
+          style={{
+            fontFamily: "TT Chocolates",
+          }}
+          className="w-[90%] md:w-[60%] text-center text-[#b90124] mx-auto rounded-3xl mt-4 md:mt-8 text-[clamp(15px,5vw,30px)] md:text-[clamp(18px,1.8vw,45px)]"
+        >
+          Bank Account Details to deposit the ‘School-Fee’
+        </h2>
+        <div
+          style={{
+            fontFamily: "TT Chocolates",
+          }}
+          className="border-2 rounded-2xl flex md:items-center md:justify-center border-[#b90124] w-[90%] md:min-w-[60%] md:max-w-[900px] mx-auto overflow-scroll md:overflow-hidden mt-4 text-[15px] md:text-[clamp(18px,1.3vw,45px)]"
+        >
+          <div className="min-w-[180px] w-full md:min-w-[240px] md:w-[30%] shadow-[0px_4px_37.6px_0px_rgba(0,0,0,0.25)_inset] bg-[#b90124] text-white rounded-r-2xl">
+            {data.map((data, index) => (
+              <div
+                key={index}
+                className="p-2 md:p-4 border-b-2 border-[#b90124] last:border-0"
+              >
+                <div>{data.name}</div>
+              </div>
+            ))}
+          </div>
+          <div className="min-w-[370px] w-full md:w-[70%]">
+            {data.map((data, index) => (
+              <div
+                key={index}
+                className="p-2 md:p-4 border-b-2 border-[#b90124] last:border-0"
+              >
+                {data.amount}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </>

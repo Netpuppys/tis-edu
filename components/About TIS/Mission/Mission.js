@@ -6,6 +6,8 @@ import Header from "../../globalComponents/Header/Header";
 import headerMissionImg from "../../../public/Header/VisionHeader.jpg";
 import headerMissionMobileImg from "../../../public/Header/VisionHeaderMobile.jpg";
 import missionVision from "../../../public/vision/visionDesktop.png";
+import missionVision1 from "../../../public/pictures/image1.webp";
+import missionVision2 from "../../../public/pictures/image2.webp";
 import yellowLine from "../../../public/vision/yellowLine.png";
 export default function Mission() {
   const { isMobile } = useMobile();
@@ -57,7 +59,7 @@ export default function Mission() {
           </ul>
         </>
       ),
-      image: missionVision,
+      image: missionVision1,
     },
     {
       title: "Community Values",
@@ -83,7 +85,7 @@ export default function Mission() {
           top boarding school in Dehradun and a leader in holistic education.
         </>
       ),
-      image: missionVision,
+      image: missionVision2,
     },
   ];
   return (
@@ -120,7 +122,7 @@ export default function Mission() {
               </div>
             </div>
             <div className="flex w-full flex-col items-start justify-center text-black">
-              <h2 className="w-full text-[#212121] font-[Mirador] italic text-[clamp(20px,2.5vw,100px)]">
+              <h2 className="w-full text-[#212121] font-[Mirador800] italic text-[clamp(20px,2.5vw,100px)]">
                 {section.title}
               </h2>
               <h3

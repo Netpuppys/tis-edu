@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 import Header from "../globalComponents/Header/Header";
-import HeaderSportsImg from "../../public/Header/SportsHeader.png";
+import HeaderSportsImg from "../../public/Header/SPORTS.webp";
 import "../../styles/BeyondAcademics/sports.css";
 import Archiery from "./Sports/Archiery";
 import Cycling from "./Sports/Cycling";

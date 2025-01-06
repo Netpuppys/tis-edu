@@ -123,10 +123,10 @@ const Navbar = () => {
       title: "Admission",
       nestedLinks: [
         { title: "Admission Procedure", linkTo: "/admission-procedure/" },
-        {
-          title: "Registration Process",
-          linkTo: "/admission-procedure/registration-form/",
-        },
+        // {
+        //   title: "Registration Process",
+        //   linkTo: "/admission-procedure/registration-form/",
+        // },
         {
           title: "Pay Fee Online",
           linkTo: "https://pages.razorpay.com/pl_EehyEVeDo25wMd/view",
@@ -279,8 +279,8 @@ const Navbar = () => {
         )}
         <div className="form-btn-container">
           <a
-            href="https://admission.tis.edu.in"
-            target="_blank"
+            href={`https://admission.tis.edu.in${utmParams}`}
+            // target="_blank"
             className="form-open-btn"
           >
             APPLY NOW

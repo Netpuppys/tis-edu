@@ -2,76 +2,157 @@
 import React from "react";
 import Header from "../globalComponents/Header/Header";
 import HeaderScholarShipImg from "../../public/Header/ScholarshipHeader.png";
-import yellowLine from "../../public/YellowLineTitle.png";
+import yellowLine from "../../public/pictures/lineImg.png";
 import "../../styles/Admission/Tution.css";
-import megha from "../../public/pictures/magha.png";
 import Image from "next/image";
+import megha from "../../public/pictures/magha.png";
 import shubham from "../../public/pictures/shubham.png";
 import kushi from "../../public/pictures/kushi.png";
 import nihal from "../../public/pictures/nihal.png";
+import petal1 from "../../public/pictures/petal.png";
 import { useMobile } from "../globalComponents/IsMobileContext";
-import Link from "next/link";
+
 function TutionAndFianance() {
-  const { isMobile } = useMobile();
+  const data = [
+    {
+      image: megha,
+      title: "MEGHA SARKAR",
+      description: (
+        <>
+          The objective of Leelavati Memorial Scholarship is to provide
+          financial assistance to promote girl child education in India. These
+          scholarships for girls are intended to encourage girl students to not
+          only attend school, but to succeed thereafter. Transferred from
+          Tripura to Dehradun on the basis of academic performance, Megha Sarkar
+          proved the school’s decision right and scored 10 CGPA in her 10th
+          class CBSE board exams.
+        </>
+      ),
+    },
+    {
+      image: shubham,
+      title: "SHUBHAM",
+      description: (
+        <>
+          When you focus on problems you will have more problems, when you focus
+          on possibilities you will have more opportunities. Master Shubham was
+          searching for the same kind of the opportunity where he could get a
+          platform to prove himself. He had a face to face interaction with the
+          Director and with his excellent skills, he availed a scholarship. He
+          was an excellent football player and also changed his discipline from
+          CIE to CBSE and we supported him in his decision by giving him a high
+          amount of scholarship for the coming two years. Making the decision
+          right he emerged as the torch bearer of the school, becoming the Head
+          Boy and proudly performing his duties.
+        </>
+      ),
+    },
+    {
+      image: kushi,
+      title: "KUSHI SINGHANIA",
+      description: (
+        <>
+          On the basis of good academic performance in her previous school in
+          Kathmandu, Nepal, she became eligible for a scholarship and was
+          admitted to the school.
+        </>
+      ),
+    },
+    {
+      image: nihal,
+      title: "NIHAL JAISWAL",
+      description: (
+        <>
+          As a single parent, paying for school can be really difficult. Single
+          parent scholarships are especially beneficial for single mothers who
+          sometimes have to give up on their and their child’s academic dreams
+          because of the financial constraints. Master Nihal Jaiswal is one of
+          the students who got this chance and was given a healthy scholarship
+          from the management. We brought a smile on his and his mother’s face
+          which shows the school’s commitment to the society.
+        </>
+      ),
+    },
+  ];
   return (
     <>
       <Header
         title={"Scholarship Programs"}
         headerImg={HeaderScholarShipImg}
         subtitle={
-          "Tula's International School provides various scholarship programs to support and recognize student excellence."
+          "At Tula’s International School, scholarships are more than financial aid—they’re our commitment to recognizing the dedication and ambition of students with the potential to excel."
         }
       />
-      <div className="ScholarshipPolicy">
-        <div className="main-title">
-          <br />
+      <div className="pt-8 md:pt-20">
+        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           Scholarship &{" "}
-          <span>
+          <span className="text-[#b90124]">
             Concession Policy
-            <Image className="yellow-line-title" alt="" src={yellowLine} />
+            <Image
+              className="ml-auto w-fit max-w-[60%]"
+              src={yellowLine}
+              alt=""
+            />
           </span>
-        </div>
-        <div className="text-box">
-          <p className="text">
-            ”Our selection process is designed to recognize meritorious students
-            in the field of Academic, Sports, Creative & Performing Arts. 
-            Tula’s also offers “Scholarship” – to top students who exhibit
-            additional qualities such as exemplary character, integrity,
-            leadership and will share the values of our school community.” –
-            Robin Kumar Chhetri (Dean of Admissions)
-          </p>
-        </div>
+        </h2>
+        <h2
+          style={{
+            fontFamily: "TT Chocolates",
+          }}
+          className="w-[90%] md:w-[60%] mx-auto mt-4 md:mt-8 text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)]"
+        >
+          At Tula’s, our scholarship selection process is focused on recognizing
+          excellence in academics, sports, and the creative & performing arts.
+          We also award scholarships to students who go beyond their
+          achievements, demonstrating exceptional character, integrity,
+          leadership, and a strong alignment with the values that define our
+          school community.
+        </h2>
       </div>
-      <div className="ScholarshipPolicy">
-        <div className="main-title">
-          <br />
+      <div className="pt-8 md:pt-20">
+        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           Tula’s Scholarship Assessment{" "}
-          <span>
+          <span className="text-[#b90124]">
             (T.S.A.)
-            <Image className="yellow-line-title" alt="" src={yellowLine} />
+            <Image
+              className="ml-auto w-fit max-w-[60%]"
+              src={yellowLine}
+              alt=""
+            />
           </span>
-        </div>
-        <div className="text-box">
-          <p className="text">
-            TIS provides various scholarship programs for Academic & Sports
-            oriented students.  All candidates with exceptional Academic or
-            Sports records can apply for this scholarship.
-            <br />
-            <br />
-            <span>Eligibility:-</span>
-            <br />
-            <br />
-            1. 2 years of academic report card / Sports certificates (State &
-            National)
-            <br /> 2. Need to qualify for Tula’s Scholarship Assessment
-            (T.S.A.) with 95% and Interview for an academic scholarship.
-            <br />
-            3. Candidate applying for Sports Scholarship has to obtain 75%
-            in S.A.
-            <br />
-            4. Interview with Academic Supervisor/ Dean of Admission /Head of
-            Sports
-          </p>
+        </h2>
+        <h2
+          style={{
+            fontFamily: "TT Chocolates",
+          }}
+          className="w-[90%] md:w-[60%] mx-auto mt-4 md:mt-8 text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)]"
+        >
+          TIS provides various scholarship programs for Academic & Sports based
+          student.  All candidates with exceptional Academic or Sports records
+          can apply for this scholarship.
+          <br />
+          <br />
+          <strong className="font-[TTChocolatesBold]">Eligibility:-</strong>
+          <br />
+          <br />
+          <ol className="ml-5 list-decimal mb-5">
+            <li>
+              2 years of academic report card / Sports certificates (State &
+              National)
+            </li>
+            <li>
+              Need to qualify for Tula’s Scholarship Assessment (T.S.A.) with
+              95% and Interview for an academic scholarship.
+            </li>
+            <li>
+              Candidate applying for Sports Scholarship has to obtain 75%
+              in S.A.
+            </li>
+            <li>
+              Interview with Academic Supervisor/ Dean of Admission /Head of
+              Sports
+            </li>
+          </ol>
           <table className="scholarship-table">
             <thead>
               <tr>
@@ -92,18 +173,26 @@ function TutionAndFianance() {
               </tr>
             </tbody>
           </table>
-        </div>
+        </h2>
       </div>
-      <div className="ScholarshipPolicy">
-        <div className="main-title">
-          <br />
+      <div className="pt-8 md:pt-20">
+        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           Tula’s Concession{" "}
-          <span>
+          <span className="text-[#b90124]">
             Policy
-            <Image className="yellow-line-title" alt="" src={yellowLine} />
+            <Image
+              className="ml-auto w-fit max-w-[60%]"
+              src={yellowLine}
+              alt=""
+            />
           </span>
-        </div>
-        <div className="text-box">
+        </h2>
+        <h2
+          style={{
+            fontFamily: "TT Chocolates",
+          }}
+          className="w-[90%] md:w-[60%] mx-auto border-2 rounded-3xl mt-4 md:mt-8 p-8 md:p-14  border-[#b90124] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)]"
+        >
           <table className="scholarship-table">
             <thead>
               <tr>
@@ -134,81 +223,99 @@ function TutionAndFianance() {
               </tr>
             </tbody>
           </table>
-
-          <p className="text">
-            <span>Alumna & Alumni Reference:</span> <br />
-            <br /> Tula’s International School welcomes all family members
-            referred by our proud Alumna & Alumni. To avail concession, kindly
-            email an admission request with Name & Batch Year of our Alumni &
-            Alumna. Email at{" "}
-            <a
-              style={{ color: "#B90124" }}
-              href={"mailto:robin.chhetri@tis.edu.in"}
-            >
-              robin.chhetri@tis.edu.in
-            </a>
-            <br />
-            <br />
-            <span>*Note - </span>
-            <br />
-            <br />
-            1. Limited seats are available for approval by the School Management
-            for each category of fee concession& Scholarship.
-            <br />
-            2. Fee Concession is subjected to fee concession policy which can be
-            made available on request to the school management (available only
-            after joining).
-            <br />
-            3. Only one concession could be availed at any given time.
-            <br />
-            4. After above eligibility, School Management holds all decision for
-            scholarship program with limited seat for 20 Students.
-            <br />
-            5. Parent’s need to email Dean of Admissions{" "}
-            <a
-              style={{ color: "#B90124" }}
-              href={"mailto:robin.chhetri@tis.edu.in"}
-            >
-              (robin.chhetri@tis.edu.in)
-            </a>{" "}
-            to avail Tula’s Concession policy.
-            <br />
-            6. Child need to qualify for
-            <br />
-            7. The scholarship will be provided from One Time Fees.
-            <br />
-            <br />
-            Few of the scholarships offered in the previous years.
-          </p>
-
           <br />
-        </div>
-      </div>
-      {!isMobile && (
-        <div className="lineScholar">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="431"
-            height="12"
-            viewBox="0 0 431 12"
-            fill="none"
+          <strong className="font-[TTChocolatesBold]">
+            Alumna & Alumni Reference:
+          </strong>{" "}
+          <br />
+          <br /> Tula’s International School welcomes all family members
+          referred by our proud Alumna & Alumni. To avail concession, kindly
+          email an admission request with Name & Batch Year of our Alumni &
+          Alumna. Email at{" "}
+          <a
+            style={{ color: "#B90124" }}
+            href={"mailto:robin.chhetri@tis.edu.in"}
           >
-            <path
-              d="M0.666667 6C0.666667 8.94552 3.05448 11.3333 6 11.3333C8.94552 11.3333 11.3333 8.94552 11.3333 6C11.3333 3.05448 8.94552 0.666667 6 0.666667C3.05448 0.666667 0.666667 3.05448 0.666667 6ZM420.167 6C420.167 8.94552 422.554 11.3333 425.5 11.3333C428.446 11.3333 430.833 8.94552 430.833 6C430.833 3.05448 428.446 0.666667 425.5 0.666667C422.554 0.666667 420.167 3.05448 420.167 6ZM6 7H425.5V5H6V7Z"
-              fill="#B90124"
-            />
-          </svg>
-        </div>
-      )}
-      <div className="main-heading-text">
+            robin.chhetri@tis.edu.in
+          </a>
+          <br />
+          <br />
+          <strong className="font-[TTChocolatesBold]">*Note - </strong>
+          <br />
+          <br />
+          <ol className="list-decimal ml-5">
+            <li>
+              Limited seats are available for approval by the School Management
+              for each category of fee concession& Scholarship.
+            </li>
+            <li>
+              Fee Concession is subjected to fee concession policy which can be
+              made available on request to the school management (available only
+              after joining).
+            </li>
+            <li>Only one concession could be availed at any given time.</li>
+            <li>
+              After above eligibility, School Management holds all decision for
+              scholarship program with limited seat for 20 Students.
+            </li>
+            <li>
+              {" "}
+              Parent’s need to email Dean of Admissions{" "}
+              <a
+                style={{ color: "#B90124" }}
+                href={"mailto:robin.chhetri@tis.edu.in"}
+              >
+                (robin.chhetri@tis.edu.in)
+              </a>{" "}
+              to avail Tula’s Concession policy.
+            </li>
+            <li>Child need to qualify for</li>
+            <li>The scholarship will be provided from One Time Fees.</li>
+          </ol>
+          <br />
+          Few of the scholarships offered in the previous years.
+        </h2>
+      </div>
+      <div className="flex w-[40%] items-center justify-center mx-auto py-6 md:py-14">
+        <div className="w-2 h-2 bg-[#b90124] aspect-square rounded-full"></div>
+        <div className="h-[2px] w-full bg-[#b90124]"></div>
+        <div className="w-2 h-2 bg-[#b90124] aspect-square rounded-full"></div>
+      </div>
+      <h2
+        style={{
+          fontFamily: "TT Chocolates",
+        }}
+        className="w-[90%] md:w-[60%] mx-auto text-center text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)]"
+      >
         WE ARE PROUD THAT WE COULD MAKE A DIFFERENCE TO THE LIVES OF THESE
         CHILDREN AND THEIR PARENTS AND WILL CONTINUE TO DO SO IN THE UPCOMING
         YEARS
+      </h2>
+      <div
+        style={{
+          fontFamily: "TT Chocolates",
+        }}
+        className="w-full md:w-[70%] mx-auto py-6 md:py-14"
+      >
+        {data.map((data, index) => (
+          <div
+            key={index}
+            className={`flex items-center justify-center pb-10 gap-8 ${
+              index % 2 === 0
+                ? "flex-col md:flex-row"
+                : "flex-col md:flex-row-reverse"
+            }`}
+          >
+            <div className="flex items-end w-fit">
+              <Image src={petal1} className="w-[30%]" alt=" " />
+              <Image src={data.image} alt="" className="rounded-full w-fit" />
+            </div>
+            <h2 className="w-[90%] md:w-full mx-auto text-[clamp(15px,4vw,30px)] md:text-[clamp(14px,1.1vw,45px)]">
+              {data.description}
+            </h2>
+          </div>
+        ))}
       </div>
-      <Image className="imgStudent" alt="" src={megha} />
-      <Image className="imgStudent" alt="" src={shubham} />
-      <Image className="imgStudent" alt="" src={kushi} />
-      <Image className="imgStudent" alt="" src={nihal} />
     </>
   );
 }
