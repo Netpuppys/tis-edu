@@ -3,8 +3,8 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  font-family: Mirador;
-  font-size: 45px;
+  font-family: Mirador800;
+  font-size: clamp(20px, 2.5vw, 50px);
   font-weight: 500;
   padding: 2rem 0rem;
   font-style: italic;
@@ -20,11 +20,9 @@
 }
 .confluence-text {
   display: block;
-  font-family: PF din Display100;
-  font-size: 27px;
+  font-family: TT Chocolates;
+  font-size: clamp(18px, 1.3vw, 45px);
   font-weight: 200;
-  letter-spacing: 0.03em;
-  line-height: 35px;
   color: #000;
   width: 60%;
   margin-left: auto;
@@ -46,7 +44,7 @@
   color: #b90024;
   text-align: center;
   font-family: PF DIN;
-  font-size: 45px;
+  font-size: clamp(20px, 2.5vw, 50px);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -54,34 +52,22 @@
 .confluence-images .text-confluences p3 {
   color: #000;
   text-align: center;
-  font-family: PF din Display100;
-  font-size: 27px;
+  font-family: TT Chocolates;
+  font-size: clamp(18px, 1.3vw, 45px);
   font-weight: 200;
   padding: 3rem 0rem;
-  letter-spacing: 0.03em;
-  line-height: 35px;
 }
-@media (max-width: 1550px) {
-  .Confluence-heading,
-  .confluence-images .text-confluences h2 {
-    font-size: 40px;
-  }
-  .confluence-text,
-  .confluence-images .text-confluences p3 {
-    font-size: 24px;
-  }
-}
+
 @media (max-width: 768px) {
   .Confluence-heading {
     width: 90%;
-    font-size: 25px;
+    font-size: 30px;
   }
   .yellowLine-confluence {
     width: 35%;
   }
   .confluence-text {
-    font-size: 15px;
-    line-height: 20px;
+    font-size: clamp(15px, 4.5vw, 30px);
     width: 80%;
   }
   .confluence-images {
@@ -98,12 +84,13 @@
     padding: 1.5rem;
     width: 100%;
   }
+  .confluence-images .images-pa {
+    padding-bottom: 0;
+  }
   .confluence-images .text-confluences h2 {
-    font-size: 20px;
-    margin-block-start: 0em;
+    font-size: 30px;
   }
   .confluence-images .text-confluences p3 {
-    font-size: 15px;
-    line-height: 20px;
+    font-size: clamp(15px, 4.5vw, 30px);
   }
 }

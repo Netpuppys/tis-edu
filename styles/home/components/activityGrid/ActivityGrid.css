@@ -74,10 +74,6 @@ svg .svg-circle {
   overflow: hidden;
   cursor: pointer;
 }
-.fourth-section-main-div .activity-div:hover {
-  transform: scale(1.03);
-  filter: brightness(0.95);
-}
 
 .fourth-section-main-div .btn-div .see-more-btn:hover .red-bg-btn {
   animation: enlarge 400ms ease;

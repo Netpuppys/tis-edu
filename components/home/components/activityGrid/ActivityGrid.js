@@ -5,8 +5,8 @@ import seeMoreIcon from "../../../../public/icons/see-more-text.png";
 import archery from "../../../../public/pictures/archery.png";
 import cycling from "../../../../public/pictures/cycling.png";
 import hockey from "../../../../public/pictures/hockey.png";
-import swimming from "../../../../public/pictures/swimming.jpeg";
-import taekwando from "../../../../public/pictures/taekwando.jpg";
+import swimming from "../../../../public/pictures/swimming.png";
+import taekwando from "../../../../public/pictures/taekwando.png";
 import football from "../../../../public/pictures/football.png";
 import shooting from "../../../../public/pictures/shooting.png";
 import horseRiding from "../../../../public/pictures/horseRiding.png";
@@ -202,12 +202,14 @@ function FourthSection() {
             key={index}
             onClick={() => handleItemClick(activityItem.title)}
             className={`activity-div ${getPositionClassName(index)}`}
-            style={{
-              backgroundImage: `url(${activityItem.image.src})`,
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-            }}
           >
+            <div className="absolute w-full bg-black h-full -z-20">
+              <Image
+                src={activityItem.image}
+                alt=""
+                className="w-full h-full opacity-60 object-cover"
+              />
+            </div>
             <div className="title-div-card">
               <div
                 className="card-description"

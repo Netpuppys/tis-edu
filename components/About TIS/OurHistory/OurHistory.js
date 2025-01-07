@@ -7,7 +7,6 @@ import school from "../../../public/ourhistory/school.png";
 import Image2012 from "../../../public/ourhistory/2012.png";
 import silky from "../../../public/ourhistory/silky.png";
 import Raunak from "../../../public/ourhistory/Raunak.png";
-
 import Header from "../../globalComponents/Header/Header";
 import "../../../styles/About Tis/ourHistory.css";
 import { useMobile } from "../../globalComponents/IsMobileContext";
@@ -31,7 +30,7 @@ export default function OurHistory() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="text-[#B90124] w-fit font-semibold md:leading-none text-center text-[clamp(15px,7.5vw,60px)] md:text-[clamp(20px,2.5vw,50px)]"
+          className="text-[#B90124] w-fit font-semibold text-center text-[clamp(15px,7.5vw,60px)] md:text-[clamp(20px,2.5vw,50px)]"
         >
           Flip The Pages of Our Inception Story
           <Image

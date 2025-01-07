@@ -41,8 +41,8 @@ export default function EventConfluence() {
           <br />
           Under Confluence, school organizes Inter School Musical, Cultural as
           well as Dance competitions under seven categories which are as
-          follows: <br />
-          <ul>
+          follows: <br /> <br />
+          <ul className="ml-5 list-disc">
             <li>VIBRATIONS – GROUP DANCE</li>
             <li>CATCH ME IF YOU CAN – TREASURE HUNT</li>
             <li>CRESCENDO – BATTLE OF BANDS</li>
@@ -60,23 +60,39 @@ export default function EventConfluence() {
           <Image className="yellowLine-confluence" alt="" src={yellowLine} />
         </h1>
         <p1 className="confluence-text">
-          - Change of participants is not permitted under any circumstances
-          after the 4th May 2024.
-          <br />- Each participating school will be charged a nominal
-          registration fee of Rs. 500 per participant.
-          <br />- Lunch will be provided to participants, escort students and
-          teachers by the host school.
-          <br />- A total of 2 helping / escort students and a maximum of two
-          teachers are allowed per school.
-          <br />- Participants must remain incognito. No school uniform will be
-          permitted. No mention must be made of the name(s) of the participating
-          school(s) during any event.
-          <br />- Students participation number will be provided to each
-          participating school for each event.
-          <br />- Participants are instructed to bring their own make up kits,
-          dresses, instruments and necessary things, school will not provide
-          them anything besides Drum set.
-          <br />- The decisions of the judges shall be final and binding.
+          <ul className="ml-5 list-decimal">
+            <li>
+              Change of participants is not permitted under any circumstances
+              after the 4th May 2024.
+            </li>
+            <li>
+              Each participating school will be charged a nominal registration
+              fee of Rs. 500 per participant.
+            </li>
+            <li>
+              Lunch will be provided to participants, escort students and
+              teachers by the host school.
+            </li>
+            <li>
+              A total of 2 helping / escort students and a maximum of two
+              teachers are allowed per school.
+            </li>
+            <li>
+              Participants must remain incognito. No school uniform will be
+              permitted. No mention must be made of the name(s) of the
+              participating school(s) during any event.
+            </li>
+            <li>
+              Students participation number will be provided to each
+              participating school for each event.
+            </li>
+            <li>
+              Participants are instructed to bring their own make up kits,
+              dresses, instruments and necessary things, school will not provide
+              them anything besides Drum set.
+            </li>
+            <li>The decisions of the judges shall be final and binding.</li>
+          </ul>
         </p1>
       </div>
       <div className="confluence-images">
