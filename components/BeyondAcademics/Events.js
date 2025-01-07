@@ -3,7 +3,6 @@ import Header from "../globalComponents/Header/Header";
 import Image from "next/image";
 import HeaderCelebrationsImg from "../../public/Header/EventsHeader.png";
 import React from "react";
-import "../../styles/BeyondAcademics/EventsCelebration.css";
 import { useMobile } from "../globalComponents/IsMobileContext";
 import bookwormIcon from "../../public/Clubs/bookwormIcon.png";
 import pootersWheelIcon from "../../public/Clubs/pootersWheelIcon.png";

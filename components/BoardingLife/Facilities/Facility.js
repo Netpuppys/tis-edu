@@ -3,7 +3,6 @@ import React from "react";
 import Image from "next/image";
 import HeaderFacilityImg from "../../../public/Header/FacilitiesHeader.jpg";
 import HeaderFacilityImgMobile from "../../../public/Header/FacilitiesHeaderMobile.jpg";
-import yellowLineHeading from "../../../public/pictures/lineImg.png";
 import ambulance from "../../../public/boardingLife/ambulance.png";
 import safety from "../../../public/boardingLife/safety.png";
 import sports from "../../../public/boardingLife/sports.png";
@@ -20,7 +19,6 @@ import hostel from "../../../public/boardingLife/hostel.png";
 import isolation from "../../../public/boardingLife/isolation.png";
 import digital from "../../../public/boardingLife/digital.png";
 import composite from "../../../public/boardingLife/composite.png";
-
 import Header from "../../globalComponents/Header/Header";
 import { useMobile } from "../../globalComponents/IsMobileContext";
 function Facility() {
@@ -124,20 +122,27 @@ function Facility() {
         {cards.map((cards, index) => (
           <div
             key={index}
-            className="w-full md:w-[calc(33.33%-16px)] aspect-[1.5/1] flex flex-col gap-2 justify-center items-center cardsFacilities px-[2%] rounded-xl"
+            className="w-full group relative md:w-[calc(33.33%-16px)] aspect-[1.5/1] flex flex-col gap-2 cardsFacilities items-center px-[2%] overflow-hidden rounded-xl"
           >
-            <Image src={cards.icon} alt="" className="w-[95px] h-fit mx-auto" />
-            <h3 className="font-[TTChocolatesBold] w-fit mx-auto text-[clamp(20px,1.3vw,50px)] text-white text-center border-b border-white">
-              {cards.title}
-            </h3>
-            <h3
-              className=" w-fit mx-auto text-[clamp(16px,1.2vw,50px)] text-white text-center"
-              style={{
-                fontFamily: "TT Chocolates",
-              }}
-            >
-              {cards.description}
-            </h3>
+            <div className="absolute z-10 bg-[#b90124] w-full h-full transition-all ease-in duration-300 translate-y-full group-hover:translate-y-0"></div>
+            <div className="absolute z-20 transition-all ease-in duration-300 translate-y-full group-hover:translate-y-1/3">
+              <Image
+                src={cards.icon}
+                alt=""
+                className="w-[95px] h-fit mx-auto"
+              />
+              <h3 className="font-[TTChocolatesBold] w-fit mx-auto text-[clamp(20px,1.3vw,50px)] text-white text-center border-b border-white">
+                {cards.title}
+              </h3>
+              <h3
+                className="hidden group-hover:flex w-fit mx-auto text-[clamp(16px,1.2vw,50px)] text-white text-center"
+                style={{
+                  fontFamily: "TT Chocolates",
+                }}
+              >
+                {cards.description}
+              </h3>
+            </div>
           </div>
         ))}
       </div>

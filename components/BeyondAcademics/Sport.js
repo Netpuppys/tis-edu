@@ -2,7 +2,6 @@
 import React from "react";
 import Header from "../globalComponents/Header/Header";
 import HeaderSportsImg from "../../public/Header/SPORTS.webp";
-import "../../styles/BeyondAcademics/sports.css";
 import bookwormIcon from "../../public/Clubs/bookwormIcon.png";
 import pootersWheelIcon from "../../public/Clubs/pootersWheelIcon.png";
 import RagaRocksIcon from "../../public/Clubs/RagaRocksIcon.png";

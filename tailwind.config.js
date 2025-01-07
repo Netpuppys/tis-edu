@@ -27,13 +27,16 @@ module.exports = {
         translateBottomHalf: "translateBottomHalf 0.2s linear",
         scrollAnimation: "scrollAnimation 0.6s infinite alternate",
         overlay: "overlay 0.5s ease",
-        backgroundColor: "backgroundColor 0.5s ease",
+        backgroundColor: "backgroundColor 0.5s ease-in",
       },
       keyframes: {
         backgroundColor: {
-          "0%": { backgroundPosition: "0% 0%" },
-          "50%": { backgroundPosition: "100% 50%" },
-          "100%": { backgroundPosition: "0% 100%" },
+          from: {
+            bottom: "2.5rem",
+          },
+          to: {
+            top: "2.5rem",
+          },
         },
         overlay: {
           from: {
