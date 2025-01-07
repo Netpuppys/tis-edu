@@ -23,7 +23,7 @@ const LandingLayout = () => {
   const scrollRef = useRef();
   const { isMobile } = useMobile();
   const handleWhatsapp = () => {
-    window.open("https://api.whatsapp.com/send?phone=919458311000", "_blank");
+    window.open("https://api.whatsapp.com/send?phone=919258159249", "_blank");
   };
   const handleScrollArrow = () => {
     scrollRef.current?.scrollIntoView({ behavior: "smooth" });
