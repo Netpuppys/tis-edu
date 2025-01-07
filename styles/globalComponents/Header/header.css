@@ -15,7 +15,7 @@
   margin: 0 auto;
   text-shadow: 0px 5px 16px rgba(0, 0, 0, 0.2);
   color: #fff;
-  font-family: "Bree Serif";
+  font-family: "Mirador800";
   padding-bottom: 2rem;
   font-size: clamp(20px, 3.2vw, 80px);
   /* font-style: italic; */
@@ -37,9 +37,11 @@
   width: 70%;
   color: white;
   font-weight: 700;
-  font-family: "Caveat";
+  font-family: "Helvetica";
   /* font-style: italic; */
-  font-size: clamp(15px, 2.8vw, 60px);
+  line-height: normal;
+  letter-spacing: normal;
+  font-size: clamp(15px, 2vw, 60px);
   margin: 0 auto;
 }
 @media (max-width: 768px) {
@@ -54,10 +56,9 @@
     padding-bottom: 1rem;
   }
   .top-heading {
-    font-size: clamp(15px, 4.5vw, 60px);
+    font-size: clamp(15px, 6vw, 60px);
     width: 85%;
-    font-family: Caveat;
-    font-weight: 300;
+    font-weight: 500;
   }
   .top {
     min-height: 23vh;

@@ -7,6 +7,10 @@
   src: url(../public/fonts/Rene\ Bieder\ -\ Mirador\ Bold\ DEMO.otf);
 }
 @font-face {
+  font-family: "Helvetica";
+  src: url(../public/fonts/HelveticaNowDisplay-Light.ttf);
+}
+@font-face {
   font-family: "Mirador800";
   src: url(../public/fonts/mirador-black-italic.otf);
 }
