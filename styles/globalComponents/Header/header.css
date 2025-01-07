@@ -17,7 +17,7 @@
   color: #fff;
   font-family: "Bree Serif";
   padding-bottom: 2rem;
-  font-size: clamp(20px, 2.5vw, 50px);
+  font-size: clamp(20px, 3.2vw, 80px);
   /* font-style: italic; */
   font-weight: 900;
   line-height: normal; /* 108.065% */
