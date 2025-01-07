@@ -15,10 +15,10 @@
   margin: 0 auto;
   text-shadow: 0px 5px 16px rgba(0, 0, 0, 0.2);
   color: #fff;
-  font-family: Mirador;
+  font-family: "Bree Serif";
   padding-bottom: 2rem;
   font-size: clamp(20px, 2.5vw, 50px);
-  font-style: italic;
+  /* font-style: italic; */
   font-weight: 900;
   line-height: normal; /* 108.065% */
 }
@@ -37,9 +37,9 @@
   width: 70%;
   color: white;
   font-weight: 700;
-  font-family: "Mirador";
-  font-style: italic;
-  font-size: clamp(15px, 1.8vw, 60px);
+  font-family: "Caveat";
+  /* font-style: italic; */
+  font-size: clamp(15px, 2.8vw, 60px);
   margin: 0 auto;
 }
 @media (max-width: 768px) {
@@ -56,7 +56,7 @@
   .top-heading {
     font-size: clamp(15px, 4.5vw, 60px);
     width: 85%;
-    font-family: Mirador100;
+    font-family: Caveat;
     font-weight: 300;
   }
   .top {

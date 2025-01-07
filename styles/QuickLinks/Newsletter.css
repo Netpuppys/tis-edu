@@ -121,9 +121,9 @@
   margin: 0 auto;
   text-shadow: 0px 5px 16px rgba(0, 0, 0, 0.2);
   color: #fff;
-  font-family: Mirador;
+  font-family: "Bree Serif";
   font-size: 60px;
-  font-style: italic;
+  /* font-style: italic; */
   font-weight: 900;
   line-height: normal;
   margin-top: -5%;
