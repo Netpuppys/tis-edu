@@ -2,7 +2,10 @@ import image from "../../../../public/icons/360.png";
 import "../../../../styles/home/components/tisByNumbers/TisByNumbers.css";
 import Image from "next/image";
 import Stats from "./stats";
+import { UtmContext } from "@/components/globalComponents/utmParams";
+import { useContext } from "react";
 function TisByNumbers() {
+  const { utmParams } = useContext(UtmContext);
   const handleVirtualTourClick = () => {
     window.location.href = `/virtual-tour${utmParams}`;
   };

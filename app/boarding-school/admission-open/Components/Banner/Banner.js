@@ -1,101 +1,16 @@
 "use client";
-import React, { use, useContext, useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import schoolLogo from "../../../../../public/logos/schoolLogo.png";
 import Image from "next/image";
 import phoneCallGif from "../../../../../public/phone_ringing.gif";
 import Banner1 from "../../../../../public/LandingPage/Banner.webp";
-import Banner1Mobile from "../../../../../public/Banner1Mobile.png";
 import { useMobile } from "@/components/globalComponents/IsMobileContext";
 import FormEnquire from "@/components/globalComponents/Form-Popup/formPopup";
-import { UtmContext } from "@/components/globalComponents/utmParams";
+
 function Banner() {
   const { isMobile } = useMobile();
-
-  // useEffect(() => {
-  //   const loadScriptAndStyles = () => {
-  //     window.ee_form_widget_baseurl =
-  //       "https://eeconfigstaticfiles.blob.core.windows.net/staticfiles/ee-form-widget/";
-
-  //     if (!document.getElementById("__formWidgetCss")) {
-  //       const linkElement = document.createElement("link");
-  //       linkElement.id = "__formWidgetCss";
-  //       linkElement.rel = "stylesheet";
-  //       linkElement.href =
-  //         window.ee_form_widget_baseurl + "css/stylesheet.min.css";
-  //       linkElement.type = "text/css";
-  //       document.getElementsByTagName("head")[0].appendChild(linkElement);
-  //     }
-  //     const scriptElement = document.createElement("script");
-  //     scriptElement.type = "text/javascript";
-  //     scriptElement.src =
-  //       window.ee_form_widget_baseurl + "js/eeFormWidget.min.js";
-  //     scriptElement.onload = async function () {
-  //       const _eeFormWidget = new eeFormWidget();
-  //       await _eeFormWidget.init("tisd", "form-5", "ee-form-5");
-  //     };
-
-  //     document.getElementsByTagName("head")[0].appendChild(scriptElement);
-  //   };
-
-  //   loadScriptAndStyles();
-  // }, []);
-
-  // const images = [Banner1];
-  // const imagesMobile = [Banner1Mobile];
-  // const [currentIndex, setCurrentIndex] = useState(2);
-  // const [changeIndexValue, setChangeIndexValue] = useState(2000);
-  // const [fade, setFade] = useState(false);
-  const containerRef = useRef(null);
-  const intervalRef = useRef(null);
-  const { utmParams } = useContext(UtmContext);
   const searchParams = new URLSearchParams(window.location.search);
   const utmSource = searchParams.get("utm_source");
-
-  // const changeImage = (index) => {
-  //   setFade(true);
-  //   setTimeout(() => {
-  //     setCurrentIndex(index);
-  //     setFade(false);
-  //   }, 300); // Duration of fade out/in
-  // };
-
-  // const handleDotClick = (index) => {
-  //   if (index !== currentIndex) {
-  //     changeImage(index);
-  //     resetInterval();
-  //   }
-  //   if (containerRef.current) {
-  //     containerRef.current.scrollIntoView({ behavior: "smooth" });
-  //   }
-  // };
-
-  // const resetInterval = () => {
-  //   clearInterval(intervalRef.current);
-  //   intervalRef.current = setInterval(() => {
-  //     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  //   }, changeIndexValue);
-  // };
-
-  // useEffect(() => {
-  //   if (currentIndex === 2) {
-  //     setChangeIndexValue(10000);
-  //   } else {
-  //     setChangeIndexValue(2000);
-  //   }
-  // }, [currentIndex]);
-
-  // useEffect(() => {
-  //   resetInterval();
-  // }, [changeIndexValue]);
-
-  // useEffect(() => {
-  //   resetInterval();
-  //   return () => clearInterval(intervalRef.current);
-  // }, []);
-
-  // useEffect(() => {
-  //   changeImage(currentIndex);
-  // }, [currentIndex]);
   return (
     <div className="w-full min-h-[100vh] flex flex-col justify-center items-end relative object-cover bg-transparent md:bg-[#b90124]">
       <div className="fixed top-0 left-0 z-40 px-6 md:px-8 py-6 md:py-8 flex items-center justify-between w-full">

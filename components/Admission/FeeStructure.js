@@ -49,7 +49,7 @@ function FeeStructure() {
           alt=""
         />
       </div>
-      <Image src={feesFlow} alt="" className="w-[90%] md:w-[80%] mx-auto" />
+      {/* <Image src={feesFlow} alt="" className="w-[90%] md:w-[80%] mx-auto" /> */}
       <div className="flex mx-auto w-[90%] md:w-[80%] flex-col md:flex-row items-center justify-center pt-8 gap-8">
         <div className="w-full">
           <Image

@@ -306,7 +306,7 @@ export default function OurManagement() {
             <h4>
               Mr. Raunak Jain
               <br />
-              (Managing Director)
+              (Vice Chairman)
             </h4>
           </div>
           <div

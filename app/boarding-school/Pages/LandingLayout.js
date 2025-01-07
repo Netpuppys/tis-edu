@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useContext, useRef } from "react";
+import React, { useRef } from "react";
 import "../../../styles/globalComponents/navbar/NavBar.css";
 import "../../../styles/home/HomeLayout.css";
 import ActivityGrid from "@/components/home/components/activityGrid/ActivityGrid";
@@ -18,8 +18,6 @@ import { useMobile } from "@/components/globalComponents/IsMobileContext";
 import { FaWhatsapp } from "react-icons/fa";
 import scrollArrow from "../../../public/icons/downArrowDoodle.svg";
 import Image from "next/image";
-import { UtmContext } from "@/components/globalComponents/utmParams";
-
 const LandingLayout = () => {
   const bubbleRef = useRef(null);
   const scrollRef = useRef();
@@ -30,7 +28,6 @@ const LandingLayout = () => {
   const handleScrollArrow = () => {
     scrollRef.current?.scrollIntoView({ behavior: "smooth" });
   };
-  const { utmParams } = useContext(UtmContext);
   const searchParams = new URLSearchParams(window.location.search);
   const utmSource = searchParams.get("utm_source");
 
