@@ -12,14 +12,16 @@ import Image from "next/image";
 const Newsletter = () => {
   return (
     <>
-      <div className="w-full h-[80vh] md:h-screen">
+      <div className="w-full h-[80vh] md:h-screen relative flex flex-col items-center justify-end">
         <Image
           src={HeaderNewsLetterImg}
           alt="HeaderImg"
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover absolute -z-10"
         />
 
-        <h1 className="headingNewsletter">Newsletter</h1>
+        <h1 className="font-[Mirador800] text-white z-10 text-[clamp(15px,7.5vw,60px)] md:text-[clamp(20px,3.2vw,80px)]">
+          Newsletter
+        </h1>
         <br />
       </div>
 

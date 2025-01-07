@@ -26,7 +26,7 @@ export default function Header({ title, subtitle, headerImg }) {
       <div className="middle">
         <div className="top">
           {/* <button className="counselling-btn"><p style={{fontSize:"12px",margin:"0"}}>More in</p>About TIS</button> */}
-          <h2 className="top-heading">
+          <h2 className="top-heading tracking-wider">
             {subtitle}
             <br />
           </h2>
