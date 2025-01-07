@@ -5,11 +5,12 @@ import yellowLine from "../../public/pictures/lineImg.png";
 import Header from "../globalComponents/Header/Header";
 import feesFlow from "../../public/pictures/fees-flow.png";
 import HeaderFeesImg from "../../public/Header/FeesStructureHeader.png";
-import "../../styles/Admission/FeeStructure.css";
+import HeaderFeesImgMobile from "../../public/Header/FeesStructureHeaderMobile.jpg";
 import feesIndia from "../../public/pictures/fee-structureIndia.png";
 import feesForeign from "../../public/pictures/fee-structureForeign.png";
 import FeesIndia from "../../public/MandatoryPDF/TIS-FEE-STRUCTURE-2024-25.pdf";
 import FeesNRI from "../../public/MandatoryPDF/NRI-TIS-FEE-STRUCTURE.pdf";
+import { useMobile } from "../globalComponents/IsMobileContext";
 
 function FeeStructure() {
   const data = [
@@ -24,7 +25,7 @@ function FeeStructure() {
     { name: "MICR Code:", amount: "248024059" },
     { name: "SWIFT Code:", amount: "PUNBINBBDPR" },
   ];
-
+  const { isMobile } = useMobile();
   const heading = (
     <>
       Fee Structure of Boarding School in Dehradun for the{" "}
@@ -34,7 +35,7 @@ function FeeStructure() {
   return (
     <>
       <Header
-        headerImg={HeaderFeesImg}
+        headerImg={isMobile ? HeaderFeesImgMobile : HeaderFeesImg}
         title={"Fee Structure"}
         subtitle={
           "Every parent dreams of the best for their child, and at Tula's International School we ensure that the dream is within reach with a fee structure that’s fair and transparent."

@@ -2,8 +2,8 @@
 import { useEffect } from "react";
 import Header from "../globalComponents/Header/Header";
 import Image from "next/image";
-import HeaderPublicationImg from "../../public/Header/PublicationHeader.webp";
-import HeaderPublicationMobileImg from "../../public/Header/PublicationHeaderMobile.webp";
+import HeaderPublicationImg from "../../public/Header/PublicationHeader.png";
+import HeaderPublicationMobileImg from "../../public/Header/PublicationHeaderMobile.png";
 import "../../styles/Academics/Publication.css";
 import TheVoiceImg from "../../public/MandatoryPDF/TheVoice.png";
 import WisdomIsFreeImg from "../../public/MandatoryPDF/Wisdom.png";

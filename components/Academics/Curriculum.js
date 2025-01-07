@@ -1,11 +1,15 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import "../../styles/Academics/CBSEAffiliation.css";
 import yellowLine from "../../public/pictures/lineImg.png";
 import Header from "../globalComponents/Header/Header";
 import HeaderCBSEAfiiliationImg from "../../public/Header/CBSEHeader.png";
+import HeaderCBSEAfiiliationImgMobile from "../../public/Header/CBSEHeaderMobile.png";
+import { useMobile } from "../globalComponents/IsMobileContext";
 
 export default function Curriculum() {
+  const { isMobile } = useMobile();
   const bannerText =
     "We have built a curriculum that understands and supports the journey of every child.";
 
@@ -13,7 +17,9 @@ export default function Curriculum() {
     <>
       <Header
         title={"Curriculum"}
-        headerImg={HeaderCBSEAfiiliationImg}
+        headerImg={
+          isMobile ? HeaderCBSEAfiiliationImgMobile : HeaderCBSEAfiiliationImg
+        }
         subtitle={bannerText}
       />
       <div className="main">
