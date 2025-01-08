@@ -199,14 +199,23 @@ export default function OurManagement() {
   ];
   return (
     <>
+      {isMobile &&
       <Header
         title={"Our Management"}
         subtitle={
           "A strong school management provides the best learning environment for students."
         }
-        headerImg={isMobile ? HeaderManagementMobileIMg : HeaderManagementIMg}
-      />
-      <div className="py-8 w-[85%] md:w-[75%] mx-auto md:py-20 flex flex-col justify-center items-center">
+        headerImg={HeaderManagementMobileIMg}
+      />}
+      {!isMobile &&
+      <Header
+        title={"Our Management"}
+        subtitle={
+          "A strong school management provides the best learning environment for students."
+        }
+        headerImg={HeaderManagementIMg}
+      />}
+      {/* <div className="py-8 w-[85%] md:w-[75%] mx-auto md:py-20 flex flex-col justify-center items-center">
         <h3
           style={{
             fontFamily: "TT Chocolates",
@@ -219,10 +228,10 @@ export default function OurManagement() {
             alt=""
             className="mx-auto md:ml-auto md:mr-0 w-[50%] md:w-fit"
           />
-        </h3>
-      </div>
+        </h3> 
+      </div> */}
       {!isMobile && (
-        <div className="w-[90%] xl:w-[75%] mx-auto gap-6 flex overflow-scroll md:overflow-auto">
+        <div className="w-[90%] xl:w-[75%] pt-10 mx-auto gap-6 flex overflow-scroll md:overflow-auto">
           {data.map((data, index) => (
             <div key={index}>
               <div
@@ -265,7 +274,7 @@ export default function OurManagement() {
       )}
       {isMobile && (
         <>
-          <div className="flex px-8 gap-4 justify-end pb-8">
+          <div className="flex px-8 pt-6 gap-4 justify-end pb-8">
             <button
               onClick={handlePrevClick}
               className="text-white bg-[#b90124] active:scale-90 w-[40px] flex items-center justify-center rounded-full h-[40px] text-[20px]"
@@ -283,7 +292,7 @@ export default function OurManagement() {
             <Swiper
               spaceBetween={24}
               className="mySwiper"
-              slidesPerView={1.1}
+              slidesPerView={1.3}
               onSlideChange={(swiper) => {
                 setActiveIndex(swiper.activeIndex);
                 setExpandedIndex(swiper.activeIndex);
