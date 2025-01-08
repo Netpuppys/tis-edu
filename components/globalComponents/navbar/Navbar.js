@@ -161,6 +161,7 @@ const Navbar = () => {
       ],
     },
   ];
+  
   useEffect(() => {
     if (!scrolled) {
       const handleScroll = () => {
@@ -185,8 +186,9 @@ const Navbar = () => {
   }, []);
 
   const handleWhatsapp = () => {
-    window.open("https://api.whatsapp.com/send?phone=919258159249", "_blank");
+    window.open("https://api.whatsapp.com/send?phone=9258159249", "_blank");
   };
+
   const renderNestedLinks = (nestedLinks) => (
     <div className="dropdown">
       {nestedLinks.map((nestedItem, nestedIndex) => (

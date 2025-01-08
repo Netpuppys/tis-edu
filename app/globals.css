@@ -75,6 +75,7 @@
 body {
   margin: 0px;
   font-family: PF din Display100;
+  overscroll-behavior: none;
 }
 ::-webkit-scrollbar-thumb {
   background-color: #2D2D2D;
