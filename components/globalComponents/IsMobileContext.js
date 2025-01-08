@@ -4,7 +4,7 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 const MobileContext = createContext();
 
 export const MobileProvider = ({ children }) => {
-  const [isMobile, setIsMobile] = useState(window?.innerWidth < 768? true : false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
