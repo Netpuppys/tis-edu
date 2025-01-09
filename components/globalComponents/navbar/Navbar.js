@@ -161,7 +161,7 @@ const Navbar = () => {
       ],
     },
   ];
-  
+
   useEffect(() => {
     if (!scrolled) {
       const handleScroll = () => {
@@ -233,9 +233,12 @@ const Navbar = () => {
             scrolled ? "scrolled-navbar" : ""
           }`}
         >
-          <a href={`/${utmParams}`}>
-            <Image src={schoolLogo} className="second-nav-logo" alt="school" />
-          </a>
+          <Image
+            onClick={() => (window.location.href = `/${utmParams}`)}
+            src={schoolLogo}
+            className="second-nav-logo"
+            alt="school"
+          />
 
           <div className="navbar-list-main">
             {sitemap.map((item, index) => (
