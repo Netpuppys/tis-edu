@@ -180,7 +180,7 @@ export default function EventConfluencePage() {
                   className="w-full h-full object-cover absolute"
                 />
                 <div className="absolute z-10 bg-[#b90124] bg-opacity-70 w-full h-full transition-all ease-in duration-700 translate-y-full group-hover:translate-y-0"></div>
-                <div className="absolute z-20 transition-all ease-in duration-300">
+                <div className="absolute z-20">
                   <h3 className="font-[TTChocolatesBold] w-fit mx-auto text-[clamp(20px,1.8vw,50px)] text-white text-center">
                     {cards.title}
                   </h3>
@@ -248,7 +248,7 @@ export default function EventConfluencePage() {
                         className="w-full h-full object-cover absolute"
                       />
                       <div className="absolute z-10 bg-[#b90124] bg-opacity-70 w-full h-full transition-all ease-in duration-700 translate-y-full group-hover:translate-y-0"></div>
-                      <div className="absolute z-20 transition-all ease-in duration-300">
+                      <div className="absolute z-20">
                         <h3 className="font-[TTChocolatesBold] w-fit mx-auto text-[clamp(20px,1.3vw,50px)] text-white text-center">
                           {cards.title}
                         </h3>
