@@ -45,7 +45,7 @@
 }
 @media (max-width: 768px) {
   .banner {
-    min-height: 83vh;
+    min-height: 75vh;
   }
   .heading-outer {
     height: 60vh;
@@ -59,6 +59,6 @@
     width: 85%;
   }
   .top {
-    min-height: 23vh;
+    min-height: 15vh;
   }
 }
