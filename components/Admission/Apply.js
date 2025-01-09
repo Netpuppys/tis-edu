@@ -19,12 +19,10 @@ const Apply = () => {
   const { utmParams } = useContext(UtmContext);
   const handleStepClick = (index) => {
     setCurrentStep(index);
-    if (scrollRefs.current[index]) {
-      scrollRefs.current[index].scrollIntoView({
-        top: "0",
-        behavior: "smooth", // Smooth scrolling
-      });
-    }
+    scrollRefs.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
   };
   const { isMobile } = useMobile();
   const steps = [
@@ -246,14 +244,14 @@ const Apply = () => {
         headerImg={HeaderApplyImg}
         headerImgMobile={HeaderApplyImg}
       />
-      <div className="w-[90%] relative md:w-[80%] pt-8 md:pt-20 mx-auto">
+      <div
+        ref={scrollRefs}
+        className="w-[90%] relative md:w-[80%] pt-8 md:pt-20 mx-auto"
+      >
         <div className="flex flex-col md:flex-row justify-center w-full">
           {steps.map((step, index) => (
             <div key={step.id} className="w-full md:w-1/4 ">
               <div
-                ref={(el) => {
-                  scrollRefs.current[index] = el;
-                }}
                 className={`flex items-center text-center ${
                   index <= currentStep
                     ? "text-[#b90124] font-bold"
@@ -272,14 +270,16 @@ const Apply = () => {
                   style={{
                     fontFamily: "TT Chocolates",
                   }}
-                  className={`w-full h-16 text-xl hover:animate-backgroundColor -ml-8 md:-mr-8 flex justify-center border-y-2 border-[#b90124] hover:border-transparent items-center hover:bg-gradient-to-r from-[#b90124] via-[#ffffff6c] to-[#b90124]
-            bg-[length:200%_200%] ${
-              index === currentStep
-                ? "text-[#FFFFFF] bg-[#b90124] font-bold"
-                : "text-[#b90124] hover:text-[#FFFFFF]"
-            }`}
+                  className={`w-full h-16 text-xl -ml-8 md:-mr-8 flex justify-center border-y-2 border-[#b90124] hover:border-transparent items-center
+                    ${
+                      index === currentStep
+                        ? "text-[#FFFFFF] bg-[#b90124] font-bold"
+                        : "text-[#b90124] hover:text-[#FFFFFF]"
+                    }`}
                 >
-                  {step.label}
+                  <button className="material-bubble relative w-full h-full">
+                    {step.label}
+                  </button>
                 </div>
               </div>
               {index === currentStep && isMobile && (
@@ -301,7 +301,7 @@ const Apply = () => {
                     style={{
                       fontFamily: "TT Chocolates",
                     }}
-                    className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] pt-8 md:pt-20"
+                    className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] py-8 md:py-20"
                   >
                     {steps[currentStep].description}
                   </h2>
