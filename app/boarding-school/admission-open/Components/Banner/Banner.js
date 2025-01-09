@@ -76,7 +76,7 @@ function Banner() {
                 }}
               >
                 LET&apos;S DO{" "}
-                <span className="text-[3.75rem] md:text-[13vh] font-[Mirador] italic font-black leading-[3.75rem] md:leading-[15vh]">
+                <span className="text-[3.75rem] md:text-[13vh] font-[Mirador800] italic font-black leading-[3.75rem] md:leading-[15vh]">
                   it
                 </span>
               </p>
@@ -88,7 +88,7 @@ function Banner() {
               >
                 with
               </p>
-              <p className="text-[3.75rem] md:text-[13vh] font-[Mirador] pt-[1vh] italic tracking-[0.125rem] leading-[3.75rem] md:leading-[13vh]">
+              <p className="text-[3.75rem] md:text-[13vh] font-[Mirador800] pt-[1vh] italic tracking-[0.125rem] leading-[3.75rem] md:leading-[13vh]">
                 {" "}
                 Tula&apos;s
                 <svg

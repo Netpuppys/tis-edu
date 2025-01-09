@@ -41,9 +41,8 @@
 .rank1 .counter-number-span {
   color: #fff;
   text-align: center;
-  font-family: Mirador;
+  font-family: Mirador800;
   font-size: clamp(15px, 1.7vw, 35px);
-  font-style: italic;
   font-weight: 900;
   line-height: normal;
   letter-spacing: 0.517px;
@@ -96,9 +95,8 @@
   .rank1 .counter-number-span {
     color: #fff;
     text-align: center;
-    font-family: Mirador;
+    font-family: Mirador800;
     font-size: 14px;
-    font-style: italic;
     font-weight: 900;
     line-height: normal;
     letter-spacing: 0.3px;

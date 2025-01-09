@@ -35,7 +35,7 @@ const TextBanner = ({ filledText }) => {
         className="font-[TTChocolatesBold] flex flex-col text-center text-[3.5rem] md:text-[6rem] font-black tracking-[0.10369rem] leading-tight"
       >
         IMAGE
-        <span className="text-[4.5rem] font-[Mirador] md:text-[7rem]">
+        <span className="text-[4.5rem] font-[Mirador800] md:text-[7rem]">
           Gallery
         </span>
         <div className="relative h-fit w-fit">

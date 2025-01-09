@@ -1,10 +1,9 @@
 .main-text {
   color: #000;
   text-align: center;
-  font-family: Mirador;
+  font-family: Mirador800;
   font-size: 60px;
   padding: 2rem 0rem;
-  font-style: italic;
   font-weight: 500;
   line-height: normal;
 }
@@ -50,10 +49,9 @@
 }
 .div1 th {
   color: #fff;
-  font-family: Mirador;
+  font-family: Mirador800;
   font-size: xxx-large;
   padding: 3rem;
-  font-style: italic;
   font-weight: 900;
   line-height: normal;
   letter-spacing: 3.2px;

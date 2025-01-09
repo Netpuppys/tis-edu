@@ -88,7 +88,7 @@ function GoogleReviews() {
         />
         <div className="text-white absolute flex flex-col justify-center items-center px-8">
           <h3
-            className="font-[Mirador] text-center"
+            className="font-[Mirador800] text-center"
             style={{ fontSize: "clamp(35px, 4vw, 70px)" }}
           >
             Google Reviews

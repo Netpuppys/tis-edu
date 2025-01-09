@@ -129,7 +129,7 @@ export default function Ranking() {
                 )}
 
                 <h2
-                  className="text-white text-center italic font-[Mirador]"
+                  className="text-white text-center font-[Mirador800]"
                   style={{
                     fontSize: "clamp(15px, 1.7vw, 35px)",
                   }}

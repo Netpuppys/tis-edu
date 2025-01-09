@@ -10,7 +10,6 @@
 .fourth-section-main-div .title-div .Sportstitle {
   font-family: Mirador800;
   font-size: 70px;
-  font-style: italic;
   font-weight: 900;
   text-align: left;
   color: #b90124;
@@ -22,7 +21,6 @@
   color: #262626;
   font-family: "Mirador800";
   font-size: clamp(15px, 1.6vw, 45px);
-  font-style: italic;
   line-height: 1.25;
   margin-bottom: 30px;
   text-align: left;
@@ -33,7 +31,7 @@
   position: relative;
   font-weight: 800;
   text-wrap: nowrap;
-  font-family: "Mirador";
+  font-family: "Mirador800";
 }
 .fourth-section-main-div .title-div span svg {
   position: absolute;
@@ -237,7 +235,6 @@ svg .svg-circle {
   }
   .fourth-section-main-div .title-div .title {
     font-size: 1.2rem;
-    font-family: Mirador;
   }
 
   .fourth-section-main-div .sub-title {
@@ -245,7 +242,6 @@ svg .svg-circle {
   }
   .fourth-section-main-div .title-div .Sportstitle {
     font-size: 55px;
-    font-family: Mirador;
   }
   .fourth-section-main-div .activities-div .title {
     font-size: 22px;

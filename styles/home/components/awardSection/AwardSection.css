@@ -13,7 +13,6 @@
 .Award-section-main-div .title-div .Awardstitle {
   font-family: Mirador800;
   font-size: 70px;
-  font-style: italic;
   font-weight: 900;
   text-align: left;
   color: #b90124;
@@ -25,7 +24,6 @@
   color: #262626;
   font-family: "Mirador800";
   font-size: clamp(15px, 1.6vw, 45px);
-  font-style: italic;
   line-height: 1.25;
   text-align: left;
   font-weight: 900;
@@ -216,7 +214,6 @@
   }
   .Award-section-main-div .title-div .title {
     font-size: 1.2rem;
-    font-family: Mirador;
   }
   .Award-section-main-div .activity-div .title-div-card {
     padding: 10px 20px;
@@ -226,7 +223,6 @@
   }
   .Award-section-main-div .title-div .Awardstitle {
     font-size: 55px;
-    font-family: Mirador;
   }
   .Award-section-main-div .activities-div .title {
     font-size: 22px;

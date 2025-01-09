@@ -13,9 +13,8 @@
   padding: 3rem 0rem;
 }
 .headingPersonal {
-  font-family: Mirador;
+  font-family: Mirador800;
   font-size: 45px;
-  font-style: italic;
   font-weight: 900;
   line-height: 54px;
   text-align: center;
@@ -52,10 +51,9 @@
 .heading-preparation {
   color: #000;
   text-align: center;
-  font-family: Mirador;
+  font-family: Mirador800;
   font-size: 45px;
   margin: 30px auto 0px auto;
-  font-style: italic;
   font-weight: 500;
   line-height: normal;
 }
@@ -83,9 +81,8 @@
   color: #000;
   align-items: center;
   text-align: center;
-  font-family: Mirador;
+  font-family: Mirador800;
   font-size: 45px;
-  font-style: italic;
   font-weight: 900;
   line-height: normal;
 }
@@ -101,9 +98,8 @@
 .Counseller h2 {
   color: #000;
   text-align: center;
-  font-family: Mirador;
+  font-family: Mirador800;
   font-size: 45px;
-  font-style: italic;
   font-weight: 900;
   line-height: normal;
 }
@@ -133,9 +129,8 @@
 .Benifits h2 {
   color: #fff;
   text-align: center;
-  font-family: Mirador;
+  font-family: Mirador800;
   font-size: 45px;
-  font-style: italic;
   font-weight: 900;
   line-height: normal;
 }
