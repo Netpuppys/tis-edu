@@ -248,10 +248,9 @@ const Navbar = () => {
                 onMouseEnter={() => handleMenuHover(index)}
                 onMouseLeave={() => handleMenuLeave()}
               >
-                <a href={`${item.linkTo}${utmParams}`}>
-                  <p className="title">{item.title}</p>
-                  <Image src={lineImg} className="yellow-line" alt="line" />
-                </a>
+                <p className="title">{item.title}</p>
+                <Image src={lineImg} className="yellow-line" alt="line" />
+
                 <div className="dropdown-container">
                   {activeMenu === index &&
                     item.nestedLinks &&
