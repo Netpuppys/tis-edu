@@ -45,7 +45,7 @@ function Footer() {
         {
           id: 5,
           linkName: "Registration Form",
-          linkTo: "/admission-procedure/registration-form/",
+          linkTo: "/admission-procedure/",
         },
         { id: 6, linkName: "Blogs", linkTo: "/blog" },
         { id: 7, linkName: "Privacy Policy", linkTo: "/privacy-policy/" },
@@ -85,7 +85,7 @@ function Footer() {
   ];
 
   const handleApply = () => {
-    window.location.href = `/admission-procedure/registration-form/${utmParams}`;
+    window.location.href = `/admission-procedure/${utmParams}`;
   };
 
   return (
