@@ -126,7 +126,7 @@ function Facility() {
             className="w-full group relative md:w-[calc(33.33%-16px)] aspect-[1.5/1] flex flex-col gap-2 cardsFacilities items-center px-[2%] overflow-hidden rounded-xl"
           >
             <div className="absolute z-10 bg-[#b90124] w-full h-full transition-all ease-in duration-300 translate-y-full group-hover:translate-y-0"></div>
-            <div className="absolute z-20 transition-all ease-in duration-300 translate-y-full group-hover:translate-y-1/3">
+            <div className="absolute z-20 transition-all ease-in duration-300 bottom-10 group-hover:top-10">
               <Image
                 src={cards.icon}
                 alt=""
@@ -136,7 +136,7 @@ function Facility() {
                 {cards.title}
               </h3>
               <h3
-                className="hidden group-hover:flex w-fit mx-auto text-[clamp(16px,1.2vw,50px)] text-white text-center"
+                className="hidden group-hover:flex w-fit px-4 mx-auto text-[clamp(16px,1.2vw,50px)] text-white text-center"
                 style={{
                   fontFamily: "TT Chocolates",
                 }}
