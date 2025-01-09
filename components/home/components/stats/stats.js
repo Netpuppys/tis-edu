@@ -68,12 +68,8 @@ function NewStats() {
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   {/* Animated border */}
-                  {!isMobile && (
-                    <>
-                      <div className="absolute block top-10 left-10 h-full w-[1px] bg-white transition-all duration-500 ease-in-out group-hover:left-0 group-hover:top-0"></div>
-                      <div className="absolute block top-10 left-10 h-[1px] w-full bg-white transition-all duration-500 ease-in-out group-hover:left-0 group-hover:top-0"></div>
-                    </>
-                  )}
+                  <div className="absolute block top-5 md:top-10 left-5 md:left-10 h-full w-[1px] bg-white transition-all duration-500 ease-in-out group-hover:left-0 group-hover:top-0"></div>
+                  <div className="absolute block top-5 md:top-10 left-5 md:left-10 h-[1px] w-full bg-white transition-all duration-500 ease-in-out group-hover:left-0 group-hover:top-0"></div>
                 </div>
               )}
               {stat.icon && (

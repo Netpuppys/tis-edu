@@ -47,15 +47,11 @@ export default function OurHistory() {
               <Image
                 src={Sunil}
                 alt=""
-                className="w-full h-full object-cover transition-all duration-300 md:group-hover:scale-110 md:group-hover:opacity-80"
+                className="w-full h-full object-cover transition-all duration-300 group-hover:scale-110 group-hover:opacity-80"
               />
               {/* Animated border */}
-              {!isMobile && (
-                <>
-                  <div className="absolute block bottom-10 left-10 h-full w-[1px] bg-white transition-all duration-500 ease-in-out md:group-hover:left-0 md:group-hover:bottom-0"></div>
-                  <div className="absolute block bottom-10 left-10 h-[1px] w-full bg-white transition-all duration-500 ease-in-out md:group-hover:left-0 md:group-hover:bottom-0"></div>
-                </>
-              )}
+              <div className="absolute block bottom-5 md:bottom-10 left-5 md:left-10 h-full w-[1px] bg-white transition-all duration-500 ease-in-out group-hover:left-0 group-hover:bottom-0"></div>
+              <div className="absolute block bottom-5 md:bottom-10 left-5 md:left-10 h-[1px] w-full bg-white transition-all duration-500 ease-in-out group-hover:left-0 group-hover:bottom-0"></div>
             </div>
           </div>
           <div className="flex w-full flex-col items-start justify-center text-black">
@@ -79,20 +75,16 @@ export default function OurHistory() {
         <div
           className={`flex flex-col md:flex-row-reverse py-8 md:py-20 gap-8 md:gap-20`}
         >
-          <div className="relative w-full md:w-[80%] mx-auto md:group overflow-hidden">
+          <div className="relative w-full md:w-[80%] mx-auto group overflow-hidden">
             <div className="w-full h-full ">
               <Image
                 src={school}
                 alt=""
-                className="w-full h-full object-cover transition-all duration-300 md:group-hover:scale-110 md:group-hover:opacity-80"
+                className="w-full h-full object-cover transition-all duration-300 group-hover:scale-110 group-hover:opacity-80"
               />
               {/* Animated border */}
-              {!isMobile && (
-                <>
-                  <div className="absolute block bottom-10 right-10 h-full w-[1px] bg-white transition-all duration-500 ease-in-out md:group-hover:right-0 md:group-hover:bottom-0"></div>
-                  <div className="absolute block bottom-10 right-10 h-[1px] w-full bg-white transition-all duration-500 ease-in-out md:group-hover:right-0 md:group-hover:bottom-0"></div>
-                </>
-              )}
+              <div className="absolute block bottom-5 md:bottom-10 right-5 md:right-10 h-full w-[1px] bg-white transition-all duration-500 ease-in-out group-hover:right-0 group-hover:bottom-0"></div>
+              <div className="absolute block bottom-5 md:bottom-10 right-5 md:right-10 h-[1px] w-full bg-white transition-all duration-500 ease-in-out group-hover:right-0 group-hover:bottom-0"></div>
             </div>
           </div>
           <div className="flex w-full flex-col items-start justify-center text-black">
@@ -115,19 +107,15 @@ export default function OurHistory() {
           </div>
         </div>
         <div className={`flex flex-col gap-8 md:gap-20`}>
-          <div className="relative w-full aspect-square md:aspect-auto mx-auto md:group overflow-hidden">
+          <div className="relative w-full aspect-square md:aspect-auto mx-auto group overflow-hidden">
             <div className="w-full h-full ">
               <Image
                 src={Image2012}
                 alt=""
-                className="w-full h-full object-cover transition-all duration-300 md:group-hover:scale-110 md:group-hover:opacity-80"
+                className="w-full h-full object-cover transition-all duration-300 group-hover:scale-110 group-hover:opacity-80"
               />
               {/* Animated border */}
-              {!isMobile && (
-                <>
-                  <div className="absolute block bottom-10 right-0 h-[1px] w-full bg-white transition-all duration-500 ease-in-out md:group-hover:right-0 md:group-hover:bottom-0"></div>
-                </>
-              )}
+              <div className="absolute block bottom-5 md:bottom-10 right-0 h-[1px] w-full bg-white transition-all duration-500 ease-in-out group-hover:right-0 group-hover:bottom-0"></div>
             </div>
           </div>
           <div className="flex w-full md:w-[70%] mx-auto flex-col items-start justify-center text-black">
@@ -159,19 +147,15 @@ export default function OurHistory() {
         <div
           className={`flex flex-col md:flex-row pt-8 md:pt-20 gap-4 md:gap-20`}
         >
-          <div className="relative w-full md:w-[40%] aspect-[1/1] md:aspect-auto mx-auto md:group overflow-hidden">
-            <div className="w-full h-full ">
+          <div className="w-full md:w-[40%] aspect-[1/1] md:aspect-auto mx-auto overflow-hidden">
+            <div className="relative w-fit mx-auto group md:w-full h-full overflow-hidden">
               <Image
                 src={silky}
                 alt=""
-                className="w-fit md:w-full mx-auto h-full object-cover  transition-all duration-300 md:group-hover:scale-110 md:group-hover:opacity-80"
+                className="w-fit md:w-full mx-auto h-full object-cover  transition-all duration-300 group-hover:scale-110 group-hover:opacity-80"
               />
               {/* Animated border */}
-              {!isMobile && (
-                <>
-                  <div className="absolute block bottom-0 left-10 h-full w-[1px] bg-white transition-all duration-500 ease-in-out md:group-hover:left-0 md:group-hover:bottom-0"></div>
-                </>
-              )}
+              <div className="absolute bottom-0 left-5 md:left-10 h-full w-[1px] bg-white transition-all duration-500 ease-in-out group-hover:left-0 group-hover:bottom-0"></div>
             </div>
           </div>
           <div className="flex w-full flex-col items-start justify-center text-black">
@@ -197,19 +181,15 @@ export default function OurHistory() {
               power of vision and collaboration across generations. 
             </h3>
           </div>
-          <div className="relative w-full md:w-[40%] aspect-[1/1] md:aspect-auto mx-auto md:group overflow-hidden">
-            <div className="w-full h-full ">
+          <div className="w-full md:w-[40%] aspect-[1/1] md:aspect-auto mx-auto overflow-hidden">
+            <div className="relative overflow-hidden group w-fit mx-auto md:w-full h-full ">
               <Image
                 src={Raunak}
                 alt=""
-                className="w-fit md:w-full mx-auto h-full object-cover transition-all duration-300 md:group-hover:scale-110 md:group-hover:opacity-80"
+                className="w-fit md:w-full mx-auto h-full object-cover transition-all duration-300 group-hover:scale-110 group-hover:opacity-80"
               />
               {/* Animated border */}
-              {!isMobile && (
-                <>
-                  <div className="absolute block bottom-0 right-10 h-full w-[1px] bg-white transition-all duration-500 ease-in-out md:group-hover:right-0 md:group-hover:bottom-0"></div>
-                </>
-              )}
+              <div className="absolute block bottom-0 right-5 md:right-10 h-full w-[1px] bg-white transition-all duration-500 ease-in-out group-hover:right-0 group-hover:bottom-0"></div>
             </div>
           </div>
         </div>
