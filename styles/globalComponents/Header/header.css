@@ -36,11 +36,11 @@
   text-align: center;
   width: 70%;
   color: white;
-  font-weight: 700;
+  font-weight: 300;
   font-family: "Helvetica";
   /* font-style: italic; */
   line-height: normal;
-  font-size: clamp(15px, 2vw, 60px);
+  font-size: clamp(15px, 1.9vw, 60px);
   margin: 0 auto;
 }
 @media (max-width: 768px) {
@@ -51,13 +51,12 @@
     height: 60vh;
   }
   .heading {
-    font-size: clamp(15px, 7.5vw, 60px);
+    font-size: clamp(20px, 8vw, 60px);
     padding-bottom: 1rem;
   }
   .top-heading {
-    font-size: clamp(15px, 6vw, 60px);
+    font-size: clamp(15px, 4.5vw, 60px);
     width: 85%;
-    font-weight: 600;
   }
   .top {
     min-height: 23vh;

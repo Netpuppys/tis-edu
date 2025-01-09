@@ -147,6 +147,8 @@ function NavMenu({ handleMenuBtn }) {
           title: "Clubs & Societies",
           linkTo: "/beyond-academics/clubs-and-societies/",
         },
+        { title: "Sports Day", linkTo: "/events/sports-day/" },
+        // { title: "Founders Day", linkTo: "/events/founders-day/" },
         { title: "Celebrations", linkTo: "/events/celebrations/" },
         { title: "Confluence", linkTo: "/events/confluence/" },
       ],

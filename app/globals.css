@@ -11,6 +11,10 @@
   src: url(../public/fonts/HelveticaNowDisplay-Light.ttf);
 }
 @font-face {
+  font-family: "HelveticaBold";
+  src: url(../public/fonts/Helvetica-Bold.woff);
+}
+@font-face {
   font-family: "Mirador800";
   src: url(../public/fonts/mirador-black-italic.otf);
 }
@@ -78,7 +82,7 @@ body {
   overscroll-behavior: none;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #2D2D2D;
+  background-color: #2d2d2d;
   border-radius: 20px;
 }
 .miltonian-regular {
