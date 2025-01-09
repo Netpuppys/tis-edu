@@ -5,7 +5,12 @@ import Image from "next/image";
 // import logo from "../../../../public/logos/schoolLogo.png";
 // import optionBtn from "../../../../public/icons/Button-Open-Menu.png";
 
-export default function Header({ title, subtitle, headerImg }) {
+export default function Header({
+  title,
+  subtitle,
+  headerImg,
+  headerImgMobile,
+}) {
   return (
     <div className="banner">
       <div
@@ -16,11 +21,20 @@ export default function Header({ title, subtitle, headerImg }) {
         //   backgroundRepeat: "no-repeat",
         // }}
       >
-        <Image
-          src={headerImg}
-          alt=""
-          className="absolute w-full h-full object-cover opacity-80 z-0"
-        />
+        <div className="hidden absolute w-full h-full md:block">
+          <Image
+            src={headerImg}
+            alt=""
+            className="w-full h-full object-cover opacity-80 z-0"
+          />
+        </div>
+        <div className="block absolute w-full h-full md:hidden">
+          <Image
+            src={headerImgMobile}
+            alt=""
+            className="w-full h-full object-cover opacity-80 z-0"
+          />
+        </div>
         <h1 className="heading z-10">{title}</h1>
       </div>
       <div className="middle">

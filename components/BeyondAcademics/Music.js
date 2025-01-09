@@ -2,9 +2,8 @@
 import React from "react";
 import Image from "next/image";
 import Header from "../globalComponents/Header/Header";
-import HeaderMusicImg from "../../public/Header/MusicHeader.png";
-import HeaderMusicImgMobile from "../../public/Header/MusicHeaderMobile.png";
-
+import HeaderMusicImg from "../../public/Banner/beyondCurriculum.webp";
+import HeaderMusicImgMobile from "../../public/Banner/beyondCurriculumMobile.webp";
 import "../../styles/About Tis/ourHistory.css";
 import { useMobile } from "../globalComponents/IsMobileContext";
 import music from "../../public/Music/Music.png";
@@ -20,7 +19,8 @@ function Music() {
         subtitle={
           "Skills for life aren't just taught in classrooms—they're discovered on stages, fields, and everywhere in between."
         }
-        headerImg={isMobile ? HeaderMusicImgMobile : HeaderMusicImg}
+        headerImg={HeaderMusicImg}
+        headerImgMobile={HeaderMusicImgMobile}
       />
       <p className="our-history-desc-p">
         At Tula’s International School, we believe in making learning an

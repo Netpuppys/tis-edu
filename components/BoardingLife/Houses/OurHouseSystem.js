@@ -2,8 +2,8 @@
 import React from "react";
 import Image from "next/image";
 import Header from "../../globalComponents/Header/Header";
-import HeaderHouseImg from "../../../public/Header/HouseHeader.jpg";
-import HeaderHouseMobileImg from "../../../public/Header/HouseHeaderMobile.jpg";
+import HeaderHouseImg from "../../../public/Banner/houseSystem.webp";
+import HeaderHouseMobileImg from "../../../public/Banner/houseSystemMobile.webp";
 import "../../../styles/BoardingLife/OurHouseSystem.css";
 import { useMobile } from "../../globalComponents/IsMobileContext";
 import house from "../../../public/pictures/house.png";
@@ -17,7 +17,8 @@ export default function OurHousesystem() {
         subtitle={
           "Tula's International School's house system fosters camaraderie, competition, and holistic development among students."
         }
-        headerImg={isMobile ? HeaderHouseMobileImg : HeaderHouseImg}
+        headerImg={HeaderHouseImg}
+        headerImgMobile={HeaderHouseMobileImg}
       />
       <div className="house-main">
         <p className="house-main-text">

@@ -11,6 +11,7 @@ export default function PrivacyPolicy() {
         title={"Privacy Policy"}
         subtitle={"Take a look at our Privacy Policy for more information!"}
         headerImg={HeaderFAQImg}
+        headerImgMobile={HeaderFAQImg}
       />
       <h1 className="faq-heading">
         Privacy{" "}

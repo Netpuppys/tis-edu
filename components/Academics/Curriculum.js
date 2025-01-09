@@ -17,9 +17,8 @@ export default function Curriculum() {
     <>
       <Header
         title={"Curriculum"}
-        headerImg={
-          isMobile ? HeaderCBSEAfiiliationImgMobile : HeaderCBSEAfiiliationImg
-        }
+        headerImg={HeaderCBSEAfiiliationImg}
+        headerImgMobile={HeaderCBSEAfiiliationImgMobile}
         subtitle={bannerText}
       />
       <div className="main">

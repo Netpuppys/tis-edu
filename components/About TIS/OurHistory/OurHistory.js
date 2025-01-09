@@ -24,6 +24,7 @@ export default function OurHistory() {
         title={"Our History"}
         subtitle={subTitle}
         headerImg={headerHistoryImg}
+        headerImgMobile={headerHistoryImg}
       />
       <div className="py-8 w-[85%] md:w-[75%] mx-auto md:py-20 flex flex-col justify-center items-center">
         <h3

@@ -172,6 +172,7 @@ export default function Pedagogy() {
         title={"Pedagogy"}
         subtitle={bannerText}
         headerImg={HeaderPedagogyImg}
+        headerImgMobile={HeaderPedagogyImg}
       />
       <div className="main-pedagogy">
         <h1 className="main-text">

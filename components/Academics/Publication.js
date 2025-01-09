@@ -2,8 +2,8 @@
 import { useEffect } from "react";
 import Header from "../globalComponents/Header/Header";
 import Image from "next/image";
-import HeaderPublicationImg from "../../public/Header/PublicationHeader.png";
-import HeaderPublicationMobileImg from "../../public/Header/PublicationHeaderMobile.png";
+import HeaderPublicationImg from "../../public/Banner/publications.webp";
+import HeaderPublicationMobileImg from "../../public/Banner/publicationsMobile.webp";
 import "../../styles/Academics/Publication.css";
 import TheVoiceImg from "../../public/MandatoryPDF/TheVoice.png";
 import WisdomIsFreeImg from "../../public/MandatoryPDF/Wisdom.png";
@@ -138,7 +138,8 @@ export default function Publication() {
       <Header
         title={"Publications"}
         subtitle={bannerText}
-        headerImg={isMobile ? HeaderPublicationMobileImg : HeaderPublicationImg}
+        headerImg={HeaderPublicationImg}
+        headerImgMobile={HeaderPublicationMobileImg}
       />
 
       <div className="publication-main">

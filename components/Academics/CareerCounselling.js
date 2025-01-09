@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Header from "../globalComponents/Header/Header";
-import HeaderCareerImg from "../../public/Header/careerHeader.png";
+import HeaderCareerImg from "../../public/Banner/careerCounselling.webp";
+import HeaderCareerImgMobile from "../../public/Banner/careerCounsellingMobile.webp";
 import "../../styles/Academics/CareerCounselling.css";
 import yellowLine from "../../public/pictures/lineImg.png";
 export default function CareerCounselling() {
@@ -13,6 +14,7 @@ export default function CareerCounselling() {
           "Guiding Stars: Empowering Students through Comprehensive Career Counselling Services at TIS"
         }
         headerImg={HeaderCareerImg}
+        headerImgMobile={HeaderCareerImgMobile}
       />
       <div className="main">
         <p className="text-above-career">

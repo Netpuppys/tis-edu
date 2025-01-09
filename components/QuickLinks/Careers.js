@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "../globalComponents/Header/Header";
 import "../../styles/QuickLinks/Careers.css";
-import HeaderCareerImg from "../../public/Header/careerHeader.png";
-import Link from "next/link";
+import HeaderCareerImg from "../../public/Banner/career.webp";
+import HeaderCareerImgMobile from "../../public/Banner/careerMobile.webp";
 
 export default function Careers() {
   return (
@@ -13,6 +13,7 @@ export default function Careers() {
           "Tula's International School offers rewarding career opportunities for dedicated educators and professionals."
         }
         headerImg={HeaderCareerImg}
+        headerImgMobile={HeaderCareerImgMobile}
       />
       <div className="careers-main">
         <p>

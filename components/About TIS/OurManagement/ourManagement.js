@@ -199,22 +199,15 @@ export default function OurManagement() {
   ];
   return (
     <>
-      {isMobile &&
-      <Header
-        title={"Our Management"}
-        subtitle={
-          "A strong school management provides the best learning environment for students."
-        }
-        headerImg={HeaderManagementMobileIMg}
-      />}
-      {!isMobile &&
       <Header
         title={"Our Management"}
         subtitle={
           "A strong school management provides the best learning environment for students."
         }
         headerImg={HeaderManagementIMg}
-      />}
+        headerImgMobile={HeaderManagementMobileIMg}
+      />
+
       {/* <div className="py-8 w-[85%] md:w-[75%] mx-auto md:py-20 flex flex-col justify-center items-center">
         <h3
           style={{
@@ -230,7 +223,7 @@ export default function OurManagement() {
           />
         </h3> 
       </div> */}
-      {!isMobile && (
+      <div className="hidden w-full h-full md:block">
         <div className="w-[90%] xl:w-[75%] pt-10 mx-auto gap-6 flex overflow-scroll md:overflow-auto">
           {data.map((data, index) => (
             <div key={index}>
@@ -271,62 +264,60 @@ export default function OurManagement() {
             </div>
           ))}
         </div>
-      )}
-      {isMobile && (
-        <>
-          <div className="flex px-8 pt-6 gap-4 justify-end pb-8">
-            <button
-              onClick={handlePrevClick}
-              className="text-white bg-[#b90124] active:scale-90 w-[40px] flex items-center justify-center rounded-full h-[40px] text-[20px]"
-            >
-              <FaChevronLeft />
-            </button>
-            <button
-              onClick={handleNextClick}
-              className="text-white bg-[#b90124] w-[40px] active:scale-90 flex items-center justify-center rounded-full h-[40px] text-[20px]"
-            >
-              <FaChevronRight />
-            </button>
-          </div>
-          <div className="w-[75%] mx-auto flex overflow-scroll">
-            <Swiper
-              spaceBetween={24}
-              className="mySwiper"
-              slidesPerView={1.3}
-              onSlideChange={(swiper) => {
-                setActiveIndex(swiper.activeIndex);
-                setExpandedIndex(swiper.activeIndex);
-              }}
-              ref={swiperRef}
-            >
-              {data.map((item, index) => (
-                <SwiperSlide key={index} className={`flex`}>
-                  <div
-                    onClick={() => handleExpand(index)}
-                    className={`flex w-full cursor-pointer relative flex-col aspect-[303/470] justify-end rounded-t-xl overflow-hidden shadow-[0px_14px_12.7px_0px_rgba(0,0,0,0.25)] bg-[linear-gradient(180deg,rgba(0,0,0,0.00)70.53%,#000_93.09%)]`}
-                  >
-                    <Image
-                      src={item.image}
-                      alt=""
-                      className="w-full h-full object-cover -z-10"
-                    />
-                    <div className="flex absolute text-white items-end justify-between w-full">
-                      <div className="flex flex-col justify-center px-4 items-start">
-                        <h3 className="font-[TTChocolatesBold] leading-tight font-semibold text-[clamp(15px,5vw,30px)] md:text-[clamp(20px,1.8vw,50px)]">
-                          {item.name}
-                        </h3>
-                      </div>
+      </div>
+      <div className="block w-full h-full md:hidden">
+        <div className="flex px-8 pt-6 gap-4 justify-end pb-8">
+          <button
+            onClick={handlePrevClick}
+            className="text-white bg-[#b90124] active:scale-90 w-[40px] flex items-center justify-center rounded-full h-[40px] text-[20px]"
+          >
+            <FaChevronLeft />
+          </button>
+          <button
+            onClick={handleNextClick}
+            className="text-white bg-[#b90124] w-[40px] active:scale-90 flex items-center justify-center rounded-full h-[40px] text-[20px]"
+          >
+            <FaChevronRight />
+          </button>
+        </div>
+        <div className="w-[75%] mx-auto flex overflow-scroll">
+          <Swiper
+            spaceBetween={24}
+            className="mySwiper"
+            slidesPerView={1.3}
+            onSlideChange={(swiper) => {
+              setActiveIndex(swiper.activeIndex);
+              setExpandedIndex(swiper.activeIndex);
+            }}
+            ref={swiperRef}
+          >
+            {data.map((item, index) => (
+              <SwiperSlide key={index} className={`flex`}>
+                <div
+                  onClick={() => handleExpand(index)}
+                  className={`flex w-full cursor-pointer relative flex-col aspect-[303/470] justify-end rounded-t-xl overflow-hidden shadow-[0px_14px_12.7px_0px_rgba(0,0,0,0.25)] bg-[linear-gradient(180deg,rgba(0,0,0,0.00)70.53%,#000_93.09%)]`}
+                >
+                  <Image
+                    src={item.image}
+                    alt=""
+                    className="w-full h-full object-cover -z-10"
+                  />
+                  <div className="flex absolute text-white items-end justify-between w-full">
+                    <div className="flex flex-col justify-center px-4 items-start">
+                      <h3 className="font-[TTChocolatesBold] leading-tight font-semibold text-[clamp(15px,5vw,30px)] md:text-[clamp(20px,1.8vw,50px)]">
+                        {item.name}
+                      </h3>
                     </div>
                   </div>
-                  {expandedIndex === index && (
-                    <div className="pt-[20%] w-full bg-[#FFE4E4]"></div>
-                  )}
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-        </>
-      )}
+                </div>
+                {expandedIndex === index && (
+                  <div className="pt-[20%] w-full bg-[#FFE4E4]"></div>
+                )}
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </div>
       <div className="w-[85%] md:w-[90%] xl:w-[75%] mx-auto text-black transition-all duration-500">
         <div
           className={`bg-[#FFE4E4] rounded-xl  px-8 md:px-20 py-8 ${

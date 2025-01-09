@@ -16,7 +16,8 @@ export default function FoodAndNutrition() {
       <Header
         title={"Food and Nutrition"}
         subtitle={bannerText}
-        headerImg={isMobile ? HeaderFoodMobileImg : HeaderFoodImg}
+        headerImg={HeaderFoodImg}
+        headerImgMobile={HeaderFoodMobileImg}
       />
       <div className="main-div-food">
         <p className="main-div-food-text">

@@ -1,7 +1,8 @@
 "use client";
 import React, { useEffect } from "react";
 import Header from "../globalComponents/Header/Header";
-import HeaderContactImg from "../../public/Header/ContactUsHeader.png";
+import HeaderContactImg from "../../public/Banner/contactUs.webp";
+import HeaderContactImgMobile from "../../public/Banner/contactUsMobile.webp";
 import "../../styles/QuickLinks/ContactStyle.css";
 import { FaPhone } from "react-icons/fa6";
 import { Email } from "@mui/icons-material";
@@ -14,6 +15,7 @@ const ContactUs = () => {
       <Header
         title={"Contact Us"}
         headerImg={HeaderContactImg}
+        headerImgMobile={HeaderContactImgMobile}
         subtitle={
           "It is where you find info to reach out to a school for help or questions."
         }

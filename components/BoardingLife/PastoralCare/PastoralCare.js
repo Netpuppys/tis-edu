@@ -1,7 +1,8 @@
 import React from "react";
 
 import Header from "../../globalComponents/Header/Header";
-import HeaderPastoralImg from "../../../public/Header/pastoralHeader.png";
+import HeaderPastoralImg from "../../../public/Banner/pastoralCare.webp";
+import HeaderPastoralImgMobile from "../../../public/Banner/pastoralCareMobile.webp";
 import "../../../styles/BoardingLife/pastoral.css";
 export default function PastoralCare() {
   const bannerText =
@@ -13,6 +14,7 @@ export default function PastoralCare() {
         title={"Pastoral Care"}
         subtitle={bannerText}
         headerImg={HeaderPastoralImg}
+        headerImgMobile={HeaderPastoralImgMobile}
       />
       <div className="text-pastoral">
         At Tula’s International School, we believe that your well-being is just

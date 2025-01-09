@@ -115,7 +115,8 @@ function Facility() {
     <>
       <Header
         title={"Facilities"}
-        headerImg={isMobile ? HeaderFacilityImgMobile : HeaderFacilityImg}
+        headerImg={HeaderFacilityImg}
+        headerImgMobile={HeaderFacilityImgMobile}
         subtitle={BannerText}
       />
       <div className="py-8 md:py-20 w-[90%] md:w-[80%] mx-auto flex flex-wrap gap-4 justify-center">

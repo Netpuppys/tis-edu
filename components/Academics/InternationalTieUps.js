@@ -20,7 +20,8 @@ export default function InternationaltieUps() {
         subtitle={
           "International Collaborations for Enriched Learning and Cross-Cultural Engagement."
         }
-        headerImg={isMobile ? HeaderTieUpsMobileImg : HeaderTieUpsImg}
+        headerImg={HeaderTieUpsImg}
+        headerImgMobile={HeaderTieUpsMobileImg}
       />
       <div className="main-international">
         {isMobile && <Image className="tieUps" src={tieUps1Mobile} alt="" />}

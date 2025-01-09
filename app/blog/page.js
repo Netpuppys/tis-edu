@@ -3,7 +3,8 @@ import Navbar from "../../components/globalComponents/navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import Head from "next/head";
 import Blog from "../../components/QuickLinks/Blog";
-import BlogsHeader from "../../public/Header/BlogsHeader.png";
+import BlogsHeader from "../../public/Banner/blogs.webp";
+import BlogsHeaderMobile from "../../public/Banner/blogsMobile.webp";
 import Header from "../../components/globalComponents/Header/Header";
 export default function blog() {
   return (
@@ -18,6 +19,7 @@ export default function blog() {
       <Navbar />
       <Header
         headerImg={BlogsHeader}
+        headerImgMobile={BlogsHeaderMobile}
         title={"Blogs"}
         subtitle={"This is TIS. Prepare to Launch."}
       />

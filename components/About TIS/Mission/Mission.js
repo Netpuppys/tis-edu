@@ -3,8 +3,8 @@ import React from "react";
 import Image from "next/image";
 import { useMobile } from "../../globalComponents/IsMobileContext";
 import Header from "../../globalComponents/Header/Header";
-import headerMissionImg from "../../../public/Header/VisionHeader.jpg";
-import headerMissionMobileImg from "../../../public/Header/VisionHeaderMobile.jpg";
+import headerMissionImg from "../../../public/Banner/missionVision.webp";
+import headerMissionMobileImg from "../../../public/Banner/missionVisionMobile.webp";
 import missionVision from "../../../public/vision/visionDesktop.png";
 import missionVision1 from "../../../public/pictures/image1.webp";
 import missionVision2 from "../../../public/pictures/image2.webp";
@@ -93,7 +93,8 @@ export default function Mission() {
       <Header
         title={"Mission & Vision"}
         subtitle={subTitle}
-        headerImg={isMobile ? headerMissionMobileImg : headerMissionImg}
+        headerImg={headerMissionImg}
+        headerImgMobile={headerMissionMobileImg}
       />
       <div className="py-8 md:py-20 w-[90%] md:w-[80%] mx-auto flex flex-col gap-[10vw] md:gap-[10vh]">
         {sections.map((section, index) => (

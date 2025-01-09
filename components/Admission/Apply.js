@@ -244,6 +244,7 @@ const Apply = () => {
           "The admission procedure at Tula's International School is straightforward and transparent, designed to ensure a seamless enrollment experience."
         }
         headerImg={HeaderApplyImg}
+        headerImgMobile={HeaderApplyImg}
       />
       <div className="w-[90%] relative md:w-[80%] pt-8 md:pt-20 mx-auto">
         <div className="flex flex-col md:flex-row justify-center w-full">

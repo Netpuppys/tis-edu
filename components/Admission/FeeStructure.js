@@ -4,8 +4,8 @@ import Image from "next/image";
 import yellowLine from "../../public/pictures/lineImg.png";
 import Header from "../globalComponents/Header/Header";
 import feesFlow from "../../public/pictures/fees-flow.png";
-import HeaderFeesImg from "../../public/Header/FeesStructureHeader.png";
-import HeaderFeesImgMobile from "../../public/Header/FeesStructureHeaderMobile.jpg";
+import HeaderFeesImg from "../../public/Banner/feeStructure.webp";
+import HeaderFeesImgMobile from "../../public/Banner/feeStructureMobile.webp";
 import feesIndia from "../../public/pictures/fee-structureIndia.png";
 import feesForeign from "../../public/pictures/fee-structureForeign.png";
 import FeesIndia from "../../public/MandatoryPDF/TIS-FEE-STRUCTURE-2024-25.pdf";
@@ -35,7 +35,8 @@ function FeeStructure() {
   return (
     <>
       <Header
-        headerImg={isMobile ? HeaderFeesImgMobile : HeaderFeesImg}
+        headerImg={HeaderFeesImg}
+        headerImgMobile={HeaderFeesImgMobile}
         title={"Fee Structure"}
         subtitle={
           "Every parent dreams of the best for their child, and at Tula's International School we ensure that the dream is within reach with a fee structure that’s fair and transparent."

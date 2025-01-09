@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
 import Header from "../globalComponents/Header/Header";
-import HeaderScholarShipImg from "../../public/Header/ScholarshipHeader.png";
+import HeaderScholarShipImg from "../../public/Banner/scholarship.webp";
+import HeaderScholarShipImgMobile from "../../public/Banner/scholarshipMobile.webp";
 import yellowLine from "../../public/pictures/lineImg.png";
 import "../../styles/Admission/Tution.css";
 import Image from "next/image";
@@ -79,6 +80,7 @@ function TutionAndFianance() {
       <Header
         title={"Scholarship Programs"}
         headerImg={HeaderScholarShipImg}
+        headerImgMobile={HeaderScholarShipImgMobile}
         subtitle={
           "At Tula’s International School, scholarships are more than financial aid—they’re our commitment to recognizing the dedication and ambition of students with the potential to excel."
         }

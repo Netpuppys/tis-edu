@@ -2,7 +2,8 @@
 import React from "react";
 import Header from "../globalComponents/Header/Header";
 import "../../styles/MandatoryDisclosure/MandatoryDisclosure.css";
-import HeaderMandatoryImg from "../../public/Header/MandatoryHeader.png";
+import HeaderMandatoryImg from "../../public/Banner/mandatoryDisclosure.webp";
+import HeaderMandatoryImgMobile from "../../public/Banner/mandatoryDisclosureMobile.webp";
 import Affiliation from "../../public/MandatoryPDF/Affiliation-ana-Extention.pdf";
 import Building from "../../public/MandatoryPDF/building-safety-certificate.pdf";
 import FeesStructure from "../../public/MandatoryPDF/Fee-Structure.pdf";
@@ -48,6 +49,7 @@ export default function MandatoryDisclosure() {
           "Tula's International School is a starting point for journeys of the mind that are, at the same time, journeys into the world"
         }
         headerImg={HeaderMandatoryImg}
+        headerImgMobile={HeaderMandatoryImgMobile}
       />
       <div className="container-mandatory">
         <div className="grid">

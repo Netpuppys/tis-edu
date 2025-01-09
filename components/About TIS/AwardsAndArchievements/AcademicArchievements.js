@@ -24,7 +24,8 @@ export default function AcademicArchievements() {
       <Header
         title={"Awards and Achievements"}
         subtitle={subTitle}
-        headerImg={isMobile ? headerAcademicImgMobile : headerAcademicImg}
+        headerImg={headerAcademicImg}
+        headerImgMobile={headerAcademicImgMobile}
       />
       <div className="award-desc">
         <p className="award-desc-p">

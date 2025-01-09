@@ -303,6 +303,7 @@ export default function FAQ() {
           "Got questions? Find quick answers about admissions, courses, and campus life in our FAQ section!"
         }
         headerImg={HeaderFAQImg}
+        headerImgMobile={HeaderFAQImg}
       />
       <h1 className="faq-heading">
         Frequently Asked{" "}

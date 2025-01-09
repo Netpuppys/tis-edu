@@ -1,10 +1,8 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import Header from "../../globalComponents/Header/Header";
-import yellowLineInfirmary from "../../../public/pictures/lineImg.png";
-import HeaderInfirmaryImg from "../../../public/Header/InfirmaryHeader.jpg";
-import HeaderInfirmaryMobileImg from "../../../public/Header/InfirmaryHeaderMobile.jpg";
+import HeaderInfirmaryImg from "../../../public/Banner/infirmary.webp";
+import HeaderInfirmaryMobileImg from "../../../public/Banner/infirmaryMobile.webp";
 import "../../../styles/BoardingLife/infirmary.css";
 import { useMobile } from "../../globalComponents/IsMobileContext";
 export default function Infirmary() {
@@ -16,7 +14,8 @@ export default function Infirmary() {
         subtitle={
           "Health emergencies? We handle them swiftly, safely, and with care—right here in our school infirmary."
         }
-        headerImg={isMobile ? HeaderInfirmaryMobileImg : HeaderInfirmaryImg}
+        headerImgMobile={HeaderInfirmaryMobileImg}
+        headerImg={HeaderInfirmaryImg}
       />
       <div className="infirmary-main">
         {/* <br />

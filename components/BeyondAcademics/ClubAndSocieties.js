@@ -177,6 +177,7 @@ export default function ClubAndSocieties() {
           "Clubs and societies enrich the students with skills & a passion for friendships."
         }
         headerImg={HeaderClubsImg}
+        headerImgMobile={HeaderClubsImg}
       />
       <h6
         style={{

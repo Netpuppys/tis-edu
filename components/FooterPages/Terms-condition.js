@@ -13,6 +13,7 @@ export default function Terms() {
           "Please read our Terms and Conditions to understand the guidelines and policies for our boarding school community."
         }
         headerImg={HeaderFAQImg}
+        headerImgMobile={HeaderFAQImg}
       />
       <h1 className="faq-heading">
         Terms &{" "}

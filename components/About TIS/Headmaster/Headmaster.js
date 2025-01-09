@@ -21,7 +21,8 @@ function Headmaster() {
     <>
       <Header
         title={"Headmaster’s Profile"}
-        headerImg={isMobile ? HeaderHeadmasterMobileIMg : HeaderHeadmasterIMg}
+        headerImg={HeaderHeadmasterIMg}
+        headerImgMobile={HeaderHeadmasterMobileIMg}
         subtitle={
           "A headmaster is the architect of dreams, laying the foundation for a lifetime of success."
         }

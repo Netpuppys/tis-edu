@@ -2,9 +2,8 @@
 import React from "react";
 import Image from "next/image";
 import Header from "../globalComponents/Header/Header";
-import HeaderConfluenceImg from "../../public/Header/ConfluenceHeader.png";
-import HeaderConfluenceImgMobile from "../../public/Header/ConfluenceHeaderMobile.png";
-
+import HeaderConfluenceImg from "../../public/Banner/confluence.webp";
+import HeaderConfluenceImgMobile from "../../public/Banner/confluenceMobile.webp";
 import yellowLine from "../../public/pictures/lineImg.png";
 import "../../styles/BeyondAcademics/EventConfluence.css";
 import { useMobile } from "../globalComponents/IsMobileContext";
@@ -23,7 +22,8 @@ export default function EventConfluence() {
         subtitle={
           "Confluence at Tula's International School is a vibrant platform celebrating cultural diversity, talent, and creativity among students."
         }
-        headerImg={isMobile ? HeaderConfluenceImgMobile : HeaderConfluenceImg}
+        headerImg={HeaderConfluenceImg}
+        headerImgMobile={HeaderConfluenceImgMobile}
       />
       <div className="confluence">
         <h1 className="Confluence-heading">

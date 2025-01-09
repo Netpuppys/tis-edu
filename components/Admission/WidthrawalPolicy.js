@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
 import Header from "../globalComponents/Header/Header";
-import HeaderWithdrawal from "../../public/Header/WithdrawalHeader.png";
+import HeaderWithdrawal from "../../public/Banner/withdrawalPolicy.webp";
+import HeaderWithdrawalMobile from "../../public/Banner/withdrawalPolicyMobile.webp";
 import yellowLine from "../../public/YellowLineTitle.png";
 import "../../styles/Admission/Widthrawal.css";
 import Withdrawal from "../../public/MandatoryPDF/Withdrawal-Form.pdf";
@@ -52,11 +53,13 @@ export default function WidthrawalPolicy() {
     <>
       <Header
         title={"Withdrawal Policy"}
-        headerImg={HeaderWithdrawal}
         subtitle={
           "Tula's International School has a clear and detailed withdrawal policy to guide parents through the process."
         }
+        headerImg={HeaderWithdrawal}
+        headerImgMobile={HeaderWithdrawalMobile}
       />
+
       <div className="WidthdrawalPolicy">
         <div className="main-title-widthdrawal">
           <br />

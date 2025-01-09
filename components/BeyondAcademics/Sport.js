@@ -475,6 +475,7 @@ function Sport() {
           "Sports instill discipline, teamwork, and well-being in students' lives."
         }
         headerImg={HeaderSportsImg}
+        headerImgMobile={HeaderSportsImg}
       />
       <h6
         style={{

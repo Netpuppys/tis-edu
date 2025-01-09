@@ -1,7 +1,8 @@
 "use client";
 import Header from "../globalComponents/Header/Header";
 import Image from "next/image";
-import HeaderCelebrationsImg from "../../public/Header/EventsHeader.png";
+import HeaderCelebrationsImg from "../../public/Banner/celebrations.webp";
+import HeaderCelebrationsImgMobile from "../../public/Banner/celebrationsMobile.webp";
 import React from "react";
 import { useMobile } from "../globalComponents/IsMobileContext";
 import bookwormIcon from "../../public/Clubs/bookwormIcon.png";
@@ -205,6 +206,7 @@ export default function Events() {
           "Unforgettable school events help in cultivating talent and building bonds."
         }
         headerImg={HeaderCelebrationsImg}
+        headerImgMobile={HeaderCelebrationsImgMobile}
       />
       <div className="flex flex-col items-center justify-center">
         {data.map((data, index) => (

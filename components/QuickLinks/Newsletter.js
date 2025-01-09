@@ -2,28 +2,26 @@
 import React from "react";
 import "../../styles/QuickLinks/Newsletter.css";
 import newsletter from "../../public/pictures/Newsletter.png";
-import HeaderNewsLetterImg from "../../public/Header/NewsletterHeader.png";
+import HeaderNewsLetterImg from "../../public/Banner/newsletter.webp";
+import HeaderNewsLetterImgMobile from "../../public/Banner/newsletterMobile.webp";
 import April2018 from "../../public/MandatoryPDF/April2018.pdf";
 import Nov2018 from "../../public/MandatoryPDF/Nov2018.pdf";
 import volume3 from "../../public/MandatoryPDF/volume3.pdf";
 import volume2 from "../../public/MandatoryPDF/volume2.pdf";
 import volume1 from "../../public/MandatoryPDF/Volume1.pdf";
 import Image from "next/image";
+import Header from "../globalComponents/Header/Header";
 const Newsletter = () => {
   return (
     <>
-      <div className="w-full h-[80vh] md:h-screen relative flex flex-col items-center justify-end">
-        <Image
-          src={HeaderNewsLetterImg}
-          alt="HeaderImg"
-          className="h-full w-full object-cover absolute -z-10"
-        />
-
-        <h1 className="font-[Mirador800] text-white z-10 text-[clamp(15px,7.5vw,60px)] md:text-[clamp(20px,3.2vw,80px)]">
-          Newsletter
-        </h1>
-        <br />
-      </div>
+      <Header
+        title={"Newsletter"}
+        subtitle={
+          "Stay updated with the latest news, events, and achievements from Tula's International School, Dehradun – where young minds thrive in a nurturing boarding environment."
+        }
+        headerImg={HeaderNewsLetterImg}
+        headerImgMobile={HeaderNewsLetterImgMobile}
+      />
 
       <div className="newsletter-main">
         <h2>
