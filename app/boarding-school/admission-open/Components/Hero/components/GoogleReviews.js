@@ -79,18 +79,15 @@ function GoogleReviews() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row min-h-screen md:min-h-[75vh] relative w-full">
-      <div className="w-full md:w-[42%]  relative flex bg-black flex-col justify-center items-center md:h-full">
+    <div className="flex flex-col md:flex-row relative w-full">
+      <div className="w-full py-8 md:py-14 relative md:w-[42%] flex bg-black flex-col justify-center items-center">
         <Image
           src={googleReviewsBackground}
           alt=""
-          className="w-full opacity-50 min-h-[50vh] md:min-h-[75vh] object-cover"
+          className="w-full h-full opacity-50 absolute object-cover"
         />
-        <div className="text-white absolute flex flex-col justify-center items-center px-8">
-          <h3
-            className="font-[Mirador800] text-center"
-            style={{ fontSize: "clamp(35px, 4vw, 70px)" }}
-          >
+        <div className="text-white flex flex-col relative z-20 justify-center items-center px-8">
+          <h3 className="font-[Mirador800] text-[clamp(20px,5vw,70px)] md:text-[clamp(20px,2.5vw,70px)] text-center">
             Google Reviews
           </h3>
           <svg
@@ -114,10 +111,9 @@ function GoogleReviews() {
               className="svg-elem-1"
             />
           </svg>
-          <p3
-            className="px-0 md:px-20"
+          <h2
+            className="px-0 md:px-20 text-[clamp(14px,4.5vw,25px)] md:text-[clamp(10px,1.1vw,25px)]"
             style={{
-              fontSize: "clamp(14px, 1.1vw, 25px)",
               fontFamily: "TT Chocolates",
             }}
           >
@@ -127,16 +123,13 @@ function GoogleReviews() {
             school has ample support services in place for its students to
             thrive both physically and mentally, including a Wellness Infirmary,
             equipped with everything that one may need to keep them healthy. 
-          </p3>
+          </h2>
         </div>
       </div>
-      <div className="w-full md:w-[58%] relative min-h-[50vh] md:min-h-[75vh] backgroundGoogle">
-        <div
-          ref={ref}
-          className="w-full h-fit absolute top-[50%] -translate-y-1/2 md:translate-y-0 md:top-[35%] overflow-hidden "
-        >
+      <div className="w-full py-8 md:py-14 md:w-[58%] flex items-center justify-center backgroundGoogle">
+        <div ref={ref} className="w-full overflow-hidden ">
           <div
-            className={`pl-0 md:pl-12 ${
+            className={`pl-0 md:pl-12 flex ${
               inView ? "animate-translateRight opacity-100" : "opacity-0"
             }`}
           >
@@ -150,10 +143,10 @@ function GoogleReviews() {
               {features.map((feature, index) => (
                 <SwiperSlide key={index}>
                   <div
-                    className="h-full rounded-xl w-full mx-auto px-6 py-4 bg-white overflow-hidden"
+                    className="h-full rounded-xl w-full mx-auto flex flex-col justify-between px-6 py-4 bg-white overflow-hidden"
                     style={{ fontFamily: "TT Chocolates" }}
                   >
-                    <div className="flex justify-between mb-4 items-center">
+                    <div className="flex h-full justify-between mb-4 items-center">
                       <div className="w-fit flex flex-col text-[14px] gap-2 md:gap-4 justify-between">
                         <StarRatings
                           rating={feature.rating}
@@ -163,37 +156,22 @@ function GoogleReviews() {
                           starSpacing="2px"
                           name="rating"
                         />
-                        <h2
-                          style={{
-                            fontSize: "clamp(20px, 1.6vw, 45px)",
-                          }}
-                          className="leading-none font-extrabold text-left "
-                        >
+                        <h2 className="leading-none font-extrabold text-left text-[clamp(14px,4.5vw,45px)] md:text-[clamp(10px,1.6vw,45px)]">
                           {feature.name}
                         </h2>
-                        <h3
-                          style={{
-                            fontSize: "clamp(13px, 1vw, 45px)",
-                          }}
-                          className=" leading-none font-extrabold text-left "
-                        >
+                        <h3 className="text-[clamp(13px,4vw,45px)] md:text-[clamp(8px,1vw,45px)] leading-none font-extrabold text-left ">
                           {feature.reviewBy}
                         </h3>
                       </div>
                       <Image
                         src={feature.image}
                         alt=""
-                        className="w-[40%] aspect-square rounded-full h-full object-cover"
+                        className="w-[40%] aspect-square rounded-full h-fit object-cover"
                       />
                     </div>
-                    <p
-                      style={{
-                        fontSize: "clamp(13px, 0.7vw, 45px)",
-                      }}
-                      className="text-left"
-                    >
+                    <h2 className="text-left text-[clamp(13px,3vw,45px)] md:text-[clamp(10px,0.8vw,45px)]">
                       {feature.description}
-                    </p>
+                    </h2>
                   </div>
                 </SwiperSlide>
               ))}

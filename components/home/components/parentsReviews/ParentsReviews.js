@@ -1,37 +1,26 @@
 "use client";
 
 import React, { useRef, useState, useEffect } from "react";
-import { useMobile } from "../../../globalComponents/IsMobileContext";
 import invCommaIcon from "../../../../public/icons/commas.svg";
 import "../../../../styles/home/components/parentsReviews/ParentsReviews.css";
 import previousIcon from "../../../../public/pictures/previous.png";
 import nextIcon from "../../../../public/pictures/next.png";
-import { SwiperSlide, Swiper } from "swiper/react";
 import Image from "next/image";
-import { EffectCoverflow, Pagination } from "swiper/modules";
-import parent from "../../../../public/pictures/parents.png";
+import { HiOutlineChevronRight, HiOutlineChevronLeft } from "react-icons/hi2";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import { useMobile } from "../../../globalComponents/IsMobileContext";
 
 function ParentsReviews() {
   const { isMobile } = useMobile();
   const [activeIndex, setActiveIndex] = useState(1); // Set default index to 1
 
-  const parents = [
-    {
-      parent: parent,
-      path: "https://player.vimeo.com/video/1020966853?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-    },
-    {
-      parent: parent,
-      path: "https://player.vimeo.com/video/1020966607?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-    },
-    {
-      parent: parent,
-      path: "https://player.vimeo.com/video/1020966777?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-    },
-    // {
-    //   parent: parent,
-    //   path: "https://player.vimeo.com/video/1020966663?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-    // },
+  const testimonials = [
+    "https://player.vimeo.com/video/1020966853?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    "https://player.vimeo.com/video/1020966607?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    "https://player.vimeo.com/video/1020966777?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
   ];
 
   const reviews = [
@@ -41,81 +30,77 @@ function ParentsReviews() {
     // "The caring approach of the teachers at Tula's has been instrumental in our child's development. Their personalized teaching methods have helped our child excel academically and socially. We couldn't be happier with the school's dedication to each student's success.",
   ];
 
-  const swiperRef = useRef();
-
-  // Update the review text based on the active index of the swiper
-  const handleSlideChange = () => {
-    if (swiperRef.current) {
-      setActiveIndex(swiperRef.current.swiper.realIndex);
+  const swiperRef = useRef([]);
+  const handleNextClick = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideNext(); // Use `swiper` instance
+      setActiveIndex(swiperRef.current.swiper.activeIndex);
     }
   };
 
-  useEffect(() => {
-    if (swiperRef.current) {
-      swiperRef.current.swiper.slideTo(activeIndex, 0); // Set default index to 1 on component mount
+  const handlePrevClick = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slidePrev(); // Use `swiper` instance
+      setActiveIndex(swiperRef.current.swiper.activeIndex);
     }
-  }, [swiperRef]);
+  };
 
   return (
     <div
-      className="w-full flex flex-col md:flex-row justify-center items-center min-h-[75vh]"
+      className="w-full flex flex-col justify-center items-center py-2 md:py-10"
       id="11"
     >
-      <div className="w-full md:w-1/2 px-[7%]">
-        <div className="w-full flex justify-center items-end">
-          <Image
-            src={invCommaIcon}
-            alt=""
-            className="w-[8%] -mb-[1vh] md:-mb-[3vh]"
-          />
-          <h2 className="w-[92%] text-center pb-[1.5vh] md:pb-[3vh] border-[#b90124] border-b leading-tight text-[8vh] font-[900] font-[TTChocolatesBold]">
-            From The <br />
+      <div className="w-full px-8 md:px-0 md:w-[75%] mx-auto">
+        <div className="w-full flex h-full gap-2 items-start">
+          <Image src={invCommaIcon} alt="" className="w-[20px] md:w-[30px]" />
+          <h2 className="border-[#b90124] border-b leading-tight text-[clamp(15px,8vw,60px)] md:text-[clamp(20px,3vw,100px)] font-[900] font-[TTChocolatesBold]">
+            From The{" "}
             <span className="text-[#b90124] font-[Mirador800]">Parents</span>
           </h2>
         </div>
         <h3
-          className="pt-[5vh] text-[clamp(20px,1.5vw,45px)]"
-          style={{ fontFamily: "TT Chocolates" }}
+          style={{
+            fontFamily: "TT Chocolates",
+          }}
+          className="w-full pt-2 md:pl-[38px] md:pt-10 text-[clamp(15px,4.5vw,30px)] font-normal md:text-[clamp(18px,1.3vw,45px)] "
         >
           {reviews[activeIndex]}
         </h3>
       </div>
-      <div className="w-full md:w-1/2 py-8 md:py-0 min-h-[60vh] md:min-h-[85vh] relative flex flex-col items-center justify-center">
-        <div className="w-[50%] h-full absolute right-0 bg-[#b90124] rounded-s-[70px]"></div>
-        <Swiper
-          ref={swiperRef}
-          effect={"coverflow"}
-          grabCursor={true}
-          // slidesPerView={isMobile ? 1.3 : 3}
-          slidesPerView={isMobile ? "auto" : 3}
-          centeredSlides={true}
-          initialSlide={1} // Set the default active slide to index 1
-          onSlideChange={handleSlideChange}
-          coverflowEffect={{
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-          }}
-          navigation={true}
-          modules={[EffectCoverflow]}
-        >
-          {parents.map((parent, index) => (
-            <div className="rounded-3xl overflow-hidden" key={index}>
-              <SwiperSlide>
-                <div className="h-fit w-fit aspect-[9/16] mx-auto">
-                  <div className="w-full h-full object-cover border border-black rounded-3xl overflow-hidden">
+      <div className="relative w-full">
+        <div className="w-full md:w-full mx-auto h-fit flex items-center justify-center md:px-40 pt-8 md:pt-20 relative">
+          <Image
+            src={previousIcon}
+            onClick={handlePrevClick}
+            className="w-[10%] flex md:hidden bg-transparent z-50 relative top-1/2 -translate-y-1/2 left-4"
+          />
+
+          <div className="w-[70%] md:w-[80%] h-full flex items-center justify-center px-8 md:px-0 relative">
+            {/* Swiper Carousel */}
+            <Swiper
+              ref={swiperRef}
+              spaceBetween={30}
+              slidesPerView={isMobile ? 1 : 3}
+              onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+            >
+              {testimonials.map((testimonial, index) => (
+                <SwiperSlide key={index}>
+                  <div className={`transition-transform duration-500`}>
                     <iframe
-                      src={parent.path}
-                      className="w-full h-full object-cover bg-transparent"
+                      src={testimonial}
+                      className="h-fit w-full aspect-[9/16]"
                     />
                   </div>
-                </div>
-              </SwiperSlide>
-            </div>
-          ))}
-        </Swiper>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+          <Image
+            src={nextIcon}
+            onClick={handleNextClick}
+            className="w-[10%] flex md:hidden bg-transparent z-50 relative top-1/2 -translate-y-1/2 right-4"
+          />
+        </div>
       </div>
     </div>
   );

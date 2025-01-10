@@ -69,10 +69,10 @@ const HomeLayout = () => {
               <Video />
               <FifthSection />
               <NewStats />
-              {/* <SixthSection /> */}
-              <TisByNumbers />
-              <AwardSection />
               <Ranking />
+              {/* <SixthSection /> */}
+              <AwardSection />
+              <TisByNumbers />
               <ParentsReviews />
               <GoogleReviews />
               <FeaturesSection />

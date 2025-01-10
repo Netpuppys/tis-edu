@@ -119,7 +119,7 @@ export default function Mission() {
               </div>
             </div>
             <div className="flex w-full flex-col items-start justify-center text-black">
-              <h2 className="w-full text-[#212121] font-[Mirador800] italic text-[clamp(20px,2.5vw,100px)]">
+              <h2 className="w-full text-[#212121] font-[Mirador800] text-[clamp(15px,7.5vw,60px)] md:text-[clamp(20px,2.5vw,100px)]">
                 {section.title}
               </h2>
               <h3

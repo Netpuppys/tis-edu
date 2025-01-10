@@ -31,24 +31,24 @@ function NewStats() {
     { img: image2, aspect: "2-1" },
     { number: "5:1", title: "STUDENT RATIO", icon: ratio, aspect: "1-1" },
     { img: image3, aspect: "1-1" },
-    { number: "19+", title: "YEARS OF EXPERIENCE", icon: years, aspect: "1-1" },
-    { number: "4th", title: "RANKING IN INDIA", icon: ranking, aspect: "1-1" },
-    { img: image4, aspect: "1-1" },
-    {
-      number: "100%",
-      title: "COLLEGE ACCEPTANCE",
-      icon: college,
-      aspect: "1-1",
-    },
-    { img: image5, aspect: "1-1" },
-    { number: "60%", title: "STEM PARTICIPATION", icon: stem, aspect: "1-1" },
-    { img: image6, aspect: "2-1" },
+    // { number: "19+", title: "YEARS OF EXPERIENCE", icon: years, aspect: "1-1" },
+    // { number: "4th", title: "RANKING IN INDIA", icon: ranking, aspect: "1-1" },
+    // { img: image4, aspect: "1-1" },
+    // {
+    //   number: "100%",
+    //   title: "COLLEGE ACCEPTANCE",
+    //   icon: college,
+    //   aspect: "1-1",
+    // },
+    // { img: image5, aspect: "1-1" },
+    // { number: "60%", title: "STEM PARTICIPATION", icon: stem, aspect: "1-1" },
+    // { img: image6, aspect: "2-1" },
   ];
 
   return (
     <div>
       <div className="mb-8 w-[70%] md:w-[40%] h-[2px] bg-[#b90124] mx-auto"></div>
-      <div className="grid grid-cols-2 md:grid-cols-4 w-[95%] md:w-[80%] mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-4 w-[95%] md:w-[75%] mx-auto">
         {stats.map((stat, index) => (
           <div
             key={index}
@@ -79,11 +79,7 @@ function NewStats() {
                     fontFamily: "TT Chocolates",
                   }}
                 >
-                  <Image
-                    src={stat.icon}
-                    alt=""
-                    className="w-[40%] h-fit mb-3"
-                  />
+                  <Image src={stat.icon} alt="" className="w-fit h-fit mb-3" />
                   <h3 className="text-[#3D3D3D] text-[clamp(20px,3vw,70px)] font-light">
                     {stat.number}
                   </h3>
