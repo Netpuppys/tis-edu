@@ -50,7 +50,6 @@
 }
 .Award-section-main-div .activity-div:hover {
   transform: scale(1.03);
-  filter: brightness(0.95);
 }
 
 .Award-section-main-div .btn-div .see-more-btn:hover .red-bg-btn {
