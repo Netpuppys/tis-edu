@@ -8,7 +8,7 @@ export default function Careers() {
   return (
     <>
       <Header
-        title={"Career"}
+        title={"Careers"}
         subtitle={
           "Tula's International School offers rewarding career opportunities for dedicated educators and professionals."
         }

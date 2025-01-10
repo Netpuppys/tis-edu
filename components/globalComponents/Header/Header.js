@@ -12,39 +12,44 @@ export default function Header({
   headerImgMobile,
 }) {
   return (
-    <div className="banner">
+    <div className="h-full w-full md:min-h-screen">
       <div
-        className="heading-outer bg-black relative"
+        className="h-full md:min-h-[75vh] flex justify-center items-end bg-black relative"
         // style={{
         //   backgroundImage: `url(${headerImg.src})`,
         //   backgroundSize: "100% 100%",
         //   backgroundRepeat: "no-repeat",
         // }}
       >
-        <div className="hidden absolute w-full h-full md:block">
+        <div className="hidden w-full h-full md:block">
           <Image
             src={headerImg}
             alt=""
-            className="w-full h-full object-cover opacity-80 z-0"
+            className="w-full h-[75vh] object-cover opacity-80 z-0"
           />
         </div>
-        <div className="block absolute w-full h-full md:hidden">
+        <div className="block w-full h-full md:hidden">
           <Image
             src={headerImgMobile}
             alt=""
-            className="w-full h-full object-cover opacity-80 z-0"
+            className="w-full h-full aspect-[430/560] object-cover opacity-80 z-0"
           />
         </div>
-        <h1 className="heading z-10">{title}</h1>
+        <h1
+          style={{
+            textShadow: "0px 5px 16px rgba(0, 0, 0, 0.2)",
+          }}
+          className="font-[Mirador800] absolute text-[clamp(20px,8vw,60px)] md:text-[clamp(20px,3.2vw,80px)] pb-8 text-white z-10"
+        >
+          {title}
+        </h1>
       </div>
-      <div className="middle">
-        <div className="top">
-          {/* <button className="counselling-btn"><p style={{fontSize:"12px",margin:"0"}}>More in</p>About TIS</button> */}
-          <h2 className="top-heading tracking-wider">
-            {subtitle}
-            <br />
-          </h2>
-        </div>
+      <div className="flex h-full md:min-h-[25vh] bg-[#b90124] items-center justify-center">
+        {/* <button className="counselling-btn"><p style={{fontSize:"12px",margin:"0"}}>More in</p>About TIS</button> */}
+        <h2 className="py-4 text-[clamp(15px,4.5vw,60px)] w-[85%] md:w-[70%] mx-auto text-center text-white font-[Helvetica] md:text-[clamp(15px,1.9vw,60px)] tracking-wider">
+          {subtitle}
+          <br />
+        </h2>
       </div>
     </div>
   );
