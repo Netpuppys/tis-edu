@@ -76,6 +76,12 @@
 .list-image li {
   padding-left: 10px;
 }
+.list-image-green {
+  list-style-image: url("../public/icons/bullet-green.png");
+}
+.list-image-green li {
+  padding-left: 10px;
+}
 .material-bubble {
   background-color: transparent;
   color: "#FFFFFF";

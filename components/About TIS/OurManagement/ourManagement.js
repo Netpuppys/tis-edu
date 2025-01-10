@@ -45,7 +45,7 @@ export default function OurManagement() {
       position: "(Chairman)",
       image: sunil,
       points: (
-        <ul className="ml-8 list-image">
+        <ul className="ml-8 list-image-green">
           <li>Dr APJ Kalam Award - 2016</li>
           <li>Sardar Vallabh Bhai Patel Rashtriya Ekta Puruskar - 2015</li>
           <li>
@@ -101,7 +101,7 @@ export default function OurManagement() {
       image: Raunak,
       position: "(Vice Chairman)",
       points: (
-        <ul className="ml-8 list-image">
+        <ul className="ml-8 list-image-green">
           <li>Alumnus - M.Sc. International Management from RHUL</li>
           <li>(Royal Holloway University of London)</li>
           <li>Vice president (Welfare) National Taekwondo Committe</li>
@@ -133,7 +133,7 @@ export default function OurManagement() {
       image: silky,
       position: "(Executive Director)",
       points: (
-        <ul className="ml-8 list-image">
+        <ul className="ml-8 list-image-green">
           <li>Alumnus - Symbiosis Institute of Design, Pune</li>
           <li>
             Awarded as an Inspiring Women Eduleader for the year 2014 by
@@ -169,7 +169,7 @@ export default function OurManagement() {
       position: "(Vice President)",
       image: raghav,
       points: (
-        <ul className="ml-8 list-image">
+        <ul className="ml-8 list-image-green">
           <li>B.Tech CS (VIT, Vellore)</li>
           <li>M.S. (University of Texas at Dallas)</li>
           <li>Ph.D (Banasthali University)</li>
@@ -332,7 +332,7 @@ export default function OurManagement() {
               expandedIndex === 0 && "md:rounded-ss-none"
             } ${expandedIndex === 3 && "md:rounded-se-none"}`}
           >
-            <h3 className="text-[#B90124] text-[clamp(15px,7vw,60px)] font-[NeueHaasDisplayBold] tracking-wide md:tracking-widest md:text-[clamp(20px,2.5vw,50px)]">
+            <h3 className="text-[#B90124] text-[clamp(15px,7vw,60px)] leading-tight pb-4 font-[NeueHaasDisplayBold] tracking-wide md:tracking-widest md:text-[clamp(20px,2.5vw,50px)]">
               {data[expandedIndex].name} {data[expandedIndex].position}
             </h3>
             <h4
