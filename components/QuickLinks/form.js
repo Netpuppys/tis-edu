@@ -193,7 +193,7 @@ function ContactForm() {
           <div className="flex items-center justify-start w-full gap-4 md:gap-8 flex-wrap">
             {[
               "Admission",
-              "Course Information",
+              "Career",
               "Hostel & Information",
               "Others",
             ].map((label, index) => (

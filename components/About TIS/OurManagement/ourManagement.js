@@ -9,7 +9,7 @@ import sunil from "../../../public/ourMangement/sunilJain.webp";
 import Raunak from "../../../public/ourMangement/Raunak.webp";
 import silky from "../../../public/ourMangement/silky.webp";
 import raghav from "../../../public/ourMangement/raghav.webp";
-import lineImg from "../../../public/pictures/lineImg.png";
+import bullet from "../../../public/icons/see-all-activities.png";
 import { RxDoubleArrowDown } from "react-icons/rx";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -45,7 +45,7 @@ export default function OurManagement() {
       position: "(Chairman)",
       image: sunil,
       points: (
-        <ul className="ml-5 list-disc">
+        <ul className="ml-8 list-image">
           <li>Dr APJ Kalam Award - 2016</li>
           <li>Sardar Vallabh Bhai Patel Rashtriya Ekta Puruskar - 2015</li>
           <li>
@@ -101,7 +101,7 @@ export default function OurManagement() {
       image: Raunak,
       position: "(Vice Chairman)",
       points: (
-        <ul className="ml-5 list-disc">
+        <ul className="ml-8 list-image">
           <li>Alumnus - M.Sc. International Management from RHUL</li>
           <li>(Royal Holloway University of London)</li>
           <li>Vice president (Welfare) National Taekwondo Committe</li>
@@ -133,7 +133,7 @@ export default function OurManagement() {
       image: silky,
       position: "(Executive Director)",
       points: (
-        <ul className="ml-5 list-disc">
+        <ul className="ml-8 list-image">
           <li>Alumnus - Symbiosis Institute of Design, Pune</li>
           <li>
             Awarded as an Inspiring Women Eduleader for the year 2014 by
@@ -169,7 +169,7 @@ export default function OurManagement() {
       position: "(Vice President)",
       image: raghav,
       points: (
-        <ul className="ml-5 list-disc">
+        <ul className="ml-8 list-image">
           <li>B.Tech CS (VIT, Vellore)</li>
           <li>M.S. (University of Texas at Dallas)</li>
           <li>Ph.D (Banasthali University)</li>
@@ -318,29 +318,44 @@ export default function OurManagement() {
           </Swiper>
         </div>
       </div>
-      <div className="w-[85%] md:w-[90%] xl:w-[75%] mx-auto text-black transition-all duration-500">
-        <div
-          className={`bg-[#FFE4E4] rounded-xl  px-8 md:px-20 py-8 ${
-            expandedIndex === 0 && "md:rounded-ss-none"
-          } ${expandedIndex === 3 && "md:rounded-se-none"}`}
-        >
-          <h3 className="text-[#B90124] text-[clamp(15px,7vw,60px)] font-[NeueHaasDisplayBold] tracking-wide md:tracking-widest md:text-[clamp(20px,2.5vw,50px)]">
-            {data[expandedIndex].name} {data[expandedIndex].position}
-          </h3>
-          <h4
-            style={{
-              fontFamily: "TT Chocolates",
-            }}
-            className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)]"
+      <div className="w-full text-black transition-all duration-500">
+        <div className="flex w-full justify-center items-center">
+          <button
+            onClick={handlePrevClick}
+            className="text-[#b90124] md:hidden active:scale-90 w-[40px] flex items-center justify-center rounded-full h-[40px] text-[20px]"
           >
-            {data[expandedIndex].points}
-          </h4>
+            <FaChevronLeft />
+          </button>
+
+          <div
+            className={`bg-[#FFE4E4] w-[85%] md:w-[90%] xl:w-[75%] mx-auto rounded-xl  px-8 md:px-20 py-8 ${
+              expandedIndex === 0 && "md:rounded-ss-none"
+            } ${expandedIndex === 3 && "md:rounded-se-none"}`}
+          >
+            <h3 className="text-[#B90124] text-[clamp(15px,7vw,60px)] font-[NeueHaasDisplayBold] tracking-wide md:tracking-widest md:text-[clamp(20px,2.5vw,50px)]">
+              {data[expandedIndex].name} {data[expandedIndex].position}
+            </h3>
+            <h4
+              style={{
+                fontFamily: "TT Chocolates",
+              }}
+              className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)]"
+            >
+              {data[expandedIndex].points}
+            </h4>
+          </div>
+          <button
+            onClick={handleNextClick}
+            className="text-[#b90124] md:hidden w-[40px] active:scale-90 flex items-center justify-center rounded-full h-[40px] text-[20px]"
+          >
+            <FaChevronRight />
+          </button>
         </div>
         <h4
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="text-[clamp(15px,4.5vw,30px)] py-8 md:py-20 md:text-[clamp(18px,1.3vw,45px)]"
+          className="w-[85%] md:w-[90%] xl:w-[75%] mx-auto text-[clamp(15px,4.5vw,30px)] py-8 md:py-20 md:text-[clamp(18px,1.3vw,45px)]"
         >
           {data[expandedIndex].description}
         </h4>

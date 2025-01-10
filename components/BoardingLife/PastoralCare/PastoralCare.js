@@ -17,37 +17,45 @@ export default function PastoralCare() {
         headerImgMobile={HeaderPastoralImgMobile}
       />
       <div className="text-pastoral">
-        At Tula’s International School, we believe that your well-being is just
-        as important as your academics. Our Pastoral Care team is here to
-        support you every step of the way, ensuring you feel safe, cared for,
-        and encouraged to grow.
+        <strong className="font-black">
+          At Tula’s International School, we believe that your well-being is
+          just as important as your academics. Our Pastoral Care team is here to
+          support you every step of the way, ensuring you feel safe, cared for,
+          and encouraged to grow.
+        </strong>
         <br />
         <br />
-        <ul className="ml-5 list-disc">
+        <ul className="ml-8 list-image">
           <li>
-            <strong className="font-black">Support in Every Way:</strong>{" "}
+            <strong className="font-black text-[#b90124] font-[TTChocolates]">
+              Support in Every Way:
+            </strong>{" "}
             Whether it’s emotional, social, or academic, our team is dedicated
             to helping you feel confident and strong. We’re here to guide you
             through any challenges and celebrate your successes.
           </li>
           <br />
           <li>
-            <strong className="font-black">A Safe, Caring Environment:</strong>{" "}
+            <strong className="font-black text-[#b90124] font-[TTChocolates]">
+              A Safe, Caring Environment:
+            </strong>{" "}
             At TIS, we create a space where kindness and respect are always a
             priority. You’ll always find support from your friends, teachers,
             and staff, no matter what you’re going through.
           </li>
           <br />
           <li>
-            <strong className="font-black">Mental Health Matters:</strong> We
-            understand that life can get tough sometimes. That’s why our
+            <strong className="font-black text-[#b90124] font-[TTChocolates]">
+              Mental Health Matters:
+            </strong>{" "}
+            We understand that life can get tough sometimes. That’s why our
             counselors are available whenever you need someone to talk to,
             offering guidance and support when you face stress or emotional
             challenges.
           </li>
           <br />
           <li>
-            <strong className="font-black">
+            <strong className="font-black text-[#b90124] font-[TTChocolates]">
               Building Friendships for Life:
             </strong>{" "}
             The friendships you make here will stay with you long after

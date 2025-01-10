@@ -2,23 +2,14 @@
   width: 60%;
   color: #000;
   margin: auto;
-  font-family: PF din Display100;
-  font-size: 27px;
-  font-weight: 200;
+  font-family: TT Chocolates;
+  font-size: clamp(18px, 1.3vw, 45px);
+  font-weight: 100;
   padding: 3rem 0rem;
-  letter-spacing: 0.03em;
-  line-height: 35px;
-}
-@media (max-width: 1550px) {
-  .text-pastoral {
-    font-size: 24px;
-  }
 }
 @media (max-width: 768px) {
   .text-pastoral {
     width: 80%;
-
-    font-size: 15px;
-    line-height: 20px;
+    font-size: clamp(15px, 4.5vw, 30px);
   }
 }

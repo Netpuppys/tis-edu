@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import Header from "../globalComponents/Header/Header";
 import HeaderContactImg from "../../public/Banner/contactUs.webp";
 import HeaderContactImgMobile from "../../public/Banner/contactUsMobile.webp";
@@ -20,17 +20,21 @@ const ContactUs = () => {
           "It is where you find info to reach out to a school for help or questions."
         }
       />
-      <br />
 
-      <div>
-        <div className="Contactheading">
-          Lets <span>Talk</span>
-        </div>
-        <p className="text-letsTalk">
+      <div className="w-[90%] mx-auto py-8 md:py-16">
+        <h2 className="text-[30px] pb-4 md:pb-8 w-fit md:ml-[25%] md:text-[clamp(20px,2.5vw,50px)] font-bold font-[Mirador800]">
+          Lets <span className="text-[#b90124]">Talk</span>
+        </h2>
+        <h2
+          style={{
+            fontFamily: "TT Chocolates",
+          }}
+          className="text-center text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)]"
+        >
           Give Us A Shout-Out And Feel Free To Ask Anything That Interests
-        </p>
+        </h2>
       </div>
-      <div className="h-fit md:h-[600px] z-50 w-fit shadow-[7px_7px_4px_rgba(0,0,0,0.25)] md:rounded-xl mb-8 mx-4 md:mx-auto  bg-[#B90124] md:bg-transparent flex flex-col gap-4 md:gap-0 md:flex-row">
+      <div className="h-fit md:h-[600px] z-50 w-fit shadow-[7px_7px_4px_rgba(0,0,0,0.25)] md:rounded-xl mb-8 mx-4 md:mx-auto  bg-[#B90124] md:bg-transparent flex flex-col md:flex-row">
         <div className="w-full md:max-w-[490px] h-full  relative flex flex-col overflow-hidden justify-start gap-10 bg-transparent md:bg-[#B90124] rounded-xl p-5 md:p-10">
           <div className="w-fit z-20 h-fit">
             <h3 className="text-[25px] md:text-[35px] font-[TTChocolatesbold] tracking-wide text-white">

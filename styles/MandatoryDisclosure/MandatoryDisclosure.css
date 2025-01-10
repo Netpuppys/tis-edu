@@ -56,7 +56,6 @@
   .container-mandatory {
     margin: 3rem 0.7rem 2rem 0.8rem;
   }
-
   .grid {
     display: grid;
     grid-template-columns: repeat(1, minmax(auto, 1fr));

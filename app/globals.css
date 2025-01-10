@@ -70,6 +70,12 @@
   font-family: "NeueHaasDisplayBold";
   src: url(../public/fonts/NeueHaasDisplayBold.ttf);
 }
+.list-image {
+  list-style-image: url("../public/icons/bullet.png");
+}
+.list-image li {
+  padding-left: 10px;
+}
 .material-bubble {
   background-color: transparent;
   color: "#FFFFFF";
@@ -187,6 +193,9 @@ select {
 @media (max-width: 768px) {
   ::-webkit-scrollbar-thumb {
     display: none;
+  }
+  .list-image li {
+    padding-left: 5px;
   }
   ::-webkit-scrollbar {
     width: 0px;
