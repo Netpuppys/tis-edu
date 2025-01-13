@@ -65,24 +65,20 @@ export default function OurManagement() {
           chronicle of our collective journey towards educational excellence,
           and it is with great anticipation that I share my thoughts with you
           today.
-          <br />
-          <br />
+          <p className="py-1"></p>
           Tula's International School combines - respect for tradition with a
           progressive application of modern sciences, academic rigour with a
           caring heart, and individual appreciation with the warmth of a school
           community.
-          <br />
-          <br />
+          <p className="py-1"></p>
           In today's world, where society is increasingly divided into smaller
           segments, Tula remains a community rich in integrity. Honesty, humour,
           and hard work form the basis of an educational process that results in
           learning for a lifetime.
-          <br />
-          <br />
+          <p className="py-1"></p>
           Our dedicated faculty is at the heart of our endeavour to build an
           intellectual community. Our teachers love to teach.
-          <br />
-          <br />
+          <p className="py-1"></p>
           Passionate toward the success of their students, the faculty serves as
           teachers, coaches, advisors, mentors, and friends. In every area of
           school life, the faculty seeks to challenge and inspire students to
@@ -117,8 +113,7 @@ export default function OurManagement() {
           most dependable schools. He understands that he can achieve this
           ambition only through the success of every student of Tula's, for he
           believes in - Together we rise, together we touch the skies.
-          <br />
-          <br />
+          <p className="py-1"></p>
           Mr Jain, as the Director and as the youngest member of the Tulas
           Family, has all his interests invested in the school to make it a
           perfect setting for a student's holistic development with emphasis on
@@ -156,8 +151,7 @@ export default function OurManagement() {
           self-starter and an achiever. Currently handling the Engineering
           College and the Management College (Tula's Institute), she has a good
           understanding of the operations of Educational Institutions.
-          <br />
-          <br />
+          <p className="py-1"></p>
           Apart from catering to her duties as an Executive Director, she would
           be helping Tula's students to make career choices and hand-holding
           them through their transitions post their schooling.
@@ -181,8 +175,7 @@ export default function OurManagement() {
           As the name suggests, Tula's creates a balance and strives to develop
           and unearth the intrinsic potential and capability of the students,
           thereby preparing them to take on global challenges.
-          <br />
-          <br />
+          <p className="py-1"></p>
           Our vision is to make Tula a centre of excellence in learning,
           innovation, technology, agriculture, and management. Every student is
           nurtured holistically. The result is young entrepreneurs who are ready

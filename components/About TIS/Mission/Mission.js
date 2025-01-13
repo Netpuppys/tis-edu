@@ -20,7 +20,6 @@ export default function Mission() {
         <>
           To become a center of excellence and a leader among top educational
           institutions. At TIS, we aim to:
-          <br />
           <ul className="ml-5 list-disc">
             <li>
               Support personal growth and development to make a positive impact
@@ -72,8 +71,7 @@ export default function Mission() {
           TIS offers a supportive environment where students from all
           backgrounds can reach their potential. We believe every student can
           succeed with the right opportunities.
-          <br />
-          <br />
+          <p className="py-1"></p>
           <span className="w-full text-[#212121] font-normal font-[TTChocolatesBold] text-[clamp(20px,2vw,100px)]">
             Engagement:
           </span>

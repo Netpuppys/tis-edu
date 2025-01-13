@@ -39,11 +39,11 @@ export default function EventConfluence() {
           of cultural events broadly split up into Performing arts, Literary
           arts and Fine arts along with a variety of fun informal events for
           students to showcase their skills. Excellence and talent among its
-          participants and organizers alike <br />
-          <br />
+          participants and organizers alike 
+          <p className="py-1"></p>
           Under Confluence, school organizes Inter School Musical, Cultural as
           well as Dance competitions under seven categories which are as
-          follows: <br /> <br />
+          follows: <p className="py-1"></p>
           <ul className="ml-5 list-disc">
             <li>VIBRATIONS – GROUP DANCE</li>
             <li>CATCH ME IF YOU CAN – TREASURE HUNT</li>

@@ -209,7 +209,7 @@ export default function ClubAndSocieties() {
             }`}
           >
             <div
-              className={`w-full md:w-[37.5%] py-8 md:py-20 ${
+              className={`w-full md:w-[40%] py-8 md:py-20 ${
                 index % 2 === 0 ? "md:pl-[12.5%]" : "md:pr-[12.5%]"
               }`}
             >
@@ -220,7 +220,7 @@ export default function ClubAndSocieties() {
               />
             </div>
             <div
-              className={`w-full md:w-[50%] h-full ${
+              className={`w-full md:w-[47.5%] h-full ${
                 index % 2 === 0 ? "pl-0 md:pl-16" : "pr-0 md:pr-16"
               }`}
             >
@@ -231,7 +231,7 @@ export default function ClubAndSocieties() {
                 style={{
                   fontFamily: "TT Chocolates",
                 }}
-                className={`text-[clamp(15px,4.5vw,30px)] pt-4 md:pt-8 md:text-[clamp(18px,1.3vw,45px)] text-black font-normal`}
+                className={`text-[clamp(15px,4.5vw,30px)] pt-2 md:pt-4 md:text-[clamp(18px,1.3vw,45px)] text-black font-normal`}
               >
                 {data.description}
               </h2>

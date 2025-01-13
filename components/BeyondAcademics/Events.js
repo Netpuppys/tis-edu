@@ -52,8 +52,7 @@ export default function Events() {
           together to witness the thrilling event. The event lasted for an hour
           where students from all houses participated, showcasing their
           strength, coordination and teamwork.
-          <br />
-          <br />
+          <p className="py-1"></p>
           The event was not only about competition but also about unity and
           camaraderie among the students. Throughout the event, the safety of
           all participants was of utmost importance. Mattresses were
@@ -75,8 +74,7 @@ export default function Events() {
           culture and traditions of rich country INDIA. It was judged by a panel
           of esteemed judges and choreographers, Mr, Naresh Shah, Ms. Isha
           Thakur and Mr. Michael John.
-          <br />
-          <br />
+          <p className="py-1"></p>
           The students gave us outstanding performances and definitely made the
           choice for the judges difficult. Congratulations to the winners and
           participants. Music department keeps it up always.
@@ -130,8 +128,7 @@ export default function Events() {
           Mr. Ravi Shah and Mr. Mukesh Kumar, both renowned actors of the
           Garhwali film industry. Everyone witnessed the shared effort and
           dedication put into each and every play.
-          <br />
-          <br />
+          <p className="py-1"></p>
           After all the participants presented their plethora of extraordinary
           talents, the results were announced to the audience full of
           anticipation. As the second runners up were the Spartans. The first
