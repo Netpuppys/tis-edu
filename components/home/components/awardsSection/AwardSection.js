@@ -5,7 +5,7 @@ import topBoarding from "../../../../public/Home/Awards/TopBoarding.jpg";
 import bestResidential from "../../../../public/Home/Awards/BestResidential.jpg";
 import internationalSchool from "../../../../public/Home/Awards/internationalSchool.png";
 import seeAllAwards from "../../../../public/icons/see-all-awards.png";
-import { FaArrowsRotate } from "react-icons/fa6";
+import { FaArrowsRotate, FaRightLong } from "react-icons/fa6";
 import Image from "next/image";
 import "../../../../styles/home/components/awardSection/AwardSection.css";
 import UttrakhandIcon from "../../../../public/Home/Awards/UTTARAKHAND.jpg";
@@ -52,11 +52,11 @@ function AwardSection() {
       image: Higher,
       title: "Higher Education Leader of the Year",
     },
-    {
-      id: 6,
-      image: internationalSchool,
-      title: "International School Award, India 2019",
-    },
+    // {
+    //   id: 6,
+    //   image: internationalSchool,
+    //   title: "International School Award, India 2019",
+    // },
   ];
 
   const [activity, setActivity] = useState(initialActivities);
@@ -65,12 +65,6 @@ function AwardSection() {
     const shuffledActivities = [...activity].sort(() => Math.random() - 0.5);
     setActivity(shuffledActivities);
   };
-  useEffect(() => {
-    if (isMobile) {
-      const interval = setInterval(rearrangeActivities, 5000); // Rearrange every 5 seconds
-      return () => clearInterval(interval); // Clear interval on component unmount
-    }
-  }, [isMobile, activity]);
 
   const handleMoreAwards = () => {
     window.location.href = `/about-tis/awards-achievements${utmParams}`;
@@ -101,7 +95,7 @@ function AwardSection() {
               backgroundSize: "cover",
             }}
           >
-            <div className="title-div-card">
+            {/* <div className="title-div-card">
               <div
                 className="card-description"
                 style={{ display: "flex", justifyContent: "space-between" }}
@@ -113,7 +107,7 @@ function AwardSection() {
                   {activityItem.title}
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         ))}
       </div>
@@ -127,13 +121,15 @@ function AwardSection() {
               </div>
             </button>
           </div>
-          <Image
-            style={{ height: "auto" }}
+          <button
             onClick={handleMoreAwards}
-            src={seeAllAwards}
-            className="see-all"
-            alt="See All Awards"
-          />
+            className="see-all py-2 px-10 border-2 flex items-center justify-center uppercase text-2xl rounded-full text-[#5E5E5E] font-black font-[TTChocolatesBold] border-[#DBC79F]"
+          >
+            See All Awards{" "}
+            <span className="text-[#DBC79F] font-light font-[TTChocolates] ml-[10%] text-5xl leading-none">
+              <FaRightLong />
+            </span>
+          </button>
         </>
       )}
 

@@ -1,4 +1,4 @@
-.fourth-section-main-div {
+/* .fourth-section-main-div {
   width: 96%;
   position: relative;
   margin-left: 4%;
@@ -25,23 +25,23 @@
   margin-bottom: 30px;
   text-align: left;
   font-weight: 900;
-}
+} 
 .fourth-section-main-div .title-div .circled-text {
   width: fit-content;
   position: relative;
   font-weight: 800;
   text-wrap: nowrap;
   font-family: "Mirador800";
-}
-.fourth-section-main-div .title-div span svg {
+}*/
+.circled-text-sports svg {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50px;
+  width: 100%;
   height: fit-content;
 }
-svg .svg-circle {
+.circled-text-sports .svg-circle {
   stroke-dashoffset: 206.1999053955078px;
   stroke-dasharray: 206.1999053955078px;
   -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715)
@@ -49,17 +49,17 @@ svg .svg-circle {
   transition: stroke-dashoffset 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
 }
 
-.svg-circle.active {
+.circled-text-sports .svg-circle.active {
   stroke-dashoffset: 0;
 }
-
+/* 
 .fourth-section-main-div .sub-title {
   color: #60bab1;
   font-family: "darwin-pro", sans-serif;
   font-size: 23px;
   font-style: normal;
   font-weight: 300;
-  line-height: 2.875rem; /* 115% */
+  line-height: 2.875rem;
   letter-spacing: 0.075rem;
 }
 
@@ -156,7 +156,6 @@ svg .svg-circle {
 .fourth-section-main-div .activities-div .topy {
   position: absolute;
   transform: translate(-9%, -85%);
-  /* transform: translateY(-85%); */
   left: auto;
   right: 17%;
 }
@@ -169,7 +168,7 @@ svg .svg-circle {
 .fourth-section-main-div .activities-div .bottomy {
   position: absolute;
   transform: translate(-9%, 45%);
-  /* transform: translateY(45%); */
+  
   left: auto;
   right: 13%;
 }
@@ -177,8 +176,6 @@ svg .svg-circle {
   display: flex;
   position: relative;
   transform: translate(-3%, -150%);
-  /* transform: translate3d(-150%, ); */
-  /* transform: translateX(0%); */
   align-items: center;
   justify-content: center;
 }
@@ -291,4 +288,4 @@ svg .svg-circle {
     width: 90%;
     height: 13rem;
   }
-}
+} */

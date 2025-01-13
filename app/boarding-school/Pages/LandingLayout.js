@@ -18,6 +18,8 @@ import { useMobile } from "@/components/globalComponents/IsMobileContext";
 import { FaWhatsapp } from "react-icons/fa";
 import scrollArrow from "../../../public/icons/downArrowDoodle.svg";
 import Image from "next/image";
+import NewStats from "@/components/home/components/stats/stats";
+import TisByNumbers from "@/components/home/components/TisByNumbers/TisByNumbers";
 const LandingLayout = () => {
   const bubbleRef = useRef(null);
   const scrollRef = useRef();
@@ -52,8 +54,8 @@ const LandingLayout = () => {
             className="home-layout-allSection flex flex-col mt-12 md:mt-10 gap-12 md:gap-10"
             ref={bubbleRef}
           >
-            <SixthSection />
-            <Stats />
+            <NewStats />
+            <TisByNumbers />
             <AwardSection />
             <ParentsReviews />
             <GoogleReviews />
