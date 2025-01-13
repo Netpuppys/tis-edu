@@ -86,7 +86,7 @@ function ContactForm() {
       LeadCampaign: utmParams
         ? utmCampaign || "Contact Us Form Ads"
         : "Contact Us Form Organic",
-      LeadTerm: utmParams
+      utm_term: utmParams
         ? utmTerm || "No Term Found"
         : "Organic Lead Search Term not available",
     };

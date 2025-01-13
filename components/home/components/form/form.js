@@ -134,7 +134,7 @@ function Form() {
       LeadCampaign: utmParams
         ? utmCampaign || "Home Page Form Ads"
         : "Home Page Form Organic",
-      LeadTerm: utmParams
+      utm_term: utmParams
         ? utmTerm || "No Term Found"
         : "Organic Lead Search Term not available",
     };

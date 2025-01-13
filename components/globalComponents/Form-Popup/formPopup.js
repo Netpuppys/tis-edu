@@ -129,7 +129,7 @@ function FormEnquire({ formPopup }) {
       LeadCampaign: utmParams
         ? utmCampaign || "Enquire Now Ads"
         : "Enquire Now Organic",
-      LeadTerm: utmParams
+      utm_term: utmParams
         ? utmTerm || "No Term Found"
         : "Organic Lead Search Term not available",
     };
