@@ -1,25 +1,50 @@
-"use client";
-
 import React from "react";
-import { useMobile } from "../../../globalComponents/IsMobileContext";
+import ReactPlayer from "react-player";
 
 const Video = () => {
-  const { isMobile } = useMobile();
   return (
     <div id="5">
-      <div style={{ padding: "50% 0 0 0", position: "relative" }}>
-        <iframe
-          src="https://player.vimeo.com/video/970387029?autoplay=1&loop=1&muted=1&controls=0"
-          frameBorder="0"
-          allow="autoplay; fullscreen"
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-          }}
-        />
+      <div className="w-full h-full relative">
+        <div className="hidden md:block w-full h-full">
+          <ReactPlayer
+            url={"https://assets.tulas.edu.in/Desktop_TIS.mp4"}
+            playing
+            muted
+            loop
+            width="100%"
+            height="100%"
+            playsinline
+            config={{
+              file: {
+                attributes: {
+                  autoPlay: true,
+                  muted: true,
+                  playsInline: true,
+                },
+              },
+            }}
+          />
+        </div>
+        <div className="md:hidden w-full h-full">
+          <ReactPlayer
+            url="https://assets.tulas.edu.in/Mobile_TIS.mp4"
+            playing
+            muted
+            loop
+            width="100%"
+            height="100%"
+            playsinline
+            config={{
+              file: {
+                attributes: {
+                  autoPlay: true,
+                  muted: true,
+                  playsInline: true,
+                },
+              },
+            }}
+          />
+        </div>
       </div>
     </div>
   );
