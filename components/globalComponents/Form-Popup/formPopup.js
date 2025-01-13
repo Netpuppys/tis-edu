@@ -121,6 +121,7 @@ function FormEnquire({ formPopup }) {
     const searchParams = new URLSearchParams(window.location.search);
     const utmSource = searchParams.get("utm_source");
     const utmCampaign = searchParams.get("utm_campaign");
+    const utmTerm = searchParams.get("utm_term");
     const updatedFormData = {
       ...formData,
       LeadChannel: utmParams ? 26 : 20,
@@ -128,6 +129,9 @@ function FormEnquire({ formPopup }) {
       LeadCampaign: utmParams
         ? utmCampaign || "Enquire Now Ads"
         : "Enquire Now Organic",
+      LeadTerm: utmParams
+        ? utmTerm || "No Term Found"
+        : "Organic Lead Search Term not available",
     };
     axios
       .post(
@@ -272,7 +276,9 @@ function FormEnquire({ formPopup }) {
               >
                 Resend OTP
               </button>
-              {timer > 0 && <p className="text-[15px]">{`Wait ${timer} Seconds to Resend OTP`}</p>}
+              {timer > 0 && (
+                <p className="text-[15px]">{`Wait ${timer} Seconds to Resend OTP`}</p>
+              )}
             </div>
             <button
               onClick={verifyOtp}

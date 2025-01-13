@@ -78,6 +78,7 @@ function ContactForm() {
     const searchParams = new URLSearchParams(window.location.search);
     const utmSource = searchParams.get("utm_source");
     const utmCampaign = searchParams.get("utm_campaign");
+    const utmTerm = searchParams.get("utm_term");
     const updatedFormData = {
       ...formData,
       LeadChannel: utmParams ? 26 : 20,
@@ -85,6 +86,9 @@ function ContactForm() {
       LeadCampaign: utmParams
         ? utmCampaign || "Contact Us Form Ads"
         : "Contact Us Form Organic",
+      LeadTerm: utmParams
+        ? utmTerm || "No Term Found"
+        : "Organic Lead Search Term not available",
     };
 
     axios
