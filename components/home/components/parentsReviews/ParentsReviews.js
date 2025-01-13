@@ -68,7 +68,7 @@ function ParentsReviews() {
         </h3>
       </div>
       <div className="relative w-full">
-        <div className="w-full md:w-full mx-auto h-fit flex items-center justify-center md:px-40 pt-8 md:pt-20 relative">
+        <div className="w-full md:w-full mx-auto h-fit flex items-center justify-center md:px-40 pt-8 md:pt-14 relative">
           <Image
             src={previousIcon}
             onClick={handlePrevClick}

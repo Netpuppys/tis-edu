@@ -27,7 +27,7 @@ export default function OurHousesystem() {
         style={{
           fontFamily: "TT Chocolates",
         }}
-        className="w-full px-8 md:px-0 md:w-[75%] py-8 md:py-20 mx-auto text-center text-[clamp(15px,4.5vw,30px)] font-normal md:text-[clamp(18px,1.3vw,45px)] "
+        className="w-full px-8 md:px-0 md:w-[75%] py-8 md:py-14 mx-auto text-center text-[clamp(15px,4.5vw,30px)] font-normal md:text-[clamp(18px,1.3vw,45px)] "
       >
         There are seven houses - Olympian House, Spartan House, Trojan House,
         Titan House, Starks House, Valkyrie House, and Athena House.
@@ -45,7 +45,7 @@ export default function OurHousesystem() {
           <Image src={HouseImg} alt="" className="w-full rounded-2xl h-full" />
         </div>
       </div>
-      <div className="py-8 md:py-20">
+      <div className="py-8 md:py-14">
         <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           Investiture <span className="text-[#b90124]">Ceremony</span>
           <Image
@@ -68,7 +68,7 @@ export default function OurHousesystem() {
         style={{
           fontFamily: "TT Chocolates",
         }}
-        className="w-full px-8 md:px-0 md:w-[75%] py-8 md:py-20 mx-auto text-center text-[clamp(15px,4.5vw,30px)] font-normal md:text-[clamp(18px,1.3vw,45px)] "
+        className="w-full px-8 md:px-0 md:w-[75%] py-8 md:py-14 mx-auto text-center text-[clamp(15px,4.5vw,30px)] font-normal md:text-[clamp(18px,1.3vw,45px)] "
       >
         The house captains act as leaders, guiding their charges and sorting out
         their issues. They are mentors as well as mates, friendly and impartial.

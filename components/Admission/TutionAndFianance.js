@@ -85,7 +85,7 @@ function TutionAndFianance() {
           "At Tula’s International School, scholarships are more than financial aid—they’re our commitment to recognizing the dedication and ambition of students with the potential to excel."
         }
       />
-      <div className="pt-8 md:pt-20">
+      <div className="pt-8 md:pt-14">
         <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           Scholarship &{" "}
           <span className="text-[#b90124]">
@@ -111,7 +111,7 @@ function TutionAndFianance() {
           school community.
         </h2>
       </div>
-      <div className="pt-8 md:pt-20">
+      <div className="pt-8 md:pt-14">
         <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           Tula’s Scholarship Assessment{" "}
           <span className="text-[#b90124]">
@@ -177,7 +177,7 @@ function TutionAndFianance() {
           </table>
         </h2>
       </div>
-      <div className="pt-8 md:pt-20">
+      <div className="pt-8 md:pt-14">
         <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           Tula’s Concession{" "}
           <span className="text-[#b90124]">

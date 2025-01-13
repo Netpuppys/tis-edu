@@ -246,7 +246,7 @@ const Apply = () => {
       />
       <div
         ref={scrollRefs}
-        className="w-[90%] relative md:w-[80%] pt-8 md:pt-20 mx-auto"
+        className="w-[90%] relative md:w-[80%] pt-8 md:pt-14 mx-auto"
       >
         <div className="flex flex-col md:flex-row justify-center w-full">
           {steps.map((step, index) => (
@@ -283,7 +283,7 @@ const Apply = () => {
                 </div>
               </div>
               {index === currentStep && isMobile && (
-                <div className="w-[100%] mx-auto pt-8 md:pt-20">
+                <div className="w-[100%] mx-auto pt-8 md:pt-14">
                   <Image
                     className="mx-auto w-[25%]"
                     src={steps[currentStep].icon}
@@ -301,7 +301,7 @@ const Apply = () => {
                     style={{
                       fontFamily: "TT Chocolates",
                     }}
-                    className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] py-8 md:py-20"
+                    className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] py-8 md:py-14"
                   >
                     {steps[currentStep].description}
                   </h2>
@@ -311,7 +311,7 @@ const Apply = () => {
           ))}
         </div>
         {!isMobile && (
-          <div className="w-[80%] mx-auto pt-8 md:pt-20">
+          <div className="w-[80%] mx-auto pt-8 md:pt-14">
             <Image
               className="mx-auto w-fit"
               src={steps[currentStep].icon}
@@ -325,14 +325,14 @@ const Apply = () => {
               style={{
                 fontFamily: "TT Chocolates",
               }}
-              className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] pt-8 md:pt-20"
+              className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] pt-8 md:pt-14"
             >
               {steps[currentStep].description}
             </h2>
           </div>
         )}
       </div>
-      <div className="py-8 md:py-20">
+      <div className="py-8 md:py-14">
         <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           How to <span className="text-[#b90124]">Apply</span>
           <Image
@@ -362,7 +362,7 @@ const Apply = () => {
           to apply early.
         </h2>
       </div>
-      <div className="py-8 md:py-20">
+      <div className="py-8 md:py-14">
         <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           Registration <span className="text-[#b90124]">Form</span>
           <Image

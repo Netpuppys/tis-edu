@@ -119,7 +119,7 @@ function Facility() {
         headerImgMobile={HeaderFacilityImgMobile}
         subtitle={BannerText}
       />
-      <div className="py-8 md:py-20 w-[90%] md:w-[80%] mx-auto flex flex-wrap gap-4 justify-center">
+      <div className="py-8 md:py-14 w-[90%] md:w-[80%] mx-auto flex flex-wrap gap-4 justify-center">
         {cards.map((cards, index) => (
           <div
             key={index}

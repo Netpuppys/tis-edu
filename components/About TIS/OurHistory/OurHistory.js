@@ -26,7 +26,7 @@ export default function OurHistory() {
         headerImg={headerHistoryImg}
         headerImgMobile={headerHistoryImg}
       />
-      <div className="py-8 w-[85%] md:w-[75%] mx-auto md:py-20 flex flex-col justify-center items-center">
+      <div className="py-8 w-[85%] md:w-[75%] mx-auto md:py-14 flex flex-col justify-center items-center">
         <h3
           style={{
             fontFamily: "TT Chocolates",
@@ -73,7 +73,7 @@ export default function OurHistory() {
           </div>
         </div>
         <div
-          className={`flex flex-col md:flex-row-reverse py-8 md:py-20 gap-8 md:gap-20`}
+          className={`flex flex-col md:flex-row-reverse py-8 md:py-14 gap-8 md:gap-20`}
         >
           <div className="relative w-full md:w-[80%] mx-auto group overflow-hidden">
             <div className="w-full h-full ">
@@ -145,7 +145,7 @@ export default function OurHistory() {
           </div>
         </div>
         <div
-          className={`flex flex-col md:flex-row pt-8 md:pt-20 gap-4 md:gap-20`}
+          className={`flex flex-col md:flex-row pt-8 md:pt-14 gap-4 md:gap-20`}
         >
           <div className="w-full md:w-[40%] aspect-[1/1] md:aspect-auto mx-auto overflow-hidden">
             <div className="relative w-fit mx-auto group md:w-full h-full overflow-hidden">
@@ -193,7 +193,7 @@ export default function OurHistory() {
             </div>
           </div>
         </div>
-        <h3 className="text-[#B90124] pt-8 font-[TTChocolatesBold] md:pt-20 uppercase text-center w-fit text-[clamp(15px,6.5vw,60px)] md:text-[clamp(20px,1.8vw,50px)]">
+        <h3 className="text-[#B90124] pt-8 font-[TTChocolatesBold] md:pt-14 uppercase text-center w-fit text-[clamp(15px,6.5vw,60px)] md:text-[clamp(20px,1.8vw,50px)]">
           “ A story of belief, courage, and the relentless pursuit of
           excellence. “<br />
           <span

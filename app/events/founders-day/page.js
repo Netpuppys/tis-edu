@@ -134,7 +134,7 @@ export default function EventConfluencePage() {
         style={{
           fontFamily: "TT Chocolates",
         }}
-        className="w-full px-8 md:px-0 md:w-[75%] py-8 md:py-20 mx-auto text-justify md:text-center text-[clamp(15px,4.5vw,30px)] font-normal md:text-[clamp(18px,1.3vw,45px)] "
+        className="w-full px-8 md:px-0 md:w-[75%] py-8 md:py-14 mx-auto text-justify md:text-center text-[clamp(15px,4.5vw,30px)] font-normal md:text-[clamp(18px,1.3vw,45px)] "
       >
         Tulas' 7th Annual Sports Day is a celebration of energy, determination,
         and teamwork. This event brings together athletes and enthusiasts from
@@ -157,7 +157,7 @@ export default function EventConfluencePage() {
 
       {/* <div className="w-[90%] md:w-[80%] mx-auto">
         {!selectedCard ? (
-          <div className="pb-8 md:pb-20 w-full flex flex-wrap gap-4 justify-center">
+          <div className="pb-8 md:pb-14 w-full flex flex-wrap gap-4 justify-center">
             {card.map((cards, index) => (
               <div
                 key={index}
@@ -226,7 +226,7 @@ export default function EventConfluencePage() {
             </div>
 
           
-            <div className="w-full py-8 md:py-20">
+            <div className="w-full py-8 md:py-14">
               <div className="flex flex-wrap gap-4">
                 {card
                   .filter((cards) => cards.id !== selectedCard?.id) // assuming each card has a unique id

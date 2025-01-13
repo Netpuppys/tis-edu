@@ -216,18 +216,18 @@ export default function Events() {
             }`}
           >
             <div
-              className={`w-full md:w-[37.5%] pt-8 md:py-20 ${
+              className={`w-full md:w-[37.5%] pt-8 md:py-14 ${
                 index % 2 === 0 ? "md:pl-[12.5%]" : "md:pr-[12.5%]"
               }`}
             >
               <Image
                 src={data.image}
                 alt=""
-                className={`w-full h-full rounded-3xl `}
+                className={`w-full h-full rounded-xl md:rounded-2xl`}
               />
             </div>
             <div
-              className={`w-full md:w-[50%] py-8 md:py-20 h-full ${
+              className={`w-full md:w-[50%] py-8 md:py-14 h-full ${
                 index % 2 === 0 ? "pl-0 md:pl-16" : "pr-0 md:pr-16"
               }`}
             >
@@ -238,7 +238,7 @@ export default function Events() {
                 style={{
                   fontFamily: "TT Chocolates",
                 }}
-                className={`text-[clamp(15px,4.5vw,30px)] pt-4 md:pt-8 md:text-[clamp(18px,1.3vw,45px)] text-black font-normal`}
+                className={`text-[clamp(15px,4.5vw,30px)] pt-2 md:pt-4 md:text-[clamp(18px,1.3vw,45px)] text-black font-normal`}
               >
                 {data.description}
               </h2>

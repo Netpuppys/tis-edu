@@ -48,7 +48,7 @@ function FeaturesSection() {
     return () => clearInterval(interval); // Cleanup interval on unmount
   }, [currentIndex, crouselImages.length]);
   return (
-    <div className="pt-2 md:pt-10 pb-8 md:pb-20" id="12">
+    <div className="pt-2 md:pt-10 pb-8 md:pb-14" id="12">
       <div className="w-fit mx-auto">
         <h3 className="text-[#B90124] text-center font-[Mirador800] text-[clamp(15px,7.5vw,60px)] md:text-[clamp(20px,2.5vw,100px)]">
           COLLABORATIONS

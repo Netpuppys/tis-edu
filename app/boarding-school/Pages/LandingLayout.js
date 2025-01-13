@@ -110,7 +110,7 @@ const LandingLayout = () => {
 
       <button
         onClick={handleScrollArrow}
-        className="fixed hidden md:block z-50 bg-[#60BAB1] right-0 bottom-36 px-2 py-10 md:py-20 rounded-l-xl focus:outline-none text-black font-bold"
+        className="fixed hidden md:block z-50 bg-[#60BAB1] right-0 bottom-36 px-2 py-10 md:py-14 rounded-l-xl focus:outline-none text-black font-bold"
         style={{
           writingMode: "vertical-rl",
           textOrientation: "sideways-right",

@@ -94,7 +94,7 @@ export default function Mission() {
         headerImg={headerMissionImg}
         headerImgMobile={headerMissionMobileImg}
       />
-      <div className="py-8 md:py-20 w-[90%] md:w-[80%] mx-auto flex flex-col gap-[10vw] md:gap-[10vh]">
+      <div className="py-8 md:py-14 w-[90%] md:w-[80%] mx-auto flex flex-col gap-[10vw] md:gap-[10vh]">
         {sections.map((section, index) => (
           <div
             key={index}

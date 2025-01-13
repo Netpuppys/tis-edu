@@ -455,7 +455,7 @@ function Sport() {
         style={{
           fontFamily: "TT Chocolates",
         }}
-        className="w-full px-8 md:px-0 md:w-[75%] pt-8 md:pt-20 mx-auto text-justify md:text-center text-[clamp(15px,4.5vw,30px)] font-normal md:text-[clamp(18px,1.3vw,45px)] "
+        className="w-full px-8 md:px-0 md:w-[75%] pt-8 md:pt-14 mx-auto text-justify md:text-center text-[clamp(15px,4.5vw,30px)] font-normal md:text-[clamp(18px,1.3vw,45px)] "
       >
         As a Sports Boarding school in Dehradun, Tula’s offers its students the
         best sporting infrastructure of any educational institution in Dehradun.
@@ -475,7 +475,7 @@ function Sport() {
             }`}
           >
             <div
-              className={`w-full md:w-[40%] pt-8 md:py-20 ${
+              className={`w-full md:w-[40%] pt-8 md:py-14 ${
                 index % 2 === 0 ? "md:pl-[10%]" : "md:pr-[10%]"
               }`}
             >
@@ -486,7 +486,7 @@ function Sport() {
               />
             </div>
             <div
-              className={`w-full md:w-[47.5%] py-8 md:py-20 h-full ${
+              className={`w-full md:w-[47.5%] py-8 md:py-14 h-full ${
                 index % 2 === 0 ? "pl-0 md:pl-16" : "pr-0 md:pr-16"
               }`}
             >

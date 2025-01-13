@@ -201,7 +201,7 @@ export default function OurManagement() {
         headerImgMobile={HeaderManagementMobileIMg}
       />
 
-      {/* <div className="py-8 w-[85%] md:w-[75%] mx-auto md:py-20 flex flex-col justify-center items-center">
+      {/* <div className="py-8 w-[85%] md:w-[75%] mx-auto md:py-14 flex flex-col justify-center items-center">
         <h3
           style={{
             fontFamily: "TT Chocolates",
@@ -321,7 +321,7 @@ export default function OurManagement() {
           </button>
 
           <div
-            className={`bg-[#FFE4E4] w-[85%] md:w-[90%] xl:w-[75%] mx-auto rounded-xl  px-8 md:px-20 py-8 ${
+            className={`bg-[#FFE4E4] w-[85%] md:w-[90%] xl:w-[75%] mx-auto rounded-xl  px-8 md:px-14 py-8 ${
               expandedIndex === 0 && "md:rounded-ss-none"
             } ${expandedIndex === 3 && "md:rounded-se-none"}`}
           >
@@ -348,7 +348,7 @@ export default function OurManagement() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-[85%] md:w-[90%] xl:w-[75%] mx-auto text-[clamp(15px,4.5vw,30px)] py-8 md:py-20 md:text-[clamp(18px,1.3vw,45px)]"
+          className="w-[85%] md:w-[90%] xl:w-[75%] mx-auto text-[clamp(15px,4.5vw,30px)] py-8 md:py-14 md:text-[clamp(18px,1.3vw,45px)]"
         >
           {data[expandedIndex].description}
         </h4>
