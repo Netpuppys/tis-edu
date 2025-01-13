@@ -12,7 +12,7 @@ import schoolLogo from "../../../../public/logos/schoolLogo.png";
 import { useMobile } from "@/components/globalComponents/IsMobileContext";
 import { UtmContext } from "@/components/globalComponents/utmParams";
 // import en from "react-phone-number-input/locale/en.json";
-
+import { ThreeDots } from "react-loader-spinner";
 function Form() {
   const { utmParams } = useContext(UtmContext);
   const [formData, setFormData] = useState({
@@ -34,6 +34,7 @@ function Form() {
   const [countryCode, setCountryCode] = useState(getCountryCallingCode("IN")); // Default to India
   const [phoneNumber, setPhoneNumber] = useState("");
   const { isMobile } = useMobile();
+  const [loading, setLoading] = useState(false);
 
   const handleCountryCodeChange = (e) => {
     const selectedCode = e.target.value;
@@ -116,22 +117,11 @@ function Form() {
   };
 
   useEffect(() => {
-    if (isOtpSent && timer > 0) {
-      const countdown = setInterval(() => {
-        setTimer((prev) => {
-          if (prev <= 1) {
-            clearInterval(countdown); // Stop the timer when it reaches 0
-            return 0;
-          }
-          return prev - 1;
-        });
-      }, 1000);
-
-      return () => clearInterval(countdown); // Clean up the interval on unmount
-    }
-  }, [isOtpSent]);
+    startTimer(30);
+  }, []);
 
   const handleSubmit = (e) => {
+    setLoading(true);
     e.preventDefault();
     const searchParams = new URLSearchParams(window.location.search);
     const utmSource = searchParams.get("utm_source");
@@ -140,7 +130,9 @@ function Form() {
       ...formData,
       LeadChannel: utmParams ? 26 : 20,
       LeadSource: utmParams ? utmSource || 88 : 78,
-      LeadCampaign: utmParams ? utmCampaign || "Home Page Form Ads" : "Home Page Form Organic",
+      LeadCampaign: utmParams
+        ? utmCampaign || "Home Page Form Ads"
+        : "Home Page Form Organic",
     };
     axios
       .post(
@@ -148,6 +140,7 @@ function Form() {
         updatedFormData
       )
       .then(() => {
+        setLoading(false);
         setVerified(false);
         setFormData({
           AuthToken: "tisd_24-08-2024",
@@ -165,11 +158,13 @@ function Form() {
         window.location.href = `/boarding-school/admission-open/thank-you${utmParams}`;
       })
       .catch((error) => {
+        setLoading(false);
         alert.error(error);
       });
   };
 
   const sendOtp = async () => {
+    setLoading(true);
     axios
       .post("https://otp.tulas.edu.in/send-otp", {
         mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
@@ -177,41 +172,49 @@ function Form() {
           "Hello, ##OTP## is your One Time Password(OTP) forTulas This OTP is valid till 3mins Tulas.", // Replace with your SMS template
       })
       .then(() => {
+        setLoading(false);
         setIsOtpSent(true);
         startTimer();
       })
       .catch((error) => {
+        setLoading(false);
         alert("Error while Sending Otp");
       });
   };
 
   const verifyOtp = async () => {
+    setLoading(true);
     axios
       .post("https://otp.tulas.edu.in/verify-otp", {
         mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
         otp: otp,
       })
       .then((response) => {
+        setLoading(false);
         setVerified(true);
         setIsOtpSent(false);
         alert(response.data.message); // Corrected this to access response.data.message
       })
       .catch((error) => {
+        setLoading(false);
         setMessage("Wrong Otp Entered");
       });
   };
 
   const resendOtp = async () => {
+    setLoading(true);
     axios
       .post("https://otp.tulas.edu.in/retry-otp", {
         mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
       })
       .then((response) => {
+        setLoading(false);
         startTimer();
         setMessage("OTP sent successfully!");
         alert(response.data.message); // Corrected this to access response.data.message
       })
       .catch((error) => {
+        setLoading(false);
         alert(
           error.response ? error.response.data.message : "An error occurred"
         ); // Handle error message properly
@@ -273,7 +276,9 @@ function Form() {
               >
                 Resend OTP
               </button>
-              {timer > 0 && <p className="text-[15px]">{`${timer} Seconds`}</p>}
+              {timer > 0 && (
+                <p className="text-[15px]">{`Wait ${timer} Seconds to Resend OTP`}</p>
+              )}
             </div>
             <button
               onClick={verifyOtp}
@@ -488,6 +493,13 @@ function Form() {
           </form>
         </div>
       </div>
+      {loading && (
+        <div className="fixed w-screen h-screen bg-black bg-opacity-50 backdrop-blur-sm top-0 left-0 z-[9999999] flex justify-center items-center">
+          <div className="">
+            <ThreeDots color="#FFF" />
+          </div>
+        </div>
+      )}
     </>
   );
 }
