@@ -1,5 +1,8 @@
 import React from "react";
-import ReactPlayer from "react-player";
+import dynamic from "next/dynamic";
+
+// Dynamically import ReactPlayer to disable SSR
+const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 const Video = () => {
   return (
