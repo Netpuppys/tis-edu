@@ -68,11 +68,11 @@ function ParentsReviews() {
         </h3>
       </div>
       <div className="relative w-full">
-        <div className="w-full md:w-full mx-auto h-fit flex items-center justify-center md:px-40 pt-8 md:pt-14 relative">
+        <div className="w-full md:w-full mx-auto h-full flex items-center justify-center md:px-40 pt-8 md:pt-14 relative">
           <Image
             src={previousIcon}
             onClick={handlePrevClick}
-            className="w-[10%] flex md:hidden bg-transparent z-50 relative top-1/2 -translate-y-1/2 left-4"
+            className="w-[10%] h-full flex md:hidden bg-transparent z-50 relative left-4"
           />
 
           <div className="w-[70%] md:w-[80%] h-full flex items-center justify-center px-8 md:px-0 relative">
@@ -98,7 +98,7 @@ function ParentsReviews() {
           <Image
             src={nextIcon}
             onClick={handleNextClick}
-            className="w-[10%] flex md:hidden bg-transparent z-50 relative top-1/2 -translate-y-1/2 right-4"
+            className="w-[10%] h-full flex md:hidden bg-transparent z-50 relative right-4"
           />
         </div>
       </div>
