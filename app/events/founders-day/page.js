@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../../globals.css";
 import Navbar from "../../../components/globalComponents/navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
@@ -15,93 +15,101 @@ import Header from "@/components/globalComponents/Header/Header";
 export default function EventConfluencePage() {
   const [selectedCard, setSelectedCard] = useState(null);
   const scrollRef = useRef(null);
-  //   const card = [
-  //     {
-  //       id: 1,
-  //       title: "11th Annual Sports Day",
-  //       image: Annual11,
-  //       groupImage: [
-  //         Annual11,
-  //         Annual10,
-  //         Annual7,
-  //         Annual6,
-  //         Annual5,
-  //         Annual11,
-  //         Annual10,
-  //         Annual7,
-  //       ],
-  //       description:
-  //         "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Sports Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
-  //     },
-  //     {
-  //       id: 2,
-  //       title: "10th Annual Sports Day",
-  //       image: Annual10,
-  //       groupImage: [
-  //         Annual11,
-  //         Annual10,
-  //         Annual7,
-  //         Annual6,
-  //         Annual5,
-  //         Annual11,
-  //         Annual10,
-  //         Annual7,
-  //       ],
-  //       description:
-  //         "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Sports Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
-  //     },
-  //     {
-  //       id: 3,
-  //       title: "7th Annual Sports Day",
-  //       image: Annual7,
-  //       groupImage: [
-  //         Annual11,
-  //         Annual10,
-  //         Annual7,
-  //         Annual6,
-  //         Annual5,
-  //         Annual11,
-  //         Annual10,
-  //         Annual7,
-  //       ],
-  //       description:
-  //         "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Sports Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
-  //     },
-  //     {
-  //       id: 4,
-  //       title: "6th Annual Sports Day",
-  //       image: Annual6,
-  //       groupImage: [
-  //         Annual11,
-  //         Annual10,
-  //         Annual7,
-  //         Annual6,
-  //         Annual5,
-  //         Annual11,
-  //         Annual10,
-  //         Annual7,
-  //       ],
-  //       description:
-  //         "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Sports Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
-  //     },
-  //     {
-  //       id: 5,
-  //       title: "5th Annual Sports Day",
-  //       image: Annual5,
-  //       groupImage: [
-  //         Annual11,
-  //         Annual10,
-  //         Annual7,
-  //         Annual6,
-  //         Annual5,
-  //         Annual11,
-  //         Annual10,
-  //         Annual7,
-  //       ],
-  //       description:
-  //         "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Sports Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
-  //     },
-  //   ];
+  const [currentMainImage, setCurrentMainImage] = useState(null);
+
+  useEffect(() => {
+    if (selectedCard) {
+      setCurrentMainImage(selectedCard.image); // Initialize main image when a card is selected
+    }
+  }, [selectedCard]);
+
+  const card = [
+    {
+      id: 1,
+      title: "11th Annual Sports Day",
+      image: Annual11,
+      groupImage: [
+        Annual11,
+        Annual10,
+        Annual7,
+        Annual6,
+        Annual5,
+        Annual11,
+        Annual10,
+        Annual7,
+      ],
+      description:
+        "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Sports Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
+    },
+    {
+      id: 2,
+      title: "10th Annual Sports Day",
+      image: Annual10,
+      groupImage: [
+        Annual11,
+        Annual10,
+        Annual7,
+        Annual6,
+        Annual5,
+        Annual11,
+        Annual10,
+        Annual7,
+      ],
+      description:
+        "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Sports Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
+    },
+    {
+      id: 3,
+      title: "7th Annual Sports Day",
+      image: Annual7,
+      groupImage: [
+        Annual11,
+        Annual10,
+        Annual7,
+        Annual6,
+        Annual5,
+        Annual11,
+        Annual10,
+        Annual7,
+      ],
+      description:
+        "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Sports Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
+    },
+    {
+      id: 4,
+      title: "6th Annual Sports Day",
+      image: Annual6,
+      groupImage: [
+        Annual11,
+        Annual10,
+        Annual7,
+        Annual6,
+        Annual5,
+        Annual11,
+        Annual10,
+        Annual7,
+      ],
+      description:
+        "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Sports Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
+    },
+    {
+      id: 5,
+      title: "5th Annual Sports Day",
+      image: Annual5,
+      groupImage: [
+        Annual11,
+        Annual10,
+        Annual7,
+        Annual6,
+        Annual5,
+        Annual11,
+        Annual10,
+        Annual7,
+      ],
+      description:
+        "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Sports Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
+    },
+  ];
   return (
     <>
       <Head>
@@ -155,7 +163,7 @@ export default function EventConfluencePage() {
         </span>
       </h6>
 
-      {/* <div className="w-[90%] md:w-[80%] mx-auto">
+      <div className="w-[90%] md:w-[80%] mx-auto">
         {!selectedCard ? (
           <div className="pb-8 md:pb-14 w-full flex flex-wrap gap-4 justify-center">
             {card.map((cards, index) => (
@@ -179,8 +187,8 @@ export default function EventConfluencePage() {
                   alt=""
                   className="w-full h-full object-cover absolute"
                 />
-                <div className="absolute z-10 bg-[#b90124] bg-opacity-70 w-full h-full transition-all ease-in duration-500 translate-y-full group-hover:translate-y-0"></div>
-                <div className="absolute z-20 transition-all ease-in duration-300">
+                <div className="absolute z-10 bg-[#b90124] bg-opacity-70 w-full h-full transition-all ease-in duration-700 translate-y-full group-hover:translate-y-0"></div>
+                <div className="absolute z-20">
                   <h3 className="font-[TTChocolatesBold] w-fit mx-auto text-[clamp(20px,1.8vw,50px)] text-white text-center">
                     {cards.title}
                   </h3>
@@ -208,24 +216,34 @@ export default function EventConfluencePage() {
               {selectedCard.description}
             </p>
             <div className="flex flex-col md:flex-row w-full mx-auto gap-8">
-              
+              {/* Main Image & Details */}
               <div className="w-full md:w-2/3 border-2 rounded-md overflow-hidden border-[#b90124]">
                 <Image
-                  src={selectedCard.image}
+                  src={currentMainImage || selectedCard.image}
                   alt={selectedCard.title}
                   className="w-full h-full object-cover"
                 />
               </div>
 
-            
+              {/* Group Images */}
               <div className="w-full md:w-1/3 grid grid-cols-2 gap-2">
                 {selectedCard.groupImage.map((img, idx) => (
-                  <Image key={idx} src={img} alt="" className="" />
+                  <div
+                    key={idx}
+                    className="cursor-pointer bg-black w-full h-full"
+                  >
+                    <Image
+                      src={img}
+                      alt=""
+                      onClick={() => setCurrentMainImage(img)} // Update the main image on click
+                      className="hover:opacity-80 w-full h-full object-cover"
+                    />
+                  </div>
                 ))}
               </div>
             </div>
 
-          
+            {/* Other Cards */}
             <div className="w-full py-8 md:py-14">
               <div className="flex flex-wrap gap-4">
                 {card
@@ -247,8 +265,8 @@ export default function EventConfluencePage() {
                         alt=""
                         className="w-full h-full object-cover absolute"
                       />
-                      <div className="absolute z-10 bg-[#b90124] bg-opacity-70 w-full h-full transition-all ease-in duration-500 translate-y-full group-hover:translate-y-0"></div>
-                      <div className="absolute z-20 transition-all ease-in duration-300">
+                      <div className="absolute z-10 bg-[#b90124] bg-opacity-70 w-full h-full transition-all ease-in duration-700 translate-y-full group-hover:translate-y-0"></div>
+                      <div className="absolute z-20">
                         <h3 className="font-[TTChocolatesBold] w-fit mx-auto text-[clamp(20px,1.3vw,50px)] text-white text-center">
                           {cards.title}
                         </h3>
@@ -267,7 +285,7 @@ export default function EventConfluencePage() {
             </div>
           </div>
         )}
-      </div> */}
+      </div>
 
       <Footer />
     </>

@@ -1,11 +1,19 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../../globals.css";
 import Navbar from "../../../components/globalComponents/navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import Image from "next/image";
 import sportsDay from "../../../public/Banner/sportsDay.webp";
 import Annual11 from "../../../public/sportsDay/Annual11.png";
+import Annual11Img1 from "../../../public/sportsDay/Annual11(1).png";
+import Annual11Img2 from "../../../public/sportsDay/Annual11(2).png";
+import Annual11Img3 from "../../../public/sportsDay/Annual11(3).png";
+import Annual11Img4 from "../../../public/sportsDay/Annual11(4).png";
+import Annual11Img5 from "../../../public/sportsDay/Annual11(5).png";
+import Annual11Img6 from "../../../public/sportsDay/Annual11(6).png";
+import Annual11Img7 from "../../../public/sportsDay/Annual11(7).png";
+import Annual11Img8 from "../../../public/sportsDay/Annual11(8).png";
 import Annual10 from "../../../public/sportsDay/Annual10.png";
 import Annual7 from "../../../public/sportsDay/Annual7.png";
 import Annual6 from "../../../public/sportsDay/Annual6.png";
@@ -15,20 +23,28 @@ import Header from "@/components/globalComponents/Header/Header";
 export default function EventConfluencePage() {
   const [selectedCard, setSelectedCard] = useState(null);
   const scrollRef = useRef(null);
+  const [currentMainImage, setCurrentMainImage] = useState(null);
+
+  useEffect(() => {
+    if (selectedCard) {
+      setCurrentMainImage(selectedCard.image); // Initialize main image when a card is selected
+    }
+  }, [selectedCard]);
+
   const card = [
     {
       id: 1,
       title: "11th Annual Sports Day",
       image: Annual11,
       groupImage: [
-        Annual11,
-        Annual10,
-        Annual7,
-        Annual6,
-        Annual5,
-        Annual11,
-        Annual10,
-        Annual7,
+        Annual11Img1,
+        Annual11Img2,
+        Annual11Img3,
+        Annual11Img4,
+        Annual11Img5,
+        Annual11Img6,
+        Annual11Img7,
+        Annual11Img8,
       ],
       description:
         "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Sports Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
@@ -168,17 +184,24 @@ export default function EventConfluencePage() {
                     block: "start",
                   });
                 }}
+                style={{
+                  background: `
+      linear-gradient(180deg, rgba(0, 0, 0, 0.00) 88.37%, #000 100%),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),
+      url(${cards.image.src}) center/cover no-repeat
+    `,
+                }}
                 className={`${
                   index === 0 || index === 1
                     ? "w-full md:w-[calc(50%-16px)]"
                     : "w-full md:w-[calc(33.33%-16px)]"
                 } group cursor-pointer relative aspect-[1.2/1] flex flex-col gap-2 justify-end hover:justify-center items-center px-[2%] overflow-hidden rounded-xl`}
               >
-                <Image
+                {/* <Image
                   src={cards.image}
                   alt=""
                   className="w-full h-full object-cover absolute"
-                />
+                /> */}
                 <div className="absolute z-10 bg-[#b90124] bg-opacity-70 w-full h-full transition-all ease-in duration-700 translate-y-full group-hover:translate-y-0"></div>
                 <div className="absolute z-20">
                   <h3 className="font-[TTChocolatesBold] w-fit mx-auto text-[clamp(20px,1.8vw,50px)] text-white text-center">
@@ -211,7 +234,7 @@ export default function EventConfluencePage() {
               {/* Main Image & Details */}
               <div className="w-full md:w-2/3 border-2 rounded-md overflow-hidden border-[#b90124]">
                 <Image
-                  src={selectedCard.image}
+                  src={currentMainImage || selectedCard.image}
                   alt={selectedCard.title}
                   className="w-full h-full object-cover"
                 />
@@ -220,7 +243,17 @@ export default function EventConfluencePage() {
               {/* Group Images */}
               <div className="w-full md:w-1/3 grid grid-cols-2 gap-2">
                 {selectedCard.groupImage.map((img, idx) => (
-                  <Image key={idx} src={img} alt="" className="" />
+                  <div
+                    key={idx}
+                    className="cursor-pointer bg-black w-full h-full"
+                  >
+                    <Image
+                      src={img}
+                      alt=""
+                      onClick={() => setCurrentMainImage(img)} // Update the main image on click
+                      className="hover:opacity-80 w-full h-full object-cover"
+                    />
+                  </div>
                 ))}
               </div>
             </div>
