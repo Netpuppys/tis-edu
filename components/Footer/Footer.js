@@ -119,8 +119,9 @@ function Footer() {
                 style={{ textDecoration: "none", color: "#fff" }}
                 href="https://www.google.com/maps/place/Tula's+International+School+-+Best+Boarding+School+in+Dehradun+(Uttarakhand)/@30.3430336,77.8865903,17z/data=!3m1!4b1!4m6!3m5!1s0x390f2a8f6621db6d:0xb5df8a7bd77caf7d!8m2!3d30.3430336!4d77.8891652!16s%2Fm%2F0121_pmh?entry=ttu"
               >
-                Vill.Dhoolkot, near Tula&apos;s Institute Selaqui near Mandir
-                <br /> Dehradun, Uttarakhand, 248197{" "}
+                Dhoolkot, P.O – Selaqui, Chakrata Road,
+                <br />
+                Dehradun-248011 (Uttarakhand){" "}
               </a>
               <br />
               <a
@@ -176,9 +177,8 @@ function Footer() {
               <div className="info-div">
                 <Image src={markerIcon} className="icon" alt="point" />
                 <p className="text">
-                  Tula&apos;s International School Vill.Dhoolkot, near
-                  Tula&apos;s Institute Selaqui near Mandir Dehradun,
-                  Uttarakhand, 248197
+                  Tula’s International School Dhoolkot, P.O – Selaqui, Chakrata
+                  Road, Dehradun-248011 (Uttarakhand)
                 </p>
               </div>
 

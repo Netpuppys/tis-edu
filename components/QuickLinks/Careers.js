@@ -48,7 +48,7 @@ export default function Careers() {
           <br />
           The Director <br />
           Tula’s International School Dhoolkot, P.O – Selaqui, Chakrata Road,
-          Dehradun (248011), Uttarakhand, India
+          Dehradun-248011 (Uttarakhand)
         </p>
         <div className="career-current-opening">
           <h2>

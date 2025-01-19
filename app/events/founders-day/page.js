@@ -4,7 +4,7 @@ import "../../globals.css";
 import Navbar from "../../../components/globalComponents/navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import Image from "next/image";
-import sportsDay from "../../../public/Banner/sportsDay.webp";
+import banner from "../../../public/foundersDay/banner.webp";
 import Annual11 from "../../../public/sportsDay/Annual11.png";
 import Annual10 from "../../../public/sportsDay/Annual10.png";
 import Annual7 from "../../../public/sportsDay/Annual7.png";
@@ -26,7 +26,7 @@ export default function EventConfluencePage() {
   const card = [
     {
       id: 1,
-      title: "11th Annual Sports Day",
+      title: "11th Annual Founders Day",
       image: Annual11,
       groupImage: [
         Annual11,
@@ -39,11 +39,11 @@ export default function EventConfluencePage() {
         Annual7,
       ],
       description:
-        "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Sports Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
+        "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Founders Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
     },
     {
       id: 2,
-      title: "10th Annual Sports Day",
+      title: "10th Annual Founders Day",
       image: Annual10,
       groupImage: [
         Annual11,
@@ -56,11 +56,11 @@ export default function EventConfluencePage() {
         Annual7,
       ],
       description:
-        "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Sports Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
+        "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Founders Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
     },
     {
       id: 3,
-      title: "7th Annual Sports Day",
+      title: "7th Annual Founders Day",
       image: Annual7,
       groupImage: [
         Annual11,
@@ -73,11 +73,11 @@ export default function EventConfluencePage() {
         Annual7,
       ],
       description:
-        "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Sports Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
+        "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Founders Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
     },
     {
       id: 4,
-      title: "6th Annual Sports Day",
+      title: "6th Annual Founders Day",
       image: Annual6,
       groupImage: [
         Annual11,
@@ -90,11 +90,11 @@ export default function EventConfluencePage() {
         Annual7,
       ],
       description:
-        "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Sports Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
+        "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Founders Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
     },
     {
       id: 5,
-      title: "5th Annual Sports Day",
+      title: "5th Annual Founders Day",
       image: Annual5,
       groupImage: [
         Annual11,
@@ -107,7 +107,7 @@ export default function EventConfluencePage() {
         Annual7,
       ],
       description:
-        "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Sports Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
+        "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Founders Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
     },
   ];
   return (
@@ -135,8 +135,8 @@ export default function EventConfluencePage() {
             a showcase of talent and passion!
           </>
         }
-        headerImg={sportsDay}
-        headerImgMobile={sportsDay}
+        headerImg={banner}
+        headerImgMobile={banner}
       />
       <h6
         style={{
@@ -144,21 +144,21 @@ export default function EventConfluencePage() {
         }}
         className="w-full px-8 md:px-0 md:w-[75%] py-8 md:py-14 mx-auto text-justify md:text-center text-[clamp(15px,4.5vw,30px)] font-normal md:text-[clamp(18px,1.3vw,45px)] "
       >
-        Tulas' 7th Annual Sports Day is a celebration of energy, determination,
-        and teamwork. This event brings together athletes and enthusiasts from
-        across the community to participate in a variety of sports and
-        activities. From thrilling track events to exciting team games, Sports
-        Day promises a vibrant atmosphere filled with passion and friendly
-        competition. It’s not just about winning but embracing the spirit of
-        sportsmanship and fostering camaraderie among participants.
+        Tulas' 7th Annual Founders Day is a celebration of energy,
+        determination, and teamwork. This event brings together athletes and
+        enthusiasts from across the community to participate in a variety of
+        Founders and activities. From thrilling track events to exciting team
+        games, Founders Day promises a vibrant atmosphere filled with passion
+        and friendly competition. It’s not just about winning but embracing the
+        spirit of leadership and fostering camaraderie among participants.
         <br />
         <br />
         Whether you're an athlete, a spectator, or simply someone who enjoys a
-        day of outdoor fun, Tulas' Sports Day has something for everyone. Enjoy
-        the lively cheers, the electrifying performances, and the inspiring
-        stories of effort and perseverance.{" "}
+        day of outdoor fun, Tulas' Founders Day has something for everyone.
+        Enjoy the lively cheers, the electrifying performances, and the
+        inspiring stories of effort and perseverance.{" "}
         <span ref={scrollRef}>
-          Join us to witness and celebrate the joy of sports and the values it
+          Join us to witness and celebrate the joy of Founders and the values it
           instills, making this event a memorable experience for all.
         </span>
       </h6>

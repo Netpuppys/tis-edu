@@ -75,8 +75,8 @@ const ContactUs = () => {
             >
               <IoLocationSharp className="w-[24px] h-[24px]" />
               <span className="w-fit h-fit">
-                Vill.Dhoolkot, near Tula&apos;s Institute Selaqui near Mandir
-                Dehradun, Uttarakhand, 248197
+                Tula’s International School Dhoolkot, P.O – Selaqui, Chakrata
+                Road, Dehradun-248011 (Uttarakhand)
               </span>
             </a>
           </div>

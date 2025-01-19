@@ -5,7 +5,7 @@ import Footer from "@/components/Footer/Footer";
 import "../globals.css";
 import "../../styles/QuickLinks/Blog.css";
 import "../../styles/globalComponents/Header/header.css";
-import TableOfContent from "@/components/TableOfContent";
+import a from "@/components/a";
 export const revalidate = 60; // optional: ISR for revalidation every 60 seconds
 
 // Generate static params for dynamic routing
@@ -111,7 +111,7 @@ export default async function SlugPage({ params }) {
           <h6 className="text-[18px] md:text-[25px]">
             Published on {formattedDate} by {blog.author_name}
           </h6>
-          <TableOfContent slug={slug} />
+          <a slug={slug} />
           <div
             className="content-div-blog"
             dangerouslySetInnerHTML={{ __html: cleanContent(blog?.content) }}

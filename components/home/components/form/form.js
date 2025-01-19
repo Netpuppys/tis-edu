@@ -330,8 +330,8 @@ function Form() {
                 className="flex text-sm text-black items-center justify-start mt-4 gap-4"
               >
                 <IoLocation color="#007A83" className="min-w-[20px] h-[20px]" />
-                Tula's International School Vill.Dhoolkot, near Tula's Institute
-                Selaqui near Mandir Dehradun, Uttarakhand, 248197
+                Tula’s International School Dhoolkot, P.O – Selaqui, Chakrata
+                Road, Dehradun-248011 (Uttarakhand)
               </a>
               <div className="w-full flex justify-end">
                 <Image src={schoolLogo} alt="" className="mt-4 max-w-[114px]" />
