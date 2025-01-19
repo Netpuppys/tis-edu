@@ -5,7 +5,6 @@ import Footer from "@/components/Footer/Footer";
 import "../globals.css";
 import "../../styles/QuickLinks/Blog.css";
 import "../../styles/globalComponents/Header/header.css";
-import a from "@/components/a";
 export const revalidate = 60; // optional: ISR for revalidation every 60 seconds
 
 // Generate static params for dynamic routing
