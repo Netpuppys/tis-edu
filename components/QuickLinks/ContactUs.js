@@ -8,6 +8,7 @@ import { FaPhone } from "react-icons/fa6";
 import { Email } from "@mui/icons-material";
 import { IoLocationSharp } from "react-icons/io5";
 import ContactForm from "./form";
+import { TbDeviceLandlinePhone } from "react-icons/tb";
 
 const ContactUs = () => {
   return (
@@ -58,7 +59,7 @@ const ContactUs = () => {
               className="text-white flex gap-6 items-center"
             >
               <FaPhone />
-              +91-9837983791
+              Admission Helpline No. +91-9837983791
             </a>
             <br />
             <a
@@ -79,6 +80,15 @@ const ContactUs = () => {
                 Road, Dehradun-248011 (Uttarakhand)
               </span>
             </a>
+            <br />
+            <h2 className="text-white flex gap-6 items-start">
+              <TbDeviceLandlinePhone className="w-[24px] h-[24px]" />
+              <span className="w-fit h-fit">
+                <a href="tel:0135-2699444">Landline No. 0135-2699444</a>
+                {", "}
+                <a href="tel:0135-2699666">0135-2699666</a>
+              </span>
+            </h2>
           </div>
           <div className="absolute bottom-0 right-0">
             <div className="relative">

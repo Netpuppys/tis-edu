@@ -13,6 +13,7 @@ import { useMobile } from "@/components/globalComponents/IsMobileContext";
 import { UtmContext } from "@/components/globalComponents/utmParams";
 // import en from "react-phone-number-input/locale/en.json";
 import { ThreeDots } from "react-loader-spinner";
+import { TbDeviceLandlinePhone } from "react-icons/tb";
 function Form() {
   const { utmParams } = useContext(UtmContext);
   const [formData, setFormData] = useState({
@@ -315,7 +316,7 @@ function Form() {
                 className="flex text-sm text-black items-center justify-start mt-4 gap-4"
               >
                 <IoCall color="#007A83" className="min-w-[20px] h-[20px]" />
-                +91-98379 83791
+                Admission Helpline No. +91-98379 83791
               </a>
               <a
                 href="mailTo:info@tis.edu.in"
@@ -333,6 +334,17 @@ function Form() {
                 Tula’s International School Dhoolkot, P.O – Selaqui, Chakrata
                 Road, Dehradun-248011 (Uttarakhand)
               </a>
+              <p className="flex text-sm text-black items-center justify-start mt-4 gap-4">
+                <TbDeviceLandlinePhone
+                  color="#007A83"
+                  className="min-w-[20px] h-[20px]"
+                />
+                <h2>
+                  <a href="tel:0135-2699444">Landline No. 0135-2699444</a>
+                  {", "}
+                  <a href="tel:0135-2699666">0135-2699666</a>
+                </h2>
+              </p>
               <div className="w-full flex justify-end">
                 <Image src={schoolLogo} alt="" className="mt-4 max-w-[114px]" />
               </div>

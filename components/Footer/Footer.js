@@ -19,7 +19,7 @@ import Broucher from "../../public/MandatoryPDF/TIS_BROCHURE.pdf";
 import Image from "next/image";
 import Link from "next/link";
 import { UtmContext } from "../globalComponents/utmParams";
-
+import { TbDeviceLandlinePhone } from "react-icons/tb";
 function Footer() {
   const { isMobile } = useMobile();
   const { utmParams } = useContext(UtmContext);
@@ -126,9 +126,23 @@ function Footer() {
               <br />
               <a
                 style={{ textDecoration: "none", color: "#fff" }}
+                href="tel:0135-2699444"
+              >
+                Landline No. 0135-2699444
+              </a>
+              {", "}
+              <a
+                style={{ textDecoration: "none", color: "#fff" }}
+                href="tel:0135-2699666"
+              >
+                0135-2699666
+              </a>
+              <br />
+              <a
+                style={{ textDecoration: "none", color: "#fff" }}
                 href="tel:+91-9837983791"
               >
-                +91-9837983791
+                Admission Helpline No. +91-9837983791
               </a>
               <br />
               <a
@@ -181,13 +195,41 @@ function Footer() {
                   Road, Dehradun-248011 (Uttarakhand)
                 </p>
               </div>
-
+              <div className="info-div">
+                {/* <Image src={phoneIcon} className="icon" alt="phone" /> */}
+                <TbDeviceLandlinePhone className="icon text-white" />
+                <p className="text">
+                  <a
+                    style={{ textDecoration: "none", color: "#fff" }}
+                    href="tel:0135-2699444"
+                  >
+                    Landline No. 0135-2699444
+                  </a>
+                  {", "}
+                  <a
+                    style={{ textDecoration: "none", color: "#fff" }}
+                    href="tel:0135-2699666"
+                  >
+                    0135-2699666
+                  </a>
+                </p>
+              </div>
               <div className="info-div">
                 <Image src={phoneIcon} className="icon" alt="phone" />
                 <p className="text">
-                  (+91) 9837983791
+                  <a
+                    style={{ textDecoration: "none", color: "#fff" }}
+                    href="tel:+919837983791"
+                  >
+                    Admission Helpline No. (+91) 9837983791
+                  </a>
                   <br />
-                  info@tis.edu.in
+                  <a
+                    style={{ textDecoration: "none", color: "#fff" }}
+                    href="mailTo:info@tis.edu.in"
+                  >
+                    info@tis.edu.in
+                  </a>
                 </p>
               </div>
             </div>
