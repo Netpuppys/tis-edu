@@ -1,19 +1,20 @@
 "use client";
+
 import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { useMobile } from "../../globalComponents/IsMobileContext";
 import Header from "../../globalComponents/Header/Header";
-import HeaderManagementIMg from "../../../public/Header/managementHeader.png";
-import HeaderManagementMobileIMg from "../../../public/Header/managementHeaderMobile.jpg";
+import HeaderManagementIMg from "../../../public/Header/managementHeader.webp";
+import HeaderManagementMobileIMg from "../../../public/Header/managementHeaderMobile.webp";
 import sunil from "../../../public/ourMangement/sunilJain.webp";
 import Raunak from "../../../public/ourMangement/Raunak.webp";
 import silky from "../../../public/ourMangement/silky.webp";
 import raghav from "../../../public/ourMangement/raghav.webp";
-import bullet from "../../../public/icons/see-all-activities.png";
 import { RxDoubleArrowDown } from "react-icons/rx";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
+
 export default function OurManagement() {
   const { isMobile } = useMobile();
   const [expandedIndex, setExpandedIndex] = useState(0);
@@ -160,7 +161,7 @@ export default function OurManagement() {
     },
     {
       name: "Dr. Raghav Garg",
-      position: "(Vice President)",
+      position: "(Vice President - Technology)",
       image: raghav,
       points: (
         <ul className="ml-8 list-image-green">
@@ -325,7 +326,7 @@ export default function OurManagement() {
               expandedIndex === 0 && "md:rounded-ss-none"
             } ${expandedIndex === 3 && "md:rounded-se-none"}`}
           >
-            <h3 className="text-[#B90124] text-[clamp(15px,7vw,60px)] leading-tight pb-4 font-[NeueHaasDisplayBold] tracking-wide md:tracking-widest md:text-[clamp(20px,2.5vw,50px)]">
+            <h3 className="text-[#B90124] text-[clamp(15px,7vw,60px)] leading-tight pb-4 font-[NeueHaasDisplayBold] tracking-wide md:tracking-wider md:text-[clamp(20px,2.5vw,50px)]">
               {data[expandedIndex].name} {data[expandedIndex].position}
             </h3>
             <h4
