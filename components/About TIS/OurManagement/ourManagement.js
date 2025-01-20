@@ -161,7 +161,7 @@ export default function OurManagement() {
     },
     {
       name: "Dr. Raghav Garg",
-      position: "(Vice President - Technology)",
+      position: "(Vice President Technology)",
       image: raghav,
       points: (
         <ul className="ml-8 list-image-green">
