@@ -192,6 +192,7 @@ function NavMenu({ handleMenuBtn }) {
         { title: "Contact Us", linkTo: "/contact-us/" },
         { title: "Newsletter", linkTo: "/newsletter/" },
         { title: "Careers", linkTo: "/careers/" },
+        { title: "Transfer Certificate", linkTo: "/transfer-certificate" },
       ],
     },
   ];

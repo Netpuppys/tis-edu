@@ -339,11 +339,11 @@ function Form() {
                   color="#007A83"
                   className="min-w-[20px] h-[20px]"
                 />
-                <h2>
+                <span>
                   <a href="tel:0135-2699444">Landline No. 0135-2699444</a>
                   {", "}
                   <a href="tel:0135-2699666">0135-2699666</a>
-                </h2>
+                </span>
               </p>
               <div className="w-full flex justify-end">
                 <Image src={schoolLogo} alt="" className="mt-4 max-w-[114px]" />

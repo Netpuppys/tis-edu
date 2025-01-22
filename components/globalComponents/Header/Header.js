@@ -25,7 +25,7 @@ export default function Header({
           <Image
             src={headerImg}
             alt=""
-            className="w-full h-[75vh] object-cover opacity-80 z-0"
+            className="w-full h-[85vh] object-cover opacity-80 z-0"
           />
         </div>
         <div className="block w-full h-full md:hidden">
@@ -44,9 +44,9 @@ export default function Header({
           {title}
         </h1>
       </div>
-      <div className="flex h-full md:min-h-[25vh] bg-[#b90124] items-center justify-center">
+      <div className="flex h-full md:min-h-[15vh] bg-[#b90124] items-center justify-center">
         {/* <button className="counselling-btn"><p style={{fontSize:"12px",margin:"0"}}>More in</p>About TIS</button> */}
-        <h2 className="py-4 text-[clamp(15px,4.5vw,60px)] w-[85%] md:w-[70%] mx-auto text-center text-white font-[Helvetica] md:text-[clamp(15px,1.9vw,60px)] tracking-wider">
+        <h2 className="py-4 text-[clamp(15px,4.5vw,60px)] w-[85%] md:w-[80%] mx-auto text-center text-white font-[Helvetica] md:text-[clamp(15px,1.9vw,60px)] tracking-wider">
           {subtitle}
           <br />
         </h2>
