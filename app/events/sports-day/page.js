@@ -14,6 +14,38 @@ import Annual11Img5 from "../../../public/sportsDay/Annual11(5).png";
 import Annual11Img6 from "../../../public/sportsDay/Annual11(6).png";
 import Annual11Img7 from "../../../public/sportsDay/Annual11(7).png";
 import Annual11Img8 from "../../../public/sportsDay/Annual11(8).png";
+import Annual10Img1 from "../../../public/sportsDay/Annual10(1).png";
+import Annual10Img2 from "../../../public/sportsDay/Annual10(2).png";
+import Annual10Img3 from "../../../public/sportsDay/Annual10(3).png";
+import Annual10Img4 from "../../../public/sportsDay/Annual10(4).png";
+import Annual10Img5 from "../../../public/sportsDay/Annual10(5).png";
+import Annual10Img6 from "../../../public/sportsDay/Annual10(6).png";
+import Annual10Img7 from "../../../public/sportsDay/Annual10(7).png";
+import Annual10Img8 from "../../../public/sportsDay/Annual10(8).png";
+import Annual7Img1 from "../../../public/sportsDay/Annual7(1).png";
+import Annual7Img2 from "../../../public/sportsDay/Annual7(2).png";
+import Annual7Img3 from "../../../public/sportsDay/Annual7(3).png";
+import Annual7Img4 from "../../../public/sportsDay/Annual7(4).png";
+import Annual7Img5 from "../../../public/sportsDay/Annual7(5).png";
+import Annual7Img6 from "../../../public/sportsDay/Annual7(6).png";
+import Annual7Img7 from "../../../public/sportsDay/Annual7(7).png";
+import Annual7Img8 from "../../../public/sportsDay/Annual7(8).png";
+import Annual6Img1 from "../../../public/sportsDay/Annual6(1).png";
+import Annual6Img2 from "../../../public/sportsDay/Annual6(2).png";
+import Annual6Img3 from "../../../public/sportsDay/Annual6(3).png";
+import Annual6Img4 from "../../../public/sportsDay/Annual6(4).png";
+import Annual6Img5 from "../../../public/sportsDay/Annual6(5).png";
+import Annual6Img6 from "../../../public/sportsDay/Annual6(6).png";
+import Annual6Img7 from "../../../public/sportsDay/Annual6(7).png";
+import Annual6Img8 from "../../../public/sportsDay/Annual6(8).png";
+import Annual5Img1 from "../../../public/sportsDay/Annual5(1).png";
+import Annual5Img2 from "../../../public/sportsDay/Annual5(2).png";
+import Annual5Img3 from "../../../public/sportsDay/Annual5(3).png";
+import Annual5Img4 from "../../../public/sportsDay/Annual5(4).png";
+import Annual5Img5 from "../../../public/sportsDay/Annual5(5).png";
+import Annual5Img6 from "../../../public/sportsDay/Annual5(6).png";
+import Annual5Img7 from "../../../public/sportsDay/Annual5(7).png";
+import Annual5Img8 from "../../../public/sportsDay/Annual5(8).png";
 import Annual10 from "../../../public/sportsDay/Annual10.png";
 import Annual7 from "../../../public/sportsDay/Annual7.png";
 import Annual6 from "../../../public/sportsDay/Annual6.png";
@@ -54,14 +86,14 @@ export default function EventConfluencePage() {
       title: "10th Annual Sports Day",
       image: Annual10,
       groupImage: [
-        Annual11,
-        Annual10,
-        Annual7,
-        Annual6,
-        Annual5,
-        Annual11,
-        Annual10,
-        Annual7,
+        Annual10Img1,
+        Annual10Img2,
+        Annual10Img3,
+        Annual10Img4,
+        Annual10Img5,
+        Annual10Img6,
+        Annual10Img7,
+        Annual10Img8,
       ],
       description:
         "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Sports Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
@@ -71,14 +103,14 @@ export default function EventConfluencePage() {
       title: "7th Annual Sports Day",
       image: Annual7,
       groupImage: [
-        Annual11,
-        Annual10,
-        Annual7,
-        Annual6,
-        Annual5,
-        Annual11,
-        Annual10,
-        Annual7,
+        Annual7Img1,
+        Annual7Img2,
+        Annual7Img3,
+        Annual7Img4,
+        Annual7Img5,
+        Annual7Img6,
+        Annual7Img7,
+        Annual7Img8,
       ],
       description:
         "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Sports Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
@@ -88,14 +120,14 @@ export default function EventConfluencePage() {
       title: "6th Annual Sports Day",
       image: Annual6,
       groupImage: [
-        Annual11,
-        Annual10,
-        Annual7,
-        Annual6,
-        Annual5,
-        Annual11,
-        Annual10,
-        Annual7,
+        Annual6Img1,
+        Annual6Img2,
+        Annual6Img3,
+        Annual6Img4,
+        Annual6Img5,
+        Annual6Img6,
+        Annual6Img7,
+        Annual6Img8,
       ],
       description:
         "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Sports Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
@@ -105,14 +137,14 @@ export default function EventConfluencePage() {
       title: "5th Annual Sports Day",
       image: Annual5,
       groupImage: [
-        Annual11,
-        Annual10,
-        Annual7,
-        Annual6,
-        Annual5,
-        Annual11,
-        Annual10,
-        Annual7,
+        Annual5Img1,
+        Annual5Img2,
+        Annual5Img3,
+        Annual5Img4,
+        Annual5Img5,
+        Annual5Img6,
+        Annual5Img7,
+        Annual5Img8,
       ],
       description:
         "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Sports Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",

@@ -5,11 +5,79 @@ import Navbar from "../../../components/globalComponents/navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import Image from "next/image";
 import banner from "../../../public/foundersDay/banner.webp";
-import Annual11 from "../../../public/sportsDay/Annual11.png";
-import Annual10 from "../../../public/sportsDay/Annual10.png";
-import Annual7 from "../../../public/sportsDay/Annual7.png";
-import Annual6 from "../../../public/sportsDay/Annual6.png";
-import Annual5 from "../../../public/sportsDay/Annual5.png";
+import bannerMobile from "../../../public/foundersDay/bannerMobile.webp";
+import Annual10 from "../../../public/foundersDay/Annual10.png";
+import Annual10Img1 from "../../../public/foundersDay/Annual10(1).png";
+import Annual10Img2 from "../../../public/foundersDay/Annual10(2).png";
+import Annual10Img3 from "../../../public/foundersDay/Annual10(3).png";
+import Annual10Img4 from "../../../public/foundersDay/Annual10(4).png";
+import Annual10Img5 from "../../../public/foundersDay/Annual10(5).png";
+import Annual10Img6 from "../../../public/foundersDay/Annual10(6).png";
+import Annual10Img7 from "../../../public/foundersDay/Annual10(7).png";
+import Annual10Img8 from "../../../public/foundersDay/Annual10(8).png";
+import Annual9 from "../../../public/foundersDay/Annual9.png";
+import Annual9Img1 from "../../../public/foundersDay/Annual9(1).png";
+import Annual9Img2 from "../../../public/foundersDay/Annual9(2).png";
+import Annual9Img3 from "../../../public/foundersDay/Annual9(3).png";
+import Annual9Img4 from "../../../public/foundersDay/Annual9(4).png";
+import Annual9Img5 from "../../../public/foundersDay/Annual9(5).png";
+import Annual9Img6 from "../../../public/foundersDay/Annual9(6).png";
+import Annual9Img7 from "../../../public/foundersDay/Annual9(7).png";
+import Annual9Img8 from "../../../public/foundersDay/Annual9(8).png";
+import Annual8 from "../../../public/foundersDay/Annual10.png";
+import Annual8Img1 from "../../../public/foundersDay/Annual9(1).png";
+import Annual8Img2 from "../../../public/foundersDay/Annual9(2).png";
+import Annual8Img3 from "../../../public/foundersDay/Annual9(3).png";
+import Annual8Img4 from "../../../public/foundersDay/Annual9(4).png";
+import Annual8Img5 from "../../../public/foundersDay/Annual9(5).png";
+import Annual8Img6 from "../../../public/foundersDay/Annual9(6).png";
+import Annual8Img7 from "../../../public/foundersDay/Annual9(7).png";
+import Annual8Img8 from "../../../public/foundersDay/Annual9(8).png";
+import Annual5 from "../../../public/foundersDay/Annual9.png";
+import Annual5Img1 from "../../../public/foundersDay/Annual9(1).png";
+import Annual5Img2 from "../../../public/foundersDay/Annual9(2).png";
+import Annual5Img3 from "../../../public/foundersDay/Annual9(3).png";
+import Annual5Img4 from "../../../public/foundersDay/Annual9(4).png";
+import Annual5Img5 from "../../../public/foundersDay/Annual9(5).png";
+import Annual5Img6 from "../../../public/foundersDay/Annual9(6).png";
+import Annual5Img7 from "../../../public/foundersDay/Annual9(7).png";
+import Annual5Img8 from "../../../public/foundersDay/Annual9(8).png";
+import Annual4 from "../../../public/foundersDay/Annual10.png";
+import Annual4Img1 from "../../../public/foundersDay/Annual9(1).png";
+import Annual4Img2 from "../../../public/foundersDay/Annual9(2).png";
+import Annual4Img3 from "../../../public/foundersDay/Annual9(3).png";
+import Annual4Img4 from "../../../public/foundersDay/Annual9(4).png";
+import Annual4Img5 from "../../../public/foundersDay/Annual9(5).png";
+import Annual4Img6 from "../../../public/foundersDay/Annual9(6).png";
+import Annual4Img7 from "../../../public/foundersDay/Annual9(7).png";
+import Annual4Img8 from "../../../public/foundersDay/Annual9(8).png";
+import Annual3 from "../../../public/foundersDay/Annual9.png";
+import Annual3Img1 from "../../../public/foundersDay/Annual9(1).png";
+import Annual3Img2 from "../../../public/foundersDay/Annual9(2).png";
+import Annual3Img3 from "../../../public/foundersDay/Annual9(3).png";
+import Annual3Img4 from "../../../public/foundersDay/Annual9(4).png";
+import Annual3Img5 from "../../../public/foundersDay/Annual9(5).png";
+import Annual3Img6 from "../../../public/foundersDay/Annual9(6).png";
+import Annual3Img7 from "../../../public/foundersDay/Annual9(7).png";
+import Annual3Img8 from "../../../public/foundersDay/Annual9(8).png";
+import Annual2 from "../../../public/foundersDay/Annual10.png";
+import Annual2Img1 from "../../../public/foundersDay/Annual9(1).png";
+import Annual2Img2 from "../../../public/foundersDay/Annual9(2).png";
+import Annual2Img3 from "../../../public/foundersDay/Annual9(3).png";
+import Annual2Img4 from "../../../public/foundersDay/Annual9(4).png";
+import Annual2Img5 from "../../../public/foundersDay/Annual9(5).png";
+import Annual2Img6 from "../../../public/foundersDay/Annual9(6).png";
+import Annual2Img7 from "../../../public/foundersDay/Annual9(7).png";
+import Annual2Img8 from "../../../public/foundersDay/Annual9(8).png";
+import Annual1 from "../../../public/foundersDay/Annual9.png";
+import Annual1Img1 from "../../../public/foundersDay/Annual9(1).png";
+import Annual1Img2 from "../../../public/foundersDay/Annual9(2).png";
+import Annual1Img3 from "../../../public/foundersDay/Annual9(3).png";
+import Annual1Img4 from "../../../public/foundersDay/Annual9(4).png";
+import Annual1Img5 from "../../../public/foundersDay/Annual9(5).png";
+import Annual1Img6 from "../../../public/foundersDay/Annual9(6).png";
+import Annual1Img7 from "../../../public/foundersDay/Annual9(7).png";
+import Annual1Img8 from "../../../public/foundersDay/Annual9(8).png";
 import Head from "next/head";
 import Header from "@/components/globalComponents/Header/Header";
 export default function EventConfluencePage() {
@@ -26,88 +94,139 @@ export default function EventConfluencePage() {
   const card = [
     {
       id: 1,
-      title: "11th Annual Founders Day",
-      image: Annual11,
+      title: "10th Annual Founders Day - 2024",
+      image: Annual10,
       groupImage: [
-        Annual11,
-        Annual10,
-        Annual7,
-        Annual6,
-        Annual5,
-        Annual11,
-        Annual10,
-        Annual7,
+        Annual10Img1,
+        Annual10Img2,
+        Annual10Img3,
+        Annual10Img4,
+        Annual10Img5,
+        Annual10Img6,
+        Annual10Img7,
+        Annual10Img8,
       ],
       description:
-        "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Founders Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
+        "Rooted in timeless values, our 10th Founders Day celebrated the epic Ramayana, with our chief guest Sh. Naresh Bansal and special guest Mr. Sarabjot Singh guiding us through its enduring lessons.",
     },
     {
       id: 2,
-      title: "10th Annual Founders Day",
-      image: Annual10,
+      title: "9th Annual Founders Day - 2023",
+      image: Annual9,
       groupImage: [
-        Annual11,
-        Annual10,
-        Annual7,
-        Annual6,
-        Annual5,
-        Annual11,
-        Annual10,
-        Annual7,
+        Annual9Img1,
+        Annual9Img2,
+        Annual9Img3,
+        Annual9Img4,
+        Annual9Img5,
+        Annual9Img6,
+        Annual9Img7,
+        Annual9Img8,
       ],
       description:
-        "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Founders Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
+        "On our 9th Founders Day we celebrated the art and wisdom of Tagore along with our chief guest Mr. Nitish Kumar and our guest of honour, Ms. Ridhima Pandey and Mr. Shivank Verma.",
     },
     {
       id: 3,
-      title: "7th Annual Founders Day",
-      image: Annual7,
+      title: "8th Annual Founders Day - 2022",
+      image: Annual8,
       groupImage: [
-        Annual11,
-        Annual10,
-        Annual7,
-        Annual6,
-        Annual5,
-        Annual11,
-        Annual10,
-        Annual7,
+        Annual8Img1,
+        Annual8Img2,
+        Annual8Img3,
+        Annual8Img4,
+        Annual8Img5,
+        Annual8Img6,
+        Annual8Img7,
+        Annual8Img8,
       ],
       description:
-        "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Founders Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
+        "Roaring with pride, our 8th Founders Day honored the courage and leadership of the Lion King. With our chief guest Col. Vikram Kadyan and our special guest Hawaldar Joginder Kumar made this day unforgettable.",
     },
     {
       id: 4,
-      title: "6th Annual Founders Day",
-      image: Annual6,
+      title: "5th Annual Founders Day - 2019",
+      image: Annual5,
       groupImage: [
-        Annual11,
-        Annual10,
-        Annual7,
-        Annual6,
-        Annual5,
-        Annual11,
-        Annual10,
-        Annual7,
+        Annual5Img1,
+        Annual5Img2,
+        Annual5Img3,
+        Annual5Img4,
+        Annual5Img5,
+        Annual5Img6,
+        Annual5Img7,
+        Annual5Img8,
       ],
       description:
-        "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Founders Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
+        "Magic, dreams, and inspiration. On our 5th Founders Day we brought Aladdin’s wonder to life, with chief guest Sh. Anurag Tripathi and our special guest LtCdr. Payal Gupta and Dr. Sanjay Prakash Saxena lighting the way.",
     },
     {
       id: 5,
-      title: "5th Annual Founders Day",
-      image: Annual5,
+      title: "4th Annual Founders Day - 2018",
+      image: Annual4,
       groupImage: [
-        Annual11,
-        Annual10,
-        Annual7,
-        Annual6,
-        Annual5,
-        Annual11,
-        Annual10,
-        Annual7,
+        Annual4Img1,
+        Annual4Img2,
+        Annual4Img3,
+        Annual4Img4,
+        Annual4Img5,
+        Annual4Img6,
+        Annual4Img7,
+        Annual4Img8,
       ],
       description:
-        "Whether you're an athlete, a spectator, or simply someone who enjoys a day of outdoor fun, Tulas' Founders Day has something for everyone. Enjoy the lively cheers, the electrifying performances,",
+        "Love, courage, and resilience, our 4th Founders Day, inspired by Laila Majnu, was made unforgettable by Ms. Laxmi Agarwal’s empowering presence.",
+    },
+    {
+      id: 6,
+      title: "3rd Annual Founders Day - 2017",
+      image: Annual3,
+      groupImage: [
+        Annual3Img1,
+        Annual3Img2,
+        Annual3Img3,
+        Annual3Img4,
+        Annual3Img5,
+        Annual3Img6,
+        Annual3Img7,
+        Annual3Img8,
+      ],
+      description:
+        "Where stories came alive on the street, our 3rd Founders Day honored the art of Nukkad Natak with Sh. Arvind Pandey (Minister for Primary Education), celebrating community and creativity.",
+    },
+    {
+      id: 7,
+      title: "2nd Annual Founders Day - 2016",
+      image: Annual2,
+      groupImage: [
+        Annual2Img1,
+        Annual2Img2,
+        Annual2Img3,
+        Annual2Img4,
+        Annual2Img5,
+        Annual2Img6,
+        Annual2Img7,
+        Annual2Img8,
+      ],
+      description:
+        "Embracing the power of nature, our 2nd Founders Day honored the Four Main Elements, with Justice Vijendra Jain guiding our celebration of balance and strength.",
+    },
+    {
+      id: 8,
+      title: "1st Annual Founders Day - 2015",
+      image: Annual1,
+      groupImage: [
+        Annual1Img1,
+        Annual1Img2,
+        Annual1Img3,
+        Annual1Img4,
+        Annual1Img5,
+        Annual1Img6,
+        Annual1Img7,
+        Annual1Img8,
+      ],
+      description:
+        "Launching a legacy of inspiration, our 1st Founders Day celebrated the Famous Personalities whose stories continue to shape our journey.",
     },
   ];
   return (
@@ -135,7 +254,7 @@ export default function EventConfluencePage() {
           </>
         }
         headerImg={banner}
-        headerImgMobile={banner}
+        headerImgMobile={bannerMobile}
       />
       <h6
         style={{
@@ -143,22 +262,35 @@ export default function EventConfluencePage() {
         }}
         className="w-full px-8 md:px-0 md:w-[75%] py-8 md:py-14 mx-auto text-justify md:text-center text-[clamp(15px,4.5vw,30px)] font-normal md:text-[clamp(18px,1.3vw,45px)] "
       >
-        Tulas' 7th Annual Founders Day is a celebration of energy,
-        determination, and teamwork. This event brings together athletes and
-        enthusiasts from across the community to participate in a variety of
-        Founders and activities. From thrilling track events to exciting team
-        games, Founders Day promises a vibrant atmosphere filled with passion
-        and friendly competition. It’s not just about winning but embracing the
-        spirit of leadership and fostering camaraderie among participants.
+        Celebrating Growth, Creativity, and Unity – TIS Founder's Day: Honoring
+        the Past, Shaping the Future!
         <br />
         <br />
-        Whether you're an athlete, a spectator, or simply someone who enjoys a
-        day of outdoor fun, Tulas' Founders Day has something for everyone.
-        Enjoy the lively cheers, the electrifying performances, and the
-        inspiring stories of effort and perseverance.{" "}
+        At TIS, Founders Day isn’t just about honoring our founders. It’s a time
+        to celebrate how far we’ve come, the progress we’ve made, and the
+        achievements of our students over the past year. We celebrate it right
+        before the Diwali break in a unique way.
+        <br />
+        <br />
+        Each year, we choose a new theme for the event. Past themes have
+        included stories like Ramayana, Aladdin, Laila-Majnu, and figures like
+        Rabindranath Tagore etc. What makes Founders Day even more exciting is
+        that about 70% of our students work together for 60 days to create an
+        amazing play based on the theme. From writing the script to designing
+        the set and costumes, students are involved in every step.
+        <br />
+        <br />
+        In addition to the play, students also organize a fun fest filled with
+        exciting activities, games, and food stalls. This gives them a chance to
+        take on responsibilities and work together. There are also exhibitions
+        on subjects like IT, science, and social science, where students can
+        showcase their creativity and knowledge in front of the school
+        community.
+        <br />
+        <br />
         <span ref={scrollRef}>
-          Join us to witness and celebrate the joy of Founders and the values it
-          instills, making this event a memorable experience for all.
+          At TIS, Founders Day is not just about the past, but about celebrating
+          our journey, growth, and the future we’re building together.
         </span>
       </h6>
 
@@ -244,7 +376,7 @@ export default function EventConfluencePage() {
 
             {/* Other Cards */}
             <div className="w-full py-8 md:py-14">
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap justify-center gap-4">
                 {card
                   .filter((cards) => cards.id !== selectedCard?.id) // assuming each card has a unique id
                   .map((cards, index) => (
