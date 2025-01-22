@@ -17,7 +17,7 @@ import "../../../styles/About Tis/AwardsAndArchievement.css";
 export default function AcademicArchievements() {
   const { isMobile } = useMobile();
   const subTitle =
-    "Tula's International School has earned recognition through various awards, highlighting excellence in education and leadership.";
+    "We have won various awards for excellence in education and leadership";
 
   return (
     <>

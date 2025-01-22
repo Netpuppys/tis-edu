@@ -11,7 +11,7 @@ import { useMobile } from "../globalComponents/IsMobileContext";
 export default function Curriculum() {
   const { isMobile } = useMobile();
   const bannerText =
-    "We have built a curriculum that understands and supports the journey of every child.";
+    "Our curriculum understands and supports the journey of every child";
 
   return (
     <>

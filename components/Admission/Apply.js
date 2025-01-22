@@ -239,7 +239,7 @@ const Apply = () => {
       <Header
         title={"Admission Procedure"}
         subtitle={
-          "The admission procedure at Tula's International School is straightforward and transparent, designed to ensure a seamless enrollment experience."
+          "TIS has a simple and transparent admission process for seamless enrolment"
         }
         headerImg={HeaderApplyImg}
         headerImgMobile={HeaderApplyImg}

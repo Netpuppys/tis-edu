@@ -18,7 +18,7 @@ const ContactUs = () => {
         headerImg={HeaderContactImg}
         headerImgMobile={HeaderContactImgMobile}
         subtitle={
-          "It is where you find info to reach out to a school for help or questions."
+          "Got questions about TIS? We’re here to help! Get in touch with us"
         }
       />
 

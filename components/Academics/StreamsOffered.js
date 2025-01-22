@@ -12,7 +12,7 @@ import "../../styles/Academics/StreamsOffered.css";
 export default function StreamOffered() {
   const { isMobile } = useMobile();
   const bannerText =
-    "Explore various career paths to discover your passion and shape a fulfilling professional journey.";
+    "Try different careers to find your passion and build a fulfilling career";
 
   return (
     <>

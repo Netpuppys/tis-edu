@@ -131,7 +131,7 @@ export default function Publication() {
   ];
 
   const bannerText =
-    "A strong school management provides the best learning environment for students.";
+    "Our Publications provide hands-on experiential learning to our students";
 
   return (
     <>

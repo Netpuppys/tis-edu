@@ -24,7 +24,7 @@ function Headmaster() {
         headerImg={HeaderHeadmasterIMg}
         headerImgMobile={HeaderHeadmasterMobileIMg}
         subtitle={
-          "A headmaster is the architect of dreams, laying the foundation for a lifetime of success."
+          "A headmaster shapes dreams, building a foundation for lifelong success"
         }
       />
 

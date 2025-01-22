@@ -128,11 +128,10 @@ export default function EventConfluencePage() {
         title={"Founder's Day"}
         subtitle={
           <>
-            Celebrate leadership and teamwork at{" "}
+            Celebrate leadership and teamwork at our{" "}
             <strong className="font-black font-[HelveticaBold]">
-              Tulas Annual Founder's Day,
-            </strong>{" "}
-            a showcase of talent and passion!
+              Annual Founder's Day
+            </strong>
           </>
         }
         headerImg={banner}

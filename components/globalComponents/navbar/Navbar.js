@@ -17,7 +17,7 @@ import { FaPhone } from "react-icons/fa6";
 import { useMobile } from "../IsMobileContext";
 import FormPopup from "../Form-Popup/form";
 import { UtmContext } from "../utmParams";
-
+import { SiGoogleforms } from "react-icons/si";
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(null);
   const [isNavMenuVisible, setIsNavMenuVisible] = useState(false);
@@ -225,7 +225,7 @@ const Navbar = () => {
         <div className="top-bar">
           <a className="phone-number" href="tel:+91-9837983791">
             <FaPhone className="phone-icon" />
-            ADMISSION HELPLINE NO. +91-9837983791
+            ADMISSIONS HELPLINE NO. +91-9837983791
           </a>
           <button onClick={handleFormPopup} className="enquire">
             Enquire Now
@@ -294,7 +294,7 @@ const Navbar = () => {
           </a>
         </div>
         <div
-          className="chat-btn"
+          className="chat-btn translate-x-1/2 md:translate-x-0"
           onClick={handleWhatsapp}
           style={{
             borderRadius: "50%",
@@ -313,16 +313,27 @@ const Navbar = () => {
           />
         </div>
         {isMobile && (
-          <div className="bottom-bar-all-pages">
-            <button onClick={handleFormPopup} className="bottom-enquire">
+          <div
+            style={{
+              fontFamily: "TT Chocolates",
+            }}
+            className="fixed md:hidden bg-[#60BAB1] flex w-full h-fit z-[99999] bottom-0"
+          >
+            <button
+              onClick={handleFormPopup}
+              className="flex justify-center gap-2 h-12 items-center text-black w-full"
+            >
+              <SiGoogleforms />
               Enquire Now
             </button>
-            <div className="phone-div-bottom-bar">
-              <a className="bottom-phone-number" href="tel:+91-9837983791">
-                <FaPhone className="bottom-phone-icon" />
-                +91-9837983791
-              </a>
-            </div>
+
+            <a
+              className="flex justify-center gap-2 h-12 items-center text-black w-full"
+              href="tel:+91-9837983791"
+            >
+              <FaPhone />
+              +91-9837983791
+            </a>
           </div>
         )}
       </div>

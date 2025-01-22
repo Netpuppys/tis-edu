@@ -29,7 +29,12 @@ function NewStats() {
       aspect: "1-1",
     },
     { img: image2, aspect: "2-1" },
-    { number: "5:1", title: "STUDENT RATIO", icon: ratio, aspect: "1-1" },
+    {
+      number: "5:1",
+      title: "STUDENT TEACHER RATIO",
+      icon: ratio,
+      aspect: "1-1",
+    },
     { img: image3, aspect: "1-1" },
     // { number: "19+", title: "YEARS OF EXPERIENCE", icon: years, aspect: "1-1" },
     // { number: "4th", title: "RANKING IN INDIA", icon: ranking, aspect: "1-1" },
@@ -47,7 +52,7 @@ function NewStats() {
 
   return (
     <div>
-      <div className="mb-8 w-[70%] md:w-[40%] h-[2px] bg-[#b90124] mx-auto"></div>
+      <div className="mb-8 w-[70%] md:w-[40%] h-[2px] bg-[#60bab1] mx-auto"></div>
       <div className="grid grid-cols-2 md:grid-cols-4 w-[95%] md:w-[75%] mx-auto">
         {stats.map((stat, index) => (
           <div
@@ -92,7 +97,7 @@ function NewStats() {
           </div>
         ))}
       </div>
-      <div className="mt-8 w-[70%] md:w-[40%] h-[2px] bg-[#b90124] mx-auto"></div>
+      <div className="mt-8 w-[70%] md:w-[40%] h-[2px] bg-[#60bab1] mx-auto"></div>
     </div>
   );
 }

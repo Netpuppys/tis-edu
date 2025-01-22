@@ -17,7 +17,7 @@ function Music() {
       <Header
         title={"Beyond The Curriculum"}
         subtitle={
-          "Skills for life aren't just taught in classrooms—they're discovered on stages, fields, and everywhere in between."
+          "Skills for life are discovered on stages, fields, and everywhere in between"
         }
         headerImg={HeaderMusicImg}
         headerImgMobile={HeaderMusicImgMobile}

@@ -302,7 +302,7 @@ function FourthSection() {
                         className="w-full h-full object-cover hover:scale-110 transition-all ease-in duration-500 "
                       />
                     </div>
-                    <p className="text-center text-[#b90124] font-semibold font-[TTChocolates] uppercase text-[clamp(15px,4.5vw,100px)] md:text-[clamp(15px,1.3vw,100px)]">
+                    <p className="text-center text-[#000] font-semibold font-[TTChocolates] uppercase text-[clamp(15px,4.5vw,100px)] md:text-[clamp(15px,1.3vw,100px)]">
                       {image.title}
                     </p>
                   </div>

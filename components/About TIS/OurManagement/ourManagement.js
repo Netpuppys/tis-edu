@@ -196,7 +196,7 @@ export default function OurManagement() {
       <Header
         title={"Our Management"}
         subtitle={
-          "A strong school management provides the best learning environment for students."
+          "A strong school management provides the best learning environment for students"
         }
         headerImg={HeaderManagementIMg}
         headerImgMobile={HeaderManagementMobileIMg}

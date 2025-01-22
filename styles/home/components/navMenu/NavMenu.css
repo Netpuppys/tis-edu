@@ -377,7 +377,7 @@
   .nav-menu-main-div {
     position: relative;
     flex-direction: column;
-    height: fit-content;
+    height: 100%;
   }
 
   .nav-menu-main-div .left-div {

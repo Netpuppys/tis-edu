@@ -294,57 +294,57 @@ function Form() {
           </div>
         </div>
       )}
-      <div className="h-fit w-full bg-[#b90124] md:bg-transparent relative md:absolute md:-translate-y-1/2 z-50">
+      <div className="h-fit w-full py- md:bg-transparent px-4 py-4 relative md:absolute md:-translate-y-1/2 z-50">
         <div
           style={{
-            boxShadow: "0px -7px 69.127px 0px rgba(0, 0, 0, 0.25)",
             fontFamily: "TT Chocolates",
           }}
-          className="flex pointer-events-auto bg-[#90CCD0] w-[95%] max-w-[1200px] rounded-3xl overflow-hidden mx-auto z-30"
+          className="flex pointer-events-auto bg-[#90CCD0] shadow-2xl shadow-black w-full  max-w-[1200px] rounded-3xl mx-auto z-30"
         >
           {!isMobile && (
-            <div className="bg-white flex flex-col rounded-r-3xl px-7 py-7 pb-4 w-[50%] max-w-[410px]">
-              <h3 className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-[TTChocolatesBold] text-black">
-                Contact Us.
-              </h3>
-              <p className="text-sm text-black">
-                Subscribe to be notified about our latest endeavours, and your
-                IT horizons.
-              </p>
-              <a
-                href="tel:+91-9837983791"
-                className="flex text-sm text-black items-center justify-start mt-4 gap-4"
-              >
-                <IoCall color="#007A83" className="min-w-[20px] h-[20px]" />
-                Admission Helpline No. +91-98379 83791
-              </a>
-              <a
-                href="mailTo:info@tis.edu.in"
-                className="flex text-sm text-black items-center justify-start mt-4 gap-4"
-              >
-                <IoMail color="#007A83" className="min-w-[20px] h-[20px]" />
-                info@tis.edu.in
-              </a>
-              <a
-                href="https://maps.app.goo.gl/maBF8syXueQkw31E6"
-                target="_blank"
-                className="flex text-sm text-black items-center justify-start mt-4 gap-4"
-              >
-                <IoLocation color="#007A83" className="min-w-[20px] h-[20px]" />
-                Tula’s International School Dhoolkot, P.O – Selaqui, Chakrata
-                Road, Dehradun-248011 (Uttarakhand)
-              </a>
-              <p className="flex text-sm text-black items-center justify-start mt-4 gap-4">
-                <TbDeviceLandlinePhone
-                  color="#007A83"
-                  className="min-w-[20px] h-[20px]"
-                />
-                <span>
-                  <a href="tel:0135-2699444">Landline No. 0135-2699444</a>
-                  {", "}
-                  <a href="tel:0135-2699666">0135-2699666</a>
-                </span>
-              </p>
+            <div className="bg-white flex flex-col justify-between rounded-3xl px-7 py-7 pb-4 w-[50%] max-w-[410px]">
+              <div className="w-full h-fit flex flex-col">
+                <h3 className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-[TTChocolatesBold] text-black">
+                  Contact Us.
+                </h3>
+                <a
+                  href="tel:+91-9837983791"
+                  className="flex text-sm text-black items-center justify-start mt-4 gap-4"
+                >
+                  <IoCall color="#007A83" className="min-w-[20px] h-[20px]" />
+                  Admission Helpline No. +91-98379 83791
+                </a>
+                <a
+                  href="mailTo:info@tis.edu.in"
+                  className="flex text-sm text-black items-center justify-start mt-4 gap-4"
+                >
+                  <IoMail color="#007A83" className="min-w-[20px] h-[20px]" />
+                  info@tis.edu.in
+                </a>
+                <a
+                  href="https://maps.app.goo.gl/maBF8syXueQkw31E6"
+                  target="_blank"
+                  className="flex text-sm text-black items-center justify-start mt-4 gap-4"
+                >
+                  <IoLocation
+                    color="#007A83"
+                    className="min-w-[20px] h-[20px]"
+                  />
+                  Tula’s International School Dhoolkot, P.O – Selaqui, Chakrata
+                  Road, Dehradun-248011 (Uttarakhand)
+                </a>
+                <p className="flex text-sm text-black items-center justify-start mt-4 gap-4">
+                  <TbDeviceLandlinePhone
+                    color="#007A83"
+                    className="min-w-[20px] h-[20px]"
+                  />
+                  <span>
+                    <a href="tel:0135-2699444">Landline No. 0135-2699444</a>
+                    {", "}
+                    <a href="tel:0135-2699666">0135-2699666</a>
+                  </span>
+                </p>
+              </div>
               <div className="w-full flex justify-end">
                 <Image src={schoolLogo} alt="" className="mt-4 max-w-[114px]" />
               </div>
@@ -502,7 +502,7 @@ function Form() {
               type="submit"
               disabled={!verified}
               title={verified ? "" : "Please Verify Mobile Number"}
-              className={`w-full min-w-[250px] md:w-[30%] mx-auto bg-[#B90124] text-xl text-[#FFFFFF] cursor-pointer py-2 rounded-md disabled:opacity-100 disabled:cursor-not-allowed font-semibold mt-6 md:mt-3 shadow-[0px_3.409px_11.847px_0px_rgba(0,_0,_0,_0.25)]`}
+              className={`w-full min-w-[250px] md:w-[30%] mx-auto bg-black text-xl text-[#FFFFFF] cursor-pointer py-2 rounded-md disabled:opacity-100 disabled:cursor-not-allowed font-semibold mt-6 md:mt-3 shadow-[0px_3.409px_11.847px_0px_rgba(0,_0,_0,_0.25)]`}
             >
               Enquire Now
             </button>

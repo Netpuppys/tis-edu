@@ -21,7 +21,7 @@ export default function blog() {
         headerImg={BlogsHeader}
         headerImgMobile={BlogsHeaderMobile}
         title={"Blogs"}
-        subtitle={"This is TIS. Prepare to Launch."}
+        subtitle={"Your window into the inspiring world of talent, creativity, and culture at TIS"}
       />
       <Blog />
       <Footer />

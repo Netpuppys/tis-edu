@@ -46,7 +46,7 @@ export default function MandatoryDisclosure() {
       <Header
         title={"Mandatory Disclosure"}
         subtitle={
-          "Tula's International School is a starting point for journeys of the mind that are, at the same time, journeys into the world"
+          "TIS sparks journey of the mind that guide students throughout their lives"
         }
         headerImg={HeaderMandatoryImg}
         headerImgMobile={HeaderMandatoryImgMobile}

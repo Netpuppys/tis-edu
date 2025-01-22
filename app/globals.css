@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
+:root {
   background-color: white;
 }
 
@@ -170,8 +170,8 @@ p {
     linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
     linear-gradient(
       0deg,
-      rgba(185, 1, 36, 0.44) 0%,
-      rgba(185, 1, 36, 0.44) 100%
+      rgba(96, 186, 177, 0.46) 0%,
+      rgba(96, 186, 177, 0.46) 100%
     ),
     linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
     linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),

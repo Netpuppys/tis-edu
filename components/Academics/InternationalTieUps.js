@@ -18,7 +18,7 @@ export default function InternationaltieUps() {
       <Header
         title={"International Tie Up"}
         subtitle={
-          "International Collaborations for Enriched Learning and Cross-Cultural Engagement."
+          "International Partnerships for Enriched Learning and Cross-Cultural Engagement"
         }
         headerImg={HeaderTieUpsImg}
         headerImgMobile={HeaderTieUpsMobileImg}

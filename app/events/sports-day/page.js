@@ -136,11 +136,11 @@ export default function EventConfluencePage() {
         title={"Sports Day"}
         subtitle={
           <>
-            Celebrate sportsmanship and teamwork at{" "}
+            Witness passion and teamwork shine at the{" "}
             <strong className="font-black font-[HelveticaBold]">
-              Tulas Annual Sports Day,
+              Annual Sports Day
             </strong>{" "}
-            a showcase of talent and passion!
+            of TIS!
           </>
         }
         headerImg={sportsDay}

@@ -18,7 +18,7 @@ export default function OurHousesystem() {
       <Header
         title={"Our House System "}
         subtitle={
-          "Tula's International School's house system fosters camaraderie, competition, and holistic development among students."
+          "Our house system builds bonds, sparks competition, and drives growth"
         }
         headerImg={HeaderHouseImg}
         headerImgMobile={HeaderHouseMobileImg}

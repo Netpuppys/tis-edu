@@ -15,7 +15,7 @@ import headerHistoryImg from "../../../public/Header/HistoryHeader.png";
 
 export default function OurHistory() {
   const subTitle =
-    "Tula's International School serves as the starting point for intellectual explorations that simultaneously extend into the broader world.";
+    "TIS sparks intellectual journeys that connect to the wider world";
   const { isMobile } = useMobile();
 
   return (
@@ -61,14 +61,13 @@ export default function OurHistory() {
                 fontFamily: "TT Chocolates",
               }}
             >
-              In 2004,{" "}
-              <strong className="text-[#b90124]">Sunil Kumar Jain</strong>{" "}
-              (Founder, Chairman) stepped into the world of education, driven by
-              a belief that every student deserved more than just a
-              classroom—they deserved a stage to grow, dream, and thrive. His
-              journey began with the Rishabh Trust and was followed by the
-              foundation of Tula’s Institute, a college that quickly became
-              known for its excellence in engineering and management education. 
+              Sunil Kumar Jain (Founder, Chairman) stepped into the world of
+              education, driven by a belief that every student deserved more
+              than just a classroom—they deserved a stage to grow, dream, and
+              thrive. His journey began in 2004 with the Rishabh Trust under
+              which Tula’s Institute was founded in 2006. Tula’s Institute went
+              ahead to become a college that is widely known for its excellence
+              in engineering and management education. 
             </h3>
           </div>
         </div>
@@ -96,7 +95,7 @@ export default function OurHistory() {
             >
               But even as the corridors of Tula’s Institute echoed with the
               aspirations of countless students, Mr. Jain felt there was more to
-              be done. 
+              be done
               <br />
               <br />
               Dehradun, a city steeped in the legacy of education, had long been
@@ -140,7 +139,7 @@ export default function OurHistory() {
               <br />
               <br />
               He believed that education wasn’t about filling minds with
-              knowledge but about shaping lives with purpose.  
+              knowledge but about shaping lives with purpose.
             </h3>
           </div>
         </div>
@@ -174,11 +173,11 @@ export default function OurHistory() {
               alumna of Symbiosis and a leader honed by Harvard and Oxford—wove
               in creativity, leadership, and innovation. Together, they brought
               a modern vibrancy to Tula’s, blending traditional values with
-              progress.  
+              progress.
               <br />
               <br />
               Today, Tula’s International School stands as a testament to the
-              power of vision and collaboration across generations. 
+              power of vision and collaboration across generations.
             </h3>
           </div>
           <div className="w-full md:w-[40%] aspect-[1/1] md:aspect-auto mx-auto overflow-hidden">
@@ -194,16 +193,15 @@ export default function OurHistory() {
           </div>
         </div>
         <h3 className="text-[#B90124] pt-8 font-[TTChocolatesBold] md:pt-14 uppercase text-center w-fit text-[clamp(15px,6.5vw,60px)] md:text-[clamp(20px,1.8vw,50px)]">
-          “ A story of belief, courage, and the relentless pursuit of
-          excellence. “<br />
           <span
             style={{
               fontFamily: "TT Chocolates",
             }}
             className="text-[#5E5E5E] font-semibold capitalize"
           >
-            This is the story of TULA’s
-          </span>
+            This is the story of Tula’s,
+          </span>{" "}
+          A story of belief, courage, and the relentless pursuit of excellence.
         </h3>
       </div>
     </>

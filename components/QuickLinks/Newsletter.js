@@ -17,7 +17,7 @@ const Newsletter = () => {
       <Header
         title={"Newsletter"}
         subtitle={
-          "Stay updated with the latest news, events, and achievements from Tula's International School, Dehradun – where young minds thrive in a nurturing boarding environment."
+          "Follow the news, events, and achievements of students from TlS, Dehradun"
         }
         headerImg={HeaderNewsLetterImg}
         headerImgMobile={HeaderNewsLetterImgMobile}

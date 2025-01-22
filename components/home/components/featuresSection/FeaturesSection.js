@@ -51,9 +51,12 @@ function FeaturesSection() {
     <div className="pt-2 md:pt-10 pb-8 md:pb-14" id="12">
       <div className="w-fit mx-auto">
         <h3 className="text-[#B90124] text-center font-[Mirador800] text-[clamp(15px,7.5vw,60px)] md:text-[clamp(20px,2.5vw,100px)]">
+          <span className="font-[TTChocolates] font-black text-[#B90124]">
+            12+{" "}
+          </span>{" "}
           COLLABORATIONS
         </h3>
-        <h2 className="w-fit ml-auto leading-none text-center  text-[clamp(15px,5vw,60px)] md:text-[clamp(20px,1.8vw,100px)]">
+        {/* <h2 className="w-fit ml-auto leading-none text-center  text-[clamp(15px,5vw,60px)] md:text-[clamp(20px,1.8vw,100px)]">
           <span className="font-[TTChocolates] font-black text-[#B90124]">
             12+{" "}
           </span>
@@ -65,7 +68,7 @@ function FeaturesSection() {
           >
             Collaborations
           </span>
-        </h2>
+        </h2> */}
       </div>
       <div className="w-full h-full pt-14">
         <Swiper

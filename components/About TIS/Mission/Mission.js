@@ -12,7 +12,7 @@ import yellowLine from "../../../public/vision/yellowLine.png";
 export default function Mission() {
   const { isMobile } = useMobile();
   const subTitle =
-    "At TIS, our mission inspires purpose, and our bold vision charts the path to limitless possibilities for every student";
+    "We aim to inspire purpose and guide students toward endless possibilities";
   const sections = [
     {
       title: "Our Vision",

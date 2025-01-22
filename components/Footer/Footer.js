@@ -93,7 +93,7 @@ function Footer() {
       {!isMobile && (
         <>
           <iframe
-            className="map-footer"
+            className="map-footer rounded-xl"
             style={{
               display: "flex",
               flexDirection: "row",
@@ -160,7 +160,7 @@ function Footer() {
             <a
               target="_blank"
               href="https://tis.edu.in/virtual-tour/"
-              className="button"
+              className="button "
             >
               Virtual Tour
             </a>
@@ -234,7 +234,27 @@ function Footer() {
               </div>
             </div>
           </div>
+          <div className="three-buttons">
+            <a
+              target="_blank"
+              href="https://tis.edu.in/virtual-tour/"
+              className="button"
+            >
+              Virtual Tour
+            </a>
 
+            <div onClick={handleApply} className="button">
+              Apply Now
+            </div>
+
+            <a
+              target="_blank"
+              href="https://tis.fedena.com/"
+              className="button"
+            >
+              fedena Login
+            </a>
+          </div>
           <div className="all-links">
             <div className="mobile-links">
               {ourCampusLinks[0].links.map((item, index) => (

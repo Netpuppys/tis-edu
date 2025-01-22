@@ -174,7 +174,7 @@ export default function ClubAndSocieties() {
       <Header
         title={"Clubs And Societies"}
         subtitle={
-          "Clubs and societies enrich the students with skills & a passion for friendships."
+          "Clubs and societies at TIS nurtures talent and creates lifelong connections"
         }
         headerImg={HeaderClubsImg}
         headerImgMobile={HeaderClubsImg}

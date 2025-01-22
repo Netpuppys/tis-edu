@@ -12,15 +12,18 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { useMobile } from "../../../globalComponents/IsMobileContext";
+import dynamic from "next/dynamic";
+
+const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 function ParentsReviews() {
   const { isMobile } = useMobile();
   const [activeIndex, setActiveIndex] = useState(1); // Set default index to 1
 
   const testimonials = [
-    "https://player.vimeo.com/video/1020966853?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-    "https://player.vimeo.com/video/1020966607?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-    "https://player.vimeo.com/video/1020966777?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    "https://assets.tulas.edu.in/tis/1VIDEO.mp4",
+    "https://assets.tulas.edu.in/tis/2VIDEO.mp4",
+    "https://assets.tulas.edu.in/tis/3VIDEO.mp4",
   ];
 
   const reviews = [
@@ -69,37 +72,59 @@ function ParentsReviews() {
       </div>
       <div className="relative w-full">
         <div className="w-full md:w-full mx-auto h-full flex items-center justify-center md:px-40 pt-8 md:pt-14 relative">
-          <Image
+          {/* <Image
             src={previousIcon}
             onClick={handlePrevClick}
             className="w-[10%] h-full flex md:hidden bg-transparent z-50 relative left-4"
-          />
+          /> */}
+          <div className="w-[10%] h-full flex md:hidden bg-transparent z-50 relative left-4 rotate-180">
+            <div onClick={handlePrevClick} className="arrow ">
+              <div className="arrow-top"></div>
+              <div className="arrow-bottom"></div>
+            </div>
+          </div>
 
           <div className="w-[70%] md:w-[80%] h-full flex items-center justify-center px-8 md:px-0 relative">
             {/* Swiper Carousel */}
             <Swiper
               ref={swiperRef}
               spaceBetween={30}
+              loop={true}
+              freeMode={true}
               slidesPerView={isMobile ? 1 : 3}
               onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
             >
               {testimonials.map((testimonial, index) => (
                 <SwiperSlide key={index}>
-                  <div className={`transition-transform duration-500`}>
-                    <iframe
+                  <div
+                    className={`transition-transform duration-500 h-fit w-full aspect-[9/16]`}
+                  >
+                    <ReactPlayer
+                      url={testimonial}
+                      width="100%"
+                      height="100%"
+                      controls={true}
+                    />
+                    {/* <iframe
                       src={testimonial}
                       className="h-fit w-full aspect-[9/16]"
-                    />
+                    /> */}
                   </div>
                 </SwiperSlide>
               ))}
             </Swiper>
           </div>
-          <Image
+          <div className="w-[10%] h-full md:hidden flex bg-transparent z-50 relative right-4">
+            <div onClick={handleNextClick} className="arrow">
+              <div className="arrow-top"></div>
+              <div className="arrow-bottom"></div>
+            </div>
+          </div>
+          {/* <Image
             src={nextIcon}
             onClick={handleNextClick}
             className="w-[10%] h-full flex md:hidden bg-transparent z-50 relative right-4"
-          />
+          /> */}
         </div>
       </div>
     </div>

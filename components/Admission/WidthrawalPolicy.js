@@ -53,7 +53,7 @@ export default function WidthrawalPolicy() {
       <Header
         title={"Withdrawal Policy"}
         subtitle={
-          "Tula's International School has a clear and detailed withdrawal policy to guide parents through the process."
+          "TIS has a clear policy to guide parents on how to withdraw their child"
         }
         headerImg={HeaderWithdrawal}
         headerImgMobile={HeaderWithdrawalMobile}

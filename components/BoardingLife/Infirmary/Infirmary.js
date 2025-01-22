@@ -12,7 +12,7 @@ export default function Infirmary() {
       <Header
         title={"Wellness Infirmary "}
         subtitle={
-          "Health emergencies? We handle them swiftly, safely, and with care—right here in our school infirmary."
+          "At TIS, we handle all health emergencies swiftly, safely, and with care"
         }
         headerImgMobile={HeaderInfirmaryMobileImg}
         headerImg={HeaderInfirmaryImg}

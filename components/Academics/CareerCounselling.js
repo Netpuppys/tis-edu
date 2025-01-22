@@ -11,7 +11,7 @@ export default function CareerCounselling() {
       <Header
         title={"Career Counselling"}
         subtitle={
-          "Guiding Stars: Empowering Students through Comprehensive Career Counselling Services at TIS"
+          "At TIS, we empower students through Comprehensive Career Counselling Services"
         }
         headerImg={HeaderCareerImg}
         headerImgMobile={HeaderCareerImgMobile}

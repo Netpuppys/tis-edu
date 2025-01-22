@@ -86,14 +86,14 @@ function GoogleReviews() {
           alt=""
           className="w-full h-full opacity-50 absolute object-cover"
         />
-        <div className="text-white flex flex-col relative z-20 justify-center items-center px-8">
-          <h3 className="font-[Mirador800] text-[clamp(20px,5vw,70px)] md:text-[clamp(20px,2.5vw,70px)] text-center">
+        <div className="text-white py-20 md:py-0 flex flex-col relative z-20 justify-center items-center px-8">
+          <h3 className="font-[Mirador800] text-[clamp(20px,8vw,70px)] md:text-[clamp(20px,2.5vw,70px)] text-center">
             Google Reviews
           </h3>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 268.317 14.075"
-            className={`mainText-scribble mb-8 w-[60%] max-w-[268px] ${
+            className={`mainText-scribble w-[60%] max-w-[268px] ${
               inView ? "active" : ""
             }`}
             width="268.3169860839844"
@@ -111,7 +111,7 @@ function GoogleReviews() {
               className="svg-elem-1"
             />
           </svg>
-          <h2
+          {/* <h2
             className="px-0 md:px-20 text-[clamp(14px,4.5vw,25px)] md:text-[clamp(10px,1.1vw,25px)]"
             style={{
               fontFamily: "TT Chocolates",
@@ -123,7 +123,7 @@ function GoogleReviews() {
             school has ample support services in place for its students to
             thrive both physically and mentally, including a Wellness Infirmary,
             equipped with everything that one may need to keep them healthy. 
-          </h2>
+          </h2> */}
         </div>
       </div>
       <div className="w-full py-8 md:py-14 md:w-[58%] flex items-center justify-center backgroundGoogle">
@@ -180,7 +180,7 @@ function GoogleReviews() {
           <div className="flex space-x-10 pt-8 justify-end pr-10">
             <button
               onClick={handlePrevClick}
-              className={`pointer-events-auto shadow-2xl text-white h-[40px] w-[40px] bg-[#b90124] flex items-center justify-center text-[30px] ${
+              className={`pointer-events-auto shadow-2xl text-black h-[40px] w-[40px] bg-[#60bab1] flex items-center justify-center text-[30px] ${
                 activeIndex === 0
                   ? "cursor-not-allowed opacity-50"
                   : "active:scale-90"
@@ -191,7 +191,7 @@ function GoogleReviews() {
             </button>
             <button
               onClick={handleNextClick}
-              className={`pointer-events-auto shadow-2xl text-white h-[40px] w-[40px] bg-[#b90124] flex items-center justify-center text-[30px] ${
+              className={`pointer-events-auto shadow-2xl text-black h-[40px] w-[40px] bg-[#60bab1] flex items-center justify-center text-[30px] ${
                 activeIndex === features.length - 1
                   ? "cursor-not-allowed opacity-50"
                   : "active:scale-90"

@@ -9,7 +9,7 @@ import YellowLineFood from "../../../public/pictures/lineImg.png";
 import { useMobile } from "../../globalComponents/IsMobileContext";
 export default function FoodAndNutrition() {
   const bannerText =
-    "TIS ensures nutritious and wholesome meals, prioritising students' health and well-being in the dining experience.";
+    "We provide tasty meals packed with nutrients for students' best health!";
   const { isMobile } = useMobile();
   return (
     <>

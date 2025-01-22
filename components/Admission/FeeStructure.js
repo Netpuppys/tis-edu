@@ -39,7 +39,7 @@ function FeeStructure() {
         headerImgMobile={HeaderFeesImgMobile}
         title={"Fee Structure"}
         subtitle={
-          "Every parent dreams of the best for their child, and at Tula's International School we ensure that the dream is within reach with a fee structure that’s fair and transparent."
+          "Parents want the best for their kids and our fee structure makes it possible"
         }
       />
 

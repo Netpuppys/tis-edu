@@ -68,7 +68,7 @@ export default function EventConfluence() {
       <Header
         title={"Confluence"}
         subtitle={
-          "Confluence at Tula's International School is a vibrant platform celebrating cultural diversity, talent, and creativity among students."
+          "A vibrant celebration of diversity, talent, and creativity at TIS Confluence"
         }
         headerImg={HeaderConfluenceImg}
         headerImgMobile={HeaderConfluenceImgMobile}

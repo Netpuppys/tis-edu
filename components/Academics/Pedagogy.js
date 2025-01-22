@@ -164,7 +164,7 @@ const Table = () => {
 };
 export default function Pedagogy() {
   const bannerText =
-    "Pedagogy at Tula's International School promotes universal development, critical thinking, and lifelong learning skills.";
+    "Pedagogy at TIS promotes universal development and critical thinking";
 
   return (
     <>

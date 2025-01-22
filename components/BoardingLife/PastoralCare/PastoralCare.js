@@ -6,7 +6,7 @@ import HeaderPastoralImgMobile from "../../../public/Banner/pastoralCareMobile.w
 import "../../../styles/BoardingLife/pastoral.css";
 export default function PastoralCare() {
   const bannerText =
-    "In the embrace of care and guidance, a student becomes not just educated, but empowered. At Tula's, we believe growth begins with support.";
+    "Growth at Tula's begins with care, support, and endless possibilities";
 
   return (
     <>

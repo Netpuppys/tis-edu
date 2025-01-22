@@ -10,7 +10,7 @@ export default function Careers() {
       <Header
         title={"Careers"}
         subtitle={
-          "Tula's International School offers rewarding career opportunities for dedicated educators and professionals."
+          "Explore exciting career opportunities at TIS for educators and professionals"
         }
         headerImg={HeaderCareerImg}
         headerImgMobile={HeaderCareerImgMobile}
@@ -46,7 +46,7 @@ export default function Careers() {
           To apply and become a part of the Tula’s team, download and complete
           the attached personal data form and post it to: <br />
           <br />
-          The Director <br />
+          The Headmaster <br />
           Tula’s International School Dhoolkot, P.O – Selaqui, Chakrata Road,
           Dehradun-248011 (Uttarakhand)
         </p>

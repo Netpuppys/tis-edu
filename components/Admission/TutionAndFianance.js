@@ -82,7 +82,7 @@ function TutionAndFianance() {
         headerImg={HeaderScholarShipImg}
         headerImgMobile={HeaderScholarShipImgMobile}
         subtitle={
-          "At Tula’s International School, scholarships are more than financial aid—they’re our commitment to recognizing the dedication and ambition of students with the potential to excel."
+          "Our scholarships reward hardworking, ambitious students with great potential"
         }
       />
       <div className="pt-8 md:pt-14">

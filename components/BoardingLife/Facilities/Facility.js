@@ -24,7 +24,7 @@ import { useMobile } from "../../globalComponents/IsMobileContext";
 function Facility() {
   const { isMobile } = useMobile();
   const BannerText =
-    "At Tula's, students experience a safe, supportive, and dynamic environment that encourages both academic and personal development. The campus is equipped with everything needed to ensure their overall well-being and success.";
+    "At TIS, students find safety, support, and the perfect space to excel";
   const cards = [
     {
       icon: ambulance,
