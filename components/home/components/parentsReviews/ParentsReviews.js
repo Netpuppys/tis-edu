@@ -22,7 +22,7 @@ function ParentsReviews() {
 
   const testimonials = [
     "https://assets.tulas.edu.in/tis/1VIDEO.mp4",
-    "https://assets.tulas.edu.in/tis/2VIDEO.mp4",
+    "https://assets.tulas.edu.in/tis/2VIDEO-compressed.mp4",
     "https://assets.tulas.edu.in/tis/3VIDEO.mp4",
   ];
 
