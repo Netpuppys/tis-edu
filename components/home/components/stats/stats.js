@@ -21,7 +21,7 @@ function NewStats() {
   const stats = [
     { number: "22", title: "ACRE CAMPUS", icon: campus, aspect: "1-1" },
     { number: "16+", title: "OLYMPIC SPORTS", icon: sports, aspect: "1-1" },
-    { img: image1, aspect: "1-1" },
+    { img: image3, aspect: "1-1" },
     {
       number: "24*7",
       title: "MEDICAL ASSISTANCE",
@@ -35,7 +35,7 @@ function NewStats() {
       icon: ratio,
       aspect: "1-1",
     },
-    { img: image3, aspect: "1-1" },
+    { img: image1, aspect: "1-1" },
     // { number: "19+", title: "YEARS OF EXPERIENCE", icon: years, aspect: "1-1" },
     // { number: "4th", title: "RANKING IN INDIA", icon: ranking, aspect: "1-1" },
     // { img: image4, aspect: "1-1" },

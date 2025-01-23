@@ -132,7 +132,7 @@ function HeroLanding() {
 
   return (
     <div
-      className="w-full h-fit overflow-x-hidden bg-[#b90124]"
+      className="w-full h-fit pointer-events-none overflow-x-hidden bg-[#b90124]"
       ref={parentRef}
     >
       <div className="relative overflow-hidden min-h-screen h-fit">

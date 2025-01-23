@@ -41,7 +41,7 @@
 
 .Award-section-main-div .activity-div {
   width: 30%;
-  aspect-ratio: 16/9.5;
+  /* aspect-ratio: 16/9.5; */
   border-radius: 10px;
   position: relative;
   transition: transform 0.3s ease;
@@ -138,19 +138,19 @@
 
 .Award-section-main-div .activities-div .topy {
   position: absolute;
-  transform: translate(45%, -85%);
+  transform: translate(45%, -70%);
   right: auto;
 }
 
 .Award-section-main-div .activities-div .lefty {
   position: absolute;
   right: 12.5%;
-  transform: translateY(10%);
+  transform: translateY(20%);
   left: auto;
 }
 .Award-section-main-div .activities-div .bottomy {
   position: absolute;
-  transform: translateY(55%);
+  transform: translateY(70%);
   left: 17%;
   right: auto;
 }
@@ -165,7 +165,7 @@
   width: 25%;
   margin-left: 62%;
   height: auto;
-  margin-top: 18rem;
+  margin-top: 15vw;
   margin-bottom: 2rem;
 }
 .Award-section-main-div .see-more-mobile,

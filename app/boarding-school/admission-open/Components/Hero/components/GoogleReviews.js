@@ -159,9 +159,9 @@ function GoogleReviews() {
                         <h2 className="leading-none font-extrabold text-left text-[clamp(14px,4.5vw,45px)] md:text-[clamp(10px,1.6vw,45px)]">
                           {feature.name}
                         </h2>
-                        <h3 className="text-[clamp(13px,4vw,45px)] md:text-[clamp(8px,1vw,45px)] leading-none font-extrabold text-left ">
+                        {/* <h3 className="text-[clamp(13px,4vw,45px)] md:text-[clamp(8px,1vw,45px)] leading-none font-extrabold text-left ">
                           {feature.reviewBy}
-                        </h3>
+                        </h3> */}
                       </div>
                       <Image
                         src={feature.image}

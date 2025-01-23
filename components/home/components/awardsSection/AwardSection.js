@@ -52,11 +52,11 @@ function AwardSection() {
       image: Higher,
       title: "Higher Education Leader of the Year",
     },
-    // {
-    //   id: 6,
-    //   image: internationalSchool,
-    //   title: "International School Award, India 2019",
-    // },
+    {
+      id: 6,
+      image: internationalSchool,
+      title: "International School Award, India 2019",
+    },
   ];
 
   const [activity, setActivity] = useState(initialActivities);
@@ -79,22 +79,21 @@ function AwardSection() {
     <div className="Award-section-main-div" id="9">
       <div className="title-div">
         <p className="Awardstitle">Awards</p>
-
         <p className="title">{title}</p>
-
-        <p className="sub-title">{subTitle}</p>
+        {/* <p className="sub-title">{subTitle}</p> */}
       </div>
       <div className="activities-div">
         {activity.slice(0, 3).map((activityItem, index) => (
           <div
             key={activityItem.id}
             className={`activity-div ${getPositionClassName(index)}`}
-            style={{
-              backgroundImage: `url(${activityItem.image.src})`, // Use the src attribute of the image
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-            }}
+            // style={{
+            //   backgroundImage: `url(${activityItem.image.src})`, // Use the src attribute of the image
+            //   backgroundRepeat: "no-repeat",
+            //   backgroundSize: "cover",
+            // }}
           >
+            <Image src={activityItem.image} className="w-fit h-fit " />
             {/* <div className="title-div-card">
               <div
                 className="card-description"
@@ -123,10 +122,10 @@ function AwardSection() {
           </div>
           <button
             onClick={handleMoreAwards}
-            className="see-all py-2 px-10 border-2 flex items-center justify-center uppercase text-2xl rounded-full text-[#5E5E5E] font-black font-[TTChocolatesBold] border-[#DBC79F]"
+            className="see-all py-2 scale-90 hover:scale-100 transition-all ease-in duration-200 px-10 border-2 flex items-center justify-center uppercase text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] rounded-full text-[#5E5E5E] font-black font-[TTChocolatesBold] border-[#DBC79F]"
           >
             See All Awards{" "}
-            <span className="text-[#DBC79F] font-light font-[TTChocolates] ml-[10%] text-5xl leading-none">
+            <span className="text-[#DBC79F] font-light font-[TTChocolates] ml-[10%] text-[clamp(15px,6vw,30px)] md:text-[clamp(18px,1.7vw,45px)] leading-none">
               <FaRightLong />
             </span>
           </button>

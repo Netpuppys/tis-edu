@@ -28,7 +28,7 @@ function Banner() {
         <Image src={schoolLogo} className="w-20 md:w-28" alt="school" />
       </div>
       <div className="z-30 shadow-2xl mt-[55vh] md:mt-0 relative w-[95%] md:w-full max-w-[480px] mx-auto md:mr-[15vw] bg-white rounded-2xl pointer-events-auto">
-        <FormEnquire formPopup={false} />
+        <FormEnquire heading={"Admissions Open 2025"} formPopup={false} />
       </div>
 
       <div className="h-[100vh] w-full absolute top-0 object-cover">
@@ -67,7 +67,7 @@ function Banner() {
             </div>
           )}
 
-          <div className="absolute z-50 flex flex-col top-0 justify-center text-white animate-translateBottomHalf md:animate-translateRightHalf items-start w-full h-[75vh] md:h-screen">
+          <div className="absolute z-50 flex-col top-0 justify-center text-white hidden md:flex md:animate-translateRightHalf items-start w-full h-[75vh] md:h-screen">
             <div className="w-full md:w-[50%] text-center flex flex-col items-center justify-center gap-[2vh]">
               <p
                 className="text-[2.5rem] md:text-[11vh] m-0 leading-[2.875rem] tracking-[0.125rem] font-normal"

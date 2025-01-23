@@ -20,6 +20,7 @@ import scrollArrow from "../../../public/icons/downArrowDoodle.svg";
 import Image from "next/image";
 import NewStats from "@/components/home/components/stats/stats";
 import TisByNumbers from "@/components/home/components/TisByNumbers/TisByNumbers";
+import { SiGoogleforms } from "react-icons/si";
 const LandingLayout = () => {
   const bubbleRef = useRef(null);
   const scrollRef = useRef();
@@ -60,7 +61,10 @@ const LandingLayout = () => {
             <ParentsReviews />
             <GoogleReviews />
           </div>
-          <div className="pb-14 md:pb-0 px-2 flex flex-col justify-center items-center bg-[#b90124] w-full text-white">
+          <div
+            style={{ fontFamily: "TT Chocolates" }}
+            className="pb-14 md:pb-0 px-2 flex flex-col justify-center items-center g-[#b90124] w-full text-black"
+          >
             <h4 className="text-center pt-2 md:py-2">
               Copyright © 2025 Tula's International School, Dehradun | All
               Rights Reserved
@@ -73,7 +77,7 @@ const LandingLayout = () => {
           </div>
         </>
       </div>
-      {isMobile && (
+      {/* {isMobile && (
         <div className="fixed bottom-0 flex z-50 justify-between w-full h-12 bg-[#b90124]">
           <button
             onClick={handleScrollArrow}
@@ -82,20 +86,40 @@ const LandingLayout = () => {
             Enquire Now
           </button>
           <div className="flex w-1/2 justify-center items-center">
-            <a
-              className="flex w-full justify-center items-center gap-3 text-white font-[TTChocolatesBold]"
-              href={`tel:+91-${
-                utmSource === "MetaADS" ? "8069204014" : "8069204004"
-              }`}
-            >
+            <a className="flex w-full justify-center items-center gap-3 text-white font-[TTChocolatesBold]">
               <FaPhone /> +91-
-              {utmSource === "MetaADS" ? "8069204014" : "8069204004"}
             </a>
           </div>
         </div>
+      )} */}
+      {isMobile && (
+        <div
+          style={{
+            fontFamily: "TT Chocolates",
+          }}
+          className="fixed md:hidden bg-[#60BAB1] flex w-full h-fit z-[99999] bottom-0"
+        >
+          <button
+            onClick={handleScrollArrow}
+            className="flex justify-center gap-2 h-12 items-center text-black w-full"
+          >
+            <SiGoogleforms />
+            Enquire Now
+          </button>
+
+          <a
+            className="flex justify-center gap-2 h-12 items-center text-black w-full"
+            href={`tel:+91-${
+              utmSource === "MetaADS" ? "8069204014" : "8069204004"
+            }`}
+          >
+            <FaPhone />
+            +91-{utmSource === "MetaADS" ? "8069204014" : "8069204004"}
+          </a>
+        </div>
       )}
       <div
-        className="bg-[#25d366] flex justify-center items-center p-3 md:p-4 rounded-full fixed right-4 md:right-8 bottom-16 md:bottom-8 z-50 cursor-pointer"
+        className="bg-[#25d366] flex justify-center items-center p-3 md:p-4 rounded-full fixed right-[50%] translate-x-1/2 md:translate-x-0 md:right-8 bottom-0 md:bottom-8 z-[999999] cursor-pointer"
         onClick={handleWhatsapp}
       >
         <FaWhatsapp className="text-white text-[30px] md:text-[40px]" />
