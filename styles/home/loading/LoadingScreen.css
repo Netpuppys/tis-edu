@@ -58,11 +58,11 @@
 }
 
 .loading-screen-container .text-main .top-text {
-  animation: topText 3s ease;
+  animation: topText 1.5s ease;
 }
 
 .loading-screen-container .text-main .bottom-text {
-  animation: bottomText 1.5s ease;
+  animation: bottomText 3s ease;
 }
 svg .svg-elem-1 {
   stroke-dashoffset: 718.8487548828125px;
@@ -77,24 +77,23 @@ svg.active .svg-elem-1 {
 }
 
 @keyframes topText {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
+  from {
     transform: translateY(4rem);
   }
-  100% {
-    opacity: 1;
+  to {
     transform: translateY(0);
   }
 }
 
 @keyframes bottomText {
-  from {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
     transform: translateY(-4rem);
   }
-  to {
+  100% {
     transform: translateY(0);
   }
 }

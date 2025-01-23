@@ -161,6 +161,7 @@ const Navbar = () => {
         { title: "Newsletter", linkTo: "/newsletter/" },
         { title: "Careers", linkTo: "/careers/" },
         { title: "Transfer Certificate", linkTo: "/transfer-certificate" },
+        // { title: "Parent Testimonial", linkTo: "/parent-testimonial" },
       ],
     },
   ];
