@@ -21,9 +21,9 @@ function ParentsReviews() {
   const [activeIndex, setActiveIndex] = useState(1); // Set default index to 1
 
   const testimonials = [
-    "https://assets.tulas.edu.in/tis/1VIDEO.mp4",
+    "https://assets.tulas.edu.in/tis/1VIDEO-compressed.mp4",
     "https://assets.tulas.edu.in/tis/2VIDEO-compressed.mp4",
-    "https://assets.tulas.edu.in/tis/3VIDEO.mp4",
+    "https://assets.tulas.edu.in/tis/3VIDEO-compressed.mp4",
   ];
 
   const reviews = [
