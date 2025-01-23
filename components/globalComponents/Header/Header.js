@@ -39,7 +39,7 @@ export default function Header({
           style={{
             textShadow: "0px 5px 16px rgba(0, 0, 0, 0.2)",
           }}
-          className="font-[Mirador800] absolute text-[clamp(20px,8vw,60px)] md:text-[clamp(20px,3.2vw,80px)] pb-8 text-white z-10"
+          className="font-[Mirador800] text-center absolute text-[clamp(20px,8vw,60px)] md:text-[clamp(20px,3.2vw,80px)] pb-8 text-white z-10"
         >
           {title}
         </h1>

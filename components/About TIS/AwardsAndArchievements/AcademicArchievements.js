@@ -5,20 +5,234 @@ import Header from "../../globalComponents/Header/Header";
 import headerAcademicImg from "../../../public/Header/AwardsHeader.png";
 import headerAcademicImgMobile from "../../../public/Header/AwardsHeaderMobile.png";
 import { useMobile } from "../../globalComponents/IsMobileContext";
+import lineImg from "../../../public/pictures/lineImg.png";
 import Image2023 from "../../../public/Awards/2023.png";
 import Image2022 from "../../../public/Awards/2022.png";
 import Image2019 from "../../../public/Awards/2019.png";
-import Image2018 from "../../../public/Awards/2022.png";
-import Image2017 from "../../../public/Awards/2022.png";
-import Image2016 from "../../../public/Awards/2019.png";
+import Image2018 from "../../../public/Awards/2018.png";
+import Image2017 from "../../../public/Awards/2017.png";
+import Image2016 from "../../../public/Awards/2016.png";
 import Image2015 from "../../../public/Awards/2015.png";
-import Image2014 from "../../../public/Awards/2022.png";
+import Image2014 from "../../../public/Awards/2014.png";
 import "../../../styles/About Tis/AwardsAndArchievement.css";
 export default function AcademicArchievements() {
   const { isMobile } = useMobile();
   const subTitle =
     "We have won various awards for excellence in education and leadership";
-
+  const data = [
+    {
+      title: "2023",
+      image: Image2023,
+      description: (
+        <ul className="list-disc text-[#b90124] ml-5 ">
+          <li>
+            <strong>Mr. Raunak Jain:</strong>
+            <br />
+            <span className="text-black">
+              Awarded <strong>"Educational Reformer of the Year"</strong> by
+              Uttarakhand Swarnim Award.
+              <br />
+              Honored with <strong>"Uttarakhand Icon Awards"</strong> by Satpal
+              Maharaj, Minister of Tourism, Uttarakhand.
+            </span>
+          </li>
+          <li>
+            <strong>Mr. Raman Koushal (Headmaster):</strong>
+            <br />
+            <span className="text-black">
+              Listed among the <strong>"Top 50 Best Educators" </strong>by
+              Education Today.
+              <br />
+              Awarded <strong>"The Top School Educator" </strong> for Excellence
+              in Holistic Teaching Practices by Indian School Awards.
+            </span>
+          </li>
+          <li>
+            <strong>Mr. Sangeet Bhardwaj:</strong>
+            <br />
+            <span className="text-black">
+              Recognized as one of the{" "}
+              <strong>
+                "Top 100 Influential Educationists in Indian Education"
+              </strong>{" "}
+              by Indian Education Awards.
+            </span>
+          </li>
+        </ul>
+      ),
+    },
+    {
+      title: "2022",
+      image: Image2022,
+      description: (
+        <>
+          Ranked <strong>No.4 in India, No.2 in Uttarakhand,</strong> and{" "}
+          <strong>No.1 in Dehradun</strong> in a survey conducted by Education
+          Today (2021-22).
+          <br />
+          Principal of Tula's International School listed under{" "}
+          <strong>"50 Effective Principals"</strong> by Education Today.
+          <br />
+          Awarded <strong>
+            "Best Co-ed Boarding School in Dehradun"
+          </strong> and{" "}
+          <strong>No.5 in North India by The Times of India.</strong>
+        </>
+      ),
+    },
+    {
+      title: "2019",
+      image: Image2019,
+      description: (
+        <ul className="list-disc  ml-5 ">
+          <li>
+            Ranked{" "}
+            <strong>No.5 Co-Educational Boarding School in North India</strong>{" "}
+            by The Times of India.
+          </li>
+          <li>
+            Ranked <strong>No.7 Co-Educational Boarding School in India</strong>{" "}
+            by Education Today.
+          </li>
+          <li>
+            Certified as <strong>"Great Indian Schools"</strong> by Forbes.
+          </li>
+          <li>
+            Awarded <strong>"Best Residential School"</strong> by Indian School
+            Awards (ISA).
+          </li>
+          <li>
+            Recognized as <strong>"Best Boarding School in Dehradun"</strong>{" "}
+            among 25 schools.
+          </li>
+          <li>
+            Won the <strong>"International School Award, India"</strong> for
+            Best Residential School.
+          </li>
+          <li className="text-[#b90124]">
+            <strong>Sports Achievements:</strong>
+          </li>
+          2 Gold, 2 Silver, and 2 Bronze medals in the State Inter-School
+          Skating Championship.
+          <br />
+          Medals in Inter-School Taekwondo Tournament at DPSG Kalegoan (2 Gold,
+          2 Silver, 2 Bronze).
+          <br />
+          Hosted the{" "}
+          <strong>1st Tula's International Shooting Tournament,</strong> where
+          Tula's won Overall Best Boys Shooting School.
+          <br />
+          Organized the{" "}
+          <strong>2nd Tula's 3-on-3 Basketball U-18 Tournament,</strong>{" "}
+          securing runner-up and winning a cash prize of ₹2100.
+          <br />
+        </ul>
+      ),
+    },
+    {
+      title: "2018",
+      image: Image2018,
+      description: (
+        <>
+          Ranked <strong>No.8 in India, No.2 in Uttarakhand,</strong> and{" "}
+          <strong>No.1 in Dehradun</strong> in a survey by Education Today.
+          <br />
+          Awarded
+          <strong>"Best Residential School in Uttarakhand"</strong> by Golden
+          Star Awards, presented by Kirron Kher.
+          <br />
+          Recognized as{" "}
+          <strong>
+            "Best International Boarding School in Uttarakhand"
+          </strong>{" "}
+          by TV100, presented by Shri Shyam Jaju, National Vice President BJP.
+        </>
+      ),
+    },
+    {
+      title: "2017",
+      image: Image2017,
+      description: (
+        <>
+          Honored as the{" "}
+          <strong>"Best International Boarding School in Uttarakhand"</strong>{" "}
+          by Merit Awards, presented by Chetan Bhagat.
+          <br />
+          Rated <strong>‘A’ Grade in Evidence of Assessment (EOA)</strong> by
+          CBSE.
+        </>
+      ),
+    },
+    {
+      title: "2016",
+      image: Image2016,
+      description: (
+        <>
+          <strong>Ranked No.1 Boarding School in Uttarakhand</strong> for
+          Infrastructure Provisions by Education Today.
+          <br />
+          Hosted the <strong>2nd International Film Festival,</strong> featuring
+          artists like Pooja Bhatt, Jimmy Shergill, Divya Dutta, and Nawab Shah.
+          <br />
+          Chairman of Tula's Group received the{" "}
+          <strong>Dr. APJ Abdul Kalam Award.</strong>
+          <br />
+          Students won multiple medals in Equestrian Sports (Show Jumping,
+          Dressage, Eventing) at the Excellentia Horse Show in Delhi.
+          <br />
+          <strong className="text-[#b90124]">
+            Students excelled in Olympiad exams:
+          </strong>
+          <ul className="list-disc ml-5">
+            <li>Devin Gupta (19th SOF National Science Olympiad).</li>
+            <li>Rishabh Jain (16th SOF National Cyber Olympiad).</li>
+            <li>Kushagra Aggarwal (10th SOF National Mathematics Olympiad).</li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      title: "2015",
+      image: Image2015,
+      description: (
+        <>
+          Chairman Sunil Kumar Jain awarded the{" "}
+          <strong>"Sardar Vallabh Bhai Patel Rashtriya Ekta Puruskar."</strong>
+          <br />
+          Executive Director Silky Jain was recognized as the{" "}
+          <strong>"Youngest Female Entrepreneur"</strong> with leadership
+          certification from Oxford University.
+          <br />
+          <strong className="text-[#b90124]">Sports Achievements:</strong>
+          <ul className="list-disc ml-5">
+            <li>
+              Gold and Silver medals in Indo-Bhutan Taekwondo Championship.
+            </li>
+            <li>National Basketball Championship (Under-14).</li>
+          </ul>
+          Pema Choedon (Class XII) met{" "}
+          <strong>President Pranab Mukherjee</strong> under the{" "}
+          <strong>Scout & Guide training program.</strong>
+        </>
+      ),
+    },
+    {
+      title: "2014",
+      image: Image2014,
+      description: (
+        <>
+          Launched CSR initiative <strong>"The Tortoise"</strong> to raise
+          awareness against child labor.
+          <br />
+          Kuldeep Singh (Class XI) secured{" "}
+          <strong>
+            3rd position in the National Taekwondo Championship
+          </strong>{" "}
+          held in Nepal.
+        </>
+      ),
+    },
+  ];
   return (
     <>
       <Header
@@ -27,331 +241,72 @@ export default function AcademicArchievements() {
         headerImg={headerAcademicImg}
         headerImgMobile={headerAcademicImgMobile}
       />
-      <div className="award-desc">
-        <p className="award-desc-p">
-          Tula&apos;s International School boasts numerous awards and
-          achievements, highlighting our commitment to excellence in academics,
-          sports, and extracurricular activities.
-          <br />
-          <br />
-          Our students consistently excel in national and international
-          competitions, reflecting the high standards of education and
-          dedication at Tula&apos;s International School.
-        </p>
-
-        <div className="red-div-year"> 2023</div>
-        <div className="awards-content">
-          <Image src={Image2023} alt="" />
-          <div className="content-awards">
-            <ul>
-              <li>
-                Mr. Raunak Jain, was Awarded as &quot;Educational Reformer of
-                the Year&quot; by Uttarakhand Swarnim Award 2023.
-              </li>
-
-              <li>
-                Mr. Raunak Jain, was Awarded as &quot;Uttarakhand Icon
-                Awards&quot; by Satpal Maharaj Minister, Uttarakhand, Tourism
-                Department 2023.
-              </li>
-
-              <li>
-                Headmaster, Tula&apos;s International School Mr. Raman Koushal
-                was Awarded as &quot;Top 50 Best Educator Award&quot; by
-                Education Today 2023.
-              </li>
-
-              <li>
-                Headmaster Tula&apos;s International School Mr. Raman Koushal
-                was Awarded as &quot;The Top School Educator&quot; award For
-                Excellence In Holistic Teaching Practices by Indian School
-                Awards 2023.
-              </li>
-
-              <li>
-                Mr. Sangeet Bhardwaj, TOP 100 Influential Educationist in Indian
-                Education by Indian Education Awards 2023.
-              </li>
-            </ul>
+      <h6
+        style={{
+          fontFamily: "TT Chocolates",
+        }}
+        className="w-full px-8 md:px-0 md:w-[75%] py-8 md:py-14 mx-auto text-justify md:text-center text-[clamp(15px,4.5vw,30px)] font-normal md:text-[clamp(18px,1.3vw,45px)] "
+      >
+        Tula&apos;s International School boasts numerous awards and
+        achievements, highlighting our commitment to excellence in academics,
+        sports, and extracurricular activities. Our students consistently excel
+        in national and international competitions, reflecting the high
+        standards of education and dedication at Tula&apos;s International
+        School.
+      </h6>
+      <h3
+        style={{
+          fontFamily: "TT Chocolates",
+        }}
+        className="text-[#B90124] mx-auto w-fit font-semibold text-center text-[clamp(15px,7.5vw,60px)] md:text-[clamp(20px,2.5vw,50px)]"
+      >
+        Achievements of Tula's International School
+        <Image
+          src={lineImg}
+          alt=""
+          className="mx-auto md:ml-auto md:mr-0 w-[50%] md:w-fit"
+        />
+      </h3>
+      <div className="flex flex-col items-center justify-center">
+        {data.map((data, index) => (
+          <div
+            key={index}
+            className={`flex w-full h-full items-center px-8 md:px-0 justify-center ${
+              index % 2 === 0
+                ? "flex-col md:flex-row"
+                : "flex-col md:flex-row-reverse bg-[#E8E8E8]"
+            }`}
+          >
+            <div
+              className={`w-full md:w-[30%] pt-8 md:py-14 ${
+                index % 2 === 0 ? "" : ""
+              }`}
+            >
+              <Image
+                src={data.image}
+                alt=""
+                className={`w-full h-full rounded-xl md:rounded-2xl`}
+              />
+            </div>
+            <div
+              className={`w-full md:w-[55%] py-8 md:py-14 h-full ${
+                index % 2 === 0 ? "pl-0 md:pl-16" : "pr-0 md:pr-16"
+              }`}
+            >
+              <h2 className="font-[TTChocolatesBold] text-[#b90124] font-semibold text-[25px] md:text-[clamp(20px,2vw,50px)]">
+                {data.title}
+              </h2>
+              <h2
+                style={{
+                  fontFamily: "TT Chocolates",
+                }}
+                className={`text-[clamp(15px,4.5vw,30px)] pt-2 md:pt-4 md:text-[clamp(18px,1.3vw,45px)] text-black font-normal`}
+              >
+                {data.description}
+              </h2>
+            </div>
           </div>
-        </div>
-        <div className="red-div-year"> 2022</div>
-        <div className="awards-content">
-          {isMobile && <Image src={Image2022} alt="" />}
-          <div className="content-awards">
-            <ul>
-              <li>
-                Tula&apos;s International School has been Ranked No. 4 in India,
-                No.2 in Uttarakhand & Ranked no.1 in Dehradun in a survey
-                conducted by Education Today in 2021-22.
-              </li>
-
-              <li>
-                Principal of Tula&apos;s International School has been listed
-                under 50 Effective Principals 2022, by Education Today in 2022.
-              </li>
-
-              <li>
-                Tula&apos;s International School has been awarded as the Best
-                Co-ed Boarding School in Dehradun and No.5 in North India by The
-                Times of India.
-              </li>
-            </ul>
-          </div>
-          {!isMobile && <Image src={Image2022} alt="" />}
-        </div>
-        <div className="red-div-year"> 2019</div>
-        <div className="awards-content">
-          <Image src={Image2019} alt="" />
-          <div className="content-awards">
-            <ul>
-              <li>
-                Ranked No.5 Co-Educational Boarding School in North India by
-                Times of India 2019
-              </li>
-
-              <li>
-                Ranked No.7 Co-Educational Boarding School in India by Education
-                Today 2019.
-              </li>
-
-              <li>Certified as Great Indian Schools by Forbes.</li>
-
-              <li>Best residential school in 2019 by ISA.</li>
-
-              <li>
-                Tula&apos;s International School is awarded Best Boarding School
-                in 2019 among 25 Schools in Dehradun.
-              </li>
-
-              <li>
-                Tulas International School won International School Award, India
-                2019 for Best Residential School.
-              </li>
-
-              <li>
-                Tula&apos;s Taekwondo Team 2 Students had participated in
-                National Taekwondo Championship 2019 on 18 th May 2019.
-                Hyderabad where Gunjan Lamba secure 3 rd Rank in All India
-                Taekwondo category in under 14 age group 55 kg.
-              </li>
-
-              <li>
-                Tula&apos;s Skater&apos;s won 2 Gold, 2 Silver and 2 Bronze
-                Medals in State Inter- School Skating Championship held in GRD
-                Academy on 21 st April, 2019.
-              </li>
-
-              <li>
-                2 Gold, 2 Silver and 2 Bronze Medals in Inter School Taekwondo
-                Tournament DPSG Kalegoan on 26th April 2019.
-              </li>
-
-              <li>
-                Tula&apos;s Organised 1 st Tula&apos;s International school
-                shooting Tournament 2019 where Approx. 73 Shooter had
-                participated. (Unison World School, Selaqui International
-                School, DPSG Selaqui, Mission Olympic Shooting Academy) where
-                Tula&apos;s Won Overall Best Boys Shooting School.
-              </li>
-
-              <li>
-                Tula&apos;s Organised 2 nd Tula&apos;s 3 on 3 Basket Ball U-18
-                Tournament where 13 Team had participated. And Tula&apos;s was
-                Runner Up and won 2100/- and trophy
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="red-div-year"> 2018</div>
-        <div className="awards-content">
-          {isMobile && <Image src={Image2018} alt="" />}
-          <div className="content-awards">
-            <ul>
-              <li>
-                Ranked No.8 in India, No.2 in Uttarakhand, and No.1 in Dehradun
-                in a survey conducted by Education Today in 2018 for exemplary
-                contribution to the education field.
-              </li>
-
-              <li>
-                &quot;Best Residential School in Uttarakhand 2018&quot; for
-                outstanding and exemplary contribution towards education and was
-                presented by Trivendra Singh Rawat (Honourable Chief Minister of
-                Uttarakhand)
-              </li>
-
-              <li>
-                &quot;Best International Boarding School in Uttarakhand&quot; by
-                TV100 in May 2018. The award was presented by Shri Shyam Jaju
-                National Vice President BJP
-              </li>
-
-              <li>
-                &quot;Best Boarding School in Uttarakhand&quot; By Golden star
-                Award the award was presented by Kirron Kher( Member of
-                Parliament and Actor)
-              </li>
-            </ul>
-          </div>
-          {!isMobile && <Image src={Image2018} alt="" />}
-        </div>
-        <div className="red-div-year"> 2017</div>
-        <div className="awards-content">
-          <Image src={Image2017} alt="" />
-          <div className="content-awards">
-            <ul>
-              <li>
-                &quot;Best International Boarding School in Uttarakhand&quot;,
-                one of the India&apos;s Most Prominent Award 2017 organized by
-                Merit Awards & Market Research Pvt. Ltd. The award was presented
-                by Chetan Bhagat (Renowned author and actor).
-              </li>
-
-              <li>
-                Awarded with &apos;A&apos; grade in Evidence of Assessment (EOA)
-                by CBSE.
-              </li>
-
-              <li>
-                &quot;University of York&quot; from London has visited the
-                school for its foreign programs.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="red-div-year"> 2016</div>
-        <div className="awards-content">
-          {isMobile && <Image src={Image2016} alt="" />}
-          <div className="content-awards">
-            <ul>
-              <li>
-                Mrs. Shalini Sharma, Principal of Tula&apos;s International has
-                received an appreciation letter from the Ministry of HRD
-                Government India for the commendable academic performance of
-                class XII students in the year 2016.
-              </li>
-
-              <li>
-                TIS Ranked as No 1 boarding school in Uttarakhand for
-                &quot;Infrastructure Provisions&quot; by Education Today in
-                2016.
-              </li>
-
-              <li>
-                Tula&apos;s hosted the second International Film Festival on 3rd
-                October 2016. The second day marked interaction with the artists
-                Pooja Bhatt, Jimmy Shergill, Sushma Seth, Divya Dutta, Hemant
-                Pandey and Nawab Shah.
-              </li>
-
-              <li>
-                The Chairman of Tula&apos;s Group was awarded by Dr. APJ Abdul
-                Kalam award in 2016.
-              </li>
-
-              <li>
-                Awarded with &apos;A&apos; grade in Evidence of Assessment (EOA)
-                by CBSE.
-              </li>
-
-              <li>
-                Mohit Redhu and Ankit Nain won 1 gold, 1 silver and 3 bronze
-                under various categories of Show Jumping, Dressage & Eventing at
-                Equestrian sports (Excellentia Horse Show) held at Delhi.
-              </li>
-
-              <li>
-                Parneet Grewal and Ansh Balana as a team got first prize along
-                with gifts from the Informatics Singapore out of a total 5000
-                participants (open competitions of schools & colleges) in USP
-                the Survivor 4 held at Dehradun.
-              </li>
-
-              <li>
-                Rishabh Jain, Devin Gupta and Kushagra Aggarwal, students of
-                Tula&apos;s International School were felicitated for having
-                qualified the 2nd level Olympiad exam in India. Devin Gupta
-                received a merit Certificate for 19th SOF National Science
-                Olympiad, Rishabh Jain for 16th SOF National Cyber Olympiad and
-                Khuhagra Aggarwal for 10th SOF National Mathematics Olympiad.
-              </li>
-            </ul>
-          </div>
-          {!isMobile && <Image src={Image2016} alt="" />}
-        </div>
-        <div className="red-div-year"> 2015</div>
-        <div className="awards-content">
-          <Image src={Image2015} alt="" />
-          <div className="content-awards">
-            <ul>
-              <li>
-                Devin Gupta got selected for National Basketball Championship
-                under 14 category.
-              </li>
-
-              <li>
-                The Chairman of Tula&apos;s Group, Sunil Kumar Jain was awarded
-                by &quot;Sardar Vallabh Bhai Patel Rashtriya Ekta
-                Puruskar.&quot;
-              </li>
-
-              <li>
-                Executive Director of Tula&apos;s Group, Silky Jain was awarded
-                &quot;Skilltree Education Evangelist&quot; by Skilltree.
-              </li>
-
-              <li>
-                Executive Director of Tula&apos;s Group, Silky Jain was awarded
-                &quot;Youngest Female Entrepreneur&quot; to have Leadership
-                certification from Oxford University London.
-              </li>
-
-              <li>
-                Khushi Singhania of class VII qualified from State level to
-                National level and got a scholarship of Rupees 10,000/-
-                in National Science Olympiad.
-              </li>
-
-              <li>
-                Mohit Rajput of class XI won Gold Medal under-16 category and
-                Kuldeep Singh of class XII notched up Silver Medalin Indo-Bhutan
-                Taekwondo Championship under-17 category held in Bhutan.
-              </li>
-
-              <li>
-                Pema Choedon of Class XII, got a golden chance to meet the
-                President of India &quot;Pranab Mukherjee&quot; at Rashtriya
-                Bhawan, New Delhi under the Scout & Guide training program.
-              </li>
-
-              <li>
-                Awarded with &apos;A&apos; grade in Evidence of Assessment (EOA)
-                by CBSE.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="red-div-year"> 2014</div>
-        <div className="awards-content" style={{ marginBottom: "2rem" }}>
-          {isMobile && <Image src={Image2014} alt="" />}
-          <div className="content-awards">
-            <ul>
-              <li>
-                Tula&apos;s International School started its own CSR Initiative
-                (Awareness to Stop Child Labour) by name &apos;The
-                Tortoise&apos; under which students visited Sherpur village for
-                creating awareness in the society to Stop Child Labor.
-              </li>
-
-              <li>
-                Kuldeep Singh of class XI won 3rd Position in National Taekwondo
-                Championship held at Nepal.
-              </li>
-            </ul>
-          </div>
-          {!isMobile && <Image src={Image2014} alt="" />}
-        </div>
+        ))}
       </div>
     </>
   );
