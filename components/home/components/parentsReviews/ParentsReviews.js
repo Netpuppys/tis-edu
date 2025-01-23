@@ -99,10 +99,11 @@ function ParentsReviews() {
                   <div
                     className={`transition-transform duration-500 h-fit w-full aspect-[9/16]`}
                   >
-                    <ReactPlayer
-                      url={testimonial}
+                    <video
+                      src={testimonial}
                       width="100%"
                       height="100%"
+                      className="h-fit w-full aspect-[9/16]"
                       controls={true}
                     />
                     {/* <iframe
