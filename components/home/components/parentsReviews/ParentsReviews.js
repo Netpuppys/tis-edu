@@ -4,7 +4,7 @@ import React, { useRef, useState, useEffect } from "react";
 import invCommaIcon from "../../../../public/icons/commas.svg";
 import "../../../../styles/home/components/parentsReviews/ParentsReviews.css";
 import previousIcon from "../../../../public/pictures/previous.png";
-import nextIcon from "../../../../public/pictures/next.png";
+// import nextIcon from "../../../../public/pictures/next.png";
 import Image from "next/image";
 import { HiOutlineChevronRight, HiOutlineChevronLeft } from "react-icons/hi2";
 import { Swiper, SwiperSlide } from "swiper/react";
