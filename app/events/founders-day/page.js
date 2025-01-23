@@ -24,60 +24,60 @@ import Annual9Img5 from "../../../public/foundersDay/Annual9(5).png";
 import Annual9Img6 from "../../../public/foundersDay/Annual9(6).png";
 import Annual9Img7 from "../../../public/foundersDay/Annual9(7).png";
 import Annual9Img8 from "../../../public/foundersDay/Annual9(8).png";
-import Annual8 from "../../../public/foundersDay/Annual10.png";
-import Annual8Img1 from "../../../public/foundersDay/Annual9(1).png";
-import Annual8Img2 from "../../../public/foundersDay/Annual9(2).png";
-import Annual8Img3 from "../../../public/foundersDay/Annual9(3).png";
-import Annual8Img4 from "../../../public/foundersDay/Annual9(4).png";
-import Annual8Img5 from "../../../public/foundersDay/Annual9(5).png";
-import Annual8Img6 from "../../../public/foundersDay/Annual9(6).png";
-import Annual8Img7 from "../../../public/foundersDay/Annual9(7).png";
-import Annual8Img8 from "../../../public/foundersDay/Annual9(8).png";
-import Annual5 from "../../../public/foundersDay/Annual9.png";
-import Annual5Img1 from "../../../public/foundersDay/Annual9(1).png";
-import Annual5Img2 from "../../../public/foundersDay/Annual9(2).png";
-import Annual5Img3 from "../../../public/foundersDay/Annual9(3).png";
-import Annual5Img4 from "../../../public/foundersDay/Annual9(4).png";
-import Annual5Img5 from "../../../public/foundersDay/Annual9(5).png";
-import Annual5Img6 from "../../../public/foundersDay/Annual9(6).png";
-import Annual5Img7 from "../../../public/foundersDay/Annual9(7).png";
-import Annual5Img8 from "../../../public/foundersDay/Annual9(8).png";
-import Annual4 from "../../../public/foundersDay/Annual10.png";
-import Annual4Img1 from "../../../public/foundersDay/Annual9(1).png";
-import Annual4Img2 from "../../../public/foundersDay/Annual9(2).png";
-import Annual4Img3 from "../../../public/foundersDay/Annual9(3).png";
-import Annual4Img4 from "../../../public/foundersDay/Annual9(4).png";
-import Annual4Img5 from "../../../public/foundersDay/Annual9(5).png";
-import Annual4Img6 from "../../../public/foundersDay/Annual9(6).png";
-import Annual4Img7 from "../../../public/foundersDay/Annual9(7).png";
-import Annual4Img8 from "../../../public/foundersDay/Annual9(8).png";
-import Annual3 from "../../../public/foundersDay/Annual9.png";
-import Annual3Img1 from "../../../public/foundersDay/Annual9(1).png";
-import Annual3Img2 from "../../../public/foundersDay/Annual9(2).png";
-import Annual3Img3 from "../../../public/foundersDay/Annual9(3).png";
-import Annual3Img4 from "../../../public/foundersDay/Annual9(4).png";
-import Annual3Img5 from "../../../public/foundersDay/Annual9(5).png";
-import Annual3Img6 from "../../../public/foundersDay/Annual9(6).png";
-import Annual3Img7 from "../../../public/foundersDay/Annual9(7).png";
-import Annual3Img8 from "../../../public/foundersDay/Annual9(8).png";
-import Annual2 from "../../../public/foundersDay/Annual10.png";
-import Annual2Img1 from "../../../public/foundersDay/Annual9(1).png";
-import Annual2Img2 from "../../../public/foundersDay/Annual9(2).png";
-import Annual2Img3 from "../../../public/foundersDay/Annual9(3).png";
-import Annual2Img4 from "../../../public/foundersDay/Annual9(4).png";
-import Annual2Img5 from "../../../public/foundersDay/Annual9(5).png";
-import Annual2Img6 from "../../../public/foundersDay/Annual9(6).png";
-import Annual2Img7 from "../../../public/foundersDay/Annual9(7).png";
-import Annual2Img8 from "../../../public/foundersDay/Annual9(8).png";
-import Annual1 from "../../../public/foundersDay/Annual9.png";
-import Annual1Img1 from "../../../public/foundersDay/Annual9(1).png";
-import Annual1Img2 from "../../../public/foundersDay/Annual9(2).png";
-import Annual1Img3 from "../../../public/foundersDay/Annual9(3).png";
-import Annual1Img4 from "../../../public/foundersDay/Annual9(4).png";
-import Annual1Img5 from "../../../public/foundersDay/Annual9(5).png";
-import Annual1Img6 from "../../../public/foundersDay/Annual9(6).png";
-import Annual1Img7 from "../../../public/foundersDay/Annual9(7).png";
-import Annual1Img8 from "../../../public/foundersDay/Annual9(8).png";
+// import Annual8 from "../../../public/foundersDay/Annual8.png";
+// import Annual8Img1 from "../../../public/foundersDay/Annual8(1).png";
+// import Annual8Img2 from "../../../public/foundersDay/Annual8(2).png";
+// import Annual8Img3 from "../../../public/foundersDay/Annual8(3).png";
+// import Annual8Img4 from "../../../public/foundersDay/Annual8(4).png";
+// import Annual8Img5 from "../../../public/foundersDay/Annual8(5).png";
+// import Annual8Img6 from "../../../public/foundersDay/Annual8(6).png";
+// import Annual8Img7 from "../../../public/foundersDay/Annual8(7).png";
+// import Annual8Img8 from "../../../public/foundersDay/Annual8(8).png";
+import Annual6 from "../../../public/foundersDay/Annual6.png";
+import Annual6Img1 from "../../../public/foundersDay/Annual6(1).png";
+import Annual6Img2 from "../../../public/foundersDay/Annual6(2).png";
+import Annual6Img3 from "../../../public/foundersDay/Annual6(3).png";
+import Annual6Img4 from "../../../public/foundersDay/Annual6(4).png";
+import Annual6Img5 from "../../../public/foundersDay/Annual6(5).png";
+import Annual6Img6 from "../../../public/foundersDay/Annual6(6).png";
+import Annual6Img7 from "../../../public/foundersDay/Annual6(7).png";
+import Annual6Img8 from "../../../public/foundersDay/Annual6(8).png";
+import Annual4 from "../../../public/foundersDay/Annual4.png";
+import Annual4Img1 from "../../../public/foundersDay/Annual4(1).png";
+import Annual4Img2 from "../../../public/foundersDay/Annual4(2).png";
+import Annual4Img3 from "../../../public/foundersDay/Annual4(3).png";
+import Annual4Img4 from "../../../public/foundersDay/Annual4(4).png";
+import Annual4Img5 from "../../../public/foundersDay/Annual4(5).png";
+import Annual4Img6 from "../../../public/foundersDay/Annual4(6).png";
+import Annual4Img7 from "../../../public/foundersDay/Annual4(7).png";
+import Annual4Img8 from "../../../public/foundersDay/Annual4(8).png";
+import Annual3 from "../../../public/foundersDay/Annual3.png";
+import Annual3Img1 from "../../../public/foundersDay/Annual3(1).png";
+import Annual3Img2 from "../../../public/foundersDay/Annual3(2).png";
+import Annual3Img3 from "../../../public/foundersDay/Annual3(3).png";
+import Annual3Img4 from "../../../public/foundersDay/Annual3(4).png";
+import Annual3Img5 from "../../../public/foundersDay/Annual3(5).png";
+import Annual3Img6 from "../../../public/foundersDay/Annual3(6).png";
+import Annual3Img7 from "../../../public/foundersDay/Annual3(7).png";
+import Annual3Img8 from "../../../public/foundersDay/Annual3(8).png";
+// import Annual2 from "../../../public/foundersDay/Annual2.png";
+// import Annual2Img1 from "../../../public/foundersDay/Annual2(1).png";
+// import Annual2Img2 from "../../../public/foundersDay/Annual2(2).png";
+// import Annual2Img3 from "../../../public/foundersDay/Annual2(3).png";
+// import Annual2Img4 from "../../../public/foundersDay/Annual2(4).png";
+// import Annual2Img5 from "../../../public/foundersDay/Annual2(5).png";
+// import Annual2Img6 from "../../../public/foundersDay/Annual2(6).png";
+// import Annual2Img7 from "../../../public/foundersDay/Annual2(7).png";
+// import Annual2Img8 from "../../../public/foundersDay/Annual2(8).png";
+// import Annual1 from "../../../public/foundersDay/Annual1.png";
+// import Annual1Img1 from "../../../public/foundersDay/Annual1(1).png";
+// import Annual1Img2 from "../../../public/foundersDay/Annual1(2).png";
+// import Annual1Img3 from "../../../public/foundersDay/Annual1(3).png";
+// import Annual1Img4 from "../../../public/foundersDay/Annual1(4).png";
+// import Annual1Img5 from "../../../public/foundersDay/Annual1(5).png";
+// import Annual1Img6 from "../../../public/foundersDay/Annual1(6).png";
+// import Annual1Img7 from "../../../public/foundersDay/Annual1(7).png";
+// import Annual1Img8 from "../../../public/foundersDay/Annual1(8).png";
 import Head from "next/head";
 import Header from "@/components/globalComponents/Header/Header";
 export default function EventConfluencePage() {
@@ -126,39 +126,39 @@ export default function EventConfluencePage() {
       description:
         "On our 9th Founders Day we celebrated the art and wisdom of Tagore along with our chief guest Mr. Nitish Kumar and our guest of honour, Ms. Ridhima Pandey and Mr. Shivank Verma.",
     },
-    {
-      id: 3,
-      title: "8th Annual Founders Day - 2022",
-      image: Annual8,
-      groupImage: [
-        Annual8Img1,
-        Annual8Img2,
-        Annual8Img3,
-        Annual8Img4,
-        Annual8Img5,
-        Annual8Img6,
-        Annual8Img7,
-        Annual8Img8,
-      ],
-      description:
-        "Roaring with pride, our 8th Founders Day honored the courage and leadership of the Lion King. With our chief guest Col. Vikram Kadyan and our special guest Hawaldar Joginder Kumar made this day unforgettable.",
-    },
+    // {
+    //   id: 3,
+    //   title: "8th Annual Founders Day - 2022",
+    //   image: Annual8,
+    //   groupImage: [
+    //     Annual8Img1,
+    //     Annual8Img2,
+    //     Annual8Img3,
+    //     Annual8Img4,
+    //     Annual8Img5,
+    //     Annual8Img6,
+    //     Annual8Img7,
+    //     Annual8Img8,
+    //   ],
+    //   description:
+    //     "Roaring with pride, our 8th Founders Day honored the courage and leadership of the Lion King. With our chief guest Col. Vikram Kadyan and our special guest Hawaldar Joginder Kumar made this day unforgettable.",
+    // },
     {
       id: 4,
-      title: "5th Annual Founders Day - 2019",
-      image: Annual5,
+      title: "6th Annual Founders Day - 2019",
+      image: Annual6,
       groupImage: [
-        Annual5Img1,
-        Annual5Img2,
-        Annual5Img3,
-        Annual5Img4,
-        Annual5Img5,
-        Annual5Img6,
-        Annual5Img7,
-        Annual5Img8,
+        Annual6Img1,
+        Annual6Img2,
+        Annual6Img3,
+        Annual6Img4,
+        Annual6Img5,
+        Annual6Img6,
+        Annual6Img7,
+        Annual6Img8,
       ],
       description:
-        "Magic, dreams, and inspiration. On our 5th Founders Day we brought Aladdin’s wonder to life, with chief guest Sh. Anurag Tripathi and our special guest LtCdr. Payal Gupta and Dr. Sanjay Prakash Saxena lighting the way.",
+        "Magic, dreams, and inspiration. On our 6th Founders Day we brought Aladdin’s wonder to life, with chief guest Sh. Anurag Tripathi and our special guest LtCdr. Payal Gupta and Dr. Sanjay Prakash Saxena lighting the way.",
     },
     {
       id: 5,
@@ -194,40 +194,40 @@ export default function EventConfluencePage() {
       description:
         "Where stories came alive on the street, our 3rd Founders Day honored the art of Nukkad Natak with Sh. Arvind Pandey (Minister for Primary Education), celebrating community and creativity.",
     },
-    {
-      id: 7,
-      title: "2nd Annual Founders Day - 2016",
-      image: Annual2,
-      groupImage: [
-        Annual2Img1,
-        Annual2Img2,
-        Annual2Img3,
-        Annual2Img4,
-        Annual2Img5,
-        Annual2Img6,
-        Annual2Img7,
-        Annual2Img8,
-      ],
-      description:
-        "Embracing the power of nature, our 2nd Founders Day honored the Four Main Elements, with Justice Vijendra Jain guiding our celebration of balance and strength.",
-    },
-    {
-      id: 8,
-      title: "1st Annual Founders Day - 2015",
-      image: Annual1,
-      groupImage: [
-        Annual1Img1,
-        Annual1Img2,
-        Annual1Img3,
-        Annual1Img4,
-        Annual1Img5,
-        Annual1Img6,
-        Annual1Img7,
-        Annual1Img8,
-      ],
-      description:
-        "Launching a legacy of inspiration, our 1st Founders Day celebrated the Famous Personalities whose stories continue to shape our journey.",
-    },
+    // {
+    //   id: 7,
+    //   title: "2nd Annual Founders Day - 2016",
+    //   image: Annual2,
+    //   groupImage: [
+    //     Annual2Img1,
+    //     Annual2Img2,
+    //     Annual2Img3,
+    //     Annual2Img4,
+    //     Annual2Img5,
+    //     Annual2Img6,
+    //     Annual2Img7,
+    //     Annual2Img8,
+    //   ],
+    //   description:
+    //     "Embracing the power of nature, our 2nd Founders Day honored the Four Main Elements, with Justice Vijendra Jain guiding our celebration of balance and strength.",
+    // },
+    // {
+    //   id: 8,
+    //   title: "1st Annual Founders Day - 2015",
+    //   image: Annual1,
+    //   groupImage: [
+    //     Annual1Img1,
+    //     Annual1Img2,
+    //     Annual1Img3,
+    //     Annual1Img4,
+    //     Annual1Img5,
+    //     Annual1Img6,
+    //     Annual1Img7,
+    //     Annual1Img8,
+    //   ],
+    //   description:
+    //     "Launching a legacy of inspiration, our 1st Founders Day celebrated the Famous Personalities whose stories continue to shape our journey.",
+    // },
   ];
   return (
     <>
