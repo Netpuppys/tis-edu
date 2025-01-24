@@ -101,58 +101,33 @@ const Table = () => {
   return (
     <table
       style={{
-        borderCollapse: "collapse",
-        width: isMobile ? "" : "90%",
-        marginLeft: "auto",
-        marginRight: "auto",
+        fontFamily: "TT Chocolates",
       }}
     >
       <thead>
         <tr>
-          <th style={{ width: isMobile ? "50%" : "30%" }}>ASPECTS</th>
-          <th>DESCRIPTION</th>
+          <th className="text-[clamp(20px,6vw,50px)] w-[30%] border-b bg-[#b90124] border-white border-collapse p-4 text-center md:text-[clamp(20px,2.5vw,50px)] font-[Mirador800] text-white">
+            ASPECTS
+          </th>
+          <th className="text-[clamp(20px,6vw,50px)] w-[70%] border-b border-[#b90124] border-collapse p-4 text-center md:text-[clamp(20px,2.5vw,50px)] font-[Mirador800] text-[#b90124]">
+            DESCRIPTION
+          </th>
         </tr>
       </thead>
-      <tbody
-        style={{
-          marginLeft: "auto",
-          marginRight: "auto",
-        }}
-      >
+      <tbody>
         {data.map((item, index) => (
           <tr key={index}>
             <td
-              style={{
-                textAlign: "left",
-                display: "flex",
-                justifyContent: "space-between",
-                padding: isMobile ? "8px" : "20px",
-              }}
+              className={`text-[clamp(15px,4vw,30px)] ${
+                index === data.length - 1 ? "border-none" : "border-b"
+              } bg-[#b90124] border-white text-white border-collapse p-2 md:p-4 text-center font-normal md:text-[clamp(18px,1.3vw,45px)]`}
             >
-              <p1
-                style={{ alignItems: "flex-start", alignSelf: "center" }}
-                className="title"
-              >
-                {item.name}
-              </p1>
-              <Image
-                style={{
-                  alignItems: "flex-end",
-                  height: "auto",
-                  alignSelf: "center",
-                  marginLeft: isMobile ? "10px" : "20px",
-                  width: isMobile ? "30px" : "40px",
-                }}
-                className="seeActivity"
-                src={seeAllActivities}
-                alt=""
-              />
+              {item.name}
             </td>
             <td
-              style={{
-                textAlign: "left",
-                padding: isMobile ? "8px" : "20px",
-              }}
+              className={`text-[clamp(15px,4vw,30px)] ${
+                index === data.length - 1 ? "border-none" : "border-b"
+              } border-[#b90124] border-collapse p-2 md:p-4 font-normal md:text-[clamp(18px,1.3vw,45px)]`}
             >
               {item.description}
             </td>
@@ -174,17 +149,21 @@ export default function Pedagogy() {
         headerImg={HeaderPedagogyImg}
         headerImgMobile={HeaderPedagogyImg}
       />
-      <div className="main-pedagogy">
-        <h1 className="main-text">
-          Effective Teaching <span>Methods</span>
+      <div className="py-8 md:py-14">
+        <h2 className="text-[clamp(20px,6.5vw,50px)] px-4 w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+          Effective Teaching <span className="text-[#b90124]">Methods</span>
           <Image
-            style={{ height: "auto" }}
-            className="yellow-line-pedagogy"
+            className="ml-auto w-fit max-w-[60%]"
             src={yellowLine}
             alt=""
           />
-        </h1>
-        <p className="text-div">
+        </h2>
+        <h6
+          style={{
+            fontFamily: "TT Chocolates",
+          }}
+          className="w-full px-8 md:px-0 md:w-[75%] pt-8 md:pt-14 mx-auto text-justify md:text-center text-[clamp(15px,4.5vw,30px)] font-normal md:text-[clamp(18px,1.3vw,45px)]"
+        >
           As a premier co-ed residential school, the focus of the curriculum
           development at TIS is to provide an inclusive educational environment
           to students inside and outside the class room whereby teachers
@@ -198,7 +177,9 @@ export default function Pedagogy() {
           parameters recognition for each student, frequent assessment in the
           form of poster making, plays, quiz and written test gives a 360°
           insight into the subject. In the field of performing arts, art &amp;
-          crafts lesson is a regular feature. <br /> <br />
+          crafts lesson is a regular feature.
+          <br />
+          <br />
           Exclusive Sports with professional coaches help the students to
           transition from amateur to professional category. Curricular
           activities, debates, quizzes, seminars and conference is well
@@ -209,20 +190,18 @@ export default function Pedagogy() {
           the well- being of the student is The Core Priority. Various councils
           of students - library council, school council, mess committee,
           academic, sports, IT, Pastoral provide the real platform to voice
-          their concerns and get the corrective measures implemented. <br />{" "}
+          their concerns and get the corrective measures implemented.
+          <br />
           <br />
           Model United Nations (MUN) participation is encouraged to raise
           college profiles and global awareness while also acquiring important
           skills such as public speaking and diplomacy. This holistic strategy
           guarantees that students are adequately equipped for both academic and
           professional success.
-        </p>
-        <br /> <br />
-        <div className="div1">
-          <div2>
-            <Table />
-          </div2>
-        </div>
+        </h6>
+      </div>
+      <div className="mb-8 md:mb-14 w-[90%] md:w-[80%] mx-auto border md:border-2 rounded-xl overflow-scroll md:overflow-hidden border-[#b90124]">
+        <Table />
       </div>
     </>
   );
