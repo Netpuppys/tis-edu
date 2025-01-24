@@ -46,7 +46,7 @@
   margin-right: auto;
   height: auto;
 }
-.card-content-publication button {
+.card-content-publication .view-pdf-button {
   margin-left: auto;
   position: relative;
   margin-right: auto;
@@ -90,7 +90,7 @@
     line-height: 20px;
     width: 70%;
   }
-  .card-content-publication button {
+  .card-content-publication .view-pdf-button {
     font-size: 15px;
     padding: 6px 15px;
   }

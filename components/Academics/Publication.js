@@ -13,7 +13,7 @@ import Calendar from "../../public/MandatoryPDF/Calendar.png";
 import Broucher from "../../public/MandatoryPDF/Brochure.png";
 import Tattoo from "../../public/MandatoryPDF/Tattoo.png";
 import theVoice from "../../public/MandatoryPDF/theVoice2.png";
-
+import Nov2024 from "../../public/MandatoryPDF/Nov2024.png";
 export default function Publication() {
   const { isMobile } = useMobile();
 
@@ -105,6 +105,10 @@ export default function Publication() {
 
   const documents = [
     {
+      link: "https://online.publuu.com/631991/1649960/page/1?cover",
+      img: Nov2024,
+    },
+    {
       link: "https://online.publuu.com/631991/1409603/page/1?cover",
       img: TheVoiceImg,
     },
@@ -169,10 +173,10 @@ export default function Publication() {
       <div className="card-publication">
         {documents.map((document, index) => (
           <div key={index} className="card-content-publication">
-            <Image src={document.img} alt="PDF icon" />
+            <Image src={document.img} alt="" />
 
-            <a href={document.link} className="show-publuu-viewer">
-              <button>
+            <a href={document.link}>
+              <button className="view-pdf-button">
                 <Download style={{ width: isMobile ? "18%" : "auto" }} />
                 View PDF
               </button>
