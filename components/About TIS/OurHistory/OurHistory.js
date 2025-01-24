@@ -12,6 +12,7 @@ import "../../../styles/About Tis/ourHistory.css";
 import { useMobile } from "../../globalComponents/IsMobileContext";
 import lineImg from "../../../public/pictures/lineImg.png";
 import headerHistoryImg from "../../../public/Header/HistoryHeader.png";
+import headerHistoryMobileImg from "../../../public/Header/HistoryHeaderMobile.jpg"
 
 export default function OurHistory() {
   const subTitle =
@@ -24,7 +25,7 @@ export default function OurHistory() {
         title={"Our History"}
         subtitle={subTitle}
         headerImg={headerHistoryImg}
-        headerImgMobile={headerHistoryImg}
+        headerImgMobile={headerHistoryMobileImg}
       />
       <div className="py-8 w-[85%] md:w-[75%] mx-auto md:py-14 flex flex-col justify-center items-center">
         <h3

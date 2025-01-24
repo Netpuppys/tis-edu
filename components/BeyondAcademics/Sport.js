@@ -2,6 +2,7 @@
 import React from "react";
 import Header from "../globalComponents/Header/Header";
 import HeaderSportsImg from "../../public/Header/SPORTS.webp";
+import SPORTSMobile from "../../public/Header/SPORTSMobile.webp";
 import bookwormIcon from "../../public/Clubs/bookwormIcon.png";
 import pootersWheelIcon from "../../public/Clubs/pootersWheelIcon.png";
 import RagaRocksIcon from "../../public/Clubs/RagaRocksIcon.png";
@@ -449,7 +450,7 @@ function Sport() {
           "Sports instill discipline, teamwork, and well-being in students' lives."
         }
         headerImg={HeaderSportsImg}
-        headerImgMobile={HeaderSportsImg}
+        headerImgMobile={SPORTSMobile}
       />
       <h6
         style={{
