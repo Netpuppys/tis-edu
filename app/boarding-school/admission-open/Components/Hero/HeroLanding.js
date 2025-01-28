@@ -32,12 +32,16 @@ const TextBanner = ({ filledText }) => {
                 WebkitTextStrokeWidth: "0.3px",
               }
         }
-        className="font-[TTChocolatesBold] flex flex-col text-center text-[3.5rem] md:text-[6rem] font-black tracking-[0.10369rem] leading-tight"
+        className="font-[PFDinTextPro] flex flex-col text-center text-[12vw] md:text-[7vw] font-black tracking-[0.10369rem] leading-none"
       >
-        IMAGE
-        <span className="text-[4.5rem] font-[Mirador800] md:text-[7rem]">
-          Gallery
-        </span>
+        <h6>
+          LET'S DO <span className="font-[Mirador800]">it</span>
+        </h6>
+        <h8>
+          {" "}
+          With
+          <span className="font-[Mirador800]">Tula's</span>
+        </h8>
         <div className="relative h-fit w-fit">
           {filledText && (
             <svg

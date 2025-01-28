@@ -67,7 +67,7 @@ function Banner() {
             </div>
           )}
 
-          <div className="absolute z-50 flex-col top-0 justify-center text-white hidden md:flex md:animate-translateRightHalf items-start w-full h-[75vh] md:h-screen">
+          {/* <div className="absolute z-50 flex-col top-0 justify-center text-white hidden md:flex md:animate-translateRightHalf items-start w-full h-[75vh] md:h-screen">
             <div className="w-full md:w-[50%] text-center flex flex-col items-center justify-center gap-[2vh]">
               <p
                 className="text-[2.5rem] md:text-[11vh] m-0 leading-[2.875rem] tracking-[0.125rem] font-normal"
@@ -108,7 +108,7 @@ function Banner() {
                 </svg>
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

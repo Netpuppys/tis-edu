@@ -128,6 +128,7 @@ function Form() {
     const utmSource = searchParams.get("utm_source");
     const utmCampaign = searchParams.get("utm_campaign");
     const utmTerm = searchParams.get("utm_term");
+    const searchQuery = searchParams.get("search_query");
     const updatedFormData = {
       ...formData,
       LeadChannel: utmParams ? 26 : 20,
@@ -138,6 +139,9 @@ function Form() {
       Field5: utmParams
         ? utmTerm || "No Term Found"
         : "Organic Lead Search Term not available",
+      Field6: utmParams
+        ? searchQuery || "No search Query Available"
+        : "Organic Lead Search Query not available",
     };
     axios
       .post(
