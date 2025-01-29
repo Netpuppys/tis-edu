@@ -16,10 +16,10 @@ function Banner() {
       <div className="fixed top-0 left-0 z-40 px-6 md:px-8 py-6 md:py-8 flex items-center justify-between w-full">
         <a
           href={`tel:+91-${
-            utmSource === "MetaADS" ? "8069204014" : "8069204004"
+            utmSource === "MetaADS" ? "8069204014" : "8069204029"
           }`}
           title={`Admission Helpline No. +91-${
-            utmSource === "MetaADS" ? "8069204014" : "8069204004"
+            utmSource === "MetaADS" ? "8069204014" : "8069204029"
           }`}
           className="w-20 md:w-28 bg-[#60BAB1] p-6 md:p-8 rounded-full"
         >
@@ -40,7 +40,6 @@ function Banner() {
                 alt=""
                 className="w-full h-full object-cover absolute -z-10"
               />
-              <div className="z-10 bg-black absolute top-0 right-0 w-full h-full opacity-60"></div>
               <iframe
                 src="https://player.vimeo.com/video/1022462718?autoplay=1&loop=1&muted=1&controls=0"
                 className={`w-full h-full absolute object-cover min-h-full min-w-full z-0 scale-125`}
@@ -57,7 +56,6 @@ function Banner() {
                 alt=""
                 className="w-full h-full object-cover -z-10 absolute"
               />
-              <div className="z-20 relative bg-black w-full h-full bg-opacity-60"></div>
               <iframe
                 src="https://player.vimeo.com/video/1022468806?autoplay=1&loop=1&muted=1&controls=0"
                 className={`w-full h-full absolute z-10 top-0 object-cover min-h-full min-w-full scale-125`}

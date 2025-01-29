@@ -110,11 +110,11 @@ const LandingLayout = () => {
           <a
             className="flex justify-center gap-2 h-12 items-center text-black w-full"
             href={`tel:+91-${
-              utmSource === "MetaADS" ? "8069204014" : "8069204004"
+              utmSource === "MetaADS" ? "8069204014" : "8069204029"
             }`}
           >
             <FaPhone />
-            +91-{utmSource === "MetaADS" ? "8069204014" : "8069204004"}
+            +91-{utmSource === "MetaADS" ? "8069204014" : "8069204029"}
           </a>
         </div>
       )}
