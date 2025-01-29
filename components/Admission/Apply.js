@@ -54,7 +54,7 @@ const Apply = () => {
               </li>
               <li>
                 Complete the registration form and submit it along with a
-                registration fee of Rs. 10,000 (non-refundable)
+                registration fee of Rs. 15,000 (non-refundable)
               </li>
               <li>
                 Write the Demand Draft in favor of Tula’s International School,
@@ -383,7 +383,7 @@ const Apply = () => {
             Regulations of the School. The Registration of the child does not
             guarantee his/her admission into the school. The Parent can deposit
             the Registration Fee (which is neither transferable nor refundable)
-            through Demand Draft for Rs. 10,000 in favor of Tula’s International
+            through Demand Draft for Rs. 15,000 in favor of Tula’s International
             School, payable at Dehradun.
             <br />
             <br />
