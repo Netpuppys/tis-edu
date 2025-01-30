@@ -122,6 +122,18 @@ const Navbar = () => {
       ],
     },
     {
+      title: "Events",
+      nestedLinks: [
+        { title: "Sports Day", linkTo: "/events/sports-day/" },
+        { title: "Founders Day", linkTo: "/events/founders-day/" },
+        { title: "Confluence", linkTo: "/events/confluence/" },
+        {
+          title: "Prominent Personalities",
+          linkTo: "/prominent-personalities",
+        },
+      ],
+    },
+    {
       title: "Admission",
       nestedLinks: [
         { title: "Admission Procedure", linkTo: "/admission-procedure/" },
@@ -161,11 +173,7 @@ const Navbar = () => {
         { title: "Newsletter", linkTo: "/newsletter/" },
         { title: "Careers", linkTo: "/careers/" },
         { title: "Transfer Certificate", linkTo: "/transfer-certificate" },
-        {
-          title: "Prominent Personalities",
-          linkTo: "/prominent-personalities",
-        },
-        // { title: "Parent Testimonial", linkTo: "/parent-testimonial" },
+        { title: "Parent Testimonial", linkTo: "/parent-testimonial" },
       ],
     },
   ];
