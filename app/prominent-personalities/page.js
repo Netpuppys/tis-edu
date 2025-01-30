@@ -46,7 +46,7 @@ import { useMobile } from "@/components/globalComponents/IsMobileContext";
 function ProminentPersonalities() {
   const categories = [
     {
-      name: "Sports",
+      name: "Sports Person / Social Media Influencer",
       subItems: [
         {
           image: SakshiMalik,
@@ -110,11 +110,6 @@ function ProminentPersonalities() {
           name: "Manish Metani",
           description: "(Indian Football Player)",
         },
-      ],
-    },
-    {
-      name: "Actors",
-      subItems: [
         {
           image: SaurabhJoshi,
           name: "Saurabh Joshi",
@@ -134,6 +129,12 @@ function ProminentPersonalities() {
         },
       ],
     },
+    // {
+    //   name: "Actors",
+    //   subItems: [
+
+    //   ],
+    // },
     {
       name: "Leaders of India",
       subItems: [
