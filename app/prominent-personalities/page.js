@@ -9,7 +9,11 @@ import banner3 from "../../public/ProminentPersonalities/banner3.webp";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { IoChevronBackOutline, IoChevronForwardOutline } from "react-icons/io5";
+import {
+  IoChevronBackOutline,
+  IoChevronForwardOutline,
+  IoClose,
+} from "react-icons/io5";
 import SakshiMalik from "../../public/ProminentPersonalities/SakshiMalik.webp";
 import VisheshBhriguvanshi from "../../public/ProminentPersonalities/VisheshBhriguvanshi.webp";
 import PrakashiTomar from "../../public/ProminentPersonalities/PrakashiTomar.webp";
@@ -226,6 +230,7 @@ function ProminentPersonalities() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isClient, setIsClient] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState(categories[0]?.name);
+  const [selectedItem, setSelectedItem] = useState(false);
   useEffect(() => {
     setIsClient(true); // Ensures the component renders only on the client
   }, []);
@@ -249,6 +254,16 @@ function ProminentPersonalities() {
       swiperInstance.slideTo(nextIndex);
     }
   };
+  useEffect(() => {
+    if (selectedItem) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [selectedItem]);
 
   return (
     <>
@@ -321,7 +336,7 @@ function ProminentPersonalities() {
                 style={{
                   textShadow: "0px 5px 16px rgba(0, 0, 0, 0.2)",
                 }}
-                className="font-[Mirador800] w-full px-4 md:px-0 leading-tight text-center text-[clamp(20px,7vw,60px)] md:text-[clamp(20px,3.2vw,80px)] pb-8 text-white z-10"
+                className="font-[Mirador800] w-full px-4 md:px-0 leading-tight text-center text-[clamp(20px,7vw,60px)] md:text-[clamp(20px,3.2vw,80px)] pb-8 text-white"
               >
                 Prominent Personalities
               </h1>
@@ -367,6 +382,7 @@ function ProminentPersonalities() {
                   ?.subItems.map((item, index) => (
                     <div
                       key={index}
+                      onClick={() => setSelectedItem(item)}
                       className={`bg-white rounded-lg flex flex-col justify-between items-center overflow-hidden border border-[#b90124] shadow-[0px_4px_25.2px_0px_rgba(0,0,0,0.25)] w-full md:w-[calc(33.33%-16px)]`}
                     >
                       <Image
@@ -387,6 +403,23 @@ function ProminentPersonalities() {
               </div>
             </div>
           </div>
+          {selectedItem && (
+            <div className="fixed z-20 w-full inset-0 flex items-center justify-center bg-black bg-opacity-80">
+              <div className="p-5 w-[95%] md:w-[40%] mx-auto h-fit rounded shadow-lg relative">
+                <button
+                  className="absolute top-2 right-2 bg-[#b90124] text-white p-2 rounded-full"
+                  onClick={() => setSelectedItem(null)}
+                >
+                  <IoClose />
+                </button>
+                <Image
+                  src={selectedItem.image}
+                  alt=""
+                  className="w-full h-fit rounded"
+                />
+              </div>
+            </div>
+          )}
           <Footer />
         </>
       )}
