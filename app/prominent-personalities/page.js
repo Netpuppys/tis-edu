@@ -407,7 +407,7 @@ function ProminentPersonalities() {
             <div className="fixed z-20 w-full inset-0 flex items-center justify-center bg-black bg-opacity-80">
               <div className="p-5 w-[95%] md:w-[40%] mx-auto h-fit rounded shadow-lg relative">
                 <button
-                  className="absolute top-2 right-2 bg-[#b90124] text-white p-2 rounded-full"
+                  className="absolute top-2 right-2 bg-[#b90124] text-white aspect-square p-2 rounded-full"
                   onClick={() => setSelectedItem(null)}
                 >
                   <IoClose />
