@@ -102,6 +102,7 @@ function ContactForm() {
       )
       .then(() => {
         setLoading(false);
+        window.location.href = `/boarding-school/admission-open/thank-you${utmParams}`;
         setFormData({
           AuthToken: "tisd_24-08-2024",
           Source: "tisd",
@@ -113,7 +114,6 @@ function ContactForm() {
           Field4: "",
           Remarks: "",
         });
-        window.location.href = `/boarding-school/admission-open/thank-you${utmParams}`;
       })
       .catch((error) => {
         setLoading(false);
@@ -160,13 +160,12 @@ function ContactForm() {
         <div className="w-full flex flex-col md:flex-row gap-3 mt-6">
           <div className="w-full group">
             <label className="text-[#565656] group-focus-within:text-[#B90124]">
-              Email
+              Email (Optional)
             </label>
             <input
               type="Email"
               value={formData.Email}
               onChange={(e) => handleChange("Email", e.target.value)}
-              required
               className="py-2 focus:outline-none w-full border-b border-[#565656] group-focus-within:border-[#b90124] text-[#4B4B4B]"
             />
           </div>
