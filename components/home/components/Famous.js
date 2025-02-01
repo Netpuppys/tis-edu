@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import SakshiMalik from "../../../public/ProminentPersonalities/SakshiMalik.webp";
 import VisheshBhriguvanshi from "../../../public/ProminentPersonalities/VisheshBhriguvanshi.webp";
 import PrakashiTomar from "../../../public/ProminentPersonalities/PrakashiTomar.webp";
@@ -194,6 +194,24 @@ function Famous() {
       description: "(MLA Sahaspur, Uttarakhand)",
     },
   ];
+  const scrollContainerRef = useRef(null);
+  useEffect(() => {
+    const scrollContainer = scrollContainerRef.current;
+    let scrollAmount = 0.5; // Speed of scrolling
+    const scroll = () => {
+      if (scrollContainer) {
+        scrollContainer.scrollLeft += scrollAmount;
+        if (
+          scrollContainer.scrollLeft >=
+          scrollContainer.scrollWidth - scrollContainer.clientWidth
+        ) {
+          scrollContainer.scrollLeft = 0; // Reset to start for continuous effect
+        }
+      }
+    };
+    const interval = setInterval(scroll, 20); // Adjust speed here
+    return () => clearInterval(interval);
+  }, []);
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="font-[Mirador800] text-center pt-8 md:pt-[2%] px-4 text-wrap text-[clamp(20px,6.3vw,55px)] md:text-[clamp(20px,2.3vw,55px)] text-[#b90124] w-fit whitespace-nowrap leading-tight md:leading-none z-10">
@@ -220,7 +238,7 @@ function Famous() {
                 <h2 className="text-[clamp(10px,3.2vw,50px)] text-wrap md:text-[clamp(10px,1.1vw,50px)] text-[#b90124] font-[TTChocolates] font-extrabold">
                   {sport.name}
                 </h2>
-                <h2 className="text-[clamp(10px,2.8vw,50px)] italic text-wrap md:text-[clamp(10px,0.75vw,50px)] text-[#404040] font-[TTChocolates] font-extrabold">
+                <h2 className="text-[clamp(10px,2.8vw,50px)] italic text-wrap md:text-[clamp(10px,0.75vw,50px)] text-[#404040] font-[TTChocolates] font-normal">
                   {sport.description}
                 </h2>
               </div>
@@ -232,7 +250,17 @@ function Famous() {
         Leaders Of India
       </h2>
       <div className="w-full h-full overflow-hidden whitespace-nowrap">
-        <div className="w-full overflow-auto py-6 flex gap-2 md:py-[3%] no-scrollbar">
+        <div
+          ref={scrollContainerRef}
+          style={{
+            display: "flex",
+            overflowX: "auto",
+            whiteSpace: "nowrap",
+            scrollbarWidth: "none",
+            msOverflowStyle: "none",
+          }}
+          className="w-full overflow-auto py-6 flex gap-2 md:py-[3%] no-scrollbar"
+        >
           {leaders.map((sport, index) => (
             <div
               key={index}
@@ -249,7 +277,7 @@ function Famous() {
                 <h2 className="text-[clamp(10px,3.2vw,50px)] text-wrap md:text-[clamp(10px,1.1vw,50px)] text-[#b90124] font-[TTChocolates] font-extrabold">
                   {sport.name}
                 </h2>
-                <h2 className="text-[clamp(10px,2.8vw,50px)] italic text-wrap md:text-[clamp(10px,0.75vw,50px)] text-[#404040] font-[TTChocolates] font-extrabold">
+                <h2 className="text-[clamp(10px,2.8vw,50px)] italic text-wrap md:text-[clamp(10px,0.75vw,50px)] text-[#404040] font-[TTChocolates] font-normal">
                   {sport.description}
                 </h2>
               </div>
