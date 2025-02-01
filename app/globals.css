@@ -154,7 +154,13 @@ p {
   margin-block-start: 0rem;
   margin-block-end: 0rem;
 }
-
+.no-scrollbar::-webkit-scrollbar-thumb {
+  display: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  width: 0px;
+  display: none;
+}
 .swiper-3d .swiper-slide-shadow-left,
 .swiper-3d .swiper-slide-shadow-right {
   background: rgba(0, 0, 0, 0) !important;
@@ -203,7 +209,7 @@ select {
 .loader {
   width: 60px;
   aspect-ratio: 2;
-  --_g: no-repeat radial-gradient(circle closest-side, #b90124 90%, #FFF);
+  --_g: no-repeat radial-gradient(circle closest-side, #b90124 90%, #fff);
   background: var(--_g) 0% 50%, var(--_g) 50% 50%, var(--_g) 100% 50%;
   background-size: calc(100% / 3) 50%;
   animation: l3 1s infinite linear;

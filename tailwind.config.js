@@ -28,8 +28,26 @@ module.exports = {
         scrollAnimation: "scrollAnimation 0.6s infinite alternate",
         overlay: "overlay 0.5s ease",
         backgroundColor: "backgroundColor 0.5s ease-in",
+        marquee: "marquee 6s infinite",
+        marqueeOpposite: "marqueeOpposite 6s infinite",
       },
       keyframes: {
+        marquee: {
+          from: {
+            transform: "translateX(0)",
+          },
+          to: {
+            transform: "translateX(-100%)",
+          },
+        },
+        marqueeOpposite: {
+          from: {
+            transform: "translateX(-100%)",
+          },
+          to: {
+            transform: "translateX(0%)",
+          },
+        },
         backgroundColor: {
           from: {
             bottom: "2.5rem",
