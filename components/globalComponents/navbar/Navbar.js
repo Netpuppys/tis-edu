@@ -104,6 +104,7 @@ const Navbar = () => {
           title: "Our House System",
           linkTo: "/boarding-life/our-house-system/",
         },
+        { title: "Teachers Profile", linkTo: "/teachers-profile" },
       ],
     },
     {
@@ -116,6 +117,7 @@ const Navbar = () => {
           linkTo: "/beyond-academics/clubs-and-societies/",
         },
         { title: "Celebrations", linkTo: "/events/celebrations/" },
+        { title: "Mentor & Mentee System", linkTo: "/mentor-mentee" },
       ],
     },
     {
