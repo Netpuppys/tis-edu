@@ -74,7 +74,7 @@ export default function EventConfluence() {
         headerImgMobile={HeaderConfluenceImgMobile}
       />
       <div className="py-8 md:py-14">
-        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+        <h2 className="text-[clamp(10px,7vw,50px)] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           Confluence
           <Image
             className="ml-auto w-fit max-w-[60%]"
@@ -114,7 +114,7 @@ export default function EventConfluence() {
             <li>SHUTTER BUG – PHOTOGRAPHY </li>
           </ul>
         </h6>
-        <h2 className="text-[30px] pt-8 md:pt-14 w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+        <h2 className="text-[clamp(10px,7vw,50px)] pt-8 md:pt-14 w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           General <span className="text-[#b90124]">Guidelines</span>
           <Image
             className="ml-auto w-fit max-w-[60%]"
@@ -189,7 +189,7 @@ export default function EventConfluence() {
                 index % 2 === 0 ? "pl-0 md:pl-16" : "pr-0 md:pr-16"
               }`}
             >
-              <h2 className="font-[TTChocolatesBold] text-[#b90124] font-semibold text-[30px] md:text-[clamp(10px,2.5vw,50px)]">
+              <h2 className="font-[TTChocolatesBold] text-[#b90124] font-semibold text-[clamp(10px,7vw,50px)] md:text-[clamp(10px,2.5vw,50px)]">
                 {data.title}
               </h2>
               <h2

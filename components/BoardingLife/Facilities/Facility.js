@@ -132,11 +132,11 @@ function Facility() {
                 alt=""
                 className="w-[95px] h-fit mx-auto"
               />
-              <h3 className="font-[TTChocolatesBold] w-fit mx-auto text-[clamp(10px,1.3vw,50px)] text-white text-center border-b border-white">
+              <h3 className="font-[TTChocolatesBold] w-fit mx-auto text-[clamp(10px,4.5vw,50px)] md:text-[clamp(10px,1.3vw,50px)] text-white text-center border-b border-white">
                 {cards.title}
               </h3>
               <h3
-                className="hidden group-hover:flex translate-y-full group-hover:translate-y-0 w-fit px-4 mx-auto text-[clamp(10px,1.2vw,50px)] text-white text-center"
+                className="hidden group-hover:flex translate-y-full group-hover:translate-y-0 w-fit px-4 mx-auto text-[clamp(10px,4vw,50px)] md:text-[clamp(10px,1.2vw,50px)] text-white text-center"
                 style={{
                   fontFamily: "TT Chocolates",
                 }}

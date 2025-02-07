@@ -89,7 +89,7 @@ export default function OurHistory() {
           </div>
           <div className="flex w-full flex-col items-start justify-center text-black">
             <h3
-              className="w-full text-[#212121] font-normal border-b-2 border-[#b90124] pb-4 md:pb-8 text-[clamp(10px,4.5vw,50px)] md:text-[clamp(10px,1.3vw,40px)]"
+              className="w-full text-[#212121] font-normal leading-tight border-b-2 border-[#b90124] pb-4 md:pb-8 text-[clamp(10px,4.5vw,50px)] md:text-[clamp(10px,1.3vw,40px)]"
               style={{
                 fontFamily: "TT Chocolates",
               }}
@@ -120,7 +120,7 @@ export default function OurHistory() {
           </div>
           <div className="flex w-full md:w-[70%] mx-auto flex-col items-start justify-center text-black">
             <h3
-              className="w-full text-[#212121] font-normal border-b-2 border-[#b90124] pb-4 md:pb-8 text-[clamp(10px,4.5vw,50px)] md:text-[clamp(10px,1.3vw,40px)]"
+              className="w-full text-[#212121] font-normal leading-tight border-b-2 border-[#b90124] pb-4 md:pb-8 text-[clamp(10px,4.5vw,50px)] md:text-[clamp(10px,1.3vw,40px)]"
               style={{
                 fontFamily: "TT Chocolates",
               }}
@@ -160,7 +160,7 @@ export default function OurHistory() {
           </div>
           <div className="flex w-full flex-col items-start justify-center text-black">
             <h3
-              className="w-full text-[#212121] md:text-justify font-normal border-b-2 border-[#b90124] pb-4 md:pb-8 text-[clamp(10px,4.5vw,50px)] md:text-[clamp(10px,1.3vw,40px)]"
+              className="w-full text-[#212121] md:text-justify leading-tight font-normal border-b-2 border-[#b90124] pb-4 md:pb-8 text-[clamp(10px,4.5vw,50px)] md:text-[clamp(10px,1.3vw,40px)]"
               style={{
                 fontFamily: "TT Chocolates",
               }}
@@ -193,7 +193,7 @@ export default function OurHistory() {
             </div>
           </div>
         </div>
-        <h3 className="text-[#B90124] pt-8 font-[TTChocolatesBold] md:pt-14 uppercase text-center w-fit text-[clamp(10px,6.5vw,60px)] md:text-[clamp(10px,1.8vw,50px)]">
+        <h3 className="text-[#B90124] pt-8 leading-tight font-[TTChocolatesBold] md:pt-14 uppercase text-center w-fit text-[clamp(10px,6.5vw,60px)] md:text-[clamp(10px,1.8vw,50px)]">
           <span
             style={{
               fontFamily: "TT Chocolates",

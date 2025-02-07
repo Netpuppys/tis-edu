@@ -19,8 +19,6 @@ import lawnTennis from "../../../../public/pictures/lawnTennis.png";
 import badminton from "../../../../public/pictures/badminton.png";
 import tableTennis from "../../../../public/pictures/tableTennis.png";
 import throwball from "../../../../public/pictures/throwballSports.png";
-import seeAllActivities from "../../../../public/icons/see-all-activities.png";
-import seeAllActivityButton from "../../../../public/icons/see-all-activity-button.png";
 import Image from "next/image";
 import "../../../../styles/home/components/activityGrid/ActivityGrid.css";
 import { useInView } from "react-intersection-observer";
@@ -29,8 +27,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { IoChevronBackOutline, IoChevronForwardOutline } from "react-icons/io5";
 
 function FourthSection() {
-  // const { isMobile } = useMobile();
-  // const { utmParams } = useContext(UtmContext);
   const { ref, inView } = useInView({
     triggerOnce: false,
     threshold: 0.1,
@@ -59,11 +55,7 @@ function FourthSection() {
       sports curated to bring joy and discipline to your life.
     </>
   );
-  // const subTitle = "( Our Students love that! )";
 
-  // const handleItemClick = () => {
-  //   window.location.href = `/beyond-academics/sports${utmParams}`;
-  // };
   const initialActivities = [
     [
       {
@@ -175,29 +167,6 @@ function FourthSection() {
       setCurrentIndex(nextIndex); // Update state
     }
   };
-  // const [activity, setActivity] = useState(initialActivities);
-
-  // const rearrangeActivities = () => {
-  //   // Your logic to rearrange the activities array goes here
-  //   // For example, you can shuffle the array randomly
-  //   const shuffledActivities = [...activity].sort(() => Math.random() - 0.5);
-  //   setActivity(shuffledActivities);
-  // };
-  // useEffect(() => {
-  //   if (isMobile) {
-  //     const interval = setInterval(rearrangeActivities, 5000); // Rearrange every 5 seconds
-  //     return () => clearInterval(interval); // Clear interval on component unmount
-  //   }
-  // }, [isMobile, activity]);
-
-  // const handleMoreSports = () => {
-  //   window.location.href = `/beyond-academics/sports${utmParams}`;
-  // };
-
-  // function getPositionClassName(index) {
-  //   const positionClasses = ["topy", "lefty", "bottomy", "righty"]; // Example class names
-  //   return positionClasses[index % positionClasses.length]; // Cycle through class names based on index
-  // }
 
   return (
     <div
@@ -211,73 +180,7 @@ function FourthSection() {
         <p className="w-full text-center font-[Mirador800] text-[clamp(10px,6vw,100px)] md:text-[clamp(10px,2vw,100px)]">
           {title}
         </p>
-        {/* <p className="sub-title">{subTitle}</p> */}
       </div>
-      {/* <div className="activities-div">
-        {activity.slice(0, 3).map((activityItem, index) => (
-          <div
-            key={index}
-            onClick={() => handleItemClick(activityItem.title)}
-            className={`activity-div ${getPositionClassName(index)}`}
-          >
-            <div className="absolute w-full bg-black h-full -z-20">
-              <Image
-                src={activityItem.image}
-                alt=""
-                className="w-full h-full opacity-60 object-cover"
-              />
-            </div>
-            <div className="title-div-card">
-              <div
-                className="card-description"
-                style={{ display: "flex", justifyContent: "space-between" }}
-              >
-                <p
-                  style={{ alignItems: "flex-start", alignSelf: "center" }}
-                  className="title"
-                >
-                  {activityItem.title}
-                </p>
-                <Image
-                  style={{ alignItems: "flex-end", alignSelf: "center" }}
-                  className="seeActivity"
-                  src={seeAllActivities}
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-      {!isMobile && (
-        <>
-          <div className="btn-div">
-            <button className="see-more-btn" onClick={rearrangeActivities}>
-              <Image src={seeMoreIcon} className="btn-img" alt="See More" />
-              <div className="red-bg-btn">
-                <FaArrowsRotate />
-              </div>
-            </button>
-          </div>
-          <Image
-            style={{ height: "auto" }}
-            onClick={handleMoreSports}
-            src={seeAllActivityButton}
-            className="see-all"
-            alt="See All Activities"
-          />
-        </>
-      )}
-
-      <div className="see-more-mobile">
-        <button
-          onClick={handleMoreSports}
-          className="see-more-mobile-button"
-          alt=""
-        >
-          See All Activities
-        </button>
-      </div> */}
       <div className="w-full px-3 md:px-0 md:w-[90%] mx-auto h-full pt-6 md:pt-14">
         <Swiper
           onSwiper={(swiper) => (swiperRef.current = swiper)} // Capture swiper instance

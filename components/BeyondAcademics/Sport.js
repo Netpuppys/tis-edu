@@ -491,7 +491,7 @@ function Sport() {
                 index % 2 === 0 ? "pl-0 md:pl-16" : "pr-0 md:pr-16"
               }`}
             >
-              <h2 className="font-[TTChocolatesBold] text-[#b90124] font-semibold text-[30px] md:text-[clamp(10px,2.5vw,50px)]">
+              <h2 className="font-[TTChocolatesBold] text-[#b90124] font-semibold text-[clamp(10px,7vw,50px)] md:text-[clamp(10px,2.5vw,50px)]">
                 {data.title}
               </h2>
               <h2

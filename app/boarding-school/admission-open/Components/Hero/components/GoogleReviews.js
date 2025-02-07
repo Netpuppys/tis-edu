@@ -87,7 +87,7 @@ function GoogleReviews() {
           className="w-full h-full opacity-50 absolute object-cover"
         />
         <div className="text-white py-20 md:py-0 flex flex-col relative z-20 justify-center items-center px-8">
-          <h3 className="font-[Mirador800] text-[clamp(10px,8vw,70px)] md:text-[clamp(10px,2.5vw,70px)] text-center">
+          <h3 className="font-[Mirador800] text-[clamp(10px,8vw,70px)] md:text-[clamp(10px,2.5vw,70px)] text-center leading-tight">
             Google Reviews
           </h3>
           <svg
@@ -111,19 +111,6 @@ function GoogleReviews() {
               className="svg-elem-1"
             />
           </svg>
-          {/* <h2
-            className="px-0 md:px-20 text-[clamp(10px,4.5vw,25px)] md:text-[clamp(10px,1.1vw,25px)]"
-            style={{
-              fontFamily: "TT Chocolates",
-            }}
-          >
-            The school has ample support services in place for its students to
-            thrive both physically and mentally, including a Wellness Infirmary,
-            equipped with everything that one may need to keep them healthy. The
-            school has ample support services in place for its students to
-            thrive both physically and mentally, including a Wellness Infirmary,
-            equipped with everything that one may need to keep them healthy. 
-          </h2> */}
         </div>
       </div>
       <div className="w-full py-8 md:py-14 md:w-[58%] flex items-center justify-center backgroundGoogle">
@@ -147,7 +134,7 @@ function GoogleReviews() {
                     style={{ fontFamily: "TT Chocolates" }}
                   >
                     <div className="flex h-full justify-between mb-4 items-center">
-                      <div className="w-fit flex flex-col text-[14px] gap-2 md:gap-4 justify-between">
+                      <div className="w-fit flex flex-col leading-tight text-[clamp(10px,3.5vw,45px)] md:text-[clamp(10px,1vw,45px)] gap-2 md:gap-4 justify-between">
                         <StarRatings
                           rating={feature.rating}
                           starRatedColor="#b90124"
@@ -159,9 +146,6 @@ function GoogleReviews() {
                         <h2 className="leading-none font-extrabold text-left text-[clamp(10px,4.5vw,45px)] md:text-[clamp(10px,1.6vw,45px)]">
                           {feature.name}
                         </h2>
-                        {/* <h3 className="text-[clamp(10px,4vw,45px)] md:text-[clamp(8px,1vw,45px)] leading-none font-extrabold text-left ">
-                          {feature.reviewBy}
-                        </h3> */}
                       </div>
                       <Image
                         src={feature.image}
@@ -169,7 +153,7 @@ function GoogleReviews() {
                         className="w-[40%] aspect-square rounded-full h-fit object-cover"
                       />
                     </div>
-                    <h2 className="text-left text-[clamp(10px,3vw,45px)] md:text-[clamp(10px,0.8vw,45px)]">
+                    <h2 className="text-left text-[clamp(10px,3vw,45px)] md:text-[clamp(10px,0.8vw,45px)] leading-tight">
                       {feature.description}
                     </h2>
                   </div>
@@ -177,10 +161,10 @@ function GoogleReviews() {
               ))}
             </Swiper>
           </div>
-          <div className="flex space-x-10 pt-8 justify-end pr-10">
+          <div className="flex space-x-4 md:space-x-10 pt-8 justify-end pr-10">
             <button
               onClick={handlePrevClick}
-              className={`pointer-events-auto shadow-2xl text-black h-[40px] w-[40px] bg-[#60bab1] flex items-center justify-center text-[30px] ${
+              className={`pointer-events-auto shadow-2xl p-3 md:p-[0.5%] text-black h-fit w-fit bg-[#60bab1] flex items-center justify-center text-[clamp(10px,5vw,45px)] md:text-[clamp(10px,1.6vw,45px)] leading-none ${
                 activeIndex === 0
                   ? "cursor-not-allowed opacity-50"
                   : "active:scale-90"
@@ -191,7 +175,7 @@ function GoogleReviews() {
             </button>
             <button
               onClick={handleNextClick}
-              className={`pointer-events-auto shadow-2xl text-black h-[40px] w-[40px] bg-[#60bab1] flex items-center justify-center text-[30px] ${
+              className={`pointer-events-auto shadow-2xl p-3 md:p-[0.5%] text-black h-fit w-fit bg-[#60bab1] flex items-center justify-center text-[clamp(10px,5vw,45px)] md:text-[clamp(10px,1.6vw,45px)] leading-none ${
                 activeIndex === features.length - 1
                   ? "cursor-not-allowed opacity-50"
                   : "active:scale-90"

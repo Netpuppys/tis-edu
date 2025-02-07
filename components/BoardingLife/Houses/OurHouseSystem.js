@@ -46,7 +46,7 @@ export default function OurHousesystem() {
         </div>
       </div>
       <div className="py-8 md:py-14">
-        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+        <h2 className="text-[clamp(10px,7vw,50px)] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           Investiture <span className="text-[#b90124]">Ceremony</span>
           <Image
             className="ml-auto w-fit max-w-[60%]"

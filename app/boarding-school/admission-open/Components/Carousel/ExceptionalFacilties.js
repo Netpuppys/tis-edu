@@ -118,7 +118,7 @@ function ExceptionalFacilties() {
   return (
     <div>
       <div className="flex flex-col items-center justify-center pb-10">
-        <h3 className="text-[#b90124] text-center font-[TTChocolatesBold] text-[30px] md:text-[50px]">
+        <h3 className="text-[#b90124] text-center font-[TTChocolatesBold] leading-tight text-[clamp(10px,7.5vw,60px)] md:text-[clamp(10px,2.5vw,50px)]">
           Exceptional Facilities At TIS
         </h3>
         <span ref={ref}>
@@ -162,11 +162,11 @@ function ExceptionalFacilties() {
                   className="w-full h-[180px] md:h-full md:w-[50%] mx-auto flex flex-col justify-center px-3 md:px-[2vw] py-4 md:py-0"
                 >
                   <div>
-                    <h2 className="text-[22px] md:text-[clamp(10px,2.084vw,60px)] leading-none font-extrabold text-left mb-4">
+                    <h2 className="text-[clamp(10px,7vw,60px)] md:text-[clamp(10px,2vw,50px)] leading-tight font-extrabold text-left mb-4">
                       {feature.name}
                     </h2>
                   </div>
-                  <p className="mb-4 text-[16px] md:text-[clamp(10px,1.15vw,60px)]">
+                  <p className="mb-4 text-[clamp(10px,4vw,60px)] md:text-[clamp(10px,1.1vw,60px)] leading-tight">
                     {feature.description}
                   </p>
                 </div>

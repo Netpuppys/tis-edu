@@ -170,7 +170,7 @@ export default function Infirmary() {
           caring and capable hands.
         </h2>
         <div className="py-8 md:py-[3%]">
-          <h2 className="text-[30px] px-4 md:px-0 w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] leading-tight text-[#b90124] text-center font-[TTChocolates]">
+          <h2 className="text-[clamp(10px,7vw,50px)] px-4 md:px-0 w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] leading-tight text-[#b90124] text-center font-[TTChocolates]">
             Hospital Collaborations
             <Image
               className="ml-auto w-fit max-w-[60%]"
@@ -229,7 +229,7 @@ export default function Infirmary() {
           />
         </div>
         <div className="py-8 md:py-[3%]">
-          <h2 className="text-[30px] px-4 md:px-0 w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] leading-tight text-[#b90124] text-center font-[TTChocolates]">
+          <h2 className="text-[clamp(10px,7vw,50px)] px-4 md:px-0 w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] leading-tight text-[#b90124] text-center font-[TTChocolates]">
             Infirmary Staff
             <Image className="ml-auto w-[90%]" src={yellowLine} alt="" />
           </h2>

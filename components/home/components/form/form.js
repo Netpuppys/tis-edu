@@ -252,7 +252,7 @@ function Form() {
             onSubmit={handleSubmit}
             className="w-full px-4 md:px-10 py-6 flex flex-col justify-center items-center"
           >
-            <h3 className="font-[TTChocolatesBold] w-fit text-[#1C1C1C] text-[clamp(10px,1.5vw,55px)] text-center border-b-2 border-[#1C1C1C]">
+            <h3 className="font-[TTChocolatesBold] w-fit text-[#1C1C1C] text-[clamp(10px,5vw,55px)] md:text-[clamp(10px,1.5vw,55px)] text-center border-b-2 border-[#1C1C1C]">
               Enquire Now!
             </h3>
             <div className="flex flex-col md:flex-row w-full items-center justify-center gap-3 pt-5">

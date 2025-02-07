@@ -70,7 +70,7 @@ function FeeStructure() {
       </div>
 
       <div className="py-8 md:py-14">
-        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+        <h2 className="text-[clamp(10px,7vw,50px)] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           Mode of <span className="text-[#b90124]">Payment</span>
           <Image
             className="ml-auto w-fit max-w-[60%]"
@@ -97,7 +97,7 @@ function FeeStructure() {
         </h2>
       </div>
       <div className="py-8 md:py-14">
-        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+        <h2 className="text-[clamp(10px,7vw,50px)] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           Bank Details
           <Image
             className="ml-auto w-fit max-w-[60%]"

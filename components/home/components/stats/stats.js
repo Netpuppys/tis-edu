@@ -85,10 +85,10 @@ function NewStats() {
                   }}
                 >
                   <Image src={stat.icon} alt="" className="w-fit h-fit mb-3" />
-                  <h3 className="text-[#3D3D3D] text-[clamp(10px,3vw,70px)] font-light">
+                  <h3 className="text-[#3D3D3D] text-[clamp(10px,6vw,70px)] md:text-[clamp(10px,3vw,70px)] font-light">
                     {stat.number}
                   </h3>
-                  <h3 className="text-base md:text-lg text-[#707070]">
+                  <h3 className="text-[clamp(10px,3.5vw,70px)] md:text-[clamp(10px,1.1vw,70px)] text-[#707070]">
                     {stat.title}
                   </h3>
                 </div>

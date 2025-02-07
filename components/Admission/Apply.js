@@ -260,7 +260,7 @@ const Apply = () => {
                 onClick={() => handleStepClick(index)}
               >
                 <div
-                  className={`p-2 flex items-center text-[clamp(10px,2.2vw,50px)] border-2 border-white relative z-20 !aspect-square w-20 h-20 font-[Mirador800] justify-center rounded-full bg-[#D9D9D9] ${
+                  className={`p-2 flex items-center text-[clamp(10px,7vw,50px)] md:text-[clamp(10px,2.2vw,50px)] border-2 border-white relative z-20 !aspect-square w-20 h-20 font-[Mirador800] justify-center rounded-full bg-[#D9D9D9] ${
                     index === currentStep ? "text-[#b90124]" : "text-[#574444]"
                   }`}
                 >
@@ -317,7 +317,7 @@ const Apply = () => {
               src={steps[currentStep].icon}
               alt=""
             />
-            <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] mt-4 text-center font-bold font-[Mirador800]">
+            <h2 className="text-[clamp(10px,7vw,50px)] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] mt-4 text-center font-bold font-[Mirador800]">
               {steps[currentStep].title}
               <Image className="ml-auto w-fit" src={yellowLine} alt="" />
             </h2>
@@ -333,7 +333,7 @@ const Apply = () => {
         )}
       </div>
       <div className="py-8 md:py-14">
-        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+        <h2 className="text-[clamp(10px,7vw,50px)] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           How to <span className="text-[#b90124]">Apply</span>
           <Image
             className="ml-auto w-fit max-w-[60%]"
@@ -363,7 +363,7 @@ const Apply = () => {
         </h2>
       </div>
       <div className="py-8 md:py-14">
-        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+        <h2 className="text-[clamp(10px,7vw,50px)] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           Registration <span className="text-[#b90124]">Form</span>
           <Image
             className="ml-auto w-fit max-w-[60%]"

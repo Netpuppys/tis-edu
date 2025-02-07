@@ -23,7 +23,7 @@ const ContactUs = () => {
       />
 
       <div className="w-[90%] mx-auto py-8 md:py-16">
-        <h2 className="text-[30px] pb-4 md:pb-8 w-fit md:ml-[25%] md:text-[clamp(10px,2.5vw,50px)] font-bold font-[Mirador800]">
+        <h2 className="text-[clamp(10px,7vw,50px)] pb-4 md:pb-8 w-fit md:ml-[25%] md:text-[clamp(10px,2.5vw,50px)] font-bold font-[Mirador800]">
           Lets <span className="text-[#b90124]">Talk</span>
         </h2>
         <h2

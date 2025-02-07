@@ -59,7 +59,7 @@ export default function WidthrawalPolicy() {
         headerImgMobile={HeaderWithdrawalMobile}
       />
       <div className="pt-8 md:pt-14">
-        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+        <h2 className="text-[clamp(10px,7vw,50px)] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           New{" "}
           <span className="text-[#b90124]">
             Students
@@ -133,7 +133,7 @@ export default function WidthrawalPolicy() {
         </h2>
       </div>
       <div className="pt-8 md:pt-14">
-        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+        <h2 className="text-[clamp(10px,7vw,50px)] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           Existing{" "}
           <span className="text-[#b90124]">
             Students
@@ -198,7 +198,7 @@ export default function WidthrawalPolicy() {
         </h2>
       </div>
       <div className="mt-8 md:mt-14 w-[90%] md:w-[70%] mx-auto border-[#b90124] border-2 rounded-3xl">
-        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+        <h2 className="text-[clamp(10px,7vw,50px)] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           Note{" "}
           <Image
             className="ml-auto w-fit max-w-[60%]"

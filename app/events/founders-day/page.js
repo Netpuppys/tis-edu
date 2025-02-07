@@ -320,11 +320,11 @@ export default function EventConfluencePage() {
                 />
                 <div className="absolute z-10 bg-[#b90124] bg-opacity-70 w-full h-full transition-all ease-in duration-700 translate-y-full group-hover:translate-y-0"></div>
                 <div className="absolute z-20">
-                  <h3 className="font-[TTChocolatesBold] w-fit mx-auto text-[clamp(10px,1.8vw,50px)] text-white text-center">
+                  <h3 className="font-[TTChocolatesBold] w-fit mx-auto text-[clamp(10px,5vw,50px)] md:text-[clamp(10px,1.5vw,50px)] leading-tight text-white text-center">
                     {cards.title}
                   </h3>
                   <h3
-                    className="hidden group-hover:flex translate-y-full group-hover:translate-y-0 max-w-[70%] px-4 mx-auto text-[clamp(10px,1vw,50px)] text-white text-center"
+                    className="hidden group-hover:flex translate-y-full group-hover:translate-y-0 max-w-[70%] px-4 mx-auto text-[clamp(10px,3.5vw,50px)] md:text-[clamp(10px,1vw,50px)] leading-tight text-white text-center"
                     style={{
                       fontFamily: "TT Chocolates",
                     }}
@@ -337,7 +337,7 @@ export default function EventConfluencePage() {
           </div>
         ) : (
           <div>
-            <h2 className="text-[clamp(10px,7vw,60px)] md:text-[clamp(10px,2.5vw,50px)] font-[Mirador800]">
+            <h2 className="text-[clamp(10px,7vw,60px)] md:text-[clamp(10px,2.5vw,50px)] leading-tight font-[Mirador800]">
               <span className="text-[#b90124]">
                 {selectedCard.title.split(" ")[0]}
               </span>{" "}
@@ -398,11 +398,11 @@ export default function EventConfluencePage() {
                       />
                       <div className="absolute z-10 bg-[#b90124] bg-opacity-70 w-full h-full transition-all ease-in duration-700 translate-y-full group-hover:translate-y-0"></div>
                       <div className="absolute z-20">
-                        <h3 className="font-[TTChocolatesBold] w-fit mx-auto text-[clamp(10px,1.3vw,50px)] text-white text-center">
+                        <h3 className="font-[TTChocolatesBold] w-fit mx-auto text-[clamp(10px,4.5vw,50px)] md:text-[clamp(10px,1.2vw,50px)] leading-tight text-white text-center">
                           {cards.title}
                         </h3>
                         <h3
-                          className="hidden group-hover:flex translate-y-full group-hover:translate-y-0 max-w-[70%] px-4 mx-auto text-[clamp(10px,0.5vw,50px)] text-white text-center"
+                          className="hidden group-hover:flex translate-y-full group-hover:translate-y-0 max-w-[70%] px-4 mx-auto text-[clamp(10px,3vw,50px)] md:text-[clamp(10px,0.8vw,50px)] leading-tight text-white text-center"
                           style={{
                             fontFamily: "TT Chocolates",
                           }}
