@@ -122,10 +122,10 @@ function AwardSection() {
           </div>
           <button
             onClick={handleMoreAwards}
-            className="see-all py-2 scale-90 hover:scale-100 transition-all ease-in duration-200 px-10 border-2 flex items-center justify-center uppercase text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] rounded-full text-[#5E5E5E] font-black font-[TTChocolatesBold] border-[#DBC79F]"
+            className="see-all py-2 scale-90 hover:scale-100 transition-all ease-in duration-200 px-10 border-2 flex items-center justify-center uppercase text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] leading-tight rounded-full text-[#5E5E5E] font-black font-[TTChocolatesBold] border-[#DBC79F]"
           >
             See All Awards{" "}
-            <span className="text-[#DBC79F] font-light font-[TTChocolates] ml-[10%] text-[clamp(15px,6vw,30px)] md:text-[clamp(18px,1.7vw,45px)] leading-none">
+            <span className="text-[#DBC79F] font-light font-[TTChocolates] ml-[10%] text-[clamp(10px,6vw,30px)] md:text-[clamp(10px,1.7vw,45px)] leading-none">
               <FaRightLong />
             </span>
           </button>

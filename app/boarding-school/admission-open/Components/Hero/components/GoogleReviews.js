@@ -87,7 +87,7 @@ function GoogleReviews() {
           className="w-full h-full opacity-50 absolute object-cover"
         />
         <div className="text-white py-20 md:py-0 flex flex-col relative z-20 justify-center items-center px-8">
-          <h3 className="font-[Mirador800] text-[clamp(20px,8vw,70px)] md:text-[clamp(20px,2.5vw,70px)] text-center">
+          <h3 className="font-[Mirador800] text-[clamp(10px,8vw,70px)] md:text-[clamp(10px,2.5vw,70px)] text-center">
             Google Reviews
           </h3>
           <svg
@@ -112,7 +112,7 @@ function GoogleReviews() {
             />
           </svg>
           {/* <h2
-            className="px-0 md:px-20 text-[clamp(14px,4.5vw,25px)] md:text-[clamp(10px,1.1vw,25px)]"
+            className="px-0 md:px-20 text-[clamp(10px,4.5vw,25px)] md:text-[clamp(10px,1.1vw,25px)]"
             style={{
               fontFamily: "TT Chocolates",
             }}
@@ -156,10 +156,10 @@ function GoogleReviews() {
                           starSpacing="2px"
                           name="rating"
                         />
-                        <h2 className="leading-none font-extrabold text-left text-[clamp(14px,4.5vw,45px)] md:text-[clamp(10px,1.6vw,45px)]">
+                        <h2 className="leading-none font-extrabold text-left text-[clamp(10px,4.5vw,45px)] md:text-[clamp(10px,1.6vw,45px)]">
                           {feature.name}
                         </h2>
-                        {/* <h3 className="text-[clamp(13px,4vw,45px)] md:text-[clamp(8px,1vw,45px)] leading-none font-extrabold text-left ">
+                        {/* <h3 className="text-[clamp(10px,4vw,45px)] md:text-[clamp(8px,1vw,45px)] leading-none font-extrabold text-left ">
                           {feature.reviewBy}
                         </h3> */}
                       </div>
@@ -169,7 +169,7 @@ function GoogleReviews() {
                         className="w-[40%] aspect-square rounded-full h-fit object-cover"
                       />
                     </div>
-                    <h2 className="text-left text-[clamp(13px,3vw,45px)] md:text-[clamp(10px,0.8vw,45px)]">
+                    <h2 className="text-left text-[clamp(10px,3vw,45px)] md:text-[clamp(10px,0.8vw,45px)]">
                       {feature.description}
                     </h2>
                   </div>

@@ -456,7 +456,7 @@ function Sport() {
         style={{
           fontFamily: "TT Chocolates",
         }}
-        className="w-full px-8 md:px-0 md:w-[75%] pt-8 md:pt-14 mx-auto text-justify md:text-center text-[clamp(15px,4.5vw,30px)] font-normal md:text-[clamp(18px,1.3vw,45px)] "
+        className="w-full px-8 md:px-0 md:w-[75%] pt-8 md:pt-14 mx-auto text-justify md:text-center text-[clamp(10px,4.5vw,30px)] font-normal md:text-[clamp(10px,1.3vw,45px)] leading-tight "
       >
         As a Sports Boarding school in Dehradun, Tula’s offers its students the
         best sporting infrastructure of any educational institution in Dehradun.
@@ -491,14 +491,14 @@ function Sport() {
                 index % 2 === 0 ? "pl-0 md:pl-16" : "pr-0 md:pr-16"
               }`}
             >
-              <h2 className="font-[TTChocolatesBold] text-[#b90124] font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)]">
+              <h2 className="font-[TTChocolatesBold] text-[#b90124] font-semibold text-[30px] md:text-[clamp(10px,2.5vw,50px)]">
                 {data.title}
               </h2>
               <h2
                 style={{
                   fontFamily: "TT Chocolates",
                 }}
-                className={`text-[clamp(15px,4.5vw,30px)] pt-2 md:pt-4 md:text-[clamp(18px,1.3vw,45px)] text-black font-normal`}
+                className={`text-[clamp(10px,4.5vw,30px)] pt-2 md:pt-4 md:text-[clamp(10px,1.3vw,45px)] leading-tight text-black font-normal`}
               >
                 {data.description}
               </h2>

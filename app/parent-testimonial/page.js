@@ -22,7 +22,7 @@ function page() {
         style={{
           fontFamily: "TT Chocolates",
         }}
-        className="w-full px-8 md:px-0 md:w-[75%] py-8 md:py-14 mx-auto text-justify md:text-center text-[clamp(15px,4.5vw,30px)] font-normal md:text-[clamp(18px,1.3vw,45px)] "
+        className="w-full px-8 md:px-0 md:w-[75%] py-8 md:py-14 mx-auto text-justify md:text-center text-[clamp(10px,4.5vw,30px)] font-normal md:text-[clamp(10px,1.3vw,45px)] leading-tight "
       >
         At Tula’s, we believe in shaping the leaders of tomorrow. But don’t just
         take our word for it, listen to the heartfelt stories of our parents as

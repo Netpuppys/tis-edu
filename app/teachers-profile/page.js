@@ -132,7 +132,7 @@ function TeachersProfile() {
         headerImgMobile={bannerImg}
       />
       <div className="py-8 md:py-[3%]">
-        <h2 className="text-[30px] px-4 md:px-0 w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] leading-tight text-[#b90124] text-center font-[TTChocolates]">
+        <h2 className="text-[30px] px-4 md:px-0 w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] leading-tight text-[#b90124] text-center font-[TTChocolates]">
           Meet The Faculty Team
           <Image
             className="ml-auto w-fit max-w-[60%]"
@@ -144,7 +144,7 @@ function TeachersProfile() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-full px-4 md:px-0 text-center mt-4 md:mt-8 text-[clamp(15px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
+          className="w-full px-4 md:px-0 text-center mt-4 md:mt-8 text-[clamp(10px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
         >
           Meet our diverse team of World Class Professors
         </h2>

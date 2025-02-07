@@ -42,7 +42,7 @@ function FourthSection() {
       <br />
       <span
         ref={ref}
-        className="circled-text-sports relative text-[clamp(15px,7vw,100px)] md:text-[clamp(15px,2.5vw,100px)]"
+        className="circled-text-sports relative text-[clamp(10px,7vw,100px)] md:text-[clamp(10px,2.5vw,100px)]"
       >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="4.58 2.97 61.39 54.41">
           <path
@@ -205,10 +205,10 @@ function FourthSection() {
       id="4"
     >
       <div className="w-full px-3 md:px-0 h-full">
-        <p className="w-full text-center font-[Mirador800] text-[#b90124] text-[clamp(15px,12vw,100px)] md:text-[clamp(15px,3.5vw,100px)]">
+        <p className="w-full text-center font-[Mirador800] text-[#b90124] text-[clamp(10px,12vw,100px)] md:text-[clamp(10px,3.5vw,100px)]">
           Sports ?
         </p>
-        <p className="w-full text-center font-[Mirador800] text-[clamp(15px,6vw,100px)] md:text-[clamp(15px,2vw,100px)]">
+        <p className="w-full text-center font-[Mirador800] text-[clamp(10px,6vw,100px)] md:text-[clamp(10px,2vw,100px)]">
           {title}
         </p>
         {/* <p className="sub-title">{subTitle}</p> */}
@@ -302,7 +302,7 @@ function FourthSection() {
                         className="w-full h-full object-cover hover:scale-110 transition-all ease-in duration-500 "
                       />
                     </div>
-                    <p className="text-center text-[#000] font-semibold font-[TTChocolates] uppercase text-[clamp(15px,4.5vw,100px)] md:text-[clamp(15px,1.3vw,100px)]">
+                    <p className="text-center text-[#000] font-semibold font-[TTChocolates] uppercase text-[clamp(10px,4.5vw,100px)] md:text-[clamp(10px,1.3vw,100px)]">
                       {image.title}
                     </p>
                   </div>

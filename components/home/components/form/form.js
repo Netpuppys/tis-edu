@@ -199,7 +199,7 @@ function Form() {
           {!isMobile && (
             <div className="bg-white flex flex-col justify-between rounded-3xl px-7 py-7 pb-4 w-[50%] max-w-[410px]">
               <div className="w-full h-fit flex flex-col">
-                <h3 className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-[TTChocolatesBold] text-black">
+                <h3 className="text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] leading-tight font-[TTChocolatesBold] text-black">
                   Contact Us.
                 </h3>
                 <a
@@ -252,7 +252,7 @@ function Form() {
             onSubmit={handleSubmit}
             className="w-full px-4 md:px-10 py-6 flex flex-col justify-center items-center"
           >
-            <h3 className="font-[TTChocolatesBold] w-fit text-[#1C1C1C] text-[clamp(20px,1.5vw,55px)] text-center border-b-2 border-[#1C1C1C]">
+            <h3 className="font-[TTChocolatesBold] w-fit text-[#1C1C1C] text-[clamp(10px,1.5vw,55px)] text-center border-b-2 border-[#1C1C1C]">
               Enquire Now!
             </h3>
             <div className="flex flex-col md:flex-row w-full items-center justify-center gap-3 pt-5">

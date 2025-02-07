@@ -162,11 +162,11 @@ function ExceptionalFacilties() {
                   className="w-full h-[180px] md:h-full md:w-[50%] mx-auto flex flex-col justify-center px-3 md:px-[2vw] py-4 md:py-0"
                 >
                   <div>
-                    <h2 className="text-[22px] md:text-[clamp(20px,2.084vw,60px)] leading-none font-extrabold text-left mb-4">
+                    <h2 className="text-[22px] md:text-[clamp(10px,2.084vw,60px)] leading-none font-extrabold text-left mb-4">
                       {feature.name}
                     </h2>
                   </div>
-                  <p className="mb-4 text-[16px] md:text-[clamp(14px,1.15vw,60px)]">
+                  <p className="mb-4 text-[16px] md:text-[clamp(10px,1.15vw,60px)]">
                     {feature.description}
                   </p>
                 </div>

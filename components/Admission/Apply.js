@@ -260,7 +260,7 @@ const Apply = () => {
                 onClick={() => handleStepClick(index)}
               >
                 <div
-                  className={`p-2 flex items-center text-[clamp(20px,2.2vw,50px)] border-2 border-white relative z-20 !aspect-square w-20 h-20 font-[Mirador800] justify-center rounded-full bg-[#D9D9D9] ${
+                  className={`p-2 flex items-center text-[clamp(10px,2.2vw,50px)] border-2 border-white relative z-20 !aspect-square w-20 h-20 font-[Mirador800] justify-center rounded-full bg-[#D9D9D9] ${
                     index === currentStep ? "text-[#b90124]" : "text-[#574444]"
                   }`}
                 >
@@ -289,7 +289,7 @@ const Apply = () => {
                     src={steps[currentStep].icon}
                     alt=""
                   />
-                  <h2 className="text-[clamp(20px,6.5vw,50px)] w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] mt-4 text-center font-bold font-[Mirador800]">
+                  <h2 className="text-[clamp(10px,6.5vw,50px)] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] mt-4 text-center font-bold font-[Mirador800]">
                     {steps[currentStep].title}
                     <Image
                       className="ml-auto w-fit max-w-[60%]"
@@ -301,7 +301,7 @@ const Apply = () => {
                     style={{
                       fontFamily: "TT Chocolates",
                     }}
-                    className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] py-8 md:py-14"
+                    className="text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] leading-tight py-8 md:py-14"
                   >
                     {steps[currentStep].description}
                   </h2>
@@ -317,7 +317,7 @@ const Apply = () => {
               src={steps[currentStep].icon}
               alt=""
             />
-            <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] mt-4 text-center font-bold font-[Mirador800]">
+            <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] mt-4 text-center font-bold font-[Mirador800]">
               {steps[currentStep].title}
               <Image className="ml-auto w-fit" src={yellowLine} alt="" />
             </h2>
@@ -325,7 +325,7 @@ const Apply = () => {
               style={{
                 fontFamily: "TT Chocolates",
               }}
-              className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] pt-8 md:pt-14"
+              className="text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] leading-tight pt-8 md:pt-14"
             >
               {steps[currentStep].description}
             </h2>
@@ -333,7 +333,7 @@ const Apply = () => {
         )}
       </div>
       <div className="py-8 md:py-14">
-        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           How to <span className="text-[#b90124]">Apply</span>
           <Image
             className="ml-auto w-fit max-w-[60%]"
@@ -345,7 +345,7 @@ const Apply = () => {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-[90%] md:w-[60%] mx-auto border-2 rounded-3xl mt-4 md:mt-8 p-8 md:p-14  border-[#b90124] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)]"
+          className="w-[90%] md:w-[60%] mx-auto border-2 rounded-3xl mt-4 md:mt-8 p-8 md:p-14  border-[#b90124] text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] leading-tight"
         >
           Registration is open for grades IV–IX and XI. The school academic
           session starts in the first week of April every year and ends on March
@@ -363,7 +363,7 @@ const Apply = () => {
         </h2>
       </div>
       <div className="py-8 md:py-14">
-        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           Registration <span className="text-[#b90124]">Form</span>
           <Image
             className="ml-auto w-fit max-w-[60%]"
@@ -376,7 +376,7 @@ const Apply = () => {
             style={{
               fontFamily: "TT Chocolates",
             }}
-            className="w-full mx-auto border-2 rounded-3xl mt-4 md:mt-8 p-8 md:p-14  border-[#b90124] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)]"
+            className="w-full mx-auto border-2 rounded-3xl mt-4 md:mt-8 p-8 md:p-14  border-[#b90124] text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] leading-tight"
           >
             Kindly provide the below details true and correct. If the child is
             selected for admission, he/she has to fully abide by the Rules &

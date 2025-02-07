@@ -61,7 +61,7 @@ function TransferCertificate() {
         />
         <div className="w-full">
           <div className="py-2 md:py-5">
-            <h2 className="text-[30px] text-white w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+            <h2 className="text-[30px] text-white w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
               Transfer <span className="text-[#b90124]">Certificate</span>
             </h2>
           </div>

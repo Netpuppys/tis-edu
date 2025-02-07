@@ -26,7 +26,7 @@ export default function Curriculum() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-full px-8 md:px-0 md:w-[75%] mx-auto text-justify md:text-center text-[clamp(15px,4.5vw,30px)] font-normal md:text-[clamp(18px,1.3vw,45px)]"
+          className="w-full px-8 md:px-0 md:w-[75%] mx-auto text-justify md:text-center text-[clamp(10px,4.5vw,30px)] font-normal md:text-[clamp(10px,1.3vw,45px)] leading-tight"
         >
           Welcome to Tula’s International School, Dehradun
           <br />
@@ -36,7 +36,7 @@ export default function Curriculum() {
         </h6>
       </div>
       <div className="py-8 md:py-14">
-        <h2 className="text-[clamp(20px,6.5vw,50px)] px-4 w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+        <h2 className="text-[clamp(10px,6.5vw,50px)] px-4 w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           Our <span className="text-[#b90124]">Curriculum</span>
           <Image
             className="ml-auto w-fit max-w-[60%]"
@@ -48,7 +48,7 @@ export default function Curriculum() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-full px-8 md:px-0 md:w-[75%] pt-8 md:pt-14 mx-auto text-justify md:text-start text-[clamp(15px,4.5vw,30px)] font-normal md:text-[clamp(18px,1.3vw,45px)]"
+          className="w-full px-8 md:px-0 md:w-[75%] pt-8 md:pt-14 mx-auto text-justify md:text-start text-[clamp(10px,4.5vw,30px)] font-normal md:text-[clamp(10px,1.3vw,45px)] leading-tight"
         >
           At TIS, we follow the CBSE course structure. This structure along with
           our curriculum, shaped by top academicians, prioritizes reasoning and
@@ -82,7 +82,7 @@ export default function Curriculum() {
         </h6>
       </div>
       <div className="pb-8 md:pb-14">
-        <h2 className="text-[clamp(20px,6.5vw,50px)] px-4 w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+        <h2 className="text-[clamp(10px,6.5vw,50px)] px-4 w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           ACADEMIC CLASSES – <span className="text-[#b90124]">IV to XII</span>
           <Image
             className="ml-auto w-fit max-w-[60%]"
@@ -94,7 +94,7 @@ export default function Curriculum() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-full px-8 md:px-0 md:w-[75%] pt-8 md:pt-14 mx-auto text-justify md:text-start text-[clamp(15px,4.5vw,30px)] font-normal md:text-[clamp(18px,1.3vw,45px)]"
+          className="w-full px-8 md:px-0 md:w-[75%] pt-8 md:pt-14 mx-auto text-justify md:text-start text-[clamp(10px,4.5vw,30px)] font-normal md:text-[clamp(10px,1.3vw,45px)] leading-tight"
         >
           <ul className="ml-5 list-disc">
             <li>

@@ -74,7 +74,7 @@ export default function EventConfluence() {
         headerImgMobile={HeaderConfluenceImgMobile}
       />
       <div className="py-8 md:py-14">
-        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           Confluence
           <Image
             className="ml-auto w-fit max-w-[60%]"
@@ -86,7 +86,7 @@ export default function EventConfluence() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-full px-8 md:px-0 md:w-[75%] pt-8 md:pt-14 mx-auto text-[clamp(15px,4.5vw,30px)] font-normal md:text-[clamp(18px,1.3vw,45px)] "
+          className="w-full px-8 md:px-0 md:w-[75%] pt-8 md:pt-14 mx-auto text-[clamp(10px,4.5vw,30px)] font-normal md:text-[clamp(10px,1.3vw,45px)] leading-tight "
         >
           Confluence is the annual cultural fest of Tula’s International School,
           Dehradun in which a no. of events are organized with students of
@@ -114,7 +114,7 @@ export default function EventConfluence() {
             <li>SHUTTER BUG – PHOTOGRAPHY </li>
           </ul>
         </h6>
-        <h2 className="text-[30px] pt-8 md:pt-14 w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+        <h2 className="text-[30px] pt-8 md:pt-14 w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           General <span className="text-[#b90124]">Guidelines</span>
           <Image
             className="ml-auto w-fit max-w-[60%]"
@@ -126,7 +126,7 @@ export default function EventConfluence() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-full px-8 md:px-0 md:w-[75%] pt-8 md:pt-14 mx-auto text-[clamp(15px,4.5vw,30px)] font-normal md:text-[clamp(18px,1.3vw,45px)] "
+          className="w-full px-8 md:px-0 md:w-[75%] pt-8 md:pt-14 mx-auto text-[clamp(10px,4.5vw,30px)] font-normal md:text-[clamp(10px,1.3vw,45px)] leading-tight "
         >
           <ul className="ml-5 list-decimal">
             <li>
@@ -189,14 +189,14 @@ export default function EventConfluence() {
                 index % 2 === 0 ? "pl-0 md:pl-16" : "pr-0 md:pr-16"
               }`}
             >
-              <h2 className="font-[TTChocolatesBold] text-[#b90124] font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)]">
+              <h2 className="font-[TTChocolatesBold] text-[#b90124] font-semibold text-[30px] md:text-[clamp(10px,2.5vw,50px)]">
                 {data.title}
               </h2>
               <h2
                 style={{
                   fontFamily: "TT Chocolates",
                 }}
-                className={`text-[clamp(15px,4.5vw,30px)] pt-2 md:pt-4 md:text-[clamp(18px,1.3vw,45px)] text-black font-normal`}
+                className={`text-[clamp(10px,4.5vw,30px)] pt-2 md:pt-4 md:text-[clamp(10px,1.3vw,45px)] leading-tight text-black font-normal`}
               >
                 {data.description}
               </h2>

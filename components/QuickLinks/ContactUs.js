@@ -23,14 +23,14 @@ const ContactUs = () => {
       />
 
       <div className="w-[90%] mx-auto py-8 md:py-16">
-        <h2 className="text-[30px] pb-4 md:pb-8 w-fit md:ml-[25%] md:text-[clamp(20px,2.5vw,50px)] font-bold font-[Mirador800]">
+        <h2 className="text-[30px] pb-4 md:pb-8 w-fit md:ml-[25%] md:text-[clamp(10px,2.5vw,50px)] font-bold font-[Mirador800]">
           Lets <span className="text-[#b90124]">Talk</span>
         </h2>
         <h2
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="text-center text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)]"
+          className="text-center text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] leading-tight"
         >
           Give Us A Shout-Out And Feel Free To Ask Anything That Interests
         </h2>

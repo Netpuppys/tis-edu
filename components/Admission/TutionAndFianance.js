@@ -86,7 +86,7 @@ function TutionAndFianance() {
         }
       />
       <div className="pt-8 md:pt-14">
-        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           Scholarship &{" "}
           <span className="text-[#b90124]">
             Concession Policy
@@ -101,7 +101,7 @@ function TutionAndFianance() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-[90%] md:w-[60%] mx-auto mt-4 md:mt-8 text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)]"
+          className="w-[90%] md:w-[60%] mx-auto mt-4 md:mt-8 text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] leading-tight"
         >
           At Tula’s, our scholarship selection process is focused on recognizing
           excellence in academics, sports, and the creative & performing arts.
@@ -112,7 +112,7 @@ function TutionAndFianance() {
         </h2>
       </div>
       <div className="pt-8 md:pt-14">
-        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           Tula’s Scholarship Assessment{" "}
           <span className="text-[#b90124]">
             (T.S.A.)
@@ -127,7 +127,7 @@ function TutionAndFianance() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-[90%] md:w-[60%] mx-auto mt-4 md:mt-8 text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)]"
+          className="w-[90%] md:w-[60%] mx-auto mt-4 md:mt-8 text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] leading-tight"
         >
           TIS provides various scholarship programs for Academic & Sports based
           student.  All candidates with exceptional Academic or Sports records
@@ -178,7 +178,7 @@ function TutionAndFianance() {
         </h2>
       </div>
       <div className="pt-8 md:pt-14">
-        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           Tula’s Concession{" "}
           <span className="text-[#b90124]">
             Policy
@@ -193,7 +193,7 @@ function TutionAndFianance() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-[90%] md:w-[60%] mx-auto border-2 rounded-3xl mt-4 md:mt-8 p-8 md:p-14  border-[#b90124] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)]"
+          className="w-[90%] md:w-[60%] mx-auto border-2 rounded-3xl mt-4 md:mt-8 p-8 md:p-14  border-[#b90124] text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] leading-tight"
         >
           <table className="scholarship-table">
             <thead>
@@ -287,7 +287,7 @@ function TutionAndFianance() {
         style={{
           fontFamily: "TT Chocolates",
         }}
-        className="w-[90%] md:w-[60%] mx-auto text-center text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)]"
+        className="w-[90%] md:w-[60%] mx-auto text-center text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] leading-tight"
       >
         WE ARE PROUD THAT WE COULD MAKE A DIFFERENCE TO THE LIVES OF THESE
         CHILDREN AND THEIR PARENTS AND WILL CONTINUE TO DO SO IN THE UPCOMING
@@ -312,7 +312,7 @@ function TutionAndFianance() {
               <Image src={petal1} className="w-[30%]" alt=" " />
               <Image src={data.image} alt="" className="rounded-full w-fit" />
             </div>
-            <h2 className="w-[90%] md:w-full mx-auto text-[clamp(15px,4vw,30px)] md:text-[clamp(14px,1.1vw,45px)]">
+            <h2 className="w-[90%] md:w-full mx-auto text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)]">
               {data.description}
             </h2>
           </div>

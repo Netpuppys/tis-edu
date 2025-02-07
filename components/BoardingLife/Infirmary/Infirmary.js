@@ -147,7 +147,7 @@ export default function Infirmary() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-[90%] md:w-[85%] mx-auto text-center text-[clamp(15px,4.5vw,30px)] leading-tight md:text-[clamp(18px,1.3vw,45px)]"
+          className="w-[90%] md:w-[85%] mx-auto text-center text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] leading-tight"
         >
           At Tula’s, health and safety are at the heart of everything we do—it’s
           a shared responsibility we take seriously as parents and educators.
@@ -170,7 +170,7 @@ export default function Infirmary() {
           caring and capable hands.
         </h2>
         <div className="py-8 md:py-[3%]">
-          <h2 className="text-[30px] px-4 md:px-0 w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] leading-tight text-[#b90124] text-center font-[TTChocolates]">
+          <h2 className="text-[30px] px-4 md:px-0 w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] leading-tight text-[#b90124] text-center font-[TTChocolates]">
             Hospital Collaborations
             <Image
               className="ml-auto w-fit max-w-[60%]"
@@ -199,7 +199,7 @@ export default function Infirmary() {
             {logos.map((logo, index) => (
               <div
                 key={index}
-                className="text-[clamp(15px,4.5vw,30px)] text-center py-1 rounded-full w-full md:w-[calc(33.33%-1rem)] px-4 md:text-[clamp(10px,1.3vw,50px)] leading-tight font-[TTChocolates]"
+                className="text-[clamp(10px,4.5vw,30px)] text-center py-1 rounded-full w-full md:w-[calc(33.33%-1rem)] px-4 md:text-[clamp(10px,1.3vw,50px)] leading-tight font-[TTChocolates]"
               >
                 <Image
                   src={logo.logo}
@@ -229,7 +229,7 @@ export default function Infirmary() {
           />
         </div>
         <div className="py-8 md:py-[3%]">
-          <h2 className="text-[30px] px-4 md:px-0 w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] leading-tight text-[#b90124] text-center font-[TTChocolates]">
+          <h2 className="text-[30px] px-4 md:px-0 w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] leading-tight text-[#b90124] text-center font-[TTChocolates]">
             Infirmary Staff
             <Image className="ml-auto w-[90%]" src={yellowLine} alt="" />
           </h2>

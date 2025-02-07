@@ -38,10 +38,10 @@ function Page() {
         }}
         className="z-[50] px-8 mb-[2vh] pointer-events-auto flex flex-col justify-center items-center"
       >
-        <h3 className="text-[#b90124] text-[clamp(25px,2.2vw,60px)] font-[TTChocolatesBold] font-black">
+        <h3 className="text-[#b90124] text-[clamp(10px,2.2vw,60px)] font-[TTChocolatesBold] font-black">
           Thank You!
         </h3>
-        <h5 className="text-center mb-[1vh] max-w-[600px] md:mb-[2vh] text-black italic text-[clamp(18px,1.1vw,45px)]">
+        <h5 className="text-center mb-[1vh] max-w-[600px] md:mb-[2vh] text-black italic text-[clamp(10px,1.1vw,45px)]">
           Our team will get in touch with you for the next steps. For questions
           or rush request, please email{" "}
           <a href="mailto:info@tis.edu.in" className="text-[#b90124]">
@@ -49,7 +49,7 @@ function Page() {
             info@tis.edu.in
           </a>
         </h5>
-        <p className="text-center text-black text-[clamp(18px,1.1vw,45px)]">
+        <p className="text-center text-black text-[clamp(10px,1.1vw,45px)]">
           You will be redirected to Home Page in {timer} seconds.
         </p>
       </div>

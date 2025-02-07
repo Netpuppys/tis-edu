@@ -600,7 +600,7 @@ function ProminentPersonalities() {
                 style={{
                   textShadow: "0px 5px 16px rgba(0, 0, 0, 0.2)",
                 }}
-                className="font-[Mirador800] w-full px-4 md:px-0 leading-tight text-center text-[clamp(20px,7vw,60px)] md:text-[clamp(20px,3.2vw,80px)] pb-8 text-white"
+                className="font-[Mirador800] w-full px-4 md:px-0 leading-tight text-center text-[clamp(10px,7vw,60px)] md:text-[clamp(10px,3.2vw,80px)] pb-8 text-white"
               >
                 Prominent Personalities
               </h1>
@@ -608,7 +608,7 @@ function ProminentPersonalities() {
           </div>
           <div className="w-full h-full">
             <h2
-              className="px-4 md:px-0 py-8 md:py-[3%] text-[clamp(14px,4.5vw,25px)] md:text-[clamp(10px,1.1vw,25px)] text-center w-full"
+              className="px-4 md:px-0 py-8 md:py-[3%] text-[clamp(10px,4.5vw,25px)] md:text-[clamp(10px,1.1vw,25px)] text-center w-full"
               style={{
                 fontFamily: "TT Chocolates",
               }}

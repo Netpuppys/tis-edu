@@ -214,10 +214,10 @@ function Famous() {
   }, []);
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="font-[Mirador800] text-center pt-8 md:pt-[2%] px-4 text-wrap text-[clamp(20px,6.3vw,55px)] md:text-[clamp(20px,2.3vw,55px)] text-[#b90124] w-fit whitespace-nowrap leading-tight md:leading-none z-10">
+      <div className="font-[Mirador800] text-center pt-8 md:pt-[2%] px-4 text-wrap text-[clamp(10px,6.3vw,55px)] md:text-[clamp(10px,2.3vw,55px)] text-[#b90124] w-fit whitespace-nowrap leading-tight md:leading-none z-10">
         Influential Personalitites On Campus
       </div>
-      <h2 className="text-[#5F5F5F] text-center leading-none font-[darwin-pro] text-[clamp(20px,4.5vw,55px)] pt-6 md:text-[clamp(20px,1.5vw,55px)]">
+      <h2 className="text-[#5F5F5F] text-center leading-none font-[darwin-pro] text-[clamp(10px,4.5vw,55px)] pt-6 md:text-[clamp(10px,1.5vw,55px)]">
         Sports Person/Social Media Influencers
       </h2>
       <div className="w-full h-full overflow-hidden whitespace-nowrap">
@@ -246,7 +246,7 @@ function Famous() {
           ))}
         </div>
       </div>
-      <h2 className="text-[#5F5F5F] leading-none text-center font-[darwin-pro] text-[clamp(20px,4.5vw,55px)] md:text-[clamp(20px,1.5vw,55px)]">
+      <h2 className="text-[#5F5F5F] leading-none text-center font-[darwin-pro] text-[clamp(10px,4.5vw,55px)] md:text-[clamp(10px,1.5vw,55px)]">
         Leaders Of India
       </h2>
       <div className="w-full h-full overflow-hidden whitespace-nowrap">

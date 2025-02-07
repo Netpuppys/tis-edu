@@ -28,7 +28,7 @@ function Headmaster() {
         }
       />
       <div className="py-8 md:py-14">
-        <h2 className="text-[clamp(20px,6.5vw,50px)] px-4 w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+        <h2 className="text-[clamp(10px,6.5vw,50px)] px-4 w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           Mr. Raman <span className="text-[#b90124]">Koushal</span>
           <Image
             className="ml-auto w-fit max-w-[60%]"
@@ -40,7 +40,7 @@ function Headmaster() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-full px-8 md:px-0 md:w-[75%] pt-8 md:pt-14 mx-auto text-justify md:text-center text-[clamp(15px,4.5vw,30px)] font-normal md:text-[clamp(18px,1.3vw,45px)]"
+          className="w-full px-8 md:px-0 md:w-[75%] pt-8 md:pt-14 mx-auto text-justify md:text-center text-[clamp(10px,4.5vw,30px)] font-normal md:text-[clamp(10px,1.3vw,45px)] leading-tight"
         >
           Mr. Raman Koushal, an illustrious luminary in the domain of education,
           and a distinguished faculty member within the hallowed halls of our

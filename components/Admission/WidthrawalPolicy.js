@@ -59,7 +59,7 @@ export default function WidthrawalPolicy() {
         headerImgMobile={HeaderWithdrawalMobile}
       />
       <div className="pt-8 md:pt-14">
-        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           New{" "}
           <span className="text-[#b90124]">
             Students
@@ -74,7 +74,7 @@ export default function WidthrawalPolicy() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-[90%] md:w-[70%] mx-auto border-2 rounded-3xl mt-4 md:mt-8 p-8 md:p-14  border-[#b90124] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)]"
+          className="w-[90%] md:w-[70%] mx-auto border-2 rounded-3xl mt-4 md:mt-8 p-8 md:p-14  border-[#b90124] text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] leading-tight"
         >
           Refund policy for new students. The withdrawal form in the prescribed
           format (available on the School website/PRO Office) should be filled
@@ -99,7 +99,7 @@ export default function WidthrawalPolicy() {
           <br />
           <br />
           <div className="w-full md:w-[90%] mx-auto overflow-scroll">
-            <table className="border border-black border-collapse  text-[clamp(14px,3vw,50px)] md:text-[clamp(10px,1.1vw,40px)] leading-normal">
+            <table className="border border-black border-collapse  text-[clamp(10px,3vw,50px)] md:text-[clamp(10px,1.1vw,40px)] leading-normal">
               <thead>
                 <tr>
                   <th className="p-3 border border-black">Particulars</th>
@@ -133,7 +133,7 @@ export default function WidthrawalPolicy() {
         </h2>
       </div>
       <div className="pt-8 md:pt-14">
-        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           Existing{" "}
           <span className="text-[#b90124]">
             Students
@@ -148,7 +148,7 @@ export default function WidthrawalPolicy() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-[90%] md:w-[70%] mx-auto border-2 rounded-3xl mt-4 md:mt-8 p-8 md:p-14  border-[#b90124] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)]"
+          className="w-[90%] md:w-[70%] mx-auto border-2 rounded-3xl mt-4 md:mt-8 p-8 md:p-14  border-[#b90124] text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] leading-tight"
         >
           <ul className="ml-5 list-disc">
             <li>
@@ -198,7 +198,7 @@ export default function WidthrawalPolicy() {
         </h2>
       </div>
       <div className="mt-8 md:mt-14 w-[90%] md:w-[70%] mx-auto border-[#b90124] border-2 rounded-3xl">
-        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           Note{" "}
           <Image
             className="ml-auto w-fit max-w-[60%]"
@@ -210,7 +210,7 @@ export default function WidthrawalPolicy() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className=" p-8 md:p-14 text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)]"
+          className=" p-8 md:p-14 text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] leading-tight"
         >
           <ul className="list-disc ml-5">
             <li>
@@ -240,7 +240,7 @@ export default function WidthrawalPolicy() {
       </div>
       <button
         onClick={() => window.open(Withdrawal, "_blank")}
-        className=" bg-[#b90124] px-20 text-white py-2 w-fit mx-auto rounded-[4px] flex items-center justify-center text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-[TTChocolates] my-8 md:my-20 self-center"
+        className=" bg-[#b90124] px-20 text-white py-2 w-fit mx-auto rounded-[4px] flex items-center justify-center text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] leading-tight font-[TTChocolates] my-8 md:my-20 self-center"
       >
         Withdrawal Form
       </button>

@@ -43,7 +43,7 @@ function FeeStructure() {
         }
       />
 
-      <div className="w-[90%] md:w-[60%] pt-8 md:pt-14 mx-auto text-[clamp(20px,6.5vw,50px)] md:text-[clamp(20px,2.5vw,50px)] mt-4 text-center font-bold font-[Mirador800]">
+      <div className="w-[90%] md:w-[60%] pt-8 md:pt-14 mx-auto text-[clamp(10px,6.5vw,50px)] md:text-[clamp(10px,2.5vw,50px)] mt-4 text-center font-bold font-[Mirador800]">
         {heading}
         <Image
           className="w-fit ml-auto md:mr-20 max-w-[60%]"
@@ -70,7 +70,7 @@ function FeeStructure() {
       </div>
 
       <div className="py-8 md:py-14">
-        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           Mode of <span className="text-[#b90124]">Payment</span>
           <Image
             className="ml-auto w-fit max-w-[60%]"
@@ -82,7 +82,7 @@ function FeeStructure() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-[90%] md:w-[60%] mx-auto rounded-3xl mt-4 md:mt-8 text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)]"
+          className="w-[90%] md:w-[60%] mx-auto rounded-3xl mt-4 md:mt-8 text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] leading-tight"
         >
           <ul className="ml-5 list-disc">
             <li>
@@ -97,7 +97,7 @@ function FeeStructure() {
         </h2>
       </div>
       <div className="py-8 md:py-14">
-        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+        <h2 className="text-[30px] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           Bank Details
           <Image
             className="ml-auto w-fit max-w-[60%]"
@@ -109,7 +109,7 @@ function FeeStructure() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-[90%] md:w-[60%] text-center text-[#b90124] mx-auto rounded-3xl mt-4 md:mt-8 text-[clamp(15px,5vw,30px)] md:text-[clamp(18px,1.8vw,45px)]"
+          className="w-[90%] md:w-[60%] text-center text-[#b90124] mx-auto rounded-3xl mt-4 md:mt-8 text-[clamp(10px,5vw,30px)] md:text-[clamp(10px,1.8vw,45px)]"
         >
           Bank Account Details to deposit the ‘School-Fee’
         </h2>
@@ -117,7 +117,7 @@ function FeeStructure() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="border-2 rounded-2xl flex md:items-center md:justify-center border-[#b90124] w-[90%] md:min-w-[60%] md:max-w-[900px] mx-auto overflow-scroll md:overflow-hidden mt-4 text-[15px] md:text-[clamp(18px,1.3vw,45px)]"
+          className="border-2 rounded-2xl flex md:items-center md:justify-center border-[#b90124] w-[90%] md:min-w-[60%] md:max-w-[900px] mx-auto overflow-scroll md:overflow-hidden mt-4 text-[clamp(10px,4.5vw,45px)] md:text-[clamp(10px,1.3vw,45px)] leading-tight"
         >
           <div className="min-w-[180px] w-full md:min-w-[240px] md:w-[30%] shadow-[0px_4px_37.6px_0px_rgba(0,0,0,0.25)_inset] bg-[#b90124] text-white rounded-r-2xl">
             {data.map((data, index) => (

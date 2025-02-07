@@ -56,7 +56,7 @@ function ParentsReviews() {
       <div className="w-full px-8 md:px-0 md:w-[75%] mx-auto">
         <div className="w-full flex h-full gap-2 items-start">
           <Image src={invCommaIcon} alt="" className="w-[20px] md:w-[30px]" />
-          <h2 className="border-[#b90124] border-b leading-tight text-[clamp(15px,8vw,60px)] md:text-[clamp(20px,3vw,100px)] font-[900] font-[TTChocolatesBold]">
+          <h2 className="border-[#b90124] border-b leading-tight text-[clamp(10px,8vw,60px)] md:text-[clamp(10px,3vw,100px)] font-[900] font-[TTChocolatesBold]">
             From The{" "}
             <span className="text-[#b90124] font-[Mirador800]">Parents</span>
           </h2>
@@ -65,7 +65,7 @@ function ParentsReviews() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-full pt-2 md:pl-[38px] md:pt-10 text-[clamp(15px,4.5vw,30px)] font-normal md:text-[clamp(18px,1.3vw,45px)] "
+          className="w-full pt-2 md:pl-[38px] md:pt-10 text-[clamp(10px,4.5vw,30px)] font-normal md:text-[clamp(10px,1.3vw,45px)] leading-tight "
         >
           {reviews[activeIndex]}
         </h3>

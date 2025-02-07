@@ -207,7 +207,7 @@ export default function OurManagement() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="text-[#B90124] w-fit font-semibold  text-center text-[clamp(15px,7.5vw,60px)] md:text-[clamp(20px,2.5vw,50px)]"
+          className="text-[#B90124] w-fit font-semibold  text-center text-[clamp(10px,7.5vw,60px)] md:text-[clamp(10px,2.5vw,50px)]"
         >
           Meet our school’s Management
           <Image
@@ -236,7 +236,7 @@ export default function OurManagement() {
                 />
                 <div className="flex absolute text-white items-end justify-between w-full">
                   <div className="flex flex-col justify-center px-4 items-start">
-                    <h3 className="font-[TTChocolatesBold] leading-tight font-semibold text-[clamp(15px,5vw,30px)] md:text-[clamp(20px,1.8vw,50px)]">
+                    <h3 className="font-[TTChocolatesBold] leading-tight font-semibold text-[clamp(10px,5vw,30px)] md:text-[clamp(10px,1.8vw,50px)]">
                       {data.name}
                     </h3>
                     {expandedIndex !== index && (
@@ -298,7 +298,7 @@ export default function OurManagement() {
                   />
                   <div className="flex absolute text-white items-end justify-between w-full">
                     <div className="flex flex-col justify-center px-4 items-start">
-                      <h3 className="font-[TTChocolatesBold] leading-tight font-semibold text-[clamp(15px,5vw,30px)] md:text-[clamp(20px,1.8vw,50px)]">
+                      <h3 className="font-[TTChocolatesBold] leading-tight font-semibold text-[clamp(10px,5vw,30px)] md:text-[clamp(10px,1.8vw,50px)]">
                         {item.name}
                       </h3>
                     </div>
@@ -326,14 +326,14 @@ export default function OurManagement() {
               expandedIndex === 0 && "md:rounded-ss-none"
             } ${expandedIndex === 3 && "md:rounded-se-none"}`}
           >
-            <h3 className="text-[#B90124] text-[clamp(15px,7vw,60px)] leading-tight pb-4 font-[NeueHaasDisplayBold] tracking-wide md:tracking-wider md:text-[clamp(20px,2.5vw,50px)]">
+            <h3 className="text-[#B90124] text-[clamp(10px,7vw,60px)] leading-tight pb-4 font-[NeueHaasDisplayBold] tracking-wide md:tracking-wider md:text-[clamp(10px,2.5vw,50px)]">
               {data[expandedIndex].name} {data[expandedIndex].position}
             </h3>
             <h4
               style={{
                 fontFamily: "TT Chocolates",
               }}
-              className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)]"
+              className="text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] leading-tight"
             >
               {data[expandedIndex].points}
             </h4>
@@ -349,7 +349,7 @@ export default function OurManagement() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-[85%] md:w-[90%] xl:w-[75%] mx-auto text-[clamp(15px,4.5vw,30px)] py-8 md:py-14 md:text-[clamp(18px,1.3vw,45px)]"
+          className="w-[85%] md:w-[90%] xl:w-[75%] mx-auto text-[clamp(10px,4.5vw,30px)] py-8 md:py-14 md:text-[clamp(10px,1.3vw,45px)] leading-tight"
         >
           {data[expandedIndex].description}
         </h4>

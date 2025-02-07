@@ -22,7 +22,7 @@ function MentorMentee() {
         title={"Mentor & Mentee System"}
       />
       <div className="py-8 md:py-[3%]">
-        <h2 className="text-[30px] px-4 md:px-0 w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] leading-tight text-[#b90124] text-center font-[TTChocolates]">
+        <h2 className="text-[30px] px-4 md:px-0 w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] leading-tight text-[#b90124] text-center font-[TTChocolates]">
           Benefits of Mentor-Mentee Program in Boarding School
           <Image
             className="ml-auto w-fit max-w-[60%]"
@@ -34,7 +34,7 @@ function MentorMentee() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-full px-4 md:px-0 text-center mt-4 md:mt-8 text-[clamp(15px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
+          className="w-full px-4 md:px-0 text-center mt-4 md:mt-8 text-[clamp(10px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
         >
           Benefits to the Mentees on Mentor-Mentee Program in Boarding School
         </h2>
@@ -42,7 +42,7 @@ function MentorMentee() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-[90%] md:w-[85%] mx-auto mt-8 text-[clamp(15px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
+          className="w-[90%] md:w-[85%] mx-auto mt-8 text-[clamp(10px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
         >
           <strong className="text-[#b90124]">
             Tula’s International School, Dehradun
@@ -74,7 +74,7 @@ function MentorMentee() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-[90%] md:w-[85%] mx-auto text-[clamp(15px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
+          className="w-[90%] md:w-[85%] mx-auto text-[clamp(10px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
         >
           <strong className="text-[#b90124]">
             1. Enhanced Self-Confidence
@@ -95,7 +95,7 @@ function MentorMentee() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-[90%] md:w-[85%] mx-auto text-[clamp(15px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
+          className="w-[90%] md:w-[85%] mx-auto text-[clamp(10px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
         >
           <strong className="text-[#b90124]">2. Improved Self-Awareness</strong>
           <br />
@@ -113,7 +113,7 @@ function MentorMentee() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-[90%] md:w-[85%] mx-auto text-[clamp(15px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
+          className="w-[90%] md:w-[85%] mx-auto text-[clamp(10px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
         >
           <strong className="text-[#b90124]">
             3. Guidance for Academic Excellence
@@ -132,7 +132,7 @@ function MentorMentee() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-[90%] md:w-[85%] mx-auto text-[clamp(15px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
+          className="w-[90%] md:w-[85%] mx-auto text-[clamp(10px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
         >
           <strong className="text-[#b90124]">
             4. Development of Decision-Making Skills
@@ -151,7 +151,7 @@ function MentorMentee() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-[90%] md:w-[85%] mx-auto text-[clamp(15px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
+          className="w-[90%] md:w-[85%] mx-auto text-[clamp(10px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
         >
           <strong className="text-[#b90124]">
             5. Stronger Communication Skills
@@ -171,7 +171,7 @@ function MentorMentee() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-[90%] md:w-[85%] mx-auto text-[clamp(15px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
+          className="w-[90%] md:w-[85%] mx-auto text-[clamp(10px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
         >
           <strong className="text-[#b90124]">
             6. Enhanced Critical Thinking and Problem-Solving Abilities
@@ -190,7 +190,7 @@ function MentorMentee() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-[90%] md:w-[85%] mx-auto text-[clamp(15px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
+          className="w-[90%] md:w-[85%] mx-auto text-[clamp(10px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
         >
           <strong className="text-[#b90124]">
             7. Emotional Support and Stability
@@ -209,7 +209,7 @@ function MentorMentee() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-[90%] md:w-[85%] mx-auto text-[clamp(15px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
+          className="w-[90%] md:w-[85%] mx-auto text-[clamp(10px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
         >
           <strong className="text-[#b90124]">
             8. Exposure to New Perspectives
@@ -228,7 +228,7 @@ function MentorMentee() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-[90%] md:w-[85%] mx-auto text-[clamp(15px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
+          className="w-[90%] md:w-[85%] mx-auto text-[clamp(10px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
         >
           <strong className="text-[#b90124]">
             9. Increased Motivation and Accountability
@@ -247,7 +247,7 @@ function MentorMentee() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-[90%] md:w-[85%] mx-auto text-[clamp(15px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
+          className="w-[90%] md:w-[85%] mx-auto text-[clamp(10px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
         >
           <strong className="text-[#b90124]">10. Fostering Resilience</strong>
           <br />
@@ -264,7 +264,7 @@ function MentorMentee() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-[90%] md:w-[85%] mx-auto text-[clamp(15px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
+          className="w-[90%] md:w-[85%] mx-auto text-[clamp(10px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
         >
           <strong className="text-[#b90124]">
             11. Improved Interpersonal Relationships
@@ -282,7 +282,7 @@ function MentorMentee() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-[90%] md:w-[85%] mx-auto text-[clamp(15px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
+          className="w-[90%] md:w-[85%] mx-auto text-[clamp(10px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
         >
           <strong className="text-[#b90124]">
             12. Encouragement for Lifelong Learning
@@ -300,7 +300,7 @@ function MentorMentee() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-[90%] md:w-[85%] mx-auto text-[clamp(15px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
+          className="w-[90%] md:w-[85%] mx-auto text-[clamp(10px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
         >
           <strong className="text-[#b90124]">
             13. Clarity in Career Goals
@@ -319,7 +319,7 @@ function MentorMentee() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-[90%] md:w-[85%] mx-auto text-[clamp(15px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
+          className="w-[90%] md:w-[85%] mx-auto text-[clamp(10px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
         >
           <strong className="text-[#b90124]">
             14. Reduced Stress and Anxiety
@@ -336,7 +336,7 @@ function MentorMentee() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-[90%] md:w-[85%] mx-auto text-[clamp(15px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
+          className="w-[90%] md:w-[85%] mx-auto text-[clamp(10px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
         >
           <strong className="text-[#b90124]">
             15. Long-Term Impact of the Program
@@ -357,7 +357,7 @@ function MentorMentee() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="flex justify-center text-white rounded-lg overflow-hidden relative px-6 py-6 md:px-[2%] md:py-[2%] items-center w-[90%] md:w-[85%] mx-auto text-[clamp(15px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
+          className="flex justify-center text-white rounded-lg overflow-hidden relative px-6 py-6 md:px-[2%] md:py-[2%] items-center w-[90%] md:w-[85%] mx-auto text-[clamp(10px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
         >
           <Image
             src={background}

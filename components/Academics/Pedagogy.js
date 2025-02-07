@@ -106,10 +106,10 @@ const Table = () => {
     >
       <thead>
         <tr>
-          <th className="text-[clamp(20px,6vw,50px)] w-[30%] border-b bg-[#b90124] border-white border-collapse p-4 text-center md:text-[clamp(20px,2.5vw,50px)] font-[Mirador800] text-white">
+          <th className="text-[clamp(10px,6vw,50px)] w-[30%] border-b bg-[#b90124] border-white border-collapse p-4 text-center md:text-[clamp(10px,2.5vw,50px)] font-[Mirador800] text-white">
             ASPECTS
           </th>
-          <th className="text-[clamp(20px,6vw,50px)] w-[70%] border-b border-[#b90124] border-collapse p-4 text-center md:text-[clamp(20px,2.5vw,50px)] font-[Mirador800] text-[#b90124]">
+          <th className="text-[clamp(10px,6vw,50px)] w-[70%] border-b border-[#b90124] border-collapse p-4 text-center md:text-[clamp(10px,2.5vw,50px)] font-[Mirador800] text-[#b90124]">
             DESCRIPTION
           </th>
         </tr>
@@ -118,16 +118,16 @@ const Table = () => {
         {data.map((item, index) => (
           <tr key={index}>
             <td
-              className={`text-[clamp(15px,4vw,30px)] ${
+              className={`text-[clamp(10px,4vw,30px)] ${
                 index === data.length - 1 ? "border-none" : "border-b"
-              } bg-[#b90124] border-white text-white border-collapse p-2 md:p-4 text-center font-normal md:text-[clamp(18px,1.3vw,45px)]`}
+              } bg-[#b90124] border-white text-white border-collapse p-2 md:p-4 text-center font-normal md:text-[clamp(10px,1.3vw,45px)] leading-tight`}
             >
               {item.name}
             </td>
             <td
-              className={`text-[clamp(15px,4vw,30px)] ${
+              className={`text-[clamp(10px,4vw,30px)] ${
                 index === data.length - 1 ? "border-none" : "border-b"
-              } border-[#b90124] border-collapse p-2 md:p-4 font-normal md:text-[clamp(18px,1.3vw,45px)]`}
+              } border-[#b90124] border-collapse p-2 md:p-4 font-normal md:text-[clamp(10px,1.3vw,45px)] leading-tight`}
             >
               {item.description}
             </td>
@@ -150,7 +150,7 @@ export default function Pedagogy() {
         headerImgMobile={HeaderPedagogyImg}
       />
       <div className="py-8 md:py-14">
-        <h2 className="text-[clamp(20px,6.5vw,50px)] px-4 w-fit mx-auto md:text-[clamp(20px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
+        <h2 className="text-[clamp(10px,6.5vw,50px)] px-4 w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
           Effective Teaching <span className="text-[#b90124]">Methods</span>
           <Image
             className="ml-auto w-fit max-w-[60%]"
@@ -162,7 +162,7 @@ export default function Pedagogy() {
           style={{
             fontFamily: "TT Chocolates",
           }}
-          className="w-full px-8 md:px-0 md:w-[75%] pt-8 md:pt-14 mx-auto text-justify md:text-center text-[clamp(15px,4.5vw,30px)] font-normal md:text-[clamp(18px,1.3vw,45px)]"
+          className="w-full px-8 md:px-0 md:w-[75%] pt-8 md:pt-14 mx-auto text-justify md:text-center text-[clamp(10px,4.5vw,30px)] font-normal md:text-[clamp(10px,1.3vw,45px)] leading-tight"
         >
           As a premier co-ed residential school, the focus of the curriculum
           development at TIS is to provide an inclusive educational environment

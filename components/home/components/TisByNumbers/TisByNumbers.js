@@ -31,10 +31,10 @@ function TisByNumbers() {
           <div className="relative z-20 flex gap-4 md:gap-10 items-center justify-center">
             <Image className="w-[20%] md:w-[80px]" src={image} alt="" />
             <div className="flex flex-col justify-center items-end">
-              <h2 className="text-white font-[TTChocolates] leading-none text-[clamp(15px,6vw,60px)] md:text-[clamp(20px,2.5vw,100px)]">
+              <h2 className="text-white font-[TTChocolates] leading-none text-[clamp(10px,6vw,60px)] md:text-[clamp(10px,2.5vw,100px)]">
                 DIVE INTO OUR...
               </h2>
-              <h2 className="text-white font-[TTChocolates] leading-none text-[clamp(15px,6vw,60px)] md:text-[clamp(20px,2.5vw,100px)]">
+              <h2 className="text-white font-[TTChocolates] leading-none text-[clamp(10px,6vw,60px)] md:text-[clamp(10px,2.5vw,100px)]">
                 VIRTUAL TOUR
               </h2>
             </div>

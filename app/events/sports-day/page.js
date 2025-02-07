@@ -182,7 +182,7 @@ export default function EventConfluencePage() {
         style={{
           fontFamily: "TT Chocolates",
         }}
-        className="w-full px-8 md:px-0 md:w-[75%] py-8 md:py-14 mx-auto text-justify md:text-center text-[clamp(15px,4.5vw,30px)] font-normal md:text-[clamp(18px,1.3vw,45px)] "
+        className="w-full px-8 md:px-0 md:w-[75%] py-8 md:py-14 mx-auto text-justify md:text-center text-[clamp(10px,4.5vw,30px)] font-normal md:text-[clamp(10px,1.3vw,45px)] leading-tight "
       >
         Tulas' 7th Annual Sports Day is a celebration of energy, determination,
         and teamwork. This event brings together athletes and enthusiasts from
@@ -236,11 +236,11 @@ export default function EventConfluencePage() {
                 /> */}
                 <div className="absolute z-10 bg-[#b90124] bg-opacity-70 w-full h-full transition-all ease-in duration-700 translate-y-full group-hover:translate-y-0"></div>
                 <div className="absolute z-20">
-                  <h3 className="font-[TTChocolatesBold] w-fit mx-auto text-[clamp(20px,1.8vw,50px)] text-white text-center">
+                  <h3 className="font-[TTChocolatesBold] w-fit mx-auto text-[clamp(10px,1.8vw,50px)] text-white text-center">
                     {cards.title}
                   </h3>
                   <h3
-                    className="hidden group-hover:flex translate-y-full group-hover:translate-y-0 max-w-[70%] px-4 mx-auto text-[clamp(16px,1vw,50px)] text-white text-center"
+                    className="hidden group-hover:flex translate-y-full group-hover:translate-y-0 max-w-[70%] px-4 mx-auto text-[clamp(10px,1vw,50px)] text-white text-center"
                     style={{
                       fontFamily: "TT Chocolates",
                     }}
@@ -253,13 +253,13 @@ export default function EventConfluencePage() {
           </div>
         ) : (
           <div>
-            <h2 className="text-[clamp(15px,7vw,60px)] md:text-[clamp(20px,2.5vw,50px)] font-[Mirador800]">
+            <h2 className="text-[clamp(10px,7vw,60px)] md:text-[clamp(10px,2.5vw,50px)] font-[Mirador800]">
               <span className="text-[#b90124]">
                 {selectedCard.title.split(" ")[0]}
               </span>{" "}
               {selectedCard.title.split(" ").slice(1).join(" ")}
             </h2>
-            <p className="w-full md:w-[70%] pb-5 md:pb-10 text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-[TTChocolates]">
+            <p className="w-full md:w-[70%] pb-5 md:pb-10 text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] leading-tight font-[TTChocolates]">
               {selectedCard.description}
             </p>
             <div className="flex flex-col md:flex-row w-full mx-auto gap-8">
@@ -314,11 +314,11 @@ export default function EventConfluencePage() {
                       />
                       <div className="absolute z-10 bg-[#b90124] bg-opacity-70 w-full h-full transition-all ease-in duration-700 translate-y-full group-hover:translate-y-0"></div>
                       <div className="absolute z-20">
-                        <h3 className="font-[TTChocolatesBold] w-fit mx-auto text-[clamp(20px,1.3vw,50px)] text-white text-center">
+                        <h3 className="font-[TTChocolatesBold] w-fit mx-auto text-[clamp(10px,1.3vw,50px)] text-white text-center">
                           {cards.title}
                         </h3>
                         <h3
-                          className="hidden group-hover:flex translate-y-full group-hover:translate-y-0 max-w-[70%] px-4 mx-auto text-[clamp(12px,0.5vw,50px)] text-white text-center"
+                          className="hidden group-hover:flex translate-y-full group-hover:translate-y-0 max-w-[70%] px-4 mx-auto text-[clamp(10px,0.5vw,50px)] text-white text-center"
                           style={{
                             fontFamily: "TT Chocolates",
                           }}

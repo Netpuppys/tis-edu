@@ -64,7 +64,7 @@ export default function Mission() {
       title: "Community Values",
       description: (
         <>
-          <span className="w-full text-[#212121] font-normal font-[TTChocolatesBold] text-[clamp(20px,2vw,100px)]">
+          <span className="w-full text-[#212121] font-normal font-[TTChocolatesBold] text-[clamp(10px,2vw,100px)]">
             Equity:
           </span>
           <br />
@@ -72,7 +72,7 @@ export default function Mission() {
           backgrounds can reach their potential. We believe every student can
           succeed with the right opportunities.
           <p className="py-1"></p>
-          <span className="w-full text-[#212121] font-normal font-[TTChocolatesBold] text-[clamp(20px,2vw,100px)]">
+          <span className="w-full text-[#212121] font-normal font-[TTChocolatesBold] text-[clamp(10px,2vw,100px)]">
             Engagement:
           </span>
           <br />
@@ -117,11 +117,11 @@ export default function Mission() {
               </div>
             </div>
             <div className="flex w-full flex-col items-start justify-center text-black">
-              <h2 className="w-full text-[#212121] font-[Mirador800] text-[clamp(15px,7.5vw,60px)] md:text-[clamp(20px,2.5vw,100px)]">
+              <h2 className="w-full text-[#212121] font-[Mirador800] text-[clamp(10px,7.5vw,60px)] md:text-[clamp(10px,2.5vw,100px)]">
                 {section.title}
               </h2>
               <h3
-                className="w-full text-[#212121] font-normal text-[clamp(16px,1.3vw,40px)]"
+                className="w-full text-[#212121] font-normal text-[clamp(10px,1.3vw,40px)]"
                 style={{
                   fontFamily: "TT Chocolates",
                 }}

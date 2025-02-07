@@ -203,10 +203,10 @@ function FormEnquire({ formPopup }) {
         onSubmit={handleSubmit}
         className="w-full h-fit px-4 md:px-6 py-6 flex flex-col justify-center items-center"
       >
-        <h3 className="font-[TTChocolatesBold] mb-3 [text-shadow:_0px_0.347px_3.468px_rgba(0,0,0,0.40)] leading-none w-fit text-[#1C1C1C] text-[clamp(20px,7vw,55px)] md:text-[clamp(20px,1.8vw,55px)] text-center border-b border-[#B90124]">
+        <h3 className="font-[TTChocolatesBold] mb-3 [text-shadow:_0px_0.347px_3.468px_rgba(0,0,0,0.40)] leading-none w-fit text-[#1C1C1C] text-[clamp(10px,7vw,55px)] md:text-[clamp(10px,1.8vw,55px)] text-center border-b border-[#B90124]">
           ADMISSIONS <span className="text-[#B90124]">OPEN 2025</span>
         </h3>
-        <h3 className="font-[TTChocolatesBold] mb-3 [text-shadow:_0px_0.347px_3.468px_rgba(0,0,0,0.40)] leading-none w-fit text-[#1C1C1C] text-[clamp(20px,6vw,55px)] md:text-[clamp(20px,1.5vw,55px)] text-center border-b border-[#B90124]">
+        <h3 className="font-[TTChocolatesBold] mb-3 [text-shadow:_0px_0.347px_3.468px_rgba(0,0,0,0.40)] leading-none w-fit text-[#1C1C1C] text-[clamp(10px,6vw,55px)] md:text-[clamp(10px,1.5vw,55px)] text-center border-b border-[#B90124]">
           Class <span className="text-[#B90124]">IV - XII</span>
         </h3>
         <div className="flex flex-col w-full items-center justify-center gap-3 pt-5">
