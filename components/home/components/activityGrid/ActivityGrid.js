@@ -177,7 +177,7 @@ function FourthSection() {
         <p className="w-full text-center font-[Mirador800] text-[#b90124] text-[clamp(10px,12vw,100px)] md:text-[clamp(10px,3.5vw,100px)]">
           Sports ?
         </p>
-        <p className="w-full text-center font-[Mirador800] text-[clamp(10px,6vw,100px)] md:text-[clamp(10px,2vw,100px)]">
+        <p className="w-full text-center font-[Mirador800] text-[clamp(10px,6vw,100px)] md:text-[clamp(10px,2vw,100px)] leading-tight">
           {title}
         </p>
       </div>
