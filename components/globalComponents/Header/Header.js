@@ -14,7 +14,7 @@ export default function Header({
   return (
     <div className="h-full w-full">
       <div
-        className="h-full md:min-h-[75vh] flex justify-center items-end bg-black relative"
+        className="h-full md:min-h-[75vh] flex justify-center items-end relative"
         // style={{
         //   backgroundImage: `url(${headerImg.src})`,
         //   backgroundSize: "100% 100%",
@@ -25,14 +25,14 @@ export default function Header({
           <Image
             src={headerImg}
             alt=""
-            className="w-full h-[85vh] object-cover opacity-80 z-0"
+            className="w-full h-[85vh] object-cover z-0"
           />
         </div>
         <div className="block w-full h-full md:hidden">
           <Image
             src={headerImgMobile}
             alt=""
-            className="w-full h-full aspect-[430/560] object-cover opacity-80 z-0"
+            className="w-full h-full aspect-[430/560] object-cover z-0"
           />
         </div>
         <h1
