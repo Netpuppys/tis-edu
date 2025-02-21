@@ -150,6 +150,7 @@ function NavMenu({ handleMenuBtn }) {
         },
         { title: "Celebrations", linkTo: "/events/celebrations/" },
         { title: "Mentor & Mentee System", linkTo: "/mentor-mentee" },
+        { title: "Digital Workstations", linkTo: "/digital-workstations" },
       ],
     },
     {

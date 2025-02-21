@@ -17,9 +17,10 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Caveat&family=Bree+Serif&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Caveat&family=Bree+Serif&family=Pacifico&display=swap"
           rel="stylesheet"
         ></link>
+
         {/* Google Tag Manager */}
         <Script
           strategy="afterInteractive"

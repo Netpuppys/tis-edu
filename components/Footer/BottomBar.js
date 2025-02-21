@@ -17,7 +17,9 @@ function BottomBar() {
           NetPuppys
         </a>{" "}
       </p>
+
       <CompanySocials />
+      
     </div>
   );
 }

@@ -3,7 +3,6 @@
   text-align: center;
   display: block;
   margin-left: 15%;
-
   color: #fff;
 }
 
@@ -15,4 +14,24 @@
   align-items: center;
   justify-content: flex-end;
   padding-inline: 2.5rem;
+}
+@media (max-width: 768px) {
+  .copyright-text {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-left: 0%;
+    font-size: 0.9rem;
+    color: #fff;
+  }
+
+  .bottom-bar {
+    box-sizing: border-box;
+    margin-top: 0%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-inline: 2.5rem;
+  }
 }

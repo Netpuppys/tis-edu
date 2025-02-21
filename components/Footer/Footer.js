@@ -16,6 +16,9 @@ import "../../styles/footer/Footer.css";
 import BottomBar from "./BottomBar";
 import Calendar from "../../public/MandatoryPDF/TIS_CALENDAR_2024__PDF.pdf";
 import Broucher from "../../public/MandatoryPDF/TIS_BROCHURE.pdf";
+import DisciplinaryPolicy from "../../public/MandatoryPDF/DisciplinaryPolicy.pdf";
+import childWelfarePolicy from "../../public/MandatoryPDF/childWelfarePolicy.pdf";
+import MobilePhonePolicy from "../../public/MandatoryPDF/MobilePhonePolicy.pdf";
 import Image from "next/image";
 import Link from "next/link";
 import { UtmContext } from "../globalComponents/utmParams";
@@ -38,18 +41,21 @@ function Footer() {
           linkName: "Brochure",
           linkTo: Broucher,
         },
+        // {
+        //   id: 4,
+        //   linkName: "Registration Form",
+        //   linkTo: "/admission-procedure/",
+        // },
+        // { id: 5, linkName: "Blogs", linkTo: "/blog" },
+        { id: 6, linkName: "Privacy Policy", linkTo: "/privacy-policy/" },
+        { id: 7, linkName: "Terms & Conditions", linkTo: "/terms-conditions/" },
+        { id: 8, linkName: "Disciplinary Policy", linkTo: DisciplinaryPolicy },
+        { id: 9, linkName: "Mobile Phone Policy", linkTo: MobilePhonePolicy },
         {
-          id: 4,
-          linkName: "E-Prospectus",
+          id: 10,
+          linkName: "Child Welfare & Safety Policy",
+          linkTo: childWelfarePolicy,
         },
-        {
-          id: 5,
-          linkName: "Registration Form",
-          linkTo: "/admission-procedure/",
-        },
-        { id: 6, linkName: "Blogs", linkTo: "/blog" },
-        { id: 7, linkName: "Privacy Policy", linkTo: "/privacy-policy/" },
-        { id: 8, linkName: "Terms & Conditions", linkTo: "/terms-conditions/" },
       ],
     },
     // Add more sections as needed
@@ -177,7 +183,6 @@ function Footer() {
               fedena Login
             </a>
           </div>
-
           <BottomBar />
         </>
       )}
@@ -280,6 +285,20 @@ function Footer() {
                 </a>
               ))}
             </div>
+          </div>
+          <div className="bottom-bar">
+            <p className="copyright-text">
+              Copyright © 2025 Tula&apos;s International School, Dehradun | All
+              Rights Reserved <br />
+              Designed and Managed By{" "}
+              <a
+                style={{ textDecoration: "none", color: "#fff" }}
+                target="_blank"
+                href={"https://netpuppys.com"}
+              >
+                NetPuppys
+              </a>{" "}
+            </p>
           </div>
         </>
       )}

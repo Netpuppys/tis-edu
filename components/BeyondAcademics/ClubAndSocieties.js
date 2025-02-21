@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Header from "../globalComponents/Header/Header";
-import HeaderClubsImg from "../../public/Header/ClubsHeader.png";
+import HeaderClubsImg from "../../public/Header/ClubsHeader.webp";
 import bookworm from "../../public/Clubs/Bookworm.png";
 import bookwormIcon from "../../public/Clubs/bookwormIcon.png";
 import pootersWheelIcon from "../../public/Clubs/pootersWheelIcon.png";
