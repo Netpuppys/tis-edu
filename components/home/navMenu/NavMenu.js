@@ -117,6 +117,8 @@ function NavMenu({ handleMenuBtn }) {
           linkTo: "/academics/international-tie-ups/",
         },
         { title: "Publications", linkTo: "/academics/publications/" },
+        { title: "Digital Workstations", linkTo: "/digital-workstations" },
+        { title: "Awadh Tinkering Lab", linkTo: "/awadh-tinkering-lab" },
       ],
     },
     {
@@ -150,7 +152,6 @@ function NavMenu({ handleMenuBtn }) {
         },
         { title: "Celebrations", linkTo: "/events/celebrations/" },
         { title: "Mentor & Mentee System", linkTo: "/mentor-mentee" },
-        { title: "Digital Workstations", linkTo: "/digital-workstations" },
       ],
     },
     {

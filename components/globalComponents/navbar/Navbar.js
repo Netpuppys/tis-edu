@@ -85,6 +85,8 @@ const Navbar = () => {
           linkTo: "/academics/international-tie-ups/",
         },
         { title: "Publications", linkTo: "/academics/publications/" },
+        { title: "Digital Workstations", linkTo: "/digital-workstations" },
+        { title: "Awadh Tinkering Lab", linkTo: "/awadh-tinkering-lab" },
       ],
     },
     {
@@ -118,7 +120,6 @@ const Navbar = () => {
         },
         { title: "Celebrations", linkTo: "/events/celebrations/" },
         { title: "Mentor & Mentee System", linkTo: "/mentor-mentee" },
-        { title: "Digital Workstations", linkTo: "/digital-workstations" },
       ],
     },
     {
@@ -246,7 +247,9 @@ const Navbar = () => {
         </div>
         <nav
           className={`navbar-main-div-global ${
-            scrolled ? "scrolled-navbar" : ""
+            scrolled
+              ? "scrolled-navbar"
+              : "md:bg-[rgba(19,19,19,0.22)] md:backdrop-blur-sm"
           }`}
         >
           <Image
