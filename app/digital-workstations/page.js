@@ -8,7 +8,7 @@ import tagore from "../../public/workstations/tagore.png";
 import steveJobs from "../../public/workstations/steveJobs.png";
 import einstein from "../../public/workstations/einstein.png";
 import shakespeare from "../../public/workstations/shakespeare.png";
-import aryabhatta from "../../public/workstations/aryabhatta.png";
+import aryabhatta from "../../public/workstations/Aryabhatta.png";
 import kabir from "../../public/workstations/kabir.png";
 import galileo from "../../public/workstations/galileo.png";
 import chandragupta from "../../public/workstations/chandragupta.png";
