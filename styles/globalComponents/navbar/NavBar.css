@@ -252,10 +252,10 @@
   top: 4.5rem;
   left: 0;
 
-  background: rgba(0, 0, 0, 0.18);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.32);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10.5px);
-  -webkit-backdrop-filter: blur(10.5px);
+  /* -webkit-backdrop-filter: blur(10.5px); */
 }
 
 .navbar-main-div-global .dropdown-container .dropdown {
@@ -301,7 +301,8 @@
 }
 
 .nav-arrows {
-  width: 1rem;
+  width: fit-content;
+  margin-left: auto;
   color: #fff;
 }
 
@@ -375,11 +376,10 @@
   position: absolute;
   top: 0;
   left: 12rem;
-  /* background: rgba(0, 0, 0, 0.18);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(11.5px);
-  z-index: 1; */
-  background-color: #b90124;
+  background: rgba(0, 0, 0, 0.32);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  /* backdrop-filter: blur(12.5px);
+  -webkit-backdrop-filter: blur(10.5px); */
 }
 /* .form-btn-container {
   position: fixed;

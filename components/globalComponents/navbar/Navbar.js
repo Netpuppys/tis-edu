@@ -76,10 +76,10 @@ const Navbar = () => {
         { title: "Pedagogy", linkTo: "/academics/pedagogy/" },
         { title: "Curriculum", linkTo: "/academics/affilation" },
         { title: "Streams Offered", linkTo: "/academics/streams-offered/" },
-        {
-          title: "Career Counselling",
-          linkTo: "/academics/career-counselling/",
-        },
+        // {
+        //   title: "Counselling",
+        //   nestedLinks: [],
+        // },
         {
           title: "International Tie-Ups",
           linkTo: "/academics/international-tie-ups/",
@@ -120,6 +120,14 @@ const Navbar = () => {
         },
         { title: "Celebrations", linkTo: "/events/celebrations/" },
         { title: "Mentor & Mentee System", linkTo: "/mentor-mentee" },
+        {
+          title: "Career Counselling",
+          linkTo: "/academics/career-counselling/",
+        },
+        {
+          title: "Raasta Students Counselling",
+          linkTo: "/academics/raasta-students-counselling/",
+        },
       ],
     },
     {
@@ -247,10 +255,8 @@ const Navbar = () => {
           </button>
         </div>
         <nav
-          className={`navbar-main-div-global ${
-            scrolled
-              ? "scrolled-navbar"
-              : "md:bg-[rgba(19,19,19,0.22)] md:backdrop-blur-sm"
+          className={`navbar-main-div-global  ${
+            scrolled ? "bg-[#b90124]" : "md:bg-[rgba(19,19,19,0.22)]"
           }`}
         >
           <Image
