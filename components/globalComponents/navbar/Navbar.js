@@ -126,6 +126,7 @@ const Navbar = () => {
       title: "Events",
       nestedLinks: [
         { title: "Sports Day", linkTo: "/events/sports-day/" },
+        { title: "38th National Games", linkTo: "/events/national-games/" },
         { title: "Founders Day", linkTo: "/events/founders-day/" },
         { title: "Confluence", linkTo: "/events/confluence/" },
         {
