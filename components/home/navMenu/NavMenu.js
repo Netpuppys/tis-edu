@@ -171,7 +171,11 @@ function NavMenu({ handleMenuBtn }) {
         { title: "Confluence", linkTo: "/events/confluence/" },
         {
           title: "Prominent Personalities",
-          linkTo: "/prominent-personalities",
+          linkTo: "/prominent-personalities/",
+        },
+        {
+          title: "Sports Achievements",
+          linkTo: "/events/sports-achievements/",
         },
       ],
     },
