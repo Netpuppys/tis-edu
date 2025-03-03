@@ -91,7 +91,7 @@ export default function Ranking() {
   }, [isInViewport]);
 
   return (
-    <div id="10">
+    <div id="8">
       {!isMobile && (
         <div className="bg-[#f8f5f0] px-[2%] py-8">
           <div

@@ -203,13 +203,13 @@ function FormEnquire({ formPopup }) {
         onSubmit={handleSubmit}
         className="w-full h-fit px-4 md:px-6 py-6 flex flex-col justify-center items-center"
       >
-        <h3 className="font-[TTChocolatesBold] mb-3 [text-shadow:_0px_0.347px_3.468px_rgba(0,0,0,0.40)] leading-none w-fit text-[#1C1C1C] text-[clamp(10px,7vw,55px)] md:text-[clamp(10px,1.8vw,55px)] text-center border-b border-[#B90124]">
+        <h3 className="font-[TTChocolatesBold] mb-2 [text-shadow:_0px_0.347px_3.468px_rgba(0,0,0,0.40)] leading-none w-fit text-[#1C1C1C] text-[clamp(10px,7vw,55px)] md:text-[clamp(10px,1.8vw,55px)] text-center border-b border-[#B90124]">
           ADMISSIONS <span className="text-[#B90124]">OPEN 2025</span>
         </h3>
-        <h3 className="font-[TTChocolatesBold] mb-3 [text-shadow:_0px_0.347px_3.468px_rgba(0,0,0,0.40)] leading-none w-fit text-[#1C1C1C] text-[clamp(10px,6vw,55px)] md:text-[clamp(10px,1.5vw,55px)] text-center border-b border-[#B90124]">
+        <h3 className="font-[TTChocolatesBold] mb-2 [text-shadow:_0px_0.347px_3.468px_rgba(0,0,0,0.40)] leading-none w-fit text-[#1C1C1C] text-[clamp(10px,6vw,55px)] md:text-[clamp(10px,1.5vw,55px)] text-center border-b border-[#B90124]">
           Class <span className="text-[#B90124]">IV - XII</span>
         </h3>
-        <div className="flex flex-col w-full items-center justify-center gap-3 pt-5">
+        <div className="flex flex-col w-full items-center justify-center gap-2 pt-5">
           <input
             type="text"
             required
@@ -227,7 +227,7 @@ function FormEnquire({ formPopup }) {
           />
         </div>
 
-        <div className="w-full flex flex-col md:flex-row gap-3 mt-3">
+        <div className="w-full flex flex-col md:flex-row gap-2 mt-2">
           <div className="flex w-full">
             <select
               value={countryCode}
@@ -245,7 +245,7 @@ function FormEnquire({ formPopup }) {
                 ))}
             </select>
             <input
-              type="text"
+              type="tel"
               required
               disabled={verified}
               value={phoneNumber}
@@ -264,7 +264,7 @@ function FormEnquire({ formPopup }) {
           </button>
         </div>
         {!verified && (
-          <div className="w-full flex flex-col md:flex-row gap-3 mt-3">
+          <div className="w-full flex flex-col md:flex-row gap-2 mt-2">
             <input
               type="text"
               value={otp}
@@ -294,7 +294,7 @@ function FormEnquire({ formPopup }) {
           </div>
         )}
 
-        <div className="flex w-full flex-col gap-3 mt-3">
+        <div className="flex w-full flex-col gap-2 mt-2">
           <select
             required
             placeholder=""
@@ -315,7 +315,7 @@ function FormEnquire({ formPopup }) {
           </select>
         </div>
 
-        <div className="flex w-full flex-col gap-3 mt-3">
+        <div className="flex w-full flex-col gap-2 mt-2">
           <select
             value={formData.State}
             onChange={handleStateChange}
@@ -333,7 +333,7 @@ function FormEnquire({ formPopup }) {
               ))}
           </select>
         </div>
-        <div className="flex items-center justify-center gap-4 mt-6 md:mt-3">
+        <div className="flex items-center justify-center gap-4 mt-4 md:mt-2">
           <input
             id="consent1"
             type="checkbox"
@@ -352,7 +352,7 @@ function FormEnquire({ formPopup }) {
         </div>
         <button
           type="submit"
-          className={`w-full bg-[#B90124] text-xl text-[#FFFFFF] cursor-pointer py-2 font-semibold mt-6 md:mt-3 shadow-[0px_3.409px_11.847px_0px_rgba(0,_0,_0,_0.25)]`}
+          className={`w-full bg-[#B90124] text-xl text-[#FFFFFF] cursor-pointer py-2 font-semibold mt-4 md:mt-2 shadow-[0px_3.409px_11.847px_0px_rgba(0,_0,_0,_0.25)]`}
         >
           SUBMIT
         </button>

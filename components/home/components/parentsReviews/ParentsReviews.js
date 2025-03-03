@@ -51,7 +51,7 @@ function ParentsReviews() {
   return (
     <div
       className="w-full flex flex-col justify-center items-center py-2 md:py-10"
-      id="11"
+      id="12"
     >
       <div className="w-full px-8 md:px-0 md:w-[75%] mx-auto">
         <div className="w-full flex h-full gap-2 items-start">

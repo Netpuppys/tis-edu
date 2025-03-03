@@ -6,6 +6,7 @@ import phoneCallGif from "../../../../../public/phone_ringing.gif";
 import Banner1 from "../../../../../public/LandingPage/Banner.webp";
 import { useMobile } from "@/components/globalComponents/IsMobileContext";
 import FormEnquire from "@/components/globalComponents/Form-Popup/formPopup";
+import ranked from "../../../../../public/LandingPage/ranked.png";
 
 function Banner() {
   const { isMobile } = useMobile();
@@ -27,25 +28,32 @@ function Banner() {
         </a>
         <Image src={schoolLogo} className="w-20 md:w-28" alt="school" />
       </div>
-      <div className="z-30 shadow-2xl mt-[55vh] md:mt-0 relative w-[95%] md:w-full max-w-[480px] mx-auto md:mr-[15vw] bg-white rounded-2xl pointer-events-auto">
-        <FormEnquire heading={"Admissions Open 2025"} formPopup={false} />
+      <div className="z-30 mt-[50vh] md:mt-0 w-[95%] md:w-full max-w-[440px] mx-auto relative md:mr-[10vw]">
+        <Image
+          src={ranked}
+          alt=""
+          className="w-[40%] relative mx-auto -mb-14"
+        />
+        <div className="bg-white md:bg-opacity-70 pt-14 shadow-2xl rounded-2xl pointer-events-auto">
+          <FormEnquire heading={"Admissions Open 2025"} formPopup={false} />
+        </div>
       </div>
 
       <div className="h-[100vh] w-full absolute top-0 object-cover">
-        <div className="z-10 w-full h-[65vh] relative md:h-screen overflow-hidden">
+        <div className="z-10 w-full h-[75vh] relative md:h-screen overflow-hidden">
           {!isMobile && (
             <div className="w-full h-full min-w-[100%] min-h-screen relative">
               <Image
                 src={Banner1}
                 alt=""
-                className="w-full h-full object-cover absolute -z-10"
+                className="w-full h-full object-cover relative -z-10"
               />
-              <iframe
+              {/* <iframe
                 src="https://player.vimeo.com/video/1022462718?autoplay=1&loop=1&muted=1&controls=0"
                 className={`w-full h-full absolute object-cover min-h-full min-w-full z-0 scale-125`}
                 title="MAIN_COMPOSITION"
               ></iframe>
-              <script src="https://player.vimeo.com/api/player.js"></script>
+              <script src="https://player.vimeo.com/api/player.js"></script> */}
             </div>
           )}
 
@@ -56,57 +64,14 @@ function Banner() {
                 alt=""
                 className="w-full h-full object-cover -z-10 absolute"
               />
-              <iframe
+              {/* <iframe
                 src="https://player.vimeo.com/video/1022468806?autoplay=1&loop=1&muted=1&controls=0"
                 className={`w-full h-full absolute z-10 top-0 object-cover min-h-full min-w-full scale-125`}
                 title="mobile version"
               ></iframe>
-              <script src="https://player.vimeo.com/api/player.js"></script>
+              <script src="https://player.vimeo.com/api/player.js"></script> */}
             </div>
           )}
-
-          {/* <div className="absolute z-50 flex-col top-0 justify-center text-white hidden md:flex md:animate-translateRightHalf items-start w-full h-[75vh] md:h-screen">
-            <div className="w-full md:w-[50%] text-center flex flex-col items-center justify-center gap-[2vh]">
-              <p
-                className="text-[2.5rem] md:text-[11vh] m-0 leading-[2.875rem] tracking-[0.125rem] font-normal"
-                style={{
-                  fontFamily: "PF din Display",
-                }}
-              >
-                LET&apos;S DO{" "}
-                <span className="text-[3.75rem] md:text-[13vh] font-[Mirador800] italic font-black leading-[3.75rem] md:leading-[15vh]">
-                  it
-                </span>
-              </p>
-              <p
-                className="text-[2.5rem] md:text-[9vh] font-normal uppercase tracking-[0.125rem] leading-[2.875rem]"
-                style={{
-                  fontFamily: "PF din Display",
-                }}
-              >
-                with
-              </p>
-              <p className="text-[3.75rem] md:text-[13vh] font-[Mirador800] pt-[1vh] italic tracking-[0.125rem] leading-[3.75rem] md:leading-[13vh]">
-                {" "}
-                Tula&apos;s
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 268.317 14.075"
-                >
-                  <path
-                    id="mainTextScribble"
-                    d="M404.67,1796.978c47.813-3.483,110.6-.1,152.153-3.214s113.059,2.5,113.059,2.5-196.62,2.328-239.976,5.307c85.143,5.178,211.34,0,211.34,0"
-                    transform="translate(-403.065 -1791.313)"
-                    fill="none"
-                    stroke="white"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="3"
-                  />
-                </svg>
-              </p>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>

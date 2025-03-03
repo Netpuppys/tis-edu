@@ -213,7 +213,7 @@ function Famous() {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center" id="9">
       <div className="font-[Mirador800] text-center pt-8 md:pt-[2%] px-4 text-wrap text-[clamp(10px,6.3vw,55px)] md:text-[clamp(10px,2.3vw,55px)] text-[#b90124] w-fit whitespace-nowrap leading-tight md:leading-none z-10">
         Influential Personalitites On Campus
       </div>

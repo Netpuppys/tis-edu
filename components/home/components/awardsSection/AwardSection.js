@@ -76,7 +76,7 @@ function AwardSection() {
   }
 
   return (
-    <div className="Award-section-main-div" id="9">
+    <div className="Award-section-main-div" id="10">
       <div className="title-div">
         <p className="Awardstitle">Awards</p>
         <p className="title">{title}</p>

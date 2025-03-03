@@ -102,10 +102,10 @@ function SecondSection() {
   ];
 
   return (
-    <div className="relative">
+    <div className="relative" id="2">
       <div className="w-full bg-[#b90124] md:h-[2rem] absolute z-[50] rounded-b-[60px]"></div>
       <Form />
-      <div className="second-main-section" id="2">
+      <div className="second-main-section" >
         <div className="content">
           <div className="background"></div>
           {/* <div className="cards-div-second">

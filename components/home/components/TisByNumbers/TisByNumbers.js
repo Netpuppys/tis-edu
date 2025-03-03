@@ -11,7 +11,7 @@ function TisByNumbers() {
     window.location.href = `/virtual-tour${utmParams}`;
   };
   return (
-    <div id="8">
+    <div id="11">
       {/* <div className="Tis_By_Numbers_main_div" onClick={handleVirtualTourClick}>
         <Image className="image360" src={image} alt="" />
         <p className="title">DIVINE INTO OUR...</p>

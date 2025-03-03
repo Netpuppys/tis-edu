@@ -51,7 +51,7 @@ function NewStats() {
   ];
 
   return (
-    <div>
+    <div id="7">
       <div className="mb-8 w-[70%] md:w-[40%] h-[2px] bg-[#60bab1] mx-auto"></div>
       <div className="grid grid-cols-2 md:grid-cols-4 w-[95%] md:w-[75%] mx-auto">
         {stats.map((stat, index) => (
