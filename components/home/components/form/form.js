@@ -86,7 +86,7 @@ function Form() {
       const updatedFormData = {
         ...formData,
         LeadChannel: utmParams ? 26 : 20,
-        LeadSource: utmParams ? utmSource || 88 : 78,
+        LeadSource: utmParams ? utmSource || 132 : 78,
         LeadCampaign: utmParams
           ? utmCampaign || "Home Page Form Ads"
           : "Home Page Form Organic",
@@ -131,7 +131,7 @@ function Form() {
   const sendOtp = async () => {
     setLoading(true);
     axios
-      .post("https://otpapi.tulas.edu.in/send-otp", {
+      .post("https://otp.tulas.edu.in/send-otp", {
         mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
         message:
           "Hello, ##OTP## is your One Time Password(OTP) forTulas This OTP is valid till 3mins Tulas.", // Replace with your SMS template
@@ -150,7 +150,7 @@ function Form() {
     if (isOtpSent) {
       setLoading(true);
       axios
-        .post("https://otpapi.tulas.edu.in/verify-otp", {
+        .post("https://otp.tulas.edu.in/verify-otp", {
           mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
           otp: otp,
         })
@@ -172,7 +172,7 @@ function Form() {
   const resendOtp = async () => {
     setLoading(true);
     axios
-      .post("https://otpapi.tulas.edu.in/retry-otp", {
+      .post("https://otp.tulas.edu.in/retry-otp", {
         mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
       })
       .then((response) => {
