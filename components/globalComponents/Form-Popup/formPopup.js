@@ -137,7 +137,7 @@ function FormEnquire({ formPopup }) {
   const sendOtp = async () => {
     setLoading(true);
     axios
-      .post("https://otpapi.tis.edu.in/send-otp", {
+      .post("https://otpapi.tulas.edu.in/send-otp", {
         mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
         authkey: "428845Ai6NJKsbqd66c98932P1",
         message:
@@ -157,7 +157,7 @@ function FormEnquire({ formPopup }) {
     if (isOtpSent) {
       setLoading(true);
       axios
-        .post("https://otpapi.tis.edu.in/verify-otp", {
+        .post("https://otpapi.tulas.edu.in/verify-otp", {
           mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
           authkey: "428845Ai6NJKsbqd66c98932P1",
           otp: otp,
@@ -180,7 +180,7 @@ function FormEnquire({ formPopup }) {
   const resendOtp = async () => {
     setLoading(true);
     axios
-      .post("https://otpapi.tis.edu.in/retry-otp", {
+      .post("https://otpapi.tulas.edu.in/retry-otp", {
         mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
         authkey: "428845Ai6NJKsbqd66c98932P1",
       })
