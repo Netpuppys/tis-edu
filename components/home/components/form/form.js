@@ -299,10 +299,11 @@ function Form() {
                       ))}
                   </select>
                   <input
-                    type="text"
+                    type="tel"
                     required
                     disabled={verified}
                     value={phoneNumber}
+                    maxLength={10}
                     onChange={handlePhoneNumberChange}
                     placeholder="Enter your Mobile No...."
                     className={`py-2 px-4 focus:outline-none w-full rounded-md bg-[#BEE2E4] text-[#2D2D2D] disabled:opacity-100 disabled:cursor-not-allowed`}
