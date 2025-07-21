@@ -18,7 +18,7 @@ import LastThree from "../../public/MandatoryPDF/Last-Three-Year-Result.pdf";
 import FireSafety from "../../public/MandatoryPDF/Fire-Safety.pdf";
 import Water from "../../public/MandatoryPDF/Water-Healty-and-Sanitation-Certificate.pdf";
 import RTE from "../../public/MandatoryPDF/RTE-Letter.pdf";
-import Teaching from "../../public/MandatoryPDF/teaching-staff-edit-29-03-2024_removed.pdf";
+import Teaching from "../../public/MandatoryPDF/teaching-staff-list.pdf";
 import { Download } from "@mui/icons-material";
 import pdfIcon from "../../public/MandatoryPDF/PDFicon.png";
 import Image from "next/image";
