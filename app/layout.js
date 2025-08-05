@@ -15,11 +15,125 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link
           href="https://fonts.googleapis.com/css2?family=Caveat&family=Bree+Serif&family=Pacifico&display=swap"
           rel="stylesheet"
-        ></link>
+        />
+
+        {/* SEO SCHEMA TAGS */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "School",
+              name: "Tula's International School",
+              alternateName: "TIS",
+              url: "https://tis.edu.in/",
+              logo: "https://tis.edu.in/_next/static/media/schoolLogo.95f6e121.png",
+              contactPoint: [
+                {
+                  "@type": "ContactPoint",
+                  telephone: "0135-2699666",
+                  contactType: "customer service",
+                  areaServed: "IN",
+                  availableLanguage: ["en", "Hindi"],
+                },
+                {
+                  "@type": "ContactPoint",
+                  telephone: "0135-2699444",
+                  contactType: "customer service",
+                  areaServed: "IN",
+                  availableLanguage: ["en", "Hindi"],
+                },
+                {
+                  "@type": "ContactPoint",
+                  telephone: "+91-9837983791",
+                  contactType: "customer service",
+                  areaServed: "IN",
+                  availableLanguage: ["en", "Hindi"],
+                },
+              ],
+              sameAs: [
+                "https://www.facebook.com/tulasinternationalschool",
+                "https://www.instagram.com/tulasinternationalschool",
+                "https://www.youtube.com/channel/UC-eRtybnv3GvfvcWxQq93zw",
+                "https://www.linkedin.com/in/tulasinternationalschool/",
+                "https://x.com/Tulas_IntSchool",
+                "https://tis.edu.in/",
+              ],
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org/",
+              "@type": "WebSite",
+              name: "Tula's International School",
+              url: "https://tis.edu.in/",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: "https://tis.edu.in/{search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Tula's International School",
+              image:
+                "https://tis.edu.in/_next/static/media/schoolLogo.95f6e121.png",
+              "@id": "",
+              url: "https://tis.edu.in/",
+              telephone: "0135-2699444",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Tula's International School",
+                addressLocality:
+                  "Dhoolkot, P.O –Selaqui, Chakrata Road, Dehradun",
+                postalCode: "248011",
+                addressCountry: "IN",
+              },
+              sameAs: [
+                "https://www.facebook.com/tulasinternationalschool",
+                "https://x.com/Tulas_IntSchool",
+                "https://www.instagram.com/tulasinternationalschool",
+                "https://www.youtube.com/channel/UC-eRtybnv3GvfvcWxQq93zw",
+                "https://www.linkedin.com/in/tulasinternationalschool/",
+                "https://tis.edu.in/",
+              ],
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "VideoObject",
+              name: "Tula's International School",
+              description:
+                "Discover the Best Boarding School in Uttarakhand, India - Tula's International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus.",
+              thumbnailUrl: "https://tis.edu.in/",
+              uploadDate: "",
+              contentUrl: "https://tis.edu.in/virtual-tour/",
+              embedUrl: "https://tis.edu.in/virtual-tour/",
+              potentialAction: {
+                "@type": "SeekToAction",
+                target: "https://tis.edu.in/virtual-tour/={seek_to_second_number}",
+                "startOffset-input": "required name=seek_to_second_number",
+              },
+            }),
+          }}
+        />
 
         {/* Google Tag Manager */}
         <Script
@@ -66,7 +180,6 @@ export default function RootLayout({ children }) {
         {/* Microsoft Clarity */}
         <script
           id="clarity"
-          // strategy="afterInteractive"
           type="text/javascript"
           dangerouslySetInnerHTML={{
             __html: `
@@ -97,8 +210,6 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-        {/* <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} /> */}
       </head>
       <body>
         <noscript>
@@ -106,13 +217,9 @@ export default function RootLayout({ children }) {
             src="https://www.googletagmanager.com/ns.html?id=GTM-KR9HW9RM"
             height="0"
             width="0"
-            style={{
-              display: "none",
-              visibility: "hidden",
-            }}
+            style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
-
         <MobileProvider>
           <UtmProvider>{children}</UtmProvider>
         </MobileProvider>
