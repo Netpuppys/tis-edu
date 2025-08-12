@@ -19,7 +19,7 @@ export default function Mission() {
       description: (
         <>
           To become a center of excellence and a leader among top educational
-          institutions. At TIS, we aim to:
+          institutions. At TIS, we aim to -
           <ul className="ml-5 list-disc">
             <li>
               Support personal growth and development to make a positive impact

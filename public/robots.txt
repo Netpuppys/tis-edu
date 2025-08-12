@@ -6,8 +6,9 @@ Disallow: /tag/
 Disallow: /author/
 Disallow: /Comments/
 Disallow: /feed/
-Sitemap: https://tis.edu.in/sitemap.xml
-Sitemap: https://tis.edu.in/sitemap_index.xml
+
+User-agent: *
+Allow: /
 
 Allow:
 Allow: /category/
@@ -21,4 +22,39 @@ Allow: /wp-content/cache/
 Allow: /wp-content/
 Allow: /wp-admin/admin-ajax.php
 Allow: https://tis.edu.in/sitemap.xml
-Allow: https://tis.edu.in/sitemap_index.xml
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OpenAI
+Allow: /
+
+User-agent: AI Overview
+Allow: /
+
+User-agent: Generative Artificial Intelligence
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-InspectionTool
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: CCbot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
