@@ -113,7 +113,7 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
-        <script
+ <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
@@ -122,13 +122,16 @@ export default function RootLayout({ children }) {
               name: "Tula's International School",
               description:
                 "Discover the Best Boarding School in Uttarakhand, India - Tula's International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus.",
-              thumbnailUrl: "https://tis.edu.in/",
-              uploadDate: "",
+              thumbnailUrl:
+                "https://tis.edu.in/_next/static/media/blogs.ee4c5683.webp", // use an actual image file
+              uploadDate: "2025-08-18T14:30:00Z", // fixed date
+              duration: "PT5M10S",
               contentUrl: "https://tis.edu.in/virtual-tour/",
               embedUrl: "https://tis.edu.in/virtual-tour/",
               potentialAction: {
                 "@type": "SeekToAction",
-                target: "https://tis.edu.in/virtual-tour/={seek_to_second_number}",
+                target:
+                  "https://tis.edu.in/virtual-tour/={seek_to_second_number}",
                 "startOffset-input": "required name=seek_to_second_number",
               },
             }),

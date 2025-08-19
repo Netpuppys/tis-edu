@@ -18,6 +18,19 @@ const nextConfig = {
         port: "",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "blog.tis.edu.in",
+        port: "",
+        pathname: "/**",
+      },
+          {
+            protocol: "https",
+            hostname: "blog-crm-placeholder.s3.ap-south-1.amazonaws.com", // ✅ add this
+            port: "",
+            pathname: "/**",
+          },
+
     ],
   },
 
