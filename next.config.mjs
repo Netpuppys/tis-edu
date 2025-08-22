@@ -26,7 +26,7 @@ const nextConfig = {
       },
           {
             protocol: "https",
-            hostname: "blog-crm-placeholder.s3.ap-south-1.amazonaws.com", // ✅ add this
+      hostname: "blogs-backend.s3.ap-south-1.amazonaws.com", // ✅ fixed bucket name
             port: "",
             pathname: "/**",
           },
