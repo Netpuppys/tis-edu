@@ -1,11 +1,13 @@
 // app/[slug]/page.js
+// app/[slug]/page.js
 import React from "react";
 import Navbar from "@/components/globalComponents/navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import "../globals.css";
 import "../../styles/QuickLinks/Blog.css";
 import "../../styles/globalComponents/Header/header.css";
-export const revalidate = 60; // optional: ISR for revalidation every 60 seconds
+
+export const revalidate = 60; // ISR for revalidation every 60s
 
 // Generate static params for dynamic routing
 export async function generateStaticParams() {
@@ -23,7 +25,7 @@ export async function generateStaticParams() {
   }));
 }
 
-// Fetch the blog data based on the slug
+// Fetch single blog data
 async function fetchBlogData(slug) {
   const res = await fetch(`https://blog.tis.edu.in/api/v1/post/${slug}`);
 
@@ -35,19 +37,20 @@ async function fetchBlogData(slug) {
   return data || null;
 }
 
+// Generate SEO metadata
 export async function generateMetadata({ params }) {
   const { slug } = params;
   const blog = await fetchBlogData(slug);
 
   if (!blog) {
     return {
-      meta_title: "Blog Not Found",
+      title: "Blog Not Found",
       description: "The requested blog could not be found.",
     };
   }
 
   return {
-    title: blog.meta_title,
+    title: blog.meta_title || blog.title,
     description: blog.meta_description,
     keywords: blog.meta_keywords,
     robots: blog.tags,
@@ -55,7 +58,7 @@ export async function generateMetadata({ params }) {
   };
 }
 
-// Main page component for the blog post
+// Blog page
 export default async function SlugPage({ params }) {
   const { slug } = params;
   const blog = await fetchBlogData(slug);
@@ -68,18 +71,64 @@ export default async function SlugPage({ params }) {
     );
   }
 
+  // Format date
   const formatDate = (dateString) => {
     const options = { year: "numeric", month: "long", day: "numeric" };
     return new Date(dateString).toLocaleDateString(undefined, options);
   };
-
   const formattedDate = formatDate(blog.created_at);
+
   const headerImg = blog.banner_img;
+
+  // Clean content
   const cleanContent = (content) => {
     if (!content) return "";
-    // Replace empty <p></p> with <br /> tag
     return content.replace(/<p><\/p>/g, "<br /><br />");
   };
+
+  // ✅ BlogPosting Schema
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: blog.title,
+    image: [blog.banner_img],
+    author: {
+      "@type": "Person",
+      name: blog.author_name || "TIS Team",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "TIS",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.tis.edu.in/_next/static/media/schoolLogo.95f6e121.png"
+      },
+    },
+    datePublished: blog.created_at,
+    dateModified: blog.updated_at || blog.created_at,
+    description: blog.meta_description,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://www.tis.edu.in/${blog.slug}`,
+    },
+  };
+
+  // ✅ FAQ Schema (only if faqs exist)
+  const faqSchema =
+    blog.faqs && blog.faqs.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: blog.faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: faq.answer,
+            },
+          })),
+        }
+      : null;
 
   return (
     <>
@@ -117,10 +166,24 @@ export default async function SlugPage({ params }) {
           />
         </div>
       </div>
+
+      {/* ✅ Blog Schema */}
+      <script type="application/ld+json" suppressHydrationWarning>
+        {JSON.stringify(blogSchema)}
+      </script>
+
+      {/* ✅ FAQ Schema */}
+      {faqSchema && (
+        <script type="application/ld+json" suppressHydrationWarning>
+          {JSON.stringify(faqSchema)}
+        </script>
+      )}
+
       <Footer />
     </>
   );
 }
+
 
 // import React from "react";
 // import Image from "next/image";
