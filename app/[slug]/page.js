@@ -101,7 +101,7 @@ export default async function SlugPage({ params }) {
       name: "TIS",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.tis.edu.in/_next/static/media/schoolLogo.95f6e121.png"
+        url: "https://tis.edu.in/_next/static/media/schoolLogo.95f6e121.png"
       },
     },
     datePublished: blog.created_at,
@@ -109,7 +109,7 @@ export default async function SlugPage({ params }) {
     description: blog.meta_description,
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://www.tis.edu.in/${blog.slug}`,
+      "@id": `https://tis.edu.in/${blog.slug}`,
     },
   };
 
