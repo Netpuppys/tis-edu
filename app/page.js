@@ -21,7 +21,11 @@ export default function Home() {
           name="google-site-verification"
           content="45l-c_yntJwqdKfX55egBlZhXwd2-u6Cz8sVHUWOvDM"
         />
-        {/* Organization Schema */}
+        {/* ✅ Canonical tag */}
+        <link rel="canonical" href="https://tis.edu.in/" />
+        <meta name="robots" content="index, follow" />
+
+        {/* ✅ Organization Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -42,7 +46,6 @@ export default function Home() {
                 "https://www.facebook.com/tulasinternationalschool/",
                 "https://www.instagram.com/tulasinternationalschool/?hl=en",
                 "https://www.youtube.com/channel/UC-eRtybnv3GvfvcWxQq93zw",
-                "https://tis.edu.in/",
                 "https://twitter.com/tulas_intschool?lang=en",
                 "https://www.linkedin.com/school/tulas-international-school/?originalSubdomain=in",
               ],
@@ -50,7 +53,7 @@ export default function Home() {
           }}
         />
 
-        {/* Website Schema */}
+        {/* ✅ Website Schema (fixed target URL) */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -61,19 +64,18 @@ export default function Home() {
               url: "https://tis.edu.in/",
               potentialAction: {
                 "@type": "SearchAction",
-                target:
-                  "https://tis.edu.in/{search_term_string}https://tis.edu.in/contact-us/",
+                target: "https://tis.edu.in/search?q={search_term_string}",
                 "query-input": "required name=search_term_string",
               },
             }),
           }}
         />
       </Head>
-      <body>
-        <Navbar />
-        <HomePage />
-        <Footer />
-      </body>
+
+      {/* ✅ Removed <body>, only keep components */}
+      <Navbar />
+      <HomePage />
+      <Footer />
     </>
   );
 }
