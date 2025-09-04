@@ -1,23 +1,30 @@
 // app/[slug]/page.js
 import React from "react";
+import Navbar from "@/components/globalComponents/navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
 import Head from "next/head";
+import "../globals.css";
+import "../../styles/QuickLinks/Blog.css";
+import "../../styles/globalComponents/Header/header.css";
 
-// --- Fetch blog data ---
+export const revalidate = 60; // ISR for revalidation every 60s
+
+// --- Fetch single blog data ---
 async function fetchBlogData(slug) {
   try {
     const res = await fetch(`https://blog.tis.edu.in/api/v1/post/${slug}`, {
       cache: "no-store",
     });
     if (!res.ok) return null;
-    const data = await res.json();
-    return data?.data || null;
+    const { data } = await res.json();
+    return data || null;
   } catch (err) {
     console.error("Error fetching blog:", err);
     return null;
   }
 }
 
-// --- Clean content (remove script + empty <p>) ---
+// --- Clean blog content ---
 const cleanContent = (content) => {
   if (!content) return "";
   let cleaned = content.replace(/<p><\/p>/g, "<br /><br />");
@@ -27,7 +34,9 @@ const cleanContent = (content) => {
 
 // --- Metadata ---
 export async function generateMetadata({ params }) {
-  const blog = await fetchBlogData(params.slug);
+  const { slug } = params;
+  const blog = await fetchBlogData(slug);
+
   if (!blog) {
     return {
       title: "Blog Not Found",
@@ -44,27 +53,34 @@ export async function generateMetadata({ params }) {
       url,
       title: blog.meta_title || blog.title,
       description: blog.meta_description || "",
-      images: blog.banner_img ? [blog.banner_img] : undefined,
+      images: blog.banner_img ? [blog.banner_img] : [],
     },
   };
 }
 
 // --- Blog Page ---
-export default async function BlogPage({ params }) {
-  const blog = await fetchBlogData(params.slug);
-  if (!blog) return <h1>Blog Not Found</h1>;
+export default async function SlugPage({ params }) {
+  const { slug } = params;
+  const blog = await fetchBlogData(slug);
+
+  if (!blog) {
+    return (
+      <div>
+        <h2>Blog not found</h2>
+      </div>
+    );
+  }
 
   const canonicalUrl = `https://tis.edu.in/${blog.slug}`;
   const publisherLogo =
     "https://tis.edu.in/_next/static/media/schoolLogo.95f6e121.png";
 
-  // BlogPosting Schema
+  // ✅ BlogPosting Schema
   const blogSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: blog.title || "",
-    description: blog.meta_description || "",
-    image: blog.banner_img || "",
+    headline: blog.title,
+    image: [blog.banner_img],
     author: {
       "@type": "Person",
       name: blog.author_name || "TIS Team",
@@ -74,13 +90,13 @@ export default async function BlogPage({ params }) {
       name: "TIS",
       logo: { "@type": "ImageObject", url: publisherLogo },
     },
-    datePublished: blog.created_at || new Date().toISOString(),
-    dateModified:
-      blog.updated_at || blog.created_at || new Date().toISOString(),
+    datePublished: blog.created_at,
+    dateModified: blog.updated_at || blog.created_at,
+    description: blog.meta_description,
     mainEntityOfPage: { "@type": "WebPage", "@id": canonicalUrl },
   };
 
-  // FAQ Schema
+  // ✅ FAQ Schema
   const faqSchema =
     blog.faqs && blog.faqs.length > 0
       ? {
@@ -93,6 +109,13 @@ export default async function BlogPage({ params }) {
           })),
         }
       : null;
+
+  // ✅ Format date
+  const formatDate = (dateString) => {
+    const options = { year: "numeric", month: "long", day: "numeric" };
+    return new Date(dateString).toLocaleDateString(undefined, options);
+  };
+  const formattedDate = formatDate(blog.created_at);
 
   return (
     <>
@@ -110,25 +133,39 @@ export default async function BlogPage({ params }) {
         )}
       </Head>
 
-      {/* --- Restored Design Layout --- */}
-      <div className="blog-single">
-        <h1 className="blog-title">{blog.title}</h1>
-
-        {blog.banner_img && (
-          <div className="blog-banner">
-            <img
-              src={blog.banner_img}
-              alt={blog.title || "Blog banner"}
-              loading="lazy"
-            />
+      {/* ✅ Keep your old design */}
+      <Navbar />
+      <div className="blog-page-container">
+        <div className="header">
+          <div
+            className="heading-outer"
+            style={{
+              backgroundImage: `url(${blog.banner_img})`,
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+            }}
+          ></div>
+          <div className="middle">
+            <div className="top">
+              <h2 className="top-heading">{blog.title}</h2>
+            </div>
           </div>
-        )}
+        </div>
 
         <div
-          className="blog-content"
-          dangerouslySetInnerHTML={{ __html: cleanContent(blog.content) }}
-        />
+          className="blog-page-content"
+          style={{ fontFamily: "TT Chocolates" }}
+        >
+          <h6 className="text-[18px] md:text-[25px]">
+            Published on {formattedDate} by {blog.author_name}
+          </h6>
+          <div
+            className="content-div-blog"
+            dangerouslySetInnerHTML={{ __html: cleanContent(blog.content) }}
+          />
+        </div>
       </div>
+      <Footer />
     </>
   );
 }
