@@ -2,7 +2,6 @@
 import React from "react";
 import Navbar from "@/components/globalComponents/navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
-import Head from "next/head";
 import "../globals.css";
 import "../../styles/QuickLinks/Blog.css";
 import "../../styles/globalComponents/Header/header.css";
@@ -48,7 +47,9 @@ export async function generateMetadata({ params }) {
   return {
     title: blog.meta_title || blog.title,
     description: blog.meta_description || "",
-    alternates: { canonical: url },
+    alternates: {
+      canonical: url, // ✅ Proper canonical
+    },
     openGraph: {
       url,
       title: blog.meta_title || blog.title,
@@ -119,21 +120,18 @@ export default async function SlugPage({ params }) {
 
   return (
     <>
-      <Head>
-        <link rel="canonical" href={canonicalUrl} />
+      {/* ✅ Inject Schema here */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+      />
+      {faqSchema && (
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
-        {faqSchema && (
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-          />
-        )}
-      </Head>
+      )}
 
-      {/* ✅ Keep your old design */}
       <Navbar />
       <div className="blog-page-container">
         <div className="header">
