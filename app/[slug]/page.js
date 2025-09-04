@@ -2,7 +2,7 @@
 import React from "react";
 import Head from "next/head";
 
-// --- Helper: Fetch blog data ---
+// --- Fetch blog data ---
 async function fetchBlogData(slug) {
   try {
     const res = await fetch(`https://blog.tis.edu.in/api/v1/post/${slug}`, {
@@ -17,7 +17,7 @@ async function fetchBlogData(slug) {
   }
 }
 
-// --- Clean HTML content (remove empty <p> and <script> tags) ---
+// --- Clean content (remove script + empty <p>) ---
 const cleanContent = (content) => {
   if (!content) return "";
   let cleaned = content.replace(/<p><\/p>/g, "<br /><br />");
@@ -25,7 +25,7 @@ const cleanContent = (content) => {
   return cleaned;
 };
 
-// --- Metadata for SEO ---
+// --- Metadata ---
 export async function generateMetadata({ params }) {
   const blog = await fetchBlogData(params.slug);
   if (!blog) {
@@ -58,7 +58,7 @@ export default async function BlogPage({ params }) {
   const publisherLogo =
     "https://tis.edu.in/_next/static/media/schoolLogo.95f6e121.png";
 
-  // --- BlogPosting Schema ---
+  // BlogPosting Schema
   const blogSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -80,7 +80,7 @@ export default async function BlogPage({ params }) {
     mainEntityOfPage: { "@type": "WebPage", "@id": canonicalUrl },
   };
 
-  // --- FAQ Schema (if FAQs exist) ---
+  // FAQ Schema
   const faqSchema =
     blog.faqs && blog.faqs.length > 0
       ? {
@@ -89,10 +89,7 @@ export default async function BlogPage({ params }) {
           mainEntity: blog.faqs.map((faq) => ({
             "@type": "Question",
             name: faq.question,
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: faq.answer,
-            },
+            acceptedAnswer: { "@type": "Answer", text: faq.answer },
           })),
         }
       : null;
@@ -113,20 +110,25 @@ export default async function BlogPage({ params }) {
         )}
       </Head>
 
-      <article className="blog-single">
-        <h1>{blog.title}</h1>
+      {/* --- Restored Design Layout --- */}
+      <div className="blog-single">
+        <h1 className="blog-title">{blog.title}</h1>
+
         {blog.banner_img && (
-          <img
-            src={blog.banner_img}
-            alt={blog.title || "Blog banner"}
-            className="blog-banner"
-          />
+          <div className="blog-banner">
+            <img
+              src={blog.banner_img}
+              alt={blog.title || "Blog banner"}
+              loading="lazy"
+            />
+          </div>
         )}
+
         <div
           className="blog-content"
           dangerouslySetInnerHTML={{ __html: cleanContent(blog.content) }}
         />
-      </article>
+      </div>
     </>
   );
 }
