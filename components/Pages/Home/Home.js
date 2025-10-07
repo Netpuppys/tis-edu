@@ -1,25 +1,11 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import HomeLayout from "../../home/HomeLayout";
-import LoadingScreen from "../../home/loading/LoadingScreen";
 
 function HomePage() {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    // Simulating a loading delay
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 3000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <div>
-      {isLoading && <LoadingScreen />}
-
       <HomeLayout />
     </div>
   );
