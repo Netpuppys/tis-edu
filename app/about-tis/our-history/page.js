@@ -11,6 +11,7 @@ export default function OurHistoryPage() {
           Best Boarding School in Dehradun (India) | Tula&apos;s International
           School
         </title>
+        <link rel="canonical" href="https://tis.edu.in/about-tis/our-history/" />
         <meta
           name="description"
           content="Discover the Best Boarding School in Dehradun, India - Tula's International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus."

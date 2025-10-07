@@ -20,6 +20,7 @@ export default function Home() {
           name="google-site-verification"
           content="45l-c_yntJwqdKfX55egBlZhXwd2-u6Cz8sVHUWOvDM"
         />
+          <link rel="canonical" href="https://tis.edu.in/" />
 
         {/* Organization Schema */}
         <script
