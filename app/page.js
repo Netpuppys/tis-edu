@@ -10,6 +10,8 @@ export const metadata = {
   title: "Best Boarding School in Dehradun, India | Tula's International School",
   description:
     "Discover the Best Boarding School in Uttarakhand, India - Tula's International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus.",
+  canonical: "https://tis.edu.in/",
+
 };
 
 export default function Home() {
@@ -20,7 +22,6 @@ export default function Home() {
           name="google-site-verification"
           content="45l-c_yntJwqdKfX55egBlZhXwd2-u6Cz8sVHUWOvDM"
         />
-          <link rel="canonical" href="https://tis.edu.in/" />
 
         {/* Organization Schema */}
         <script
