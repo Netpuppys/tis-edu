@@ -1,22 +1,35 @@
 // app/components/Pages/Home/HomeSEOContent.js
 export default function SeoContent() {
   return (
-    <section className="sr-only">
-      <h1>Welcome to The International School (TIS)</h1>
+<section
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "1px",
+        height: "1px",
+        overflow: "hidden",
+        zIndex: -1,
+        opacity: 0,
+      }}
+    >
+      <h1>Welcome to Tula's International School (TIS)</h1>
       <p>
-        The International School (TIS) is one of India’s leading institutions
-        for academic excellence, innovation, and holistic development...
+        TIS is one of India’s top boarding and day schools in Dehradun, India.
       </p>
       <p>
-        As a top boarding and day school, we combine traditional values with
-        modern learning practices...
+        Our CBSE curriculum focuses on academic excellence, holistic development, and preparing students to be global leaders.
       </p>
-      <h2>About Tula's International School</h2>
-      <p>TIS offers a world-class CBSE curriculum with a holistic approach...</p>
-      <h2>Academic Excellence</h2>
-      <p>Our faculty consists of highly qualified and experienced teachers...</p>
-      <h2>Co-Curricular & Sports</h2>
-      <p>TIS emphasizes extracurricular activities to promote overall development...</p>
+      <p>
+        Explore our programs, campus life, achievements, and why TIS is the preferred choice for parents across India.
+      </p>
+      <h2>Boarding and Day School Excellence</h2>
+      <p>
+        We provide world-class education, modern facilities, and a nurturing environment for students to thrive academically, socially, and culturally.
+      </p>
+      <p>
+        Join TIS to be part of a community that encourages leadership, innovation, and lifelong learning.
+      </p>
     </section>
   );
 }
