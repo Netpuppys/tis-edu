@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useContext, useEffect, useState } from "react";
 import { useMobile } from "../../../globalComponents/IsMobileContext";
 import seeMoreIcon from "../../../../public/icons/see-more-text.png";

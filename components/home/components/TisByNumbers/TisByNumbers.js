@@ -1,3 +1,5 @@
+"use client"
+
 import image from "../../../../public/icons/360.png";
 import "../../../../styles/home/components/tisByNumbers/TisByNumbers.css";
 import Image from "next/image";

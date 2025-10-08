@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useEffect, useRef } from "react";
 import SakshiMalik from "../../../public/ProminentPersonalities/SakshiMalik.webp";
 import VisheshBhriguvanshi from "../../../public/ProminentPersonalities/VisheshBhriguvanshi.webp";
