@@ -1,6 +1,9 @@
 # robots.txt for https://tis.edu.in
-# Optimized for SEO and AI bots (2025)
+# Optimized for SEO and spam prevention (2025)
 
+# ----------------------------------------
+# Default rules for all bots
+# ----------------------------------------
 User-agent: *
 Disallow: /cgi-bin/
 Disallow: /temp/
@@ -10,6 +13,12 @@ Disallow: /comments/
 Disallow: /feed/
 Disallow: /wp-admin/
 Disallow: /wp-includes/
+Disallow: /undefined
+Disallow: /*?s=
+Disallow: /*&s=
+Disallow: /*?search=
+Disallow: /*.php$
+Disallow: /*.cgi$
 
 # Allow important frontend and public content
 Allow: /category/
@@ -19,13 +28,14 @@ Allow: /wp-content/
 Allow: /wp-content/cache/
 Allow: /wp-admin/admin-ajax.php
 
-# AI and advanced crawlers allowed full access
+# ----------------------------------------
+# Special bots / AI crawlers with full access
+# ----------------------------------------
 User-agent: GPTBot
 User-agent: Google-Extended
 User-agent: ChatGPT-User
 User-agent: OpenAI
 User-agent: AI Overview
-User-agent: Generative Artificial Intelligence
 User-agent: Claude-Web
 User-agent: ClaudeBot
 User-agent: anthropic-ai
@@ -36,5 +46,7 @@ User-agent: Googlebot
 User-agent: Google-InspectionTool
 Allow: /
 
+# ----------------------------------------
 # Sitemap location
+# ----------------------------------------
 Sitemap: https://tis.edu.in/sitemap.xml
