@@ -21,6 +21,7 @@ import Form from "./components/form/form";
 import Stats from "./components/TisByNumbers/stats";
 import NewStats from "./components/stats/stats";
 import Famous from "./components/Famous";
+import HeroBackup from "./components/Hero/HeroBackup";
 
 const maxSections = 13;
 
@@ -59,7 +60,8 @@ const BackupHomeLayout = () => {
 
       <div>
         <>
-          <Hero bubbleRef={bubbleRef} />
+          {/* <Hero bubbleRef={bubbleRef} /> */}
+          <HeroBackup bubbleRef={bubbleRef} />
           <div ref={bubbleRef}>
             <div className="w-full bg-[#b90124] md:h-60"></div>
             <SecondSection />

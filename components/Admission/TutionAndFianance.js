@@ -165,7 +165,7 @@ function TutionAndFianance() {
             <tbody>
               <tr>
                 <td>Academic Scholarship *</td>
-                <td style={{ borderRight: "none" }}>Upto Rs. 1,00,000</td>
+                <td style={{ borderRight: "none" }}>Upto Rs. 1,50,000</td>
               </tr>
               <tr>
                 <td style={{ borderBottom: "none" }}>Sports Scholarship *</td>
@@ -205,22 +205,22 @@ function TutionAndFianance() {
             <tbody>
               <tr>
                 <td>Sibling Concession *</td>
-                <td style={{ borderRight: "none" }}>Rs 60,000</td>
+                <td style={{ borderRight: "none" }}>Upto Rs 1,00,000</td>
               </tr>
               <tr>
                 <td>Serving Defense Person *</td>
-                <td style={{ borderRight: "none" }}>Rs 60,000</td>
+                <td style={{ borderRight: "none" }}>Upto Rs 1,00,000</td>
               </tr>
               <tr>
                 <td>Single Parent *</td>
-                <td style={{ borderRight: "none" }}>Rs 60,000</td>
+                <td style={{ borderRight: "none" }}>Upto Rs 1,00,000</td>
               </tr>
               <tr>
                 <td style={{ borderBottom: "none" }}>
                   Alumni & Alumni Reference *
                 </td>
                 <td style={{ borderRight: "none", borderBottom: "none" }}>
-                  Rs 60,000
+                  Upto Rs 1,00,000
                 </td>
               </tr>
             </tbody>
@@ -265,9 +265,9 @@ function TutionAndFianance() {
               Parent’s need to email Dean of Admissions{" "}
               <a
                 style={{ color: "#B90124" }}
-                href={"mailto:robin.chhetri@tis.edu.in"}
+                href={"mailto:dean.admission@tis.edu.in"}
               >
-                (robin.chhetri@tis.edu.in)
+                (dean.admission@tis.edu.in)
               </a>{" "}
               to avail Tula’s Concession policy.
             </li>

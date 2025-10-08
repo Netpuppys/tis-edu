@@ -8,7 +8,7 @@ import HeaderFeesImg from "../../public/Banner/feeStructure.webp";
 import HeaderFeesImgMobile from "../../public/Banner/feeStructureMobile.webp";
 import feesIndia from "../../public/pictures/fee-structureIndia.png";
 import feesForeign from "../../public/pictures/fee-structureForeign.png";
-import FeesIndia from "../../public/MandatoryPDF/TIS-FEE-STRUCTURE-2024-25.pdf";
+import FeesIndia from "../../public/MandatoryPDF/TIS FEE STRUCTURE 2026-27.pdf";
 import FeesNRI from "../../public/MandatoryPDF/NRI-TIS-FEE-STRUCTURE.pdf";
 import { useMobile } from "../globalComponents/IsMobileContext";
 
