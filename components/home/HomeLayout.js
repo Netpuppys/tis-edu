@@ -14,11 +14,13 @@ import "../../styles/home/HomeLayout.css";
 import GoogleReviews from "@/app/boarding-school/admission-open/Components/Hero/components/GoogleReviews";
 import NewStats from "./components/stats/stats";
 import Famous from "./components/Famous";
+import MockHero from "./MockHero";
 
 const HomeLayout = () => {
   return (
     <div className="home-layout-container">
-      <Hero />
+      {/* <Hero /> */}
+      <MockHero/>
       <div className="w-full bg-[#b90124] md:h-60"></div>
       <SecondSection />
       <div className="home-layout-allSection flex flex-col gap-6 md:gap-[2%]">
