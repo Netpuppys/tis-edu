@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
         <meta property="og:image:alt" content="Tula's International School" />
 
         {/* JSON-LD structured data */}
-        {/* <Script
+        <Script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
@@ -65,19 +65,19 @@ export default function RootLayout({ children }) {
               },
             }),
           }}
-        /> */}
+        />
       </head>
 
       <body>
         {/* Google Tag Manager (noscript) */}
-        {/* <noscript>
+        <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-KR9HW9RM"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
-        </noscript> */}
+        </noscript>
 
         {/* Providers */}
         <MobileProvider>
@@ -85,7 +85,7 @@ export default function RootLayout({ children }) {
         </MobileProvider>
 
         {/* 🧠 Scripts */}
-        {/* <Script
+        <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtm.js?id=GTM-KR9HW9RM"
         />
@@ -134,7 +134,7 @@ export default function RootLayout({ children }) {
               fbq('track', 'PageView');
             `,
           }}
-        /> */}
+        />
       </body>
     </html>
   );
