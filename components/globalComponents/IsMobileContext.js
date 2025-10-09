@@ -1,30 +1,30 @@
 "use client";
 
 import React, { createContext, useContext, useState, useEffect } from "react";
+
 const MobileContext = createContext();
 
 export const MobileProvider = ({ children }) => {
   const [isMobile, setIsMobile] = useState(false);
+  const [vw, setVw] = useState(0);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const handleResize = () => {
-        setIsMobile(window.innerWidth < 768);
-      };
+    // Only run the code if on the client side
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+      setVw(window.innerWidth);
+    };
 
-      // Set initial value
-      handleResize();
+    handleResize(); // Initialize the state on component mount
 
-      window.addEventListener("resize", handleResize);
-
-      return () => {
-        window.removeEventListener("resize", handleResize);
-      };
-    }
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return (
-    <MobileContext.Provider value={{ isMobile }}>
+    <MobileContext.Provider value={{ isMobile, vw }}>
       {children}
     </MobileContext.Provider>
   );
@@ -32,7 +32,7 @@ export const MobileProvider = ({ children }) => {
 
 export const useMobile = () => {
   const context = useContext(MobileContext);
-  if (context === undefined) {
+  if (!context) {
     throw new Error("useMobile must be used within a MobileProvider");
   }
   return context;
