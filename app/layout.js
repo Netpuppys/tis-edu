@@ -1,8 +1,17 @@
-// app/layout.js
 import "./globals.css";
-import { MobileProvider } from "@/components/globalComponents/IsMobileContext";
-import { UtmProvider } from "@/components/globalComponents/utmParams";
 import Script from "next/script";
+import dynamic from "next/dynamic";
+
+// Dynamically import client-only providers
+const MobileProvider = dynamic(
+  () => import("@/components/globalComponents/IsMobileContext").then(mod => mod.MobileProvider),
+  { ssr: false }
+);
+
+const UtmProvider = dynamic(
+  () => import("@/components/globalComponents/utmParams").then(mod => mod.UtmProvider),
+  { ssr: false }
+);
 
 export const metadata = {
   title: "Best Boarding School in Dehradun, India | Tula's International School",
@@ -13,8 +22,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Tula's International School",
-    description:
-      "Best Boarding School in Dehradun offering world-class education and holistic development.",
+    description: "Best Boarding School in Dehradun offering world-class education and holistic development.",
     url: "https://tis.edu.in/",
     siteName: "Tula's International School",
     images: [
@@ -33,27 +41,28 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </head>
       <body>
+        {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-KR9HW9RM"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
+          />
         </noscript>
 
+        {/* Client-only Providers */}
         <MobileProvider>
           <UtmProvider>{children}</UtmProvider>
         </MobileProvider>
 
+        {/* 🧠 Scripts for analytics (load AFTER page renders) */}
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtm.js?id=GTM-KR9HW9RM"
         />
+
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-ZL190LFCTT"
@@ -70,6 +79,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+
         <Script
           id="microsoft-clarity"
           strategy="afterInteractive"
@@ -83,6 +93,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+
         <Script
           id="meta-pixel"
           strategy="afterInteractive"
