@@ -2,6 +2,7 @@ import "./globals.css";
 import { MobileProvider } from "@/components/globalComponents/IsMobileContext";
 import { UtmProvider } from "@/components/globalComponents/utmParams";
 import Script from "next/script";
+import ProvidersWrapper from "./provider";
 
 export const metadata = {
   title:
@@ -45,9 +46,9 @@ export default function RootLayout({ children }) {
         </noscript>
 
         {/* Providers */}
-        <MobileProvider>
-          <UtmProvider>{children}</UtmProvider>
-        </MobileProvider>
+        <ProvidersWrapper>
+          {children}
+        </ProvidersWrapper>
 
         {/* 🧠 Scripts for analytics (load AFTER page renders) */}
         {/* Google Tag Manager */}
