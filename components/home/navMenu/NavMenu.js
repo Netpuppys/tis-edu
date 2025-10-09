@@ -212,6 +212,12 @@ function NavMenu({ handleMenuBtn }) {
       ],
     },
     {
+  title: "Alumni Network",
+  nestedLinks: [
+    { title: "Alumni Network", linkTo: "https://alumni.tis.edu.in/" } // new link added
+  ],
+},
+    {
       title: "Quick Links",
       nestedLinks: [
         { title: "Blogs", linkTo: "/blog" },

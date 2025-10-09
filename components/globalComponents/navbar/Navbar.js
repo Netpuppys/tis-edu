@@ -179,6 +179,12 @@ const Navbar = () => {
         { title: "Mandatory Disclosure", linkTo: "/cbse-documents/" },
       ],
     },
+{
+  title: "Alumni Network",
+  nestedLinks: [
+    { title: "Alumni Network", linkTo: "https://alumni.tis.edu.in/" } // new link added
+  ],
+},
     {
       title: "Quick Links",
       nestedLinks: [
