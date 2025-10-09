@@ -1,7 +1,23 @@
 import "./globals.css";
-import { MobileProvider } from "@/components/globalComponents/IsMobileContext";
-import { UtmProvider } from "@/components/globalComponents/utmParams";
+import dynamic from "next/dynamic";
 import Script from "next/script";
+
+// Dynamically import client-only providers
+const MobileProvider = dynamic(
+  () =>
+    import("@/components/globalComponents/IsMobileContext").then(
+      (mod) => mod.MobileProvider
+    ),
+  { ssr: false }
+);
+
+const UtmProvider = dynamic(
+  () =>
+    import("@/components/globalComponents/utmParams").then(
+      (mod) => mod.UtmProvider
+    ),
+  { ssr: false }
+);
 
 export default function RootLayout({ children }) {
   return (
@@ -37,35 +53,6 @@ export default function RootLayout({ children }) {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Tula's International School" />
-
-        {/* JSON-LD structured data */}
-        <Script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "School",
-              name: "Tula's International School",
-              url: "https://tis.edu.in/",
-              logo: "https://tis.edu.in/_next/static/media/Image%202.0c5295c9.webp",
-              address: {
-                "@type": "PostalAddress",
-                streetAddress:
-                  "Dhoolkot, Post Office: Selaqui, Chakrata Road",
-                addressLocality: "Dehradun",
-                postalCode: "248011",
-                addressCountry: "IN",
-              },
-              contactPoint: {
-                "@type": "ContactPoint",
-                telephone: "0135-2699300",
-                contactType: "customer service",
-                areaServed: ["IN", "NP"],
-                availableLanguage: ["en", "Hindi"],
-              },
-            }),
-          }}
-        />
       </head>
 
       <body>
@@ -79,20 +66,22 @@ export default function RootLayout({ children }) {
           ></iframe>
         </noscript>
 
-        {/* Providers */}
+        {/* Client-only providers */}
         <MobileProvider>
           <UtmProvider>{children}</UtmProvider>
         </MobileProvider>
 
-        {/* 🧠 Scripts */}
+        {/* Scripts */}
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtm.js?id=GTM-KR9HW9RM"
         />
+
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-ZL190LFCTT"
         />
+
         <Script
           id="gtag-config"
           strategy="afterInteractive"
@@ -105,6 +94,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+
         <Script
           id="microsoft-clarity"
           strategy="afterInteractive"
@@ -118,6 +108,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+
         <Script
           id="meta-pixel"
           strategy="afterInteractive"
@@ -127,8 +118,7 @@ export default function RootLayout({ children }) {
                 if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
                 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
                 n.queue=[];t=b.createElement(e);t.async=!0;
-                t.src=v;s=b.getElementsByTagName(e)[0];
-                s.parentNode.insertBefore(t,s)
+                t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)
               }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
               fbq('init', '343518338071033');
               fbq('track', 'PageView');
