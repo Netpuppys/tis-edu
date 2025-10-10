@@ -16,10 +16,8 @@ import college from "../../../../public/statsNew/college.png";
 import image5 from "../../../../public/statsNew/image5.png";
 import stem from "../../../../public/statsNew/stem.png";
 import image6 from "../../../../public/statsNew/image6.png";
-import { useMobile } from "@/components/globalComponents/IsMobileContext";
 
 function NewStats() {
-  const { isMobile } = useMobile();
   const stats = [
     { number: "22", title: "ACRE CAMPUS", icon: campus, aspect: "1-1" },
     { number: "16+", title: "OLYMPIC SPORTS", icon: sports, aspect: "1-1" },

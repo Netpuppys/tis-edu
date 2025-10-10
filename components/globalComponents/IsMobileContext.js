@@ -1,26 +1,17 @@
-"use client";
+'use client'
 
-import React, { createContext, useContext, useState, useEffect } from "react";
-const MobileContext = createContext();
+import { createContext, useContext, useEffect, useState } from "react";
+
+export const MobileContext = createContext(undefined);
 
 export const MobileProvider = ({ children }) => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const handleResize = () => {
-        setIsMobile(window.innerWidth < 768);
-      };
-
-      // Set initial value
-      handleResize();
-
-      window.addEventListener("resize", handleResize);
-
-      return () => {
-        window.removeEventListener("resize", handleResize);
-      };
-    }
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
   return (
@@ -31,9 +22,10 @@ export const MobileProvider = ({ children }) => {
 };
 
 export const useMobile = () => {
+  // 👇 avoid throwing during SSR
   const context = useContext(MobileContext);
   if (context === undefined) {
-    throw new Error("useMobile must be used within a MobileProvider");
+    return { isMobile: false }; // safe fallback instead of error
   }
   return context;
 };
