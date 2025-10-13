@@ -1,8 +1,9 @@
 // app/page.js (server component by default)
+import dynamic from "next/dynamic";
 
-import Footer from "../components/Footer/Footer";
+const Footer = dynamic(() => import("../components/Footer/Footer"), { ssr: false });
 import HomePage from "../components/Pages/Home/Home";
-import Navbar from "../components/globalComponents/navbar/Navbar";
+const Navbar = dynamic(() => import("../components/globalComponents/navbar/Navbar"), { ssr: false });
 import "../app/globals.css";
 
 export const metadata = {
