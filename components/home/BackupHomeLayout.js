@@ -2,45 +2,41 @@
 
 import React, { useRef, useState } from "react";
 import { useMobile } from "../globalComponents/IsMobileContext";
-import Hero from "./components/Hero/Hero";
-import SecondSection from "./components/secondSection/SecondSection";
-import ThirdSection from "./components/thirdSection/ThirdSection";
-import ActivityGrid from "./components/activityGrid/ActivityGrid";
-import FifthSection from "./components/fifthSection/FifthSection";
-import Video from "./components/video/video";
-import TisByNumbers from "./components/TisByNumbers/TisByNumbers";
-import AwardSection from "./components/awardsSection/AwardSection";
-import Ranking from "./components/Ranking/ranking";
-import ParentsReviews from "./components/parentsReviews/ParentsReviews";
-import FeaturesSection from "./components/featuresSection/FeaturesSection";
+import dynamic from "next/dynamic";
 import scrollArrow from "../../public/icons/downArrowDoodle.svg";
 import Image from "next/image";
 import "../../styles/home/HomeLayout.css";
-import GoogleReviews from "@/app/boarding-school/admission-open/Components/Hero/components/GoogleReviews";
-import Form from "./components/form/form";
-import Stats from "./components/TisByNumbers/stats";
-import NewStats from "./components/stats/stats";
-import Famous from "./components/Famous";
-import HeroBackup from "./components/Hero/HeroBackup";
+
+const Hero = dynamic(() => import("./components/Hero/Hero"), { ssr: false });
+const HeroBackup = dynamic(() => import("./components/Hero/HeroBackup"), { ssr: false });
+const SecondSection = dynamic(() => import("./components/secondSection/SecondSection"), { ssr: false });
+const ThirdSection = dynamic(() => import("./components/thirdSection/ThirdSection"), { ssr: false });
+const ActivityGrid = dynamic(() => import("./components/activityGrid/ActivityGrid"), { ssr: false });
+const FifthSection = dynamic(() => import("./components/fifthSection/FifthSection"), { ssr: false });
+const Video = dynamic(() => import("./components/video/video"), { ssr: false });
+const TisByNumbers = dynamic(() => import("./components/TisByNumbers/TisByNumbers"), { ssr: false });
+const AwardSection = dynamic(() => import("./components/awardsSection/AwardSection"), { ssr: false });
+const Ranking = dynamic(() => import("./components/Ranking/ranking"), { ssr: false });
+const ParentsReviews = dynamic(() => import("./components/parentsReviews/ParentsReviews"), { ssr: false });
+const FeaturesSection = dynamic(() => import("./components/featuresSection/FeaturesSection"), { ssr: false });
+const GoogleReviews = dynamic(() => import("@/app/boarding-school/admission-open/Components/Hero/components/GoogleReviews"), { ssr: false });
+const Form = dynamic(() => import("./components/form/form"), { ssr: false });
+const Stats = dynamic(() => import("./components/TisByNumbers/stats"), { ssr: false });
+const NewStats = dynamic(() => import("./components/stats/stats"), { ssr: false });
+const Famous = dynamic(() => import("./components/Famous"), { ssr: false });
 
 const maxSections = 13;
 
 const BackupHomeLayout = () => {
   const { isMobile } = useMobile();
-
   const bubbleRef = useRef(null);
   const [scrollToSection, setScrollToSection] = useState(1);
 
   const handleScrollArrow = () => {
     if (scrollToSection < maxSections) {
-      setScrollToSection((prev) => prev + 1);
-    }
-
-    if (scrollToSection < maxSections) {
+      setScrollToSection(prev => prev + 1);
       const element = document.getElementById(`${scrollToSection}`);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
+      if (element) element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -49,18 +45,13 @@ const BackupHomeLayout = () => {
       {!isMobile && (
         <div className="scroll-arrow-div">
           <button onClick={handleScrollArrow}>
-            <Image
-              src={scrollArrow}
-              className="scroll-arrow-icon"
-              alt="scroll"
-            />
+            <Image src={scrollArrow} className="scroll-arrow-icon" alt="scroll" />
           </button>
         </div>
       )}
 
       <div>
         <>
-          {/* <Hero bubbleRef={bubbleRef} /> */}
           <HeroBackup bubbleRef={bubbleRef} />
           <div ref={bubbleRef}>
             <div className="w-full bg-[#b90124] md:h-60"></div>
@@ -78,8 +69,6 @@ const BackupHomeLayout = () => {
               <ParentsReviews />
               <GoogleReviews />
               <FeaturesSection />
-
-
             </div>
           </div>
         </>
