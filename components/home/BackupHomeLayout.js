@@ -7,8 +7,10 @@ import scrollArrow from "../../public/icons/downArrowDoodle.svg";
 import Image from "next/image";
 import "../../styles/home/HomeLayout.css";
 
-const Hero = dynamic(() => import("./components/Hero/Hero"), { ssr: false });
-const HeroBackup = dynamic(() => import("./components/Hero/HeroBackup"), { ssr: false });
+const HeroBackup = dynamic(() => import("./components/Hero/HeroBackup"), {
+  ssr: false,
+  loading: () => <section><h2>Hero section loading...</h2></section>,
+});
 const SecondSection = dynamic(() => import("./components/secondSection/SecondSection"), { ssr: false });
 const ThirdSection = dynamic(() => import("./components/thirdSection/ThirdSection"), { ssr: false });
 const ActivityGrid = dynamic(() => import("./components/activityGrid/ActivityGrid"), { ssr: false });
@@ -20,8 +22,8 @@ const Ranking = dynamic(() => import("./components/Ranking/ranking"), { ssr: fal
 const ParentsReviews = dynamic(() => import("./components/parentsReviews/ParentsReviews"), { ssr: false });
 const FeaturesSection = dynamic(() => import("./components/featuresSection/FeaturesSection"), { ssr: false });
 const GoogleReviews = dynamic(() => import("@/app/boarding-school/admission-open/Components/Hero/components/GoogleReviews"), { ssr: false });
-const Form = dynamic(() => import("./components/form/form"), { ssr: false });
-const Stats = dynamic(() => import("./components/TisByNumbers/stats"), { ssr: false });
+// const Form = dynamic(() => import("./components/form/form"), { ssr: false });
+// const Stats = dynamic(() => import("./components/TisByNumbers/stats"), { ssr: false });
 const NewStats = dynamic(() => import("./components/stats/stats"), { ssr: false });
 const Famous = dynamic(() => import("./components/Famous"), { ssr: false });
 
