@@ -1,4 +1,3 @@
-"use-client";
 import React from "react";
 import ladyInPink from "../../../../public/pictures/ladyInPink.png";
 import manInBlue from "../../../../public/pictures/manInBlue.png";

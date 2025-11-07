@@ -1,4 +1,4 @@
-// app/page.js (server component by default)
+// app/page.js (server component)
 
 import Footer from "../components/Footer/Footer";
 import HomePage from "../components/Pages/Home/Home";
@@ -24,7 +24,7 @@ export default function Home() {
       <HomePage />
       <Footer />
 
-      {/* ✅ JSON-LD Schemas */}
+      {/* ✅ School Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -51,6 +51,8 @@ export default function Home() {
           }),
         }}
       />
+
+      {/* ✅ Website Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -64,6 +66,63 @@ export default function Home() {
               target:
                 "https://tis.edu.in/{search_term_string}https://tis.edu.in/contact-us/",
               "query-input": "required name=search_term_string",
+            },
+          }),
+        }}
+      />
+
+      {/* ✅ Local Business Schema (Your Provided Schema) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "Tula's International School",
+            image:
+              "https://tis.edu.in/_next/static/media/schoolLogo.95f6e121.png",
+            "@id": "",
+            url: "https://tis.edu.in/",
+            telephone: "0135-2699444",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "Tula's International School",
+              addressLocality:
+                "Dhoolkot, P.O –Selaqui, Chakrata Road, Dehradun",
+              postalCode: "248011",
+              addressCountry: "IN",
+            },
+            sameAs: [
+              "https://www.facebook.com/tulasinternationalschool",
+              "https://x.com/Tulas_IntSchool",
+              "https://www.instagram.com/tulasinternationalschool",
+              "https://www.youtube.com/channel/UC-eRtybnv3GvfvcWxQq93zw",
+              "https://www.linkedin.com/in/tulasinternationalschool/",
+              "https://tis.edu.in/",
+            ],
+          }),
+        }}
+      />
+
+      {/* ✅ Video Schema (Your Provided Schema) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            name: "Tula's International School",
+            description:
+              "Discover the Best Boarding School in Uttarakhand, India - Tula's International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus.",
+            thumbnailUrl: "https://tis.edu.in/",
+            uploadDate: "",
+            contentUrl: "https://tis.edu.in/virtual-tour/",
+            embedUrl: "https://tis.edu.in/virtual-tour/",
+            potentialAction: {
+              "@type": "SeekToAction",
+              target:
+                "https://tis.edu.in/virtual-tour/={seek_to_second_number}",
+              "startOffset-input": "required name=seek_to_second_number",
             },
           }),
         }}

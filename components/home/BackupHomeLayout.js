@@ -6,13 +6,13 @@ import dynamic from "next/dynamic";
 import scrollArrow from "../../public/icons/downArrowDoodle.svg";
 import Image from "next/image";
 import "../../styles/home/HomeLayout.css";
+import ThirdSection from "./components/thirdSection/ThirdSection";
 
 const HeroBackup = dynamic(() => import("./components/Hero/HeroBackup"), {
   ssr: false,
   loading: () => <section><h2>Hero section loading...</h2></section>,
 });
 const SecondSection = dynamic(() => import("./components/secondSection/SecondSection"), { ssr: false });
-const ThirdSection = dynamic(() => import("./components/thirdSection/ThirdSection"), { ssr: false });
 const ActivityGrid = dynamic(() => import("./components/activityGrid/ActivityGrid"), { ssr: false });
 const FifthSection = dynamic(() => import("./components/fifthSection/FifthSection"), { ssr: false });
 const Video = dynamic(() => import("./components/video/video"), { ssr: false });
@@ -33,7 +33,6 @@ const BackupHomeLayout = () => {
   const { isMobile } = useMobile();
   const bubbleRef = useRef(null);
   const [scrollToSection, setScrollToSection] = useState(1);
-
   const handleScrollArrow = () => {
     if (scrollToSection < maxSections) {
       setScrollToSection(prev => prev + 1);
@@ -59,7 +58,7 @@ const BackupHomeLayout = () => {
             <div className="w-full bg-[#b90124] md:h-60"></div>
             <SecondSection />
             <div className="home-layout-allSection flex flex-col gap-6 md:gap-[2%]">
-              <ThirdSection />
+              <ThirdSection/>
               <ActivityGrid />
               <Video />
               <FifthSection />
