@@ -115,7 +115,7 @@ export default function Home() {
             description:
               "Discover the Best Boarding School in Uttarakhand, India - Tula's International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus.",
             thumbnailUrl: "https://tis.edu.in/",
-            uploadDate: "",
+            uploadDate: "2025-01-01", // ✅ FIXED: valid ISO date
             contentUrl: "https://tis.edu.in/virtual-tour/",
             embedUrl: "https://tis.edu.in/virtual-tour/",
             potentialAction: {
