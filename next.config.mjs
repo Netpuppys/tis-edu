@@ -26,7 +26,8 @@ const nextConfig = {
       },
           {
             protocol: "https",
-      hostname: "blogs-backend.s3.ap-south-1.amazonaws.com", // ✅ fixed bucket name
+      // hostname: "blogs-backend.s3.ap-south-1.amazonaws.com", 
+            hostname: "tis-blog-assets.s3.ap-south-1.amazonaws.com",
             port: "",
             pathname: "/**",
           },
