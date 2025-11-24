@@ -1,4 +1,3 @@
-import nikhil from "../../../../../public/LandingPage/nikhil-sir-Image.png";
 
 export default function AboutSpeaker() {
   return (
