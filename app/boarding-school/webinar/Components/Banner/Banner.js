@@ -39,7 +39,7 @@ export default function Banner() {
         >
           {/* Thumbnail */}
           <Image
-            src="/Landingpage/webinar-thumbnail.png"
+            src="/LandingPage/webinar-thumbnail.png"
             width={1200}
             height={700}
             alt="Webinar Preview"

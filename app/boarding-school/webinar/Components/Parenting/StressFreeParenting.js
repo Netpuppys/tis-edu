@@ -2,7 +2,7 @@ export default function StressFreeParenting() {
   return (
     <>
           <img
-  src="/Landingpage/landingbanner.jpg"
+  src="/LandingPage/landingbanner.jpg"
   alt="banner"
   class="w-full h-auto"
 />

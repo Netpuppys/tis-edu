@@ -59,8 +59,8 @@ function ParentsReviewsLanding() {
         <div className="w-full flex h-full gap-2 items-start">
           <Image src={invCommaIcon} alt="" className="w-[20px] md:w-[30px]" />
           <h2 className="border-[#b90124] border-b leading-tight text-[clamp(10px,8vw,60px)] md:text-[clamp(10px,3vw,100px)] font-[900] font-[TTChocolatesBold]">
-            From The{" "}
-            <span className="text-[#b90124] font-[Mirador800]">Parents</span>
+            Have a Look at Our Proud Parents, {" "}
+            <span className="text-[#b90124] font-[Mirador800]">They Have Something to Tell you</span>
           </h2>
         </div>
         <h3
