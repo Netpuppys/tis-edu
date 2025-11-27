@@ -81,7 +81,7 @@ export default function Banner() {
 
           <div className="h-[2px] bg-[#b90124] rounded-full mx-auto" style={{ width: "40%" , marginTop:'-1px'}}></div>
 
-          <div className="grid grid-cols-2 gap-6 text-lg">
+          <div className="grid grid-cols-2 gap-5 md:gap-6 text-lg">
             <DetailCard icon={<Calendar />} label="Date" value="7th Dec 2025" />
             <DetailCard icon={<Clock />} label="Time" value="11:00 AM IST" />
             <DetailCard icon={<Video />} label="Platform" value="Zoom" />
@@ -110,7 +110,7 @@ function DetailCard({ icon, label, value }) {
       </div>
       <div>
         <p className="font-medium text-gray-500">{label}:</p>
-        <p className="font-semibold">{value}</p>
+        <p className="font-medium font-sans text-sm md:text-lg">{value}</p>
       </div>
     </div>
   );
