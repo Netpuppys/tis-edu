@@ -2,12 +2,12 @@ export default function StressFreeParenting() {
   return (
     <>
           <img
-  src="/LandingPage/landingbanner.jpg"
+  src="/LandingPage/banner.jpg"
   alt="banner"
   class="w-full h-auto"
 />
 
-    <section className="w-full py-24" style={{ backgroundColor: "#b90124" , marginTop:'-40px' }}>
+    <section className="w-full py-14 md:py-24" style={{ backgroundColor: "#b90124" , marginTop:'-50px' }}>
       <div className="max-w-4xl mx-auto px-6 text-center text-white">
 
 <p className="w-full text-center font-[Mirador800] text-white text-[clamp(14px,6vw,60px)] md:text-[clamp(18px,3vw,48px)]">

@@ -45,14 +45,14 @@ export default function WebinarBlueprint() {
   ];
 
   return (
-    <section className="py-16 px-6 text-center">
+    <section className="pb-1 md:pb-10 px-6 text-center">
       {/* Main Heading */}
-      <h2 className="text-[#b90124] font-[Mirador800] text-[clamp(22px,6vw,60px)]">
+      <h2 className="text-[#b90124] font-[Mirador800] text-[clamp(32px,6vw,60px)]">
         No More Confusion
       </h2>
 
       {/* Underline for main heading */}
-      <div className="w-40 h-[6px] bg-[#e7c01d] mx-auto mt-2 rounded-full"></div>
+      <div className="w-60 h-[4px] bg-[#e7c01d] mx-auto rounded-full"></div>
 
       {/* Subtext */}
       <p className="text-lg max-w-3xl mx-auto mt-6">
@@ -62,25 +62,28 @@ export default function WebinarBlueprint() {
       </p>
 
       {/* Grid */}
-      <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-6xl mx-auto">
+      <div className="mt-4 md:mt-14 grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-10 w-full max-w-6xl mx-auto">
         {data.map((item, index) => (
           <div
             key={index}
-            className="bg-[#b90124] text-white rounded-lg px-10 py-10"
+            className="bg-[#b90124] text-white rounded-lg px-2 md:px-10 py-3 md:py-10"
           >
             {/* Title */}
-            <p className="text-2xl font-bold">{item.title}</p>
+            <p className="text-lg md:text-2xl font-sans font-bold">{item.title}</p>
 
             {/* Manual underline (custom width per item) */}
             <div
-              className={`${item.underlineWidth} h-[6px] bg-[#e7c01d] mx-auto mt-2 rounded-full`}
+              className={`${item.underlineWidth} h-[3px] bg-[#e7c01d] mx-auto md:mt-2 rounded-full`}
             ></div>
 
             {/* Body text */}
-            <p className="mt-5 text-lg leading-relaxed">{item.text}</p>
+            <p className="mt-1 md:mt-5 text-md md:text-lg font-sans font-medium md:font-semibold leading-relaxed">{item.text}</p>
           </div>
         ))}
       </div>
+                        <button className="w-80 bg-[#b90124] text-white font-semibold mt-5 md:mt-10 py-2 md:py-4 rounded-md hover:bg-[#a40020] transition text-xl">
+            Register for FREE Webinar
+          </button>
     </section>
   );
 }

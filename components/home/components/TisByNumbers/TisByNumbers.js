@@ -22,7 +22,7 @@ function TisByNumbers() {
       {/* <div className="-mt-[40px] md:-mt-[120px]">
         <Stats />
       </div> */}
-      <div className="w-full flex flex-col justify-center items-center py-2 md:py-10">
+<div className="w-full flex flex-col justify-center items-center py-1 md:py-2 mt-[-25px] md:mt-0">
         <div
           onClick={handleVirtualTourClick}
           className="py-8 md:py-12 w-[90%] rounded-xl md:rounded-[20px] md:w-[75%] cursor-pointer bg-cover"

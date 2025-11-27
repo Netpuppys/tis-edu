@@ -52,15 +52,15 @@ function ParentsReviewsLanding() {
 
   return (
     <div
-      className="w-full flex flex-col justify-center items-center py-2 md:py-10"
+      className="w-full flex flex-col justify-center items-center md:py-2"
       id="12"
     >
       <div className="w-full px-8 md:px-0 md:w-[75%] mx-auto">
         <div className="w-full flex h-full gap-2 items-start">
           <Image src={invCommaIcon} alt="" className="w-[20px] md:w-[30px]" />
-          <h2 className="border-[#b90124] border-b leading-tight text-[clamp(10px,8vw,60px)] md:text-[clamp(10px,3vw,100px)] font-[900] font-[TTChocolatesBold]">
-            Have a Look at Our Proud Parents, {" "}
-            <span className="text-[#b90124] font-[Mirador800]">They Have Something to Tell you</span>
+          <h2 className="border-[#b90124] text-center border-b leading-tight text-[clamp(10px,5vw,60px)] md:text-[clamp(10px,3vw,100px)] font-[900] font-[Mirador800]">
+            Have a Look at Our {" "}
+            <span className="text-[#b90124] font-[Mirador800]">Proud Parents</span> They Have Something to Tell you
           </h2>
         </div>
         <h3

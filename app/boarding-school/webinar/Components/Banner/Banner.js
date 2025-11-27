@@ -1,7 +1,7 @@
 "use client";
-import { useState } from "react";
+import { useState , useEffect } from "react";
 import Image from "next/image";
-import { Calendar, Clock, Video, Hourglass, MonitorStop } from "lucide-react";
+import { Calendar, Clock, Video, Hourglass, MonitorStop , Bell } from "lucide-react";
 import { Play } from "lucide-react";
 
 export default function Banner() {
@@ -14,7 +14,15 @@ export default function Banner() {
     const [play, setPlay] = useState(false);
 
   return (
-    <section className="w-full bg-white py-16 px-6 lg:px-20">
+    <>
+        <div className="w-full bg-[#b90124] py-3 px-6 lg:px-20">
+<h3 className="text-md md:text-xl text-white text-center font-semibold flex md:items-center justify-center gap-3">
+  <Bell className="text-[#ffff] w-7 h-7" />
+  Mark Your Calenders! Join Us on 07 DEC 2025, at 11:00 AM for an Exclusive Free Webinar! 
+</h3>
+        </div>
+
+    <section className="w-full bg-white py-6 md:py-15 px-6 lg:px-20">
       <div className="w-full px-3 md:px-6 h-full">
         <p className="w-full text-center font-[Mirador800] text-[#b90124] text-[clamp(14px,5vw,60px)] md:text-[clamp(18px,3vw,48px)]">
           The Painful Truth : Why Most Parent are Failing To Choose The Right
@@ -74,18 +82,23 @@ export default function Banner() {
           <div className="h-[2px] bg-[#b90124] rounded-full mx-auto" style={{ width: "40%" , marginTop:'-1px'}}></div>
 
           <div className="grid grid-cols-2 gap-6 text-lg">
-            <DetailCard icon={<Calendar />} label="Date" value="11th Dec 2025" />
-            <DetailCard icon={<Clock />} label="Time" value="7:30 PM IST" />
+            <DetailCard icon={<Calendar />} label="Date" value="7th Dec 2025" />
+            <DetailCard icon={<Clock />} label="Time" value="11:00 AM IST" />
             <DetailCard icon={<Video />} label="Platform" value="Zoom" />
             <DetailCard icon={<Hourglass />} label="Duration" value="45 Minutes" />
           </div>
 
-          <button className="w-full bg-[#b90124] text-white font-semibold py-4 rounded-md hover:bg-[#a40020] transition text-xl">
-            Register for FREE Webinar
-          </button>
+      <button
+        className="w-full bg-[#b90124] text-white font-semibold py-4 rounded-md hover:bg-[#a40020] transition text-xl mt-6"
+      >
+        Register for FREE Webinar
+      </button>
+
+      {/* Modal */}
         </div>
       </div>
     </section>
+    </>
   );
 }
 

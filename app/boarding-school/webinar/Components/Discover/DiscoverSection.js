@@ -37,7 +37,7 @@ export default function DiscoverSection() {
   ];
 
   return (
-    <section className="w-full py-16 px-6" style={{ backgroundColor: "#b90124" }}>
+    <section className="w-full py-6 md:py-10 px-6" style={{ backgroundColor: "#b90124" }}>
       
       {/* Title */}
       <p className="text-center font-[Mirador800] text-[#ffff] text-[clamp(14px,6vw,60px)] md:text-[clamp(18px,3vw,48px)]">
@@ -47,27 +47,27 @@ export default function DiscoverSection() {
             <div className="h-[2px] bg-[#f9c603] rounded-full mx-auto" style={{ width: "60%" , marginTop:'-1px'}}></div>
 
       {/* Card Grid */}
-      <div className="mt-12 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="mt-12 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-8">
         {items.map(({ text, icon: Icon }, index) => (
           <div
             key={index}
-            className="bg-white px-8 py-10 rounded-xl shadow-md flex flex-col items-center text-center transition hover:scale-[1.02] hover:shadow-lg duration-200"
+            className="bg-white px-8 py-3 md:py-10 rounded-xl shadow-md flex flex-col items-center text-center transition hover:scale-[1.02] hover:shadow-lg duration-200"
           >
             {/* Unique Icon */}
-            <div className="w-16 h-16 flex items-center justify-center rounded-full border-2 border-black mb-6">
+            <div className="w-16 h-16 flex items-center justify-center rounded-full border-2 border-black mb-2 md:mb-6">
               <Icon size={36} />
             </div>
 
             {/* Content */}
-            <p className="text-gray-800 text-lg leading-relaxed">{text}</p>
+            <p className="text-gray-800 font-sans font-semibold text-lg leading-relaxed">{text}</p>
           </div>
         ))}
       </div>
 
       {/* CTA Button */}
-      <div className="text-center mt-10">
-        <button className="bg-white text-[#b90124] font-semibold text-xl py-4 px-10 rounded-md shadow-lg hover:opacity-90 transition">
-          RESERVE YOUR WEBINAR SEAT
+      <div className="text-center mt-8">
+        <button className="bg-white font-sans font-bold text-xl py-2 md:py-4 px-8 rounded-md shadow hover:opacity-90 transition">
+          Register for FREE Webinar
         </button>
       </div>
     </section>
