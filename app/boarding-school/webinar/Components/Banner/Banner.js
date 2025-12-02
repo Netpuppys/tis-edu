@@ -88,11 +88,17 @@ export default function Banner() {
             <DetailCard icon={<Hourglass />} label="Duration" value="45 Minutes" />
           </div>
 
-      <button
-        className="w-full bg-[#b90124] text-white font-semibold py-4 rounded-md hover:bg-[#a40020] transition text-xl mt-6"
-      >
-        Register for FREE Webinar
-      </button>
+<a
+  href="https://us06web.zoom.us/webinar/register/WN_reHzH0eGRTW52N_wCUilAQ#/registration"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button
+    className="w-full bg-[#b90124] text-white font-semibold py-4 rounded-md hover:bg-[#a40020] transition text-xl mt-6"
+  >
+    Register for FREE Webinar
+  </button>
+</a>
 
       {/* Modal */}
         </div>

@@ -23,9 +23,15 @@ export default function StressFreeParenting() {
          If you want a decision-making process that feels steady and well-informed, register for the webinar. The session aims to give you dependable clarity and a framework you can apply right away.
         </p>
 
+<a
+  href="https://us06web.zoom.us/webinar/register/WN_reHzH0eGRTW52N_wCUilAQ#/registration"
+  target="_blank"
+  rel="noopener noreferrer"
+>
         <button className="bg-white text-black text-xl font-medium px-10 py-4 rounded-md shadow hover:bg-gray-100 transition">
           Register Now
         </button>
+        </a>
 
       </div>
     </section>

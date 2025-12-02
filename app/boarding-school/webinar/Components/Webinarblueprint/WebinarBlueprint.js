@@ -81,9 +81,15 @@ export default function WebinarBlueprint() {
           </div>
         ))}
       </div>
+                      <a
+  href="https://us06web.zoom.us/webinar/register/WN_reHzH0eGRTW52N_wCUilAQ#/registration"
+  target="_blank"
+  rel="noopener noreferrer"
+>
                         <button className="w-80 bg-[#b90124] text-white font-semibold mt-5 md:mt-10 py-2 md:py-4 rounded-md hover:bg-[#a40020] transition text-xl">
             Register for FREE Webinar
           </button>
+          </a>
     </section>
   );
 }

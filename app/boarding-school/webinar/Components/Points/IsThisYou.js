@@ -39,9 +39,15 @@ export default function IsThisYou() {
 
       {/* CTA Button */}
       <div className="text-center mt-8">
+        <a
+  href="https://us06web.zoom.us/webinar/register/WN_reHzH0eGRTW52N_wCUilAQ#/registration"
+  target="_blank"
+  rel="noopener noreferrer"
+>
         <button className="bg-white font-sans font-bold text-xl py-2 md:py-4 px-8 rounded-md shadow hover:opacity-90 transition">
           Register for FREE Webinar
         </button>
+        </a>
       </div>
     </section>
   );
