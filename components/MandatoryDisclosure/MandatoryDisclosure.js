@@ -6,7 +6,7 @@ import HeaderMandatoryImg from "../../public/Banner/mandatoryDisclosure.webp";
 import HeaderMandatoryImgMobile from "../../public/Banner/mandatoryDisclosureMobile.webp";
 import Affiliation from "../../public/MandatoryPDF/Affiliation-ana-Extention.pdf";
 import Building from "../../public/MandatoryPDF/building-safety-certificate.pdf";
-import FeesStructure from "../../public/MandatoryPDF/Fee-Structure.pdf";
+import FeesStructure from "../../public/MandatoryPDF/TIS FEE STRUCTURE 2026-27.pdf";
 import TrustRegistration from "../../public/MandatoryPDF/Trust-Registration.pdf";
 import NOC from "../../public/MandatoryPDF/NOC-by-State-Govt.pdf";
 import SchoolManagingCommittee from "../../public/MandatoryPDF/School-Managing-Committee.pdf";

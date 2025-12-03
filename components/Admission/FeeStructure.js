@@ -29,7 +29,7 @@ function FeeStructure() {
   const heading = (
     <>
       Fee Structure of Boarding School in Dehradun for the{" "}
-      <span>Academic year 2024 - 25</span>
+      <span>Academic year 2026 - 27</span>
     </>
   );
   return (
