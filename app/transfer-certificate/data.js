@@ -1647,4 +1647,17 @@ export const data = [
       },
     ],
   },
+
+  // {
+  //   sessions: "2023-24",
+  //   sessionData: [
+  //     {
+  //       name: "Arnav Pandey",
+  //       fathersName: "Pankaj Kumar Pandey",
+  //       admissionNo: "0171",
+  //       DOB: "12/03/2006",
+  //       tc: arnav0171,
+  //     },
+  //   ]
+  // }
 ];

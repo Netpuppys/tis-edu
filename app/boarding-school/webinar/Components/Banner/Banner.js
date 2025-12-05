@@ -18,7 +18,7 @@ export default function Banner() {
         <div className="w-full bg-[#b90124] py-3 px-6 lg:px-20">
 <h3 className="text-md md:text-xl text-white text-center font-semibold flex md:items-center justify-center gap-3">
   <Bell className="text-[#ffff] w-7 h-7" />
-  Mark Your Calenders! Join Us on 07 DEC 2025, at 11:00 AM for an Exclusive Free Webinar! 
+  Mark Your Calenders! Join Us on 14 DEC 2025, at 11:00 AM for an Exclusive Free Webinar! 
 </h3>
         </div>
 
@@ -82,7 +82,7 @@ export default function Banner() {
           <div className="h-[2px] bg-[#b90124] rounded-full mx-auto" style={{ width: "40%" , marginTop:'-1px'}}></div>
 
           <div className="grid grid-cols-2 gap-5 md:gap-6 text-lg">
-            <DetailCard icon={<Calendar />} label="Date" value="7th Dec 2025" />
+            <DetailCard icon={<Calendar />} label="Date" value="14th Dec 2025" />
             <DetailCard icon={<Clock />} label="Time" value="11:00 AM IST" />
             <DetailCard icon={<Video />} label="Platform" value="Zoom" />
             <DetailCard icon={<Hourglass />} label="Duration" value="45 Minutes" />

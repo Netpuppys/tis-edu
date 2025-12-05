@@ -80,8 +80,25 @@ const WebinarLandingLayout = () => {
           </div>
         </>
       </div>
+{isMobile && (
+  <div className="fixed bottom-0 z-50 w-full h-12 bg-[#60BAB1] flex items-center">
+    <a
+      href="https://us06web.zoom.us/webinar/register/WN_reHzH0eGRTW52N_wCUilAQ#/registration"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-full"
+    >
+      <button
+        className="w-full h-12 text-white flex items-center justify-center font-[TTChocolatesBold]"
+      >
+        Register for Free Webinar
+      </button>
+    </a>
+  </div>
+)}
+
       <div
-  className="bg-[#25d366] flex justify-center items-center p-3 md:p-4 rounded-full fixed right-4 bottom-4 md:right-8 md:bottom-8 z-[999999] cursor-pointer"
+  className="bg-[#25d366] flex justify-center items-center p-3 md:p-4 rounded-full fixed right-4 bottom-14 md:right-8 md:bottom-8 z-[999999] cursor-pointer"
   onClick={handleWhatsapp}
 >
   <FaWhatsapp className="text-white text-[30px] md:text-[40px]" />
