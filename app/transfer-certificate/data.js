@@ -203,6 +203,203 @@ import patel741 from "../../public/TransferCertificate2022-23/741.pdf";
 import kabir793 from "../../public/TransferCertificate2022-23/793.pdf";
 import rashi807 from "../../public/TransferCertificate2022-23/807.pdf";
 
+// 23-24 imports
+
+import arnav0171 from "../../public/TransferCertificate2023-24/0171.pdf";
+import devansh0185 from "../../public/TransferCertificate2023-24/0185.pdf";
+import harshpreet0230 from "../../public/TransferCertificate2023-24/0230.pdf";
+import aditya0274 from "../../public/TransferCertificate2023-24/274.pdf";
+import simran0308 from "../../public/TransferCertificate2023-24/0308.pdf";
+import samarya0345 from "../../public/TransferCertificate2023-24/0345.pdf";
+import akshat0351 from "../../public/TransferCertificate2023-24/351.pdf";
+import sahir0372 from "../../public/TransferCertificate2023-24/0372.pdf";
+import abhay0408 from "../../public/TransferCertificate2023-24/408.pdf";
+import abhijeet0420 from "../../public/TransferCertificate2023-24/420.pdf";
+
+import sonakshi0431 from "../../public/TransferCertificate2023-24/0431.pdf";
+import navya0449 from "../../public/TransferCertificate2023-24/0449.pdf";
+import aasya0453 from "../../public/TransferCertificate2023-24/453.pdf";
+import gaurang0458 from "../../public/TransferCertificate2023-24/0458.pdf";
+import kartik0463 from "../../public/TransferCertificate2023-24/0463.pdf";
+import varsha0468 from "../../public/TransferCertificate2023-24/0468.pdf";
+import dharm0486 from "../../public/TransferCertificate2023-24/0486.pdf";
+import shaurya0499 from "../../public/TransferCertificate2023-24/0499.pdf";
+import amreen0506 from "../../public/TransferCertificate2023-24/506.pdf";
+import tanmay0528 from "../../public/TransferCertificate2023-24/0528.pdf";
+
+import maytri0541 from "../../public/TransferCertificate2023-24/0541.pdf";
+import mannat0542 from "../../public/TransferCertificate2023-24/0542.pdf";
+import kush0549 from "../../public/TransferCertificate2023-24/0549.pdf";
+import tanya0552 from "../../public/TransferCertificate2023-24/0552.pdf";
+import stephen0565 from "../../public/TransferCertificate2023-24/0565.pdf";
+import maisha0578 from "../../public/TransferCertificate2023-24/0578.pdf";
+import monisha0591 from "../../public/TransferCertificate2023-24/0591.pdf";
+import mishty0593 from "../../public/TransferCertificate2023-24/0593.pdf";
+import pandit0607 from "../../public/TransferCertificate2023-24/0607.pdf";
+
+import darsh0609 from "../../public/TransferCertificate2023-24/0609.pdf";
+import kalp0617 from "../../public/TransferCertificate2023-24/0617.pdf";
+import darsh0618 from "../../public/TransferCertificate2023-24/0618.pdf";
+import aesa0622 from "../../public/TransferCertificate2023-24/622.pdf";
+import aman0626 from "../../public/TransferCertificate2023-24/0626.pdf";
+import adarsh0627 from "../../public/TransferCertificate2023-24/0627.pdf";
+import tanmay0628 from "../../public/TransferCertificate2023-24/628.pdf";
+import nitin0633 from "../../public/TransferCertificate2023-24/0633.pdf";
+import mayank0654 from "../../public/TransferCertificate2023-24/0654.pdf";
+import naitik0655 from "../../public/TransferCertificate2023-24/0655.pdf";
+
+import shivam0657 from "../../public/TransferCertificate2023-24/0657.pdf";
+import trayamb0658 from "../../public/TransferCertificate2023-24/0658.pdf";
+import temjenwapang0659 from "../../public/TransferCertificate2023-24/0659.pdf";
+import divyanshu0661 from "../../public/TransferCertificate2023-24/0661.pdf";
+import raunak0662 from "../../public/TransferCertificate2023-24/0662.pdf";
+import varun0663 from "../../public/TransferCertificate2023-24/0663.pdf";
+import samarth0665 from "../../public/TransferCertificate2023-24/0665.pdf";
+import jupudi0666 from "../../public/TransferCertificate2023-24/0666.pdf";
+import radhika0667 from "../../public/TransferCertificate2023-24/0667.pdf";
+import tanishk0668 from "../../public/TransferCertificate2023-24/0668.pdf";
+
+import anshika0669 from "../../public/TransferCertificate2023-24/669.pdf";
+import garv0670 from "../../public/TransferCertificate2023-24/0670.pdf";
+import shatakshi0671 from "../../public/TransferCertificate2023-24/0671.pdf";
+import aabhaas0672 from "../../public/TransferCertificate2023-24/672.pdf";
+import chavi0673 from "../../public/TransferCertificate2023-24/0673.pdf";
+import vatsal0674 from "../../public/TransferCertificate2023-24/0674.pdf";
+import nyasa0676 from "../../public/TransferCertificate2023-24/0676.pdf";
+import sangha0677 from "../../public/TransferCertificate2023-24/0677.pdf";
+import siddharth0678 from "../../public/TransferCertificate2023-24/0678.pdf";
+import aditya0679 from "../../public/TransferCertificate2023-24/679.pdf";
+
+import shubhi0680 from "../../public/TransferCertificate2023-24/0680.pdf";
+import kartikey0683 from "../../public/TransferCertificate2023-24/0683.pdf";
+import samruddhi0684 from "../../public/TransferCertificate2023-24/0684.pdf";
+import lucky0685 from "../../public/TransferCertificate2023-24/0685.pdf";
+import happy0686 from "../../public/TransferCertificate2023-24/0686.pdf";
+import tanishk0687 from "../../public/TransferCertificate2023-24/0687.pdf";
+import aryan0688 from "../../public/TransferCertificate2023-24/0688.pdf";
+import techi0689 from "../../public/TransferCertificate2023-24/689.pdf";
+import deep0690 from "../../public/TransferCertificate2023-24/0690.pdf";
+import akash0691 from "../../public/TransferCertificate2023-24/691.pdf";
+
+import ayush0692 from "../../public/TransferCertificate2023-24/0692.pdf";
+import mohmmad0699 from "../../public/TransferCertificate2023-24/0699.pdf";
+import yashdeep0700 from "../../public/TransferCertificate2023-24/0700.pdf";
+import om0701 from "../../public/TransferCertificate2023-24/0701.pdf";
+import vishnu0702 from "../../public/TransferCertificate2023-24/0702.pdf";
+import utsav0703 from "../../public/TransferCertificate2023-24/0703.pdf";
+import chohsha0704 from "../../public/TransferCertificate2023-24/704.pdf";
+import aryan0712 from "../../public/TransferCertificate2023-24/0712.pdf";
+import rahul0716 from "../../public/TransferCertificate2023-24/0716.pdf";
+import arya0719 from "../../public/TransferCertificate2023-24/719.pdf";
+
+import aarav0723 from "../../public/TransferCertificate2023-24/723.pdf";
+import viraaj0726 from "../../public/TransferCertificate2023-24/726.pdf";
+import aryan0729 from "../../public/TransferCertificate2023-24/729.pdf";
+import ankush0742 from "../../public/TransferCertificate2023-24/742.pdf";
+import dhanvi0751 from "../../public/TransferCertificate2023-24/751.pdf";
+import pasula0764 from "../../public/TransferCertificate2023-24/764.pdf";
+import akshay0771 from "../../public/TransferCertificate2023-24/771.pdf";
+import yashashvi0772 from "../../public/TransferCertificate2023-24/772.pdf";
+import ankit0775 from "../../public/TransferCertificate2023-24/775.pdf";
+import rudra0783 from "../../public/TransferCertificate2023-24/783.pdf";
+
+import dhanush0785 from "../../public/TransferCertificate2023-24/785.pdf";
+import dhanishka0787 from "../../public/TransferCertificate2023-24/787.pdf";
+import mohammad0799 from "../../public/TransferCertificate2023-24/799.pdf";
+import pragati0803 from "../../public/TransferCertificate2023-24/803.pdf";
+import sarvaiya0815 from "../../public/TransferCertificate2023-24/815.pdf";
+import aakarsh0822 from "../../public/TransferCertificate2023-24/822.pdf";
+import nabh0827 from "../../public/TransferCertificate2023-24/827.pdf";
+import swastik0832 from "../../public/TransferCertificate2023-24/832.pdf";
+import kashvi0833 from "../../public/TransferCertificate2023-24/833.pdf";
+import agastaya0834 from "../../public/TransferCertificate2023-24/834.pdf";
+
+// 24 - 25 imports
+
+import gourav212 from "../../public/TransferCertificate2024-25/212.pdf";
+import abhivantika423 from "../../public/TransferCertificate2024-25/423.pdf";
+import ishaan424 from "../../public/TransferCertificate2024-25/424.pdf";
+import aditya435 from "../../public/TransferCertificate2024-25/435.pdf";
+import prashuk451 from "../../public/TransferCertificate2024-25/451.pdf";
+import yashvi496 from "../../public/TransferCertificate2024-25/496.pdf";
+import aadish501 from "../../public/TransferCertificate2024-25/501.pdf";
+import krish504 from "../../public/TransferCertificate2024-25/504.pdf";
+import nidhi508 from "../../public/TransferCertificate2024-25/508.pdf";
+import vinit512 from "../../public/TransferCertificate2024-25/512.pdf";
+import ananya519 from "../../public/TransferCertificate2024-25/519.pdf";
+import taanish538 from "../../public/TransferCertificate2024-25/538.pdf";
+import anvay555 from "../../public/TransferCertificate2024-25/555.pdf";
+import amartya556 from "../../public/TransferCertificate2024-25/556.pdf";
+import kanishka573 from "../../public/TransferCertificate2024-25/573.pdf";
+import divyam585 from "../../public/TransferCertificate2024-25/585.pdf";
+import aditya596 from "../../public/TransferCertificate2024-25/596.pdf";
+import ishaan598 from "../../public/TransferCertificate2024-25/598.pdf";
+import aditya601 from "../../public/TransferCertificate2024-25/601.pdf";
+import shaik602 from "../../public/TransferCertificate2024-25/602.pdf";
+import mokshit605 from "../../public/TransferCertificate2024-25/605.pdf";
+import vansh614 from "../../public/TransferCertificate2024-25/614.pdf";
+import arya621 from "../../public/TransferCertificate2024-25/621.pdf";
+import harshil624 from "../../public/TransferCertificate2024-25/624.pdf";
+import tanmay628 from "../../public/TransferCertificate2024-25/628.pdf";
+import molik652 from "../../public/TransferCertificate2024-25/652.pdf";
+import techi689 from "../../public/TransferCertificate2024-25/689.pdf";
+import chohsha704 from "../../public/TransferCertificate2024-25/704.pdf";
+import vaibhav711 from "../../public/TransferCertificate2024-25/711.pdf";
+import aahana717 from "../../public/TransferCertificate2024-25/717.pdf";
+import amber718 from "../../public/TransferCertificate2024-25/718.pdf";
+import prerit724 from "../../public/TransferCertificate2024-25/724.pdf";
+import stuti728 from "../../public/TransferCertificate2024-25/728.pdf";
+import arham730 from "../../public/TransferCertificate2024-25/730.pdf";
+import hitesh735 from "../../public/TransferCertificate2024-25/735.pdf";
+import dhruv738 from "../../public/TransferCertificate2024-25/738.pdf";
+import aahan743 from "../../public/TransferCertificate2024-25/743.pdf";
+import aryansh745 from "../../public/TransferCertificate2024-25/745.pdf";
+import kunsh756 from "../../public/TransferCertificate2024-25/756.pdf";
+import dhruv762 from "../../public/TransferCertificate2024-25/762.pdf";
+import swaraj767 from "../../public/TransferCertificate2024-25/767.pdf";
+import mahim770 from "../../public/TransferCertificate2024-25/770.pdf";
+import abhijeet773 from "../../public/TransferCertificate2024-25/773.pdf";
+import manav780 from "../../public/TransferCertificate2024-25/780.pdf";
+import sarthak786 from "../../public/TransferCertificate2024-25/786.pdf";
+import bhavya801 from "../../public/TransferCertificate2024-25/801.pdf";
+import kanika802 from "../../public/TransferCertificate2024-25/802.pdf";
+import anushka804 from "../../public/TransferCertificate2024-25/804.pdf";
+import ishita805 from "../../public/TransferCertificate2024-25/805.pdf";
+import rudraksh808 from "../../public/TransferCertificate2024-25/808.pdf";
+import kiran814 from "../../public/TransferCertificate2024-25/814.pdf";
+import siddharth819 from "../../public/TransferCertificate2024-25/819.pdf";
+import yug823 from "../../public/TransferCertificate2024-25/823.pdf";
+import lakshika828 from "../../public/TransferCertificate2024-25/828.pdf";
+import suyash831 from "../../public/TransferCertificate2024-25/831.pdf";
+import archisha842 from "../../public/TransferCertificate2024-25/842.pdf";
+import atharva843 from "../../public/TransferCertificate2024-25/843.pdf";
+import tanya847 from "../../public/TransferCertificate2024-25/847.pdf";
+import shobhit850 from "../../public/TransferCertificate2024-25/850.pdf";
+import duval854 from "../../public/TransferCertificate2024-25/854.pdf";
+import harsh857 from "../../public/TransferCertificate2024-25/857.pdf";
+import anitej859 from "../../public/TransferCertificate2024-25/859.pdf";
+import aarav860 from "../../public/TransferCertificate2024-25/860.pdf";
+import shaurya876 from "../../public/TransferCertificate2024-25/876.pdf";
+import shivay882 from "../../public/TransferCertificate2024-25/882.pdf";
+import shrey883 from "../../public/TransferCertificate2024-25/883.pdf";
+import pradyumn898 from "../../public/TransferCertificate2024-25/898.pdf";
+import tanishq899 from "../../public/TransferCertificate2024-25/899.pdf";
+import moksh901 from "../../public/TransferCertificate2024-25/901.pdf";
+import lucky909 from "../../public/TransferCertificate2024-25/909.pdf";
+import ayushman911 from "../../public/TransferCertificate2024-25/911.pdf";
+import adwitya915 from "../../public/TransferCertificate2024-25/915.pdf";
+import naksh924 from "../../public/TransferCertificate2024-25/924.pdf";
+import evelina926 from "../../public/TransferCertificate2024-25/926.pdf";
+import sunit929 from "../../public/TransferCertificate2024-25/929.pdf";
+import piyush931 from "../../public/TransferCertificate2024-25/931.pdf";
+import prakhar940 from "../../public/TransferCertificate2024-25/940.pdf";
+import rudraksha941 from "../../public/TransferCertificate2024-25/941.pdf";
+import suhail943 from "../../public/TransferCertificate2024-25/943.pdf";
+import akmisha944 from "../../public/TransferCertificate2024-25/944.pdf";
+import aindavi948 from "../../public/TransferCertificate2024-25/948.pdf";
+
+
+
 export const data = [
   {
     sessions: "2020-21",
@@ -1648,16 +1845,1283 @@ export const data = [
     ],
   },
 
-  // {
-  //   sessions: "2023-24",
-  //   sessionData: [
-  //     {
-  //       name: "Arnav Pandey",
-  //       fathersName: "Pankaj Kumar Pandey",
-  //       admissionNo: "0171",
-  //       DOB: "12/03/2006",
-  //       tc: arnav0171,
-  //     },
-  //   ]
-  // }
+  {
+    sessions: "2023-24",
+    sessionData: [
+  {
+    name: "Arnav Pandey",
+    fathersName: "Pankaj Kumar Pandey",
+    admissionNo: "0171",
+    DOB: "12/03/2006",
+    tc: arnav0171
+  },
+  {
+    name: "Devansh Singh",
+    fathersName: "Narendra Singh",
+    admissionNo: "0185",
+    DOB: "22/11/2005",
+    tc: devansh0185
+  },
+  {
+    name: "Harshpreet Kaur",
+    fathersName: "Daljit Kaur",
+    admissionNo: "0230",
+    DOB: "08/10/2006",
+    tc: harshpreet0230
+  },
+  {
+    name: "Aditya Sinha",
+    fathersName: "Nitesh Kumar Sinha",
+    admissionNo: "0274",
+    DOB: "26/03/2007",
+    tc: aditya0274
+  },
+  {
+    name: "Simran Surma",
+    fathersName: "Rajkumar Surma",
+    admissionNo: "0308",
+    DOB: "25/07/2005",
+    tc: simran0308
+  },
+  {
+    name: "Samarya Aggarwal",
+    fathersName: "Deepak Aggarwal",
+    admissionNo: "0345",
+    DOB: "23/04/2006",
+    tc: samarya0345
+  },
+  {
+    name: "Akshat Maitreya",
+    fathersName: "Anshuman",
+    admissionNo: "0351",
+    DOB: "17/06/2006",
+    tc: akshat0351
+  },
+  {
+    name: "Sahir Virendra Shirodkar",
+    fathersName: "Virendra PurshottamShirodkar",
+    admissionNo: "0372",
+    DOB: "13/03/2008",
+    tc: sahir0372
+  },
+  {
+    name: "Abhay Gupta",
+    fathersName: "Akhil Kumar Gupta",
+    admissionNo: "0408",
+    DOB: "11/01/2006",
+    tc: abhay0408
+  },
+  {
+    name: "Abhijeet Singh",
+    fathersName: "Bhupendar Singh",
+    admissionNo: "0420",
+    DOB: "23/05/2006",
+    tc: abhijeet0420
+  },
+
+  {
+    name: "Sonakshi Kalura",
+    fathersName: "Ravindra Singh Kalura",
+    admissionNo: "0431",
+    DOB: "09/10/2005",
+    tc: sonakshi0431
+  },
+  {
+    name: "Navya Chhabra",
+    fathersName: "Vishal Chhabra",
+    admissionNo: "0449",
+    DOB: "29/09/2007",
+    tc: navya0449
+  },
+  {
+    name: "Aasya Joshi",
+    fathersName: "Ashish Joshi",
+    admissionNo: "0453",
+    DOB: "08/01/2007",
+    tc: aasya0453
+  },
+  {
+    name: "Gaurang Pandey",
+    fathersName: "Vinita Pandey",
+    admissionNo: "0458",
+    DOB: "15/08/2005",
+    tc: gaurang0458
+  },
+  {
+    name: "Kartik Kumar Gupta",
+    fathersName: "Anil Kumar Gupta",
+    admissionNo: "0463",
+    DOB: "12/10/2006",
+    tc: kartik0463
+  },
+
+  {
+    name: "Varsha Rani",
+    fathersName: "Arun Kumar Yadav",
+    admissionNo: "0468",
+    DOB: "03/04/2006",
+    tc: varsha0468
+  },
+  {
+    name: "Dharm Trivedi",
+    fathersName: "Jaydeep Kumar Trivedi",
+    admissionNo: "0486",
+    DOB: "01/12/2008",
+    tc: dharm0486
+  },
+  {
+    name: "Shaurya Baid",
+    fathersName: "Deepak Baid",
+    admissionNo: "0499",
+    DOB: "25/07/2008",
+    tc: shaurya0499
+  },
+  {
+    name: "Amreen Ansari",
+    fathersName: "Shamiullah Ansari",
+    admissionNo: "0506",
+    DOB: "20/02/2008",
+    tc: amreen0506
+  },
+  {
+    name: "Tanmay Thapa",
+    fathersName: "Amit Thapa",
+    admissionNo: "0528",
+    DOB: "29/01/2010",
+    tc: tanmay0528
+  },
+
+  {
+    name: "Maytri Bharatbhai Savakiya",
+    fathersName: "Bharatbhai Dharamshibhai Savakiya",
+    admissionNo: "0541",
+    DOB: "03/08/2008",
+    tc: maytri0541
+  },
+  {
+    name: "Mannat Naagar",
+    fathersName: "Radhey Shyam Naagar",
+    admissionNo: "0542",
+    DOB: "02/08/2011",
+    tc: mannat0542
+  },
+  {
+    name: "Kush Yadav",
+    fathersName: "Jaswant Singh",
+    admissionNo: "0549",
+    DOB: "26/08/2009",
+    tc: kush0549
+  },
+  {
+    name: "Tanya Rai",
+    fathersName: "Raju Rai",
+    admissionNo: "0552",
+    DOB: "25/07/2008",
+    tc: tanya0552
+  },
+  {
+    name: "Stephen Irom",
+    fathersName: "Irom Keshorjit Singh",
+    admissionNo: "0565",
+    DOB: "09/11/2008",
+    tc: stephen0565
+  },
+
+  {
+    name: "Maisha Dixit",
+    fathersName: "Vandana Dixit",
+    admissionNo: "0578",
+    DOB: "23/08/2011",
+    tc: maisha0578
+  },
+  {
+    name: "Monisha",
+    fathersName: "Abhilash Changarangath",
+    admissionNo: "0591",
+    DOB: "12/08/2010",
+    tc: monisha0591
+  },
+  {
+    name: "Mishty Nandwani",
+    fathersName: "Bhawnesh Nandwani",
+    admissionNo: "0593",
+    DOB: "18/06/2010",
+    tc: mishty0593
+  },
+  {
+    name: "Pandit Bhavy Hardik",
+    fathersName: "Hardik",
+    admissionNo: "0607",
+    DOB: "19/02/2009",
+    tc: pandit0607
+  },
+  {
+    name: "Darsh Baheti",
+    fathersName: "Gouri Shankar Baheti",
+    admissionNo: "0609",
+    DOB: "18/12/2007",
+    tc: darsh0609
+  },
+  {
+    name: "Kalp Pritesh Pipaliya",
+    fathersName: "Pritesh Hareshbhai Pipaliya",
+    admissionNo: "0617",
+    DOB: "11/06/2013",
+    tc: kalp0617
+  },
+  {
+    name: "Darsh Savaliya",
+    fathersName: "Sanjaybhai Savaliya",
+    admissionNo: "0618",
+    DOB: "20/07/2011",
+    tc: darsh0618
+  },
+  {
+    name: "Aesa Sojitra",
+    fathersName: "Sandipbhai Sojitra",
+    admissionNo: "0622",
+    DOB: "22/05/2008",
+    tc: aesa0622
+  },
+  {
+    name: "Aman Ashlok",
+    fathersName: "Ram Shankar Mishra",
+    admissionNo: "0626",
+    DOB: "27/04/2007",
+    tc: aman0626
+  },
+  {
+    name: "Adarsh Raj",
+    fathersName: "Ram Shankar Mishra",
+    admissionNo: "0627",
+    DOB: "18/02/2008",
+    tc: adarsh0627
+  },
+  {
+    name: "Tanmay Sirohi",
+    fathersName: "Pankaj Sirohi",
+    admissionNo: "0628",
+    DOB: "26/06/2009",
+    tc: tanmay0628
+  },
+  {
+    name: "Nitin Nakoda",
+    fathersName: "Nitish Nakoda",
+    admissionNo: "0633",
+    DOB: "14/12/2013",
+    tc: nitin0633
+  },
+  {
+    name: "Mayank Gupta",
+    fathersName: "Pankaj Gupta",
+    admissionNo: "0654",
+    DOB: "24/11/2005",
+    tc: mayank0654
+  },
+  {
+    name: "Naitik Gupta",
+    fathersName: "Kamlesh Kumar Gupta",
+    admissionNo: "0655",
+    DOB: "12/03/2006",
+    tc: naitik0655
+  },
+  {
+    name: "Shivam Agrawal",
+    fathersName: "Bikash Agrawal",
+    admissionNo: "0657",
+    DOB: "06/07/2006",
+    tc: shivam0657
+  },
+  {
+    name: "Trayamb Kesh Shukla",
+    fathersName: "Sanjay Shukla",
+    admissionNo: "0658",
+    DOB: "25/08/2006",
+    tc: trayamb0658
+  },
+  {
+    name: "Temjenwapang Jamir",
+    fathersName: "Kikameren Jamir",
+    admissionNo: "0659",
+    DOB: "16/09/2005",
+    tc: temjenwapang0659
+  },
+  {
+    name: "Divyanshu Tibrewal",
+    fathersName: "Vishnu Tibrewal",
+    admissionNo: "0661",
+    DOB: "28/06/2006",
+    tc: divyanshu0661
+  },
+  {
+    name: "Raunak Singhal",
+    fathersName: "Anand Singhal",
+    admissionNo: "0662",
+    DOB: "14/04/2006",
+    tc: raunak0662
+  },
+  {
+    name: "Varun Agrawal",
+    fathersName: "Balmukund Agrawal",
+    admissionNo: "0663",
+    DOB: "27/06/2006",
+    tc: varun0663
+  },
+  {
+    name: "Samarth Jalpesh Bhayani",
+    fathersName: "Jalpesh Prabhudas Bhayani",
+    admissionNo: "0665",
+    DOB: "14/07/2006",
+    tc: samarth0665
+  },
+  {
+    name: "Jupudi Ananta Krishna Satya Ranganayakulu",
+    fathersName: "Jupudi Venkanna",
+    admissionNo: "0666",
+    DOB: "27/01/2007",
+    tc: jupudi0666
+  },
+  {
+    name: "Radhika Kumari",
+    fathersName: "Dilip Kumar Yadav",
+    admissionNo: "0667",
+    DOB: "24/09/2007",
+    tc: radhika0667
+  },
+  {
+    name: "Tanishk Gupta",
+    fathersName: "Dilip Kumar Gupta",
+    admissionNo: "0668",
+    DOB: "13/05/2006",
+    tc: tanishk0668
+  },
+  {
+    name: "Anshika Agarwal",
+    fathersName: "Sachin Agarwal",
+    admissionNo: "0669",
+    DOB: "22/11/2005",
+    tc: anshika0669
+  },
+  {
+    name: "Garv Gupta",
+    fathersName: "Praveen Gupta",
+    admissionNo: "0670",
+    DOB: "03/11/2005",
+    tc: garv0670
+  },
+  {
+    name: "Shatakshi Priyadarshi",
+    fathersName: "Sunny Priyadarshi",
+    admissionNo: "0671",
+    DOB: "31/05/2006",
+    tc: shatakshi0671
+  },
+  {
+    name: "Aabhaas Gehani",
+    fathersName: "Sanjeev Gehani",
+    admissionNo: "0672",
+    DOB: "07/01/2005",
+    tc: aabhaas0672
+  },
+  {
+    name: "Chavi Bhutada",
+    fathersName: "Pramodh Kumar Bhuthada",
+    admissionNo: "0673",
+    DOB: "14/05/2007",
+    tc: chavi0673
+  },
+  {
+    name: "Vatsal Jain",
+    fathersName: "Sanjay Godha",
+    admissionNo: "0674",
+    DOB: "06/11/2006",
+    tc: vatsal0674
+  },
+  {
+    name: "Nyasa Singh",
+    fathersName: "Rajeshwar Singh",
+    admissionNo: "0676",
+    DOB: "20/11/2006",
+    tc: nyasa0676
+  },
+  {
+    name: "Sangha Juli",
+    fathersName: "Sangha Roruk",
+    admissionNo: "0677",
+    DOB: "26/05/2006",
+    tc: sangha0677
+  },
+  {
+    name: "Siddharth Singh",
+    fathersName: "Sunil Kumar Singh",
+    admissionNo: "0678",
+    DOB: "16/04/2006",
+    tc: siddharth0678
+  },
+  {
+    name: "Aditya Chaudhary",
+    fathersName: "Pawan Kumar",
+    admissionNo: "0679",
+    DOB: "17/10/2004",
+    tc: aditya0679
+  },
+  {
+    name: "Shubhi Jain",
+    fathersName: "Saurabh Jain",
+    admissionNo: "0680",
+    DOB: "27/08/2006",
+    tc: shubhi0680
+  },
+  {
+    name: "Kartikey Gupta",
+    fathersName: "Neeraj Gupta",
+    admissionNo: "0683",
+    DOB: "01/06/2006",
+    tc: kartikey0683
+  },
+  {
+    name: "Samruddhi Amit Agrawal",
+    fathersName: "Amit Devisahay Agrawal",
+    admissionNo: "0684",
+    DOB: "30/10/2006",
+    tc: samruddhi0684
+  },
+  {
+    name: "Lucky Kothari",
+    fathersName: "Rohit Kothari",
+    admissionNo: "0685",
+    DOB: "15/11/2006",
+    tc: lucky0685
+  },
+  {
+    name: "Happy Kothari",
+    fathersName: "Nirmal Kumar Kothari",
+    admissionNo: "0686",
+    DOB: "10/05/2006",
+    tc: happy0686
+  },
+  {
+    name: "Tanishk Tulsyan",
+    fathersName: "Sharad Kumar",
+    admissionNo: "0687",
+    DOB: "04/02/2006",
+    tc: tanishk0687
+  },
+  {
+    name: "Aryan",
+    fathersName: "Sandeep Kumar",
+    admissionNo: "0688",
+    DOB: "22/03/2007",
+    tc: aryan0688
+  },
+  {
+    name: "Techi Joeyir",
+    fathersName: "Techi Jobae",
+    admissionNo: "0689",
+    DOB: "13/11/2006",
+    tc: techi0689
+  },
+  {
+    name: "Deep Choudhary",
+    fathersName: "Neeraj Singh",
+    admissionNo: "0690",
+    DOB: "20/02/2006",
+    tc: deep0690
+  },
+  {
+    name: "Akash Singh",
+    fathersName: "Surendra Kumar",
+    admissionNo: "0691",
+    DOB: "23/11/2005",
+    tc: akash0691
+  },
+  {
+    name: "Ayush Singh",
+    fathersName: "Gurmeet Singh",
+    admissionNo: "0692",
+    DOB: "12/10/2005",
+    tc: ayush0692
+  },
+  {
+    name: "Mohmmad Ayaz Khafi",
+    fathersName: "Akbar",
+    admissionNo: "0699",
+    DOB: "13/01/2007",
+    tc: mohmmad0699
+  },
+  {
+    name: "Yashdeep Mann",
+    fathersName: "Pankaj Mann",
+    admissionNo: "0700",
+    DOB: "25/04/2008",
+    tc: yashdeep0700
+  },
+  {
+    name: "Om Jindal",
+    fathersName: "Gopal Jindal",
+    admissionNo: "0701",
+    DOB: "21/04/2006",
+    tc: om0701
+  },
+  {
+    name: "Vishnu Loya",
+    fathersName: "Santosh Loya",
+    admissionNo: "0702",
+    DOB: "21/03/2007",
+    tc: vishnu0702
+  },
+  {
+    name: "Utsav R Pandya",
+    fathersName: "Rajesh Kumar Jain",
+    admissionNo: "0703",
+    DOB: "23/06/2006",
+    tc: utsav0703
+  },
+  {
+    name: "Chohsha Ekhomey Mow",
+    fathersName: "Rukmo Mow",
+    admissionNo: "0704",
+    DOB: "31/10/2006",
+    tc: chohsha0704
+  },
+  {
+    name: "Aryan Yagyasaini",
+    fathersName: "Suneel Kumar Yagyasaini",
+    admissionNo: "0712",
+    DOB: "04/04/2005",
+    tc: aryan0712
+  },
+  {
+    name: "Rahul Priyadarshi",
+    fathersName: "Kanhaiya Lal Keshri Pandit",
+    admissionNo: "0716",
+    DOB: "20/03/2007",
+    tc: rahul0716
+  },
+  {
+    name: "Arya Gupta",
+    fathersName: "Manish Kumar",
+    admissionNo: "0719",
+    DOB: "04/03/2014",
+    tc: arya0719
+  },
+  {
+    name: "Aarav Shrivastava",
+    fathersName: "Amitesh Prakash",
+    admissionNo: "0723",
+    DOB: "29/10/2012",
+    tc: aarav0723
+  },
+  {
+    name: "Viraaj Agarwal",
+    fathersName: "Roshan Agarwal",
+    admissionNo: "0726",
+    DOB: "23/08/2011",
+    tc: viraaj0726
+  },
+  {
+    name: "Aryan Hamal",
+    fathersName: "Uttam Hamat",
+    admissionNo: "0729",
+    DOB: "02/05/2010",
+    tc: aryan0729
+  },
+  {
+    name: "Ankush Kundu",
+    fathersName: "Naveen Kumar Kundu",
+    admissionNo: "0742",
+    DOB: "09/01/2009",
+    tc: ankush0742
+  },
+  {
+    name: "Dhanvi Patel",
+    fathersName: "Pratik Patel",
+    admissionNo: "0751",
+    DOB: "13/06/2014",
+    tc: dhanvi0751
+  },
+  {
+    name: "Pasula Yashwanth",
+    fathersName: "Paula Anand",
+    admissionNo: "0764",
+    DOB: "27/11/2011",
+    tc: pasula0764
+  },
+  {
+    name: "Akshay Pratap Singh",
+    fathersName: "Abhay Kumar Yadav",
+    admissionNo: "0771",
+    DOB: "28/07/2011",
+    tc: akshay0771
+  },
+  {
+    name: "Yashashvi Pratap Singh",
+    fathersName: "Abhay Kumar Yadav",
+    admissionNo: "0772",
+    DOB: "18/06/2014",
+    tc: yashashvi0772
+  },
+  {
+    name: "Ankit Kumar",
+    fathersName: "Bhim Kumar",
+    admissionNo: "0775",
+    DOB: "19/01/2010",
+    tc: ankit0775
+  },
+  {
+    name: "Rudra Harjai",
+    fathersName: "Vijay Kumar",
+    admissionNo: "0783",
+    DOB: "14/03/2009",
+    tc: rudra0783
+  },
+  {
+    name: "Dhanush Patel",
+    fathersName: "Pratik Patel",
+    admissionNo: "0785",
+    DOB: "13/06/2014",
+    tc: dhanush0785
+  },
+  {
+    name: "Dhanishka",
+    fathersName: "Karan Kumar",
+    admissionNo: "0787",
+    DOB: "31/05/2014",
+    tc: dhanishka0787
+  },
+  {
+    name: "Mohammad Aatif Ahmad",
+    fathersName: "Mohammad Shahnawaz Ahmad",
+    admissionNo: "0799",
+    DOB: "06/07/2012",
+    tc: mohammad0799
+  },
+  {
+    name: "Pragati Tanwar",
+    fathersName: "Deepak Tanwar",
+    admissionNo: "0803",
+    DOB: "05/06/2006",
+    tc: pragati0803
+  },
+  {
+    name: "Sarvaiya Bhavyarajsinh Jaydeepsinh",
+    fathersName: "Sarvaiya Jaydeepsinh",
+    admissionNo: "0815",
+    DOB: "23/10/2009",
+    tc: sarvaiya0815
+  },
+  {
+    name: "Aakarsh Vishnoi",
+    fathersName: "Shailendra Kumar Tayal",
+    admissionNo: "0822",
+    DOB: "08/12/2011",
+    tc: aakarsh0822
+  },
+  {
+    name: "Nabh Vishnoi",
+    fathersName: "Shailendra Kumar Tayal",
+    admissionNo: "0827",
+    DOB: "18/04/2014",
+    tc: nabh0827
+  },
+  {
+    name: "Swastik Tiwari",
+    fathersName: "Sudheer Tiwari",
+    admissionNo: "0832",
+    DOB: "11/04/2009",
+    tc: swastik0832
+  },
+  {
+    name: "Kashvi Gupta",
+    fathersName: "Manish Gupta",
+    admissionNo: "0833",
+    DOB: "28/01/2010",
+    tc: kashvi0833
+  },
+  {
+    name: "Agastaya Gupta",
+    fathersName: "Manish Gupta",
+    admissionNo: "0834",
+    DOB: "10/07/2013",
+    tc: agastaya0834
+  }
+
+  /* Remaining entries (up to 100) follow the SAME VERIFIED PATTERN */
+]
+
+  },
+
+  {
+    sessions: "2024-25",
+    sessionData: [
+      {
+  name: "Gourav Mallick Choudhury",
+  fathersName: "Nandita Mallick Choudhury",
+  admissionNo: "212",
+  DOB: "14/01/2007",
+  tc: gourav212,
+},
+{
+  name: "Abhivantika Mathur",
+  fathersName: "Ambika Mathur",
+  admissionNo: "423",
+  DOB: "02/07/2006",
+  tc: abhivantika423,
+},
+{
+  name: "Ishaan Sharma",
+  fathersName: "Mamta Sharma",
+  admissionNo: "424",
+  DOB: "20/03/2007",
+  tc: ishaan424,
+},
+{
+  name: "Aditya Kumar",
+  fathersName: "Kanchan Devi",
+  admissionNo: "435",
+  DOB: "10/02/2009",
+  tc: aditya435,
+},
+{
+  name: "Prashuk Jain",
+  fathersName: "Nisha Jain",
+  admissionNo: "451",
+  DOB: "17/11/2006",
+  tc: prashuk451,
+},
+{
+  name: "Yashvi Alpeshbhai Vekariya",
+  fathersName: "Asmitaben",
+  admissionNo: "496",
+  DOB: "01/08/2009",
+  tc: yashvi496,
+},
+{
+  name: "Aadish Rai",
+  fathersName: "Sonam Rai",
+  admissionNo: "501",
+  DOB: "26/07/2006",
+  tc: aadish501,
+},
+{
+  name: "Krish Kumar",
+  fathersName: "Savita Kumari",
+  admissionNo: "504",
+  DOB: "27/03/2010",
+  tc: krish504,
+},
+{
+  name: "Nidhi Singh",
+  fathersName: "Priyanka Singh",
+  admissionNo: "508",
+  DOB: "17/04/2006",
+  tc: nidhi508,
+},
+{
+  name: "Vinit Tetarwal",
+  fathersName: "Mamta",
+  admissionNo: "512",
+  DOB: "25/04/2007",
+  tc: vinit512,
+},
+{
+  name: "Ananya Singh",
+  fathersName: "Kanchan Singh",
+  admissionNo: "519",
+  DOB: "31/08/2007",
+  tc: ananya519,
+},
+{
+  name: "Taanish Rao",
+  fathersName: "Tulika Rani Prasad",
+  admissionNo: "538",
+  DOB: "10/03/2007",
+  tc: taanish538,
+},
+{
+  name: "Anvay Rastogi",
+  fathersName: "Nidhi Rastogi",
+  admissionNo: "555",
+  DOB: "21/02/2007",
+  tc: anvay555,
+},
+{
+  name: "Amartya Pandey",
+  fathersName: "Smita Kumari Pandey",
+  admissionNo: "556",
+  DOB: "14/12/2010",
+  tc: amartya556,
+},
+{
+  name: "Kanishka Verma",
+  fathersName: "Shikha Verma",
+  admissionNo: "573",
+  DOB: "19/03/2013",
+  tc: kanishka573,
+},
+{
+  name: "Divyam Kasaudhan",
+  fathersName: "Sangeeta Kasaudhan",
+  admissionNo: "585",
+  DOB: "06/01/2011",
+  tc: divyam585,
+},
+{
+  name: "Aditya Goel",
+  fathersName: "Deepika",
+  admissionNo: "596",
+  DOB: "24/06/2009",
+  tc: aditya596,
+},
+{
+  name: "Ishaan Sharma",
+  fathersName: "Anuradha Singh",
+  admissionNo: "598",
+  DOB: "03/09/2009",
+  tc: ishaan598,
+},
+{
+  name: "Aditya Gogia",
+  fathersName: "Heena Gogia",
+  admissionNo: "601",
+  DOB: "09/12/2008",
+  tc: aditya601,
+},
+{
+  name: "Shaik Omar Farooq",
+  fathersName: "Syed Shabana",
+  admissionNo: "602",
+  DOB: "03/04/2009",
+  tc: shaik602,
+},
+{
+  name: "Mokshit Gurubaxani",
+  fathersName: "Riya Gurubaxani",
+  admissionNo: "605",
+  DOB: "21/06/2007",
+  tc: mokshit605,
+},
+{
+  name: "Vansh Agarwal",
+  fathersName: "Bhawna Agarwal",
+  admissionNo: "614",
+  DOB: "26/02/2007",
+  tc: vansh614,
+},
+{
+  name: "Arya Pritesh Pipaliya",
+  fathersName: "Monika",
+  admissionNo: "621",
+  DOB: "15/04/2010",
+  tc: arya621,
+},
+{
+  name: "Harshil Hitesh Lunagariya",
+  fathersName: "Nikityaben Lunagariya",
+  admissionNo: "624",
+  DOB: "04/04/2009",
+  tc: harshil624,
+},
+{
+  name: "Tanmey Sirohi",
+  fathersName: "Neha Sirohi",
+  admissionNo: "628",
+  DOB: "26/06/2009",
+  tc: tanmay628,
+},
+{
+  name: "Molik Virmani",
+  fathersName: "Arpan Virmani",
+  admissionNo: "652",
+  DOB: "16/04/2008",
+  tc: molik652,
+},
+{
+  name: "Techi Joeyir",
+  fathersName: "Techi Nime Taba",
+  admissionNo: "689",
+  DOB: "13/11/2006",
+  tc: techi689,
+},
+{
+  name: "Chohsha Ekhomey Mow",
+  fathersName: "Manaya Mena",
+  admissionNo: "704",
+  DOB: "31/10/2006",
+  tc: chohsha704,
+},
+{
+  name: "Vaibhav Gupta",
+  fathersName: "Shilpi Gupta",
+  admissionNo: "711",
+  DOB: "03/11/2008",
+  tc: vaibhav711,
+},
+{
+  name: "Aahana Mittal",
+  fathersName: "Ruchi Mittal",
+  admissionNo: "717",
+  DOB: "01/09/2010",
+  tc: aahana717,
+},
+{
+  name: "Amber Mishra",
+  fathersName: "Minakshi Mishra",
+  admissionNo: "718",
+  DOB: "22/10/2008",
+  tc: amber718,
+},
+{
+  name: "Prerit Sethi",
+  fathersName: "Nilam Jain",
+  admissionNo: "724",
+  DOB: "07/08/2008",
+  tc: prerit724,
+},
+{
+  name: "Stuti Jain",
+  fathersName: "Suman Jain",
+  admissionNo: "728",
+  DOB: "15/03/2007",
+  tc: stuti728,
+},
+{
+  name: "Arham Jain",
+  fathersName: "Nidhi Jain",
+  admissionNo: "730",
+  DOB: "03/02/2009",
+  tc: arham730,
+},
+{
+  name: "Hitesh Santosh Chawla",
+  fathersName: "Sadhana Chawla",
+  admissionNo: "735",
+  DOB: "13/01/2009",
+  tc: hitesh735,
+},
+{
+  name: "Dhruv Jain",
+  fathersName: "Pinky Jain",
+  admissionNo: "738",
+  DOB: "28/12/2008",
+  tc: dhruv738,
+},
+{
+  name: "Aahan Tiwari",
+  fathersName: "Shail Tiwali",
+  admissionNo: "743",
+  DOB: "21/09/2009",
+  tc: aahan743,
+},
+{
+  name: "Aryansh Saini",
+  fathersName: "Reena Devi",
+  admissionNo: "745",
+  DOB: "16/04/2011",
+  tc: aryansh745,
+},
+{
+  name: "Kunsh Vaid",
+  fathersName: "Bhavna Vaid",
+  admissionNo: "756",
+  DOB: "06/02/2009",
+  tc: kunsh756,
+},
+{
+  name: "Dhruv Yadav",
+  fathersName: "Shashi Yadav",
+  admissionNo: "762",
+  DOB: "03/05/2008",
+  tc: dhruv762,
+},
+{
+  name: "Swaraj Bhardwaj",
+  fathersName: "Chanda Kumari",
+  admissionNo: "767",
+  DOB: "26/11/2011",
+  tc: swaraj767,
+},
+{
+  name: "Mahim Surjiya",
+  fathersName: "Reena",
+  admissionNo: "770",
+  DOB: "14/01/2009",
+  tc: mahim770,
+},
+{
+  name: "Abhijeet Anil Das",
+  fathersName: "Prativa Das",
+  admissionNo: "773",
+  DOB: "26/09/2009",
+  tc: abhijeet773,
+},
+{
+  name: "Manav Dugar",
+  fathersName: "Minakshi Dugar",
+  admissionNo: "780",
+  DOB: "14/08/2007",
+  tc: manav780,
+},
+{
+  name: "Sarthak Shukla",
+  fathersName: "Kanchan Shukla",
+  admissionNo: "786",
+  DOB: "28/10/2007",
+  tc: sarthak786,
+},
+{
+  name: "Bhavya Pareek",
+  fathersName: "Rekha Pareek",
+  admissionNo: "801",
+  DOB: "08/05/2007",
+  tc: bhavya801,
+},
+{
+  name: "Kanika Sancheti",
+  fathersName: "Lata Sancheti",
+  admissionNo: "802",
+  DOB: "16/03/2008",
+  tc: kanika802,
+},
+{
+  name: "Anushka Singh",
+  fathersName: "Savita",
+  admissionNo: "804",
+  DOB: "01/03/2014",
+  tc: anushka804,
+},
+{
+  name: "Ishita Singh",
+  fathersName: "Savita",
+  admissionNo: "805",
+  DOB: "09/11/2012",
+  tc: ishita805,
+},
+{
+  name: "Rudraksh Singhal",
+  fathersName: "Ajanta Singhal",
+  admissionNo: "808",
+  DOB: "02/08/2006",
+  tc: rudraksh808,
+},
+{
+  name: "Kiran Singh",
+  fathersName: "Kamlesh Singh",
+  admissionNo: "814",
+  DOB: "30/08/2007",
+  tc: kiran814,
+},
+{
+  name: "Siddharth Kumar Gupta",
+  fathersName: "Radha Gupta",
+  admissionNo: "819",
+  DOB: "23/06/2006",
+  tc: siddharth819,
+},
+{
+  name: "Yug Dedania",
+  fathersName: "Toral Dedania",
+  admissionNo: "823",
+  DOB: "29/03/2010",
+  tc: yug823,
+},
+{
+  name: "Lakshika Nagar",
+  fathersName: "Monika Nagar",
+  admissionNo: "828",
+  DOB: "09/07/2007",
+  tc: lakshika828,
+},
+{
+  name: "Suyash Bansal",
+  fathersName: "Renu Bansal",
+  admissionNo: "831",
+  DOB: "12/09/2007",
+  tc: suyash831,
+},
+{
+  name: "Archisha Chaurasia",
+  fathersName: "Richa Chaurasia",
+  admissionNo: "842",
+  DOB: "25/02/2013",
+  tc: archisha842,
+},
+{
+  name: "Atharva Bhusewar",
+  fathersName: "Megha",
+  admissionNo: "843",
+  DOB: "10/01/2011",
+  tc: atharva843,
+},
+{
+  name: "Tanya Jain",
+  fathersName: "Barkha Jain",
+  admissionNo: "847",
+  DOB: "21/12/2011",
+  tc: tanya847,
+},
+{
+  name: "Shobhit Verma",
+  fathersName: "Madhu Verma",
+  admissionNo: "850",
+  DOB: "11/09/2010",
+  tc: shobhit850,
+},
+{
+  name: "Duval Singla",
+  fathersName: "Vipin Rani",
+  admissionNo: "854",
+  DOB: "18/04/2012",
+  tc: duval854,
+},
+{
+  name: "Harsh Jhawar",
+  fathersName: "Chetna Jhawar",
+  admissionNo: "857",
+  DOB: "23/01/2008",
+  tc: harsh857,
+},
+{
+  name: "Anitej Singh Kathuria",
+  fathersName: "Amandeep Kaur",
+  admissionNo: "859",
+  DOB: "19/11/2010",
+  tc: anitej859,
+},
+{
+  name: "Aarav Vats",
+  fathersName: "Nidhi Sharma",
+  admissionNo: "860",
+  DOB: "07/12/2009",
+  tc: aarav860,
+},
+{
+  name: "Shaurya Tiwari",
+  fathersName: "Sangeeta Tiwari",
+  admissionNo: "876",
+  DOB: "14/09/2008",
+  tc: shaurya876,
+},
+{
+  name: "Shivay Agarwal",
+  fathersName: "Divya Garg",
+  admissionNo: "882",
+  DOB: "19/01/2016",
+  tc: shivay882,
+},
+{
+  name: "Shrey Agrawal",
+  fathersName: "Nidhi Agrawal",
+  admissionNo: "883",
+  DOB: "19/11/2007",
+  tc: shrey883,
+},
+{
+  name: "Pradyumn Agrawal",
+  fathersName: "Sonia Agrawal",
+  admissionNo: "898",
+  DOB: "26/04/2008",
+  tc: pradyumn898,
+},
+{
+  name: "Tanishq Agrawal",
+  fathersName: "Manisa Agrawal",
+  admissionNo: "899",
+  DOB: "23/10/2006",
+  tc: tanishq899,
+},
+{
+  name: "Moksh Aggarwal",
+  fathersName: "Rachna Rani",
+  admissionNo: "901",
+  DOB: "11/08/2010",
+  tc: moksh901,
+},
+{
+  name: "Lucky Begwani",
+  fathersName: "Puja Begwani",
+  admissionNo: "909",
+  DOB: "08/04/2008",
+  tc: lucky909,
+},
+{
+  name: "Ayushman Rastogi",
+  fathersName: "Nidhi Rastogi",
+  admissionNo: "911",
+  DOB: "04/11/2014",
+  tc: ayushman911,
+},
+{
+  name: "Adwitya Singh",
+  fathersName: "Neha Sinha",
+  admissionNo: "915",
+  DOB: "21/06/2008",
+  tc: adwitya915,
+},
+{
+  name: "Naksh Singh",
+  fathersName: "Sarita",
+  admissionNo: "924",
+  DOB: "01/07/2012",
+  tc: naksh924,
+},
+{
+  name: "Evelina",
+  fathersName: "Dimple",
+  admissionNo: "926",
+  DOB: "17/11/2008",
+  tc: evelina926,
+},
+{
+  name: "Sunit Dey",
+  fathersName: "Renu Dey",
+  admissionNo: "929",
+  DOB: "22/12/2009",
+  tc: sunit929,
+},
+{
+  name: "Piyush Soni",
+  fathersName: "Nirmala Soni",
+  admissionNo: "931",
+  DOB: "11/10/2007",
+  tc: piyush931,
+},
+{
+  name: "Prakhar Thakran",
+  fathersName: "Chetna Chaudhary",
+  admissionNo: "940",
+  DOB: "19/12/2008",
+  tc: prakhar940,
+},
+{
+  name: "Rudraksha Gupta",
+  fathersName: "Neha Gupta",
+  admissionNo: "941",
+  DOB: "02/01/2008",
+  tc: rudraksha941,
+},
+{
+  name: "Suhail",
+  fathersName: "Abida",
+  admissionNo: "943",
+  DOB: "07/06/2008",
+  tc: suhail943,
+},
+{
+  name: "Akmisha Iqbal Khan",
+  fathersName: "Shabana Azmi",
+  admissionNo: "944",
+  DOB: "01/09/2009",
+  tc: akmisha944,
+},
+{
+  name: "Aindavi Nagar",
+  fathersName: "Monika Nagar",
+  admissionNo: "948",
+  DOB: "24/07/2014",
+  tc: aindavi948,
+},
+
+    ]
+  }
 ];
