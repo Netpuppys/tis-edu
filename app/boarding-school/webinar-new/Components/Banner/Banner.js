@@ -20,7 +20,7 @@ export default function Banner() {
       <div className="w-full bg-[#b90124] py-3 px-6 lg:px-20">
         <h3 className="text-md md:text-xl text-white text-center font-semibold flex md:items-center justify-center gap-3">
           <Bell className="text-[#ffff] w-7 h-7" />
-          Mark Your Calenders! Join Us on 7 JAN 2026, at 6:00 PM for an Exclusive Webinar! 
+          Mark Your Calenders! Join Us on 11th & 18th JAN 2026, at 6:00 PM for an Exclusive Webinar! 
         </h3>
       </div>
 
@@ -73,7 +73,7 @@ export default function Banner() {
             <div className="h-[2px] bg-[#b90124] rounded-full mx-auto" style={{ width: "40%", marginTop: '-1px' }}></div>
 
             <div className="grid grid-cols-2 gap-5 md:gap-6 text-lg">
-              <DetailCard icon={<Calendar />} label="Date" value="7th Jan 2026" />
+              <DetailCard icon={<Calendar />} label="Date" value="11th & 18th Jan 2026" />
               <DetailCard icon={<Clock />} label="Time" value="6:00 - 7:00 PM IST" />
               <DetailCard icon={<Video />} label="Platform" value="Google Meet" />
               <DetailCard icon={<Hourglass />} label="Duration" value="1 Hour" />
