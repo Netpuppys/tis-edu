@@ -9,8 +9,7 @@ import SixthSection from "@/components/home/components/sixthSection/sixthSection
 import AwardSection from "@/components/home/components/awardsSection/AwardSection";
 import ParentsReviews from "@/components/home/components/parentsReviews/ParentsReviews";
 import HeroLanding from "../admission-open/Components/Hero/HeroLanding";
-import Banner from "../admission-open/Components/Banner/Banner";
-import ExceptionalFacilties from "../admission-open/Components/Carousel/ExceptionalFacilties";
+import Banner from "../webinar-new/Components/Banner/Banner";
 import GoogleReviews from "../admission-open/Components/Hero/components/GoogleReviews";
 import Stats from "@/components/home/components/TisByNumbers/stats";
 import { FaPhone } from "react-icons/fa6";
@@ -21,8 +20,16 @@ import Image from "next/image";
 import NewStats from "@/components/home/components/stats/stats";
 import TisByNumbers from "@/components/home/components/TisByNumbers/TisByNumbers";
 import { SiGoogleforms } from "react-icons/si";
-import CarouselPage from "../admission-open/Components/Banner/CarouselPage";
-const LandingLayout = () => {
+import IsThisYou from "../webinar-new/Components/Points/IsThisYou";
+import DiscoverSection from "../webinar-new/Components/Discover/DiscoverSection";
+import AboutSpeaker from "../webinar-new/Components/Aboutspeaker/AboutSpeaker";
+import LandingFaq from "../webinar-new/Components/LandingFaq/LandingFaq";
+import ChoosePath from "../webinar-new/Components/Choosepath/ChoosePath";
+import StressFreeParenting from "../webinar-new/Components/Parenting/StressFreeParenting";
+import WebinarBlueprint from "../webinar-new/Components/Webinarblueprint/WebinarBlueprint";
+import ParentsReviewsLanding from "@/components/home/components/parentsReviews/PranterReviewsLanding";
+import ImageBanner from "../webinar-new/Components/Imagebanner/ImageBanner";
+const WebinarLandingLayout = () => {
   const bubbleRef = useRef(null);
   const scrollRef = useRef();
   const { isMobile } = useMobile();
@@ -43,32 +50,28 @@ const LandingLayout = () => {
             className="home-layout-allSection flex flex-col gap-12 md:gap-10"
             ref={bubbleRef}
           >
-            <div ref={scrollRef} className="z-50 ">
+            <div className="z-50 ">
               <Banner />
-              {/* <CarouselPage/> */}
             </div>
-
-            <ExceptionalFacilties />
-            <ActivityGrid />
-            <Ranking />
-          </div>
-          <HeroLanding bubbleRef={bubbleRef} />
-          <div
-            className="home-layout-allSection flex flex-col mt-12 md:mt-10 gap-12 md:gap-10"
-            ref={bubbleRef}
-          >
-            <NewStats />
-            <TisByNumbers />
-            <AwardSection />
-            <ParentsReviews />
-            <GoogleReviews />
+            <ImageBanner/>
+            <IsThisYou/>
+            <ParentsReviewsLanding/>
+            <DiscoverSection/>
+            <TisByNumbers/>
+            <WebinarBlueprint/>
+            <Ranking/>
+            {/* <ChoosePath/> */}
+            {/* <AboutSpeaker/> */}
+            <LandingFaq/>
+            <StressFreeParenting/>
+            
           </div>
           <div
             style={{ fontFamily: "TT Chocolates" }}
             className="pb-14 md:pb-0 px-2 flex flex-col justify-center items-center g-[#b90124] w-full text-black"
           >
             <h4 className="text-center pt-2 md:py-2">
-              Copyright © 2026 Tula's International School, Dehradun | All
+              Copyright © 2025 Tula's International School, Dehradun | All
               Rights Reserved
               <br />
               Designed and Managed By{" "}
@@ -79,53 +82,51 @@ const LandingLayout = () => {
           </div>
         </>
       </div>
-      {/* {isMobile && (
-        <div className="fixed bottom-0 flex z-50 justify-between w-full h-12 bg-[#b90124]">
-          <button
-            onClick={handleScrollArrow}
-            className="w-1/2 text-white flex justify-center items-center font-[TTChocolatesBold] border-r border-white"
-          >
-            Enquire Now
-          </button>
-          <div className="flex w-1/2 justify-center items-center">
-            <a className="flex w-full justify-center items-center gap-3 text-white font-[TTChocolatesBold]">
-              <FaPhone /> +91-
-            </a>
-          </div>
-        </div>
-      )} */}
-      {isMobile && (
-        <div
-          style={{
-            fontFamily: "TT Chocolates",
-          }}
-          className="fixed md:hidden bg-[#60BAB1] flex w-full h-fit z-[99999] bottom-0"
-        >
-          <button
-            onClick={handleScrollArrow}
-            className="flex justify-center gap-2 h-12 items-center text-black w-full"
-          >
-            <SiGoogleforms />
-            Enquire Now
-          </button>
-
-          <a
-            className="flex justify-center gap-2 h-12 items-center text-black w-full"
-            href={`tel:+91-${
-              utmSource === "MetaADS" ? "8069204014" : "8069204029"
-            }`}
-          >
-            <FaPhone />
-            +91-{utmSource === "MetaADS" ? "8069204014" : "8069204029"}
-          </a>
-        </div>
-      )}
-      <div
-        className="bg-[#25d366] flex justify-center items-center p-3 md:p-4 rounded-full fixed right-[50%] translate-x-1/2 md:translate-x-0 md:right-8 bottom-0 md:bottom-8 z-[999999] cursor-pointer"
-        onClick={handleWhatsapp}
+{/* {isMobile && (
+  <div className="fixed bottom-0 z-50 w-full h-12 bg-[#60BAB1] flex items-center">
+    <a
+      href="https://us06web.zoom.us/webinar/register/WN_reHzH0eGRTW52N_wCUilAQ#/registration"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-full"
+    >
+      <button
+        className="w-full h-12 text-white flex items-center justify-center font-[TTChocolatesBold]"
       >
-        <FaWhatsapp className="text-white text-[30px] md:text-[40px]" />
-      </div>
+        Register for Free Webinar
+      </button>
+    </a>
+  </div>
+)} */}
+{isMobile && (
+  <div
+    className="fixed bottom-0 z-50 w-full bg-[#60BAB1] flex items-center"
+    style={{
+      paddingBottom: "env(safe-area-inset-bottom)",
+      height: "calc(3rem + env(safe-area-inset-bottom))",
+    }}
+  >
+    <a
+      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} target="_blank"
+      rel="noopener noreferrer"
+      className="w-full"
+    >
+      <button
+        className="w-full h-12 text-white flex items-center justify-center font-[TTChocolatesBold]"
+      >
+        Register For Free Webinar
+      </button>
+    </a>
+  </div>
+)}
+
+
+      <div
+  className="bg-[#25d366] flex justify-center items-center p-3 md:p-4 rounded-full fixed right-4 bottom-14 md:right-8 md:bottom-8 z-[999999] cursor-pointer"
+  onClick={handleWhatsapp}
+>
+  <FaWhatsapp className="text-white text-[30px] md:text-[40px]" />
+</div>
 
       <button
         onClick={handleScrollArrow}
@@ -134,7 +135,7 @@ const LandingLayout = () => {
         <Image src={scrollArrow} alt="" className="rotate-180" />
       </button>
 
-      <button
+      {/* <button
         onClick={handleScrollArrow}
         className="fixed hidden md:block z-50 bg-[#60BAB1] right-0 bottom-36 px-2 py-10 md:py-14 rounded-l-xl focus:outline-none text-black font-bold"
         style={{
@@ -143,9 +144,9 @@ const LandingLayout = () => {
         }}
       >
         Enquire Now
-      </button>
+      </button> */}
     </div>
   );
 };
 
-export default LandingLayout;
+export default WebinarLandingLayout;
