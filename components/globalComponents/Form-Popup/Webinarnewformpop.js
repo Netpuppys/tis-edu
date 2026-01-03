@@ -9,6 +9,7 @@ import { ThreeDots } from "react-loader-spinner";
 function WebinarNewFormEnquire({ webinarformPopup }) {
   const { utmParams } = useContext(UtmContext);
 
+  // DO NOT keep ChildAge / WebinarSlot here (CRM rejects unknown fields)
   const [formData, setFormData] = useState({
     AuthToken: "tisd_24-08-2024",
     Source: "tisd",
@@ -19,11 +20,12 @@ function WebinarNewFormEnquire({ webinarformPopup }) {
     City: "",
     LeadSource: 161,
     LeadChannel: 26,
-    LeadCampaign: "Zoom Webinar",
+    LeadCampaign: "Webinar",
   });
 
-  // Keep only Child Age separately
+  // Keep Age & Slot separately (we map them manually to CRM)
   const [childAge, setChildAge] = useState("");
+  const [webinarSlot, setWebinarSlot] = useState("");
 
   const [otp, setOtp] = useState("");
   const [isOtpSent, setIsOtpSent] = useState(false);
@@ -64,8 +66,7 @@ function WebinarNewFormEnquire({ webinarformPopup }) {
   };
 
   useEffect(() => {
-    document.body.style.overflow =
-      isOtpSent || webinarformPopup ? "hidden" : "auto";
+    document.body.style.overflow = isOtpSent || webinarformPopup ? "hidden" : "auto";
     return () => (document.body.style.overflow = "auto");
   }, [isOtpSent, webinarformPopup]);
 
@@ -79,19 +80,21 @@ function WebinarNewFormEnquire({ webinarformPopup }) {
     const payload = {
       ...formData,
 
+      // CRM REQUIRED FIELDS
       LeadSource: 161,
       LeadChannel: 26,
       LeadCampaign: "Zoom Webinar",
 
-      // Child Age mapped correctly
-      Textb9: childAge,
+      // Correct CRM field names
+      Textb9: childAge,       // Age
+      Field8: webinarSlot,    // Webinar Slot
     };
 
     axios
       .post("https://thirdpartyapi.extraaedge.com/api/SaveRequest", payload)
       .then(() => {
         setLoading(false);
-        window.location.href = `/boarding-school/webinar/thank-you`;
+        window.location.href = `/boarding-school/webinar-new/thank-you`;
       })
       .catch(() => setLoading(false));
   };
@@ -201,7 +204,7 @@ function WebinarNewFormEnquire({ webinarformPopup }) {
           </button>
         </div>
 
-        {/* OTP */}
+        {/* OTP BOX */}
         {!verified && isOtpSent && (
           <div className="w-full flex gap-2 mt-2">
             <input
@@ -265,15 +268,27 @@ function WebinarNewFormEnquire({ webinarformPopup }) {
           className="py-2 px-4 bg-[#F4F4F4] border-b-2 border-[#FF607E] w-full mt-2"
         />
 
+        {/* Webinar Slot */}
+        <select
+          required
+          value={webinarSlot}
+          onChange={(e) => setWebinarSlot(e.target.value)}
+          className="w-full h-10 px-4 bg-[#F4F4F4] border-b-2 border-[#FF607E] mt-2"
+        >
+          <option value="">Select Webinar Slots*</option>
+          <option value="11th Jan">11th Jan</option>
+          <option value="18th Jan">18th Jan</option>
+        </select>
+
         {/* Consent */}
         <div className="flex items-center gap-3 mt-3">
           <input type="checkbox" required />
           <label className="text-[13px] text-[#4B4B4B]">
-            I agree to receive information regarding my submitted applications by
-            signing up on Tula's International School, Dehradun.
+            I agree to receive information regarding my submitted applications by signing up on Tula's International School, Dehradun.
           </label>
         </div>
 
+        {/* Submit */}
         <button
           type="submit"
           className="w-full bg-[#B90124] text-xl text-white py-2 font-semibold mt-4 shadow-lg"
