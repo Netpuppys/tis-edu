@@ -98,33 +98,33 @@ function Footer() {
     <div className="footer-container">
       {!isMobile && (
         <>
-<iframe
-        className="map-footer rounded-xl"
-        style={{
-          width: "20%",
-          height: "350px",
-          marginLeft: "-10%",
-          marginRight: "2%",
-          border: 0,
-        }}
-        src="https://maps.google.com/maps?q=Dhoolkot%2C%20P.O%20-%20Selaqui%2C%20Chakrata%20Road%20Dehradun%2C%20Uttarakhand%20India&t=m&z=10&output=embed&iwloc=near"
-        title="Map of Tula's International School, Dehradun"
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-      />
+          <iframe
+            className="map-footer rounded-xl"
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              width: "20%",
+              height: "350px",
+              marginLeft: "-10%",
+              marginRight: "2%",
+            }}
+            src="https://maps.google.com/maps?q=Dhoolkot%2C%20P.O%20-%20Selaqui%2C%20Chakrata%20Road%20Dehradun%2C%20Uttarakhand%20India%3A%20Dhoolkot%2C%20P.O%20-%20Selaqui%2C%20Chakrata%20Road%3B%20Dehradun%2C%20Uttarakhand%3B%20India&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near"
+            aria-label="Dhoolkot, P.O - Selaqui, Chakrata Road Dehradun, Uttarakhand India: Dhoolkot, P.O - Selaqui, Chakrata Road; Dehradun, Uttarakhand; India"
+            data-rocket-lazyload="fitvidscompatible"
+            alt=""
+            data-lazy-src="https://maps.google.com/maps?q=Dhoolkot%2C%20P.O%20-%20Selaqui%2C%20Chakrata%20Road%20Dehradun%2C%20Uttarakhand%20India%3A%20Dhoolkot%2C%20P.O%20-%20Selaqui%2C%20Chakrata%20Road%3B%20Dehradun%2C%20Uttarakhand%3B%20India&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near"
+            title="Map of Dhoolkot, P.O - Selaqui, Chakrata Road Dehradun, Uttarakhand India"
+          ></iframe>
 
-      <div className="hero">
-        <Image src={footerLogo} className="logo" alt="Tula's International School" />
-
-        <p className="address">
-          Tula&apos;s International School
-          <br />
-          <a
-            href="https://www.google.com/maps/place/Tula's+International+School+-+Best+Boarding+School+in+Dehradun+(Uttarakhand)"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ textDecoration: "none", color: "#fff" }}
-          >
+          <div className="hero">
+            <Image src={footerLogo} className="logo" alt="TIS" />
+            <p className="address">
+              Tula&apos;s International School
+              <br />
+              <a
+                style={{ textDecoration: "none", color: "#fff" }}
+                href="https://www.google.com/maps/place/Tula's+International+School+-+Best+Boarding+School+in+Dehradun+(Uttarakhand)/@30.3430336,77.8865903,17z/data=!3m1!4b1!4m6!3m5!1s0x390f2a8f6621db6d:0xb5df8a7bd77caf7d!8m2!3d30.3430336!4d77.8891652!16s%2Fm%2F0121_pmh?entry=ttu"
+              >
                 Dhoolkot, P.O – Selaqui, Chakrata Road,
                 <br />
                 Dehradun-248011 (Uttarakhand){" "}
