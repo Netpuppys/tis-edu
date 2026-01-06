@@ -44,8 +44,8 @@ const LandingLayout = () => {
             ref={bubbleRef}
           >
             <div ref={scrollRef} className="z-50 ">
-              <Banner />
-              {/* <CarouselPage/> */}
+              {/* <Banner /> */}
+              <CarouselPage/>
             </div>
 
             <ExceptionalFacilties />
