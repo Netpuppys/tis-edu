@@ -7,19 +7,19 @@ import schoolLogo from "../../../../../public/logos/schoolLogo.png";
 import phoneCallGif from "../../../../../public/phone_ringing.gif";
 import ranked from "../../../../../public/LandingPage/ranked.png";
 
-import Banner1 from "../../../../../public/LandingPage/admission/10.jpg";
+import Banner1 from "../../../../../public/LandingPage/admission/4.jpg";
 import Banner2 from "../../../../../public/LandingPage/admission/5.jpg";
-import Banner3 from "../../../../../public/LandingPage/admission/7.jpg";
-import Banner4 from "../../../../../public/LandingPage/admission/6.jpg";
-import Banner5 from "../../../../../public/LandingPage/admission/8.jpg";
-import Banner6 from "../../../../../public/LandingPage/admission/9.jpg";
+import Banner3 from "../../../../../public/LandingPage/admission/3.jpg";
+import Banner4 from "../../../../../public/LandingPage/admission/2.jpg";
+import Banner5 from "../../../../../public/LandingPage/admission/1.jpg";
+import Banner6 from "../../../../../public/LandingPage/admission/6.jpg";
 
-import BannerM1 from "../../../../../public/LandingPage/admission/10md.jpg";
+import BannerM1 from "../../../../../public/LandingPage/admission/4md.jpg";
 import BannerM2 from "../../../../../public/LandingPage/admission/5md.jpg";
-import BannerM3 from "../../../../../public/LandingPage/admission/7md.jpg";
-import BannerM4 from "../../../../../public/LandingPage/admission/6md.jpg";
-import BannerM5 from "../../../../../public/LandingPage/admission/8md.jpg";
-import BannerM6 from "../../../../../public/LandingPage/admission/9md.jpg";
+import BannerM3 from "../../../../../public/LandingPage/admission/3md.jpg";
+import BannerM4 from "../../../../../public/LandingPage/admission/2md.jpg";
+import BannerM5 from "../../../../../public/LandingPage/admission/1md.jpg";
+import BannerM6 from "../../../../../public/LandingPage/admission/6md.jpg";
 
 import { useMobile } from "@/components/globalComponents/IsMobileContext";
 import FormEnquire from "@/components/globalComponents/Form-Popup/formPopup";
