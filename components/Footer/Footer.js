@@ -14,18 +14,19 @@ import linkedinLogo from "../../public/linkedin.svg";
 import youtubeLogo from "../../public/youtube.svg";
 import "../../styles/footer/Footer.css";
 import BottomBar from "./BottomBar";
-import Calendar from "../../public/MandatoryPDF/TIS_CALENDAR_2024__PDF.pdf";
-import Broucher from "../../public/MandatoryPDF/TIS_BROCHURE.pdf";
-import DisciplinaryPolicy from "../../public/MandatoryPDF/DisciplinaryPolicy.pdf";
-import childWelfarePolicy from "../../public/MandatoryPDF/childWelfarePolicy.pdf";
-import MobilePhonePolicy from "../../public/MandatoryPDF/MobilePhonePolicy.pdf";
 import Image from "next/image";
 import Link from "next/link";
 import { UtmContext } from "../globalComponents/utmParams";
 import { TbDeviceLandlinePhone } from "react-icons/tb";
+
+// Helper to check PDF links
+const isPdfLink = (url) => url.endsWith(".pdf");
+
 function Footer() {
   const { isMobile } = useMobile();
   const { utmParams } = useContext(UtmContext);
+
+  // ✅ Static public links instead of imports (prevents Vercel 250MB crash)
   const ourCampusLinks = [
     {
       title: "Our Campus",
@@ -34,31 +35,32 @@ function Footer() {
         {
           id: 2,
           linkName: "Calendar",
-          linkTo: Calendar,
+          linkTo: "/MandatoryPDF/TIS_CALENDAR_2024__PDF.pdf",
         },
         {
           id: 3,
           linkName: "Brochure",
-          linkTo: Broucher,
+          linkTo: "/MandatoryPDF/TIS_BROCHURE.pdf",
         },
-        // {
-        //   id: 4,
-        //   linkName: "Registration Form",
-        //   linkTo: "/admission-procedure/",
-        // },
-        // { id: 5, linkName: "Blogs", linkTo: "/blog" },
         { id: 6, linkName: "Privacy Policy", linkTo: "/privacy-policy/" },
         { id: 7, linkName: "Terms & Conditions", linkTo: "/terms-conditions/" },
-        { id: 8, linkName: "Disciplinary Policy", linkTo: DisciplinaryPolicy },
-        { id: 9, linkName: "Mobile Phone Policy", linkTo: MobilePhonePolicy },
+        {
+          id: 8,
+          linkName: "Disciplinary Policy",
+          linkTo: "/MandatoryPDF/DisciplinaryPolicy.pdf",
+        },
+        {
+          id: 9,
+          linkName: "Mobile Phone Policy",
+          linkTo: "/MandatoryPDF/MobilePhonePolicy.pdf",
+        },
         {
           id: 10,
           linkName: "Child Welfare & Safety Policy",
-          linkTo: childWelfarePolicy,
+          linkTo: "/MandatoryPDF/childWelfarePolicy.pdf",
         },
       ],
     },
-    // Add more sections as needed
   ];
 
   const socialLinks = [
@@ -109,10 +111,7 @@ function Footer() {
               marginRight: "2%",
             }}
             src="https://maps.google.com/maps?q=Dhoolkot%2C%20P.O%20-%20Selaqui%2C%20Chakrata%20Road%20Dehradun%2C%20Uttarakhand%20India%3A%20Dhoolkot%2C%20P.O%20-%20Selaqui%2C%20Chakrata%20Road%3B%20Dehradun%2C%20Uttarakhand%3B%20India&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near"
-            aria-label="Dhoolkot, P.O - Selaqui, Chakrata Road Dehradun, Uttarakhand India: Dhoolkot, P.O - Selaqui, Chakrata Road; Dehradun, Uttarakhand; India"
-            data-rocket-lazyload="fitvidscompatible"
-            alt=""
-            data-lazy-src="https://maps.google.com/maps?q=Dhoolkot%2C%20P.O%20-%20Selaqui%2C%20Chakrata%20Road%20Dehradun%2C%20Uttarakhand%20India%3A%20Dhoolkot%2C%20P.O%20-%20Selaqui%2C%20Chakrata%20Road%3B%20Dehradun%2C%20Uttarakhand%3B%20India&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near"
+            aria-label="Dhoolkot, P.O - Selaqui, Chakrata Road Dehradun, Uttarakhand India"
             title="Map of Dhoolkot, P.O - Selaqui, Chakrata Road Dehradun, Uttarakhand India"
           ></iframe>
 
@@ -127,7 +126,7 @@ function Footer() {
               >
                 Dhoolkot, P.O – Selaqui, Chakrata Road,
                 <br />
-                Dehradun-248011 (Uttarakhand){" "}
+                Dehradun-248011 (Uttarakhand)
               </a>
               <br />
               <a
@@ -153,20 +152,22 @@ function Footer() {
               <br />
               <a
                 style={{ textDecoration: "none", color: "#fff" }}
-                href="mailTo:info@tis.edu.in"
+                href="mailto:info@tis.edu.in"
               >
                 info@tis.edu.in
               </a>
             </p>
           </div>
+
           <div className="linkTo-list">
             <FooterLinks linksData={ourCampusLinks} />
           </div>
+
           <div className="three-buttons">
             <a
               target="_blank"
               href="https://tis.edu.in/virtual-tour/"
-              className="button "
+              className="button"
             >
               Virtual Tour
             </a>
@@ -180,18 +181,21 @@ function Footer() {
               href="https://tis.fedena.com/"
               className="button"
             >
-              fedena Login
+              Fedena Login
             </a>
           </div>
+
           <BottomBar />
         </>
       )}
+
       {isMobile && (
         <>
           <div className="header">
             <a href={`/${utmParams}`}>
               <Image src={footerLogoMobile} className="logo" alt="TIS" />
             </a>
+
             <div className="right">
               <div className="info-div">
                 <Image src={markerIcon} className="icon" alt="point" />
@@ -200,8 +204,8 @@ function Footer() {
                   Road, Dehradun-248011 (Uttarakhand)
                 </p>
               </div>
+
               <div className="info-div">
-                {/* <Image src={phoneIcon} className="icon" alt="phone" /> */}
                 <TbDeviceLandlinePhone className="icon text-white" />
                 <p className="text">
                   <a
@@ -219,6 +223,7 @@ function Footer() {
                   </a>
                 </p>
               </div>
+
               <div className="info-div">
                 <Image src={phoneIcon} className="icon" alt="phone" />
                 <p className="text">
@@ -231,7 +236,7 @@ function Footer() {
                   <br />
                   <a
                     style={{ textDecoration: "none", color: "#fff" }}
-                    href="mailTo:info@tis.edu.in"
+                    href="mailto:info@tis.edu.in"
                   >
                     info@tis.edu.in
                   </a>
@@ -239,6 +244,7 @@ function Footer() {
               </div>
             </div>
           </div>
+
           <div className="three-buttons">
             <a
               target="_blank"
@@ -257,21 +263,27 @@ function Footer() {
               href="https://tis.fedena.com/"
               className="button"
             >
-              fedena Login
+              Fedena Login
             </a>
           </div>
+
           <div className="all-links">
             <div className="mobile-links">
-              {ourCampusLinks[0].links.map((item, index) => (
-                <a
-                  className="link"
-                  key={index}
-                  href={`${item.linkTo}${utmParams}`}
-                >
-                  <p className="links">{item.linkName}</p>
-                </a>
-              ))}
+              {ourCampusLinks[0].links.map((item, index) => {
+                const pdf = isPdfLink(item.linkTo);
+                return (
+                  <a
+                    className="link"
+                    key={index}
+                    href={pdf ? item.linkTo : `${item.linkTo}${utmParams}`}
+                    target={pdf ? "_blank" : "_self"}
+                  >
+                    <p className="links">{item.linkName}</p>
+                  </a>
+                );
+              })}
             </div>
+
             <div className="social-links">
               {socialLinks.map((item, index) => (
                 <a
@@ -286,18 +298,20 @@ function Footer() {
               ))}
             </div>
           </div>
+
           <div className="bottom-bar">
             <p className="copyright-text">
               Copyright © 2025 Tula&apos;s International School, Dehradun | All
-              Rights Reserved <br />
+              Rights Reserved
+              <br />
               Designed and Managed By{" "}
               <a
                 style={{ textDecoration: "none", color: "#fff" }}
                 target="_blank"
-                href={"https://netpuppys.com"}
+                href="https://netpuppys.com"
               >
                 NetPuppys
-              </a>{" "}
+              </a>
             </p>
           </div>
         </>
