@@ -6,9 +6,9 @@ import Header from "../globalComponents/Header/Header";
 import feesFlow from "../../public/pictures/fees-flow.png";
 import HeaderFeesImg from "../../public/Banner/feeStructure.webp";
 import HeaderFeesImgMobile from "../../public/Banner/feeStructureMobile.webp";
-import feesIndia from "../../public/pictures/fee-structureIndia.png";
+import feesIndia from "../../public/pictures/fee-structureboth.jpeg";
 import feesForeign from "../../public/pictures/fee-structureForeign.png";
-import FeesIndia from "../../public/MandatoryPDF/TIS FEE STRUCTURE 2026-27.pdf";
+import FeesBoth from "../../public/MandatoryPDF/TIS FEE STRUCTURE 2026-27 BOTH.pdf";
 import FeesNRI from "../../public/MandatoryPDF/NRI-TIS-FEE-STRUCTURE.pdf";
 import { useMobile } from "../globalComponents/IsMobileContext";
 
@@ -52,22 +52,17 @@ function FeeStructure() {
         />
       </div>
       {/* <Image src={feesFlow} alt="" className="w-[90%] md:w-[80%] mx-auto" /> */}
-      <div className="flex mx-auto w-[90%] md:w-[80%] flex-col md:flex-row items-center justify-center pt-8 gap-8">
-        <div className="w-full">
-          <Image
-            onClick={() => window.open(FeesIndia, "_blank")}
-            src={feesIndia}
-            alt=""
-          />
-        </div>
-        <div className="w-full">
-          <Image
-            onClick={() => window.open(FeesNRI, "_blank")}
-            src={feesForeign}
-            alt=""
-          />
-        </div>
-      </div>
+<div className="flex mx-auto w-[90%] md:w-[80%] flex-col md:flex-row items-center justify-center pt-8 gap-8">
+  <div className="w-full md:w-[60%] lg:w-[50%]">
+    <Image
+      onClick={() => window.open(FeesBoth, "_blank")}
+      src={feesIndia}
+      alt=""
+      className="w-full h-auto cursor-pointer rounded-xl shadow-md hover:shadow-lg transition"
+    />
+  </div>
+</div>
+
 
       <div className="py-8 md:py-14">
         <h2 className="text-[clamp(10px,7vw,50px)] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
