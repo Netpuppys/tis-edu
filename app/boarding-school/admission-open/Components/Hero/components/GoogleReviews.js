@@ -81,7 +81,7 @@ function GoogleReviews() {
       classCity: "Class VIII, Jaipur, Rajasthan",
       rating: 5,
       description:
-        "Tula’s gives a comprehensive environment for our child to grow. The sports, academics and extra-curricular activities have helped Krishna in knowing himself better. This school has also built his confidence, so thank you to Tula’s.",
+        "Tula’s gives a comprehensive environment for our child to grow. The sports, academics and extra-curricular activities have helped Krishna in knowing himself better.",
     },
     {
       image: tashi,
@@ -90,7 +90,7 @@ function GoogleReviews() {
       classCity: "Class VIII, Leh, Ladakh",
       rating: 4.5,
       description:
-        "I would like to convey a big thanks to the Management and Teachers of Tula’s International School for taking good care of my son. He liked the school a lot since he got adapted to it from day one. Though it’s been only about four months he has been admitted to this prestigious school, he has already started getting more confident, independent and a responsible child.",
+        "I would like to convey a big thanks to the Management and Teachers of Tula’s International School for taking good care of my son.",
     },
     {
       image: sandeep,
@@ -108,7 +108,7 @@ function GoogleReviews() {
       classCity: "Class VIII, Greater Noida West, Uttar Pradesh",
       rating: 4,
       description:
-        "Tula’s International School is doing excellent in all the fields especially giving a lot of exposure to children. Very nicely planned and organized academic programme. Good efforts by all teachers. I am very grateful to all teachers, Coordinator and the Headmaster. My child is being groomed very well. Aditya is progressing well academically. His confidence has boosted up to a great level. He was very introvert. In co-curricular activities and social skills have enhanced a lot due to a range of classroom activities. I feel that my decision was right in sending my child to Tula’s International School. Keep it up! It was a great success to Tula’s International School.",
+        "Tula’s International School is doing excellent in all the fields especially giving a lot of exposure to children. Very nicely planned and organized academic programme. Good efforts by all teachers.",
     },
     {
       image: amit,
@@ -117,7 +117,7 @@ function GoogleReviews() {
       classCity: "Class XI, Mumbai, Maharashtra",
       rating: 4.5,
       description:
-        "Being a parent it's a big challenge to find a Boarding School that qualifies your Parameters of Security, Health, Hygiene, Academics, Non Academics and Self discipline being key features to be satisfied, more specifically when a girl child is in consideration, for co-education system. After doing a long search & research and we finally selected Tula's International School and being satisfied by our fullest best of knowledge. Premises is fully secured, Food is of excellent quality with proper rotation of menu, Cleanliness is maintained perfectly. Education faculty have excellent teacher student ratio, supportive, Sports Tutors are with National level orientation. Time table is followed on daily basis to maintain discipline and House Parents pay enough attention and remain connected to keep children happy and comfortable. Also, the whole TIS Management does its best to sort out any issues that are informed about and put their best efforts to keep children disciplined and well trained. Thanks to Tula's International School for such a wonderful setup for children.",
+        "Being a parent it's a big challenge to find a Boarding School that qualifies your Parameters of Security, Health, Hygiene, Academics, Non Academics and Self discipline being key features.",
     },
     {
       image: pinky,
@@ -126,7 +126,7 @@ function GoogleReviews() {
       classCity: "Class XII, Patna Bihar",
       rating: 5,
       description:
-        "I am happy and satisfied with the wonderful experience of my son in this school. Teachers are very good especially Shweta Ma’am. She is always available when I need her. Arts and Sports teachers are really very supportive.",
+        "I am happy and satisfied with the wonderful experience of my son in this school. Teachers are very good especially Shweta Ma’am. She is always available when I need her.",
     },
     {
       image: gulabdas,
@@ -135,7 +135,7 @@ function GoogleReviews() {
       classCity: "Class VIII, Delhi",
       rating: 4.5,
       description:
-        "We admitted our daughter, Annika Gulabdas Gupta, in class VIII this year in Tula’s. We learned about Tula’s from internet & counsellors. At first, we were apprehensive about sending Annika at such a young age to boarding school. But now, after a passage of nearly 5 months, we are happy that we sent her to Tula’s. We discovered quite a positive change in her attentiveness, seriousness about studies, vocabulary etc. She is very much satisfied with the facilities offered at Tula’s related to education, extra-curricular activities, recreation & hygiene. We, as well as our daughter liked the behavior & responsiveness of teaching, administrative & support staff. In fact, we have shared these particulars about Tula’s in our circle & quite a few of our friends have decided to send their wards to Tula’s in near future.",
+        "We admitted our daughter, Annika Gulabdas Gupta, in class VIII this year in Tula’s. She is very much satisfied with the facilities offered at Tula’s related to education, extra-curricular activities, recreation & hygiene. ",
     },
     {
       image: urja,
@@ -144,7 +144,7 @@ function GoogleReviews() {
       classCity: "Class XI, Dubai, UAE",
       rating: 5,
       description:
-        "Right from the beginning, we have been in touch with Robin Sir and Shweta Ma’am. Both are very helpful and cooperative. Teachers are passionate and helpful towards academics. Thank you to all the teachers for all the patience and hard work taking such good care of the children as both my children are new to school.",
+        "Right from the beginning, we have been in touch with Robin Sir and Shweta Ma’am. Both are very helpful and cooperative. Teachers are passionate and helpful towards academics.",
     },
     // {
     //   name: "Manaya Mena",
@@ -161,7 +161,7 @@ function GoogleReviews() {
       classCity: "Class XII, Dimapur, Nagaland",
       rating: 3.8,
       description:
-        "Hi Tula’s! In the beginning it was very tough for me to send my son to a boarding school but the day I visited the campus the first thing which came to my mind was that this is the right place and right environment for my son to be and it made up my mind to enroll my son into the school. The day after admission when my son visited the campus, he was very happy to be there. I am very glad to see the changes in my son as he has become more responsible and disciplined. He has developed a lot not only in personality but I have seen improvement in his academics, sports and other day to day activities. I am also very proud and happy to refer other parents also to enroll their ward to the school. I must not forget to thank all the teachers and other supporting staff for their tiresome effort in making my ward excel in all fields.",
+        "Hi Tula’s! In the beginning it was very tough for me to send my son to a boarding school but the day I visited the campus the first thing which came to my mind was that this is the right place and right environment.",
     },
     {
       image: ashu,
@@ -170,7 +170,7 @@ function GoogleReviews() {
       classCity: "Class VII, Gurgaon, Haryana",
       rating: 4.5,
       description:
-        "It has been a fantastic journey for my daughter in Tula’s International School so far. The boarding and infrastructure facility are excellent. We have seen significant improvement in Manisha towards participating in different events like academics, Sports, culture, and arts, which as parents we all believe is very important to teach life skills to a child. All teachers, wardens and school staff are very supportive and take good care of my daughter. We believe that as Manisha grows in Tula’s International School, she will improve in all aspects of life.",
+        "It has been a fantastic journey for my daughter in Tula’s International School so far. The boarding and infrastructure facility are excellent. We have seen significant improvement in Manisha.",
     },
   ];
 
