@@ -77,7 +77,7 @@ function ExceptionalFacilties() {
       name: (
         <>
           Enriching Fitness{" "}
-          <span className="text-[#b90124]">with 15+ Sports</span>
+          <span className="text-[#b90124]">with 16+ Sports</span>
         </>
       ),
       description: (
