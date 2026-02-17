@@ -44,6 +44,7 @@ function Footer() {
         },
         { id: 6, linkName: "Privacy Policy", linkTo: "/privacy-policy/" },
         { id: 7, linkName: "Terms & Conditions", linkTo: "/terms-conditions/" },
+        { id: 11, linkName: "Disclaimer", linkTo: "/disclaimer/" },
         {
           id: 8,
           linkName: "Disciplinary Policy",
