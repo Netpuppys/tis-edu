@@ -3,18 +3,19 @@ import Script from "next/script";
 import ProvidersWrapper from "./provider";
 
 export const metadata = {
+  metadataBase: new URL("https://tis.edu.in"),
   title:
     "Best Boarding School in Dehradun, India | Tula's International School",
   description:
     "Discover the Best Boarding School in Uttarakhand, India - Tula's International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus.",
   alternates: {
-    canonical: "https://tis.edu.in/",
+    canonical: "./",
   },
   openGraph: {
     title: "Tula's International School",
     description:
       "Best Boarding School in Dehradun offering world-class education and holistic development.",
-    url: "https://tis.edu.in/",
+    url: "https://tis.edu.in",
     siteName: "Tula's International School",
     images: [
       {
