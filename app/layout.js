@@ -7,7 +7,17 @@ export const metadata = {
   title:
     "Best Boarding School in Dehradun, India | Tula's International School",
   description:
-    "Discover the Best Boarding School in Uttarakhand, India - Tula's International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus.",
+  "Best CBSE Boarding School in Dehradun, Uttarakhand | Tula's International School Offers World-class Residential Education for Boys & Girls. Top-ranked Co-ed Boarding With Modern Gurukul Campus, Holistic Learning & 100% Results. Admissions Open 2026-27.",
+
+    authors: [{ name: "Tula's International School" }],
+  publisher: "Tula's International School",
+
+  keywords: [
+    "Top Schools India",
+    "Best Boarding Schools Dehradun",
+    "Coed Residential Schools Uttarakhand",
+    "CBSE International Schools",
+  ],
   alternates: {
     canonical: "./",
   },
@@ -48,6 +58,106 @@ export default function RootLayout({ children }) {
         <ProvidersWrapper>
           {children}
         </ProvidersWrapper>
+
+        <Script
+  id="global-schema"
+  type="application/ld+json"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "School",
+          "name": "Tula's International School",
+          "url": "https://tis.edu.in/",
+          "logo": "https://tis.edu.in/_next/static/media/schoolLogo.95f6e121.png",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "9837983791",
+            "contactType": "customer service",
+            "areaServed": "IN",
+            "availableLanguage": ["en", "Hindi"]
+          },
+          "sameAs": [
+            "https://www.facebook.com/tulasinternationalschool/",
+            "https://www.instagram.com/tulasinternationalschool/?hl=en",
+            "https://www.youtube.com/channel/UC-eRtybnv3GvfvcWxQq93zw",
+            "https://twitter.com/tulas_intschool?lang=en",
+            "https://www.linkedin.com/school/tulas-international-school/?originalSubdomain=in"
+          ]
+        },
+        {
+          "@type": "LocalBusiness",
+          "name": "Tula's International School",
+          "image": "https://tis.edu.in/_next/static/media/schoolLogo.95f6e121.png",
+          "url": "https://tis.edu.in/",
+          "telephone": "0135-2699444",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Tula's International School",
+            "addressLocality": "Dhoolkot, P.O –Selaqui, Chakrata Road, Dehradun",
+            "postalCode": "248011",
+            "addressCountry": "IN"
+          },
+          "sameAs": [
+            "https://www.facebook.com/tulasinternationalschool",
+            "https://x.com/Tulas_IntSchool",
+            "https://www.instagram.com/tulasinternationalschool",
+            "https://www.youtube.com/channel/UC-eRtybnv3GvfvcWxQq93zw",
+            "https://www.linkedin.com/in/tulasinternationalschool/",
+            "https://tis.edu.in/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "name": "Tula's International School",
+          "url": "https://tis.edu.in/",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://tis.edu.in/?s={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+  "@type": "Event",
+  "name": "Boarding School Admission 2026-2027: Tula's International School",
+  "description": "Boarding School Admissions 2026-2027 at Tula’s International School, Dehradun. Admissions open for Classes 4th-12th.",
+  "image": "https://tis.edu.in/_next/static/media/Image%202.0c5295c9.webp",
+  "startDate": "2026-03-01T09:00:00+05:30",
+  "endDate": "2026-09-30T18:00:00+05:30",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "location": {
+    "@type": "Place",
+    "name": "Tula's International School",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Dhoolkot, P.O – Selaqui, Chakrata Road",
+      "addressLocality": "Dehradun",
+      "addressRegion": "Uttarakhand",
+      "postalCode": "248011",
+      "addressCountry": "IN"
+    }
+  },
+  "organizer": {
+    "@type": "EducationalOrganization",
+    "name": "Tula's International School",
+    "url": "https://tis.edu.in"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://tis.edu.in/contact-us/",
+    "price": "0",
+    "priceCurrency": "INR",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-03-01T09:00:00+05:30"
+  }
+}
+      ]
+    }),
+  }}
+/>
 
         {/* 🧠 Scripts for analytics (load AFTER page renders) */}
         {/* Google Tag Manager */}

@@ -184,7 +184,7 @@ function HeroBackup(props) {
         </div>
         <div className="text-div-container">
           <div className="text-div">
-            <h1 className="text">
+            <h2 className="text">
               {paragraph1}
               <span
                 className={`circled-text ${
@@ -212,7 +212,7 @@ function HeroBackup(props) {
                   ></path>
                 </svg>
               </span>
-            </h1>
+            </h2>
           </div>
         </div>
       </div>

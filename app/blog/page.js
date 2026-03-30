@@ -6,10 +6,23 @@ import Blog from "../../components/QuickLinks/Blog";
 import BlogsHeader from "../../public/Banner/blogs.webp";
 import BlogsHeaderMobile from "../../public/Banner/blogsMobile.webp";
 import Header from "../../components/globalComponents/Header/Header";
+import FAQSchema from "../faq/FAQSchema";
 
 export default function blog() {
   return (
     <>
+    {/* <FAQSchema
+    faqData={[
+    {
+      question: "What is Tula's International School?",
+      answer: "It is a top CBSE boarding school in Dehradun.",
+    },
+    {
+      question: "Where is it located?",
+      answer: "It is located in Dehradun, Uttarakhand.",
+    },
+  ]}
+    /> */}
       <Head>
         <title>Tula&apos;s International Boarding School Dehradun Blog</title>
         <meta
