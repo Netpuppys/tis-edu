@@ -8,7 +8,7 @@ import "../app/globals.css";
 export const metadata = {
   title: "Best Boarding School in Dehradun, India | Tula's International School",
   description:
-    "Discover the Best Boarding School in Uttarakhand, India - Tula's International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus.",
+    "Best CBSE Boarding School in Dehradun, Uttarakhand | Tula's International School Offers World-class Residential Education for Boys & Girls. Top-ranked Co-ed Boarding With Modern Gurukul Campus, Holistic Learning & 100% Results. Admissions Open 2026-27.",
   alternates: {
     canonical: "https://tis.edu.in/",
   },

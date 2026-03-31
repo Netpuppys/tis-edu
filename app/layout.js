@@ -7,7 +7,7 @@ export const metadata = {
   title:
     "Best Boarding School in Dehradun, India | Tula's International School",
   description:
-  "Best CBSE Boarding School in Dehradun, Uttarakhand | Tula's International School Offers World-class Residential Education for Boys & Girls. Top-ranked Co-ed Boarding With Modern Gurukul Campus, Holistic Learning & 100% Results. Admissions Open 2026-27.",
+  "Discover the Best Boarding School in Uttarakhand, India - Tula's International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus.",
 
     authors: [{ name: "Tula's International School" }],
   publisher: "Tula's International School",
@@ -119,11 +119,12 @@ export default function RootLayout({ children }) {
             "query-input": "required name=search_term_string"
           }
         },
-        {
+       {
+  "@context": "https://schema.org",
   "@type": "Event",
-  "name": "Boarding School Admission 2026-2027: Tula's International School",
-  "description": "Boarding School Admissions 2026-2027 at Tula’s International School, Dehradun. Admissions open for Classes 4th-12th.",
-  "image": "https://tis.edu.in/_next/static/media/Image%202.0c5295c9.webp",
+  "name": "Boarding Schools Admission 2026-2027: Tula's International School Dehradun",
+  "description": "Boarding School Admissions 2026-2027 at Tula’s International School, Dehradun, India. Admissions open for Classes 4th-12th. Top-ranked Co-ed Boarding Schools With CBSE Modern Gurukul Campus.",
+  "image": "https://tis.edu.in/_next/static/media/schoolLogo.95f6e121.png",
   "startDate": "2026-03-01T09:00:00+05:30",
   "endDate": "2026-09-30T18:00:00+05:30",
   "eventStatus": "https://schema.org/EventScheduled",
@@ -143,7 +144,8 @@ export default function RootLayout({ children }) {
   "organizer": {
     "@type": "EducationalOrganization",
     "name": "Tula's International School",
-    "url": "https://tis.edu.in"
+    "url": "https://tis.edu.in",
+    "logo": "https://tis.edu.in/_next/static/media/schoolLogo.95f6e121.png"
   },
   "offers": {
     "@type": "Offer",
@@ -152,6 +154,10 @@ export default function RootLayout({ children }) {
     "priceCurrency": "INR",
     "availability": "https://schema.org/InStock",
     "validFrom": "2026-03-01T09:00:00+05:30"
+  },
+  "performer": {
+    "@type": "EducationalOrganization",
+    "name": "Tula's International School"
   }
 }
       ]
