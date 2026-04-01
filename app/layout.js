@@ -159,6 +159,36 @@ export default function RootLayout({ children }) {
     "@type": "EducationalOrganization",
     "name": "Tula's International School"
   }
+},
+      {
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Top Boarding School in Dehradun, India: Tula's International School",
+  "description": "Tula's International School is the Best Boarding School in Dehradun(Uttarakhand), Offering a Top-ranked CBSE Co-ed Residential Campus. We Provide World-class Boarding Facilities, Holistic Education, and a Safe, Nurturing Environment for Students Seeking Premier International School Standards in India. Admission Open for 2026-27—Join One of India’s Premier International Boarding Schools Today!",
+  "image": "https://tis.edu.in",
+  "provider": {
+    "@type": "School",
+    "name": "Tula's International School",
+    "url": "https://tis.edu.in"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.7",
+    "bestRating": "5",
+    "worstRating": "0",
+    "ratingCount": "589"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "category": "CBSE Boarding Schools Education",
+      "priceCurrency": "INR",
+      "offeredBy": {
+        "@type": "School",
+        "name": "Tula's International School"
+      }
+    }
+  ]
 }
       ]
     }),
