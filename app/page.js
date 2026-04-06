@@ -26,27 +26,25 @@ export default function Home() {
 
       {/* ✅ Video Schema (Your Provided Schema) */}
       <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "VideoObject",
-            name: "Tula's International School",
-            description:
-              "Discover the Best Boarding School in Uttarakhand, India - Tula's International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus.",
-            thumbnailUrl: "https://tis.edu.in/",
-            uploadDate: "2025-01-01", // ✅ FIXED: valid ISO date
-            contentUrl: "https://tis.edu.in/virtual-tour/",
-            embedUrl: "https://tis.edu.in/virtual-tour/",
-            potentialAction: {
-              "@type": "SeekToAction",
-              target:
-                "https://tis.edu.in/virtual-tour/={seek_to_second_number}",
-              "startOffset-input": "required name=seek_to_second_number",
-            },
-          }),
-        }}
-      />
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "name": "Tula's International School",
+      "description": "Discover the Best Boarding School in Uttarakhand, India - Tula's International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus in Dehradun. Boarding Schools Admission Open 2026-2027",
+      "thumbnailUrl": "https://tis.edu.in",
+      "uploadDate": "2024-03-25T09:00:00+05:30",
+      "contentUrl": "https://tis.edu.in/virtual-tour/",
+      "embedUrl": "https://tis.edu.in/virtual-tour/",
+      "potentialAction": {
+        "@type": "SeekToAction",
+        "target": "https://tis.edu.in/virtual-tour/={seek_to_second_number}",
+        "startOffset-input": "required name=seek_to_second_number"
+      }
+    })
+  }}
+/>
     </>
   );
 }
