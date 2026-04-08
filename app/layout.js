@@ -4,198 +4,187 @@ import ProvidersWrapper from "./provider";
 
 export const metadata = {
   metadataBase: new URL("https://tis.edu.in"),
-  title:
-    "Best Boarding School in Dehradun, India | Tula's International School",
+  title: {
+    default:
+      "Boarding School in Dehradun India | CBSE Co-Ed Boarding School | Tula's International School",
+    template: "%s | Tula's International School",
+  },
   description:
-  "Discover the Best Boarding School in Uttarakhand, India - Tula's International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus.",
-
-    authors: [{ name: "Tula's International School" }],
-  publisher: "Tula's International School",
-
+    "Tula's International School is a CBSE-affiliated co-educational boarding school in Dehradun India for boys and girls from Class 4 to 12. Admissions open for 2026-27.",
   keywords: [
-    "Top Schools India",
-    "Best Boarding Schools Dehradun",
-    "Coed Residential Schools Uttarakhand",
-    "CBSE International Schools",
+    "boarding school in dehradun india",
+    "cbse co-ed boarding school in dehradun",
+    "cbse boarding school in uttarakhand india",
+    "coed boarding school in dehradun india",
+    "residential school in uttarakhand india",
+    "boarding school for boys and girls in dehradun",
+    "class 4 to 12 boarding school in dehradun",
+    "tula's international school dehradun",
   ],
   alternates: {
-    canonical: "./",
+    canonical: "/",
   },
   openGraph: {
-    title: "Tula's International School",
+    title: "Boarding School in Dehradun India | Tula's International School",
     description:
-      "Best Boarding School in Dehradun offering world-class education and holistic development.",
-    url: "https://tis.edu.in",
+      "CBSE-affiliated co-ed boarding school in Dehradun, Uttarakhand for boys and girls from Class 4 to 12.",
+    url: "/",
     siteName: "Tula's International School",
-    images: [
-      {
-        url: "https://tis.edu.in/_next/static/media/Image%202.0c5295c9.webp",
-        width: 1200,
-        height: 630,
-        alt: "Tula's International School",
-      },
-    ],
     locale: "en_IN",
     type: "website",
+    images: [
+      {
+        url: "/images/tis-campus-og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Tula's International School campus in Dehradun India",
+      },
+    ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Boarding School in Dehradun India | Tula's International School",
+    description:
+      "CBSE-affiliated co-ed boarding school for boys and girls from Class 4 to 12.",
+    images: ["/images/tis-campus-og.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  category: "education",
 };
 
 export default function RootLayout({ children }) {
+  const unifiedSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "School",
+        "@id": "https://tis.edu.in/#school",
+        name: "Tula's International School",
+        url: "https://tis.edu.in/",
+        logo: "https://tis.edu.in/logo.png",
+        image:
+          "https://tis.edu.in/wp-content/uploads/2023/06/campus-view.jpg",
+        description:
+          "Tula's International School is a CBSE-affiliated co-educational boarding school in Dehradun, Uttarakhand.",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Chakrata Road, Dhoolkot",
+          addressLocality: "Dehradun",
+          addressRegion: "Uttarakhand",
+          postalCode: "248011",
+          addressCountry: "IN",
+        },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: "30.3551",
+          longitude: "77.8961",
+        },
+        telephone: "+91-9458319102",
+        email: "info@tis.edu.in",
+        sameAs: [
+          "https://www.facebook.com/tulasinternationalschool/",
+          "https://www.instagram.com/tulasinternationalschool/",
+          "https://www.youtube.com/channel/UC-eRtybnv3GvfvcWxQq93zw",
+        ],
+      },
+
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://tis.edu.in/#localbusiness",
+        name: "Tula's International School",
+        image: "https://tis.edu.in/logo.png",
+        url: "https://tis.edu.in/",
+        telephone: "+91-135-2699444",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Dhoolkot, P.O – Selaqui, Chakrata Road",
+          addressLocality: "Dehradun",
+          addressRegion: "Uttarakhand",
+          postalCode: "248011",
+          addressCountry: "IN",
+        },
+      },
+
+      {
+        "@type": "WebSite",
+        "@id": "https://tis.edu.in/#website",
+        url: "https://tis.edu.in/",
+        name: "Tula's International School",
+        publisher: {
+          "@id": "https://tis.edu.in/#school",
+        },
+      },
+
+      {
+        "@type": "WebPage",
+        "@id": "https://tis.edu.in/#webpage",
+        url: "https://tis.edu.in/",
+        name: "Boarding School in Dehradun India | Tula's International School",
+        isPartOf: {
+          "@id": "https://tis.edu.in/#website",
+        },
+        about: {
+          "@id": "https://tis.edu.in/#school",
+        },
+        description:
+          "Tula's International School is a CBSE-affiliated co-educational boarding school in Dehradun India.",
+      },
+
+      {
+        "@type": "Event",
+        "@id": "https://tis.edu.in/#event",
+        name: "Admissions Open 2026-2027",
+        startDate: "2026-03-01T09:00:00+05:30",
+        endDate: "2026-09-30T18:00:00+05:30",
+        eventStatus: "https://schema.org/EventScheduled",
+        eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+        location: {
+          "@type": "Place",
+          name: "Tula's International School",
+        },
+      },
+
+      {
+        "@type": "Course",
+        "@id": "https://tis.edu.in/#course",
+        name: "CBSE Boarding School Program",
+        description:
+          "Tula's International School offers CBSE co-ed boarding education from Class 4 to 12.",
+        provider: {
+          "@id": "https://tis.edu.in/#school",
+        },
+      },
+    ],
+  };
+
   return (
-    <html lang="en">
-      <body>
-        {/* Google Tag Manager (noscript) */}
+    <html lang="en-IN">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(unifiedSchema).replace(/</g, "\\u003c"),
+          }}
+        />
+      </head>
+
+      <body className="antialiased">
+        {/* GTM NOSCRIPT */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-KR9HW9RM"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
+          />
         </noscript>
 
-        {/* Providers */}
-        <ProvidersWrapper>
-          {children}
-        </ProvidersWrapper>
+        <ProvidersWrapper>{children}</ProvidersWrapper>
 
-        <Script
-  id="global-schema"
-  type="application/ld+json"
-  strategy="afterInteractive"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "School",
-          "name": "Tula's International School",
-          "url": "https://tis.edu.in/",
-          "logo": "https://tis.edu.in/_next/static/media/schoolLogo.95f6e121.png",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "9837983791",
-            "contactType": "customer service",
-            "areaServed": "IN",
-            "availableLanguage": ["en", "Hindi"]
-          },
-          "sameAs": [
-            "https://www.facebook.com/tulasinternationalschool/",
-            "https://www.instagram.com/tulasinternationalschool/?hl=en",
-            "https://www.youtube.com/channel/UC-eRtybnv3GvfvcWxQq93zw",
-            "https://twitter.com/tulas_intschool?lang=en",
-            "https://www.linkedin.com/school/tulas-international-school/?originalSubdomain=in"
-          ]
-        },
-        {
-          "@type": "LocalBusiness",
-          "name": "Tula's International School",
-          "image": "https://tis.edu.in/_next/static/media/schoolLogo.95f6e121.png",
-          "url": "https://tis.edu.in/",
-          "telephone": "0135-2699444",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Tula's International School",
-            "addressLocality": "Dhoolkot, P.O –Selaqui, Chakrata Road, Dehradun",
-            "postalCode": "248011",
-            "addressCountry": "IN"
-          },
-          "sameAs": [
-            "https://www.facebook.com/tulasinternationalschool",
-            "https://x.com/Tulas_IntSchool",
-            "https://www.instagram.com/tulasinternationalschool",
-            "https://www.youtube.com/channel/UC-eRtybnv3GvfvcWxQq93zw",
-            "https://www.linkedin.com/in/tulasinternationalschool/",
-            "https://tis.edu.in/"
-          ]
-        },
-        {
-          "@type": "WebSite",
-          "name": "Tula's International School",
-          "url": "https://tis.edu.in/",
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://tis.edu.in/?s={search_term_string}",
-            "query-input": "required name=search_term_string"
-          }
-        },
-       {
-  "@context": "https://schema.org",
-  "@type": "Event",
-  "name": "Boarding Schools Admission 2026-2027: Tula's International School Dehradun",
-  "description": "Boarding School Admissions 2026-2027 at Tula’s International School, Dehradun, India. Admissions open for Classes 4th-12th. Top-ranked Co-ed Boarding Schools With CBSE Modern Gurukul Campus.",
-  "image": "https://tis.edu.in/_next/static/media/schoolLogo.95f6e121.png",
-  "startDate": "2026-03-01T09:00:00+05:30",
-  "endDate": "2026-09-30T18:00:00+05:30",
-  "eventStatus": "https://schema.org/EventScheduled",
-  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-  "location": {
-    "@type": "Place",
-    "name": "Tula's International School",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Dhoolkot, P.O – Selaqui, Chakrata Road",
-      "addressLocality": "Dehradun",
-      "addressRegion": "Uttarakhand",
-      "postalCode": "248011",
-      "addressCountry": "IN"
-    }
-  },
-  "organizer": {
-    "@type": "EducationalOrganization",
-    "name": "Tula's International School",
-    "url": "https://tis.edu.in",
-    "logo": "https://tis.edu.in/_next/static/media/schoolLogo.95f6e121.png"
-  },
-  "offers": {
-    "@type": "Offer",
-    "url": "https://tis.edu.in/contact-us/",
-    "price": "0",
-    "priceCurrency": "INR",
-    "availability": "https://schema.org/InStock",
-    "validFrom": "2026-03-01T09:00:00+05:30"
-  },
-  "performer": {
-    "@type": "EducationalOrganization",
-    "name": "Tula's International School"
-  }
-},
-      {
-  "@context": "https://schema.org",
-  "@type": "Course",
-  "name": "Top Boarding School in Dehradun, India: Tula's International School",
-  "description": "Tula's International School is the Best Boarding School in Dehradun(Uttarakhand), Offering a Top-ranked CBSE Co-ed Residential Campus. We Provide World-class Boarding Facilities, Holistic Education, and a Safe, Nurturing Environment for Students Seeking Premier International School Standards in India. Admission Open for 2026-27—Join One of India’s Premier International Boarding Schools Today!",
-  "image": "https://tis.edu.in",
-  "provider": {
-    "@type": "School",
-    "name": "Tula's International School",
-    "url": "https://tis.edu.in"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.7",
-    "bestRating": "5",
-    "worstRating": "0",
-    "ratingCount": "589"
-  },
-  "offers": [
-    {
-      "@type": "Offer",
-      "category": "CBSE Boarding Schools Education",
-      "priceCurrency": "INR",
-      "offeredBy": {
-        "@type": "School",
-        "name": "Tula's International School"
-      }
-    }
-  ]
-}
-      ]
-    }),
-  }}
-/>
-
-        {/* 🧠 Scripts for analytics (load AFTER page renders) */}
         {/* Google Tag Manager */}
         <Script
           strategy="afterInteractive"
@@ -216,40 +205,6 @@ export default function RootLayout({ children }) {
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'G-ZL190LFCTT');
-            `,
-          }}
-        />
-
-        {/* Microsoft Clarity */}
-        <Script
-          id="microsoft-clarity"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(c,l,a,r,i,t,y){
-                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-              })(window, document, "clarity", "script", "nub3bd48zx");
-            `,
-          }}
-        />
-
-        {/* Meta Pixel */}
-        <Script
-          id="meta-pixel"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              !function(f,b,e,v,n,t,s){
-                if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-                n.queue=[];t=b.createElement(e);t.async=!0;
-                t.src=v;s=b.getElementsByTagName(e)[0];
-                s.parentNode.insertBefore(t,s)
-              }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init', '343518338071033');
-              fbq('track', 'PageView');
             `,
           }}
         />
