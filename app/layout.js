@@ -134,19 +134,19 @@ export default function RootLayout({ children }) {
           "Tula's International School is a CBSE-affiliated co-educational boarding school in Dehradun India.",
       },
 
-      {
-        "@type": "Event",
-        "@id": "https://tis.edu.in/#event",
-        name: "Admissions Open 2026-2027",
-        startDate: "2026-03-01T09:00:00+05:30",
-        endDate: "2026-09-30T18:00:00+05:30",
-        eventStatus: "https://schema.org/EventScheduled",
-        eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-        location: {
-          "@type": "Place",
-          name: "Tula's International School",
-        },
-      },
+      // {
+      //   "@type": "Event",
+      //   "@id": "https://tis.edu.in/#event",
+      //   name: "Admissions Open 2026-2027",
+      //   startDate: "2026-03-01T09:00:00+05:30",
+      //   endDate: "2026-09-30T18:00:00+05:30",
+      //   eventStatus: "https://schema.org/EventScheduled",
+      //   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      //   location: {
+      //     "@type": "Place",
+      //     name: "Tula's International School",
+      //   },
+      // },
 
       {
         "@type": "Course",
