@@ -11,6 +11,9 @@
 //   4. On completion, Paynimo POSTs to /api/payment/callback → redirect
 
 import { useState, useEffect, useCallback } from 'react';
+
+export const dynamic = 'force-dynamic'; // ← add this line
+
 import { useSearchParams } from 'next/navigation';
 
 function loadScript(src) {
