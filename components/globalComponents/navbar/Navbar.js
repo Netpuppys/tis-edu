@@ -159,6 +159,10 @@ const Navbar = () => {
           title: "Pay Fee Online",
           linkTo: "https://pages.razorpay.com/pl_EehyEVeDo25wMd/view",
         },
+        //         {
+        //   title: "Pay Fee Online",
+        //   linkTo: "/pay",
+        // },
         {
           title: "Fee Structure",
           linkTo: "/admission-procedure/fee-structure/",
