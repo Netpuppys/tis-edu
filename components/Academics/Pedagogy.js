@@ -16,7 +16,7 @@ const Table = () => {
         "Tula's International School (TIS) is a premier co-ed boarding school providing the best international education.",
     },
     {
-      name: "Learning Enviroment",
+      name: "Learning Environment",
       description:
         "We make learning exciting and encourage facing challenges to maintain discipline, organisation, and overall success.",
     },
@@ -164,40 +164,13 @@ export default function Pedagogy() {
           }}
           className="w-full px-8 md:px-0 md:w-[75%] pt-8 md:pt-14 mx-auto text-justify md:text-center text-[clamp(10px,4.5vw,30px)] font-normal md:text-[clamp(10px,1.3vw,45px)] leading-tight"
         >
-          As a premier co-ed residential school, the focus of the curriculum
-          development at TIS is to provide an inclusive educational environment
-          to students inside and outside the class room whereby teachers
-          adopting constructive, collaborative and inquiry-based learning
-          increase the participation and productivity of its pupils. Apart from
-          Curriculum content as per CBSE, various value-added activities are
-          integrated to develop Leadership and analytical abilities in the
-          students to make them understand, reflect and participate.
-          Methodology, the syllabus content delivery, Textbooks, practically
-          oriented classroom teaching with minimum learning objectives, academic
-          parameters recognition for each student, frequent assessment in the
-          form of poster making, plays, quiz and written test gives a 360°
-          insight into the subject. In the field of performing arts, art &amp;
-          crafts lesson is a regular feature.
+          As a premier co-ed residential school, the focus of curriculum development at TIS is to provide an inclusive educational environment to students inside and outside the classroom, whereby teachers adopt constructive, collaborative, and inquiry-based learning to increase the participation and productivity of pupils. Apart from curriculum content as per CBSE, various value-added activities are integrated to develop leadership and analytical abilities in students, helping them to understand, reflect, and participate. Methodology, syllabus content delivery, textbooks, practically oriented classroom teaching with minimum learning objectives, academic parameters recognition for each student, and frequent assessment in the form of poster-making, plays, quizzes, and written tests give a 360° insight into the subject. In the field of performing arts, art and craft lessons are a regular feature.
           <br />
           <br />
-          Exclusive Sports with professional coaches help the students to
-          transition from amateur to professional category. Curricular
-          activities, debates, quizzes, seminars and conference is well
-          integrated into the academic calendar. Student Exchange Programs,
-          Educational excursion, camping Trekking trips, organisation of
-          exhibition empowers students to acquire 21 st century skills. With
-          24x7 - medical Centre/ infirmary and clinical counselor in the campus
-          the well- being of the student is The Core Priority. Various councils
-          of students - library council, school council, mess committee,
-          academic, sports, IT, Pastoral provide the real platform to voice
-          their concerns and get the corrective measures implemented.
+          Exclusive sports with professional coaches help students transition from amateur to professional levels. Curricular activities, debates, quizzes, seminars, and conferences are well integrated into the academic calendar. Student exchange programs, educational excursions, camping and trekking trips, and organisation of exhibitions empower students to acquire 21st-century skills. With a 24x7 medical Centre/infirmary and clinical counselor on campus, the well-being of students is the core priority. Various councils of students — library council, school council, mess committee, academic, sports, IT, and pastoral — provide a real platform to voice concerns and have corrective measures implemented.
           <br />
           <br />
-          Model United Nations (MUN) participation is encouraged to raise
-          college profiles and global awareness while also acquiring important
-          skills such as public speaking and diplomacy. This holistic strategy
-          guarantees that students are adequately equipped for both academic and
-          professional success.
+          Model United Nations (MUN) participation is encouraged to raise college profiles and global awareness while also helping students acquire important skills such as public speaking and diplomacy. This holistic strategy guarantees that students are adequately equipped for both academic and professional success.
         </h6>
       </div>
       <div className="mb-8 md:mb-14 w-[90%] md:w-[80%] mx-auto border md:border-2 rounded-xl overflow-scroll md:overflow-hidden border-[#b90124]">

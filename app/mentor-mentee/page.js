@@ -84,7 +84,7 @@ function MentorMentee() {
           Confidence is a key trait for success in any field, and mentees in
           this program benefit immensely from consistent encouragement. Mentors
           act as pillars of support, instilling confidence in their mentees by
-          recognizing their eEorts and achievements. Over time, mentees develop
+          recognizing their efforts and achievements. Over time, mentees develop
           the courage to face challenges and embrace new opportunities,
           contributing to their personal and academic progress.
           <br />
@@ -218,7 +218,7 @@ function MentorMentee() {
           <br />
           Mentees benefit from the diverse experiences and knowledge that
           mentors bring to the table. By interacting with mentors, mentees gain
-          fresh insights into diEerent cultures, ideas, and career paths. This
+          fresh insights into different cultures, ideas, and career paths. This
           exposure broadens their horizons and helps them develop a global
           outlook.
           <br />
@@ -254,7 +254,7 @@ function MentorMentee() {
           <br />
           Life is full of challenges, and resilience is a vital skill for
           navigating them. Mentees in the program learn to face setbacks with
-          determination and optimism. With mentors guiding them through diEicult
+          determination and optimism. With mentors guiding them through difficult
           times, mentees develop the strength to persevere and grow stronger in
           the face of adversity.
           <br />
@@ -368,7 +368,7 @@ function MentorMentee() {
             <strong className="">Conclusion</strong>
             <br />
             <br />
-            The Mentor-Mentee program at Tulas International School is a
+            The Mentor-Mentee program at Tula's International School is a
             transformative initiative that creates a nurturing and
             growth-oriented environment for mentees. By fostering confidence,
             providing academic guidance, and supporting emotional well-being,

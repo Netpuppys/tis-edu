@@ -49,7 +49,7 @@ export default function PastoralCare() {
               Mental Health Matters:
             </strong>{" "}
             We understand that life can get tough sometimes. That’s why our
-            counselors are available whenever you need someone to talk to,
+            counsellors are available whenever you need someone to talk to,
             offering guidance and support when you face stress or emotional
             challenges.
           </li>

@@ -96,7 +96,7 @@ function ProminentPersonalities() {
           image: SakshiMalik,
           name: "Sakshi Malik",
           description:
-            "(First Indian wrestler to win medal in Rio 2016 Olympics, Olympics Bronze Medalist in Wrestling, Silver Medalist in 2014. Common Wealth Games, Rajeev Gandhi Khel Ratan Awardee 2016, Padma Shree Awardee 2017)",
+            "(First Indian wrestler to win medal in Rio 2016 Olympics, Olympic bronze medalist in Wrestling, Silver medallist in 2014. Commonwealth Games, Rajiv Gandhi Khel Ratan Awardee 2016, Padma Shri Awardee 2017)",
         },
         {
           image: VisheshBhriguvanshi,
@@ -119,35 +119,35 @@ function ProminentPersonalities() {
           image: AbhishekVerma,
           name: "Abhishek Verma",
           description:
-            "(6th Highest World Ranking, Arjuna Awardee, Asian Game Gold Medalist in Archery 2013)",
+            "(6th highest world ranking, Arjuna Awardee, Asian Games gold medalist in archery 2013)",
         },
         {
           image: AditiGopichandSwami,
           name: "Aditi Gopichand Swami",
           description:
-            "(7th Highest World Ranking, Arjun Awardee, World Champion in Archery 2024)",
+            "(7th highest world ranking, Arjun Awardee, World Champion in archery 2024)",
         },
         {
           image: JeevanJyotSinghTeja,
           name: "Jeevan Jyot Singh Teja",
-          description: "(Drona Chari Awardee in Archery 2022)",
+          description: "(Dronacharya Awardee in archery 2022)",
         },
         {
           image: OjasPravinDeotale,
           name: "Ojus Devtale",
           description:
-            "(9th Highest World Ranking, Arjun Awardee 2023 and current world champion in Archery)",
+            "(9th highest world ranking, Arjun Awardee 2023 and current world champion in archery)",
         },
         {
           image: RajatChauhan,
           name: "Rajat Chauhan",
           description:
-            "(5th Highest World Ranking Arjun Awardee 2016 in Archery)",
+            "(5th highest world ranking Arjun Awardee 2016 in archery)",
         },
         {
           image: DevendraSinghBisht,
           name: "Devendra Singh Bisht",
-          description: "(under 18 School Indian Football Team Selector)",
+          description: "(under-18 School Indian Football Team Selector)",
         },
         {
           image: ManishMetani,
@@ -169,7 +169,7 @@ function ProminentPersonalities() {
           image: LaxmiAgarwal,
           name: "Laxmi Agarwal",
           description:
-            "(International Women Empowerment Award from the Ministry of Women and Child Development, Founder and President of The Laxmi Foundation, a NGO dedicated to acid attack victims. Deepika Padukone acted in the Bip Pic Movie “Chappak” based on her)",
+            "(International Women Empowerment Award from the Ministry of Women and Child Development, Founder and President of The Laxmi Foundation, a NGO dedicated to acid attack victims. Deepika Padukone acted in the Biopic film “Chappak” based on her)",
         },
       ],
     },
@@ -193,7 +193,7 @@ function ProminentPersonalities() {
         },
         {
           image: EhsaanQureshi,
-          name: "Ehsaan Qureshi",
+          name: "Ahsaan Qureshi",
           description: "",
         },
         {
@@ -228,7 +228,7 @@ function ProminentPersonalities() {
         },
         {
           image: PitabhashTripathi,
-          name: "Pitabhash Tripathi",
+          name: "Pitabhash Tripathy",
           description: "",
         },
         {
@@ -273,7 +273,7 @@ function ProminentPersonalities() {
         },
         {
           image: JimmyShergil,
-          name: "Jimmy Shergil",
+          name: "Jimmy Shergill",
           description: "",
         },
         {
@@ -323,7 +323,7 @@ function ProminentPersonalities() {
         },
         {
           image: RajaMurad,
-          name: "Raja Murad",
+          name: "Raza Murad",
           description: "",
         },
         {
@@ -348,7 +348,7 @@ function ProminentPersonalities() {
         },
         {
           image: RaunitRoy,
-          name: "Raunit Roy",
+          name: "Ronit Roy",
           description: "",
         },
         {

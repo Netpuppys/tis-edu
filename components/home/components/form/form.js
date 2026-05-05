@@ -134,7 +134,7 @@ function Form() {
       .post("https://otp.tulas.edu.in/send-otp", {
         mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
         message:
-          "Hello, ##OTP## is your One Time Password(OTP) forTulas This OTP is valid till 3mins Tulas.", // Replace with your SMS template
+          "Hello, ##OTP## is your One Time Password(OTP) for TIS This OTP is valid till 3mins.", // Replace with your SMS template
         authkey: "428845Ai6NJKsbqd66c98932P1",
       })
       .then(() => {

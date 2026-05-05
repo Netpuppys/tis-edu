@@ -70,8 +70,7 @@ export default function SportsAchievements() {
               Challenge Championship at Corvus American Academy, Maharashtra.
             </li>
             <li>
-              Under-18 Boys: Participated in the 3-on-3 District Basketball
-              Championship.
+              Under-18 Boys: Participated in the Championship	3x3 District Basketball Championship.
             </li>
           </ul>
         </>
@@ -106,11 +105,11 @@ export default function SportsAchievements() {
         <>
           <strong>Heet Jain (VIII)</strong>
           <ul className="ml-5 list-disc">
-            <li>Best Swimmer intra murals in junior category.</li>
+            <li>Best Swimmer intramurals in junior category.</li>
           </ul>
           <strong>Mahin Surjay (X) </strong>
           <ul className="ml-5 list-disc">
-            <li>Best Swimmer intra murals senior category.</li>
+            <li>Best Swimmer intramurals senior category.</li>
           </ul>
         </>
       ),
@@ -267,13 +266,12 @@ export default function SportsAchievements() {
         <ul className="list-disc ml-5">
           <li>
             Tula's Table Tennis players participated in District Table Tennis
-            Championship at Cambrian Hall School and 2 players reached Quarter
-            Final.
+            Championship at Cambrian Hall School and 2 players reached Quarter-final.
           </li>
           <li>
             Our 12 Table Tennis players participated in District Table Tennis
             Championship held at Cambrian Hall School and 4 players reached
-            Quarter Final and 1 reached Semi Final.
+            Quarter-final and 1 reached Semi-final.
           </li>
           <li>
             Ananya Singh of class XII Table Tennis participated in SFA Table
@@ -321,7 +319,7 @@ export default function SportsAchievements() {
       description: (
         <ul className="list-disc ml-5">
           <li>
-            Our Crossbow players got Raking in 16th Europe Crossbow Cup (An
+            Our Crossbow players got Ranking in 16th Europe Crossbow Cup (An
             International Online Crossbow Championship) held at Leelawati Public
             School, Pratap Vihar Ghaziabad, UP. Their rankings were as follows:-
             Chaitanya Dahyalal Thakkar got 14 Rank, Om Sameer Thakkar got 18
@@ -329,10 +327,10 @@ export default function SportsAchievements() {
             got 20 Rank, Taniya Rai got 16 Rank and Khushi got 21 Rank.
           </li>
           <li>
-            Winner of 5th Crossbow Championship held at Alurance, Pondha
-            Dehradun. Priyanshu Kumar Won Gold Medal, Nidhi Singh Won Gold
-            Medal, Vinayak Agarwal Won Gold Medal, Abhivantika Won Gold Medal,
-            Akarsh Shaurya won Silver Medal and Yash Saini won Silver Medal in
+            Winner of 5th Crossbow Championship held at Alurance, Ponda
+            Dehradun. Priyanshu Kumar won gold medal, Nidhi Singh won gold
+            Medal, Vinayak Agarwal won gold medal, Abhivantika won gold medal,
+            Akarsh Shaurya won silver medal and Yash Saini won silver medal in
             this tournament.
           </li>
         </ul>
@@ -398,7 +396,7 @@ export default function SportsAchievements() {
       >
         At Tula’s International School, sports aren’t just games—they’re a way
         of life! Our students continuously push their limits, excelling in
-        basketball, skating, swimming, and more. Their achievements reflect our
+        Basket ball, skating, swimming, and more. Their achievements reflect our
         commitment to holistic growth, discipline, and excellence in every
         arena.
       </h6>

@@ -78,7 +78,7 @@ function TutionAndFianance() {
   return (
     <>
       <Header
-        title={"Scholarship Programs"}
+        title={"Scholarship programmes"}
         headerImg={HeaderScholarShipImg}
         headerImgMobile={HeaderScholarShipImgMobile}
         subtitle={
@@ -129,8 +129,7 @@ function TutionAndFianance() {
           }}
           className="w-[90%] md:w-[60%] mx-auto mt-4 md:mt-8 text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] leading-tight"
         >
-          TIS provides various scholarship programs for Academic & Sports based
-          student.  All candidates with exceptional Academic or Sports records
+          TIS provides various scholarship programmes for academic and sports‑based students  All candidates with exceptional Academic or Sports records
           can apply for this scholarship.
           <br />
           <br />
@@ -139,7 +138,7 @@ function TutionAndFianance() {
           <br />
           <ol className="ml-5 list-decimal mb-5">
             <li>
-              2 years of academic report card / Sports certificates (State &
+              Two years of academic report card / sports certificates (State &
               National)
             </li>
             <li>
@@ -147,8 +146,7 @@ function TutionAndFianance() {
               95% and Interview for an academic scholarship.
             </li>
             <li>
-              Candidate applying for Sports Scholarship has to obtain 75%
-              in S.A.
+              Candidate applying for sports scholarship has to obtain 75% in TSA
             </li>
             <li>
               Interview with Academic Supervisor/ Dean of Admission /Head of
@@ -165,12 +163,12 @@ function TutionAndFianance() {
             <tbody>
               <tr>
                 <td>Academic Scholarship *</td>
-                <td style={{ borderRight: "none" }}>Upto Rs. 1,50,000</td>
+                <td style={{ borderRight: "none" }}>up to Rs. 1,50,000</td>
               </tr>
               <tr>
                 <td style={{ borderBottom: "none" }}>Sports Scholarship *</td>
                 <td style={{ borderRight: "none", borderBottom: "none" }}>
-                  Upto Rs. 1,00,000
+                  up to Rs. 1,00,000
                 </td>
               </tr>
             </tbody>
@@ -204,23 +202,23 @@ function TutionAndFianance() {
             </thead>
             <tbody>
               <tr>
-                <td>Sibling Concession *</td>
-                <td style={{ borderRight: "none" }}>Upto Rs 1,00,000</td>
+                <td>Sibling concession *</td>
+                <td style={{ borderRight: "none" }}>up to Rs 1,00,000</td>
               </tr>
               <tr>
-                <td>Serving Defense Person *</td>
-                <td style={{ borderRight: "none" }}>Upto Rs 1,00,000</td>
+                <td>Serving defence personnel *</td>
+                <td style={{ borderRight: "none" }}>up to Rs 1,00,000</td>
               </tr>
               <tr>
                 <td>Single Parent *</td>
-                <td style={{ borderRight: "none" }}>Upto Rs 1,00,000</td>
+                <td style={{ borderRight: "none" }}>up to Rs 1,00,000</td>
               </tr>
               <tr>
                 <td style={{ borderBottom: "none" }}>
-                  Alumni & Alumni Reference *
+                  Alumni & alumna Reference *
                 </td>
                 <td style={{ borderRight: "none", borderBottom: "none" }}>
-                  Upto Rs 1,00,000
+                  up to Rs 1,00,000
                 </td>
               </tr>
             </tbody>
@@ -262,7 +260,7 @@ function TutionAndFianance() {
             </li>
             <li>
               {" "}
-              Parent’s need to email Dean of Admissions{" "}
+              Parents need to email Dean of Admissions{" "}
               <a
                 style={{ color: "#B90124" }}
                 href={"mailto:dean.admission@tis.edu.in"}
@@ -272,7 +270,7 @@ function TutionAndFianance() {
               to avail Tula’s Concession policy.
             </li>
             <li>Child need to qualify for</li>
-            <li>The scholarship will be provided from One Time Fees.</li>
+            <li>The scholarship will be provided from One-time fees.</li>
           </ol>
           <br />
           Few of the scholarships offered in the previous years.

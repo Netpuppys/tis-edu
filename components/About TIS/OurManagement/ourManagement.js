@@ -50,11 +50,11 @@ export default function OurManagement() {
           <li>Dr APJ Kalam Award - 2016</li>
           <li>Sardar Vallabh Bhai Patel Rashtriya Ekta Puruskar - 2015</li>
           <li>
-            Edupreneurs award 2013 for valuable contribution in engineering
+            Edupreneur award 2013 for valuable contribution in engineering
             education in India
           </li>
-          <li>Rajeev Gandhi Shiromani Award - 2010</li>
-          <li>Recipient of Indira Gandhi Sadbhavna Award - 2008</li>
+          <li>Rajiv Gandhi Shiromani Award - 2010</li>
+          <li>Recipient of Indira Gandhi Sadbhawna Award - 2008</li>
         </ul>
       ),
       description: (
@@ -62,7 +62,7 @@ export default function OurManagement() {
           It brings me immense pride and satisfaction to extend my heartiest
           congratulations to the Management, dedicated Staff, and the vibrant
           Student body of Tula's International School on the publication of its
-          Second edition of the Year Book. This publication serves as a
+          Second edition of the yearbook. This publication serves as a
           chronicle of our collective journey towards educational excellence,
           and it is with great anticipation that I share my thoughts with you
           today.
@@ -148,7 +148,7 @@ export default function OurManagement() {
           Alumnus, Symbiosis Institute of Design, Pune; awarded as an inspiring
           Women Eduleader'for the year 2014 by Engineering Watch and 'Skilltree
           Education Evangelist 2015' by Skill Tree, Silky Jain is an inspiration
-          for many. The 'care-India youth icon from 2011 till date, Ms Jain is a
+          for many. The 'CARE-India Youth Icon from 2011 till date, Ms Jain is a
           self-starter and an achiever. Currently handling the Engineering
           College and the Management College (Tula's Institute), she has a good
           understanding of the operations of Educational Institutions.

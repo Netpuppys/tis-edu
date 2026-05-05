@@ -43,7 +43,7 @@ function MentorMentee() {
       logo: steveJobs,
     },
     {
-      title: "Einstien",
+      title: "Einstein",
       desc: "(Junior Sciences)",
       logo: einstein,
     },
@@ -107,7 +107,7 @@ function MentorMentee() {
       logo: saregama,
     },
     {
-      title: "Pythgoras",
+      title: "Pythagoras",
       desc: "(Senior Mathematics)",
       logo: pythagoras,
     },

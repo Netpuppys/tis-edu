@@ -66,17 +66,19 @@ export default function AcademicArchievements() {
       image: Image2022,
       description: (
         <>
-          Ranked <strong>No.4 in India, No.2 in Uttarakhand,</strong> and{" "}
+        <ul className="list-disc">
+          <li>Ranked <strong>No.4 in India, No.2 in Uttarakhand,</strong> and{" "}
           <strong>No.1 in Dehradun</strong> in a survey conducted by Education
-          Today (2021-22).
-          <br />
-          Principal of Tula's International School listed under{" "}
+          Today (2021-22).</li>
+          <li>Principal of Tula's International School listed under{" "}
           <strong>"50 Effective Principals"</strong> by Education Today.
-          <br />
-          Awarded <strong>
+          </li>
+          <li>Awarded <strong>
             "Best Co-ed Boarding School in Dehradun"
           </strong> and{" "}
           <strong>No.5 in North India by The Times of India.</strong>
+          </li>
+          </ul>
         </>
       ),
     },
@@ -134,18 +136,16 @@ export default function AcademicArchievements() {
       image: Image2018,
       description: (
         <>
-          Ranked <strong>No.8 in India, No.2 in Uttarakhand,</strong> and{" "}
-          <strong>No.1 in Dehradun</strong> in a survey by Education Today.
-          <br />
-          Awarded
+          <li>Ranked <strong>No.8 in India, No.2 in Uttarakhand,</strong> and{" "}
+          <strong>No.1 in Dehradun</strong> in a survey by Education Today.</li>
+          <li>Awarded
           <strong>"Best Residential School in Uttarakhand"</strong> by Golden
-          Star Awards, presented by Kirron Kher.
-          <br />
-          Recognized as{" "}
+          Star Awards, presented by Kirron Kher.</li>
+          <li>Recognized as{" "}
           <strong>
             "Best International Boarding School in Uttarakhand"
           </strong>{" "}
-          by TV100, presented by Shri Shyam Jaju, National Vice President BJP.
+          by TV100, presented by Shri Shyam Jaju, National Vice President BJP.</li>
         </>
       ),
     },
@@ -168,17 +168,15 @@ export default function AcademicArchievements() {
       image: Image2016,
       description: (
         <>
-          <strong>Ranked No.1 Boarding School in Uttarakhand</strong> for
-          Infrastructure Provisions by Education Today.
-          <br />
+          <li><strong>Ranked No.1 Boarding School in Uttarakhand</strong> for
+          Infrastructure Provisions by Education Today.</li>
           Hosted the <strong>2nd International Film Festival,</strong> featuring
           artists like Pooja Bhatt, Jimmy Shergill, Divya Dutta, and Nawab Shah.
           <br />
-          Chairman of Tula's Group received the{" "}
-          <strong>Dr. APJ Abdul Kalam Award.</strong>
-          <br />
-          Students won multiple medals in Equestrian Sports (Show Jumping,
-          Dressage, Eventing) at the Excellentia Horse Show in Delhi.
+          <li>Chairman of Tula's Group received the{" "}
+          <strong>Dr. APJ Abdul Kalam Award.</strong></li>
+          <li>Students won multiple medals in Equestrian Sports (Show Jumping,
+          Dressage, Eventing) at the Excellentia Horse Show in Delhi.</li>
           <br />
           <strong className="text-[#b90124]">
             Students excelled in Olympiad exams:
@@ -221,14 +219,13 @@ export default function AcademicArchievements() {
       image: Image2014,
       description: (
         <>
-          Launched CSR initiative <strong>"The Tortoise"</strong> to raise
-          awareness against child labor.
-          <br />
-          Kuldeep Singh (Class XI) secured{" "}
+          <li>Launched CSR initiative <strong>"The Tortoise"</strong> to raise
+          awareness against child labor.</li>
+          <li>Kuldeep Singh (Class XI) secured{" "}
           <strong>
             3rd position in the National Taekwondo Championship
           </strong>{" "}
-          held in Nepal.
+          held in Nepal.</li>
         </>
       ),
     },

@@ -11,7 +11,7 @@ export default function CareerCounselling() {
       <Header
         title={"Career Counselling"}
         subtitle={
-          "At TIS, we empower students through Comprehensive Career Counselling Services"
+          "At TIS, we empower students through comprehensive career counselling services"
         }
         headerImg={HeaderCareerImg}
         headerImgMobile={HeaderCareerImgMobile}
@@ -26,14 +26,14 @@ export default function CareerCounselling() {
           At TIS, we step in to bridge this gap with a comprehensive career
           guidance program. Through a series of well-designed tests and exposure
           to a variety of career opportunities, we help students discover the
-          paths that align with their interests and strengths..
+          paths that align with their interests and strengths.
           <br />
         </p>
         <div className="personal-career">
           <div className="personal">
             <div className="headingPersonal">Personal Counselling</div>
             <div className="textPersonal">
-              Tula’s provides personal counseling through a dedicated center,
+              Tula’s provides personal counselling through a dedicated center,
               ensuring students have a safe space to share their thoughts and
               challenges with trained professionals. Life skills and value-based
               education are integrated into the daily schedule, addressing
@@ -46,13 +46,13 @@ export default function CareerCounselling() {
         </div>
         <div className="career-heading">Career Counselling</div>
         <div className="text-above-career">
-          Tula's International School's career counseling program is dedicated
+          The career counselling programme at Tulas International School is dedicated
           to helping students build fulfilling and successful careers. The
           program includes:
           <br />
           <ul className="ml-5 list-disc">
             <li>
-              Personalized Guidance: Individual tests and one-on-one counseling
+              Personalized Guidance: Individual tests and one-on-one counselling
               sessions to help students discover their interests, abilities, and
               aspirations.
             </li>
@@ -68,7 +68,7 @@ export default function CareerCounselling() {
             <li>
               Future Planning: A focus on both immediate achievements and
               long-term career goals to ensure a smooth transition from school
-              to work life.
+              to work-ife.
             </li>
           </ul>
           <br />
@@ -103,7 +103,7 @@ export default function CareerCounselling() {
           </div>
           <div className="Benifits">
             <div className="text-part">
-              <h2>Benefits of Career Counseling :</h2>
+              <h2>Benefits of Career counselling :</h2>
               <p1>
                 It will help students in:
                 <ul>
@@ -138,10 +138,10 @@ export default function CareerCounselling() {
         <div className="personal-career">
           <div className="personal">
             <div className="headingPersonal">
-              Why does your child need counselling?
+              Why Does Your Child Need Counselling?
             </div>
             <div className="textPersonal">
-              Tula’s career counseling program helps students:
+              Tula’s career counselling program helps students:
               <ul className="ml-5 list-disc">
                 <li>
                   Build self-esteem and confidence to face challenges head-on.
@@ -156,7 +156,7 @@ export default function CareerCounselling() {
                 <li>
                   Resist harmful influences and peer pressure effectively.
                 </li>
-                <li>Explore career paths they’re passionate about.</li>
+                <li>Explore career paths they are passionate about.</li>
                 <li>Understand their strengths and areas for improvement.</li>
                 <li>
                   Embrace new opportunities with a proactive and positive
@@ -178,7 +178,7 @@ export default function CareerCounselling() {
           </h1>
 
           <h3 className="text-preparation">
-            With growing competition, entrance exams have become the standard
+            With increasing competition, entrance examinations have become the benchmark
             for identifying top talent. Preparing for these exams requires a
             different approach than regular theory papers.
             <br />
@@ -189,7 +189,7 @@ export default function CareerCounselling() {
             <ul className="ml-5 list-disc">
               <li>
                 <strong className="font-black">IIT-JEE –</strong> Preparation
-                starts from Class IX.
+                begins in Class IX.
               </li>
               <li>
                 <strong className="font-black">
@@ -218,7 +218,7 @@ export default function CareerCounselling() {
             Our program includes:
             <ul className="ml-5 list-disc">
               <li>Weekly competitive assignments.</li>
-              <li>IIT/JEE/PMT-aligned syllabus.</li>
+              <li>IIT-JEE/PMT-aligned syllabus.</li>
               <li>Regular mock tests and MCQ practice after each topic.</li>
               <li>Weekly remedial and doubt-solving sessions.</li>
               <li>Special guidance for IIM entrance exams.</li>

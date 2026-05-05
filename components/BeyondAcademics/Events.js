@@ -36,7 +36,7 @@ export default function Events() {
           commenced with the worship of Mata Saraswati followed by the prayer
           Humko Shakti Dena. The students were given the traditional Tilak,
           stationery kit and sweets as a mark of Good Luck. The programme
-          concluded with the Chairman sir's address.
+          concluded with the Chairman's address.
         </>
       ),
     },
@@ -71,13 +71,13 @@ export default function Events() {
           The Inter-House folk dance competition showcased dance forms from
           different parts and cultures of our country and they did it with
           immense dedication. The competition was held to highlight the diverse
-          culture and traditions of rich country INDIA. It was judged by a panel
-          of esteemed judges and choreographers, Mr, Naresh Shah, Ms. Isha
+          culture and traditions of rich country india. It was judged by a panel
+          of esteemed judges and choreographers, Mr. Naresh Shah, Ms. Isha
           Thakur and Mr. Michael John.
           <p className="py-1"></p>
           The students gave us outstanding performances and definitely made the
           choice for the judges difficult. Congratulations to the winners and
-          participants. Music department keeps it up always.
+          participants. The Music Department continues to uphold high standards.
         </>
       ),
     },
@@ -87,10 +87,10 @@ export default function Events() {
       image: ChaiPeCharcha,
       description: (
         <>
-          The 34 cabinet members of Tula’s International School availed an
-          opportunity to interact with director Mr Raunak Jain at semi formal
-          platform to share their ideas and problems vis a vis academic session
-          23-24. The Cabinet members exuded confidence and promised to fulfil
+          The 34 Cabinet members of Tula’s International School availed an
+          opportunity to interact with Vice Chairman Mr. Raunak Jain on a semi formal
+          platform to share their ideas and problems regarding the academic session 2023–24.
+          The Cabinet members exuded confidence and promised to fulfil
           their responsibilities under the guidance and protocol of school
           policies. The icing on the cake was the sumptuous snacks served with
           cold beverages. With the director’s inspiring words and all
@@ -105,13 +105,13 @@ export default function Events() {
       image: HouseFeast,
       description: (
         <>
-          The much awaited house fees took place at various venues. The event
+          The much awaited House Feast took place at various venues. The event
           was a grand success and saw the participation of all the houses. The
           feast provided an opportunity for the members to come together to
           celebrate their achievements while also fostering the spirit of
           teamwork and cooperation. Highlights of the feast - Ribbon cutting
-          ceremony, Tilak ceremony, HM Sir speech, Complements by juniors,
-          games, music, stand up comedy, 12th batch students speech, food and
+          ceremony, Tilak ceremony, House Master’s speech, Compliments by juniors,
+          games, music, stand up comedy, Speech by Class 12 students, food and
           cultural performances, etc. It was a vibrant evening and left many
           memorable moments.
         </>
@@ -123,17 +123,17 @@ export default function Events() {
       image: Dramatics,
       description: (
         <>
-          The inter house drama competition held brought the acting skills of
-          our talented students to the LimeLight. The panel of judges included
+          The Inter-House Drama Competition held brought the acting skills of
+          our talented students to the limelight. The panel of judges included
           Mr. Ravi Shah and Mr. Mukesh Kumar, both renowned actors of the
           Garhwali film industry. Everyone witnessed the shared effort and
           dedication put into each and every play.
           <p className="py-1"></p>
           After all the participants presented their plethora of extraordinary
           talents, the results were announced to the audience full of
-          anticipation. As the second runners up were the Spartans. The first
-          runner up were the Titans. Finally the place was seized by the
-          Athenas. Congratulations to all the actors.
+          anticipation. The second runners-up were the Spartans. The first
+          runners-up were the Titans. Finally, the Athenas secured first place.
+          Congratulations to all the actors.
         </>
       ),
     },
@@ -143,11 +143,11 @@ export default function Events() {
       image: Chandaryaan,
       description: (
         <>
-          TIS heads of departments attended a pilot workshop presented by team
-          of Mr. Lalit Chopra and Mr Priyank Agarwal, where practical virtual
+          TIS heads of departments attended a pilot workshop presented a team
+          lead by Mr. Lalit Chopra and Mr Priyank Agarwal, where practical virtual
           visit sessions were conducted in which teachers and students had a
-          real virtual experience of landing of Chandrayaan 1 and 2 and also a
-          physiology of human digestive system. The school is in the process of
+          real virtual experience of landing of Chandrayaan-1 and Chandrayaan-2 and also a
+          physiology of the human digestive system. The school is in the process of
           arranging a Virtual lab visit for its enthusiastic Science students in
           future.
         </>
@@ -161,7 +161,7 @@ export default function Events() {
         <>
           Basic Mountaineering course at NIMAS, Dirang, a journey that started
           as a course and ended as a lifetime experience! Imagine yourself in
-          the middle of Huge mountains with a bunch of co-mountaineers under the
+          the middle of huge mountains with a bunch of co-mountaineers under the
           guidance of highly experienced Army personnel to train you. One can
           understand the amount of discipline and tough life it would come with.
           For me it was a roller coaster ride of emotions, beginning with the
@@ -171,7 +171,7 @@ export default function Events() {
           it was all achievable in the first preparatory week but as we moved up
           from the base camp and started with the actual training truth bombs
           hit hard. Once stamina, endurance and more importantly the will power!
-          We were at 10500 feet high, trekking over 15 to 20 kgs rucksacks on
+          We were at 10500 feet high, trekking over 15-20 kgs rucksacks on
           our shoulders.
         </>
       ),
@@ -185,11 +185,10 @@ export default function Events() {
           TIS organised a visit to Gaushala at Rispana, Dehradun for students
           under IAYP program. This set off after their Academic session at 11:30
           a.m., and reaching the intended destination at around 1:00 p.m. The
-          place is home to 25 cows with generating proximity 60 litres of milk
-          everyday. More than half of which goes to poor people who cannot
-          afford such necessities. The students got to know about what type of
-          water is said to the cows and how they are prepared. Students got the
-          opportunity to feed the cattle freshly prepared for order and water.
+          place is home to 25 cows producing approximately 60 litres of milk every day. 
+          More than half of which goes to poor people who cannot
+          afford such necessities. The students got to know about the type of water given to the cows and how they are prepared. Students got the
+          opportunity to feed the cattle freshly prepared fodder and water.
           It was indeed an exciting hands-on experience for all.
         </>
       ),

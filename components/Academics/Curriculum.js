@@ -51,9 +51,9 @@ export default function Curriculum() {
           className="w-full px-8 md:px-0 md:w-[75%] pt-8 md:pt-14 mx-auto text-justify md:text-start text-[clamp(10px,4.5vw,30px)] font-normal md:text-[clamp(10px,1.3vw,45px)] leading-tight"
         >
           At TIS, we follow the CBSE course structure. This structure along with
-          our curriculum, shaped by top academicians, prioritizes reasoning and
+          our curriculum, shaped by top academicians, prioritises reasoning and
           analytical thinking over rote memorization. Aligned with the latest
-          NEP 2023 framework, our syllabus emphasizes a skill-based, inclusive
+          NEP 2023 framework, our syllabus emphasises a skill-based, inclusive
           education that adapts to diverse learners’ needs.
           <br />
           <br />
@@ -99,7 +99,7 @@ export default function Curriculum() {
           <ul className="ml-5 list-disc">
             <li>
               Digital Advantage: Every student receives unique digital IDs
-              (Extra Marks & Fedena) for personalized online and offline
+              (Extra Marks & Fedena) for personalised online and offline
               learning.
             </li>
             <li>

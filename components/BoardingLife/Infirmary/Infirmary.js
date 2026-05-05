@@ -107,28 +107,28 @@ export default function Infirmary() {
       name: "Dr. Kapil Arora",
       title: "MBBS",
       description:
-        "Consultant physician of prestigious organizations like Reserve Bank of India, Dehradun NABARD, Dehradun. TIS Dehradun, Eden senior living Dehradun. I was Associated as Consultant in Apollo hospital Dehradun from 2010 to 2017 and nephroplus hospital Dehradun from 2017 to 2023. I have over 14 years of clinical experience. I am also examiner in various medical universities and have been visiting as guest lecture is various medical and paramedical university.",
+        "Consultant physician associated with prestigious organisations such as Reserve Bank of India, Dehradun; NABARD, Dehradun; TIS Dehradun; and Eden Senior Living, Dehradun. He was associated as a Consultant at Apollo Hospital, Dehradun from 2010 to 2017 and at Nephroplus Hospital, Dehradun from 2017 to 2023. With over 14 years of clinical experience, he also serves as an examiner for various medical universities and has delivered guest lectures at several medical and paramedical institutions.",
       image: kapil, // Replace with actual image URL
     },
     {
       name: "Dr. Jyoti Chand Kalakoti",
       title: "Dentist",
       description:
-        "Completed both BDS and MDS from reputed colleges in India. She specializes in periodontology and oral implantology, and she has over 14 Year of clinical expertise where she has worked in multiple private, corporate and Gov.t institutions, she is currently serving as a dental officer in ECHS policlinic.",
+        "Completed both BDS and MDS from reputed institutions in India. She specialises in periodontology and oral implantology and brings over 14 years of clinical experience across private, corporate, and government institutions. She is currently serving as a Dental Officer at ECHS Polyclinic.",
       image: jyoti, // Replace with actual image URL
     },
     {
       name: "Pritam Singh",
       title: "Nursing Head",
       description:
-        "A seasoned nursing professional with an illustrious career spanning 24 years in the Army Medical Corps. Worked at prestigious military hospitals including Army Hospital R&R, Military Hospital Shimla & Military Hospital Roorkee served in South Africa for 1 year under UN Mission worked in J&K area providing medical aid, operational deployments, Conducting evacuation and first-aid operations in hostile.",
+        "A seasoned nursing professional with 24 years of distinguished service in the Army Medical Corps. He has served at premier military hospitals including Army Hospital R&R, Military Hospital Shimla, and Military Hospital Roorkee. He has also undertaken a one year deployment in South Africa under a UN Mission and served in the J and K region, providing medical aid, operational support, evacuation, and first aid services in challenging environments.",
       image: pritam, // Replace with actual image URL
     },
     {
       name: "Dr. Shanu Panwar",
       title: "Physiotherapist",
       description:
-        "Physiotherapist at TIS for the past one and a half years. I completed my Bachelor of Physiotherapy from Doon Group of College, Dehradun, and did my internship at Fortis Hospital, Noida. During this period, I gained excellent knowledge and experience in Neuro rehab, Cardiopulmonary rehab, Sports rehab, musculoskeletal rehab, and Geriatric care.",
+        "Physiotherapist at TIS for the past one and a half years. She completed her Bachelor of Physiotherapy from Doon Group of Colleges, Dehradun, and undertook her internship at Fortis Hospital, Noida. During this period, she gained comprehensive experience in neuro rehabilitation, cardiopulmonary rehabilitation, sports rehabilitation, musculoskeletal rehabilitation, and geriatric care.",
       image: shanu, // Replace with actual image URL
     },
   ];

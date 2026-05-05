@@ -28,11 +28,11 @@ const Apply = () => {
   const steps = [
     {
       id: 1,
-      title: "Application & Registration",
+      title: "Application & registration",
       icon: icon1,
       label: (
         <>
-          Application & <br /> Registration
+          Application & <br /> registration
         </>
       ),
       description: (
@@ -54,7 +54,7 @@ const Apply = () => {
               </li>
               <li>
                 Complete the registration form and submit it along with a
-                registration fee of Rs. 15,000 (non-refundable)
+                registration fee of ₹15,000 (non-refundable)
               </li>
               <li>
                 Write the Demand Draft in favor of Tula’s International School,
@@ -67,13 +67,13 @@ const Apply = () => {
             <strong className="font-[TTChocolatesBold]">
               Last date of application:
             </strong>{" "}
-            All registration forms must reach the school by March 31st of the
+            All registration forms must reach the school by 31 March of the
             admission year.
           </li>
           <br />
           <span className="text-[#b90124]">
             Note: Admissions are granted on a first-come, first-served basis.
-            Seats may fill up before March 31st. We recommend applying at the
+            Seats may fill up before 31 March. We recommend applying at the
             earliest to secure your spot.
           </span>
         </ul>
@@ -181,7 +181,7 @@ const Apply = () => {
       title: "Enrollment & Confirmation",
       label: (
         <>
-          Enrollment & <br /> Confirmation
+          Enrolment & <br /> Confirmation
         </>
       ),
       description: (
@@ -383,7 +383,7 @@ const Apply = () => {
             Regulations of the School. The Registration of the child does not
             guarantee his/her admission into the school. The Parent can deposit
             the Registration Fee (which is neither transferable nor refundable)
-            through Demand Draft for Rs. 15,000 in favor of Tula’s International
+            through Demand Draft for ₹15,000 in favor of Tula’s International
             School, payable at Dehradun.
             <br />
             <br />

@@ -20,15 +20,7 @@ function Music() {
       image: music,
       description: (
         <>
-          At Tula’s International School, one of the top residential schools in
-          Dehradun, music is not regarded as a standalone subject but is
-          incorporated into the curriculum itself. It is an integral part of
-          every student’s life. The Music Academy at Tula’s offers students a
-          wide array of opportunities in both music and dance. The school has
-          well qualified teachers who teach students to play a variety of
-          musical instruments, such as the guitar, congo drums, violin, sitar,
-          keyboards, drums, harmonium, tabla, and to sing as well. Students are
-          exposed to western as well as Indian classical dance forms
+          At Tulas International School which is one of the top residential schools in Dehradun, music is not regarded as a standalone subject but is incorporated into the curriculum itself. It is an integral part of every student’s life. The Music Academy at Tula’s offers students a wide array of opportunities in both music and dance. The school has well qualified teachers who teach students to play a variety of musical instruments, such as the guitar, congo drums, violin, sitar, keyboards, drums, harmonium, tabla, and to sing as well. Students are exposed to western as well as Indian classical dance forms.
         </>
       ),
     },

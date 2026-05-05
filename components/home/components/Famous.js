@@ -36,7 +36,7 @@ function Famous() {
       image: SakshiMalik,
       name: "Sakshi Malik",
       description:
-        "(First Indian wrestler to win medal in Rio 2016 Olympics, Olympics Bronze Medalist in Wrestling, Silver Medalist in 2014. Common Wealth Games, Rajeev Gandhi Khel Ratan Awardee 2016, Padma Shree Awardee 2017)",
+        "(First Indian wrestler to win medal in Rio 2016 Olympics, Olympics Bronze Medalist in Wrestling, Silver Medalist in 2014. Commonwealth Games, Rajeev Gandhi Khel Ratan Awardee 2016, Padma Shri Awardee 2017)",
     },
     {
       image: VisheshBhriguvanshi,
@@ -59,29 +59,29 @@ function Famous() {
       image: AbhishekVerma,
       name: "Abhishek Verma",
       description:
-        "(6th Highest World Ranking, Arjuna Awardee, Asian Game Gold Medalist in Archery 2013)",
+        "(6th Highest World Ranking, Arjuna Awardee, Asian Games Gold Medalist in Archery 2013)",
     },
     {
       image: AditiGopichandSwami,
       name: "Aditi Gopichand Swami",
       description:
-        "(7th Highest World Ranking, Arjun Awardee, World Champion in Archery 2024)",
+        "(7th Highest World Ranking, Arjuna Awardee, World Champion in Archery 2024)",
     },
     {
       image: JeevanJyotSinghTeja,
       name: "Jeevan Jyot Singh Teja",
-      description: "(Drona Chari Awardee in Archery 2022)",
+      description: "(Dronacharya Awardee in Archery 2022)",
     },
     {
       image: OjasPravinDeotale,
       name: "Ojus Devtale",
       description:
-        "(9th Highest World Ranking, Arjun Awardee 2023 and current world champion in Archery)",
+        "(9th Highest World Ranking, Arjuna Awardee 2023 and current world champion in Archery)",
     },
     {
       image: RajatChauhan,
       name: "Rajat Chauhan",
-      description: "(5th Highest World Ranking Arjun Awardee 2016 in Archery)",
+      description: "(5th Highest World Ranking Arjuna Awardee 2016 in Archery)",
     },
     {
       image: DevendraSinghBisht,
@@ -108,7 +108,7 @@ function Famous() {
       image: LaxmiAgarwal,
       name: "Laxmi Agarwal",
       description:
-        "(International Women Empowerment Award from the Ministry of Women and Child Development, Founder and President of The Laxmi Foundation, a NGO dedicated to acid attack victims. Deepika Padukone acted in the Bip Pic Movie “Chappak” based on her)",
+        "(International Women Empowerment Award from the Ministry of Women and Child Development, Founder and President of The Laxmi Foundation, a NGO dedicated to acid attack victims. Deepika Padukone acted in the Biopic movie “Chhapaak” based on her)",
     },
   ];
   const leaders = [
@@ -167,7 +167,7 @@ function Famous() {
     },
     {
       image: JanmejayaKhanduri,
-      name: "Shri Janmejaya khanduri Ji",
+      name: "Shri Janmejaya Khanduri Ji",
       description: "(IG Dehradun - Government of India)",
     },
     {
@@ -183,7 +183,7 @@ function Famous() {
     {
       image: SunilUniyalGama,
       name: "Shri Sunil Uniyal Gama Ji",
-      description: "(Former Mayor Municipal Corp, Dehradun.)",
+      description: "(Former Mayor Municipal Corporation, Dehradun.)",
     },
     // {
     //   image: AmandeepKaur,
@@ -217,7 +217,7 @@ function Famous() {
   return (
     <div className="flex flex-col justify-center items-center" id="9">
       <div className="font-[Mirador800] text-center pt-8 md:pt-[2%] px-4 text-wrap text-[clamp(10px,6.3vw,55px)] md:text-[clamp(10px,2.3vw,55px)] text-[#b90124] w-fit whitespace-nowrap leading-tight md:leading-none z-10">
-        Influential Personalitites On Campus
+        Influential Personalities On Campus
       </div>
       <h2 className="text-[#5F5F5F] text-center leading-none font-[darwin-pro] text-[clamp(10px,4.5vw,55px)] pt-6 md:text-[clamp(10px,1.5vw,55px)]">
         Sports Person/Social Media Influencers
@@ -249,7 +249,7 @@ function Famous() {
         </div>
       </div>
       <h2 className="text-[#5F5F5F] leading-none text-center font-[darwin-pro] text-[clamp(10px,4.5vw,55px)] md:text-[clamp(10px,1.5vw,55px)]">
-        Leaders Of India
+        Leaders of India
       </h2>
       <div className="w-full h-full overflow-hidden whitespace-nowrap">
         <div

@@ -43,7 +43,7 @@ export default function ClubAndSocieties() {
         <>
           Clay modeling may look a simple process but when practiced leads to
           unexpected and even crooked shapes, depending upon the skill of the
-          potters’s hand. Yet this work allows one to think and give shape to
+          potter’s hand. Yet this work allows one to think and give shape to
           one’s imaginations working with shapes of clay. The students work for
           hours on end with infinite patience to bring out their creative
           talents. Their hands might get dirt but it is a learning process
@@ -78,7 +78,7 @@ export default function ClubAndSocieties() {
           incorporated into the curriculum itself. It forms an integral part of
           every student’s life. The school has qualified teachers who teach
           students to play a variety of musical instruments, such as the guitar,
-          congo drums, violin, sitar, keyboards, drums, harmonium, table, and to
+          congo drums, violin, sitar, keyboards, drums, harmonium, tabla, and to
           sing as well. Students are exposed to western as well as Indian
           classical dance forms.
         </>
@@ -108,13 +108,13 @@ export default function ClubAndSocieties() {
       description: (
         <>
           Food is the magic key that can open many doors, as the saying goes.
-          The Cookery Club at Tula’s, one of the best co-ed boarding school in
+          The Cookery Club at Tula’s, one of the best co-ed boarding schools in
           Dehradun, is not about nutrients and calories. It’s about sharing.
           It’s about honesty. It’s about identity. At the Tula’s Cookery Club,
           students experiment with different recipes and create new and varied
           dishes. The challenge lies in creating dishes that cater to different
           palates. Cooking is such a vast and creative field. This is one club
-          loved by students of both sexes.
+          loved by students of both genders.
         </>
       ),
     },
@@ -130,7 +130,7 @@ export default function ClubAndSocieties() {
           the world through a camera gives a totally different perspective to
           life. The leaves, when viewed through a lens, become an art in itself
           and the hummingbirds seem to sing their own songs. Creativity,
-          imagination and passion are the key that sets one apart from the
+          imagination and passion are the keys that sets one apart from the
           crowd. Like a fingerprint, no two images are the same. It is for the
           viewer to interpret the captured image though the artist may have a
           different opinion. As one of Dehradun’s top schools, it lets students
@@ -160,8 +160,8 @@ export default function ClubAndSocieties() {
         <>
           Dance is one of humankind’s great creative expressions. A performing
           art which has sublime aesthetic and symbolic value, dance involves the
-          dancer to surrender himself utterly before the audience and give away
-          something of himself. At Tula’s, all forms of dance, whether classical
+          dancer to surrender themselves utterly before the audience and give away
+          something of themselves. At Tula’s, all forms of dance, whether classical
           or Western, are encouraged by the school’s trained dance instructors.
           The aim is to free students of their inhibitions and let them sway to
           the rhythm of their chosen dance form.
@@ -174,7 +174,7 @@ export default function ClubAndSocieties() {
       <Header
         title={"Clubs And Societies"}
         subtitle={
-          "Clubs and societies at TIS nurtures talent and creates lifelong connections"
+          "Clubs and societies at TIS nurture talent and create lifelong connections"
         }
         headerImg={HeaderClubsImg}
         headerImgMobile={HeaderClubsImg}
@@ -185,18 +185,10 @@ export default function ClubAndSocieties() {
         }}
         className="w-full px-8 md:px-0 md:w-[75%] pt-8 md:pt-14 mx-auto text-justify md:text-center text-[clamp(10px,4.5vw,30px)] font-normal md:text-[clamp(10px,1.3vw,45px)] leading-tight "
       >
-        The Tula’s International family strives to create a positive environment
-        where all students are challenged and inspired to achieve their
-        potential. Academics and activities form the backbone of TIS. As a
-        result, the school has been ranked among the top boarding schools in
-        Dehradun.
+        Tula’s International School is committed to creating a positive and encouraging environment where students are motivated to achieve their best. Academics and activities beyond the classroom are central to our approach, making the school one of the leading boarding schools in Dehradun.
         <br />
         <br />
-        We believe for the Clubs to function effectively, student participation
-        is a must. The more students form and manage the various committees and
-        clubs the better it bodes for their overall development. These Clubs and
-        Committees gives them a platform to discover and bring to the fore their
-        hidden talents, so essential for an all-round education.
+        Beyond academics, active student involvement is an important part of campus life. When students lead and manage committees and clubs, they grow in confidence and responsibility. These opportunities help them discover, develop, and showcase their talents, supporting their journey towards a well-rounded education.
       </h6>
       <div className="flex flex-col items-center justify-center">
         {data.map((data, index) => (

@@ -247,7 +247,7 @@ export default function EventConfluencePage() {
         title={"Founder's Day"}
         subtitle={
           <>
-            Celebrate leadership and teamwork at our{" "}
+            Celebrating leadership and teamwork at our{" "}
             <strong className="font-black font-[HelveticaBold]">
               Annual Founder's Day
             </strong>
@@ -262,11 +262,11 @@ export default function EventConfluencePage() {
         }}
         className="w-full px-8 md:px-0 md:w-[75%] py-8 md:py-14 mx-auto text-justify md:text-center text-[clamp(10px,4.5vw,30px)] font-normal md:text-[clamp(10px,1.3vw,45px)] leading-tight "
       >
-        Celebrating Growth, Creativity, and Unity – TIS Founder's Day: Honoring
+        Celebrating Growth, Creativity, and Unity – TIS Founder's Day: Honouring
         the Past, Shaping the Future!
         <br />
         <br />
-        At TIS, Founders Day isn’t just about honoring our founders. It’s a time
+        At TIS, Founders Day isn’t just about honouring our founders. It’s a time
         to celebrate how far we’ve come, the progress we’ve made, and the
         achievements of our students over the past year. We celebrate it right
         before the Diwali break in a unique way.

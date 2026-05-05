@@ -25,13 +25,10 @@ export default function FoodAndNutrition() {
         }}
         className="w-full py-8 md:py-[3%] px-8 md:px-0 md:w-[75%] mx-auto text-justify md:text-center text-[clamp(10px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
       >
-        At Tula's, we know that great days start with great food! That’s why our
-        dining hall is more than just a place to eat—it’s where students get the
-        nutrition they need to conquer the day ahead.
+       At Tulas International School, we understand that great learning begins with great nutrition. Our dining hall is not just a place to eat—it is a carefully curated environment where students receive wholesome, balanced meals to energize their day.
         <br />
         <br />
-        Forget bland and boring; our meals are packed with flavor, nutrients,
-        and everything your child needs to stay energized and focused.
+        We serve meals that are both wholesome and flavorful, ensuring every student gets the nutrients necessary for optimal growth, focus, and well-being.
       </h2>
       <h2 className="text-[clamp(10px,7vw,50px)] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
         What’s <span className="text-[#b90124]">Cooking?</span>
@@ -43,19 +40,10 @@ export default function FoodAndNutrition() {
         }}
         className="w-full py-8 md:py-[3%] px-8 md:px-0 md:w-[75%] mx-auto text-justify md:text-center text-[clamp(10px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
       >
-        Every meal at Tula's is a carefully planned experience. Our expert
-        dieticians design mouth-watering, nutritious vegetarian dishes that
-        combine fresh, local ingredients. Think crispy veggies, vibrant fruits,
-        and protein-packed goodness—all blended together in delicious dishes.
-        It's food that not only tastes great but gives your child the fuel they
-        need to shine.
+        Every meal at Tulas is carefully planned to nourish both body and mind. Our expert dieticians prepare wholesome, vegetarian dishes using fresh, locally sourced ingredients. From crisp vegetables and vibrant fruits to protein-rich delicacies, each plate is a thoughtful combination of taste and nutrition—designed to energize and inspire.
         <br />
         <br />
-        From the youngest to the oldest, every student at Tula’s gets perfectly
-        balanced meals for their age and activity level. With a variety of
-        flavors and nutrients, our menu is designed to keep kids full,
-        satisfied, and ready to tackle whatever comes their way. No need to
-        compromise on taste to stay healthy—our meals make it easy!
+        Catering to students of all ages, our menus are carefully balanced to meet their unique nutritional needs and activity levels. With a wide variety of flavors and nutrients, every meal keeps students satisfied, focused, and ready to embrace the day ahead—showing that healthy eating can always be delicious.
       </h2>
     </>
   );

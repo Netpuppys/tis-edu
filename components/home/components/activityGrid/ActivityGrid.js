@@ -81,7 +81,7 @@ function FourthSection() {
       {
         id: 4,
         image: taekwando,
-        title: "Taekwando",
+        title: "Taekwondo",
       },
       {
         id: 5,

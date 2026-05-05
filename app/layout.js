@@ -185,6 +185,11 @@ export default function RootLayout({ children }) {
 
         <ProvidersWrapper>{children}</ProvidersWrapper>
 
+          {/* <Script
+          src="https://ai-service.edustoke.com/widget?botId=bot_0reoptd6"
+          strategy="afterInteractive"
+        /> */}
+
         {/* Google Tag Manager */}
         <Script
           strategy="afterInteractive"

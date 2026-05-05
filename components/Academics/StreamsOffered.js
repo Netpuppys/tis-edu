@@ -12,7 +12,7 @@ import "../../styles/Academics/StreamsOffered.css";
 export default function StreamOffered() {
   const { isMobile } = useMobile();
   const bannerText =
-    "Try different careers to find your passion and build a fulfilling career";
+    "Explore your interests and build a fulfilling career";
 
   return (
     <>
@@ -24,7 +24,7 @@ export default function StreamOffered() {
       />
       <div className="main-streams">
         <div className="text-stream">
-          At TIS, we empower students to explore their passions and carve their
+          At TIS, we empower students to explore their passions and shape their
           future by offering three streams of study in Grade XI. Each stream is
           designed to cater to diverse interests and career aspirations. <br />
           <br />

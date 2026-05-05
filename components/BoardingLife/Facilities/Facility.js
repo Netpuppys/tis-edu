@@ -68,7 +68,7 @@ function Facility() {
     },
     {
       icon: career,
-      title: "Career Counseling",
+      title: "Career Counselling",
       description: "Career guidance and counseling services.",
     },
     {

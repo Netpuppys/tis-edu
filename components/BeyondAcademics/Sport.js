@@ -34,17 +34,16 @@ function Sport() {
       image: archery,
       description: (
         <>
-          We at Tula’s offers comprehensive archery programs in a safe and fun
-          environment. Tula’s International School has a state of the art
-          archery ground with many different target lanes spread out over
+          We at Tulas offers comprehensive archery programs in a safe and fun
+          environment. Tula’s International School has a state-of-the-art archery ground
+          with many different target lanes spread out over the
           natural terrain of our campus.
           <p className="py-1"></p>
-          Participation in archery not only engages them in a sport but it also
-          improves leadership skills, adds confidence, fosters respect, and
+          Participation in archery not only engages students in sport and also improves leadership skills, adds confidence, fosters respect, and
           develops honorable and competent adults.
           <p className="py-1"></p>
           It will benefit them physically as well as mentally and make them
-          ready to tackle real-time problems in their life. Under the
+          ready to tackle real-life challenges. Under the
           supervision of our expert coaches, archery training is imparted to
           make them professional archers.
         </>
@@ -56,16 +55,16 @@ function Sport() {
       image: cycling,
       description: (
         <>
-          Tula’s, one of Dehradun’s best schools, has installed a velodrome
+          Tulas, one of Dehradun’s best schools, has installed a velodrome
           where cycling enthusiasts can practice to their heart’s content after
           school hours. TIS is the first school in Dehradun to have a cycling
           track specially installed to produce top cyclists who can represent
-          India in foreign tournaments.
+          India in international tournaments.
           <p className="py-1"></p>
           To increase interest among students in this competitive sport, we have
           a dedicated coach who trains students in the nuances of cycling.
           Cycling lessons are conducted after school is over. It is every
-          cyclist’s ambition to win the Tour de France. At Tulas’ we have taken
+          cyclist’s ambition to win the Tour de France. At Tulas we have taken
           a small step in the hope that one day a Tulaite will triumph at
           cycling’s most hallowed event.
         </>
@@ -80,7 +79,7 @@ function Sport() {
           Field hockey at Tula’s International School represents an exciting
           opportunity for students to engage in a dynamic and competitive sport
           while fostering teamwork, discipline, and physical fitness. As one of
-          the premier institute of Education in the region, Tula’s International
+          the premier institute of education in the region, Tula’s International
           School is committed to providing a well-rounded education that
           includes a diverse range of extracurricular activities, including
           sports like field hockey.
@@ -96,7 +95,7 @@ function Sport() {
           beyond just physical exercise; it instills values such as
           sportsmanship, perseverance, and leadership. Students learn to work
           together as a team, supporting and encouraging one another both on and
-          off the field.Furthermore, field hockey at Tula’s International School
+          off the field. Furthermore, field hockey at Tula’s International School
           provides opportunities for students to compete in interschool
           tournaments and championships, allowing them to showcase their talents
           and represent their school with pride.
@@ -109,32 +108,31 @@ function Sport() {
       image: swimming,
       description: (
         <>
-          Most hotels, health clubs, fitness centre and private clubs have
-          swimming centre now which have given rise to the trend of swimming and
+          Most hotels, health clubs, fitness centres and private clubs have
+          swimming centres now which have given rise to the trend of swimming and
           made it an essential skill. Tula’s International School realises the
-          importance of keeping up with the fast paced world and now boasts of
-          an added sports facility, a swimming centre.
+          importance of keeping up with the fast-paced world and now boasts an additional sports facility, a swimming centre.
           <p className="py-1"></p>
           Given its high standard of sports facilities, Tula’s now also offers
           swimming to the students who have a desire to learn swimming as well
-          as to those who are passionate for swimming as a sport
+          as to those who are passionate about swimming as a sport
         </>
       ),
     },
     {
-      title: "Tae-kwon-do",
+      title: "Taekwondo",
       icon: bookwormIcon,
       image: taekwando,
       description: (
         <>
-          Tae-kwon-do is a Korean martial art with a heavy emphasis on kicks.
-          Tae-kwon-do is characterised by its emphasis on head-height kicks,
+          Taekwondo is a Korean martial art with a heavy emphasis on kicks.
+          Taekwondo is characterised by its emphasis on head-height kicks,
           jumping and spinning kicks, and fast kicking techniques. Quick
-          reaction, concentration, equilibrium, breath control, correct body
-          mass and terrific speed makes one a champion in this sport.
+          reactions, concentration, equilibrium, breath control, correct body
+          mass and terrific speed make one a champion in this sport.
           <p className="py-1"></p>
-          Our dedicated coach imparts the students to learn this martial art and
-          perfect it. Tula’s is a member of Uttarakhand State Tae-kwon-do
+          Our dedicated coach guides students to learn this martial art and
+          perfect it. Tula’s is a member of Uttarakhand State Taekwondo
           Association. We are also proud winners of the National Karate
           Championship held last year.
         </>
@@ -146,7 +144,7 @@ function Sport() {
       image: football,
       description: (
         <>
-          We, at TIS, want to help students’ play the beautiful game in the
+          We, at TIS, want to help students play the beautiful game in the
           right spirit. We have an in-house football academy aided by a national
           level football field. This caters for all abilities, from beginners to
           more experienced players, and provides an opportunity for children to
@@ -168,7 +166,7 @@ function Sport() {
       image: shooting,
       description: (
         <>
-          Tula’s International School has a state of the art shooting range with
+          Tula’s International School has a state-of-the-art shooting range with
           quality equipment that aims to hone the talent of the budding
           shooters. Students can use the 7-lane indoor shooting range for 10M
           pistol and rifle shooting. They can practice under the skilled
@@ -194,7 +192,7 @@ function Sport() {
           <p className="py-1"></p>
           As one of the top residential schools in Dehradun, Tula’s has begun
           offering horse riding lessons to its students at all levels. We offer
-          riding lessons for beginners as well as the experienced. Our expert
+          riding lessons for beginners as well as the experienced riders. Our expert
           coaches also train the more experienced students in dressage, show
           jumping and eventing. We have a fine selection of horses and ponies.
           We have a stable and a small paddock which can hold up to 10 horses.
@@ -207,7 +205,7 @@ function Sport() {
       image: billiards,
       description: (
         <>
-          At Tula's International School, we offer top-notch facilities for
+          At Tulas International School, we offer top-notch facilities for
           snooker and billiards, providing students with the opportunity to
           engage in these classic cue sports. Playing snooker and billiards is
           not only a fun and relaxing pastime but also an excellent way for
@@ -258,7 +256,7 @@ function Sport() {
           <p className="py-1"></p>
           Among the best international Dehradun schools, Tula’s provides its
           students a world-class volleyball court where they can perfect their
-          game. It has built-in lateral forgiveness which reduces stress on
+          game. It has built-in lateral forgiveness which reduce stress on
           knees and joints.
           <p className="py-1"></p>
           It has the added advantage of being easily installed over hard, flat
@@ -275,8 +273,7 @@ function Sport() {
         <>
           Students at Tula’s International are coached by professional trainers
           to teach them the intricacies of basketball. Our outdoor basketball
-          synthetic 8-layered court has been approved by the International
-          Basketball Association (IBA) and provides the following benefits to
+          synthetic 8-layered court has been approved by the International Basketball Federation (FIBA) and provides the following benefits to
           our students:
           <p className="py-1"></p>
           <ul className="ml-5 list-disc">
@@ -285,11 +282,11 @@ function Sport() {
               protection
             </li>
             <li>
-              Optimal vertical deformation – Advanced comfort, reduces risk of
+              Optimal vertical deformation – Advanced comfort, reduce risk of
               physical injuries
             </li>
             <li>
-              Optimal traction coefficient – helps reduces the risk of slips and
+              Optimal traction coefficient – helps reduce the risk of slips and
               trips
             </li>
             <li>Environment friendly – free of solvents and heavy metals</li>
@@ -303,7 +300,7 @@ function Sport() {
           We, at TIS, provide a unique opportunity for the student-athlete to
           become part of an environment of elite athletic training. Our programs
           enable students to have a great school experience while they continue
-          to train like a professional with world class infrastructure which has
+          to train like a professional with world-class infrastructure which has
           been approved by IBA.
         </>
       ),
@@ -314,19 +311,19 @@ function Sport() {
       image: cricket,
       description: (
         <>
-          Tula’s International school offers turf & cemented practicing net for
+          Tulas International school offers turf & cemented practicing net for
           cricket which is according to the international standards along with
           the night vision facility so that students can improve their skills
           because “Practice Makes a Man Perfect’’.
           <p className="py-1"></p>
           The cricket training programme at TIS is being facilitated by
           professional coaches. We have a state-of –the-art stadium with a
-          seating capacity of more than 1000 people who can watch students’
+          seating capacity of more than 1000 people who can watch students
           execute those perfect straight drives!
           <p className="py-1"></p>
           Our coaching is about developing better people, no matter what age or
           ability, not just better cricketers. We aim to adopt an
-          ‘athlete-centred’ approach where the needs of each individual comes
+          ‘athlete-centred’ approach where the needs of each individual come
           first. Sports is a team game and this is reflected in our style of
           grooming youngsters where each student puts his teammate before
           himself.
@@ -343,7 +340,7 @@ function Sport() {
           a special 8-layer cushioned synthetic flooring, which provides better
           grip and prevents injuries
           <p className="py-1"></p>
-          Our partner company who has designed the court is accredited with the
+          Our partner company that has designed the court is accredited with the
           International Tennis Federation, the Asian Tennis Federation and the
           American Sports Builders Association. The 8 layer flooring has the
           following benefits:
@@ -354,12 +351,12 @@ function Sport() {
               protection
             </li>
             <li>
-              Optimal vertical deformation – Advanced comfort, reduces risk of
+              Optimal vertical deformation – Advanced comfort, reduce risk of
               physical injuries
             </li>
             <li>
               Optimal traction coefficient – A perfectly balanced grip and slip,
-              reduces the risk of slips and trips
+              reduce the risk of slips and trips
             </li>
             <li>Environment friendly – free of solvents and heavy metals</li>
           </ul>
@@ -388,11 +385,11 @@ function Sport() {
               protection
             </li>
             <li>
-              Optimal vertical deformation – Advanced comfort, reduces risk of
+              Optimal vertical deformation – Advanced comfort, reduce risk of
               physical injuries
             </li>
             <li>
-              Optimal traction coefficient – helps reduces the risk of slips and
+              Optimal traction coefficient – helps reduce the risk of slips and
               trips
             </li>
             <li>Environment friendly – free of solvents and heavy metals.</li>
@@ -411,11 +408,11 @@ function Sport() {
           sports arena that houses an area dedicated to table tennis.
           <p className="py-1"></p>
           The TT tables are procured from the best sports houses of India. The
-          table tennis arena has special sports flooring approved by sports
-          commission for better and save play.
+          table tennis arena has special sports flooring approved by Sports
+          Commission for better and safe play.
           <p className="py-1"></p>
           Being an indoor game, the sports arena has been arranged with ample
-          amount of light, making it suitable for playing in the nights as well.
+          amount of light, making it suitable for playing at night as well.
         </>
       ),
     },
@@ -425,19 +422,18 @@ function Sport() {
       image: throwball,
       description: (
         <>
-          Throw ball is a physically demanding sport that takes skill and
+          Throwball is a physically demanding sport that takes skill and
           focusing ability. Tula’s International school has individual Throw
           ball playground which is accessible for each and every student.
           <p className="py-1"></p>
           They can exhibit true sportsman spirit through various sports events.
-          They learn to reign over the field and rein their strong emotion and
+          They learn to rein their strong emotions and
           utilize their potential. Young minds are trained under talented
           individuals to excel at national and international level sports
           competitions.
           <p className="py-1"></p>
           Through the sports facilities, we strive to create various factors
-          such as leadership, teamwork in our students which benefit them life
-          long.
+          such as leadership, teamwork in our students which benefit them lifelong.
         </>
       ),
     },
@@ -458,9 +454,9 @@ function Sport() {
         }}
         className="w-full px-8 md:px-0 md:w-[75%] pt-8 md:pt-14 mx-auto text-justify md:text-center text-[clamp(10px,4.5vw,30px)] font-normal md:text-[clamp(10px,1.3vw,45px)] leading-tight "
       >
-        As a Sports Boarding school in Dehradun, Tula’s offers its students the
-        best sporting infrastructure of any educational institution in Dehradun.
-        It has a fully fledged program to develop students into professional
+        As a sports boarding school in Dehradun, Tula’s offers its students the
+        one of the best sporting infrastructures among educational institutions in Dehradun.
+        It has a fully fledged programme to develop students into professional
         athletes who can make their mark in sporting events across the globe.
         Among the most sought-after sports at TIS are volleyball, cycling and
         horse riding.

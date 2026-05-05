@@ -98,7 +98,7 @@ export default function EventConfluence() {
           students to showcase their skills. Excellence and talent among its
           participants and organizers alike
           <p className="py-1"></p>
-          Under Confluence, school organizes Inter School Musical, Cultural as
+          Under Confluence, school organises Inter School Musical, Cultural as
           well as Dance competitions under seven categories which are as
           follows: <p className="py-1"></p>
           <ul className="ml-5 list-disc">
@@ -155,7 +155,7 @@ export default function EventConfluence() {
               participating school for each event.
             </li>
             <li>
-              Participants are instructed to bring their own make up kits,
+              Participants are instructed to bring their own makeup kits,
               dresses, instruments and necessary things, school will not provide
               them anything besides Drum set.
             </li>

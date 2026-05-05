@@ -126,13 +126,13 @@ export default function OurHistory() {
               }}
             >
               In 2012, he turned that dream into reality with the inception of
-              Tula’s International School. It wasn’t just a school; it was a
+              Tulas International School. It wasn’t just a school; it was a
               bold step into the unconventional. A co-educational, vegetarian
               boarding school—rare at the time—that challenged the norms and
               placed balance at its core.
               <br />
               <br />
-              It wasn't easy but Mr. Jain knew that this risk was worth taking.
+              It wasn't easy, but Mr. Jain knew that this risk was worth taking.
               He envisioned a school where students could learn in a setting
               that was not only intellectually stimulating but also deeply
               aligned with values like compassion, sustainability, and respect

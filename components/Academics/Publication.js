@@ -135,7 +135,7 @@ export default function Publication() {
   ];
 
   const bannerText =
-    "Our Publications provide hands-on experiential learning to our students";
+    "Our Publications give students a real taste of the professional creative world";
 
   return (
     <>
@@ -148,25 +148,16 @@ export default function Publication() {
 
       <div className="publication-main">
         <p className="publication-text">
-          At Tula’s Institute, publishing is where creativity meets real-world
-          skills. Through Editorial Board membership, students get hands-on
-          experience in{" "}
-          <strong className="font-black">
-            content creation, editing, designing, and printing.
-          </strong>{" "}
-          They don't just write; they transform ideas into polished pieces,
-          learning to work as a team, meet deadlines, and bring concepts to
-          life.
+          At Tula's International School, publishing is where student creativity finds its voice. Our Editorial Board gives students hands-on experience in writing, editing, design, and print production. They work as a team. They meet deadlines. They take an idea and turn it into something worth reading.
           <br />
           <br />
-          Our publications –{" "}
-          <strong className="font-black">
-            the monthly VOICE, yearly TATTOO, and term-wise department magazines
-          </strong>{" "}
-          – are the perfect playground for students to explore their creative
-          potential and build skills that will set them up for future success.
-          It’s more than publishing; it’s about preparing for the professional
-          world.
+          We publish three ways — <strong className="font-black">The Voice</strong>, our monthly newsletter, <strong className="font-black">Tattoo</strong>, our annual yearbook, and term-wise department magazines across subject areas. Each one is entirely student-driven.
+          <br />
+          <br />
+          The process teaches more than writing. Students learn how stories get selected, how layouts come together, and how to give and take feedback. These are real skills — the kind that build careers in journalism, media, communications, and design.
+          <br />
+          <br />
+          Every edition is a reflection of our students' hard work. Browse through them below .
         </p>
       </div>
 

@@ -235,7 +235,7 @@
   position: fixed; /* Fixes the button relative to the viewport */
   right: 0; /* Aligns the button to the right edge */
   bottom: 0; /* Aligns the button to the bottom edge */
-  margin: 110px 30px; /* Optional: adds some space from the edges */
+  margin: 160px 30px; /* Optional: adds some space from the edges */
   z-index: 99;
 }
 @keyframes showUp {

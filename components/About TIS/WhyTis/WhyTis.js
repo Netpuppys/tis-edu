@@ -55,7 +55,7 @@ export default function WhyTis() {
           </p2>
 
           <h4 className="what-makes">
-            What makes TIS students jumps<br></br> out of bed in the morning?
+            What makes TIS students jump<br></br> out of bed in the morning?
           </h4>
         </div>
 
@@ -146,8 +146,7 @@ export default function WhyTis() {
               </div>
 
               <p>
-                A child&apos;s versatile mind is always learning, whether in the
-                classroom or via informal contact with peers, teachers, coaches,
+                Children are always learning, whether in the classroom or through informal interactions with peers, teachers, coaches,
                 and instructors. This is where an excellent and high-quality
                 boarding school gives the finest setting for learning academics,
                 skills, and life lessons. Tula&apos;s International School
@@ -190,8 +189,7 @@ export default function WhyTis() {
                 education, Tula’s is affiliated with the CBSE which is a
                 futuristic board and keeps pace with changing educational
                 reforms and a rapidly evolving environment. The faculty of the
-                school is one of its notable strengths. We have excellent
-                teachers compared to the other top schools in Dehradun. Our
+                school is one of its notable strengths. We have highly qualified teachers with extensive experience in CBSE curriculum delivery. Our
                 teachers come from different parts of the country. They are
                 trained regularly to identify each student’s skill sets and
                 teach in a manner that enhances their use of multiple

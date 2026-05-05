@@ -221,7 +221,7 @@ export default function InternationaltieUps() {
   const names = [
     "Sameen Ul Haque (Middlesex University, Dubai)",
     "Gurewak Thiara (Nova Scotia Community College, Canada)",
-    "Mohit Reddhu (Canberaa Business & Tech College Canberra, Australia)",
+    "Mohit Reddhu (Canberra Business & Tech College Canberra, Australia)",
     "Ashish Vats (Karaganda Medical University Kazakhstan, Russia)",
     "Megha Sarkar (Amity Law School Noida, India)",
     "Mangalsana Rajkumar (Sri Siddharth Institute of Medical Sciences & Research Centre, Manipur, India)",
@@ -256,7 +256,7 @@ export default function InternationaltieUps() {
   return (
     <>
       <Header
-        title={"International Tie Up"}
+        title={"International Tie-Ups"}
         subtitle={
           "International Partnerships for Enriched Learning and Cross-Cultural Engagement"
         }
