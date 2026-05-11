@@ -8,7 +8,7 @@ export default function CareerCounsellingPage() {
     <>
       <Head>
         <title>
-          Best Boarding School in Dehradun (India) | Tula&apos;s International
+          Best Boarding School in Dehradun (India) | Tulas International
           School
         </title>
         <meta
