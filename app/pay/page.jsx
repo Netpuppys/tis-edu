@@ -47,15 +47,23 @@ function PaymentForm() {
     setErrors((prev) => ({ ...prev, [e.target.name]: '' }));
   };
 
-  const validate = useCallback(() => {
-    const errs = {};
-    if (!form.name.trim())                  errs.name   = 'Name is required.';
-    if (!/\S+@\S+\.\S+/.test(form.email))  errs.email  = 'Valid email required.';
-    if (!/^[6-9]\d{9}$/.test(form.mobile)) errs.mobile = 'Valid 10-digit mobile required.';
-    const amt = parseFloat(form.amount);
-    if (isNaN(amt) || amt < 1 || amt > 10) errs.amount = 'Amount must be between ₹1 and ₹10 (test mode).';
-    return errs;
-  }, [form]);
+const validate = useCallback(() => {
+  const errs = {};
+
+  if (!form.name.trim()) errs.name = 'Name is required.';
+  if (!/\S+@\S+\.\S+/.test(form.email))
+    errs.email = 'Valid email required.';
+  if (!/^[6-9]\d{9}$/.test(form.mobile))
+    errs.mobile = 'Valid 10-digit mobile required.';
+
+  const amt = parseFloat(form.amount);
+
+  // Only check if amount is valid, no min/max restriction
+  if (isNaN(amt) || amt <= 0)
+    errs.amount = 'Please enter a valid amount.';
+
+  return errs;
+}, [form]);
 
   const handlePay = async () => {
     const errs = validate();
@@ -89,8 +97,8 @@ function PaymentForm() {
       <div className="w-full max-w-md bg-white rounded-2xl shadow-md p-8">
 
         <div className="mb-8 text-center">
-          <h1 className="text-2xl font-bold text-gray-800">Make a Payment</h1>
-          <p className="text-sm text-gray-500 mt-1">Powered by Worldline / Paynimo</p>
+          <h1 className="text-2xl font-bold text-gray-800">Pay Fee Online</h1>
+          {/* <p className="text-sm text-gray-500 mt-1">Powered by Worldline / Paynimo</p> */}
         </div>
 
         {status === 'cancelled' && (
@@ -129,15 +137,15 @@ function PaymentForm() {
             <div className="relative">
               <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm">₹</span>
               <input type="number" name="amount" value={form.amount} onChange={handleChange}
-                placeholder="5.00" min="1" max="10" step="0.01"
+                placeholder="Enter the amount" step="0.01"
                 className="w-full rounded-lg border border-gray-300 pl-7 pr-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
             </div>
             {errors.amount && <p className="mt-1 text-xs text-red-600">{errors.amount}</p>}
-            <p className="mt-1 text-xs text-gray-400">Test mode: ₹1 – ₹10 only.</p>
+            {/* <p className="mt-1 text-xs text-gray-400">Test mode: ₹1 – ₹10 only.</p> */}
           </div>
 
           <button onClick={handlePay} disabled={loading || !checkoutReady}
-            className="mt-2 w-full rounded-lg bg-blue-600 px-4 py-3 text-sm font-semibold text-white hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">
+            className="mt-2 w-full rounded-lg bg-red-600 px-4 py-3 text-sm font-semibold text-white hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">
             {loading ? 'Initiating...' : !checkoutReady ? 'Loading SDK...' : 'Proceed to Pay'}
           </button>
 

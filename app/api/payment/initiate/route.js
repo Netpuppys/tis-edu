@@ -68,12 +68,12 @@ export async function POST(request) {
     }
 
     // TEST MODE: Paynimo only allows ₹1–₹10. Remove after going live.
-    if (numAmount < 1 || numAmount > 10) {
-      return NextResponse.json(
-        { error: 'In test mode, amount must be between ₹1 and ₹10.' },
-        { status: 400 },
-      );
-    }
+    // if (numAmount < 1 || numAmount > 10) {
+    //   return NextResponse.json(
+    //     { error: 'In test mode, amount must be between ₹1 and ₹10.' },
+    //     { status: 400 },
+    //   );
+    // }
 
     const txnId     = generateTxnId();
     const amountStr = numAmount.toFixed(2); // "5.00" — confirmed by Worldline support

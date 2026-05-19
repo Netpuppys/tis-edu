@@ -155,14 +155,14 @@ const Navbar = () => {
         //   title: "Registration Process",
         //   linkTo: "/admission-procedure/registration-form/",
         // },
-        {
-          title: "Pay Fee Online",
-          linkTo: "https://pages.razorpay.com/pl_EehyEVeDo25wMd/view",
-        },
-        //         {
+        // {
         //   title: "Pay Fee Online",
-        //   linkTo: "/pay",
+        //   linkTo: "https://pages.razorpay.com/pl_EehyEVeDo25wMd/view",
         // },
+                {
+          title: "Pay Fee Online",
+          linkTo: "/pay",
+        },
         {
           title: "Fee Structure",
           linkTo: "/admission-procedure/fee-structure/",
