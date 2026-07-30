@@ -2,20 +2,18 @@ import StreamOffered from "../../../components/Academics/StreamsOffered";
 import "../../globals.css";
 import Navbar from "../../../components/globalComponents/navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
-import Head from "next/head";
+export const metadata = {
+  title: "Streams Offered - Science, Commerce & Humanities",
+  description:
+    "Discover the academic streams offered at Tula's International School, Dehradun, including Science, Commerce and Humanities for Class 11 and 12 students.",
+  alternates: {
+    canonical: "https://tis.edu.in/academics/streams-offered/",
+  },
+};
+
 export default function StreamsOfferedPage() {
   return (
     <>
-      <Head>
-        <title>
-          Best Boarding School in Dehradun (India) | Tula&apos;s International
-          School
-        </title>
-        <meta
-          name="description"
-          content="Discover the Best Boarding School in Dehradun, India - Tula's International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus."
-        />
-      </Head>
       <Navbar />
       <StreamOffered />
       <Footer />

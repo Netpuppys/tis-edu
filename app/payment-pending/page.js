@@ -1,3 +1,12 @@
+export const metadata = {
+  title: "Payment Pending",
+  description: "Your payment to Tula's International School, Dehradun is being processed.",
+  alternates: {
+    canonical: "https://tis.edu.in/payment-pending/",
+  },
+  robots: { index: false, follow: true },
+};
+
 export default function Page() {
   return (
     <div className="min-h-screen bg-white flex items-center justify-center px-4">

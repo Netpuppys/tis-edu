@@ -2,21 +2,18 @@ import OurManagement from "../../../components/About TIS/OurManagement/ourManage
 import "../../globals.css";
 import Navbar from "../../../components/globalComponents/navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
-import Head from "next/head";
+export const metadata = {
+  title: "Our Management",
+  description:
+    "Meet the management team behind Tula's International School, a CBSE co-ed boarding school in Dehradun committed to holistic student development.",
+  alternates: {
+    canonical: "https://tis.edu.in/about-tis/about-management/",
+  },
+};
+
 export default function AboutManagementPage() {
   return (
     <>
-      <Head>
-        <title>
-          Best Boarding School in Dehradun (India) | Tula&apos;s International
-          School
-        </title>
-        <link rel="canonical" href="https://tis.edu.in/about-tis/about-management/" />
-        <meta
-          name="description"
-          content="Discover the Best Boarding School in Dehradun, India - Tula's International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus."
-        />
-      </Head>
       <Navbar />
       <OurManagement />
       <Footer />

@@ -30,6 +30,15 @@ import image3 from "../../public/workstations/image3.webp";
 import image4 from "../../public/workstations/image4.webp";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Digital Workstations",
+  description:
+    "Explore the subject-specific digital workstations at Tula's International School, Dehradun, replacing traditional classrooms with immersive learning spaces.",
+  alternates: {
+    canonical: "https://tis.edu.in/digital-workstations/",
+  },
+};
+
 function MentorMentee() {
   const workstations1 = [
     {

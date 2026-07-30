@@ -25,6 +25,15 @@ import Image from "next/image";
 import yellowLine from "../../public/pictures/lineImg.png";
 import React from "react";
 
+export const metadata = {
+  title: "Teachers Profile",
+  description:
+    "Meet the experienced faculty team at Tula's International School, a CBSE boarding school in Dehradun dedicated to holistic student development.",
+  alternates: {
+    canonical: "https://tis.edu.in/teachers-profile/",
+  },
+};
+
 function TeachersProfile() {
   const teacherProfile = [
     {

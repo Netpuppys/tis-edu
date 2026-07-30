@@ -1,5 +1,13 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Payment Failed",
+  description: "Your payment to Tula's International School, Dehradun could not be processed.",
+  alternates: {
+    canonical: "https://tis.edu.in/payment-failed/",
+  },
+  robots: { index: false, follow: true },
+};
 
 export default function Page() {
   return (

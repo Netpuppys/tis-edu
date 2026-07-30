@@ -2,20 +2,18 @@ import ContactUs from "../../components/QuickLinks/ContactUs";
 import "../globals.css";
 import Navbar from "../../components/globalComponents/navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-import Head from "next/head";
+export const metadata = {
+  title: "Contact Us",
+  description:
+    "Get in touch with Tula's International School, Dehradun for admissions enquiries, campus visits and general information.",
+  alternates: {
+    canonical: "https://tis.edu.in/contact-us/",
+  },
+};
+
 export default function ContactUsPage() {
   return (
     <>
-      <Head>
-        <title>
-          Best Boarding School in Dehradun (India) | Tula&apos;s International
-          School
-        </title>
-        <meta
-          name="description"
-          content="Discover the Best Boarding School in Dehradun, India - Tula's International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus."
-        />
-      </Head>
       <Navbar />
       <ContactUs />
       <Footer />

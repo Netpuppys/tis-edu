@@ -2,20 +2,18 @@ import Curriculum from "../../../components/Academics/Curriculum";
 import "../../globals.css";
 import Navbar from "../../../components/globalComponents/navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
-import Head from "next/head";
+export const metadata = {
+  title: "CBSE Affiliation & Curriculum",
+  description:
+    "Tula's International School is a CBSE-affiliated boarding school in Dehradun offering a structured curriculum from Class 4 to 12 for holistic academic growth.",
+  alternates: {
+    canonical: "https://tis.edu.in/academics/affilation/",
+  },
+};
+
 export default function AffilationPage() {
   return (
     <>
-      <Head>
-        <title>
-          Best Boarding School in Dehradun (India) | Tula&apos;s International
-          School
-        </title>
-        <meta
-          name="description"
-          content="Discover the Best Boarding School in Dehradun, India - Tula's International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus."
-        />
-      </Head>
       <Navbar />
       <Curriculum />
       <Footer />

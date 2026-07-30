@@ -12,6 +12,15 @@ import image3 from "../../public/mentor/image3.webp";
 import background from "../../public/mentor/background.webp";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Mentor & Mentee System",
+  description:
+    "Discover the Mentor-Mentee programme at Tula's International School, Dehradun, offering personalised guidance and support to boarding students.",
+  alternates: {
+    canonical: "https://tis.edu.in/mentor-mentee/",
+  },
+};
+
 function MentorMentee() {
   return (
     <>

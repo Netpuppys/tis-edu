@@ -40,10 +40,11 @@ export async function generateMetadata({ params }) {
     return {
       title: "Blog Not Found",
       description: "The requested blog could not be found.",
+      robots: { index: false, follow: true },
     };
   }
 
-  const url = `https://tis.edu.in/${blog.slug}`;
+  const url = `https://tis.edu.in/${blog.slug}/`;
   return {
     title: blog.meta_title || blog.title,
     description: blog.meta_description || "",
@@ -72,7 +73,7 @@ export default async function SlugPage({ params }) {
     );
   }
 
-  const canonicalUrl = `https://tis.edu.in/${blog.slug}`;
+  const canonicalUrl = `https://tis.edu.in/${blog.slug}/`;
   const publisherLogo =
     "https://tis.edu.in/_next/static/media/schoolLogo.95f6e121.png";
 
@@ -145,7 +146,7 @@ export default async function SlugPage({ params }) {
           ></div>
           <div className="middle">
             <div className="top">
-              <h2 className="top-heading">{blog.title}</h2>
+              <h1 className="top-heading">{blog.title}</h1>
             </div>
           </div>
         </div>

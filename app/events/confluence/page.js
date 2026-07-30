@@ -2,20 +2,18 @@ import EventConfluence from "../../../components/BeyondAcademics/EventConfluence
 import "../../globals.css";
 import Navbar from "../../../components/globalComponents/navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
-import Head from "next/head";
+export const metadata = {
+  title: "Event Confluence",
+  description:
+    "Explore Confluence, the annual inter-school event hosted by Tula's International School, Dehradun, celebrating talent, culture and sportsmanship.",
+  alternates: {
+    canonical: "https://tis.edu.in/events/confluence/",
+  },
+};
+
 export default function EventConfluencePage() {
   return (
     <>
-      <Head>
-        <title>
-          Best Boarding School in Dehradun (India) | Tula&apos;s International
-          School
-        </title>
-        <meta
-          name="description"
-          content="Discover the Best Boarding School in Dehradun, India - Tula's International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus."
-        />
-      </Head>
       <Navbar />
       <EventConfluence />
       <Footer />

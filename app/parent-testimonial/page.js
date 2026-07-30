@@ -1,4 +1,3 @@
-"use client";
 import Header from "@/components/globalComponents/Header/Header";
 import Navbar from "@/components/globalComponents/navbar/Navbar";
 import React from "react";
@@ -7,6 +6,15 @@ import ParentsReviews from "@/components/home/components/parentsReviews/ParentsR
 import Footer from "@/components/Footer/Footer";
 import banner from "../../public/parents-testimonial/banner.png";
 import bannerMobile from "../../public/parents-testimonial/bannerMobile.png";
+
+export const metadata = {
+  title: "Parent's Testimonials",
+  description:
+    "Read what parents have to say about Tula's International School, a CBSE co-ed boarding school in Dehradun known for its holistic student care.",
+  alternates: {
+    canonical: "https://tis.edu.in/parent-testimonial/",
+  },
+};
 
 function page() {
   return (

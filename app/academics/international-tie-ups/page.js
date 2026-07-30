@@ -2,20 +2,18 @@ import InternationaltieUps from "../../../components/Academics/InternationalTieU
 import "../../globals.css";
 import Navbar from "../../../components/globalComponents/navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
-import Head from "next/head";
+export const metadata = {
+  title: "International Tie-Ups & Collaborations",
+  description:
+    "Learn about Tula's International School's global partnerships and international tie-ups that give Dehradun boarding school students exposure beyond the classroom.",
+  alternates: {
+    canonical: "https://tis.edu.in/academics/international-tie-ups/",
+  },
+};
+
 export default function InternationalTieUpsPage() {
   return (
     <>
-      <Head>
-        <title>
-          Best Boarding School in Dehradun (India) | Tula&apos;s International
-          School
-        </title>
-        <meta
-          name="description"
-          content="Discover the Best Boarding School in Dehradun, India - Tula's International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus."
-        />
-      </Head>
       <Navbar />
       <InternationaltieUps />
       <Footer />

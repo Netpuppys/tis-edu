@@ -2,20 +2,18 @@ import PrivacyPolicy from "../../components/FooterPages/Privacy-Policy";
 import "../globals.css";
 import Navbar from "../../components/globalComponents/navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-import Head from "next/head";
+export const metadata = {
+  title: "Privacy Policy",
+  description:
+    "Read Tula's International School's privacy policy to understand how we collect, use and protect the personal information of visitors, parents and students.",
+  alternates: {
+    canonical: "https://tis.edu.in/privacy-policy/",
+  },
+};
+
 export default function PrivacyPage() {
   return (
     <>
-      <Head>
-        <title>
-          Best Boarding School in Dehradun (India) | Tula&apos;s International
-          School
-        </title>
-        <meta
-          name="description"
-          content="Discover the Best Boarding School in Dehradun, India - Tula's International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus."
-        />
-      </Head>
       <Navbar />
       <PrivacyPolicy />
       <Footer />

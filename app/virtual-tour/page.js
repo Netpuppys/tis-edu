@@ -1,27 +1,49 @@
-// pages/index.js
-import Head from "next/head";
+export const metadata = {
+  title: "Virtual Campus Tour",
+  description:
+    "Take a virtual tour of Tula's International School's campus in Dehradun and explore our boarding facilities, classrooms and grounds online.",
+  alternates: {
+    canonical: "https://tis.edu.in/virtual-tour/",
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black",
+  },
+  other: {
+    "mobile-web-app-capable": "yes",
+  },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  minimumScale: 1,
+  maximumScale: 1,
+  viewportFit: "cover",
+};
 
 export default function Virtual() {
   return (
     <>
-      <Head>
-        <title>
-          Tula&apos;s International School | Best Boarding School in Dehradun
-        </title>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover"
-        />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta httpEquiv="Content-Type" content="text/html;charset=utf-8" />
-        <meta httpEquiv="x-ua-compatible" content="IE=edge" />
-        <style>{`
-          html { height:100%; }
-          body { height:100%; overflow:hidden; margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#FFFFFF; background-color:#000000; }
-        `}</style>
-      </Head>
+      <style>{`
+        html { height:100%; }
+        body { height:100%; overflow:hidden; margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#FFFFFF; background-color:#000000; }
+      `}</style>
+      <h1
+        style={{
+          position: "absolute",
+          width: 1,
+          height: 1,
+          padding: 0,
+          margin: -1,
+          overflow: "hidden",
+          clip: "rect(0,0,0,0)",
+          whiteSpace: "nowrap",
+          border: 0,
+        }}
+      >
+        Virtual Campus Tour - Tula&apos;s International School
+      </h1>
       <iframe
         className="content"
         allow="autoplay"

@@ -1,7 +1,6 @@
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/globalComponents/Header/Header";
 import Navbar from "@/components/globalComponents/navbar/Navbar";
-import Head from "next/head";
 import sportsBannerImg from "../../../public/Banner/sportsBannerImg.webp";
 import basketballIcon from "../../../public/sports-achievements/basketball.png";
 import skatingIcon from "../../../public/sports-achievements/skating.png";
@@ -37,6 +36,15 @@ import badminton from "../../../public/pictures/badminton.png";
 import tableTennis from "../../../public/pictures/tableTennis.png";
 import React from "react";
 import Image from "next/image";
+
+export const metadata = {
+  title: "Sports Achievements",
+  description:
+    "Explore the sporting achievements of Tula's International School students in Dehradun across basketball, swimming, cricket, badminton and more.",
+  alternates: {
+    canonical: "https://tis.edu.in/events/sports-achievements/",
+  },
+};
 
 export default function SportsAchievements() {
   const data = [
@@ -370,16 +378,6 @@ export default function SportsAchievements() {
   ];
   return (
     <>
-      <Head>
-        <title>
-          Best Boarding School in Dehradun (India) | Tula&apos;s International
-          School
-        </title>
-        <meta
-          name="description"
-          content="Discover the Best Boarding School in Dehradun, India - Tula's International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus."
-        />
-      </Head>
       <Navbar />
 
       <Header

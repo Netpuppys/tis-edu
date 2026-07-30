@@ -1,21 +1,20 @@
 import "../globals.css";
 import Navbar from "../../components/globalComponents/navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-import Head from "next/head";
 import ThankYouPage from "../../components/ThankYou";
+export const metadata = {
+  title: "Thank You",
+  description:
+    "Thank you for your admission enquiry to Tula's International School, Dehradun. Our admissions team will be in touch shortly.",
+  alternates: {
+    canonical: "https://tis.edu.in/admission-thank-you/",
+  },
+  robots: { index: false, follow: true },
+};
+
 export default function CareersPage() {
   return (
     <>
-      <Head>
-        <title>
-          Best Boarding School in Dehradun (India) | Tula&apso;s International
-          School
-        </title>
-        <meta
-          name="description"
-          content="Discover the Best Boarding School in Dehradun, India - Tula's International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus."
-        />
-      </Head>
       <Navbar />
       <ThankYouPage />
       <Footer />

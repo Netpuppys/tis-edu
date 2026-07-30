@@ -1,5 +1,14 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Payment Successful",
+  description: "Your payment to Tula's International School, Dehradun has been successfully processed.",
+  alternates: {
+    canonical: "https://tis.edu.in/payment-success/",
+  },
+  robots: { index: false, follow: true },
+};
+
 export default function Page() {
   return (
     <div className="min-h-screen bg-white flex items-center justify-center px-4">

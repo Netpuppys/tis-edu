@@ -1,7 +1,6 @@
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/globalComponents/Header/Header";
 import Navbar from "@/components/globalComponents/navbar/Navbar";
-import Head from "next/head";
 import nationalgamesBanner from "../../../public/Banner/NationalbannerImg.webp";
 import image1 from "../../../public/national-games/image1.webp";
 import image2 from "../../../public/national-games/image2.webp";
@@ -10,19 +9,18 @@ import image3 from "../../../public/national-games/image3.webp";
 import React from "react";
 import Image from "next/image";
 
+export const metadata = {
+  title: "38th National Games Torch Relay",
+  description:
+    "See highlights from the 38th National Games Torch Relay held at Tula's International School, Dehradun.",
+  alternates: {
+    canonical: "https://tis.edu.in/events/national-games/",
+  },
+};
+
 export default function NationalGames() {
   return (
     <>
-      <Head>
-        <title>
-          Best Boarding School in Dehradun (India) | Tula&apos;s International
-          School
-        </title>
-        <meta
-          name="description"
-          content="Discover the Best Boarding School in Dehradun, India - Tula's International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus."
-        />
-      </Head>
       <Navbar />
 
       <Header

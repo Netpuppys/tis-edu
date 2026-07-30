@@ -2,20 +2,18 @@ import MandatoryDisclosure from "../../components/MandatoryDisclosure/MandatoryD
 import "../globals.css";
 import Navbar from "../../components/globalComponents/navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-import Head from "next/head";
+export const metadata = {
+  title: "CBSE Mandatory Disclosure",
+  description:
+    "View the CBSE mandatory disclosure documents and compliance information for Tula's International School, Dehradun.",
+  alternates: {
+    canonical: "https://tis.edu.in/cbse-documents/",
+  },
+};
+
 export default function MandatoryDisclosurePage() {
   return (
     <>
-      <Head>
-        <title>
-          Best Boarding School in Dehradun (India) | Tula&apos;s International
-          School
-        </title>
-        <meta
-          name="description"
-          content="Discover the Best Boarding School in Dehradun, India - Tula's International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus."
-        />
-      </Head>
       <Navbar />
       <MandatoryDisclosure />
       <Footer />

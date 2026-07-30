@@ -8,24 +8,27 @@ import Image from "next/image";
 import "../../styles/home/HomeLayout.css";
 import ThirdSection from "./components/thirdSection/ThirdSection";
 
-const HeroBackup = dynamic(() => import("./components/Hero/HeroBackup"), {
-  ssr: false,
-  loading: () => <section><h2>Hero section loading...</h2></section>,
-});
-const SecondSection = dynamic(() => import("./components/secondSection/SecondSection"), { ssr: false });
-const ActivityGrid = dynamic(() => import("./components/activityGrid/ActivityGrid"), { ssr: false });
-const FifthSection = dynamic(() => import("./components/fifthSection/FifthSection"), { ssr: false });
-const Video = dynamic(() => import("./components/video/video"), { ssr: false });
-const TisByNumbers = dynamic(() => import("./components/TisByNumbers/TisByNumbers"), { ssr: false });
-const AwardSection = dynamic(() => import("./components/awardsSection/AwardSection"), { ssr: false });
-const Ranking = dynamic(() => import("./components/Ranking/ranking"), { ssr: false });
-const ParentsReviews = dynamic(() => import("./components/parentsReviews/ParentsReviews"), { ssr: false });
-const FeaturesSection = dynamic(() => import("./components/featuresSection/FeaturesSection"), { ssr: false });
-const GoogleReviews = dynamic(() => import("@/app/boarding-school/admission-open/Components/Hero/components/GoogleReviews"), { ssr: false });
+// Note: these were previously forced client-only (`ssr: false`), which meant
+// none of the homepage's real content (hero copy, stats, awards, rankings,
+// testimonials, etc.) was present in the server-rendered HTML — search
+// engine crawlers only ever saw a "Hero section loading..." placeholder and
+// empty containers. Removing `ssr: false` restores server-side rendering
+// (Next.js default) while keeping the code-splitting benefit of dynamic().
+const HeroBackup = dynamic(() => import("./components/Hero/HeroBackup"));
+const SecondSection = dynamic(() => import("./components/secondSection/SecondSection"));
+const ActivityGrid = dynamic(() => import("./components/activityGrid/ActivityGrid"));
+const FifthSection = dynamic(() => import("./components/fifthSection/FifthSection"));
+const Video = dynamic(() => import("./components/video/video"));
+const TisByNumbers = dynamic(() => import("./components/TisByNumbers/TisByNumbers"));
+const AwardSection = dynamic(() => import("./components/awardsSection/AwardSection"));
+const Ranking = dynamic(() => import("./components/Ranking/ranking"));
+const ParentsReviews = dynamic(() => import("./components/parentsReviews/ParentsReviews"));
+const FeaturesSection = dynamic(() => import("./components/featuresSection/FeaturesSection"));
+const GoogleReviews = dynamic(() => import("@/app/boarding-school/admission-open/Components/Hero/components/GoogleReviews"));
 // const Form = dynamic(() => import("./components/form/form"), { ssr: false });
 // const Stats = dynamic(() => import("./components/TisByNumbers/stats"), { ssr: false });
-const NewStats = dynamic(() => import("./components/stats/stats"), { ssr: false });
-const Famous = dynamic(() => import("./components/Famous"), { ssr: false });
+const NewStats = dynamic(() => import("./components/stats/stats"));
+const Famous = dynamic(() => import("./components/Famous"));
 
 const maxSections = 13;
 
