@@ -20,11 +20,11 @@ function Headmaster() {
   return (
     <>
       <Header
-        title={"Headmaster’s Profile"}
+        title={"Principal's Profile"}
         headerImg={HeaderHeadmasterIMg}
         headerImgMobile={HeaderHeadmasterMobileIMg}
         subtitle={
-          "A headmaster shapes dreams, building a foundation for lifelong success"
+          "A Principal shapes dreams, building a foundation for lifelong success"
         }
       />
       <div className="py-8 md:py-14">
