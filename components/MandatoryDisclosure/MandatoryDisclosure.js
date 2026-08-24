@@ -4,41 +4,37 @@ import Header from "../globalComponents/Header/Header";
 import "../../styles/MandatoryDisclosure/MandatoryDisclosure.css";
 import HeaderMandatoryImg from "../../public/Banner/mandatoryDisclosure.webp";
 import HeaderMandatoryImgMobile from "../../public/Banner/mandatoryDisclosureMobile.webp";
-import Affiliation from "../../public/MandatoryPDF/Affiliation-ana-Extention.pdf";
-import Building from "../../public/MandatoryPDF/building-safety-certificate.pdf";
-import FeesStructure from "../../public/MandatoryPDF/TIS FEE STRUCTURE 2026-27.pdf";
-import TrustRegistration from "../../public/MandatoryPDF/Trust-Registration.pdf";
-import NOC from "../../public/MandatoryPDF/NOC-by-State-Govt.pdf";
-import SchoolManagingCommittee from "../../public/MandatoryPDF/School-Managing-Committee.pdf";
-import SchoolCalendar from "../../public/MandatoryPDF/school-calendar.pdf";
-import MandatoryDisclosurePDF from "../../public/MandatoryPDF/Mandatory-Public-Disclosure-1.pdf";
-import ParentsTeacher from "../../public/MandatoryPDF/Parents-Teachers-Association.pdf";
-import DeoCertificate from "../../public/MandatoryPDF/DEO-Certificate.pdf";
-import LastThree from "../../public/MandatoryPDF/Last-Three-Year-Result.pdf";
-import FireSafety from "../../public/MandatoryPDF/Fire-Safety.pdf";
-import Water from "../../public/MandatoryPDF/Water-Healty-and-Sanitation-Certificate.pdf";
-import RTE from "../../public/MandatoryPDF/RTE-Letter.pdf";
-import Teaching from "../../public/MandatoryPDF/teaching-staff-list.pdf";
+import MandatoryDisclosureFile from "../../public/newpdf/Mandatory Disclosure Details _ SARAS 7.0.pdf";
+import AffiliationExtension from "../../public/newpdf/Copies of Affiliation and Extension.pdf";
+import TrustCopies from "../../public/newpdf/Copies of Trust.pdf";
+import NOC from "../../public/newpdf/Copy of NOC.pdf";
+import RecognitionCertificate from "../../public/newpdf/Copy of Recognition Certificate.pdf";
+import BuildingSafetyCertificate from "../../public/newpdf/Copy of Valid Building Safety Certificate.pdf";
+import FireSafetyCertificate from "../../public/newpdf/Copy of Fire Safety Certificate.pdf";
+import WaterHealthSanitation from "../../public/newpdf/Copy of Water, Health, and Sanitation.pdf";
+import FeeStructure from "../../public/newpdf/Fee Structure of the School.pdf";
+import AnnualAcademicCalendar from "../../public/newpdf/Annual Academic Calender.pdf";
+import SchoolManagementCommittee from "../../public/newpdf/List of School Management Committee.pdf";
+import ParentsTeacherAssociation from "../../public/newpdf/List of parents Teacher Association.pdf";
+import LastThreeYearResult from "../../public/newpdf/Last Three Year Result.pdf";
 import { Download } from "@mui/icons-material";
 import pdfIcon from "../../public/MandatoryPDF/PDFicon.png";
 import Image from "next/image";
 export default function MandatoryDisclosure() {
   const documents = [
-    { name: "Affiliation and Extension", link: Affiliation },
-    { name: "Building Safety Certificate", link: Building },
-    { name: "Fee Structure", link: FeesStructure },
-    { name: "Trust Registration", link: TrustRegistration },
-    { name: "NOC by State Govt", link: NOC },
-    { name: "School Managing Committee", link: SchoolManagingCommittee },
-    { name: "School Calendar", link: SchoolCalendar },
-    { name: "Mandatory Disclosure", link: MandatoryDisclosurePDF },
-    { name: "Parents Teachers Association", link: ParentsTeacher },
-    { name: "DEO Certificate", link: DeoCertificate },
-    { name: "Last Three Year Result", link: LastThree },
-    { name: "Fire Safety", link: FireSafety },
-    { name: "Water, Health and Sanitation Certificate", link: Water },
-    { name: "RTE Letter", link: RTE },
-    { name: "Teaching Staff", link: Teaching },
+    { name: "Mandatory Disclosure file", link: MandatoryDisclosureFile },
+    { name: "Copies of Affiliation and Extension", link: AffiliationExtension },
+    { name: "Copies of Trust", link: TrustCopies },
+    { name: "Copy of NOC", link: NOC },
+    { name: "Copy of Recognition Certificate", link: RecognitionCertificate },
+    { name: "Copy of Valid Building Safety Certificate", link: BuildingSafetyCertificate },
+    { name: "Copy of Fire Safety Certificate", link: FireSafetyCertificate },
+    { name: "Copy of Water, Health, and Sanitation", link: WaterHealthSanitation },
+    { name: "Fee Structure of the School", link: FeeStructure },
+    { name: "Annual Academic Calender", link: AnnualAcademicCalendar },
+    { name: "List of School Management Committee", link: SchoolManagementCommittee },
+    { name: "List of parents Teacher Association", link: ParentsTeacherAssociation },
+    { name: "Last Three Year Result", link: LastThreeYearResult },
   ];
 
   return (
