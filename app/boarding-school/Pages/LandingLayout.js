@@ -52,7 +52,7 @@ const LandingLayout = () => {
             <ActivityGrid />
             <Ranking />
           </div>
-          <HeroLanding bubbleRef={bubbleRef} />
+          {/* <HeroLanding bubbleRef={bubbleRef} /> */}
           <div
             className="home-layout-allSection flex flex-col mt-12 md:mt-10 gap-12 md:gap-10"
             ref={bubbleRef}

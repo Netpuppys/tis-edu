@@ -100,7 +100,7 @@ function CarouselPage() {
       >
         <Image src={ranked} alt="" className="w-[40%] mx-auto -mb-14" />
         <div className="bg-white md:bg-white/70 pt-14 shadow-2xl rounded-2xl ring-1 ring-black/5">
-          <FormEnquire heading="Admissions Open 2026" formPopup={false} />
+          <FormEnquire heading="Admissions Open 2027" formPopup={false} />
         </div>
       </div>
 
