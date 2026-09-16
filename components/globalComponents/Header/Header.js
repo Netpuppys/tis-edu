@@ -25,7 +25,7 @@ export default function Header({
           <Image
             src={headerImg}
             alt=""
-            className="w-full h-[85vh] object-cover z-0"
+            className="w-full h-[70vh] object-contain z-0"
           />
         </div>
         <div className="block w-full h-full md:hidden">

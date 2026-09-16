@@ -1,7 +1,8 @@
 "use client";
 import React, { useContext, useEffect, useRef, useState } from "react";
 import Header from "../globalComponents/Header/Header";
-import HeaderApplyImg from "../../public/Header/HowToApplyHEader.png";
+import HeaderApplyImg from "../../public/Header/tis-gurukul.png";
+import HeaderApplyImgMd from "../../public/Header/tis-gurukul-md.png";
 import icon1 from "../../public/pictures/application.png";
 import icon2 from "../../public/pictures/supporting.png";
 import icon3 from "../../public/pictures/assessment.png";
@@ -237,12 +238,12 @@ const Apply = () => {
   return (
     <>
       <Header
-        title={"Admission Procedure"}
+        title={""}
         subtitle={
           "TIS has a simple and transparent admission process for seamless enrolment"
         }
         headerImg={HeaderApplyImg}
-        headerImgMobile={HeaderApplyImg}
+        headerImgMobile={HeaderApplyImgMd}
       />
       <div
         ref={scrollRefs}
