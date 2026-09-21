@@ -33,7 +33,7 @@ export default function CareerCounselling() {
           <div className="personal">
             <div className="headingPersonal">Personal Counselling</div>
             <div className="textPersonal">
-              Tula’s provides personal counselling through a dedicated center,
+              Tulas provides personal counselling through a dedicated center,
               ensuring students have a safe space to share their thoughts and
               challenges with trained professionals. Life skills and value-based
               education are integrated into the daily schedule, addressing
@@ -80,7 +80,7 @@ export default function CareerCounselling() {
             <div className="text-part">
               <h2>Counselor at School :</h2>
               <p1>
-                Tula&apos;s International School has come up with a career
+                Tulas International School has come up with a career
                 program that helps in providing the students with career
                 guidance information on the school premises.
                 <ul>
@@ -141,7 +141,7 @@ export default function CareerCounselling() {
               Why Does Your Child Need Counselling?
             </div>
             <div className="textPersonal">
-              Tula’s career counselling program helps students:
+              Tulas career counselling program helps students:
               <ul className="ml-5 list-disc">
                 <li>
                   Build self-esteem and confidence to face challenges head-on.
@@ -183,7 +183,7 @@ export default function CareerCounselling() {
             different approach than regular theory papers.
             <br />
             <br />
-            At Tula’s International School, we ensure students start their
+            At Tulas International School, we ensure students start their
             entrance exam preparations early:
             <br />
             <ul className="ml-5 list-disc">

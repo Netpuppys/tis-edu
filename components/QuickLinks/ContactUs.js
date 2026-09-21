@@ -76,7 +76,7 @@ const ContactUs = () => {
             >
               <IoLocationSharp className="w-[24px] h-[24px]" />
               <span className="w-fit h-fit">
-                Tula’s International School Dhoolkot, P.O – Selaqui, Chakrata
+                Tulas International School Dhoolkot, P.O – Selaqui, Chakrata
                 Road, Dehradun-248011 (Uttarakhand)
               </span>
             </a>

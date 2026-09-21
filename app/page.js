@@ -24,7 +24,7 @@ const homepageSchema = {
     {
       "@type": "EducationalOrganization",
       "@id": "https://tis.edu.in/#organization",
-      name: "Tula's International School",
+      name: "Tulas International School",
       alternateName: "TIS",
       url: "https://tis.edu.in/",
       logo: {
@@ -35,7 +35,7 @@ const homepageSchema = {
       },
       image: "https://tis.edu.in/images/tis-campus-og.jpg",
       description:
-        "Tula's International School (TIS) is a top-ranked CBSE-affiliated co-ed boarding and day school in Dehradun, Uttarakhand, offering world-class residential education for boys and girls from Class 4 to 12.",
+        "Tulas International School (TIS) is a top-ranked CBSE-affiliated co-ed boarding and day school in Dehradun, Uttarakhand, offering world-class residential education for boys and girls from Class 4 to 12.",
       email: "info@tis.edu.in",
       telephone: "+91-9837983791",
       address: {
@@ -90,7 +90,7 @@ const homepageSchema = {
     {
       "@type": "School",
       "@id": "https://tis.edu.in/#school",
-      name: "Tula's International School",
+      name: "Tulas International School",
       alternateName: "TIS",
       url: "https://tis.edu.in/",
       logo: "https://tis.edu.in/images/tis-campus-og.jpg",
@@ -150,8 +150,8 @@ export default function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "VideoObject",
-            "name": "Tula's International School",
-            "description": "Discover the Best Boarding School in Uttarakhand, India - Tula's International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus in Dehradun. Boarding Schools Admission Open 2026-2027",
+            "name": "Tulas International School",
+            "description": "Discover the Best Boarding School in Uttarakhand, India - Tulas International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus in Dehradun. Boarding Schools Admission Open 2026-2027",
             "thumbnailUrl": "https://tis.edu.in",
             "uploadDate": "2024-03-25T09:00:00+05:30",
             "contentUrl": "https://tis.edu.in/virtual-tour/",

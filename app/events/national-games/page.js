@@ -12,7 +12,7 @@ import Image from "next/image";
 export const metadata = {
   title: "38th National Games Torch Relay",
   description:
-    "See highlights from the 38th National Games Torch Relay held at Tula's International School, Dehradun.",
+    "See highlights from the 38th National Games Torch Relay held at Tulas International School, Dehradun.",
   alternates: {
     canonical: "https://tis.edu.in/events/national-games/",
   },
@@ -35,7 +35,7 @@ export default function NationalGames() {
         }}
         className="w-full px-8 md:px-0 md:w-[75%] py-8 md:py-[3%] mx-auto text-justify md:text-center text-[clamp(10px,4.5vw,30px)] font-normal md:text-[clamp(10px,1.3vw,45px)] leading-tight "
       >
-        Tula’s International School proudly welcomed Tejaswini, the torch of the
+        Tulas International School proudly welcomed Tejaswini, the torch of the
         38th National Games Uttarakhand, as part of its historic journey across
         3,823 kilometers, 99 locations, and 13 districts. Flagged off by Hon’ble
         Chief Minister Mr. Pushkar Singh Dhami on December 26, 2024, in
@@ -60,9 +60,9 @@ export default function NationalGames() {
         }}
         className="w-full px-8 md:px-0 md:w-[75%] py-8 md:py-[3%] mx-auto text-justify md:text-center text-[clamp(10px,4.5vw,30px)] font-normal md:text-[clamp(10px,1.3vw,45px)] leading-tight "
       >
-        The torch arrived at Tula’s Institute, where it was met with immense
+        The torch arrived at Tulas Institute, where it was met with immense
         enthusiasm by students, faculty, and dignitaries. It then continued to
-        Tula’s International School, greeted by an energetic crowd at the
+        Tulas International School, greeted by an energetic crowd at the
         football field and a proud NCC contingent. Passing through all the
         sports fields, the event concluded with students capturing the moment
         alongside "Mauli," the official mascot. True to the theme “Sankalp Se

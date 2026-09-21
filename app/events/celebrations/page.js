@@ -5,7 +5,7 @@ import Footer from "../../../components/Footer/Footer";
 export const metadata = {
   title: "Events & Celebrations",
   description:
-    "Explore festivals, celebrations and cultural events at Tula's International School, a boarding school in Dehradun that nurtures community and tradition.",
+    "Explore festivals, celebrations and cultural events at Tulas International School, a boarding school in Dehradun that nurtures community and tradition.",
   alternates: {
     canonical: "https://tis.edu.in/events/celebrations/",
   },

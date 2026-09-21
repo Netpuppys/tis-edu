@@ -40,7 +40,7 @@ const TextBanner = ({ filledText }) => {
         <h8>
           {" "}
           With
-          <span className="font-[Mirador800]">Tula's</span>
+          <span className="font-[Mirador800]">Tulas</span>
         </h8>
         <div className="relative h-fit w-fit">
           {filledText && (

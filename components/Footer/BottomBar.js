@@ -6,7 +6,7 @@ function BottomBar() {
   return (
     <div className="bottom-bar">
       <p className="copyright-text">
-        Copyright © 2025 Tula&apos;s International School, Dehradun | All Rights
+        Copyright © 2026 Tulas International School, Dehradun | All Rights
         Reserved <br />
         Designed and Managed By{" "}
         <a

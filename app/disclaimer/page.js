@@ -5,7 +5,7 @@ import Disclaimer from "@/components/FooterPages/Disclaimer";
 export const metadata = {
   title: "Disclaimer",
   description:
-    "Read the official disclaimer for Tula's International School's website, Dehradun, covering the use of content, images and information published online.",
+    "Read the official disclaimer for Tulas International School's website, Dehradun, covering the use of content, images and information published online.",
   alternates: {
     canonical: "https://tis.edu.in/disclaimer/",
   },

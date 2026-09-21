@@ -5,7 +5,7 @@ import Footer from "../../components/Footer/Footer";
 export const metadata = {
   title: "Privacy Policy",
   description:
-    "Read Tula's International School's privacy policy to understand how we collect, use and protect the personal information of visitors, parents and students.",
+    "Read Tulas International School's privacy policy to understand how we collect, use and protect the personal information of visitors, parents and students.",
   alternates: {
     canonical: "https://tis.edu.in/privacy-policy/",
   },

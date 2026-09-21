@@ -228,7 +228,7 @@ function Form() {
                     color="#007A83"
                     className="min-w-[20px] h-[20px]"
                   />
-                  Tula’s International School Dhoolkot, P.O – Selaqui, Chakrata
+                  Tulas International School Dhoolkot, P.O – Selaqui, Chakrata
                   Road, Dehradun-248011 (Uttarakhand)
                 </a>
                 <p className="flex text-sm text-black items-center justify-start mt-4 gap-4">
@@ -406,7 +406,7 @@ function Form() {
                 className="flex text-[#2D2D2D] items-center cursor-pointer text-sm md:text-base"
               >
                 I Agree to receive information regarding my submitted
-                application by signing up on Tula's International School,
+                application by signing up on Tulas International School,
                 Dehradun
               </label>
             </div>

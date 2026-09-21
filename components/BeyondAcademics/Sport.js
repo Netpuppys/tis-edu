@@ -35,7 +35,7 @@ function Sport() {
       description: (
         <>
           We at Tulas offers comprehensive archery programs in a safe and fun
-          environment. Tula’s International School has a state-of-the-art archery ground
+          environment. Tulas International School has a state-of-the-art archery ground
           with many different target lanes spread out over the
           natural terrain of our campus.
           <p className="py-1"></p>
@@ -76,26 +76,26 @@ function Sport() {
       image: hockey,
       description: (
         <>
-          Field hockey at Tula’s International School represents an exciting
+          Field hockey at Tulas International School represents an exciting
           opportunity for students to engage in a dynamic and competitive sport
           while fostering teamwork, discipline, and physical fitness. As one of
-          the premier institute of education in the region, Tula’s International
+          the premier institute of education in the region, Tulas International
           School is committed to providing a well-rounded education that
           includes a diverse range of extracurricular activities, including
           sports like field hockey.
           <p className="py-1"></p>
           Under the guidance of experienced coaches and staff, students at
-          Tula’s International School have the chance to learn and develop their
+          Tulas International School have the chance to learn and develop their
           skills in field hockey, whether they are beginners or experienced
           players. The school offers state-of-the-art facilities, including
           well-maintained fields and equipment, to ensure that students have the
           resources they need to excel in the sport.
           <p className="py-1"></p>
-          Participation in field hockey at Tula’s International School goes
+          Participation in field hockey at Tulas International School goes
           beyond just physical exercise; it instills values such as
           sportsmanship, perseverance, and leadership. Students learn to work
           together as a team, supporting and encouraging one another both on and
-          off the field. Furthermore, field hockey at Tula’s International School
+          off the field. Furthermore, field hockey at Tulas International School
           provides opportunities for students to compete in interschool
           tournaments and championships, allowing them to showcase their talents
           and represent their school with pride.
@@ -110,10 +110,10 @@ function Sport() {
         <>
           Most hotels, health clubs, fitness centres and private clubs have
           swimming centres now which have given rise to the trend of swimming and
-          made it an essential skill. Tula’s International School realises the
+          made it an essential skill. Tulas International School realises the
           importance of keeping up with the fast-paced world and now boasts an additional sports facility, a swimming centre.
           <p className="py-1"></p>
-          Given its high standard of sports facilities, Tula’s now also offers
+          Given its high standard of sports facilities, Tulas now also offers
           swimming to the students who have a desire to learn swimming as well
           as to those who are passionate about swimming as a sport
         </>
@@ -132,7 +132,7 @@ function Sport() {
           mass and terrific speed make one a champion in this sport.
           <p className="py-1"></p>
           Our dedicated coach guides students to learn this martial art and
-          perfect it. Tula’s is a member of Uttarakhand State Taekwondo
+          perfect it. Tulas is a member of Uttarakhand State Taekwondo
           Association. We are also proud winners of the National Karate
           Championship held last year.
         </>
@@ -166,7 +166,7 @@ function Sport() {
       image: shooting,
       description: (
         <>
-          Tula’s International School has a state-of-the-art shooting range with
+          Tulas International School has a state-of-the-art shooting range with
           quality equipment that aims to hone the talent of the budding
           shooters. Students can use the 7-lane indoor shooting range for 10M
           pistol and rifle shooting. They can practice under the skilled
@@ -190,7 +190,7 @@ function Sport() {
           of horse riding competitions all over the world, such as thoroughbred
           horse racing, steeple chasing, endurance riding, etc.
           <p className="py-1"></p>
-          As one of the top residential schools in Dehradun, Tula’s has begun
+          As one of the top residential schools in Dehradun, Tulas has begun
           offering horse riding lessons to its students at all levels. We offer
           riding lessons for beginners as well as the experienced riders. Our expert
           coaches also train the more experienced students in dressage, show
@@ -235,7 +235,7 @@ function Sport() {
           lighting and ventilation. Our special flooring provides accurate ball
           bounce, provides resilience and grip and prevents player fatigue.
           <p className="py-1"></p>
-          Tula’s Squash Centre offers a variety of programs for juniors from
+          Tulas Squash Centre offers a variety of programs for juniors from
           elementary school through high school. The programs are aimed at all
           levels: from beginners to expert players, all play in their own
           styles, as they move through high school with the help of professional
@@ -254,7 +254,7 @@ function Sport() {
           anywhere all you have to do is to set up a net. A typical volleyball
           game uses six players on each side.
           <p className="py-1"></p>
-          Among the best international Dehradun schools, Tula’s provides its
+          Among the best international Dehradun schools, Tulas provides its
           students a world-class volleyball court where they can perfect their
           game. It has built-in lateral forgiveness which reduce stress on
           knees and joints.
@@ -271,7 +271,7 @@ function Sport() {
       image: basketball,
       description: (
         <>
-          Students at Tula’s International are coached by professional trainers
+          Students at Tulas International are coached by professional trainers
           to teach them the intricacies of basketball. Our outdoor basketball
           synthetic 8-layered court has been approved by the International Basketball Federation (FIBA) and provides the following benefits to
           our students:
@@ -423,7 +423,7 @@ function Sport() {
       description: (
         <>
           Throwball is a physically demanding sport that takes skill and
-          focusing ability. Tula’s International school has individual Throw
+          focusing ability. Tulas International school has individual Throw
           ball playground which is accessible for each and every student.
           <p className="py-1"></p>
           They can exhibit true sportsman spirit through various sports events.
@@ -454,7 +454,7 @@ function Sport() {
         }}
         className="w-full px-8 md:px-0 md:w-[75%] pt-8 md:pt-14 mx-auto text-justify md:text-center text-[clamp(10px,4.5vw,30px)] font-normal md:text-[clamp(10px,1.3vw,45px)] leading-tight "
       >
-        As a sports boarding school in Dehradun, Tula’s offers its students the
+        As a sports boarding school in Dehradun, Tulas offers its students the
         one of the best sporting infrastructures among educational institutions in Dehradun.
         It has a fully fledged programme to develop students into professional
         athletes who can make their mark in sporting events across the globe.

@@ -40,7 +40,7 @@ import Image from "next/image";
 export const metadata = {
   title: "Sports Achievements",
   description:
-    "Explore the sporting achievements of Tula's International School students in Dehradun across basketball, swimming, cricket, badminton and more.",
+    "Explore the sporting achievements of Tulas International School students in Dehradun across basketball, swimming, cricket, badminton and more.",
   alternates: {
     canonical: "https://tis.edu.in/events/sports-achievements/",
   },
@@ -63,7 +63,7 @@ export default function SportsAchievements() {
               Under-18 District Basketball Championship: Quarter-finalists.
             </li>
             <li>
-              Tula's Under-16 Team: Quarter-finalists in the District Basketball
+              Tulas Under-16 Team: Quarter-finalists in the District Basketball
               Championship.
             </li>
             <li>
@@ -71,7 +71,7 @@ export default function SportsAchievements() {
               Championship.
             </li>
             <li>
-              Tula's Under-16 Team Participation: Represented in the All India
+              Tulas Under-16 Team Participation: Represented in the All India
               Asian
             </li>
             <li>
@@ -273,7 +273,7 @@ export default function SportsAchievements() {
       description: (
         <ul className="list-disc ml-5">
           <li>
-            Tula's Table Tennis players participated in District Table Tennis
+            Tulas Table Tennis players participated in District Table Tennis
             Championship at Cambrian Hall School and 2 players reached Quarter-final.
           </li>
           <li>
@@ -392,7 +392,7 @@ export default function SportsAchievements() {
         }}
         className="w-full px-8 md:px-0 md:w-[75%] pt-8 md:pt-[3%] mx-auto text-justify md:text-center text-[clamp(10px,4.5vw,30px)] font-normal md:text-[clamp(10px,1.3vw,45px)] leading-tight "
       >
-        At Tula’s International School, sports aren’t just games—they’re a way
+        At Tulas International School, sports aren’t just games—they’re a way
         of life! Our students continuously push their limits, excelling in
         Basket ball, skating, swimming, and more. Their achievements reflect our
         commitment to holistic growth, discipline, and excellence in every

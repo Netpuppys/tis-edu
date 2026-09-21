@@ -15,7 +15,7 @@ import Image from "next/image";
 export const metadata = {
   title: "Mentor & Mentee System",
   description:
-    "Discover the Mentor-Mentee programme at Tula's International School, Dehradun, offering personalised guidance and support to boarding students.",
+    "Discover the Mentor-Mentee programme at Tulas International School, Dehradun, offering personalised guidance and support to boarding students.",
   alternates: {
     canonical: "https://tis.edu.in/mentor-mentee/",
   },
@@ -54,11 +54,11 @@ function MentorMentee() {
           className="w-[90%] md:w-[85%] mx-auto mt-8 text-[clamp(10px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
         >
           <strong className="text-[#b90124]">
-            Tula’s International School, Dehradun
+            Tulas International School, Dehradun
           </strong>
           <br />
           <br />
-          The Mentor-Mentee program at Tula’s International School serves as a
+          The Mentor-Mentee program at Tulas International School serves as a
           foundation for holistic student development. This initiative ensures
           that students receive personalized guidance and emotional support in a
           structured manner, facilitating their overall growth. The program is
@@ -377,7 +377,7 @@ function MentorMentee() {
             <strong className="">Conclusion</strong>
             <br />
             <br />
-            The Mentor-Mentee program at Tula's International School is a
+            The Mentor-Mentee program at Tulas International School is a
             transformative initiative that creates a nurturing and
             growth-oriented environment for mentees. By fostering confidence,
             providing academic guidance, and supporting emotional well-being,

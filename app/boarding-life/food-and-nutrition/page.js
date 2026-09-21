@@ -5,7 +5,7 @@ import Footer from "../../../components/Footer/Footer";
 export const metadata = {
   title: "Food & Nutrition",
   description:
-    "Explore the nutritious dining and food programme for boarding students at Tula's International School, a CBSE boarding school in Dehradun.",
+    "Explore the nutritious dining and food programme for boarding students at Tulas International School, a CBSE boarding school in Dehradun.",
   alternates: {
     canonical: "https://tis.edu.in/boarding-life/food-and-nutrition/",
   },

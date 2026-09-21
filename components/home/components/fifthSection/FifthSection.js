@@ -13,7 +13,7 @@ function FifthSection() {
 
       <div className="text-div-atTis">
         <p className="title">
-          At Tula’s, we always ask, “What’s the secret to making school
+          At Tulas, we always ask, “What’s the secret to making school
           awesome?”
         </p>
         <p className="AtTisdescription">

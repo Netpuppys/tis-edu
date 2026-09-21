@@ -351,7 +351,7 @@ function FormEnquire({ formPopup }) {
             className="flex text-[#4B4B4B] items-center cursor-pointer text-[13px]"
           >
             I Agree to receive information regarding my submitted application by
-            signing up on Tula's International School, Dehradun
+            signing up on Tulas International School, Dehradun
           </label>
         </div>
         <button

@@ -66,7 +66,7 @@ export default function OurHistory() {
               education, driven by a belief that every student deserved more
               than just a classroom—they deserved a stage to grow, dream, and
               thrive. His journey began in 2004 with the Rishabh Trust under
-              which Tula’s Institute was founded in 2006. Tula’s Institute went
+              which Tulas Institute was founded in 2006. Tulas Institute went
               ahead to become a college that is widely known for its excellence
               in engineering and management education. 
             </h3>
@@ -94,7 +94,7 @@ export default function OurHistory() {
                 fontFamily: "TT Chocolates",
               }}
             >
-              But even as the corridors of Tula’s Institute echoed with the
+              But even as the corridors of Tulas Institute echoed with the
               aspirations of countless students, Mr. Jain felt there was more to
               be done
               <br />
@@ -173,11 +173,11 @@ export default function OurHistory() {
               world. Alongside him, Silky Jain Marwah (Executive Director)—an
               alumna of Symbiosis and a leader honed by Harvard and Oxford—wove
               in creativity, leadership, and innovation. Together, they brought
-              a modern vibrancy to Tula’s, blending traditional values with
+              a modern vibrancy to Tulas, blending traditional values with
               progress.
               <br />
               <br />
-              Today, Tula’s International School stands as a testament to the
+              Today, Tulas International School stands as a testament to the
               power of vision and collaboration across generations.
             </h3>
           </div>
@@ -200,7 +200,7 @@ export default function OurHistory() {
             }}
             className="text-[#5E5E5E] font-semibold capitalize"
           >
-            This is the story of Tula’s,
+            This is the story of Tulas,
           </span>{" "}
           A story of belief, courage, and the relentless pursuit of excellence.
         </h3>

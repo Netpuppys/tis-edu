@@ -3,7 +3,7 @@ import ProminentClient from "./ProminentClient";
 export const metadata = {
   title: "Prominent Personalities",
   description:
-    "Meet the prominent personalities, alumni and dignitaries associated with Tula's International School, a CBSE boarding school in Dehradun.",
+    "Meet the prominent personalities, alumni and dignitaries associated with Tulas International School, a CBSE boarding school in Dehradun.",
   alternates: {
     canonical: "https://tis.edu.in/prominent-personalities/",
   },

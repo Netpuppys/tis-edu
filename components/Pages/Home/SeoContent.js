@@ -13,7 +13,7 @@ export default function SeoContent() {
         opacity: 0,
       }}
     >
-      <h1>Welcome to Tula's International School (TIS)</h1>
+      <h1>Welcome to Tulas International School (TIS)</h1>
       <p>
         TIS is one of India’s top boarding and day schools in Dehradun, India.
       </p>

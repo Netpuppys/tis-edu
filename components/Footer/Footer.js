@@ -119,7 +119,7 @@ function Footer() {
           <div className="hero">
             <Image src={footerLogo} className="logo" alt="TIS" />
             <p className="address">
-              Tula&apos;s International School
+              Tulas International School
               <br />
               <a
                 style={{ textDecoration: "none", color: "#fff" }}
@@ -201,7 +201,7 @@ function Footer() {
               <div className="info-div">
                 <Image src={markerIcon} className="icon" alt="point" />
                 <p className="text">
-                  Tula’s International School Dhoolkot, P.O – Selaqui, Chakrata
+                  Tulas International School Dhoolkot, P.O – Selaqui, Chakrata
                   Road, Dehradun-248011 (Uttarakhand)
                 </p>
               </div>
@@ -302,7 +302,7 @@ function Footer() {
 
           <div className="bottom-bar">
             <p className="copyright-text">
-              Copyright © 2025 Tula&apos;s International School, Dehradun | All
+              Copyright © 2026 Tulas International School, Dehradun | All
               Rights Reserved
               <br />
               Designed and Managed By{" "}

@@ -22,7 +22,7 @@ function HeroText(props) {
           >
             with
           </span>{" "}
-          Tula&apos;s
+          Tulas
         </h3>
         <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -5,7 +5,7 @@ import Footer from "../../components/Footer/Footer";
 export const metadata = {
   title: "School Newsletter",
   description:
-    "Read the latest newsletter from Tula's International School, Dehradun, featuring campus news, events and student achievements.",
+    "Read the latest newsletter from Tulas International School, Dehradun, featuring campus news, events and student achievements.",
   alternates: {
     canonical: "https://tis.edu.in/newsletter/",
   },

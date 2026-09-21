@@ -68,7 +68,7 @@ const LandingLayout = () => {
             className="pb-14 md:pb-0 px-2 flex flex-col justify-center items-center g-[#b90124] w-full text-black"
           >
             <h4 className="text-center pt-2 md:py-2">
-              Copyright © 2026 Tula's International School, Dehradun | All
+              Copyright © 2026 Tulas International School, Dehradun | All
               Rights Reserved
               <br />
               Designed and Managed By{" "}

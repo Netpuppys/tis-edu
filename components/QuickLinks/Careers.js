@@ -19,7 +19,7 @@ export default function Careers() {
         <p>
           <br />
           <br />
-          Tula’s International School is a futuristic institution that
+          Tulas International School is a futuristic institution that
           endeavours to provide a better and brighter future to the younger
           generation. We ensure a learning experience for everyone who becomes a
           part of our team, be it a student or a staff member. We aim to create
@@ -29,10 +29,10 @@ export default function Careers() {
           together the values of Gurukul system and blend them with the
           progressive system of education. We work hard to strengthen the basic
           educational concepts of the children, who will lay the foundation of
-          the future. The entire team of Tula’s International School perseveres
+          the future. The entire team of Tulas International School perseveres
           to follow and spread the beliefs of the institution. We work towards
           setting a benchmark for boarding schools and leave no stone unturned
-          in fulfil it. Join the Tula’s team to serve the society for a better
+          in fulfil it. Join the Tulas team to serve the society for a better
           tomorrow.
           <br />
           <br />
@@ -43,11 +43,11 @@ export default function Careers() {
           Employment <span>Opportunities</span>
         </h2>
         <p className="apply-text">
-          To apply and become a part of the Tula’s team, download and complete
+          To apply and become a part of the Tulas team, download and complete
           the attached personal data form and post it to: <br />
           <br />
           The Headmaster <br />
-          Tula’s International School Dhoolkot, P.O – Selaqui, Chakrata Road,
+          Tulas International School Dhoolkot, P.O – Selaqui, Chakrata Road,
           Dehradun-248011 (Uttarakhand)
         </p>
         <div className="career-current-opening">

@@ -13,7 +13,7 @@ const Table = () => {
     {
       name: "Schools Focus",
       description:
-        "Tula's International School (TIS) is a premier co-ed boarding school providing the best international education.",
+        "Tulas International School (TIS) is a premier co-ed boarding school providing the best international education.",
     },
     {
       name: "Learning Environment",

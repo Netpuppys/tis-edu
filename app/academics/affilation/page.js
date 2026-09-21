@@ -5,7 +5,7 @@ import Footer from "../../../components/Footer/Footer";
 export const metadata = {
   title: "CBSE Affiliation & Curriculum",
   description:
-    "Tula's International School is a CBSE-affiliated boarding school in Dehradun offering a structured curriculum from Class 4 to 12 for holistic academic growth.",
+    "Tulas International School is a CBSE-affiliated boarding school in Dehradun offering a structured curriculum from Class 4 to 12 for holistic academic growth.",
   alternates: {
     canonical: "https://tis.edu.in/academics/affilation/",
   },

@@ -48,7 +48,7 @@ export default function FAQ() {
     </>,
     <>
       Modern Gurukul is a concept wherein the students go to their gurus to
-      obtain knowledge through digital mediums. The teachers in the Tula’s
+      obtain knowledge through digital mediums. The teachers in the Tulas
       International are regarded as Gurus who put all their efforts in giving a
       shape to the future of the student. We focus on the Mind, body and soul,
       along with Moral values, traditions, spiritual, and ethics as they teach
@@ -57,7 +57,7 @@ export default function FAQ() {
       <br />
       <br />
       TIS believe that schooling should not only ensure the good grades but also
-      the overall development of a child into a good human being. Tula’s
+      the overall development of a child into a good human being. Tulas
       International focus on the major parts of Gurukul education system –
       Discipline, Creativity, Right attitude, Empathy, and strong moral values.
       The concept of Modern Gurukul in the campus covers all fields of life and
@@ -102,7 +102,7 @@ export default function FAQ() {
       LION’S CLUB – It gives young people opportunity to serve their communities
       and make a positive impact. They offer a great way to have fun, make new
       friends and develop valuable leadership skills. The young leo’s act as
-      project organizer, time manager and team leader. We at Tula’s are creating
+      project organizer, time manager and team leader. We at Tulas are creating
       awareness in the nearby villages about social issues like educating girl
       child and say no to drugs.
     </>,
@@ -203,7 +203,7 @@ export default function FAQ() {
       are welcome to have a meal with us and experience it yourself.
     </>,
     <>
-      Tula’s International School has separate boarding houses for girls and
+      Tulas International School has separate boarding houses for girls and
       boys. Each dorm houses four children with independent bed with storage
       space, cupboard, study table, book rack and a personal soft board for pin
       ups. Large windows in each room not only allow natural light to flow but

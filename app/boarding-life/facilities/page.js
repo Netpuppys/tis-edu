@@ -6,7 +6,7 @@ import Footer from "../../../components/Footer/Footer";
 export const metadata = {
   title: "Boarding Facilities",
   description:
-    "Explore the on-campus boarding facilities at Tula's International School, Dehradun, including residential accommodation, recreation and student amenities.",
+    "Explore the on-campus boarding facilities at Tulas International School, Dehradun, including residential accommodation, recreation and student amenities.",
   alternates: {
     canonical: "https://tis.edu.in/boarding-life/facilities/",
   },

@@ -26,7 +26,7 @@ function LoadingScreenLanding() {
         </p>
         <p className="mid-text">with</p>
         <p className="bottom-text">
-          Tula&apos;s{" "}
+          Tulas{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 268.317 14.075"

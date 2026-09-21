@@ -20,7 +20,7 @@ function Music() {
       image: music,
       description: (
         <>
-          At Tulas International School which is one of the top residential schools in Dehradun, music is not regarded as a standalone subject but is incorporated into the curriculum itself. It is an integral part of every student’s life. The Music Academy at Tula’s offers students a wide array of opportunities in both music and dance. The school has well qualified teachers who teach students to play a variety of musical instruments, such as the guitar, congo drums, violin, sitar, keyboards, drums, harmonium, tabla, and to sing as well. Students are exposed to western as well as Indian classical dance forms.
+          At Tulas International School which is one of the top residential schools in Dehradun, music is not regarded as a standalone subject but is incorporated into the curriculum itself. It is an integral part of every student’s life. The Music Academy at Tulas offers students a wide array of opportunities in both music and dance. The school has well qualified teachers who teach students to play a variety of musical instruments, such as the guitar, congo drums, violin, sitar, keyboards, drums, harmonium, tabla, and to sing as well. Students are exposed to western as well as Indian classical dance forms.
         </>
       ),
     },
@@ -30,7 +30,7 @@ function Music() {
       image: Arts,
       description: (
         <>
-          As one of the reputed CBSE schools in Dehradun, Tula’s has the only
+          As one of the reputed CBSE schools in Dehradun, Tulas has the only
           Art & Craft workstation of its kind in Uttarakhand. Called ‘Colours’,
           it continually strives to inspire its students to display their
           creativity under the capable guidance of art teachers. Students are
@@ -47,7 +47,7 @@ function Music() {
       image: Foreignlanguages,
       description: (
         <>
-          At Tula&apos;s International School (TIS), we recognize the importance
+          At Tulas International School (TIS), we recognize the importance
           of foreign languages in today&apos;s globalized world. Alongside
           German, TIS also teaches French as part of our foreign language
           curriculum. This provides our students with a well-rounded linguistic
@@ -77,7 +77,7 @@ function Music() {
         }}
         className="w-full px-8 md:px-0 md:w-[75%] pt-8 md:pt-[4%] mx-auto text-justify md:text-center text-[clamp(10px,4.5vw,30px)] font-normal md:text-[clamp(10px,1.3vw,45px)] leading-tight "
       >
-        At Tula’s International School, we believe in making learning an
+        At Tulas International School, we believe in making learning an
         exciting journey full of discovery and fun. Our students dive into
         experiences that ignite their imagination, spark their curiosity, and
         open doors to new worlds. It's where creativity flows freely, and every
@@ -149,7 +149,7 @@ function Music() {
 
           <h5>
             As befits its reputation as one of the best residential schools in
-            Dehradun, Tula&apos;s organizes frequent trips and excursions to
+            Dehradun, Tulas organizes frequent trips and excursions to
             expose students to the vibrant world that lies outside the
             schoolroom. The school field trip has a long history of public
             education. For decades, students have piled into yellow buses to

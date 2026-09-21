@@ -5,7 +5,7 @@ import ThankYouPage from "../../components/ThankYou";
 export const metadata = {
   title: "Thank You",
   description:
-    "Thank you for your admission enquiry to Tula's International School, Dehradun. Our admissions team will be in touch shortly.",
+    "Thank you for your admission enquiry to Tulas International School, Dehradun. Our admissions team will be in touch shortly.",
   alternates: {
     canonical: "https://tis.edu.in/admission-thank-you/",
   },

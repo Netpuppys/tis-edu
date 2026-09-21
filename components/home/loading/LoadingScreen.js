@@ -25,7 +25,7 @@ function LoadingScreen() {
           >
             with
           </span>{" "}
-          Tula&apos;s
+          Tulas
         </p>
         <svg
           xmlns="http://www.w3.org/2000/svg"

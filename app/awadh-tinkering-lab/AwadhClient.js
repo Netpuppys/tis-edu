@@ -126,7 +126,7 @@ function MentorMentee() {
           className="w-full px-8 md:px-0 md:w-[75%] mx-auto text-justify md:text-center text-[clamp(10px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
         >
           With a vision of "National Mission on Interdisciplinary Cyber‑Physical System (NMICPS)", iHUB AWaDH, IIT Ropar established India's first
-          AWaDH Tinkering Laboratories (ATL) in Tula's International schools,
+          AWaDH Tinkering Laboratories (ATL) in Tulas International schools,
           Dehradun Uttarakhand. The objective of this scheme is to foster
           curiosity, creativity, and imagination in young minds; and inculcate
           scientific temper and skills such as design mindset, computational

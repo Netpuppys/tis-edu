@@ -5,9 +5,9 @@ import Footer from "../../components/Footer/Footer";
 // ✅ SEO Metadata (App Router way)
 export const metadata = {
   title:
-    "Best Boarding School in Dehradun (India) | Tula's International School",
+    "Best Boarding School in Dehradun (India) | Tulas International School",
   description:
-    "Discover the Best Boarding School in Dehradun, India - Tula's International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus and More.",
+    "Discover the Best Boarding School in Dehradun, India - Tulas International School for a World-class Education. Join Our Top-ranked CBSE Boarding School With a Co-ed, Residential Campus and More.",
   alternates: {
     canonical: "https://tis.edu.in/admission-procedure/",
   },
@@ -19,7 +19,7 @@ export default function AdmissionPage() {
     "@type": "EducationEvent",
     "@id": "https://tis.edu.in/admission-procedure/#2026-27",
     "url": "https://tis.edu.in/admission-procedure/",
-    "name": "Tula's International School Admission 2026-27 (Classes 4-12)",
+    "name": "Tulas International School Admission 2026-27 (Classes 4-12)",
     "description":
       "CBSE boarding school admissions open Classes 4 to 12. Modern Gurukul campus, Dehradun. Visit or apply March 1 - September 30, 2026. +91-9837983791",
     "image":
@@ -31,7 +31,7 @@ export default function AdmissionPage() {
       "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
-      "name": "Tula's International School",
+      "name": "Tulas International School",
       "address": {
         "@type": "PostalAddress",
         "streetAddress":
@@ -45,13 +45,13 @@ export default function AdmissionPage() {
     },
     "organizer": {
       "@type": "EducationalOrganization",
-      "name": "Tula's International School",
+      "name": "Tulas International School",
       "url": "https://tis.edu.in",
       "telephone": "+91-9837983791",
     },
     "performer": {
       "@type": "EducationalOrganization",
-      "name": "Tula's International School",
+      "name": "Tulas International School",
     },
     "offers": {
       "@type": "Offer",

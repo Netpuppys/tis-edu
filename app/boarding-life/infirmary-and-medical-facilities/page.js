@@ -5,7 +5,7 @@ import Footer from "../../../components/Footer/Footer";
 export const metadata = {
   title: "Infirmary & Medical Facilities",
   description:
-    "Learn about the on-campus infirmary and medical care facilities available for boarding students at Tula's International School, Dehradun.",
+    "Learn about the on-campus infirmary and medical care facilities available for boarding students at Tulas International School, Dehradun.",
   alternates: {
     canonical: "https://tis.edu.in/boarding-life/infirmary-and-medical-facilities/",
   },

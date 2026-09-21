@@ -6,11 +6,11 @@ export const metadata = {
   metadataBase: new URL("https://tis.edu.in"),
   title: {
     default:
-      "Boarding School in Dehradun India | CBSE Co-Ed Boarding School | Tula's International School",
-    template: "%s | Tula's International School",
+      "Boarding School in Dehradun India | CBSE Co-Ed Boarding School | Tulas International School",
+    template: "%s | Tulas International School",
   },
   description:
-    "Tula's International School is a CBSE-affiliated co-educational boarding school in Dehradun India for boys and girls from Class 4 to 12. Admissions open for 2026-27.",
+    "Tulas International School is a CBSE-affiliated co-educational boarding school in Dehradun India for boys and girls from Class 4 to 12. Admissions open for 2026-27.",
   keywords: [
     "boarding school in dehradun india",
     "cbse co-ed boarding school in dehradun",
@@ -19,17 +19,17 @@ export const metadata = {
     "residential school in uttarakhand india",
     "boarding school for boys and girls in dehradun",
     "class 4 to 12 boarding school in dehradun",
-    "tula's international school dehradun",
+    "tulas international school dehradun",
   ],
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Boarding School in Dehradun India | Tula's International School",
+    title: "Boarding School in Dehradun India | Tulas International School",
     description:
       "CBSE-affiliated co-ed boarding school in Dehradun, Uttarakhand for boys and girls from Class 4 to 12.",
     url: "/",
-    siteName: "Tula's International School",
+    siteName: "Tulas International School",
     locale: "en_IN",
     type: "website",
     images: [
@@ -37,14 +37,14 @@ export const metadata = {
         url: "/images/tis-campus-og.jpg",
         width: 1200,
         height: 630,
-        alt: "Tula's International School campus in Dehradun India",
+        alt: "Tulas International School campus in Dehradun India",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title:
-      "Boarding School in Dehradun India | Tula's International School",
+      "Boarding School in Dehradun India | Tulas International School",
     description:
       "CBSE-affiliated co-ed boarding school for boys and girls from Class 4 to 12.",
     images: ["/images/tis-campus-og.jpg"],
@@ -63,13 +63,13 @@ export default function RootLayout({ children }) {
       {
         "@type": "School",
         "@id": "https://tis.edu.in/#school",
-        name: "Tula's International School",
+        name: "Tulas International School",
         url: "https://tis.edu.in/",
         logo: "https://tis.edu.in/logo.png",
         image:
           "https://tis.edu.in/wp-content/uploads/2023/06/campus-view.jpg",
         description:
-          "Tula's International School is a CBSE-affiliated co-educational boarding school in Dehradun, Uttarakhand.",
+          "Tulas International School is a CBSE-affiliated co-educational boarding school in Dehradun, Uttarakhand.",
         address: {
           "@type": "PostalAddress",
           streetAddress: "Chakrata Road, Dhoolkot",
@@ -95,7 +95,7 @@ export default function RootLayout({ children }) {
       {
         "@type": "LocalBusiness",
         "@id": "https://tis.edu.in/#localbusiness",
-        name: "Tula's International School",
+        name: "Tulas International School",
         image: "https://tis.edu.in/logo.png",
         url: "https://tis.edu.in/",
         telephone: "+91-135-2699444",
@@ -113,7 +113,7 @@ export default function RootLayout({ children }) {
         "@type": "WebSite",
         "@id": "https://tis.edu.in/#website",
         url: "https://tis.edu.in/",
-        name: "Tula's International School",
+        name: "Tulas International School",
         publisher: {
           "@id": "https://tis.edu.in/#school",
         },
@@ -123,7 +123,7 @@ export default function RootLayout({ children }) {
         "@type": "WebPage",
         "@id": "https://tis.edu.in/#webpage",
         url: "https://tis.edu.in/",
-        name: "Boarding School in Dehradun India | Tula's International School",
+        name: "Boarding School in Dehradun India | Tulas International School",
         isPartOf: {
           "@id": "https://tis.edu.in/#website",
         },
@@ -131,7 +131,7 @@ export default function RootLayout({ children }) {
           "@id": "https://tis.edu.in/#school",
         },
         description:
-          "Tula's International School is a CBSE-affiliated co-educational boarding school in Dehradun India.",
+          "Tulas International School is a CBSE-affiliated co-educational boarding school in Dehradun India.",
       },
 
       // {
@@ -144,7 +144,7 @@ export default function RootLayout({ children }) {
       //   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
       //   location: {
       //     "@type": "Place",
-      //     name: "Tula's International School",
+      //     name: "Tulas International School",
       //   },
       // },
 
@@ -153,7 +153,7 @@ export default function RootLayout({ children }) {
         "@id": "https://tis.edu.in/#course",
         name: "CBSE Boarding School Program",
         description:
-          "Tula's International School offers CBSE co-ed boarding education from Class 4 to 12.",
+          "Tulas International School offers CBSE co-ed boarding education from Class 4 to 12.",
         provider: {
           "@id": "https://tis.edu.in/#school",
         },

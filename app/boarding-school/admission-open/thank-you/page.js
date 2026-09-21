@@ -3,7 +3,7 @@ import ThankYouClient from "./ThankYouClient";
 export const metadata = {
   title: "Thank You",
   description:
-    "Thank you for your admissions enquiry to Tula's International School, Dehradun.",
+    "Thank you for your admissions enquiry to Tulas International School, Dehradun.",
   alternates: {
     canonical: "https://tis.edu.in/boarding-school/admission-open/thank-you/",
   },

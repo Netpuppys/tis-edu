@@ -57,7 +57,7 @@ export default function ClubAndSocieties() {
       image: vibgyor,
       description: (
         <>
-          As one of the reputed schools in Dehradun, Tula’s has the only Art &
+          As one of the reputed schools in Dehradun, Tulas has the only Art &
           Craft workstation of its kind in Uttarakhand. Called ‘Vibgyor’, it
           continually strives to inspire its students to display their
           creativity under the capable guidance of art teachers. Students are
@@ -74,7 +74,7 @@ export default function ClubAndSocieties() {
       image: ragaRocks,
       description: (
         <>
-          At Tula’s, music is not regarded as a standalone subject but is
+          At Tulas, music is not regarded as a standalone subject but is
           incorporated into the curriculum itself. It forms an integral part of
           every student’s life. The school has qualified teachers who teach
           students to play a variety of musical instruments, such as the guitar,
@@ -93,7 +93,7 @@ export default function ClubAndSocieties() {
           The Club requires students to construct simple and complex projects
           during this activity period. Electronics forms the bedrock of most
           technological progress. As one of the reputed CBSE schools in
-          Dehradun, Tula’s students construct devices, such as burglar alarm,
+          Dehradun, Tulas students construct devices, such as burglar alarm,
           automatic school bell, mosquito repellent, LED Sequential Running
           Lights, etc. One of the most sought after careers at the campus is
           robotics. Students at TIS do projects like obstacle-avoiding robot,
@@ -108,9 +108,9 @@ export default function ClubAndSocieties() {
       description: (
         <>
           Food is the magic key that can open many doors, as the saying goes.
-          The Cookery Club at Tula’s, one of the best co-ed boarding schools in
+          The Cookery Club at Tulas, one of the best co-ed boarding schools in
           Dehradun, is not about nutrients and calories. It’s about sharing.
-          It’s about honesty. It’s about identity. At the Tula’s Cookery Club,
+          It’s about honesty. It’s about identity. At the Tulas Cookery Club,
           students experiment with different recipes and create new and varied
           dishes. The challenge lies in creating dishes that cater to different
           palates. Cooking is such a vast and creative field. This is one club
@@ -145,7 +145,7 @@ export default function ClubAndSocieties() {
       description: (
         <>
           Gardening is an art in itself. The students at TIS work hard to see
-          that plants and trees in the campus are well protected. Tula’s
+          that plants and trees in the campus are well protected. Tulas
           International School students have pledged their loyalty towards
           Mother Earth and contribute in every possible way to spread awareness
           about environmental issues.
@@ -161,7 +161,7 @@ export default function ClubAndSocieties() {
           Dance is one of humankind’s great creative expressions. A performing
           art which has sublime aesthetic and symbolic value, dance involves the
           dancer to surrender themselves utterly before the audience and give away
-          something of themselves. At Tula’s, all forms of dance, whether classical
+          something of themselves. At Tulas, all forms of dance, whether classical
           or Western, are encouraged by the school’s trained dance instructors.
           The aim is to free students of their inhibitions and let them sway to
           the rhythm of their chosen dance form.
@@ -185,7 +185,7 @@ export default function ClubAndSocieties() {
         }}
         className="w-full px-8 md:px-0 md:w-[75%] pt-8 md:pt-14 mx-auto text-justify md:text-center text-[clamp(10px,4.5vw,30px)] font-normal md:text-[clamp(10px,1.3vw,45px)] leading-tight "
       >
-        Tula’s International School is committed to creating a positive and encouraging environment where students are motivated to achieve their best. Academics and activities beyond the classroom are central to our approach, making the school one of the leading boarding schools in Dehradun.
+        Tulas International School is committed to creating a positive and encouraging environment where students are motivated to achieve their best. Academics and activities beyond the classroom are central to our approach, making the school one of the leading boarding schools in Dehradun.
         <br />
         <br />
         Beyond academics, active student involvement is an important part of campus life. When students lead and manage committees and clubs, they grow in confidence and responsibility. These opportunities help them discover, develop, and showcase their talents, supporting their journey towards a well-rounded education.

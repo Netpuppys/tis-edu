@@ -6,7 +6,7 @@ import HeaderPastoralImgMobile from "../../../public/Banner/pastoralCareMobile.w
 import "../../../styles/BoardingLife/pastoral.css";
 export default function PastoralCare() {
   const bannerText =
-    "Growth at Tula's begins with care, support, and endless possibilities";
+    "Growth at Tulas begins with care, support, and endless possibilities";
 
   return (
     <>
@@ -18,7 +18,7 @@ export default function PastoralCare() {
       />
       <div className="text-pastoral">
         <strong className="font-black">
-          At Tula’s International School, we believe that your well-being is
+          At Tulas International School, we believe that your well-being is
           just as important as your academics. Our Pastoral Care team is here to
           support you every step of the way, ensuring you feel safe, cared for,
           and encouraged to grow.

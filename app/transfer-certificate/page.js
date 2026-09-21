@@ -3,7 +3,7 @@ import TransferCertificateClient from "./TransferCertificateClient";
 export const metadata = {
   title: "Transfer Certificate",
   description:
-    "Search and download your child's Transfer Certificate (TC) online from Tula's International School, Dehradun.",
+    "Search and download your child's Transfer Certificate (TC) online from Tulas International School, Dehradun.",
   alternates: {
     canonical: "https://tis.edu.in/transfer-certificate/",
   },

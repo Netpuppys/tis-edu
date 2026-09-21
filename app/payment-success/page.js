@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Payment Successful",
-  description: "Your payment to Tula's International School, Dehradun has been successfully processed.",
+  description: "Your payment to Tulas International School, Dehradun has been successfully processed.",
   alternates: {
     canonical: "https://tis.edu.in/payment-success/",
   },

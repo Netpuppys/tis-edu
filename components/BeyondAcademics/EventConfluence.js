@@ -88,7 +88,7 @@ export default function EventConfluence() {
           }}
           className="w-full px-8 md:px-0 md:w-[75%] pt-8 md:pt-14 mx-auto text-[clamp(10px,4.5vw,30px)] font-normal md:text-[clamp(10px,1.3vw,45px)] leading-tight "
         >
-          Confluence is the annual cultural fest of Tula’s International School,
+          Confluence is the annual cultural fest of Tulas International School,
           Dehradun in which a no. of events are organized with students of
           different schools participating in. Confluence derives its name from
           the very qualities it hopes to exemplify Creativity, Excellence, and

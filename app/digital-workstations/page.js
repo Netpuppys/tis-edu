@@ -33,7 +33,7 @@ import Image from "next/image";
 export const metadata = {
   title: "Digital Workstations",
   description:
-    "Explore the subject-specific digital workstations at Tula's International School, Dehradun, replacing traditional classrooms with immersive learning spaces.",
+    "Explore the subject-specific digital workstations at Tulas International School, Dehradun, replacing traditional classrooms with immersive learning spaces.",
   alternates: {
     canonical: "https://tis.edu.in/digital-workstations/",
   },
@@ -162,7 +162,7 @@ function MentorMentee() {
           }}
           className="w-full px-8 md:px-0 md:w-[75%] mx-auto text-center text-[clamp(10px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.3vw,45px)]"
         >
-          At Tula’s International School, learning isn’t confined to four
+          At Tulas International School, learning isn’t confined to four
           walls—it moves, breathes, and adapts. Instead of traditional
           classrooms, we have dedicated workstations for each subject, designed
           to enhance focus, creativity, and real-world application. From science

@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Virtual Campus Tour",
   description:
-    "Take a virtual tour of Tula's International School's campus in Dehradun and explore our boarding facilities, classrooms and grounds online.",
+    "Take a virtual tour of Tulas International School's campus in Dehradun and explore our boarding facilities, classrooms and grounds online.",
   alternates: {
     canonical: "https://tis.edu.in/virtual-tour/",
   },
@@ -42,7 +42,7 @@ export default function Virtual() {
           border: 0,
         }}
       >
-        Virtual Campus Tour - Tula&apos;s International School
+        Virtual Campus Tour - Tulas International School
       </h1>
       <iframe
         className="content"

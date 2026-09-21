@@ -5,7 +5,7 @@ import Footer from "../../components/Footer/Footer";
 export const metadata = {
   title: "CBSE Mandatory Disclosure",
   description:
-    "View the CBSE mandatory disclosure documents and compliance information for Tula's International School, Dehradun.",
+    "View the CBSE mandatory disclosure documents and compliance information for Tulas International School, Dehradun.",
   alternates: {
     canonical: "https://tis.edu.in/cbse-documents/",
   },

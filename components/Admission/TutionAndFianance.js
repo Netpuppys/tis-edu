@@ -103,7 +103,7 @@ function TutionAndFianance() {
           }}
           className="w-[90%] md:w-[60%] mx-auto mt-4 md:mt-8 text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] leading-tight"
         >
-          At Tula’s, our scholarship selection process is focused on recognizing
+          At Tulas, our scholarship selection process is focused on recognizing
           excellence in academics, sports, and the creative & performing arts.
           We also award scholarships to students who go beyond their
           achievements, demonstrating exceptional character, integrity,
@@ -113,7 +113,7 @@ function TutionAndFianance() {
       </div>
       <div className="pt-8 md:pt-14">
         <h2 className="text-[clamp(10px,7vw,50px)] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
-          Tula’s Scholarship Assessment{" "}
+          Tulas Scholarship Assessment{" "}
           <span className="text-[#b90124]">
             (T.S.A.)
             <Image
@@ -142,7 +142,7 @@ function TutionAndFianance() {
               National)
             </li>
             <li>
-              Need to qualify for Tula’s Scholarship Assessment (T.S.A.) with
+              Need to qualify for Tulas Scholarship Assessment (T.S.A.) with
               95% and Interview for an academic scholarship.
             </li>
             <li>
@@ -177,7 +177,7 @@ function TutionAndFianance() {
       </div>
       <div className="pt-8 md:pt-14">
         <h2 className="text-[clamp(10px,7vw,50px)] w-fit mx-auto md:text-[clamp(10px,2.5vw,50px)] text-center font-bold font-[Mirador800]">
-          Tula’s Concession{" "}
+          Tulas Concession{" "}
           <span className="text-[#b90124]">
             Policy
             <Image
@@ -228,7 +228,7 @@ function TutionAndFianance() {
             Alumna & Alumni Reference:
           </strong>{" "}
           <br />
-          <br /> Tula’s International School welcomes all family members
+          <br /> Tulas International School welcomes all family members
           referred by our proud Alumna & Alumni. To avail concession, kindly
           email an admission request with Name & Batch Year of our Alumni &
           Alumna. Email at{" "}
@@ -267,7 +267,7 @@ function TutionAndFianance() {
               >
                 (dean.admission@tis.edu.in)
               </a>{" "}
-              to avail Tula’s Concession policy.
+              to avail Tulas Concession policy.
             </li>
             <li>Child need to qualify for</li>
             <li>The scholarship will be provided from One-time fees.</li>

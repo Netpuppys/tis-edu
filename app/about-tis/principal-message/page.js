@@ -5,7 +5,7 @@ import Footer from "../../../components/Footer/Footer";
 export const metadata = {
   title: "Principal's Message",
   description:
-    "Read a welcome message from the Principal of Tula's International School, Dehradun, on the school's vision for holistic, modern education.",
+    "Read a welcome message from the Principal of Tulas International School, Dehradun, on the school's vision for holistic, modern education.",
   alternates: {
     canonical: "https://tis.edu.in/about-tis/principal-message/",
   },

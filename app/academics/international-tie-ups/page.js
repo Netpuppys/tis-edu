@@ -5,7 +5,7 @@ import Footer from "../../../components/Footer/Footer";
 export const metadata = {
   title: "International Tie-Ups & Collaborations",
   description:
-    "Learn about Tula's International School's global partnerships and international tie-ups that give Dehradun boarding school students exposure beyond the classroom.",
+    "Learn about Tulas International School's global partnerships and international tie-ups that give Dehradun boarding school students exposure beyond the classroom.",
   alternates: {
     canonical: "https://tis.edu.in/academics/international-tie-ups/",
   },

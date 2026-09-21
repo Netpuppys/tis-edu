@@ -19,7 +19,7 @@ function FeeStructure() {
       name: "Bank Address:",
       amount: "NEHRU COLONY, DEHRADUN, UTTARAKHAND, INDIA",
     },
-    { name: "Account Name:", amount: "TULA’S INTERNATIONAL SCHOOL, DEHRADUN" },
+    { name: "Account Name:", amount: "TULAS INTERNATIONAL SCHOOL, DEHRADUN" },
     { name: "Current Account Number:", amount: "51881131003528" },
     { name: "IFSC Code:", amount: "PUNB0518810" },
     { name: "MICR Code:", amount: "248024059" },
@@ -82,7 +82,7 @@ function FeeStructure() {
           <ul className="ml-5 list-disc">
             <li>
               The parent can deposit the fee through Demand Draft in the favour
-              of TULA’S INTERNATIONAL SCHOOL payable at Punjab National Bank,
+              of TULAS INTERNATIONAL SCHOOL payable at Punjab National Bank,
               Dehradun. Please mention your ward’s name on the reverse of the
               Demand Draft.
             </li>

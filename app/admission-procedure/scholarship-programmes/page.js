@@ -5,7 +5,7 @@ import Footer from "../../../components/Footer/Footer";
 export const metadata = {
   title: "Scholarship Programmes",
   description:
-    "Learn about scholarship and financial aid programmes available for students at Tula's International School, a CBSE boarding school in Dehradun.",
+    "Learn about scholarship and financial aid programmes available for students at Tulas International School, a CBSE boarding school in Dehradun.",
   alternates: {
     canonical: "https://tis.edu.in/admission-procedure/scholarship-programmes/",
   },

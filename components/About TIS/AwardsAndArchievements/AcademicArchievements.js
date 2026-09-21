@@ -70,7 +70,7 @@ export default function AcademicArchievements() {
           <li>Ranked <strong>No.4 in India, No.2 in Uttarakhand,</strong> and{" "}
           <strong>No.1 in Dehradun</strong> in a survey conducted by Education
           Today (2021-22).</li>
-          <li>Principal of Tula's International School listed under{" "}
+          <li>Principal of Tulas International School listed under{" "}
           <strong>"50 Effective Principals"</strong> by Education Today.
           </li>
           <li>Awarded <strong>
@@ -121,11 +121,11 @@ export default function AcademicArchievements() {
           2 Silver, 2 Bronze).
           <br />
           Hosted the{" "}
-          <strong>1st Tula's International Shooting Tournament,</strong> where
-          Tula's won Overall Best Boys Shooting School.
+          <strong>1st Tulas International Shooting Tournament,</strong> where
+          Tulas won Overall Best Boys Shooting School.
           <br />
           Organized the{" "}
-          <strong>2nd Tula's 3-on-3 Basketball U-18 Tournament,</strong>{" "}
+          <strong>2nd Tulas 3-on-3 Basketball U-18 Tournament,</strong>{" "}
           securing runner-up and winning a cash prize of ₹2100.
           <br />
         </ul>
@@ -173,7 +173,7 @@ export default function AcademicArchievements() {
           Hosted the <strong>2nd International Film Festival,</strong> featuring
           artists like Pooja Bhatt, Jimmy Shergill, Divya Dutta, and Nawab Shah.
           <br />
-          <li>Chairman of Tula's Group received the{" "}
+          <li>Chairman of Tulas Group received the{" "}
           <strong>Dr. APJ Abdul Kalam Award.</strong></li>
           <li>Students won multiple medals in Equestrian Sports (Show Jumping,
           Dressage, Eventing) at the Excellentia Horse Show in Delhi.</li>
@@ -244,11 +244,11 @@ export default function AcademicArchievements() {
         }}
         className="w-full px-8 md:px-0 md:w-[75%] py-8 md:py-14 mx-auto text-justify md:text-center text-[clamp(10px,4.5vw,30px)] font-normal md:text-[clamp(10px,1.3vw,45px)] leading-tight "
       >
-        Tula&apos;s International School boasts numerous awards and
+        Tulas International School boasts numerous awards and
         achievements, highlighting our commitment to excellence in academics,
         sports, and extracurricular activities. Our students consistently excel
         in national and international competitions, reflecting the high
-        standards of education and dedication at Tula&apos;s International
+        standards of education and dedication at Tulas International
         School.
       </h6>
       <h3
@@ -257,7 +257,7 @@ export default function AcademicArchievements() {
         }}
         className="text-[#B90124] mx-auto w-fit font-semibold text-center text-[clamp(10px,7.5vw,60px)] md:text-[clamp(10px,2.5vw,50px)]"
       >
-        Achievements of Tula's International School
+        Achievements of Tulas International School
         <Image
           src={lineImg}
           alt=""

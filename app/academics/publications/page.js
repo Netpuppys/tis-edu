@@ -5,7 +5,7 @@ import Footer from "../../../components/Footer/Footer";
 export const metadata = {
   title: "School Publications & Magazines",
   description:
-    "Explore student publications, magazines and creative writing from Tula's International School, a CBSE boarding school in Dehradun.",
+    "Explore student publications, magazines and creative writing from Tulas International School, a CBSE boarding school in Dehradun.",
   alternates: {
     canonical: "https://tis.edu.in/academics/publications/",
   },

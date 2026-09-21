@@ -61,13 +61,13 @@ export default function OurManagement() {
         <>
           It brings me immense pride and satisfaction to extend my heartiest
           congratulations to the Management, dedicated Staff, and the vibrant
-          Student body of Tula's International School on the publication of its
+          Student body of Tulas International School on the publication of its
           Second edition of the yearbook. This publication serves as a
           chronicle of our collective journey towards educational excellence,
           and it is with great anticipation that I share my thoughts with you
           today.
           <p className="py-1"></p>
-          Tula's International School combines - respect for tradition with a
+          Tulas International School combines - respect for tradition with a
           progressive application of modern sciences, academic rigour with a
           caring heart, and individual appreciation with the warmth of a school
           community.
@@ -87,7 +87,7 @@ export default function OurManagement() {
           <br />
           <br />
           <span className="text-[#b90124]">
-            I invite you to join Tula's in this journey of an enriching
+            I invite you to join Tulas in this journey of an enriching
             educational experience for our students.
           </span>
         </>
@@ -107,18 +107,18 @@ export default function OurManagement() {
       ),
       description: (
         <>
-          The Director of Tula's, Mr Raunak Jain, is a high achiever. Topping
+          The Director of Tulas, Mr Raunak Jain, is a high achiever. Topping
           through his college and post-graduation (from the Royal Holloway
           University of London), Mr Jain has made winning a habit. Owing to this
-          habit, he aspires to make Tula's International one of the best and
+          habit, he aspires to make Tulas International one of the best and
           most dependable schools. He understands that he can achieve this
-          ambition only through the success of every student of Tula's, for he
+          ambition only through the success of every student of Tulas, for he
           believes in - Together we rise, together we touch the skies.
           <p className="py-1"></p>
           Mr Jain, as the Director and as the youngest member of the Tulas
           Family, has all his interests invested in the school to make it a
           perfect setting for a student's holistic development with emphasis on
-          creating a balanced persona. Compromising at no point, Tula's provides
+          creating a balanced persona. Compromising at no point, Tulas provides
           world-class amenities for your child, whether in education, athletics,
           the arts, or entertainment. We were guided through expert advice.
         </>
@@ -150,11 +150,11 @@ export default function OurManagement() {
           Education Evangelist 2015' by Skill Tree, Silky Jain is an inspiration
           for many. The 'CARE-India Youth Icon from 2011 till date, Ms Jain is a
           self-starter and an achiever. Currently handling the Engineering
-          College and the Management College (Tula's Institute), she has a good
+          College and the Management College (Tulas Institute), she has a good
           understanding of the operations of Educational Institutions.
           <p className="py-1"></p>
           Apart from catering to her duties as an Executive Director, she would
-          be helping Tula's students to make career choices and hand-holding
+          be helping Tulas students to make career choices and hand-holding
           them through their transitions post their schooling.
         </>
       ),
@@ -173,20 +173,20 @@ export default function OurManagement() {
       ),
       description: (
         <>
-          As the name suggests, Tula's creates a balance and strives to develop
+          As the name suggests, Tulas creates a balance and strives to develop
           and unearth the intrinsic potential and capability of the students,
           thereby preparing them to take on global challenges.
           <p className="py-1"></p>
           Our vision is to make Tula a centre of excellence in learning,
           innovation, technology, agriculture, and management. Every student is
           nurtured holistically. The result is young entrepreneurs who are ready
-          for the workforce. Students at Tula's envision becoming employers and
-          creating jobs for others. The entire education process at Tula's is
+          for the workforce. Students at Tulas envision becoming employers and
+          creating jobs for others. The entire education process at Tulas is
           designed from the very first day onward, from making the student feel
           at home to equipping the student to be productive in industry and
           society. Our Institute has good relations with leading Universities of
           the world, giving Tulaites an edge over other students elsewhere.
-          Tula's is recognised for having state of the art infrastructure.
+          Tulas is recognised for having state of the art infrastructure.
         </>
       ),
     },

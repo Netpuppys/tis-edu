@@ -5,7 +5,7 @@ import Footer from "../../components/Footer/Footer";
 export const metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with Tula's International School, Dehradun for admissions enquiries, campus visits and general information.",
+    "Get in touch with Tulas International School, Dehradun for admissions enquiries, campus visits and general information.",
   alternates: {
     canonical: "https://tis.edu.in/contact-us/",
   },

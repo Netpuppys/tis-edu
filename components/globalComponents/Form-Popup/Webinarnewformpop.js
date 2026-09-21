@@ -284,7 +284,7 @@ function WebinarNewFormEnquire({ webinarformPopup }) {
         <div className="flex items-center gap-3 mt-3">
           <input type="checkbox" required />
           <label className="text-[13px] text-[#4B4B4B]">
-            I agree to receive information regarding my submitted applications by signing up on Tula's International School, Dehradun.
+            I agree to receive information regarding my submitted applications by signing up on Tulas International School, Dehradun.
           </label>
         </div>
 

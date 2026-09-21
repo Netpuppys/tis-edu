@@ -287,7 +287,7 @@ export default function InternationaltieUps() {
           <br />
           Exchange programs offer exposure to different educational systems and
           cultures, helping the students become well-rounded global citizens. At
-          Tula’s the exchange programs offer valuable opportunities, including:
+          Tulas the exchange programs offer valuable opportunities, including:
           <br />
           <ul className="list-disc ml-5">
             <li>Cultural immersion and broadened perspectives</li>

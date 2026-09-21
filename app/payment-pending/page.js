@@ -1,6 +1,6 @@
 export const metadata = {
   title: "Payment Pending",
-  description: "Your payment to Tula's International School, Dehradun is being processed.",
+  description: "Your payment to Tulas International School, Dehradun is being processed.",
   alternates: {
     canonical: "https://tis.edu.in/payment-pending/",
   },

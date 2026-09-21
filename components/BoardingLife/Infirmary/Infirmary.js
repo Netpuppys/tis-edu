@@ -149,7 +149,7 @@ export default function Infirmary() {
           }}
           className="w-[90%] md:w-[85%] mx-auto text-center text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] leading-tight"
         >
-          At Tula’s, health and safety are at the heart of everything we do—it’s
+          At Tulas, health and safety are at the heart of everything we do—it’s
           a shared responsibility we take seriously as parents and educators.
           <br />
           <br />
@@ -166,7 +166,7 @@ export default function Infirmary() {
           child at the start of the school year.
           <br />
           <br />
-          With Tula’s, you can rest assured that your child’s health is in
+          With Tulas, you can rest assured that your child’s health is in
           caring and capable hands.
         </h2>
         <div className="py-8 md:py-[3%]">

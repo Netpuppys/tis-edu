@@ -34,7 +34,7 @@ function FourthSection() {
   const title = (
     <>
       It’s not just a <span className="text-[#60bab1]">facility.</span> At
-      Tula’s it’s the <span className="text-[#60bab1]">foundation!</span>
+      Tulas it’s the <span className="text-[#60bab1]">foundation!</span>
       <br />
       <span
         ref={ref}

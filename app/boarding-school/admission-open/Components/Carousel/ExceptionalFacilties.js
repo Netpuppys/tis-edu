@@ -20,7 +20,7 @@ function ExceptionalFacilties() {
       ),
       description: (
         <>
-          Tula’s is the only CBSE school in North India that has well-designed,
+          Tulas is the only CBSE school in North India that has well-designed,
           technically sound workstations for each subject to foster learning
           among students.
         </>
@@ -52,7 +52,7 @@ function ExceptionalFacilties() {
       ),
       description: (
         <>
-          The LIBRARY at Tula’s is spacious, well-ventilated, and well-stocked.
+          The LIBRARY at Tulas is spacious, well-ventilated, and well-stocked.
           We have around 20,000+ books of various subjects, in different
           languages for all age groups of our students.
         </>

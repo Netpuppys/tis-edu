@@ -46,7 +46,7 @@ function HeroBackup(props) {
   const yellowCircleRef = useRef(null); // Add a ref for yellow-circle
 
   const paragraph1 =
-    "Tula's International School was established in 2012 under the aegis of Rishabh Educational Trust to impart education through ";
+    "Tulas International School was established in 2012 under the aegis of Rishabh Educational Trust to impart education through ";
   const circledText = "seamless opportunities.";
   const filledText = true;
 

@@ -613,7 +613,7 @@ function ProminentPersonalities() {
                 fontFamily: "TT Chocolates",
               }}
             >
-              Tula’s International School is a futuristic institution that
+              Tulas International School is a futuristic institution that
               endeavours to
             </h2>
             <div

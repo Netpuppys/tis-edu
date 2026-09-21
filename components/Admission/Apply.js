@@ -58,7 +58,7 @@ const Apply = () => {
                 registration fee of ₹15,000 (non-refundable)
               </li>
               <li>
-                Write the Demand Draft in favor of Tula’s International School,
+                Write the Demand Draft in favor of Tulas International School,
                 payable at Dehradun.
               </li>
             </ul>
@@ -126,7 +126,7 @@ const Apply = () => {
         <ul className="ml-5 list-disc">
           <li>
             <strong className="font-[TTChocolatesBold]">
-              Tula’s Common Aptitude Assessment (T.C.A.A.):
+              Tulas Common Aptitude Assessment (T.C.A.A.):
             </strong>
             <br />
             <ul className="ml-5 list-disc mt-5">
@@ -384,7 +384,7 @@ const Apply = () => {
             Regulations of the School. The Registration of the child does not
             guarantee his/her admission into the school. The Parent can deposit
             the Registration Fee (which is neither transferable nor refundable)
-            through Demand Draft for ₹15,000 in favor of Tula’s International
+            through Demand Draft for ₹15,000 in favor of Tulas International
             School, payable at Dehradun.
             <br />
             <br />

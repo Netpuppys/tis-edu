@@ -94,7 +94,7 @@ export default function WhyTis() {
 
         <h4 className="here-are">
           Here are the reasons why <br />
-          you should choose Tula’s <br />
+          you should choose Tulas <br />
           International School:
         </h4>
 
@@ -149,7 +149,7 @@ export default function WhyTis() {
                 Children are always learning, whether in the classroom or through informal interactions with peers, teachers, coaches,
                 and instructors. This is where an excellent and high-quality
                 boarding school gives the finest setting for learning academics,
-                skills, and life lessons. Tula&apos;s International School
+                skills, and life lessons. Tulas International School
                 recognizes the quick rate at which children may learn and
                 develop their personalities and character. Our complete
                 atmosphere fosters your child&apos;s physical, emotional, and
@@ -164,11 +164,11 @@ export default function WhyTis() {
                 <div className="line"></div>
               </div>
               <p>
-                Tula&apos;s International School and Tula&apos;s Institute are
+                Tulas International School and Tulas Institute are
                 one-stop destinations for your child&apos;s comprehensive
-                education. Tula&apos;s Institute of Engineering and Management
+                education. Tulas Institute of Engineering and Management
                 allows students to continue their study after completing their
-                senior school examinations at TIS. Tula&apos;s Institute, one of
+                senior school examinations at TIS. Tulas Institute, one of
                 Uttarakhand&apos;s best management colleges, guarantees that
                 parents don&apos;t have to worry about their children&apos;s
                 further education by ensuring a smooth transition from school to
@@ -186,7 +186,7 @@ export default function WhyTis() {
               </div>
               <p>
                 Driven by a PAN India curriculum and a common framework for
-                education, Tula’s is affiliated with the CBSE which is a
+                education, Tulas is affiliated with the CBSE which is a
                 futuristic board and keeps pace with changing educational
                 reforms and a rapidly evolving environment. The faculty of the
                 school is one of its notable strengths. We have highly qualified teachers with extensive experience in CBSE curriculum delivery. Our
@@ -225,7 +225,7 @@ export default function WhyTis() {
               </div>
 
               <p>
-                Tula&apos;s International School immerses your kid in a holistic
+                Tulas International School immerses your kid in a holistic
                 learning environment, combining academics with enough leisure
                 for athletics, arts, music, and other extracurricular
                 activities. We continuously monitor and foster your child&apos;s
@@ -278,7 +278,7 @@ export default function WhyTis() {
               </div>
               <p>
                 Driven by a PAN India curriculum and a common framework for
-                education, Tula’s is affiliated with the CBSE which is a
+                education, Tulas is affiliated with the CBSE which is a
                 futuristic board and keeps pace with changing educational
                 reforms and a rapidly evolving environment. The faculty of the
                 school is one of its notable strengths. We have excellent
@@ -347,7 +347,7 @@ export default function WhyTis() {
               </div>
 
               <p>
-                Tula&apos;s International School immerses your kid in a holistic
+                Tulas International School immerses your kid in a holistic
                 learning environment, combining academics with enough leisure
                 for athletics, arts, music, and other extracurricular
                 activities. We continuously monitor and foster your child&apos;s
@@ -367,7 +367,7 @@ export default function WhyTis() {
                 classroom or via informal contact with peers, teachers, coaches,
                 and instructors. This is where an excellent and high-quality
                 boarding school gives the finest setting for learning academics,
-                skills, and life lessons. Tula&apos;s International School
+                skills, and life lessons. Tulas International School
                 recognizes the quick rate at which children may learn and
                 develop their personalities and character. Our complete
                 atmosphere fosters your child&apos;s physical, emotional, and
@@ -400,11 +400,11 @@ export default function WhyTis() {
                 <h2> Higher Education Opportunities </h2>
               </div>
               <p>
-                Tula&apos;s International School and Tula&apos;s Institute are
+                Tulas International School and Tulas Institute are
                 one-stop destinations for your child&apos;s comprehensive
-                education. Tula&apos;s Institute of Engineering and Management
+                education. Tulas Institute of Engineering and Management
                 allows students to continue their study after completing their
-                senior school examinations at TIS. Tula&apos;s Institute, one of
+                senior school examinations at TIS. Tulas Institute, one of
                 Uttarakhand&apos;s best management colleges, guarantees that
                 parents don&apos;t have to worry about their children&apos;s
                 further education by ensuring a smooth transition from school to

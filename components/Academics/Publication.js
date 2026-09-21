@@ -148,7 +148,7 @@ export default function Publication() {
 
       <div className="publication-main">
         <p className="publication-text">
-          At Tula's International School, publishing is where student creativity finds its voice. Our Editorial Board gives students hands-on experience in writing, editing, design, and print production. They work as a team. They meet deadlines. They take an idea and turn it into something worth reading.
+          At Tulas International School, publishing is where student creativity finds its voice. Our Editorial Board gives students hands-on experience in writing, editing, design, and print production. They work as a team. They meet deadlines. They take an idea and turn it into something worth reading.
           <br />
           <br />
           We publish three ways — <strong className="font-black">The Voice</strong>, our monthly newsletter, <strong className="font-black">Tattoo</strong>, our annual yearbook, and term-wise department magazines across subject areas. Each one is entirely student-driven.

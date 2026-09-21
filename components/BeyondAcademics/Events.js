@@ -87,7 +87,7 @@ export default function Events() {
       image: ChaiPeCharcha,
       description: (
         <>
-          The 34 Cabinet members of Tula’s International School availed an
+          The 34 Cabinet members of Tulas International School availed an
           opportunity to interact with Vice Chairman Mr. Raunak Jain on a semi formal
           platform to share their ideas and problems regarding the academic session 2023–24.
           The Cabinet members exuded confidence and promised to fulfil

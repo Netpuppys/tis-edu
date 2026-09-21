@@ -28,7 +28,7 @@ export default function Curriculum() {
           }}
           className="w-full px-8 md:px-0 md:w-[75%] mx-auto text-justify md:text-center text-[clamp(10px,4.5vw,30px)] font-normal md:text-[clamp(10px,1.3vw,45px)] leading-tight"
         >
-          Welcome to Tula’s International School, Dehradun
+          Welcome to Tulas International School, Dehradun
           <br />
           <br />A premier co-educational residential school (Grade IV-XII)
           affiliated with CBSE, offering a blend of academic excellence and

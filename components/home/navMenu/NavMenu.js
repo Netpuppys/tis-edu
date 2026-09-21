@@ -189,7 +189,7 @@ function NavMenu({ handleMenuBtn }) {
         // },
         {
           title: "Pay Fee Online",
-          linkTo: "https://pages.razorpay.com/pl_EehyEVeDo25wMd/view",
+          linkTo: "/pay",
         },
         {
           title: "Fee Structure",

@@ -5,7 +5,7 @@ import Footer from "../../../components/Footer/Footer";
 export const metadata = {
   title: "Event Confluence",
   description:
-    "Explore Confluence, the annual inter-school event hosted by Tula's International School, Dehradun, celebrating talent, culture and sportsmanship.",
+    "Explore Confluence, the annual inter-school event hosted by Tulas International School, Dehradun, celebrating talent, culture and sportsmanship.",
   alternates: {
     canonical: "https://tis.edu.in/events/confluence/",
   },

@@ -6,7 +6,7 @@ import Footer from "../../../components/Footer/Footer";
 export const metadata = {
   title: "Vision & Mission",
   description:
-    "Discover the vision and mission of Tula's International School, a CBSE co-ed boarding school in Dehradun committed to holistic, future-ready education.",
+    "Discover the vision and mission of Tulas International School, a CBSE co-ed boarding school in Dehradun committed to holistic, future-ready education.",
   alternates: {
     canonical: "https://tis.edu.in/about-tis/vision-mission/",
   },

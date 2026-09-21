@@ -10,7 +10,7 @@ import bannerMobile from "../../public/parents-testimonial/bannerMobile.png";
 export const metadata = {
   title: "Parent's Testimonials",
   description:
-    "Read what parents have to say about Tula's International School, a CBSE co-ed boarding school in Dehradun known for its holistic student care.",
+    "Read what parents have to say about Tulas International School, a CBSE co-ed boarding school in Dehradun known for its holistic student care.",
   alternates: {
     canonical: "https://tis.edu.in/parent-testimonial/",
   },
@@ -32,11 +32,11 @@ function page() {
         }}
         className="w-full px-8 md:px-0 md:w-[75%] py-8 md:py-14 mx-auto text-justify md:text-center text-[clamp(10px,4.5vw,30px)] font-normal md:text-[clamp(10px,1.3vw,45px)] leading-tight "
       >
-        At Tula’s, we believe in shaping the leaders of tomorrow. But don’t just
+        At Tulas, we believe in shaping the leaders of tomorrow. But don’t just
         take our word for it, listen to the heartfelt stories of our parents as
         they share their experiences. Hear from them about the warmth and
         dedication of our teachers and all the exciting opportunities their kids
-        have found here. Discover how Tula’s has made a lasting impact, not just
+        have found here. Discover how Tulas has made a lasting impact, not just
         on their academic journey, but on their overall growth and future.
       </h6>
       <GoogleReviews />

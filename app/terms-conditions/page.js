@@ -5,7 +5,7 @@ import Footer from "../../components/Footer/Footer";
 export const metadata = {
   title: "Terms & Conditions",
   description:
-    "Read the terms and conditions for using the Tula's International School website and services, Dehradun, Uttarakhand.",
+    "Read the terms and conditions for using the Tulas International School website and services, Dehradun, Uttarakhand.",
   alternates: {
     canonical: "https://tis.edu.in/terms-conditions/",
   },
