@@ -118,8 +118,8 @@ function ExceptionalFacilties() {
   return (
     <div>
       <div className="flex flex-col items-center justify-center pb-10">
-        <h3 className="text-[#b90124] text-center font-[TTChocolatesBold] leading-tight text-[clamp(10px,7.5vw,60px)] md:text-[clamp(10px,2.5vw,50px)]">
-          Exceptional Facilities At TIS
+        <h3 className="text-[#b90124] text-center font-[Mirador800] leading-tight text-[clamp(10px,6vw,60px)] md:text-[clamp(10px,2.5vw,100px)]">
+          Everything Your Child Needs To Grow
         </h3>
         <span ref={ref}>
           <svg

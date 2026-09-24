@@ -358,7 +358,7 @@ function FormEnquire({ formPopup }) {
           type="submit"
           className={`w-full bg-[#B90124] text-xl text-[#FFFFFF] cursor-pointer py-2 font-semibold mt-4 md:mt-2 shadow-[0px_3.409px_11.847px_0px_rgba(0,_0,_0,_0.25)]`}
         >
-          SUBMIT
+          ENQUIRE FOR ADMISSIONS
         </button>
       </form>
       {loading && (

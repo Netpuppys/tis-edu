@@ -12,11 +12,6 @@ export const metadata = {
 
 export default function LandingPage() {
   return (
-    <>
-      <h1 className="sr-only">
-        Admissions Open - Tulas International School
-      </h1>
-      <Landing />
-    </>
+    <Landing />
   );
 }

@@ -19,7 +19,7 @@ import image6 from "../../../../public/statsNew/image6.png";
 
 function NewStats() {
   const stats = [
-    { number: "22", title: "ACRE CAMPUS", icon: campus, aspect: "1-1" },
+    { number: "22", title: "ACRE POLUTION FREE CAMPUS", icon: campus, aspect: "1-1" },
     { number: "16+", title: "OLYMPIC SPORTS", icon: sports, aspect: "1-1" },
     { img: image3, aspect: "1-1" },
     {
@@ -30,7 +30,7 @@ function NewStats() {
     },
     { img: image2, aspect: "2-1" },
     {
-      number: "5:1",
+      number: "6:1",
       title: "STUDENT TEACHER RATIO",
       icon: ratio,
       aspect: "1-1",

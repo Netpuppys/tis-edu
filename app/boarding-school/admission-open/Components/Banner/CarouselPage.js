@@ -5,7 +5,7 @@ import Image from "next/image";
 
 import schoolLogo from "../../../../../public/logos/schoolLogo.png";
 import phoneCallGif from "../../../../../public/phone_ringing.gif";
-import ranked from "../../../../../public/LandingPage/ranked.png";
+import ranked from "../../../../../public/LandingPage/ranking2.png";
 
 import Banner1 from "../../../../../public/LandingPage/admission/5.jpg";
 import Banner2 from "../../../../../public/LandingPage/admission/4.jpg";
@@ -77,8 +77,8 @@ function CarouselPage() {
     >
       {/* HEADER */}
       <div className="fixed top-0 left-0 z-40 px-6 md:px-8 flex items-center justify-between w-full bg-[#b90124] h-14">
-        <div className="relative top-6 z-50">
-          <Image src={schoolLogo} className="w-16 md:w-20" alt="school" />
+        <div className="relative top-10 z-50">
+          <Image src={schoolLogo} className="w-28 md:w-30" alt="school" />
         </div>
 
         <a
@@ -90,6 +90,17 @@ function CarouselPage() {
         </a>
       </div>
 
+      {/* HEADING */}
+      <h1
+        className="absolute z-20 pointer-events-none text-white font-[Mirador800]
+        leading-tight drop-shadow-lg bg-black/40 rounded-xl
+        bottom-[67%] left-[4%] w-[92%] px-5 py-4 text-center text-[clamp(22px,6.5vw,34px)]
+        md:top-auto md:bottom-[15vh] md:left-[6vw] md:w-[45%] md:px-8 md:py-6 md:text-left
+        md:text-[clamp(32px,3.5vw,60px)]"
+      >
+        A Co-ed Boarding School Built For Academics, Sports &amp; Life.
+      </h1>
+
       {/* FORM */}
       <div
         className="z-30
@@ -99,7 +110,7 @@ function CarouselPage() {
         mx-auto relative md:mr-[10vw]"
       >
         <Image src={ranked} alt="" className="w-[40%] mx-auto -mb-14" />
-        <div className="bg-white md:bg-white/70 pt-14 shadow-2xl rounded-2xl ring-1 ring-black/5">
+        <div className="bg-white md:bg-white/70 pt-14 mb-4 shadow-2xl rounded-2xl ring-1 ring-black/5">
           <FormEnquire heading="Admissions Open 2027" formPopup={false} />
         </div>
       </div>
