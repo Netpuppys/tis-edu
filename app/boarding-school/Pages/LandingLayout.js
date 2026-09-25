@@ -46,12 +46,12 @@ const LandingLayout = () => {
           >
             <div ref={scrollRef} className="z-50 ">
               {/* <Banner /> */}
-              <CarouselPage/>
+              <CarouselPage />
             </div>
 
             <div className="flex flex-col gap-6 md:gap-8">
               <h2 className="w-[90%] md:w-[75%] mx-auto text-center leading-tight font-[Mirador800] text-[clamp(10px,6vw,60px)] md:text-[clamp(10px,2.5vw,100px)]">
-                More Than a School.{" "}<br />
+                More Than a School. <br />
                 <span className="text-[#b90124] font-[Mirador800]">
                   A Complete Boarding Experience.
                 </span>
@@ -116,8 +116,8 @@ const LandingLayout = () => {
             className="pb-14 md:pb-0 px-2 flex flex-col justify-center items-center g-[#b90124] w-full text-black"
           >
             <h4 className="text-center pt-2 md:py-2">
-              Copyright © 2026 Tulas International School, Dehradun | All
-              Rights Reserved
+              Copyright © 2026 Tulas International School, Dehradun | All Rights
+              Reserved
               <br />
               Designed and Managed By{" "}
               <a href="https://netpuppys.com" target="_blank">

@@ -75,15 +75,6 @@ function GoogleReviews() {
   // ];
   const features = [
     {
-      image: namita,
-      name: "Namita Agarwal",
-      reviewBy: "M/O Krishna Agarwal",
-      classCity: "Class VIII, Jaipur, Rajasthan",
-      rating: 5,
-      description:
-        "Tulas gives a comprehensive environment for our child to grow. The sports, academics and extra-curricular activities have helped Krishna in knowing himself better.",
-    },
-    {
       image: tashi,
       name: "Tashi Tsering",
       reviewBy: "F/O Jigmet Skaldon",
@@ -91,6 +82,15 @@ function GoogleReviews() {
       rating: 4.5,
       description:
         "I would like to convey a big thanks to the Management and Teachers of Tulas International School for taking good care of my son.",
+    },
+    {
+      image: namita,
+      name: "Namita Agarwal",
+      reviewBy: "M/O Krishna Agarwal",
+      classCity: "Class VIII, Jaipur, Rajasthan",
+      rating: 5,
+      description:
+        "Tulas gives a comprehensive environment for our child to grow. The sports, academics and extra-curricular activities have helped Krishna in knowing himself better.",
     },
     {
       image: sandeep,
@@ -102,6 +102,15 @@ function GoogleReviews() {
         "Our experience is very amazing with school. Staff is very cooperative and supportive. Our son always admires the school whenever we talk with him.",
     },
     {
+      image: pinky,
+      name: "Pinky Sharma",
+      reviewBy: "M/O Swastik Sharma",
+      classCity: "Class XII, Patna Bihar",
+      rating: 5,
+      description:
+        "I am happy and satisfied with the wonderful experience of my son in this school. Teachers are very good especially Shweta Ma’am. She is always available when I need her.",
+    },
+    {
       image: suresh,
       name: "Suresh Kumar",
       reviewBy: "F/O Aditya Kumar",
@@ -109,6 +118,15 @@ function GoogleReviews() {
       rating: 4,
       description:
         "Tulas International School is doing excellent in all the fields especially giving a lot of exposure to children. Very nicely planned and organized academic programme. Good efforts by all teachers.",
+    },
+    {
+      image: urja,
+      name: "Mrs Urja Bhayani",
+      reviewBy: "M/O Shikha & Samarth Bhayani",
+      classCity: "Class XI, Dubai, UAE",
+      rating: 5,
+      description:
+        "Right from the beginning, we have been in touch with Robin Sir and Shweta Ma’am. Both are very helpful and cooperative. Teachers are passionate and helpful towards academics.",
     },
     {
       image: amit,
@@ -120,13 +138,13 @@ function GoogleReviews() {
         "Being a parent it's a big challenge to find a Boarding School that qualifies your Parameters of Security, Health, Hygiene, Academics, Non Academics and Self discipline being key features.",
     },
     {
-      image: pinky,
-      name: "Pinky Sharma",
-      reviewBy: "M/O Swastik Sharma",
-      classCity: "Class XII, Patna Bihar",
-      rating: 5,
+      image: ashu,
+      name: "Ashu Arora",
+      reviewBy: "M/O Manisha Changrani",
+      classCity: "Class VII, Gurgaon, Haryana",
+      rating: 4.5,
       description:
-        "I am happy and satisfied with the wonderful experience of my son in this school. Teachers are very good especially Shweta Ma’am. She is always available when I need her.",
+        "It has been a fantastic journey for my daughter in Tulas International School so far. The boarding and infrastructure facility are excellent. We have seen significant improvement in Manisha.",
     },
     {
       image: gulabdas,
@@ -138,13 +156,13 @@ function GoogleReviews() {
         "We admitted our daughter, Annika Gulabdas Gupta, in class VIII this year in Tulas. She is very much satisfied with the facilities offered at Tulas related to education, extra-curricular activities, recreation & hygiene. ",
     },
     {
-      image: urja,
-      name: "Mrs Urja Bhayani",
-      reviewBy: "M/O Shikha & Samarth Bhayani",
-      classCity: "Class XI, Dubai, UAE",
-      rating: 5,
+      image: salendra,
+      name: "Selendra K. Ajmera",
+      reviewBy: "F/O Aman Ajmera",
+      classCity: "Class XII, Dimapur, Nagaland",
+      rating: 3.8,
       description:
-        "Right from the beginning, we have been in touch with Robin Sir and Shweta Ma’am. Both are very helpful and cooperative. Teachers are passionate and helpful towards academics.",
+        "Hi Tulas! In the beginning it was very tough for me to send my son to a boarding school but the day I visited the campus the first thing which came to my mind was that this is the right place and right environment.",
     },
     // {
     //   name: "Manaya Mena",
@@ -154,24 +172,6 @@ function GoogleReviews() {
     //   description:
     //     "TIS is the kind of school for those parents who long for a complete holistic education for their children. It’s routine is in fact a training phase for the young adolescents to understand the importance of time, on being healthy and self reliant. TIS does emphasize on discipline and I believe “Discipline achieves what ambition seeks.”",
     // },
-    {
-      image: salendra,
-      name: "Selendra K. Ajmera",
-      reviewBy: "F/O Aman Ajmera",
-      classCity: "Class XII, Dimapur, Nagaland",
-      rating: 3.8,
-      description:
-        "Hi Tulas! In the beginning it was very tough for me to send my son to a boarding school but the day I visited the campus the first thing which came to my mind was that this is the right place and right environment.",
-    },
-    {
-      image: ashu,
-      name: "Ashu Arora",
-      reviewBy: "M/O Manisha Changrani",
-      classCity: "Class VII, Gurgaon, Haryana",
-      rating: 4.5,
-      description:
-        "It has been a fantastic journey for my daughter in Tulas International School so far. The boarding and infrastructure facility are excellent. We have seen significant improvement in Manisha.",
-    },
   ];
 
   const swiperRef = useRef();
@@ -190,14 +190,14 @@ function GoogleReviews() {
   };
 
   return (
-    <div id="13" className="flex flex-col md:flex-row relative w-full">
-      <div className="w-full py-8 md:py-14 relative md:w-[42%] flex bg-black flex-col justify-center items-center">
+    <div id="13" className="flex flex-col relative w-full">
+      <div className="w-full py-8 md:py-12 relative flex bg-black flex-col justify-center items-center overflow-hidden">
         <Image
           src={googleReviewsBackground}
           alt=""
           className="w-full h-full opacity-50 absolute object-cover"
         />
-        <div className="text-white py-20 md:py-0 flex flex-col relative z-20 justify-center items-center px-8">
+        <div className="text-white py-4 md:py-0 flex flex-col relative z-20 justify-center items-center px-8">
           <h3 className="font-[Mirador800] text-[clamp(10px,8vw,70px)] md:text-[clamp(10px,2.5vw,70px)] text-center leading-tight">
             Google Reviews
           </h3>
@@ -224,17 +224,17 @@ function GoogleReviews() {
           </svg>
         </div>
       </div>
-      <div className="w-full py-8 md:py-14 md:w-[58%] flex items-center justify-center backgroundGoogle">
+      <div className="w-full py-8 md:py-14 flex items-center justify-center backgroundGoogle">
         <div ref={ref} className="w-full overflow-hidden ">
           <div
-            className={`pl-0 md:pl-12 flex ${
+            className={`px-0 md:px-12 flex ${
               inView ? "animate-translateRight opacity-100" : "opacity-0"
             }`}
           >
             <Swiper
               onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
               ref={swiperRef}
-              slidesPerView={isMobile ? 1.2 : 2.8}
+              slidesPerView={isMobile ? 1.2 : 3.5}
               spaceBetween={30}
               centeredSlides={isMobile ? true : false}
             >
@@ -268,7 +268,7 @@ function GoogleReviews() {
                           {feature.classCity}
                         </h2> */}
                     </div>
-                    <h2 className="text-left text-[clamp(10px,3vw,45px)] line-clamp-5 md:text-[clamp(10px,0.8vw,45px)] leading-tight">
+                    <h2 className="text-left text-[clamp(10px,3vw,45px)] md:text-[clamp(10px,0.9vw,45px)] leading-tight">
                       {feature.description}
                     </h2>
                   </div>
@@ -276,7 +276,7 @@ function GoogleReviews() {
               ))}
             </Swiper>
           </div>
-          <div className="flex space-x-4 md:space-x-10 pt-8 justify-end pr-10">
+          <div className="flex space-x-4 md:space-x-10 pt-8 justify-center">
             <button
               onClick={handlePrevClick}
               className={`pointer-events-auto shadow-2xl p-3 md:p-[0.5%] text-black h-fit w-fit bg-[#60bab1] flex items-center justify-center text-[clamp(10px,5vw,45px)] md:text-[clamp(10px,1.6vw,45px)] leading-none ${
