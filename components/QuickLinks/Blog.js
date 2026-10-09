@@ -4,6 +4,7 @@ import Image from "next/image";
 import loader from "../../public/loader.svg";
 import "../../styles/QuickLinks/Blog.css";
 import { UtmContext } from "../globalComponents/utmParams";
+import { BLOG_API_URL } from "@/lib/blogApi";
 
 const Blog = () => {
   const [blogs, setBlogs] = useState([]); // Initialize as an empty array
@@ -15,7 +16,7 @@ const Blog = () => {
     const fetchBlogs = async () => {
       try {
         const response = await fetch(
-          `https://blog.tis.edu.in/api/v1/post?page=${page}&per_page=18`
+          `${BLOG_API_URL}/post?page=${page}&per_page=18`
         );
         const data = await response.json();
 

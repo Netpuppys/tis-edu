@@ -5,13 +5,14 @@ import Footer from "@/components/Footer/Footer";
 import "../globals.css";
 import "../../styles/QuickLinks/Blog.css";
 import "../../styles/globalComponents/Header/header.css";
+import { BLOG_API_URL } from "@/lib/blogApi";
 
 export const revalidate = 60; // ISR for revalidation every 60s
 
 // --- Fetch single blog data ---
 async function fetchBlogData(slug) {
   try {
-    const res = await fetch(`https://blog.tis.edu.in/api/v1/post/${slug}`, {
+    const res = await fetch(`${BLOG_API_URL}/post/${slug}`, {
       cache: "no-store",
     });
     if (!res.ok) return null;

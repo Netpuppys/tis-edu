@@ -1,13 +1,17 @@
 "use client";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { BLOG_API_URL } from "@/lib/blogApi";
 
 function TableOfContent({ slug }) {
   const [tocItems, setTocItems] = useState([]);
   const [blog, setBlog] = useState(null);
   useEffect(() => {
     const fetchPost = async () => {
-      const res = await axios.get(`https://blog.tis.edu.in/api/v1/post/${slug}`);
+      // A missing post is a 404 now, which axios throws on.
+      const res = await axios
+        .get(`${BLOG_API_URL}/post/${slug}`)
+        .catch(() => null);
       if (res?.data?.data) {
         setBlog(res.data.data);
         generateToc(res.data.data.content); // Generate TOC from content
