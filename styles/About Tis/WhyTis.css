@@ -48,7 +48,7 @@
 .why-tis-img-text {
   position: relative;
   color: #000;
-  top: 20rem;
+  margin: 4rem auto 3rem;
   text-align: center;
   font-family: "Zurdo W01 Regular";
   font-size: 30px;
@@ -58,6 +58,7 @@
 }
 .here-are {
   position: relative;
+  margin-bottom: 3rem;
   color: #b90024;
   text-align: center;
   font-family: "PF DIN";
@@ -216,7 +217,6 @@
     font-size: 55px;
   }
   .why-tis-img-text {
-    top: 15rem;
     font-size: 28px;
   }
   .why-tis-above-img {
@@ -248,7 +248,7 @@
     font-size: 20px;
   }
   .why-tis-img-text {
-    top: 1rem;
+    margin: 2rem auto 1.5rem;
     font-size: 15px;
   }
   .line-center {

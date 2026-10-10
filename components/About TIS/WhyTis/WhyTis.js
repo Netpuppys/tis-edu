@@ -3,8 +3,6 @@ import React from "react";
 import Image from "next/image";
 import "../../../styles/About Tis/WhyTis.css";
 import { useMobile } from "../../globalComponents/IsMobileContext";
-import whyTisAbove from "../../../public/pictures/why-tis-above-img.png";
-import tisImg from "../../../public/pictures/tis-img.png";
 import WorldClass from "../../../public/whyTIS/worldClass.png";
 import AllRound from "../../../public/whyTIS/allLearning.png";
 import affiliated from "../../../public/whyTIS/affiliated.png";
@@ -13,8 +11,6 @@ import holisticEducation from "../../../public/whyTIS/holisticEducation.png";
 import Learning24 from "../../../public/whyTIS/24-7lEARNING.png";
 import fullyResidential from "../../../public/whyTIS/fullyResidential.png";
 import HigherEducation from "../../../public/whyTIS/HigherEducation.png";
-import whyTisAboveMobile from "../../../public/pictures/why-tis-above-img-mobile.png";
-import tisImgMobile from "../../../public/pictures/tis-img-mobile.png";
 export default function WhyTis() {
   const { isMobile } = useMobile();
   return (
@@ -85,21 +81,12 @@ export default function WhyTis() {
           for the taking.
         </div>
 
-        {!isMobile && (
-          <Image className="why-tis-above-img" src={whyTisAbove} alt="" />
-        )}
-        {isMobile && (
-          <Image className="why-tis-above-img" src={whyTisAboveMobile} alt="" />
-        )}
-
         <h4 className="here-are">
           Here are the reasons why <br />
           you should choose Tulas <br />
           International School:
         </h4>
 
-        {!isMobile && <Image className="tisImg" src={tisImg} alt="" />}
-        {isMobile && <Image className="tisImg" src={tisImgMobile} alt="" />}
         {!isMobile && (
           <div className="container-why-tis">
             <div className="left-div-content">
